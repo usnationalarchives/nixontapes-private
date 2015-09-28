@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<roomDescriptions id="roomOptions">
+    <room id="cab">
+        
+        <abstract id="historicalAbstract" encodinganalog="545$a">
+            This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
+        </abstract>
+
+        <bioghist id="recordingHistory" encodinganalog="545$a">
+            
+            <head>Recording Location and Taping System History</head>
+            
+            <p>Beginning in 1971, President Richard Nixon authorized the installation of a secret taping system in selected portions of the White House, Cabinet Room, Oval Office, Old Executive Office Building, and Camp David. Collectively, these recordings constitute the Nixon Administration's White House Tapes.</p>
+            <p>In February 1971, the United States Secret Service installed listening devices in the White House. They placed two microphones in the Cabinet Room, under the table near the President's chair. The Secret Service technicians wired all devices to central mixers that were then connected to recorders in an old locker room in the White House basement. The Cabinet Room recording system was a manual system, generally activated by Alexander Butterfield, a Special Assistant to the President who managed the President's activities in the West Wing of the White House. Butterfield typically initiated recording by a switch on his desk; the Secret Service also placed on/off switches on either side of the President's chair at the Cabinet Room table. When Butterfield inadvertently left the system activated, the tape recorders captured non-historical conversations as well as hours of room noise.</p>
+            <p>On July 16, 1973, Special Assistant to the President Alexander Butterfield revealed the existence of the White House taping system during his testimony before the Senate Watergate Committee. Following this public revelation, White House Chief of Staff Alexander Haig ordered the removal of the entire presidential taping system.</p>   
+            
+        </bioghist>
+        
+        <scopecontent id="recordingNotes">
+  
+             <head>Audio Quality</head>
+             
+             <p>The audio quality of the Nixon White House Tapes is generally poor. While some locations generated better quality recordings than others, inferior recording equipment, cheap tape stock, improper microphone placement, taping system malfunctions, volume fluctuation, background noise, and electrical interference contributed to the poor quality of the recordings. Other noises greatly affect the audibility of conversations, including such small happenings as the signing of documents or the clinking of coffee cups.</p>
+             
+             <head>Nature of the Recording</head>
+             
+             <p>The White House Tapes comprise secretly recorded human conversation. Most participants were unaware that their meetings and telephone calls were being recorded. The taping system captured often unstructured and free-flowing discussions between close personal associates intimately familiar with the topic. As a result, users may find the recorded conversations difficult to follow.</p>
+            
+        </scopecontent>
+        
+    </room>
+    
+    <room id="cdhw">
+
+        <abstract id="historicalAbstract" encodinganalog="545$a">
+            This Camp David Hard Wire recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
+        </abstract>
+
+        <bioghist id="recordingHistory" encodinganalog="545$a">
+            
+            <head>Recording Location and Taping System History</head>
+            
+            <p>Beginning in 1971, President Richard Nixon authorized the installation of a secret taping system in selected portions of the White House, Cabinet Room, Oval Office, Old Executive Office Building, and Camp David. Collectively, these recordings constitute the Nixon Administration's White House Tapes.</p>
+            <p>In May 1972, the United States Secret Service set up a taping system in the President's study in Aspen Lodge at Camp David. There were three separate recording systems put in place. A single microphone recorded conversations taking place in the study, and these recordings became known as the Camp David Hard Wire recordings.</p>
+            <p>This secret taping system was maintained by the Secret Service. Only President Nixon, H. R. Haldeman, and a few of the President's close personal assistants knew the system existed. One of its key features was that the recording equipment in the Oval Office, the EOB office, at Camp David, and on the telephones was sound-activated, operating without a conscious decision by the President to record a specific conversations. The taping system was tied to the Presidential Locator System, which was also operated by the Secret Service, and was designed to continue recording for fifteen to thirty seconds after the President left the room.</p>
+            <p>In early March 1973, the Secret Service removed the Camp David Hard Wire recording device from Aspen Lodge, but the study's telephone lines remained bugged.</p>
+            <p>On July 16, 1973, Special Assistant to the President Alexander Butterfield revealed the existence of the White House taping system during his testimony before the Senate Watergate Committee. Following this public revelation, White House Chief of Staff Alexander Haig ordered the removal of the entire presidential taping system.</p>   
+            
+        </bioghist>
+ 
+        <scopecontent id="recordingNotes">
+
+            <head>Audio Quality</head>
+            
+            <p>The audio quality of the Nixon White House Tapes is generally poor. While some locations generated better quality recordings than others, inferior recording equipment, cheap tape stock, improper microphone placement, taping system malfunctions, volume fluctuation, background noise, and electrical interference contributed to the poor quality of the recordings. Other noises greatly affect the audibility of conversations, including such small happenings as the signing of documents or the clinking of coffee cups.</p>
+            
+            <head>Nature of the Recording</head>
+            
+            <p>The White House Tapes comprise secretly recorded human conversation. Most participants were unaware that their meetings and telephone calls were being recorded. The taping system captured often unstructured and free-flowing discussions between close personal associates intimately familiar with the topic. As a result, users may find the recorded conversations difficult to follow.</p>
+            
+        </scopecontent>
+        
+    </room>
+    
+    <room id="cdsd">
+        
+        <abstract id="historicalAbstract" encodinganalog="545$a">
+            This Camp David Study Desk recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
+        </abstract>
+
+        <bioghist id="recordingHistory" encodinganalog="545$a">
+            
+            <head>Recording Location and Taping System History</head>
+            
+            <p>Beginning in 1971, President Richard Nixon authorized the installation of a secret taping system in selected portions of the White House, Cabinet Room, Oval Office, Old Executive Office Building, and Camp David. Collectively, these recordings constitute the Nixon Administration's White House Tapes.</p>
+            <p>In May 1972, the United States Secret Service set up a taping system in the President's study in Aspen Lodge at Camp David. There were three separate recording systems put in place. The President's telephone on the President's desk was tapped, and these recordings became known as the Camp David Study Desk recordings.</p>
+            <p>This secret taping system was maintained by the Secret Service. Only President Nixon, H. R. Haldeman, and a few of the President's close personal assistants knew the system existed. One of its key features was that the recording equipment in the Oval Office, the EOB office, at Camp David, and on the telephones was sound-activated, operating without a conscious decision by the President to record a specific conversation. The taping system was tied to the Presidential Locator System, which was also operated by the Secret Service.</p>
+            <p>On July 16, 1973, Special Assistant to the President Alexander Butterfield revealed the existence of the White House taping system during his testimony before the Senate Watergate Committee. Following this public revelation, White House Chief of Staff Alexander Haig ordered the removal of the entire presidential taping system.</p>          
+            
+        </bioghist>
+        
+        <scopecontent id="recordingNotes">
+            
+            <head>Audio Quality</head>
+            
+            <p>The audio quality of the Nixon White House Tapes is generally poor. While some locations generated better quality recordings than others, inferior recording equipment, cheap tape stock, improper microphone placement, taping system malfunctions, volume fluctuation, background noise, and electrical interference contributed to the poor quality of the recordings. Other noises greatly affect the audibility of conversations, including such small happenings as the signing of documents or the clinking of coffee cups.</p>
+            
+            <p>Conversations recorded on the telephone are generally intelligible. However, in some instances, the recording equipment malfunctioned and those conversations are barely audible.</p>
+            
+            <head>Nature of the Recording</head>
+            
+            <p>The White House Tapes comprise secretly recorded human conversation. Most participants were unaware that their meetings and telephone calls were being recorded. The taping system captured often unstructured and free-flowing discussions between close personal associates intimately familiar with the topic. As a result, users may find the recorded conversations difficult to follow.</p>
+            
+        </scopecontent>
+        
+    </room>
+    
+    <room id="cdst">
+        
+        <abstract id="historicalAbstract" encodinganalog="545$a">
+            This Camp David Study Table recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
+        </abstract>
+        
+        <bioghist id="recordingHistory" encodinganalog="545$a">
+            
+            <head>Recording Location and Taping System History</head>
+            
+            <p>Beginning in 1971, President Richard Nixon authorized the installation of a secret taping system in selected portions of the White House, Cabinet Room, Oval Office, Old Executive Office Building, and Camp David. Collectively, these recordings constitute the Nixon Administration's White House Tapes.</p>
+            <p>In May 1972, the United States Secret Service set up a taping system in the President's study in Aspen Lodge at Camp David. There were three separate recording systems put in place. The President's telephone on the study table was tapped, and these recordings became known as the Camp David Study Table recordings.</p>
+            <p>This secret taping system was maintained by the Secret Service. Only President Nixon, H. R. Haldeman, and a few of the President's close personal assistants knew the system existed. One of its key features was that the recording equipment in the Oval Office, the EOB office, at Camp David, and on the telephones was sound-activated, operating without a conscious decision by the President to record a specific conversation. The taping system was tied to the Presidential Locator System, which was also operated by the Secret Service.</p>
+            <p>On July 16, 1973, Special Assistant to the President Alexander Butterfield revealed the existence of the White House taping system during his testimony before the Senate Watergate Committee. Following this public revelation, White House Chief of Staff Alexander Haig ordered the removal of the entire presidential taping system.</p>            
+            
+        </bioghist>
+        
+        <scopecontent id="recordingNotes">
+           
+           <head>Audio Quality</head>
+           
+           <p>The audio quality of the Nixon White House Tapes is generally poor. While some locations generated better quality recordings than others, inferior recording equipment, cheap tape stock, improper microphone placement, taping system malfunctions, volume fluctuation, background noise, and electrical interference contributed to the poor quality of the recordings. Other noises greatly affect the audibility of conversations, including such small happenings as the signing of documents or the clinking of coffee cups.</p>
+           
+           <p>Conversations recorded on the telephone are generally intelligible. However, in some instances, the recording equipment malfunctioned and those conversations are barely audible.</p>
+           
+           <head>Nature of the Recording</head>
+           
+           <p>The White House Tapes comprise secretly recorded human conversation. Most participants were unaware that their meetings and telephone calls were being recorded. The taping system captured often unstructured and free-flowing discussions between close personal associates intimately familiar with the topic. As a result, users may find the recorded conversations difficult to follow.</p>
+            
+        </scopecontent>
+        
+    </room>
+    
+    
+    <room id="eob">
+        
+        <abstract id="historicalAbstract" encodinganalog="545$a">
+            This Old Executive Office Building recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
+        </abstract>
+
+        <bioghist id="recordingHistory" encodinganalog="545$a">
+            
+            <head>Recording Location and Taping System History</head>
+            
+            <p>Beginning in 1971, President Richard Nixon authorized the installation of a secret taping system in selected portions of the White House, Cabinet Room, Oval Office, Old Executive Office Building, and Camp David. Collectively, these recordings constitute the Nixon Administration's White House Tapes.</p>
+            <p>In April 1971, United States Secret Service technicians installed four microphones in the President's office in the Old Executive Office Building (EOB). These microphones were located in the President's desk and wires led to a mixer and recorders in an adjoining room. These recordings became known as the Executive Office Building recordings.</p>
+            <p>This system was a secret taping system maintained by the Secret Service. Only President Nixon, H. R. Haldeman, and a few of the President's close personal assistants knew the system existed. One of its key features was that the recording equipment in the Oval Office, the EOB office, at Camp David, and on the telephones was sound activated, operating without a conscious decision by the President to record a specific conversation. The taping system was tied to the Presidential Locator System, which was also operated by the Secret Service, and was designed to continue recording for fifteen to thirty seconds after the President left the room.</p>
+            <p>On July 16, 1973, Special Assistant to the President Alexander Butterfield revealed the existence of the White House taping system during his testimony before the Senate Watergate Committee. Following this public revelation, White House Chief of Staff Alexander Haig ordered the removal of the entire presidential taping system.</p>         
+            
+        </bioghist>
+
+        <scopecontent id="recordingNotes">
+          
+           <head>Audio Quality</head>
+           
+           <p>The audio quality of the Nixon White House Tapes is generally poor. While some locations generated better quality recordings than others, inferior recording equipment, cheap tape stock, improper microphone placement, taping system malfunctions, volume fluctuation, background noise, and electrical interference contributed to the poor quality of the recordings. Other noises greatly affect the audibility of conversations, including such small happenings as the signing of documents or the clinking of coffee cups.</p>
+           
+           <p>The Old Executive Office Building recordings are generally of poorer sound quality than the rest of the White House Tapes due to the location and number of recording devices and the hum of power lines and other electromagnetic interference. The EOB had only four microphones compared to the Oval Office's seven, and all four were located at the President's desk. Conversations often took place on the couch or table in the room; as a result, conversations held at a distance from the desk are very difficult to hear.</p>
+           
+           <head>Nature of the Recording</head>
+           
+           <p>The White House Tapes comprise secretly recorded human conversation. Most participants were unaware that their meetings and telephone calls were being recorded. The taping system captured often unstructured and free-flowing discussions between close personal associates intimately familiar with the topic. As a result, users may find the recorded conversations difficult to follow.</p>
+            
+        </scopecontent>
+        
+    </room>
+    
+    <room id="oval">
+        
+        <abstract id="historicalAbstract" encodinganalog="545$a">
+            This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
+        </abstract>
+
+        <bioghist id="recordingHistory" encodinganalog="545$a">
+            
+            <head>Recording Location and Taping System History</head>
+            
+            <p>Beginning in 1971, President Richard Nixon authorized the installation of a secret taping system in selected portions of the White House, Cabinet Room, Oval Office, Old Executive Office Building, and Camp David. Collectively, these recordings constitute the Nixon Administration's White House Tapes.</p>
+            <p>In February 1971, the United State Secret Service installed listening devices in the White House. They placed seven microphones in the Oval Office: five in the President's desk and one on each side of the fireplace. The Secret Service technicians wired these devices to central mixers that were then connected to recorders in an old locker room in the White House basement. These recordings became known as the Oval Office recordings.</p>
+            <p>This system was a secret taping system maintained by the Secret Service. Only President Nixon, H. R. Haldeman, and a few of the President's close personal assistants knew the system existed. One of its key features was that the recording equipment in the Oval Office, the EOB office, at Camp David, and on the telephones was sound-activated, operating without a conscious decision by the President to record a specific conversation. The taping system was tied to the Presidential Locator System, which was also operated by the Secret Service, and was designed to continue recording for fifteen to thirty seconds after the President left the room.</p>
+            <p>On July 16, 1973, Special Assistant to the President Alexander Butterfield revealed the existence of the White House taping system during his testimony before the Senate Watergate Committee. Following this public revelation, White House Chief of Staff Alexander Haig ordered the removal of the entire presidential taping system.</p>         
+            
+        </bioghist>
+
+        <scopecontent id="recordingNotes">
+                       
+            <head>Audio Quality</head>
+            
+            <p>The audio quality of the Nixon White House Tapes is generally poor. While some locations generated better quality recordings than others, inferior recording equipment, cheap tape stock, improper microphone placement, taping system malfunctions, volume fluctuation, background noise, and electrical interference contributed to the poor quality of the recordings. Other noises greatly affect the audibility of conversations, including such small happenings as the signing of documents or the clinking of coffee cups.</p>
+            
+            <p>As a result of the microphone coverage, Oval Office conversations have clear audio relative to other Nixon White House Tapes. Even still, extraneous room noises and background sounds are evident and can obscure portions of conversations. The microphones in the desk picked up the sound of anyone writing on the desk or the setting down a coffee cup or a glass. Furthermore, the desk microphones captured the sound of President Nixon's chair banging into the desk, the President's feet banging on the desk as he put his feet up, and the sound of the President's knees knocking against the kneewell of his desk. The microphone installed near the telephone captured the ringing of the telephone, which sometimes blocked out small portions of conversation. On occasion, the helicopter rotor blades from Marine One completely obliterated conversation taking place in the Oval Office. The recording system also captured the sirens of ambulances, fire engines, and police vehicles as they blared in through open windows. On occasion, the opening and closing of interior and exterior doors briefly interfered with conversations.</p>
+            
+            <head>Nature of the Recording</head>
+            
+            <p>The White House Tapes comprise secretly recorded human conversation. Most participants were unaware that their meetings and telephone calls were being recorded. The taping system captured often unstructured and free-flowing discussions between close personal associates intimately familiar with the topic. As a result, users may find the recorded conversations difficult to follow.</p>
+            
+        </scopecontent>
+        
+    </room>
+    
+    <room id="wht">
+        
+        <abstract id="historicalAbstract" encodinganalog="545$a">
+            This White House Telephone recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
+        </abstract>
+
+        <bioghist id="recordingHistory" encodinganalog="545$a">
+            
+            <head>Recording Location and Taping System History</head>
+            
+            <p>Beginning in 1971, President Richard Nixon authorized the installation of a secret taping system in selected portions of the White House, Cabinet Room, Oval Office, Old Executive Office Building, and Camp David. Collectively, these recordings constitute the Nixon Administration's White House Tapes.</p>
+            <p>In April 1971, the United States Secret Service tapped the telephones in the Oval Office, in the President's EOB office, and in the Lincoln Sitting Room. These recordings became known as the White House Telephone recordings.</p>
+            <p>This system was a secret taping system maintained by the Secret Service. Only President Nixon, H. R. Haldeman, and a few of the President's close personal assistants knew the system existed. One of its key features was that the recording equipment in the Oval Office, the EOB office, at Camp David, and on the telephones was sound activated, operating without a conscious decision by the President to record a specific conversation. The taping system was tied to the Presidential Locator System, which was also operated by the Secret Service.</p>
+            <p>On July 16, 1973, Special Assistant to the President Alexander Butterfield revealed the existence of the White House taping system during his testimony before the Senate Watergate Committee. Following this public revelation, White House Chief of Staff Alexander Haig ordered the removal of the entire presidential taping system.</p>             
+            
+        </bioghist>
+
+        <scopecontent id="recordingNotes">
+                     
+            <head>Audio Quality</head>
+            
+            <p>The audio quality of the Nixon White House Tapes is generally poor. While some locations generated better quality recordings than others, inferior recording equipment, cheap tape stock, improper microphone placement, taping system malfunctions, volume fluctuation, background noise, and electrical interference contributed to the poor quality of the recordings. Other noises greatly affect the audibility of conversations, including such small happenings as the signing of documents or the clinking of coffee cups.</p>
+            
+            <p>Conversations recorded on the telephone are generally intelligible. However, in some instances, the recording equipment malfunctioned and those conversations are barely audible.</p>
+            
+            <head>Nature of the Recording</head>
+            
+            <p>The White House Tapes comprise secretly recorded human conversation. Most participants were unaware that their meetings and telephone calls were being recorded. The taping system captured often unstructured and free-flowing discussions between close personal associates intimately familiar with the topic. As a result, users may find the recorded conversations difficult to follow.</p>
+        </scopecontent>
+    </room>
+</roomDescriptions>
