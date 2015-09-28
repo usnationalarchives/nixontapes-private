@@ -8,7 +8,7 @@ declare option output:method "text";
 &#9;"set": "INSERT SERIES HERE",
 &#9;"conversations": &#91;
 {
-  let $coll := collection("raw")
+  let $coll := collection("base")
   
   (: let $q := "910" :)
   let $series := "WHT"

@@ -1,14 +1,13 @@
 import module namespace functx = 'http://www.functx.com' at 'http://www.xqueryfunctions.com/xq/functx-1.0-doc-2007-01.xq';
 
-declare option output:method "csv";
-declare option output:csv "header=yes, separator=comma";
+declare option output:method "xml";
 
-<csv>
+<nixonTapes lastModified="{current-dateTime()}">
 {
   let $coll := collection("base")
   
   for $c in $coll/root/row[not(contains(tapeNo,'test'))]
-
+  
 (: identifying information :)
   let $tapeID := data($c/tapeNo3Dig)
   let $convID := data($c/convNo3Dig)
@@ -16,10 +15,7 @@ declare option output:csv "header=yes, separator=comma";
   let $conversation := normalize-space(concat("Conversation ",$tapeID,"-",$convID))
 
 (: participants, seperated by semi-colon :)
-  let $participants :=   
-    for $p in $c/participantsWithLineBreaks/(persname|corpname)
-    let $pEntry := concat(data($p),";")
-    return $pEntry
+  let $participants := $c/participantsWithLineBreaks/(persname|corpname)
 
 (: startDateTime, adjusted for Daylight Savings:)
 let $sdt := $c/startDateTime
@@ -255,48 +251,44 @@ let $edtAdjusted :=
                 then concat("A telephone call was attempted at an unknown date, sometime between ",$sTime," on ",$c/startDate-NaturalLanguage," and ",$eTime," on ",$c/endDate-NaturalLanguage,", but the call was not completed. ",$device)
                 else concat($descPart," ",$location," on an unknown date, sometime between ",$sTime," on ",$c/startDate-NaturalLanguage," and ",$eTime," on ",$c/endDate-NaturalLanguage,". ",$device)
             else "!"
-        
+            
+  where $tapeID eq "001"
+  order by $conversation       
   return
   
-  <record>  
-    <conversationTitle>{$conversation}</conversationTitle>
-    <tapeNumber>{xs:string($tapeID)}</tapeNumber>
+  <conversation>
+    <collection uri="https://catalog.archives.gov/id/597542">White House Tapes: Sound Recordings of Meetings and Telephone Conversations of the Nixon Administration, 1971-1973</collection>   
     <conversationNumber>{xs:string($convID)}</conversationNumber>
-    <identifier>{data($c/filename)}</identifier>
-         
-    <startDateTime>{data($c/startDateTime)}</startDateTime>
-    <startDateTime-daylight>{data($sdtAdjusted)}</startDateTime-daylight>
-    <endDateTime>{data($c/endDateTime)}</endDateTime>
-    <endDateTime-daylight>{data($edtAdjusted)}</endDateTime-daylight>
-       
-    <startDate>{data($c/startDate-NaturalLanguage)}</startDate>
-    <startTime>{data($sTime)}</startTime>
-    
-    <endDate>{data($c/endDate-NaturalLanguage)}</endDate>
-    <endTime>{data($eTime)}</endTime>        
-
-    <dateCertainty>{data($dateCert)}</dateCertainty>
-    <timeCertainty>{data($timeCert)}</timeCertainty>
-
-    <participants>{data($participants)}</participants>
-    <description>{$statement}</description>
-    
-    <locationCode>{data($c/locationCode)}</locationCode>
-    <recordingDevice>{data($c/locationNaturalLanguage)}</recordingDevice>
-    <latitudeEstimated>{data($c/latitude)}</latitudeEstimated>
-    <longitudeEstimated>{data($c/longitude)}</longitudeEstimated>
-    <collection>White House Tapes: Sound Recordings of Meetings and Telephone Conversations of the Nixon Administration, 1971-1973</collection>
-    <collectionURL>https://catalog.archives.gov/id/597542</collectionURL>
-    <chronCode>{data($chronNum)}</chronCode>		<chronRelease>{data($c/releaseChron)}</chronRelease>
-    <chronReleaseDate>{data($c/(releaseDate-NatLang|releaseDateNatLang))}</chronReleaseDate>
-   
-    <aogpRelease>{data($c/AoGP_Release)}</aogpRelease>
-    <aogpSegment>{data($c/AoGP_Segments)}</aogpSegment>
-    <digitalAccess>The Nixon Presidential Library and Museum, part of the National Archives and Records Administration, is working to digitize the White House Tapes.  For digitized audio recordings and more information about the White House Tapes, please visit: http://www.nixonlibrary.gov/forresearchers/find/tapes/index.php</digitalAccess>
-    <physicalAccess>Physical copies of White House Tapes conversations may be accessed in two locations: 1) the reading room of the Nixon Presidential Library and Museum in Yorba Linda, California, and 2) the audiovisual reading room of Archives II in College Park, Maryland.</physicalAccess>
-    <contactEmail>nixon@nara.gov</contactEmail>
+    <dateTime>
+        <dateCertainty>{data($dateCert)}</dateCertainty>
+        <startDateTime dateTime="{data($sdtAdjusted)}">
+            <startDate>{data($c/startDate-NaturalLanguage)}</startDate>
+            <startTime>{data($sTime)}</startTime>
+        </startDateTime>
+        <endDateTime dateTime="{data($edtAdjusted)}">
+            <endDate>{data($c/endDate-NaturalLanguage)}</endDate>
+            <endTime>{data($eTime)}</endTime>        
+        </endDateTime>
+        <timeCertainty>{data($timeCert)}</timeCertainty>
+    </dateTime>
+    <description>{functx:capitalize-first($statement)}</description>
+    <digitizationID>{data($c/filename)}</digitizationID>
     <lastModified>{current-dateTime()}</lastModified>
-
-  </record>
+    <location>
+      <latitude certainty="estimated">{data($c/latitude)}</latitude>
+      <locationCode>{data($c/locationCode)}</locationCode>
+      <longitude certainty="estimated">{data($c/longitude)}</longitude>
+      <recordingDevice>{data($c/locationNaturalLanguage)}</recordingDevice>
+    </location>
+    <participants>{$participants}</participants>
+    <publicReleases>
+      <release type="chron" chronCode="{data($chronNum)}" issued="{data($c/(releaseDate-NatLang|releaseDateNatLang))}">{data($c/releaseChron)}</release>
+      <release type="aogpRelease">{data($c/AoGP_Release)}
+        <segment type="aogpSegment">{data($c/AoGP_Segments)}</segment>
+      </release>
+    </publicReleases>
+    <tapeNumber>{xs:string($tapeID)}</tapeNumber>
+    <title>{$conversation}</title>
+  </conversation>
 }
-</csv>
+</nixonTapes>
