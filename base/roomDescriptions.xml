@@ -3,6 +3,11 @@
 <roomDescriptions id="roomOptions">
     <room id="cab">
         
+        <archref id="parentSeries">
+            <unitid identifier="12006803" type="naraID" label="NARA Identifier">12006803</unitid>
+            <unittitle id="37-wht-cab" label="Parent Series">Cabinet Room Sound Recordings</unittitle>
+        </archref>
+        
         <abstract id="historicalAbstract" encodinganalog="545$a">
             This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
         </abstract>
@@ -32,6 +37,11 @@
     </room>
     
     <room id="cdhw">
+
+        <archref id="parentSeries">
+            <unitid identifier="17408783" type="naraID" label="NARA Identifier">17408783</unitid>
+            <unittitle id="37-wht-cdhw" label="Parent Series">Camp David Hard Wire Sound Recordings</unittitle>
+        </archref>
 
         <abstract id="historicalAbstract" encodinganalog="545$a">
             This Camp David Hard Wire recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
@@ -64,6 +74,11 @@
     </room>
     
     <room id="cdsd">
+        
+        <archref id="parentSeries">
+            <unitid identifier="17408953" type="naraID" label="NARA Identifier">17408953</unitid>
+            <unittitle id="37-wht-cdsd" label="Parent Series">Camp David Study Desk Telephone Recordings</unittitle>
+        </archref>
         
         <abstract id="historicalAbstract" encodinganalog="545$a">
             This Camp David Study Desk recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
@@ -98,6 +113,11 @@
     
     <room id="cdst">
         
+        <archref id="parentSeries">
+            <unitid identifier="17409122" type="naraID" label="NARA Identifier">17409122</unitid>
+            <unittitle id="37-wht-cdsd" label="Parent Series">Camp David Study Table Telephone Recordings</unittitle>
+        </archref>
+        
         <abstract id="historicalAbstract" encodinganalog="545$a">
             This Camp David Study Table recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
         </abstract>
@@ -131,7 +151,12 @@
     
     
     <room id="eob">
-        
+
+        <archref id="parentSeries">
+            <unitid identifier="17409890" type="naraID" label="NARA Identifier">17409890</unitid>
+            <unittitle id="37-wht-eob" label="Parent Series">Executive Office Building Sound Recordings</unittitle>
+        </archref>
+
         <abstract id="historicalAbstract" encodinganalog="545$a">
             This Old Executive Office Building recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
         </abstract>
@@ -165,6 +190,11 @@
     
     <room id="oval">
         
+        <archref id="parentSeries">
+            <unitid identifier="17409633" type="naraID" label="NARA Identifier">17409633</unitid>
+            <unittitle id="37-wht-oval" label="Parent Series">Oval Office Sound Recordings</unittitle>
+        </archref>
+        
         <abstract id="historicalAbstract" encodinganalog="545$a">
             This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
         </abstract>
@@ -197,6 +227,11 @@
     </room>
     
     <room id="wht">
+        
+        <archref id="parentSeries">
+            <unitid identifier="17412458" type="naraID" label="NARA Identifier">17412458</unitid>
+            <unittitle id="37-wht-wht" label="Parent Series">White House Telephone Recordings</unittitle>
+        </archref>
         
         <abstract id="historicalAbstract" encodinganalog="545$a">
             This White House Telephone recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
