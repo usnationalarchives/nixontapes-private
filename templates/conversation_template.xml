@@ -19,8 +19,8 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 			<author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
 			
 			<sponsor>
-				This subject log has been analyzed and encoded as part of a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.<lb/>
-				Digitization of the White House Tapes is supported by the Preservation Programs and the Office of Innovation at the National Archives and Records Administration.
+				Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.<lb/>
+				Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the Preservation Programs Division and the Office of Innovation at the National Archives and Records Administration.
 			</sponsor>
 
 		</titlestmt>
@@ -76,9 +76,9 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 			<date normal="2015" encodinganalog="Date" type="publication">2015</date>
 			<p>Under United States copyright laws, the portions of this finding aid produced as part of United States federal government work are not subject to copyright restrictions.</p>
 			
-			<sponsor id="encodingSponsor">This subject log has been analyzed and encoded as part of a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.</sponsor>
+			<sponsor id="descriptiveSponsor" encodinganalog="536$a">Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.</sponsor>
 			
-			<sponsor id="digitizationSponsor">Digitization of the White House Tapes is supported by the Preservation Programs and the Office of Innovation at the National Archives and Records Administration.</sponsor>
+			<sponsor id="digitizationSponsor" encodinganalog="536$a">Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the Preservation Programs Division and the Office of Innovation at the National Archives and Records Administration.</sponsor>
 			
 		</titlepage>
 	</frontmatter>
@@ -117,7 +117,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 			</physdesc> -->
 						
 			<repository label="Repository"> 
-				<corpname>Richard Nixon Presidential Library and Museum</corpname>
+				<corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>
 			</repository> 
 			
 			<!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naraID" label="National Archives Identifier">######</unitid> -->
@@ -325,7 +325,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 			
 				<p>Access is governed by the Presidential Recordings and Materials Preservation Act of 1974; Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including Executive Order 13526.</p>
 					
-				<p>For more information, please contact the Tapes Team at the Richard Nixon Presidential Library and Museum: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov"  xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
+				<p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov"  xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
 				
 			</accessrestrict>
 
@@ -392,7 +392,8 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 				</processinfo>
 				
 				<note id="supportNote">
-					<p>This subject log has been analyzed and encoded as part of a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.</p>
+					<p>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the <corpname source="nixonTapesIndex" role="repository" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="NARA-V">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
+					<p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="NARA-RX">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="NARA-V">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
 				</note>
 				
 				<note id="encodingHistory">

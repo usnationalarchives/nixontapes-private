@@ -28062,14 +28062,14 @@
     <participant identifier="00002071" abbreviation="CDO">
     	<abbreviation>CDO</abbreviation>
     	<firstPart>Camp David operator</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002071" normal="CDO">Camp David operator</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002071" normal="CDO">Camp David operator</corpname>
     	<indirectOrder>Camp David operator</indirectOrder>
     	<directOrder>Camp David operator</directOrder>
     </participant>
     <participant identifier="00003178" abbreviation="CPO">
     	<abbreviation>CPO</abbreviation>
     	<firstPart>Chief Petty Officer</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003178" normal="CPO">Chief Petty Officer</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003178" normal="CPO">Chief Petty Officer</corpname>
     	<indirectOrder>Chief Petty Officer</indirectOrder>
     	<directOrder>Chief Petty Officer</directOrder>
     </participant>
@@ -28083,7 +28083,7 @@
     <participant identifier="00002072" abbreviation="SCO">
     	<abbreviation>SCO</abbreviation>
     	<firstPart>San Clemente operator</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002072" normal="SCO">San Clemente operator</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002072" normal="SCO">San Clemente operator</corpname>
     	<indirectOrder>San Clemente operator</indirectOrder>
     	<directOrder>San Clemente operator</directOrder>
     </participant>
@@ -28097,63 +28097,63 @@
     <participant identifier="00002794" abbreviation="USSS">
     	<abbreviation>USSS</abbreviation>
     	<firstPart>United States Secret Service agents</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002794" normal="USSS">United States Secret Service agents</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002794" normal="USSS">United States Secret Service agents</corpname>
     	<indirectOrder>United States Secret Service agents</indirectOrder>
     	<directOrder>United States Secret Service agents</directOrder>
     </participant>
     <participant identifier="00002919" abbreviation="WHO">
     	<abbreviation>WHO</abbreviation>
     	<firstPart>White House operator</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002919" normal="WHO">White House operator</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002919" normal="WHO">White House operator</corpname>
     	<indirectOrder>White House operator</indirectOrder>
     	<directOrder>White House operator</directOrder>
     </participant>
     <participant identifier="00002920" abbreviation="WHP">
     	<abbreviation>WHP</abbreviation>
     	<firstPart>White House photographer</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002920" normal="WHP">White House photographer</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002920" normal="WHP">White House photographer</corpname>
     	<indirectOrder>White House photographer</indirectOrder>
     	<directOrder>White House photographer</directOrder>
     </participant>
     <participant identifier="00003465" abbreviation="NSC">
     	<abbreviation>NSC</abbreviation>
     	<firstPart>National Security Council</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003465" normal="NSC">National Security Council</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003465" normal="NSC">National Security Council</corpname>
     	<indirectOrder>National Security Council</indirectOrder>
     	<directOrder>National Security Council</directOrder>
     </participant>
     <participant identifier="00003466" abbreviation="JCofS">
     	<abbreviation>JCofS</abbreviation>
     	<firstPart>Joint Chiefs of Staff</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003466" normal="JCofS">Joint Chiefs of Staff</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003466" normal="JCofS">Joint Chiefs of Staff</corpname>
     	<indirectOrder>Joint Chiefs of Staff</indirectOrder>
     	<directOrder>Joint Chiefs of Staff</directOrder>
     </participant>
     <participant identifier="00003467" abbreviation="WHTG">
     	<abbreviation>WHTG</abbreviation>
     <firstPart>White House tour group</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003467" normal="WHTG">White House tour group</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003467" normal="WHTG">White House tour group</corpname>
     	<indirectOrder>White House tour group</indirectOrder>
     	<directOrder>White House tour group</directOrder>
     </participant>
     <participant identifier="00003468" abbreviation="CoLC">
     	<abbreviation>CoLC</abbreviation>
     	<firstPart>Cost of Living Council</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003468" normal="CoLC">Cost of Living Council</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003468" normal="CoLC">Cost of Living Council</corpname>
     	<indirectOrder>Cost of Living Council</indirectOrder>
     	<directOrder>Cost of Living Council</directOrder>
     </participant>
     <participant identifier="00003469" abbreviation="Cab">
     	<abbreviation>Cab</abbreviation>
     	<firstPart>Cabinet officers</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003469" normal="Cab">Cabinet officers</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003469" normal="Cab">Cabinet officers</corpname>
     	<indirectOrder>Cabinet officers</indirectOrder>
     	<directOrder>Cabinet officers</directOrder>
     </participant>
     <participant identifier="00003470" abbreviation="CCommER">
     	<abbreviation>CCommER</abbreviation>
     	<firstPart>Cabinet Committee on Executive Reorganization</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003470" normal="CCommER">Cabinet Committee on Executive Reorganization </corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003470" normal="CCommER">Cabinet Committee on Executive Reorganization </corpname>
     	<indirectOrder>Cabinet Committee on Executive Reorganization</indirectOrder>
     	<directOrder>Cabinet Committee on Executive Reorganization</directOrder>
     </participant>
@@ -28161,7 +28161,7 @@
     <participant identifier="00003471" abbreviation="CCommEP">
     	<abbreviation>CCommEP</abbreviation>
     	<firstPart>Cabinet Committee on Economic Policy</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003471" normal="CCommEP">Cabinet Committee on Economic Policy</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003471" normal="CCommEP">Cabinet Committee on Economic Policy</corpname>
     	<indirectOrder>Cabinet Committee on Economic Policy</indirectOrder>
     	<directOrder>Cabinet Committee on Economic Policy</directOrder>
     </participant>
@@ -28177,7 +28177,7 @@
     <participant identifier="00003473" abbreviation="CCommOSS">
     	<abbreviation>CCommOSS</abbreviation>
     	<firstPart>Cabinet Committee on Opportunities for the Spanish Speaking</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003473" normal="CCommOSS">Cabinet Committee on Opportunities for the Spanish Speaking</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003473" normal="CCommOSS">Cabinet Committee on Opportunities for the Spanish Speaking</corpname>
     	<indirectOrder>Cabinet Committee on Opportunities for the Spanish Speaking</indirectOrder>
     	<directOrder>Cabinet Committee on Opportunities for the Spanish Speaking</directOrder>
     </participant>
@@ -28210,7 +28210,7 @@
     <participant identifier=" 00003477 " abbreviation="CCommEd">
     	<abbreviation>CCommEd</abbreviation>
     	<firstPart>Cabinet Committee on Education</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003477" normal="CCommEd">Cabinet Committee on Education</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003477" normal="CCommEd">Cabinet Committee on Education</corpname>
     	<indirectOrder>Cabinet Committee on Education</indirectOrder>
     	<directOrder>Cabinet Committee on Education</directOrder>
     </participant>
@@ -28241,14 +28241,14 @@
     <participant identifier="00003481" abbreviation="CoBA">
     	<abbreviation>CoBA</abbreviation>
     	<firstPart>Council of Black Appointees</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003481" normal="CoBA">Council of Black Appointees</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003481" normal="CoBA">Council of Black Appointees</corpname>
     	<indirectOrder>Council of Black Appointees</indirectOrder>
     	<directOrder>Council of Black Appointees</directOrder>
     </participant>
     <participant identifier="00003482" abbreviation="RNPLM">
     	<abbreviation>RNPLM</abbreviation>
     	<firstPart>Richard Nixon Presidential Library and Museum</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>
+    	<corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>
     	<indirectOrder>Richard Nixon Presidential Library and Museum</indirectOrder>
     	<directOrder>Richard Nixon Presidential Library and Museum</directOrder>
     </participant>
@@ -28424,7 +28424,7 @@
     <participant identifier="00003504" abbreviation="CCommINC">
     	<abbreviation>CCommINC</abbreviation>
     	<firstPart>Cabinet Committee on International Narcotics Control</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003504" normal="CCommINC">Cabinet Committee on International Narcotics Control</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003504" normal="CCommINC">Cabinet Committee on International Narcotics Control</corpname>
     	<indirectOrder>Cabinet Committee on International Narcotics Control</indirectOrder>
     	<directOrder>Cabinet Committee on International Narcotics Control</directOrder>
     </participant>
@@ -28614,7 +28614,7 @@
     <participant identifier="00003527" abbreviation="NLFPOWMIA">
     	<abbreviation>NLFPOWMIA</abbreviation>
     	<firstPart>National League of Families of American Prisoners and Missing in Southeast Asia</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003527" normal="MLFPOWMIA">National League of Families of American Prisoners and Missing in Southeast Asia</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003527" normal="MLFPOWMIA">National League of Families of American Prisoners and Missing in Southeast Asia</corpname>
     	<indirectOrder>National League of Families of American Prisoners and Missing in Southeast Asia</indirectOrder>
     	<directOrder>National League of Families of American Prisoners and Missing in Southeast Asia</directOrder>
     </participant>
@@ -28812,7 +28812,7 @@
     <participant identifier="00003551" abbreviation="NAHB">
     	<abbreviation>NAHB</abbreviation>
     	<firstPart>National Association of Home Builders</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003551" normal="NAHB">National Association of Home Builders</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003551" normal="NAHB">National Association of Home Builders</corpname>
     	<indirectOrder>National Association of Home Builders</indirectOrder>
     	<directOrder>National Association of Home Builders</directOrder>
     </participant>
@@ -29281,7 +29281,7 @@
     <participant identifier="00003610" abbreviation="NCommP">
     	<abbreviation>NCommP</abbreviation>
     	<firstPart>National Commission on Productivity</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003610" normal="NCommP">National Commission on Productivity</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003610" normal="NCommP">National Commission on Productivity</corpname>
     	<indirectOrder>National Commission on Productivity</indirectOrder>
     	<directOrder>National Commission on Productivity</directOrder>
     </participant>
@@ -29590,7 +29590,7 @@
     <participant identifier="00003649" abbreviation="UTU">
     	<abbreviation>UTU</abbreviation>
     	<firstPart>United Transportation Union</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003649" normal="UTU">United Transportation Union</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003649" normal="UTU">United Transportation Union</corpname>
     	<indirectOrder>United Transportation Union</indirectOrder>
     	<directOrder>United Transportation Union</directOrder>
     </participant>
@@ -29703,7 +29703,7 @@
     <participant identifier="00003663" abbreviation="CoIEP">
     	<abbreviation>CoIEP</abbreviation>
     	<firstPart>Council on International Economic Policy</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003663" normal="CoIEP">Council on International Economic Policy</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003663" normal="CoIEP">Council on International Economic Policy</corpname>
     	<indirectOrder>Council on International Economic Policy</indirectOrder>
     	<directOrder>Council on International Economic Policy</directOrder>
     </participant>
@@ -29734,7 +29734,7 @@
     <participant identifier="00003668" abbreviation="CoITIP">
     	<abbreviation>CoITIP</abbreviation>
     	<firstPart>Council on International Trade and Investment Policy</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003668" normal="CoITIP">Council on International Trade and Investment Policy</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003668" normal="CoITIP">Council on International Trade and Investment Policy</corpname>
     	<indirectOrder>Council on International Trade and Investment Policy</indirectOrder>
     	<directOrder>Council on International Trade and Investment Policy</directOrder>
     </participant>
@@ -29866,7 +29866,7 @@
     <participant identifier="00003684" abbreviation="CFNHEF">
     	<abbreviation>CFNHEF</abbreviation>
     	<firstPart>Committee to Form a National Health Education Foundation</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003684" normal="CFNHEF">Committee to Form a National Health Education Foundation</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003684" normal="CFNHEF">Committee to Form a National Health Education Foundation</corpname>
     	<indirectOrder>Committee to Form a National Health Education Foundation</indirectOrder>
     	<directOrder>Committee to Form a National Health Education Foundation</directOrder>
     </participant>
@@ -30190,7 +30190,7 @@
     <participant identifier="00003724" abbreviation="WHCAC">
     	<abbreviation>WHCAC</abbreviation>
     	<firstPart>White House Consumer Advisory Council</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003724" normal="WHCAC">White House Consumer Advisory Council</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003724" normal="WHCAC">White House Consumer Advisory Council</corpname>
     	<indirectOrder>White House Consumer Advisory Council</indirectOrder>
     	<directOrder>White House Consumer Advisory Council</directOrder>
     </participant>
@@ -30322,7 +30322,7 @@
     <participant identifier="00003741" abbreviation="ISoIDTaA">
     	<abbreviation>ISoIDTaA</abbreviation>
     	<firstPart>International Seminar on Illicit Drug Traffic and Abuse</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003741" normal="ISoIDTaA">International Seminar on Illicit Drug Traffic and Abuse</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003741" normal="ISoIDTaA">International Seminar on Illicit Drug Traffic and Abuse</corpname>
     	<indirectOrder>International Seminar on Illicit Drug Traffic and Abuse</indirectOrder>
     	<directOrder>International Seminar on Illicit Drug Traffic and Abuse</directOrder>
     </participant>
@@ -30742,7 +30742,7 @@
     <participant identifier="00003794" abbreviation="PBPC">
     	<abbreviation>PBPC</abbreviation>
     	<firstPart>Pay Board and Price Commission</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003794" normal="PBPC">Pay Board and Price Commission</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003794" normal="PBPC">Pay Board and Price Commission</corpname>
     	<indirectOrder>Pay Board and Price Commission</indirectOrder>
     	<directOrder>Pay Board and Price Commission</directOrder>
     </participant>
@@ -30813,7 +30813,7 @@
     <participant identifier="00003803" abbreviation="CoMR">
     	<abbreviation>CoMR</abbreviation>
     	<firstPart>Committee on Mental Retardation</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003803" normal="CoMR">Committee on Mental Retardation</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003803" normal="CoMR">Committee on Mental Retardation</corpname>
     	<indirectOrder>Committee on Mental Retardation</indirectOrder>
     	<directOrder>Committee on Mental Retardation</directOrder>
     </participant>
@@ -30892,7 +30892,7 @@
     <participant identifier="00003813" abbreviation="PCFSR">
     	<abbreviation>PCFSR</abbreviation>
     	<firstPart>President's Commission on Financial Structure and Regulation</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003813" normal="PCFSR">President's Commission on Financial Structure and Regulation</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003813" normal="PCFSR">President's Commission on Financial Structure and Regulation</corpname>
     	<indirectOrder>President's Commission on Financial Structure and Regulation</indirectOrder>
     	<directOrder>President's Commission on Financial Structure and Regulation</directOrder>
     </participant>
@@ -31364,7 +31364,7 @@
     <participant identifier="00003871" abbreviation="CICBC">
     	<abbreviation>CICBC</abbreviation>
     	<firstPart>Construction Industry Collective Bargaining Commission</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003871" normal="CICBC">Construction Industry Collective Bargaining Commission</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003871" normal="CICBC">Construction Industry Collective Bargaining Commission</corpname>
     	<indirectOrder>Construction Industry Collective Bargaining Commission</indirectOrder>
     	<directOrder>Construction Industry Collective Bargaining Commission</directOrder>
     </participant>
@@ -31900,7 +31900,7 @@
     <participant identifier="00003937" abbreviation="GACoACaD">
     	<abbreviation>GACoACaD</abbreviation>
     	<firstPart>General Advisory Committee on Arms Control and Disarmament</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003937" normal="GACoACaD">General Advisory Committee on Arms Control and Disarmament</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003937" normal="GACoACaD">General Advisory Committee on Arms Control and Disarmament</corpname>
     	<indirectOrder>General Advisory Committee on Arms Control and Disarmament</indirectOrder>
     	<directOrder>General Advisory Committee on Arms Control and Disarmament</directOrder>
     </participant>
@@ -31948,7 +31948,7 @@
     <participant identifier="00003943" abbreviation="WHNPA">
     	<abbreviation>WHNPA</abbreviation>
     	<firstPart>White House News Photographers' Association</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003943" normal="WHNPA">White House News Photographers' Association</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003943" normal="WHNPA">White House News Photographers' Association</corpname>
     	<indirectOrder>White House News Photographers' Assocation</indirectOrder>
     	<directOrder>White House News Photographers' Association</directOrder>
     </participant>
@@ -32043,14 +32043,14 @@
     <participant identifier="00003956" abbreviation="PPNE">
     	<abbreviation>PPNE</abbreviation>
     	<firstPart>President's Panel on Nonpublic Education</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003956" normal="PPNE">President's Panel on Nonpublic Education</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003956" normal="PPNE">President's Panel on Nonpublic Education</corpname>
     	<indirectOrder>President's Panel on Nonpublic Education</indirectOrder>
     	<directOrder>President's Panel on Nonpublic Education</directOrder>
     </participant>
     <participant identifier="00003958" abbreviation="DCouncil">
     	<abbreviation>DCouncil</abbreviation>
     	<firstPart>Domestic Council</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003958" normal="DCouncil">Domestic Council</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003958" normal="DCouncil">Domestic Council</corpname>
     	<indirectOrder>Domestic Council</indirectOrder>
     	<directOrder>Domestic Council</directOrder>
     </participant>
@@ -32065,7 +32065,7 @@
     <participant identifier="00003959" abbreviation="PFIAB">
     	<abbreviation>PFIAB</abbreviation>
     	<firstPart>President's Foreign Intelligence Advisory Board</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003959" normal="PFIAB">President's Foreign Intelligence Advisory Board</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003959" normal="PFIAB">President's Foreign Intelligence Advisory Board</corpname>
     	<indirectOrder>President's Foreign Intelligence Advisory Board</indirectOrder>
     	<directOrder>President's Foreign Intelligence Advisory Board</directOrder>
     </participant>
@@ -33195,14 +33195,14 @@
     <participant identifier="00004099" abbreviation="CommRP">
     	<abbreviation>CommRP</abbreviation>
     	<firstPart>Committee to Re-elect the President</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004099" normal="CommRP">Committee to Re-elect the President</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004099" normal="CommRP">Committee to Re-elect the President</corpname>
     	<indirectOrder>Committee to Re-elect the President</indirectOrder>
     	<directOrder>Committee to Re-elect the President</directOrder>
     </participant>
     <participant identifier="00004100" abbreviation="CommRPFC">
     	<abbreviation>CommRPFC</abbreviation>
     	<firstPart>Committee to Re-elect the President. Finance Committee</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004100" normal="CommRPFC">Committee to Re-elect the President</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004100" normal="CommRPFC">Committee to Re-elect the President</corpname>
     	<indirectOrder>Committee to Re-elect the President</indirectOrder>
     	<directOrder>Committee to Re-elect the President</directOrder>
     </participant>
@@ -33630,7 +33630,7 @@
     <participant identifier="00004153" abbreviation="CommRPBEAC">
     	<abbreviation>CommRPBEAC</abbreviation>
     	<firstPart>Committee to Re-Elect the President. Black Executive Advisory Committee</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004153" normal="CommRPBEAC">Committee to Re-Elect the President. Black Executive Advisory Committee</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004153" normal="CommRPBEAC">Committee to Re-Elect the President. Black Executive Advisory Committee</corpname>
     	<indirectOrder>Committee to Re-Elect the President. Black Executive Advisory Committee</indirectOrder>
     	<directOrder>Committee to Re-Elect the President. Black Executive Advisory Committee</directOrder>
     </participant>
@@ -33703,7 +33703,7 @@
     <participant identifier="00004162" abbreviation="NACDAP">
     	<abbreviation>NACDAP</abbreviation>
     	<firstPart>National Advisory Council for Drug Abuse Prevention</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004162" normal="NACDAP">National Advisory Council for Drug Abuse Prevention</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004162" normal="NACDAP">National Advisory Council for Drug Abuse Prevention</corpname>
     	<indirectOrder>National Advisory Council for Drug Abuse Prevention</indirectOrder>
     	<directOrder>National Advisory Council for Drug Abuse Prevention</directOrder>
     </participant>
@@ -34558,7 +34558,7 @@
     <participant identifier="00004272" abbreviation="CoA">
     	<abbreviation>CoA</abbreviation>
     	<firstPart>Council of the Americas</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004272" normal="CoA">Council of the Americas</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004272" normal="CoA">Council of the Americas</corpname>
     	<indirectOrder>Council of the Americas</indirectOrder>
     	<directOrder>Council of the Americas</directOrder>
     </participant>
@@ -34830,7 +34830,7 @@
     <participant identifier="00004306" abbreviation="PACLMP">
     	<abbreviation>PACLMP</abbreviation>
     	<firstPart>President's Advisory Committee on Labor-Management Policy</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004306" normal="PACLMP">President's Advisory Committee on Labor-Management Policy</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004306" normal="PACLMP">President's Advisory Committee on Labor-Management Policy</corpname>
     	<indirectOrder>President's Advisory Committee on Labor-Management</indirectOrder>
     	<directOrder>President's Advisory Committee on Labor-Management</directOrder>
     </participant>
@@ -35946,7 +35946,7 @@
     <participant identifier="00004442" abbreviation="PSAComm">
     	<abbreviation>PSAComm</abbreviation>
     	<firstPart>President's Science Advisory Committee</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004442" normal="PSAComm">President's Science Advisory Committee</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004442" normal="PSAComm">President's Science Advisory Committee</corpname>
     	<indirectOrder>President's Science Advisory Committee</indirectOrder>
     	<directOrder>President's Science Advisory Committee</directOrder>
     </participant>
@@ -36487,7 +36487,7 @@
     <participant identifier="00004508" abbreviation="AFLCIOBCTD">
     	<abbreviation>AFLCIOBCTD</abbreviation>
     	<firstPart>AFL-CIO. Building and Construction Trades Department</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004508" normal="AFLCIOBCTD">AFL-CIO. Building and Construction Trades Department</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004508" normal="AFLCIOBCTD">AFL-CIO. Building and Construction Trades Department</corpname>
     	<indirectOrder>AFL-CIO. Building and Construction Trades Department</indirectOrder>
     	<directOrder>AFL-CIO's Building and Construction Trades Department</directOrder>
     </participant>
@@ -36591,7 +36591,7 @@
     <participant identifier="00004521" abbreviation="CBCaucus">
     	<abbreviation>CBCaucus</abbreviation>
     	<firstPart>Congressional Black Caucus</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004521" normal="CBCaucus">Congressional Black Caucus</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004521" normal="CBCaucus">Congressional Black Caucus</corpname>
     	<indirectOrder>Congressional Black Caucus</indirectOrder>
     	<directOrder>Congressional Black Caucus</directOrder>
     </participant>
@@ -36704,7 +36704,7 @@
     <participant identifier="00004535" abbreviation="PCommSF">
     	<abbreviation>PCommSF</abbreviation>
     	<firstPart>President's Commission on School Finance</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004535" normal="PCommSF">President's Commission on School Finance</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004535" normal="PCommSF">President's Commission on School Finance</corpname>
     	<indirectOrder>President's Commission on School Finance</indirectOrder>
     	<directOrder>President's Commission on School Finance</directOrder>
     </participant>
@@ -36850,7 +36850,7 @@
     <participant identifier="00004553" abbreviation="CCommGR">
     	<abbreviation>CCommGR</abbreviation>
     	<firstPart>Citizens' Committee for Government Reorganization</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004553" normal="CCommGR">Citizens' Committee for Government Reorganization</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004553" normal="CCommGR">Citizens' Committee for Government Reorganization</corpname>
     	<indirectOrder>Citizens' Committee for Government Reorganization</indirectOrder>
     	<directOrder>Citizens' Committee for Government Reorganization</directOrder>
     </participant>
@@ -38234,7 +38234,7 @@
     <participant identifier="00004723" abbreviation="PATCO">
     	<abbreviation>PATCO</abbreviation>
     	<firstPart>Professional Air Traffic Controllers Organization</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004723" normal="PATCO">Professional Air Traffic Controllers Organization</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004723" normal="PATCO">Professional Air Traffic Controllers Organization</corpname>
     	<indirectOrder>Professional Air Traffic Controllers Organization</indirectOrder>
     	<directOrder>Professional Air Traffic Controllers Organization</directOrder>
     </participant>
@@ -38749,7 +38749,7 @@
     <participant identifier="00004787" abbreviation="UWUA">
     	<abbreviation>UWUA</abbreviation>
     	<firstPart>Utility Workers Union of America</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004787" normal="UWUA">Utility Workers Union of America</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004787" normal="UWUA">Utility Workers Union of America</corpname>
     	<indirectOrder>Utility Workers Union of America</indirectOrder>
     	<directOrder>Utility Workers Union of America</directOrder>
     </participant>
@@ -38992,21 +38992,21 @@
     <participant identifier="00004816" abbreviation="CommHSI">
     	<abbreviation>CommHSI</abbreviation>
     	<firstPart>Committee on the Health Services Industry</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004816" normal="CommHSI">Committee on the Health Services Industry</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004816" normal="CommHSI">Committee on the Health Services Industry</corpname>
     	<indirectOrder>Committee on the Health Services Industry</indirectOrder>
     	<directOrder>Committee on the Health Services Industry</directOrder>
     </participant>
     <participant identifier="00004817" abbreviation="ROAssoc">
     	<abbreviation>ROAssoc</abbreviation>
     	<firstPart>Reserve Officers Association</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004817" normal="ROAssoc">Reserve Officers Association</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004817" normal="ROAssoc">Reserve Officers Association</corpname>
     	<indirectOrder>Reserve Officers Association</indirectOrder>
     	<directOrder>Reserve Officers Association</directOrder>
     </participant>
     <participant identifier="00004818" abbreviation="JSoc">
     	<abbreviation>JSoc</abbreviation>
     	<firstPart>Justinian Society</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004818" normal="JSoc">Justinian Society</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004818" normal="JSoc">Justinian Society</corpname>
     	<indirectOrder>Justinian Society</indirectOrder>
     	<directOrder>Justinian Society</directOrder>
     </participant>
@@ -39072,7 +39072,7 @@
     <participant identifier="00004826" abbreviation="Press">
     	<abbreviation>Press</abbreviation>
     	<firstPart>Members of the press</firstPart>
-    	<corpname encodinganalog="710$a" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004826" normal="Press">Members of the press</corpname>
+    	<corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004826" normal="Press">Members of the press</corpname>
     	<indirectOrder>Members of the press</indirectOrder>
     	<directOrder>members of the press</directOrder>
     </participant>

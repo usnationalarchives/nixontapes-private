@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nixonNames>
+    <reference identifier="00004829" abbreviation="NARA-V">
+        <abbreviation>NARA-V</abbreviation>
+        <firstPart>National Archives and Records Administration. Office of Innovation</firstPart>
+        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="NARA-V"
+            >National Archives and Records Administration. Office of Innovation</corpname>
+        <indirectOrder>Office of Innovation, National Archives and Records
+            Administration</indirectOrder>
+        <directOrder>National Archives and Records Administration. Office of
+            Innovation</directOrder>
+    </reference>
+    <reference identifier="00004830" abbreviation="NARA-V">
+        <abbreviation>NARA-RX</abbreviation>
+        <firstPart>National Archives and Records Administration. Preservation Programs
+            Division</firstPart>
+        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="NARA-RX"
+            >National Archives and Records Administration. Preservation Programs Division</corpname>
+        <indirectOrder>Preservation Programs Division, National Archives and Records
+            Administration</indirectOrder>
+        <directOrder>National Archives and Records Administration. Preservation Programs
+            Division</directOrder>
+    </reference>
+    <reference identifier="0000xxxx" abbreviation="">
+        <abbreviation/>
+        <firstPart/>
+        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-0000xxxx" normal=""/>
+        <indirectOrder/>
+        <directOrder/>
+    </reference>
+    <participant identifier="0000yyyy" abbreviation="">
+        <abbreviation></abbreviation>
+        <lastName></lastName>
+        <firstPart></firstPart>
+        <marriedMrs></marriedMrs>
+        <persname source="nixonTapesIndex" authfilenumber="37-wht-eac-0000yyyy" normal="">Moe, Alfred F. (Mrs.)</persname>
+        <indirectOrder>Moe, Alfred F. (Mrs.)</indirectOrder>
+        <directOrder>Mrs. Alfred F. Moe</directOrder>
+    </participant>
+</nixonNames>
