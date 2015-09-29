@@ -17,7 +17,12 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 	 		<subtitle>A Subject Log of the Conversation between President Richard M. Nixon and Alexander P. Butterfield</subtitle>
 			
 			<author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
-		
+			
+			<sponsor>
+				This subject log has been analyzed and encoded as part of a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.<lb/>
+				Digitization of the White House Tapes is supported by the Preservation Programs and the Office of Innovation at the National Archives and Records Administration.
+			</sponsor>
+
 		</titlestmt>
 	
 		<publicationstmt>
@@ -71,6 +76,10 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 			<date normal="2015" encodinganalog="Date" type="publication">2015</date>
 			<p>Under United States copyright laws, the portions of this finding aid produced as part of United States federal government work are not subject to copyright restrictions.</p>
 			
+			<sponsor id="encodingSponsor">This subject log has been analyzed and encoded as part of a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.</sponsor>
+			
+			<sponsor id="digitizationSponsor">Digitization of the White House Tapes is supported by the Preservation Programs and the Office of Innovation at the National Archives and Records Administration.</sponsor>
+			
 		</titlepage>
 	</frontmatter>
 
@@ -88,37 +97,43 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 				<persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="nixon-eac-00000370" normal="APB">Butterfield, Alexander P.</persname>
 			</origination>
 			
-			<origination id="isPartOf" label="Parent Materials">
-				<archref id="parentCollection">
+			<origination id="isPartOf" label="Parent Materials (Is Part Of)">
+				<archref id="parentCollection" xlink:href="37-wht">
 					<unitid identifier="597542" type="naraID" label="National Archives Identifier">597542</unitid>
-					<unittitle id="collection_white-house-tapes">White House Tapes</unittitle>
+					<unittitle id="collectionTitle" label="Collection">White House Tapes</unittitle>
 				</archref>
-				<archref  id="parentSeries">
-					<!-- <unitid identifier="ARCidToBeGenerated" type="naraID" label="National Archives Identifier">#######</unitid> -->
-					<unittitle id="series_oval-office">Oval Office Sound Recordings</unittitle>
+				<archref id="parentSeries" xlink:href="37-wht-oval">
+					<unitid identifier="http://catalog.archives.gov/id/17409633" type="naraID" label="NARA Identifier">17409633</unitid>
+					<unittitle id="seriesTitle" label="Series">Oval Office Sound Recordings</unittitle>
 				</archref>
-				<archref id="parentFile">
+				<archref id="parentFile" xlink:href="37-wht-audiotape-450">
 					<unitid identifier="6051320" type="naraID" label="National Archives Identifier">6051320</unitid>
-					<unittitle>Audiotape 450</unittitle>
+					<unittitle id="audiotapeTitle" label="File">Audiotape 450</unittitle>
 				</archref>
 			</origination>
 			
-			<physdesc label="Duration">
-				<extent encodinganalog="300" type="totalTime" unit="hhmmss">00:03:25</extent>
-			</physdesc>
+			<!-- <physdesc label="Duration">
+				<extent encodinganalog="300$a" type="totalTime" unit="hhmmss">00:00:00</extent>
+			</physdesc> -->
 						
 			<repository label="Repository"> 
 				<corpname>Richard Nixon Presidential Library and Museum</corpname>
 			</repository> 
 			
 			<!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naraID" label="National Archives Identifier">######</unitid> -->
-			<!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">OVAL 450-001</unitid> -->
+			<unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">OVAL 450-001</unitid>
 				
-			<container id="wht-audiotape-450_track-002" type="track" label="Track">2</container>
+			<!-- <container id="wht-audiotape-450_track-002" type="track" label="Track">2</container> -->
 			
 			<!-- <abstract label="Abstract" encodinganalog="545$a">[Bio/Hist sentence]</abstract> -->
 			
-			<abstract encodinganalog="520$a">On February 16, 1971, _ and _ met in the _ at an unknown time between 7:56 am and 8:58 am. Topics of conversation included _.</abstract>
+			<abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">
+				On February 16, 1971, _ and _ met in the _ at an unknown time between 7:56 am and 8:58 am. Topics of conversation included _.
+			</abstract>
+			
+			<abstract id="historicalAbstract" encodinganalog="545$a" label="Abstract (Historical Context)">
+				This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
+			</abstract>
 			
 			<langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language></langmaterial>
 	
@@ -128,6 +143,17 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 			<p id="date">February 16, 1971</p>
 			<p id="time">at an unknown time between 7:56 am and 8:58 am</p>
 		</odd>
+		
+		<bioghist id="recordingHistory" encodinganalog="545$a">
+			
+			<head>Recording Location and Taping System History</head>
+			
+			<p>Beginning in 1971, President Richard Nixon authorized the installation of a secret taping system in selected portions of the White House, Cabinet Room, Oval Office, Old Executive Office Building, and Camp David. Collectively, these recordings constitute the Nixon Administration's White House Tapes.</p>
+			<p>In February 1971, the United State Secret Service installed listening devices in the White House. They placed seven microphones in the Oval Office: five in the President's desk and one on each side of the fireplace. The Secret Service technicians wired these devices to central mixers that were then connected to recorders in an old locker room in the White House basement. These recordings became known as the Oval Office recordings.</p>
+			<p>This system was a secret taping system maintained by the Secret Service. Only President Nixon, H. R. Haldeman, and a few of the President's close personal assistants knew the system existed. One of its key features was that the recording equipment in the Oval Office, the EOB office, at Camp David, and on the telephones was sound-activated, operating without a conscious decision by the President to record a specific conversation. The taping system was tied to the Presidential Locator System, which was also operated by the Secret Service, and was designed to continue recording for fifteen to thirty seconds after the President left the room.</p>
+			<p>On July 16, 1973, Special Assistant to the President Alexander Butterfield revealed the existence of the White House taping system during his testimony before the Senate Watergate Committee. Following this public revelation, White House Chief of Staff Alexander Haig ordered the removal of the entire presidential taping system.</p>         
+			
+		</bioghist>
 
 		<scopecontent>
 			
@@ -141,23 +167,33 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 					
 				<p>Topics of conversation included _.</p>
 			</scopecontent>
-		
-			<scopecontent id="natureOfRecording">
+			
+			<scopecontent id="recordingNotes">
 				
-				<head>Nature of Recording</head>
+				<scopecontent id="audioQuality">
 				
-				<p>This conversation was captured by the recording system in the White House's Oval Office, in Washington, D.C.</p>
+					<head>Audio Quality</head>
+					
+					<p>The audio quality of the Nixon White House Tapes is generally poor. While some locations generated better quality recordings than others, inferior recording equipment, cheap tape stock, improper microphone placement, taping system malfunctions, volume fluctuation, background noise, and electrical interference contributed to the poor quality of the recordings. Other noises greatly affect the audibility of conversations, including such small happenings as the signing of documents or the clinking of coffee cups.</p>
+					
+					<p>As a result of the microphone coverage, Oval Office conversations have clear audio relative to other Nixon White House Tapes. Even still, extraneous room noises and background sounds are evident and can obscure portions of conversations. The microphones in the desk picked up the sound of anyone writing on the desk or the setting down a coffee cup or a glass. Furthermore, the desk microphones captured the sound of President Nixon's chair banging into the desk, the President's feet banging on the desk as he put his feet up, and the sound of the President's knees knocking against the kneewell of his desk. The microphone installed near the telephone captured the ringing of the telephone, which sometimes blocked out small portions of conversation. On occasion, the helicopter rotor blades from Marine One completely obliterated conversation taking place in the Oval Office. The recording system also captured the sirens of ambulances, fire engines, and police vehicles as they blared in through open windows. On occasion, the opening and closing of interior and exterior doors briefly interfered with conversations.</p>
+					
+				</scopecontent>
 				
-				<p>In February 1971, the United States Secret Service, at the request of President Richard Nixon, installed recording devices in the White House. They placed seven microphones in the Oval Office: five in the President's desk and two in the wall sconces on either side of the fireplace.</p>
-			    
-				<p>As a result of the microphone coverage, Oval Office conversations have clear audio relative to other Nixon White House Tapes. Even still, extraneous room noises and background sounds are evident and can obscure portions of conversations. The microphones in the desk picked up the sound of anyone writing on the desk or the setting down a coffee cup or a glass. Furthermore, the desk microphones captured the sound of President Nixon's chair banging into the desk, the President's feet banging on the desk as he put his feet up, and the sound of the President's knees knocking against the kneewell of his desk. The microphone installed near the telephone captured the ringing of the telephone, which sometimes blocked out small portions of conversation. On occasion, the helicopter rotor blades from Marine One completely obliterated conversation taking place in the Oval Office. The recording system also captured the sirens of ambulances, fire engines, and police vehicles as they blared in through open windows. On occasion, the opening and closing of interior and exterior doors briefly interfered with conversations.</p>
+				<scopecontent id="natureOfRecording">
+				
+					<head>Nature of the Recording</head>
+					
+					<p>The White House Tapes comprise secretly recorded human conversation. Most participants were unaware that their meetings and telephone calls were being recorded. The taping system captured often unstructured and free-flowing discussions between close personal associates intimately familiar with the topic. As a result, users may find the recorded conversations difficult to follow.</p>
+				</scopecontent>
+				
 			</scopecontent>
 		
 			<arrangement>
 				
 				<head>Collection Arrangement</head>
 				
-				<arrangement>
+				<arrangement id="subjectLogArrangement">
 					
 					<head>About the Subject Log</head>
 			
@@ -178,13 +214,19 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 					
 				</arrangement>
 				
-				<arrangement>
+				<arrangement id="audioFormat">
 					
 					<head>Audio Format</head>
 				
 					<p>This conversation was recorded to audiotape on a system maintained by the United States Secret Service. The National Archives transferred the original audiotape to Digital Audio Tape (DAT), which, in turn, was later converted to digital audio files.</p>
 					
-					<p>The audio recording of this conversation has been digitized and made available to the public. <!-- For portions that have been deemed withdrawn (withheld), a ten-second tone replaces the removed portion. --></p>
+					<p>The audio recording of this conversation has been digitized and made available to the public. <!-- For portions that have been deemed withdrawn (withheld), a _ten-second tone_ replaces the removed portion. --></p>
+					
+					<note id="digitalRemastering" label="Digital Remastering Project">
+						<p>The White House Tapes are currently undergoing preservation remastering, from which digital derivatives will be made and released to the public as appopriate.</p>
+					</note>
+					
+					<p></p>
 					
 				</arrangement>
 				
@@ -286,7 +328,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 				<p>For more information, please contact the Tapes Team at the Richard Nixon Presidential Library and Museum: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov"  xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
 				
 			</accessrestrict>
-					
+
 			<userestrict encodinganalog="540">
 		
 				<head>Copyright Notice</head>
@@ -349,9 +391,15 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 						, and released on <date normal="1999-10-05" type="releaseDate">October 5, 1999</date>.</p>
 				</processinfo>
 				
-				<p>Encoded by Amanda Ross, May 2015</p>
-				<!-- Edited by ?, Mm yyyy -->
+				<note id="supportNote">
+					<p>This subject log has been analyzed and encoded as part of a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.</p>
+				</note>
 				
+				<note id="encodingHistory">
+					<p>Encoded by Amanda Ross, May 2015</p>
+					<!-- Edited by ?, Mm yyyy -->
+				</note>
+
 			</processinfo>
 		
 		</descgrp>
