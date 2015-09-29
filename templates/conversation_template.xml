@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<?xml-stylesheet type="text/xsl" href="./styles/NIXONschemaEADtoHTML.xsl" ?>
+
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+
+	<eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" repositoryencoding="iso15511" relatedencoding="DC" scriptencoding="iso15924">
+	
+	<eadid encodinganalog="856$u" countrycode="US" mainagencycode="US-DNA" publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::450-001::White House Tapes: Conversation 450-001)//EN" url="http://nixonlibrary.gov/tapes/37-wht-conversation-450-001.html">37-wht-conversation-450-001</eadid>
+	
+	<filedesc>
+		<titlestmt>
+			<titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 450-001, <date>February 16, 1971</date></titleproper>
+			<titleproper type="filing">Conversation 450-001</titleproper>
+	 		<subtitle>A Subject Log of the Conversation between President Richard M. Nixon and Alexander P. Butterfield</subtitle>
+			
+			<author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
+		
+		</titlestmt>
+	
+		<publicationstmt>
+	
+			<publisher encodinganalog="Publisher">Richard Nixon Presidential Library and Museum</publisher>
+			<address>
+				<addressline>College Park, MD and Yorba Linda, CA</addressline>
+			</address>
+			
+			<date normal="2015" encodinganalog="Date" type="publication">2015</date>
+			<p id="copyright">Under United States copyright laws, the portions of this finding aid produced as part of United States federal government work are not subject to copyright restrictions.</p>
+			
+		</publicationstmt>
+	
+	</filedesc>
+
+		<profiledesc>
+			<creation>Base machine-readable finding aid derived using XQuery scripts written by Amanda Ross<lb/>
+				<date normal="2015-05-14">May 14, 2015</date>
+			</creation>
+			<langusage>Description is in
+				<language encodinganalog="Language" langcode="eng" scriptcode="Latn">English</language>
+			</langusage>
+		
+			<descrules>This finding aid was prepared using <bibref><title render="italic">Describing Archives: A Content Standard</title>, <edition>2nd edition</edition>, <imprint><geogname>Chicago</geogname>: <publisher>Society of American Archivists</publisher>, <date type="publication" normal="2013">2013</date></imprint></bibref> (DACS).</descrules>
+		
+		</profiledesc>
+		
+		<!-- <revisiondesc>
+			<change>
+				<date normal="" type="addition"></date>
+				<item></item>
+			</change>
+			<change>
+				<date normal="" type="edit"></date>
+				<item></item>
+			</change>
+		</revisiondesc> -->
+	
+	</eadheader>
+
+	
+	<frontmatter>
+		<titlepage>
+			<titleproper>White House Tapes: Conversation 450-001,
+				<date>February 16, 1971</date>
+			</titleproper>
+			
+			<publisher>Richard Nixon Presidential Library and Museum</publisher>
+
+			<date normal="2015" encodinganalog="Date" type="publication">2015</date>
+			<p>Under United States copyright laws, the portions of this finding aid produced as part of United States federal government work are not subject to copyright restrictions.</p>
+			
+		</titlepage>
+	</frontmatter>
+
+
+	<archdesc level="otherlevel" otherlevel="item" relatedencoding="MARC21">
+		<did>
+			<head>Descriptive Summary</head>
+			
+			<unittitle label="Title" encodinganalog="245$a">White House Tapes: Conversation 450-001</unittitle>
+			
+			<unitdate label="Date" encodinganalog="245$d" normal="1971-02-16/1971-02-16" type="inclusive"  certainty="supplied">February 16, 1971</unitdate>
+		
+			<origination id="participants" label="Participants">
+				<persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="nixon-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
+				<persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="nixon-eac-00000370" normal="APB">Butterfield, Alexander P.</persname>
+			</origination>
+			
+			<origination id="isPartOf" label="Parent Materials">
+				<archref id="parentCollection">
+					<unitid identifier="597542" type="naraID" label="National Archives Identifier">597542</unitid>
+					<unittitle id="collection_white-house-tapes">White House Tapes</unittitle>
+				</archref>
+				<archref  id="parentSeries">
+					<!-- <unitid identifier="ARCidToBeGenerated" type="naraID" label="National Archives Identifier">#######</unitid> -->
+					<unittitle id="series_oval-office">Oval Office Sound Recordings</unittitle>
+				</archref>
+				<archref id="parentFile">
+					<unitid identifier="6051320" type="naraID" label="National Archives Identifier">6051320</unitid>
+					<unittitle>Audiotape 450</unittitle>
+				</archref>
+			</origination>
+			
+			<physdesc label="Duration">
+				<extent encodinganalog="300" type="totalTime" unit="hhmmss">00:03:25</extent>
+			</physdesc>
+						
+			<repository label="Repository"> 
+				<corpname>Richard Nixon Presidential Library and Museum</corpname>
+			</repository> 
+			
+			<!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naraID" label="National Archives Identifier">######</unitid> -->
+			<!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">OVAL 450-001</unitid> -->
+				
+			<container id="wht-audiotape-450_track-002" type="track" label="Track">2</container>
+			
+			<!-- <abstract label="Abstract" encodinganalog="545$a">[Bio/Hist sentence]</abstract> -->
+			
+			<abstract encodinganalog="520$a">On February 16, 1971, _ and _ met in the _ at an unknown time between 7:56 am and 8:58 am. Topics of conversation included _.</abstract>
+			
+			<langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language></langmaterial>
+	
+		</did>
+
+		<odd encodinganalog="518$a" altrender="19710216T07:56:00-05:00/19710216T08:58:00-05:00">
+			<p id="date">February 16, 1971</p>
+			<p id="time">at an unknown time between 7:56 am and 8:58 am</p>
+		</odd>
+
+		<scopecontent>
+			
+			<head>Collection Overview</head>
+			
+			<scopecontent id="conversationSummary">
+				
+				<head>Conversation Summary</head>
+				
+				<p>On February 16, 1971, _ and _ met in the _ at an unknown time between 7:56 am and 8:58 am. Topics of conversation included _.</p>
+					
+				<p>Topics of conversation included _.</p>
+			</scopecontent>
+		
+			<scopecontent id="natureOfRecording">
+				
+				<head>Nature of Recording</head>
+				
+				<p>This conversation was captured by the recording system in the White House's Oval Office, in Washington, D.C.</p>
+				
+				<p>In February 1971, the United States Secret Service, at the request of President Richard Nixon, installed recording devices in the White House. They placed seven microphones in the Oval Office: five in the President's desk and two in the wall sconces on either side of the fireplace.</p>
+			    
+				<p>As a result of the microphone coverage, Oval Office conversations have clear audio relative to other Nixon White House Tapes. Even still, extraneous room noises and background sounds are evident and can obscure portions of conversations. The microphones in the desk picked up the sound of anyone writing on the desk or the setting down a coffee cup or a glass. Furthermore, the desk microphones captured the sound of President Nixon's chair banging into the desk, the President's feet banging on the desk as he put his feet up, and the sound of the President's knees knocking against the kneewell of his desk. The microphone installed near the telephone captured the ringing of the telephone, which sometimes blocked out small portions of conversation. On occasion, the helicopter rotor blades from Marine One completely obliterated conversation taking place in the Oval Office. The recording system also captured the sirens of ambulances, fire engines, and police vehicles as they blared in through open windows. On occasion, the opening and closing of interior and exterior doors briefly interfered with conversations.</p>
+			</scopecontent>
+		
+			<arrangement>
+				
+				<head>Collection Arrangement</head>
+				
+				<arrangement>
+					
+					<head>About the Subject Log</head>
+			
+					<p>To assist listeners in understanding the conversation and finding segments pertinent to their own interests, a team of archivists has created a Subject Log, which outlines major topics, names, and organizations in sequential order.</p>
+					
+					<list id="loggingNotes" type="marked">
+						
+						<item>Logs include action statements, which indicate when someone entered or exited a room. Action statements are underlined.</item>
+						
+						<item>If a conversation recorded in one of the offices also captures a telephone conversation, a cross-reference to the corresponding telephone recording is provided.</item>
+						
+						<item>If a telephone recording also captures a conversation taking place in one of the offices, a cross-reference to the corresponding room conversation is provided.</item>
+						
+						<item>Logs indicate which portions, if any, were reviewed under the 2007 Deed of Gift.</item>
+						
+						<item>In some cases, the Watergate Special Prosecution Force or court-ordered mandates resulted in a transcript of the entire conversation or portions of conversation. For these portions, archivists have provided a citation to the related transcript<!--, in place of subject logging -->.</item>
+					</list>
+					
+				</arrangement>
+				
+				<arrangement>
+					
+					<head>Audio Format</head>
+				
+					<p>This conversation was recorded to audiotape on a system maintained by the United States Secret Service. The National Archives transferred the original audiotape to Digital Audio Tape (DAT), which, in turn, was later converted to digital audio files.</p>
+					
+					<p>The audio recording of this conversation has been digitized and made available to the public. <!-- For portions that have been deemed withdrawn (withheld), a ten-second tone replaces the removed portion. --></p>
+					
+				</arrangement>
+				
+			</arrangement>
+		
+		</scopecontent>
+
+		<controlaccess>
+		
+			<!-- <controlaccess id="subjectHeadings">
+				
+				<head>Subject Headings</head>
+				
+				Insert LC Subject Headings here, map to ARC/OPA headings
+			
+			</controlaccess> -->
+			
+			<controlaccess id="PRMPAdeedCategories">
+				
+				<head>Determination Categories</head>
+				<p>These processing categories are governed by the Presidential Recordings and Materials Preservation Act of 1974 (PRMPA) and the 2007 Deed of Gift.</p>
+				<!--			
+					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01">Abuse of Governmental Powers / Watergate</subject>
+							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-01">Misuse of Government Agencies</subject>
+							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-02">Watergate Break-In</subject>
+							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-03">Watergate Cover-Up</subject>
+							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-04">Campaign Practices</subject>
+							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-05">Obstruction of Justice</subject>
+							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-07">Milk Fund</subject>
+							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-08">Hughes-Rebozo Investigation</subject>
+							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-09">Emoluments and Tax Evasion</subject>
+							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-10">International Telephone and Telegraph</subject>
+					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination02">Administrative Powers</subject>
+					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination03">Department Policies, Agency Policies, and Executive Decisions</subject>
+					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination04">Legislative Leader</subject>
+					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination05">Presidential Foreign Relations Power</subject>
+					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination06">Commander-in-Chief</subject>
+					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination07">White House Internal or Institutional Organization</subject>
+					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination08">Ceremonial Duties of the President</subject>
+					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination09">Official Travel, Head of State, and Foreign Visits</subject>
+					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination10">Presidential Statements</subject>
+					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination11">Presidential Appointments and Personnel Management</subject>
+					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination12">White House Entertainment and Social Affairs</subject>
+				-->
+				
+			</controlaccess>
+			
+			<controlaccess id="recordingLocation">
+				
+				<head>Location of Recording</head>
+				
+				<geogname encodinganalog="518$b" normal="38.8974, -77.0374" source="GeoHack" role="location">Oval Office</geogname>
+
+			</controlaccess>
+			
+		</controlaccess>
+	
+
+<!-- Use separated materials and related materials clips here to enter in information. -->
+		
+		<!--
+
+		<altformavail type="audio">
+		<head>Digitized Audio</head>
+		
+			<altformavail id="37-wht-conversation-450-001.mp3" type="mp3" encodinganalog="530$a">
+				<p>The original audio has been converted to digital format and is available to the public as an MP3 file.</p>
+			</altformavail>
+			
+			<altformavail id="37-wht-conversation-450-001.wav" type="bwf" encodinganalog="530$a">
+				<p>The original audio has been converted to digital format and is available to the public as a Broadcast WAVE Format (BWF) file.</p>
+			</altformavail>
+			
+		</altformavail>
+		-->
+
+		<dsc type="combined">
+
+			<head>Conversation Subject Log</head>
+
+			<!-- Logging here -->
+
+		</dsc>
+
+		<descgrp type="admininfo">
+			
+			<head>Administrative Information</head>
+			
+			<accessrestrict>
+					
+				<head>Access Restrictions</head>
+				
+				<accessrestrict encodinganalog="506" type="accessUnrestricted">
+					<p>This conversation has no restrictions and is fully open to the public.</p>
+				</accessrestrict>
+			
+				<p>Access is governed by the Presidential Recordings and Materials Preservation Act of 1974; Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including Executive Order 13526.</p>
+					
+				<p>For more information, please contact the Tapes Team at the Richard Nixon Presidential Library and Museum: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov"  xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
+				
+			</accessrestrict>
+					
+			<userestrict encodinganalog="540">
+		
+				<head>Copyright Notice</head>
+		
+				<p>The materials processed and released under the Presidential Recordings and Materials Preservation Act of 1974 are considered public record and, as such, are in the public domain. Materials processed and released under the 2007 Deed of Gift are also considered property of the United States and are therefore in the public domain.</p>
+				
+				<p>Certain individuals recorded may claim rights in their recorded voices, under state law. Use of such recorded voices found in this catalog may be subject to these claims. Anyone who intends to use these materials commercially may want to contact the individuals recorded or their representatives.</p>
+		
+				<p>Any materials used for academic research or otherwise should be fully credited with the source.</p>
+		
+			</userestrict>
+		
+			<prefercite>
+				
+				<head>Preferred Citation</head>
+		
+				<p>Conversation 450-001<!-- (National Archives Identifier ######) -->, Audiotape 450, Oval Office Sound Recordings, White House Tapes, Richard Nixon Presidential Library and Museum, National Archives and Records Administration.</p>
+		
+			</prefercite>
+		
+		
+			<acqinfo encodinganalog="541">
+				
+				<head>Acquisitions Information</head>
+				
+				<acqinfo id="acqPRMPA">
+					
+					<head>Presidential Recordings and Materials Preservation Act of 1974</head>
+					
+					<p>The Nixon-era White House Tapes are subject to the Presidential Recordings and Materials Preservation Act (PRMPA) of 1974. PRMPA, which applies only to the Nixon Presidential Materials, stipulates that those materials relevant to the understanding of Abuse of Governmental Power and Watergate are to be processed and released to the public prior to the release of all other materials. Materials related to the Abuse of Governmental Power and the constitutional and statutory duties of the President and his White House staff are retained by the National Archives. PRMPA mandated the promulgation of access restrictions for the processing of the Nixon Tapes.</p>
+					
+					<p>The resulting Nixon Public Acccess Regulations 36 CFR 1275 state that the National Archives must segregate and return to the estate of former President Nixon those materials identified as purely &quot;personal-private&quot; or &quot;personal-political,&quot; and unrelated to the President's constitutional and statutory duties. This conversation has been processed under these regulations.</p>
+					
+				</acqinfo>
+				
+				<acqinfo id="acq2007Deed">
+					
+					<head>2007 Deed of Gift</head>
+					
+					<p>However, in 2007, the estate of Richard Nixon negotiated a Deed of Gift with the Richard Nixon Presidential Library and Museum. By this agreement, materials deemed &quot;personal-political&quot; have been deeded back to the National Archives for release to the public. Materials originally deemed &quot;person-private&quot; have been deeded back to the National Archives, with the exception of materials concerning the medical history or non-Watergate-related personal finances of Richard Nixon or the non-public activities of the First Family.</p>
+					
+					<p>Upon re-review of this conversation, provisions of the 2007 Deed of Gift between the estate of Richard Nixon and the National Archives will be implemented, where appropriate, to enhance access to materials. Changes in access will be noted once implemented.</p>
+					
+					<!-- <p>This conversation has been re-reviewed under the provisions of the 2007 Deed of Gift between the estate of Richard Nixon and the National Archives. Changes in access have been noted.</p> -->
+					
+				</acqinfo>
+				
+			</acqinfo>
+		
+			<processinfo encodinganalog="583">
+				
+				<head>Processing Information</head>
+				
+				<processinfo type="chronRelease">
+					<p>Processed by the Tapes Team of the Richard Nixon Presidential Library and Museum, as part of the 
+						<archref id="chronRelease">
+							<unitid id="chron1">Chron I</unitid>
+							<unittitle>First Chronological Release</unittitle>
+						</archref>
+						, and released on <date normal="1999-10-05" type="releaseDate">October 5, 1999</date>.</p>
+				</processinfo>
+				
+				<p>Encoded by Amanda Ross, May 2015</p>
+				<!-- Edited by ?, Mm yyyy -->
+				
+			</processinfo>
+		
+		</descgrp>
+
+	</archdesc>
+</ead>
+
