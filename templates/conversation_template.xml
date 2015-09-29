@@ -99,7 +99,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 			
 			<origination id="isPartOf" label="Parent Materials (Is Part Of)">
 				<archref id="parentCollection" xlink:href="37-wht">
-					<unitid identifier="597542" type="naraID" label="National Archives Identifier">597542</unitid>
+					<unitid identifier="http://catalog.archives.gov/id/597542" type="naraID" label="National Archives Identifier">597542</unitid>
 					<unittitle id="collectionTitle" label="Collection">White House Tapes</unittitle>
 				</archref>
 				<archref id="parentSeries" xlink:href="37-wht-oval">
@@ -107,7 +107,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 					<unittitle id="seriesTitle" label="Series">Oval Office Sound Recordings</unittitle>
 				</archref>
 				<archref id="parentFile" xlink:href="37-wht-audiotape-450">
-					<unitid identifier="6051320" type="naraID" label="National Archives Identifier">6051320</unitid>
+					<unitid identifier="http://catalog.archives.gov/id/6051320" type="naraID" label="National Archives Identifier">6051320</unitid>
 					<unittitle id="audiotapeTitle" label="File">Audiotape 450</unittitle>
 				</archref>
 			</origination>
