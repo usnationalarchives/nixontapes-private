@@ -23,19 +23,19 @@
             Division</directOrder>
     </reference>
     <reference identifier="0000xxxx" abbreviation="">
-        <abbreviation/>
-        <firstPart/>
-        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-0000xxxx" normal=""/>
-        <indirectOrder/>
-        <directOrder/>
+        <abbreviation></abbreviation>
+        <firstPart></firstPart>
+        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-0000xxxx" normal=""></corpname>
+        <indirectOrder></indirectOrder>
+        <directOrder></directOrder>
     </reference>
     <participant identifier="0000yyyy" abbreviation="">
         <abbreviation></abbreviation>
         <lastName></lastName>
         <firstPart></firstPart>
         <marriedMrs></marriedMrs>
-        <persname source="nixonTapesIndex" authfilenumber="37-wht-eac-0000yyyy" normal="">Moe, Alfred F. (Mrs.)</persname>
-        <indirectOrder>Moe, Alfred F. (Mrs.)</indirectOrder>
-        <directOrder>Mrs. Alfred F. Moe</directOrder>
+        <persname source="nixonTapesIndex" authfilenumber="37-wht-eac-0000yyyy" normal=""></persname>
+        <indirectOrder></indirectOrder>
+        <directOrder></directOrder>
     </participant>
 </nixonNames>
