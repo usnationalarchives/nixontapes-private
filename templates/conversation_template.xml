@@ -207,7 +207,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 						
 						<item>If a telephone recording also captures a conversation taking place in one of the offices, a cross-reference to the corresponding room conversation is provided.</item>
 						
-						<item>Logs indicate which portions, if any, were reviewed under the 2007 Deed of Gift.</item>
+						<item>Logs indicate which portions, if any, were reviewed under the <title authfilenumber="deedOfGift2007">2007 Deed of Gift</title>.</item>
 						
 						<item>In some cases, the Watergate Special Prosecution Force or court-ordered mandates resulted in a transcript of the entire conversation or portions of conversation. For these portions, archivists have provided a citation to the related transcript<!--, in place of subject logging -->.</item>
 					</list>
@@ -247,7 +247,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 			<controlaccess id="PRMPAdeedCategories">
 				
 				<head>Determination Categories</head>
-				<p>These processing categories are governed by the Presidential Recordings and Materials Preservation Act of 1974 (PRMPA) and the 2007 Deed of Gift.</p>
+				<p>These processing categories are governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> and the 2007 Deed of Gift.</p>
 				<!--			
 					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01">Abuse of Governmental Powers / Watergate</subject>
 							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-01">Misuse of Government Agencies</subject>
@@ -270,7 +270,11 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination10">Presidential Statements</subject>
 					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination11">Presidential Appointments and Personnel Management</subject>
 					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination12">White House Entertainment and Social Affairs</subject>
+					
+					<subject encodinganalog="690$a" source="deedOfGift2007" authfilenumber="deedOfGift2007">Deed of Gift, 2007</subject>					
 				-->
+				
+
 				
 			</controlaccess>
 			
@@ -323,7 +327,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 					<p>This conversation has no restrictions and is fully open to the public.</p>
 				</accessrestrict>
 			
-				<p>Access is governed by the Presidential Recordings and Materials Preservation Act of 1974; Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including Executive Order 13526.</p>
+				<p>Access is governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
 					
 				<p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov"  xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
 				
@@ -333,7 +337,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 		
 				<head>Copyright Notice</head>
 		
-				<p>The materials processed and released under the Presidential Recordings and Materials Preservation Act of 1974 are considered public record and, as such, are in the public domain. Materials processed and released under the 2007 Deed of Gift are also considered property of the United States and are therefore in the public domain.</p>
+				<p>The materials processed and released under the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> are considered public record and, as such, are in the public domain. Materials processed and released under the 2007 Deed of Gift are also considered property of the United States and are therefore in the public domain.</p>
 				
 				<p>Certain individuals recorded may claim rights in their recorded voices, under state law. Use of such recorded voices found in this catalog may be subject to these claims. Anyone who intends to use these materials commercially may want to contact the individuals recorded or their representatives.</p>
 		
@@ -358,7 +362,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 					
 					<head>Presidential Recordings and Materials Preservation Act of 1974</head>
 					
-					<p>The Nixon-era White House Tapes are subject to the Presidential Recordings and Materials Preservation Act (PRMPA) of 1974. PRMPA, which applies only to the Nixon Presidential Materials, stipulates that those materials relevant to the understanding of Abuse of Governmental Power and Watergate are to be processed and released to the public prior to the release of all other materials. Materials related to the Abuse of Governmental Power and the constitutional and statutory duties of the President and his White House staff are retained by the National Archives. PRMPA mandated the promulgation of access restrictions for the processing of the Nixon Tapes.</p>
+					<p>The Nixon-era White House Tapes are subject to the Presidential Recordings and Materials Preservation Act  of 1974 (PRMPA). PRMPA, which applies only to the Nixon Presidential Materials, stipulates that those materials relevant to the understanding of Abuse of Governmental Power and Watergate are to be processed and released to the public prior to the release of all other materials. Materials related to the Abuse of Governmental Power and the constitutional and statutory duties of the President and his White House staff are retained by the National Archives. PRMPA mandated the promulgation of access restrictions for the processing of the Nixon Tapes.</p>
 					
 					<p>The resulting Nixon Public Acccess Regulations 36 CFR 1275 state that the National Archives must segregate and return to the estate of former President Nixon those materials identified as purely &quot;personal-private&quot; or &quot;personal-political,&quot; and unrelated to the President's constitutional and statutory duties. This conversation has been processed under these regulations.</p>
 					
