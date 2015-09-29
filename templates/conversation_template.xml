@@ -139,7 +139,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 	
 		</did>
 
-		<odd encodinganalog="518$a" altrender="19710216T07:56:00-05:00/19710216T08:58:00-05:00">
+		<odd encodinganalog="518$d" altrender="19710216T07:56:00-05:00/19710216T08:58:00-05:00" type="eventNote">
 			<p id="date">February 16, 1971</p>
 			<p id="time">at an unknown time between 7:56 am and 8:58 am</p>
 		</odd>
