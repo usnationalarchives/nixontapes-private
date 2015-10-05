@@ -382,22 +382,22 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 				
 			</acqinfo>
 		
-			<processinfo encodinganalog="583">
+			<processinfo encodinganalog="583$z">
 				
 				<head>Processing Information</head>
 				
 				<processinfo type="chronRelease">
-					<p>Processed by the Tapes Team of the Richard Nixon Presidential Library and Museum, as part of the 
-						<archref id="chronRelease">
+					<p>Processed by the <corpname encodinganalog="583$k" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004831">Tapes Team of the Richard Nixon Presidential Library and Museum</corpname>, as part of the 
+						<archref id="chronRelease" xlink:href="37-wht-chron1" xlink:show="new">
 							<unitid id="chron1">Chron I</unitid>
-							<unittitle>First Chronological Release</unittitle>
+							<unittitle encodinganalog="583$b">First Chronological Release</unittitle>
 						</archref>
-						, and released on <date normal="1999-10-05" type="releaseDate">October 5, 1999</date>.</p>
+						, and released on <date encodinganalog="583$c" normal="1999-10-05" type="releaseDate">October 5, 1999</date>.</p>
 				</processinfo>
 				
 				<note id="supportNote">
-					<p>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the <corpname source="nixonTapesIndex" role="repository" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="NARA-V">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
-					<p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="NARA-RX">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="NARA-V">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
+					<p>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the <corpname source="nixonTapesIndex" role="repository" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
+					<p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="National Archives and Records Administration. Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
 				</note>
 				
 				<note id="encodingHistory">
