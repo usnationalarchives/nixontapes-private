@@ -4,24 +4,31 @@
     <reference identifier="00004829" abbreviation="NARA-V">
         <abbreviation>NARA-V</abbreviation>
         <firstPart>National Archives and Records Administration. Office of Innovation</firstPart>
-        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="NARA-V"
-            >National Archives and Records Administration. Office of Innovation</corpname>
+        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="National Archives and Records Administration. Office of Innovation">National Archives and Records Administration. Office of Innovation</corpname>
         <indirectOrder>Office of Innovation, National Archives and Records
             Administration</indirectOrder>
         <directOrder>National Archives and Records Administration. Office of
             Innovation</directOrder>
     </reference>
-    <reference identifier="00004830" abbreviation="NARA-V">
+    <reference identifier="00004830" abbreviation="NARA-RX">
         <abbreviation>NARA-RX</abbreviation>
         <firstPart>National Archives and Records Administration. Preservation Programs
             Division</firstPart>
-        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="NARA-RX"
-            >National Archives and Records Administration. Preservation Programs Division</corpname>
+        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="National Archives and Records Administration. Preservation Programs Division">National Archives and Records Administration. Preservation Programs Division</corpname>
         <indirectOrder>Preservation Programs Division, National Archives and Records
             Administration</indirectOrder>
         <directOrder>National Archives and Records Administration. Preservation Programs
             Division</directOrder>
     </reference>
+    <reference identifier="00004831" abbreviation="LPRN-CP">
+        <abbreviation>LPRN-CP</abbreviation>
+        <firstPart>Richard Nixon Presidential Library and Museum. Tapes Team</firstPart>
+        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00004831" normal="LPRN-CP">Richard Nixon Presidential Library and Museum. Tapes Team</corpname>
+        <indirectOrder>Tapes Team, Richard Nixon Presidential Library and Museum</indirectOrder>
+        <directOrder>Richard Nixon Presidential Library and Museum. Tapes Team</directOrder>
+    </reference>
+    
+    <!--
     <reference identifier="0000xxxx" abbreviation="">
         <abbreviation></abbreviation>
         <firstPart></firstPart>
@@ -29,7 +36,7 @@
         <indirectOrder></indirectOrder>
         <directOrder></directOrder>
     </reference>
-    <participant identifier="0000yyyy" abbreviation="">
+    <reference identifier="0000yyyy" abbreviation="">
         <abbreviation></abbreviation>
         <lastName></lastName>
         <firstPart></firstPart>
@@ -37,5 +44,6 @@
         <persname source="nixonTapesIndex" authfilenumber="37-wht-eac-0000yyyy" normal=""></persname>
         <indirectOrder></indirectOrder>
         <directOrder></directOrder>
-    </participant>
+    </reference>
+    -->
 </nixonNames>
