@@ -40,7 +40,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 	</filedesc>
 
 		<profiledesc>
-			<creation>Base machine-readable finding aid derived using XQuery scripts written by Amanda Ross<lb/>
+			<creation>Base machine-readable finding aid derived using XQuery scripts written by Amanda T. Ross<lb/>
 				<date normal="2015-05-14">May 14, 2015</date>
 			</creation>
 			<langusage>Description is in
@@ -321,9 +321,20 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 					
 				<head>Access Restrictions</head>
 				
-				<accessrestrict encodinganalog="506" type="accessUnrestricted">
+				<!-- if/then accessrestrict
+				
+				1) <accessrestrict encodinganalog="506" type="accessUnrestricted">
 					<p>This conversation has no restrictions and is fully open to the public.</p>
 				</accessrestrict>
+				
+				2) <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
+					<p>Portions of this conversation are restricted and closed to the public.</p>
+				</accessrestrict>
+				
+				3) <accessrestrict encodinganalog="506" type="accessFullyRestricted">
+					<p>This conversation is restricted in its entirety and closed to the public.</p>
+				</accessrestrict>
+				-->
 			
 				<p>Access is governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
 					
@@ -374,7 +385,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 					
 					<p>However, in 2007, the estate of Richard Nixon negotiated a Deed of Gift with the Richard Nixon Presidential Library and Museum. By this agreement, materials deemed &quot;personal-political&quot; have been deeded back to the National Archives for release to the public. Materials originally deemed &quot;person-private&quot; have been deeded back to the National Archives, with the exception of materials concerning the medical history or non-Watergate-related personal finances of Richard Nixon or the non-public activities of the First Family.</p>
 					
-					<!-- Either/OR
+					<!-- if/then
 						1) <p>Upon re-review of this conversation, provisions of the 2007 Deed of Gift between the estate of Richard Nixon and the National Archives will be implemented, where appropriate, to enhance access to materials. Changes in access will be noted once implemented.</p>
 					
 						2) <p>This conversation has been re-reviewed under the provisions of the 2007 Deed of Gift between the estate of Richard Nixon and the National Archives. Changes in access have been noted.</p>
@@ -403,7 +414,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 				</note>
 				
 				<note id="encodingHistory">
-					<p>Encoded by Amanda Ross, May 2015</p>
+					<p>Encoded by Amanda T. Ross, <date normal="2015-05">May 2015</date></p>
 					<!-- Edited by ?, Mm yyyy -->
 				</note>
 
