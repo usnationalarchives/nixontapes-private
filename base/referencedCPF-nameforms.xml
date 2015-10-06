@@ -3,27 +3,27 @@
 <nixonNames>
     <reference identifier="00004829" abbreviation="NARA-V">
         <abbreviation>NARA-V</abbreviation>
-        <firstPart>National Archives and Records Administration. Office of Innovation</firstPart>
-        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="National Archives and Records Administration. Office of Innovation">National Archives and Records Administration. Office of Innovation</corpname>
+        <firstPart>United States. National Archives and Records Administration. Office of Innovation</firstPart>
+        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">United States. National Archives and Records Administration. Office of Innovation</corpname>
         <indirectOrder>Office of Innovation, National Archives and Records
-            Administration</indirectOrder>
-        <directOrder>National Archives and Records Administration. Office of
+            Administration, United States</indirectOrder>
+        <directOrder>United States. National Archives and Records Administration. Office of
             Innovation</directOrder>
     </reference>
     <reference identifier="00004830" abbreviation="NARA-RX">
         <abbreviation>NARA-RX</abbreviation>
-        <firstPart>National Archives and Records Administration. Preservation Programs
+        <firstPart>United States. National Archives and Records Administration. Preservation Programs
             Division</firstPart>
-        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="National Archives and Records Administration. Preservation Programs Division">National Archives and Records Administration. Preservation Programs Division</corpname>
+        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="United States. National Archives and Records Administration. Preservation Programs Division">United States. National Archives and Records Administration. Preservation Programs Division</corpname>
         <indirectOrder>Preservation Programs Division, National Archives and Records
-            Administration</indirectOrder>
-        <directOrder>National Archives and Records Administration. Preservation Programs
+            Administration, United States</indirectOrder>
+        <directOrder>United States. National Archives and Records Administration. Preservation Programs
             Division</directOrder>
     </reference>
     <reference identifier="00004831" abbreviation="LPRN-CP">
         <abbreviation>LPRN-CP</abbreviation>
         <firstPart>Richard Nixon Presidential Library and Museum. Tapes Team</firstPart>
-        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00004831" normal="LPRN-CP">Richard Nixon Presidential Library and Museum. Tapes Team</corpname>
+        <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00004831" normal="United States. Richard Nixon Presidential Library and Museum. Tapes Team">Richard Nixon Presidential Library and Museum. Tapes Team</corpname>
         <indirectOrder>Tapes Team, Richard Nixon Presidential Library and Museum</indirectOrder>
         <directOrder>Richard Nixon Presidential Library and Museum. Tapes Team</directOrder>
     </reference>
