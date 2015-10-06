@@ -125,12 +125,12 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 				
 			<!-- <container id="wht-audiotape-450_track-002" type="track" label="Track">2</container> -->
 			
-			<!-- <abstract label="Abstract" encodinganalog="545$a">[Bio/Hist sentence]</abstract> -->
-			
 			<abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">
 				On February 16, 1971, _ and _ met in the _ at an unknown time between 7:56 am and 8:58 am. Topics of conversation included _.
 			</abstract>
-			
+
+			<!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+
 			<abstract id="historicalAbstract" encodinganalog="545$a" label="Abstract (Historical Context)">
 				This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.
 			</abstract>
@@ -182,9 +182,9 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 				
 				<scopecontent id="natureOfRecording">
 				
-					<head>Nature of the Recording</head>
+					<head>Nature of the Recordings</head>
 					
-					<p>The White House Tapes comprise secretly recorded human conversation. Most participants were unaware that their meetings and telephone calls were being recorded. The taping system captured often unstructured and free-flowing discussions between close personal associates intimately familiar with the topic. As a result, users may find the recorded conversations difficult to follow.</p>
+					<p>The White House Tapes contain secretly recorded human conversation. Most participants were unaware that their meetings and telephone calls were being recorded. The taping system captured often unstructured and free-flowing discussions between close personal associates intimately familiar with the topic. As a result, users may find the recorded conversations difficult to follow.</p>
 				</scopecontent>
 				
 			</scopecontent>
@@ -274,8 +274,6 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 					<subject encodinganalog="690$a" source="deedOfGift2007" authfilenumber="deedOfGift2007">Deed of Gift, 2007</subject>					
 				-->
 				
-
-				
 			</controlaccess>
 			
 			<controlaccess id="recordingLocation">
@@ -336,10 +334,14 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 			<userestrict encodinganalog="540">
 		
 				<head>Copyright Notice</head>
+				
+				<p id="creativeCommonsLicense"><extptr id="noCopyrightSymbol" xlink:href="http://creativecommons.org/images/deed/noc.png" xlink:show="embed"/> <extref id="publicDomain1.0" xlink:href="http://creativecommons.org/publicdomain/mark/1.0/" xlink:show="new">Public Domain Mark 1.0</extref></p>
 		
 				<p>The materials processed and released under the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> are considered public record and, as such, are in the public domain. Materials processed and released under the 2007 Deed of Gift are also considered property of the United States and are therefore in the public domain.</p>
 				
-				<p>Certain individuals recorded may claim rights in their recorded voices, under state law. Use of such recorded voices found in this catalog may be subject to these claims. Anyone who intends to use these materials commercially may want to contact the individuals recorded or their representatives.</p>
+				<p></p>
+				
+				<p>Certain individuals recorded may claim rights in their recorded voices, under state law. Use of such recorded voices found in this conversation may be subject to these claims. Anyone who intends to use these materials commercially may want to contact the individuals recorded or their representatives.</p>
 		
 				<p>Any materials used for academic research or otherwise should be fully credited with the source.</p>
 		
@@ -387,7 +389,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 				<head>Processing Information</head>
 				
 				<processinfo type="chronRelease">
-					<p>Processed by the <corpname encodinganalog="583$k" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004831">Tapes Team of the Richard Nixon Presidential Library and Museum</corpname>, as part of the 
+					<p>Processed by the <corpname encodinganalog="583$k" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004831" normal="Richard Nixon Presidential Library and Museum. Tapes Team">Tapes Team of the Richard Nixon Presidential Library and Museum</corpname>, as part of the 
 						<archref id="chronRelease" xlink:href="37-wht-chron1" xlink:show="new">
 							<unitid id="chron1">Chron I</unitid>
 							<unittitle encodinganalog="583$b">First Chronological Release</unittitle>
@@ -396,8 +398,8 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 				</processinfo>
 				
 				<note id="supportNote">
-					<p>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the <corpname source="nixonTapesIndex" role="repository" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
-					<p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="National Archives and Records Administration. Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
+					<p>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the <corpname source="nixonTapesIndex" role="repository" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
+					<p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="United States. National Archives and Records Administration. Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
 				</note>
 				
 				<note id="encodingHistory">
