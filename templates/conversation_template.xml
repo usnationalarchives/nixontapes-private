@@ -328,11 +328,11 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 				</accessrestrict>
 				
 				2) <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
-					<p>Portions of this conversation are restricted and closed to the public.</p>
+					<p>Portions of this conversation are closed to the public: _ withdrawal(s) for _.</p>
 				</accessrestrict>
 				
 				3) <accessrestrict encodinganalog="506" type="accessFullyRestricted">
-					<p>This conversation is restricted in its entirety and closed to the public.</p>
+					<p>This conversation is closed to the public in its entirety: 1 withdrawal for _.</p>
 				</accessrestrict>
 				-->
 			
