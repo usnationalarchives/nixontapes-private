@@ -346,11 +346,17 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 		
 				<head>Copyright Notice</head>
 				
-				<p id="creativeCommonsLicense"><extptr id="noCopyrightSymbol" xlink:href="http://creativecommons.org/images/deed/noc.png" xlink:show="embed"/> <extref id="publicDomain1.0" xlink:href="http://creativecommons.org/publicdomain/mark/1.0/" xlink:show="new">Public Domain Mark 1.0</extref></p>
+				<p id="publicDomainMark"><extptr id="noCopyrightSymbol" xlink:href="http://creativecommons.org/images/deed/noc.png" xlink:show="embed"/> <extref id="publicDomain1.0" xlink:href="http://creativecommons.org/publicdomain/mark/1.0/" xlink:show="new">Public Domain Mark 1.0</extref></p>
+				
+				<p id="CC0"><extptr id="noCopyrightSymbol" xlink:href="http://creativecommons.org/images/deed/noc.png" xlink:show="embed"/> <extref id="publicDomain1.0" xlink:href="http://creativecommons.org/publicdomain/mark/1.0/" xlink:show="new">Creative Commons License CC0</extref></p>
 		
-				<p>The materials processed and released under the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> are considered public record and, as such, are in the public domain. Materials processed and released under the 2007 Deed of Gift are also considered property of the United States and are therefore in the public domain.</p>
+				<p>The materials processed and released under the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> are considered United States government works and, as such, are not eligible for copyright protection in the United States. Thus, they may be treated as being in the public domain. Materials processed and released under the 2007 Deed of Gift are also considered property of the United States and therefore may be treated as being in the public domain.</p>
+
+				<p>Unless expressly stated otherwise, the organization that made this item available makes no warranties about the item and cannot guarantee the accuracy of this rights statement. You are responsible for your own use.</p>
 							
-				<p>Certain individuals recorded may claim rights in their recorded voices, under state law. Use of such recorded voices found in this conversation may be subject to these claims. Anyone who intends to use these materials commercially may want to contact the individuals recorded or their representatives.</p>
+				<p>According to 36 C.F.R. &#167; 1254.62, you are responsible for obtaining any necessary permission for use, copying, and publication from copyright holders and for any other applicable provisions of the Copyright Act (Title 17, United States Code).</p>
+				
+				<p>Certain individuals recorded may claim rights in their recorded voices, under state law. Use of such recorded voices found in this conversation may be subject to these claims. You may need to obtain other permissions for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.</p>
 		
 				<p>Any materials used for academic research or otherwise should be fully credited with the source.</p>
 		
