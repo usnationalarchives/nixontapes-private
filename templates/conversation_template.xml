@@ -33,7 +33,16 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 			</address>
 			
 			<date normal="2015" encodinganalog="Date" type="publication">2015</date>
-			<p id="copyright">Under United States copyright laws, the portions of this finding aid produced as part of United States federal government work are not subject to copyright restrictions.</p>
+			<p id="findingaidCopyright">This finding aid is considered United States government works and, as such, is not eligible for copyright protection in the United States. Thus, this document may be treated as being in the public domain.
+				<lb/>
+				<extref xlink:href="http://creativecommons.org/publicdomain/zero/1.0/" xlink:show="new" xlink:title="Creative Commons License CC0">
+					<extptr xlink:arcrole="license" xlink:href="http://i.creativecommons.org/p/zero/1.0/88x31.png" xlink:show="embed"  xlink:title="Creative Commons License 0"/>
+				</extref>
+				<lb/>
+				<extref xlink:href="http://creativecommons.org/publicdomain/mark/1.0/" xlink:show="new" xlink:title="Public Domain Mark 1.0">
+					<extptr xlink:arcrole="license" xlink:href="http://i.creativecommons.org/p/mark/1.0/88x31.png" xlink:show="embed" xlink:title="Public Domain Mark"/>
+				</extref>
+			</p>
 			
 		</publicationstmt>
 	
