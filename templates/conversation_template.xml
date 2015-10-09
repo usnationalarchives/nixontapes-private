@@ -110,15 +110,15 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 			
 			<origination id="isPartOf" label="Parent Materials (Is Part Of)">
 				<archref id="parentCollection" xlink:href="37-wht">
-					<unitid identifier="http://catalog.archives.gov/id/597542" type="naraID" label="National Archives Identifier">597542</unitid>
+					<unitid identifier="http://catalog.archives.gov/id/597542" type="naId" label="National Archives Identifier">597542</unitid>
 					<unittitle id="collectionTitle" label="Collection">White House Tapes</unittitle>
 				</archref>
 				<archref id="parentSeries" xlink:href="37-wht-oval">
-					<unitid identifier="http://catalog.archives.gov/id/17409633" type="naraID" label="NARA Identifier">17409633</unitid>
+					<unitid identifier="http://catalog.archives.gov/id/17409633" type="naId" label="NARA Identifier">17409633</unitid>
 					<unittitle id="seriesTitle" label="Series">Oval Office Sound Recordings</unittitle>
 				</archref>
 				<archref id="parentFile" xlink:href="37-wht-audiotape-450">
-					<unitid identifier="http://catalog.archives.gov/id/6051320" type="naraID" label="National Archives Identifier">6051320</unitid>
+					<unitid identifier="http://catalog.archives.gov/id/6051320" type="naId" label="National Archives Identifier">6051320</unitid>
 					<unittitle id="audiotapeTitle" label="File">Audiotape 450</unittitle>
 				</archref>
 			</origination>
@@ -131,7 +131,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 				<corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>
 			</repository> 
 			
-			<!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naraID" label="National Archives Identifier">######</unitid> -->
+			<!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
 			<unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">OVAL 450-001</unitid>
 				
 			<!-- <container id="wht-audiotape-450_track-002" type="track" label="Track">2</container> -->
