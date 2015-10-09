@@ -12,6 +12,7 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 	
 	<filedesc>
 		<titlestmt>
+			
 			<titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 450-001, <date>February 16, 1971</date></titleproper>
 			<titleproper type="filing">Conversation 450-001</titleproper>
 	 		<subtitle>A Subject Log of the Conversation between President Richard M. Nixon and Alexander P. Butterfield</subtitle>
@@ -27,12 +28,13 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 	
 		<publicationstmt>
 	
-			<publisher encodinganalog="Publisher">Richard Nixon Presidential Library and Museum</publisher>
+			<publisher encodinganalog="Publisher">National Archives and Records Administration</publisher>
 			<address>
-				<addressline>College Park, MD and Yorba Linda, CA</addressline>
+				<addressline>College Park, MD</addressline>
 			</address>
 			
 			<date normal="2015" encodinganalog="Date" type="publication">2015</date>
+			
 			<p id="findingaidCopyright">This finding aid is considered United States government works and, as such, is not eligible for copyright protection in the United States. Thus, this document may be treated as being in the public domain.
 				<lb/>
 				<extref xlink:href="http://creativecommons.org/publicdomain/zero/1.0/" xlink:show="new" xlink:title="Creative Commons License CC0">
