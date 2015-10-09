@@ -347,12 +347,12 @@ xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
 				<head>Copyright Notice</head>
 				
 				<p id="ccZero">
-					<extptr xlink:arcrole="license" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/" xlink:show="embed"  xlink:title="Creative Commons License 0"/>
-					<extref id="cc0" xlink:href="http://creativecommons.org/publicdomain/mark/1.0/" xlink:show="new" xlink:title="Creative Commons License CC0">Creative Commons License CC0</extref>
+					<extptr xlink:arcrole="license" xlink:href="http://i.creativecommons.org/p/zero/1.0/88x31.png" xlink:show="embed"  xlink:title="Creative Commons License 0"/>
+					<extref id="cc0" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/" xlink:show="new" xlink:title="Creative Commons License CC0">Creative Commons License CC0</extref>
 				</p>
 				
 				<p id="publicDomain">
-					<extptr xlink:arcrole="license" xlink:href="http://creativecommons.org/publicdomain/mark/1.0/" xlink:show="embed" xlink:title="Public Domain Mark"/>
+					<extptr xlink:arcrole="license" xlink:href="http://i.creativecommons.org/p/mark/1.0/88x31.png" xlink:show="embed" xlink:title="Public Domain Mark"/>
 					<extref id="pdm" xlink:href="http://creativecommons.org/publicdomain/mark/1.0/" xlink:show="new" xlink:title="Public Domain Mark 1.0">Public Domain Mark 1.0</extref>		
 				</p>
 		
