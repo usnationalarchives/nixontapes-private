@@ -44,7 +44,8 @@
 
 				<p id="findingAidCopyright">This finding aid is considered United States government works and, as such,
 					is not eligible for copyright protection in the United States. Thus, this document may be treated as
-					being in the public domain. <lb/>
+					being in the public domain.
+					<lb/>
 					<extref xlink:href="http://creativecommons.org/publicdomain/zero/1.0/" xlink:show="new"
 						xlink:title="Creative Commons License CC0">
 						<extptr xlink:role="license" xlink:href="http://i.creativecommons.org/p/zero/1.0/88x31.png"
