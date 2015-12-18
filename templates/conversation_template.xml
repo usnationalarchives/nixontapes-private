@@ -10,15 +10,15 @@
 		repositoryencoding="iso15511" relatedencoding="DC" scriptencoding="iso15924">
 
 		<eadid encodinganalog="856$u" countrycode="US" mainagencycode="US-DNA"
-			publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::$tapeNo-$convNo::White House Tapes: Conversation $tapeNo-$convNo)//EN"
-			url="http://nixonlibrary.gov/tapes/37-wht-conversation-$tapeNo-$convNo.html">37-wht-conversation-$tapeNo-$convNo</eadid>
+			publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::$tapeID-$convID::White House Tapes: Conversation $tapeID-$convID)//EN"
+			url="http://nixonlibrary.gov/tapes/37-wht-conversation-$tapeID-$convID.html">37-wht-conversation-$tapeID-$convID</eadid>
 
 		<filedesc>
 			<titlestmt>
 
-				<titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation $tapeNo-$convNo,
+				<titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation $tapeID-$convID,
 						<date>$dateDateRange</date></titleproper>
-				<titleproper type="filing">Conversation $tapeNo-$convNo</titleproper>
+				<titleproper type="filing">Conversation $tapeID-$convID</titleproper>
 				<subtitle>A Subject Log of the Conversation between President Richard M. Nixon and Alexander P.
 					Butterfield</subtitle>
 
@@ -94,7 +94,7 @@
 
 	<frontmatter>
 		<titlepage>
-			<titleproper>White House Tapes: Conversation $tapeNo-$convNo, <date>$dateDateRange</date>
+			<titleproper>White House Tapes: Conversation $tapeID-$convID, <date>$dateDateRange</date>
 			</titleproper>
 
 			<publisher>Richard Nixon Presidential Library and Museum</publisher>
@@ -121,7 +121,7 @@
 		<did>
 			<head>Descriptive Summary</head>
 
-			<unittitle label="Title" encodinganalog="245$a">White House Tapes: Conversation $tapeNo-$convNo</unittitle>
+			<unittitle label="Title" encodinganalog="245$a">White House Tapes: Conversation $tapeID-$convID</unittitle>
 
 			<unitdate label="Date" encodinganalog="245$d" normal="1971-02-16/1971-02-16" type="inclusive"
 				certainty="supplied">$dateDateRange</unitdate>
@@ -140,10 +140,10 @@
 				
 				$roomArchrefSeries
 				
-				<archref id="parentFile" xlink:href="37-wht-audiotape-$tapeNo">
+				<archref id="parentFile" xlink:href="37-wht-audiotape-$tapeID">
 					<unitid identifier="http://catalog.archives.gov/id/$audiotapeNARAid" type="naId"
 						label="National Archives Identifier">$audiotapeNARAid</unitid>
-					<unittitle id="audiotapeTitle" label="File">Audiotape $tapeNo</unittitle>
+					<unittitle id="audiotapeTitle" label="File">Audiotape $tapeID</unittitle>
 				</archref>
 				
 			</origination>
@@ -159,9 +159,9 @@
 
 			<!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
 			<unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID"
-				label="Local Call Number">$locationCode $tapeNo-$convNo</unitid>
+				label="Local Call Number">$locationCode $tapeID-$convID</unitid>
 
-			<!-- <container id="wht-audiotape-$tapeNo_track-$trackNo" type="track" label="Track">$trackNo</container> -->
+			<!-- <container id="wht-audiotape-$tapeID_track-$trackNo" type="track" label="Track">$trackNo</container> -->
 
 			<abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">$descriptionSummary Topics of conversation included ....</abstract>
 
@@ -341,11 +341,11 @@
 		<altformavail type="audio">
 		<head>Digitized Audio</head>
 		
-			<altformavail id="37-wht-conversation-$tapeNo-$convNo.mp3" type="mp3" encodinganalog="530$a">
+			<altformavail id="37-wht-conversation-$tapeID-$convID.mp3" type="mp3" encodinganalog="530$a">
 				<p>The original audio has been converted to digital format and is available to the public as an MP3 file.</p>
 			</altformavail>
 			
-			<altformavail id="37-wht-conversation-$tapeNo-$convNo.wav" type="bwf" encodinganalog="530$a">
+			<altformavail id="37-wht-conversation-$tapeID-$convID.wav" type="bwf" encodinganalog="530$a">
 				<p>The original audio has been converted to digital format and is available to the public as a Broadcast WAVE Format (BWF) file.</p>
 			</altformavail>
 			
@@ -449,7 +449,7 @@
 
 				<head>Preferred Citation</head>
 
-				<p>Conversation $tapeNo-$convNo<!-- (National Archives Identifier ######) -->, Audiotape $tapeNo, $roomName Sound
+				<p>Conversation $tapeID-$convID<!-- (National Archives Identifier ######) -->, Audiotape $tapeID, $roomName Sound
 					Recordings, White House Tapes, Richard Nixon Presidential Library and Museum, National Archives and
 					Records Administration.</p>
 
