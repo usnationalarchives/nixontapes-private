@@ -10,15 +10,15 @@
 		repositoryencoding="iso15511" relatedencoding="DC" scriptencoding="iso15924">
 
 		<eadid encodinganalog="856$u" countrycode="US" mainagencycode="US-DNA"
-			publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::450-001::White House Tapes: Conversation 450-001)//EN"
-			url="http://nixonlibrary.gov/tapes/37-wht-conversation-450-001.html">37-wht-conversation-450-001</eadid>
+			publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::$tapeNo-$convNo::White House Tapes: Conversation $tapeNo-$convNo)//EN"
+			url="http://nixonlibrary.gov/tapes/37-wht-conversation-$tapeNo-$convNo.html">37-wht-conversation-$tapeNo-$convNo</eadid>
 
 		<filedesc>
 			<titlestmt>
 
-				<titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 450-001,
-						<date>February 16, 1971</date></titleproper>
-				<titleproper type="filing">Conversation 450-001</titleproper>
+				<titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation $tapeNo-$convNo,
+						<date>$dateDateRange</date></titleproper>
+				<titleproper type="filing">Conversation $tapeNo-$convNo</titleproper>
 				<subtitle>A Subject Log of the Conversation between President Richard M. Nixon and Alexander P.
 					Butterfield</subtitle>
 
@@ -94,7 +94,7 @@
 
 	<frontmatter>
 		<titlepage>
-			<titleproper>White House Tapes: Conversation 450-001, <date>February 16, 1971</date>
+			<titleproper>White House Tapes: Conversation $tapeNo-$convNo, <date>$dateDateRange</date>
 			</titleproper>
 
 			<publisher>Richard Nixon Presidential Library and Museum</publisher>
@@ -121,34 +121,31 @@
 		<did>
 			<head>Descriptive Summary</head>
 
-			<unittitle label="Title" encodinganalog="245$a">White House Tapes: Conversation 450-001</unittitle>
+			<unittitle label="Title" encodinganalog="245$a">White House Tapes: Conversation $tapeNo-$convNo</unittitle>
 
 			<unitdate label="Date" encodinganalog="245$d" normal="1971-02-16/1971-02-16" type="inclusive"
-				certainty="supplied">February 16, 1971</unitdate>
+				certainty="supplied">$dateDateRange</unitdate>
 
 			<origination id="participants" label="Participants">
-				<persname encodinganalog="700$a" role="participant" source="nixonTapesIndex"
-					authfilenumber="nixon-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
-				<persname encodinganalog="700$a" role="participant" source="nixonTapesIndex"
-					authfilenumber="nixon-eac-00000370" normal="APB">Butterfield, Alexander P.</persname>
+				$participants
 			</origination>
 
 			<origination id="isPartOf" label="Parent Materials (Is Part Of)">
+				
 				<archref id="parentCollection" xlink:href="37-wht">
 					<unitid identifier="http://catalog.archives.gov/id/597542" type="naId"
 						label="National Archives Identifier">597542</unitid>
 					<unittitle id="collectionTitle" label="Collection">White House Tapes</unittitle>
 				</archref>
-				<archref id="parentSeries" xlink:href="37-wht-oval">
-					<unitid identifier="http://catalog.archives.gov/id/17409633" type="naId" label="NARA Identifier"
-						>17409633</unitid>
-					<unittitle id="seriesTitle" label="Series">Oval Office Sound Recordings</unittitle>
+				
+				$roomArchrefSeries
+				
+				<archref id="parentFile" xlink:href="37-wht-audiotape-$tapeNo">
+					<unitid identifier="http://catalog.archives.gov/id/$audiotapeNARAid" type="naId"
+						label="National Archives Identifier">$audiotapeNARAid</unitid>
+					<unittitle id="audiotapeTitle" label="File">Audiotape $tapeNo</unittitle>
 				</archref>
-				<archref id="parentFile" xlink:href="37-wht-audiotape-450">
-					<unitid identifier="http://catalog.archives.gov/id/6051320" type="naId"
-						label="National Archives Identifier">6051320</unitid>
-					<unittitle id="audiotapeTitle" label="File">Audiotape 450</unittitle>
-				</archref>
+				
 			</origination>
 
 			<!-- <physdesc label="Duration">
@@ -162,58 +159,28 @@
 
 			<!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
 			<unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID"
-				label="Local Call Number">OVAL 450-001</unitid>
+				label="Local Call Number">$locationCode $tapeNo-$convNo</unitid>
 
-			<!-- <container id="wht-audiotape-450_track-002" type="track" label="Track">2</container> -->
+			<!-- <container id="wht-audiotape-$tapeNo_track-$trackNo" type="track" label="Track">$trackNo</container> -->
 
-			<abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)"> On February
-				16, 1971, _ and _ met in the _ at an unknown time between 7:56 am and 8:58 am. Topics of conversation
-				included _. </abstract>
+			<abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">$descriptionSummary Topics of conversation included ....</abstract>
 
 			<!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
 
-			<abstract id="historicalAbstract" encodinganalog="545$a" label="Abstract (Historical Context)"> This Oval
-				Office recording is part of the Nixon Administration's White House Tapes, a secret taping program
-				authorized by President Richard Nixon and active from 1971 to 1973. </abstract>
+			$roomAbstract
 
 			<langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng"
 					scriptcode="Latn">English</language></langmaterial>
 
 		</did>
 
-		<odd id="conversationDateTime" encodinganalog="518$d" altrender="19710216T07:56:00-05:00/19710216T08:58:00-05:00" type="eventNote">
-			<p id="conversationDate">February 16, 1971</p>
-			<p id="conversationTime">at an unknown time between 7:56 am and 8:58 am</p>
+		<odd id="conversationDateTime" encodinganalog="518$d"
+			altrender="19710216T07:56:00-05:00/19710216T08:58:00-05:00" type="eventNote">
+			<p id="conversationDate">$dateDateRange</p>
+			<p id="conversationTime">$timeTimeRange</p>
 		</odd>
 
-		<bioghist id="recordingHistory" encodinganalog="545$a">
-
-			<head>Recording Location and Taping System History</head>
-
-			<p>Beginning in 1971, President Richard Nixon authorized the installation of a secret taping system in
-				selected portions of the White House, Cabinet Room, Oval Office, Old Executive Office Building, and Camp
-				David. Collectively, these recordings constitute the Nixon Administration's White House Tapes.</p>
-
-			<p>In February 1971, the United State Secret Service installed listening devices in the White House. They
-				placed seven microphones in the Oval Office: five in the President's desk and one on each side of the
-				fireplace. The Secret Service technicians wired these devices to central mixers that were then connected
-				to recorders in an old locker room in the White House basement. These recordings became known as the
-				Oval Office recordings.</p>
-
-			<p>This system was a secret taping system maintained by the Secret Service. Only President Nixon, H. R.
-				Haldeman, and a few of the President's close personal assistants knew the system existed. One of its key
-				features was that the recording equipment in the Oval Office, the EOB office, at Camp David, and on the
-				telephones was sound-activated, operating without a conscious decision by the President to record a
-				specific conversation. The taping system was tied to the Presidential Locator System, which was also
-				operated by the Secret Service, and was designed to continue recording for fifteen to thirty seconds
-				after the President left the room.</p>
-
-			<p>On July 16, 1973, Special Assistant to the President Alexander Butterfield revealed the existence of the
-				White House taping system during his testimony before the Senate Watergate Committee. Following this
-				public revelation, White House Chief of Staff Alexander Haig ordered the removal of the entire
-				presidential taping system.</p>
-
-		</bioghist>
+		$roomRecordingHistory
 
 		<scopecontent>
 
@@ -223,54 +190,13 @@
 
 				<head>Conversation Summary</head>
 
-				<p>On February 16, 1971, _ and _ met in the _ at an unknown time between 7:56 am and 8:58 am.</p>
+				<p>$descriptionSummary</p>
 
-				<p>Topics of conversation included _.</p>
-
-			</scopecontent>
-
-			<scopecontent id="recordingNotes">
-
-				<scopecontent id="audioQuality">
-
-					<head>Audio Quality</head>
-
-					<p>The audio quality of the Nixon White House Tapes is generally poor. While some locations
-						generated better quality recordings than others, inferior recording equipment, cheap tape stock,
-						improper microphone placement, taping system malfunctions, volume fluctuation, background noise,
-						and electrical interference contributed to the poor quality of the recordings. Other noises
-						greatly affect the audibility of conversations, including such small happenings as the signing
-						of documents or the clinking of coffee cups.</p>
-
-					<p>As a result of the microphone coverage, Oval Office conversations have clear audio relative to
-						other Nixon White House Tapes. Even still, extraneous room noises and background sounds are
-						evident and can obscure portions of conversations. The microphones in the desk picked up the
-						sound of anyone writing on the desk or the setting down a coffee cup or a glass. Furthermore,
-						the desk microphones captured the sound of President Nixon's chair banging into the desk, the
-						President's feet banging on the desk as he put his feet up, and the sound of the President's
-						knees knocking against the kneewell of his desk. The microphone installed near the telephone
-						captured the ringing of the telephone, which sometimes blocked out small portions of
-						conversation. On occasion, the helicopter rotor blades from Marine One completely obliterated
-						conversation taking place in the Oval Office. The recording system also captured the sirens of
-						ambulances, fire engines, and police vehicles as they blared in through open windows. On
-						occasion, the opening and closing of interior and exterior doors briefly interfered with
-						conversations.</p>
-
-				</scopecontent>
-
-				<scopecontent id="natureOfRecording">
-
-					<head>Nature of the Recordings</head>
-
-					<p>The White House Tapes contain secretly recorded human conversation. Most participants were
-						unaware that their meetings and telephone calls were being recorded. The taping system captured
-						often unstructured and free-flowing discussions between close personal associates intimately
-						familiar with the topic. As a result, users may find the recorded conversations difficult to
-						follow.</p>
-
-				</scopecontent>
+				<p>Topics of conversation included ...</p>
 
 			</scopecontent>
+
+			$roomScopeContentRecordingNotes
 
 			<arrangement>
 
@@ -373,8 +299,7 @@
 
 				<head>Location of Recording</head>
 
-				<geogname encodinganalog="518$p" normal="38.8974, -77.0374" source="GeoHack" role="location">Oval
-					Office</geogname>
+				<geogname encodinganalog="518$p" normal="$latitude, $longitude" source="GeoHack" role="location">$roomName</geogname>
 
 			</controlaccess>
 
@@ -382,26 +307,26 @@
 
 				<head>Topics</head>
 
-				<corpname encodinganalog="610" role="subject" rules="rda" source="lcnaf"
-					authfilenumber="http://id.loc.gov/authorities/names/n79007288">United States. President (1969-1974 :
-					Nixon)</corpname>
-
 				<genreform encodinganalog="655" rules="rda" source="lcnaf"
 					authfilenumber="http://id.loc.gov/authorities/subjects/sh85101069">Audiotapes</genreform>
-
-				<geogname encodinganalog="651" role="subject" rules="rda" source="lcsh"
-					authfilenumber="http://id.loc.gov/authorities/subjects/sh85140471">United States -- Politics and
-					government -- 1969-1974</geogname>
-
+				
 				<persname encodinganalog="600" role="subject" rules="rda" source="lcnaf"
 					authfilenumber="http://id.loc.gov/authorities/names/n79018757">Nixon, Richard M. (Richard Milhous),
 					1913-1994</persname>
-
+				
 				<subject encodinganalog="650" rules="rda" source="lcsh"
 					authfilenumber="http://id.loc.gov/authorities/subjects/sh85106465">Presidents -- United
 					States</subject>
 
-				<!-- Insert conversation-specific LC Subject Headings here, map to ARC/OPA headings ?, alphabetized by tag name and
+				<corpname encodinganalog="610" role="subject" rules="rda" source="lcnaf"
+					authfilenumber="http://id.loc.gov/authorities/names/n79007288">United States. President (1969-1974 :
+					Nixon)</corpname>
+				
+				<geogname encodinganalog="651" role="subject" rules="rda" source="lcsh"
+					authfilenumber="http://id.loc.gov/authorities/subjects/sh85140471">United States -- Politics and
+					government -- 1969-1974</geogname>
+
+				<!-- Insert conversation-specific LC Subject Headings here with id.loc.gov links (map to ARC/OPA headings ?) alphabetized by tag name and
 					term name thereunder -->
 
 			</controlaccess>
@@ -416,11 +341,11 @@
 		<altformavail type="audio">
 		<head>Digitized Audio</head>
 		
-			<altformavail id="37-wht-conversation-450-001.mp3" type="mp3" encodinganalog="530$a">
+			<altformavail id="37-wht-conversation-$tapeNo-$convNo.mp3" type="mp3" encodinganalog="530$a">
 				<p>The original audio has been converted to digital format and is available to the public as an MP3 file.</p>
 			</altformavail>
 			
-			<altformavail id="37-wht-conversation-450-001.wav" type="bwf" encodinganalog="530$a">
+			<altformavail id="37-wht-conversation-$tapeNo-$convNo.wav" type="bwf" encodinganalog="530$a">
 				<p>The original audio has been converted to digital format and is available to the public as a Broadcast WAVE Format (BWF) file.</p>
 			</altformavail>
 			
@@ -524,7 +449,7 @@
 
 				<head>Preferred Citation</head>
 
-				<p>Conversation 450-001<!-- (National Archives Identifier ######) -->, Audiotape 450, Oval Office Sound
+				<p>Conversation $tapeNo-$convNo<!-- (National Archives Identifier ######) -->, Audiotape $tapeNo, $roomName Sound
 					Recordings, White House Tapes, Richard Nixon Presidential Library and Museum, National Archives and
 					Records Administration.</p>
 
@@ -568,11 +493,7 @@
 						non-Watergate-related personal finances of Richard Nixon or the non-public activities of the
 						First Family.</p>
 
-					<!-- if/then
-						1) <p>Upon re-review of this conversation, provisions of the 2007 Deed of Gift between the estate of Richard Nixon and the National Archives will be implemented, where appropriate, to enhance access to materials. Changes in access will be noted once implemented.</p>
-					
-						2) <p>This conversation has been re-reviewed under the provisions of the 2007 Deed of Gift between the estate of Richard Nixon and the National Archives. Changes in access have been noted.</p>
-					-->
+					$deedReviewChron
 
 				</acqinfo>
 
@@ -587,11 +508,11 @@
 							authfilenumber="37-wht-eac-00004831"
 							normal="Richard Nixon Presidential Library and Museum. Tapes Team">Tapes Team of the Richard
 							Nixon Presidential Library and Museum</corpname>, as part of the <archref id="chronRelease"
-							xlink:href="37-wht-chron1" xlink:show="new">
-							<unitid id="chron1">Chron I</unitid>
-							<unittitle encodinganalog="583$b">First Chronological Release</unittitle>
-						</archref> , and released on <date encodinganalog="583$c" normal="1999-10-05" type="releaseDate"
-							>October 5, 1999</date>.</p>
+							xlink:href="37-wht-$chronCode" xlink:show="new">
+							<unitid id="$chronCode">$chronAbbrev</unitid>
+							<unittitle encodinganalog="583$b">$chronNameFull</unittitle>
+						</archref> , and released on <date encodinganalog="583$c" normal="$releaseDateMachine" type="releaseDate"
+							>$releaseDateNat</date>.</p>
 				</processinfo>
 
 				<note id="supportNote">
@@ -617,7 +538,7 @@
 
 				<note id="encodingHistory">
 
-					<p>Encoded by Amanda T. Ross, <date normal="2015-05">May 2015</date></p>
+					<p>Encoded by Amanda T. Ross, <date normal="2015-12">December 2015</date></p>
 
 					<!-- Edited by ?, Mm yyyy -->
 
