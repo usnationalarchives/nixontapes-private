@@ -10,8 +10,8 @@
 		repositoryencoding="iso15511" relatedencoding="DC" scriptencoding="iso15924">
 
 		<eadid encodinganalog="856$u" countrycode="US" mainagencycode="US-DNA"
-			publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::$tapeID-$convID::White House Tapes: Conversation $tapeID-$convID)//EN"
-			url="http://nixonlibrary.gov/tapes/37-wht-conversation-$tapeID-$convID.html">37-wht-conversation-$tapeID-$convID</eadid>
+			publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::$tapeID-$convID::White House Tapes:
+			Conversation $tapeID-$convID)//EN" url="http://nixonlibrary.gov/tapes/37-wht-conversation-$tapeID-$convID.html">37-wht-conversation-$tapeID-$convID</eadid>
 
 		<filedesc>
 			<titlestmt>
