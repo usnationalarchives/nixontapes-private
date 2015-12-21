@@ -20,11 +20,14 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
   let $conversation := normalize-space(concat("Conversation ",$tapeID,"-",$convID))
 
 (: participants, with encodinganalog removed :)
-  let $participants :=   
+(:  let $participants :=   
     for $p in $c/participantsWithLineBreaks/(persname|corpname)
-    let $pEntry := functx:remove-attributes($p,('encodinganalog','normal'))
+    let $pEntry := functx:remove-attributes($p,('xmlns'))
     return $pEntry
+:)
 
+  let $participants := $c/participantsWithLineBreaks
+  
 (: date certainty :)
   let $dateCert :=
     if (contains(data($c/convoDate-NaturalLanguage-Cap),"unknown"))
@@ -192,6 +195,14 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
   (: device phrase :)
   let $device :=  concat("The ",$c/locationNaturalLanguage," taping system captured this recording, which is known as ",$conversation," of the White House Tapes.")
   
+  (: startDateTime :)
+  
+  let $startDateTime := data($c/startDateTime)
+  
+ (: endDateTime :)
+ 
+ let $endDateTime := data($c/endDateTime)
+  
   (: dateDateRange :)
   
   let $dateDateRange :=
@@ -273,15 +284,19 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 let $deedReviewChron :=
 
   if (data($c/releaseChron) eq "Fifth Chronological Release")
-    then $coll/deedReview/chron5
-      else $coll/deedReview/chron1-4
+    then $coll/deedReview/chron5/p
+      else $coll/deedReview/chron1-4/p
 
 let $roomRecordingHistory :=
   $c/roomDescriptions/room[attribute::id[matches(.,$c/locationCode)]]/bioghist
 
 let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[matches(.,$c/locationCode)]]/scopecontent[attribute::id[matches(.,"recordingNotes")]]
 
-  where data($conversation) eq "Conversation 040-001"
+let $roomAbstract := $c/roomDescriptions/room[attribute::id[matches(.,$c/locationCode)]]/abstract
+
+let $roomArchrefSeries := $c/roomDescriptions/room[attribute::id[matches(.,$c/locationCode)]]/archref
+
+  where data($conversation) eq "Conversation 693-001"
   order by $conversation       
   return
 
@@ -301,8 +316,7 @@ let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[ma
      <filedesc>
 			<titlestmt>
 
-				<titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation {$tapeID}-{$convID},
-					<date>{$dateDateRange}</date></titleproper>
+				<titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation {$tapeID}-{$convID}, <date>{$dateDateRange}</date></titleproper>
 				<titleproper type="filing">Conversation {$tapeID}-{$convID}</titleproper>
 				<subtitle>A Subject Log of the Conversation between {$descPart}</subtitle>
 
@@ -372,18 +386,11 @@ let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[ma
 			<publisher>Richard Nixon Presidential Library and Museum</publisher>
 
 			<date normal="2015" encodinganalog="Date" type="publication">2015</date>
-			<p>Under United States copyright laws, the portions of this finding aid produced as part of United States
-				federal government work are not subject to copyright restrictions.</p>
+			<p>Under United States copyright laws, the portions of this finding aid produced as part of United States federal government work are not subject to copyright restrictions.</p>
 
-			<sponsor id="descriptiveSponsor" encodinganalog="536$a">Description, encoding, and public access to the
-				White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential
-				Library and Museum and the Office of Innovation at the National Archives and Records
-				Administration.</sponsor>
+			<sponsor id="descriptiveSponsor" encodinganalog="536$a">Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.</sponsor>
 
-			<sponsor id="digitizationSponsor" encodinganalog="536$a">Digitization of the White House Tapes and related
-				activities by the Richard Nixon Presidential Library and Museum are supported by the Preservation
-				Programs Division and the Office of Innovation at the National Archives and Records
-				Administration.</sponsor>
+			<sponsor id="digitizationSponsor" encodinganalog="536$a">Digitization of the White House Tapes and related esidential Library and Museum are supported by the Preservation Programs Division and the Office of Innovation at the National Archives and Records Administration.</sponsor>
 
 		</titlepage>
 	</frontmatter>
@@ -394,13 +401,17 @@ let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[ma
 			<unittitle label="Title" encodinganalog="245$a">White House Tapes: Conversation {$tapeID}-{$convID}</unittitle>
 			<unitdate label="Date" encodinganalog="245$d" normal="1971-02-16/1971-02-16" type="inclusive"
 				certainty="supplied">{$dateDateRange}</unitdate>
-			<origination id="participants" label="Participants"> {$participants} </origination>
+			<origination id="participants" label="Participants">
+      {$participants/child::*}
+      </origination>
 			<origination id="isPartOf" label="Parent Materials (Is Part Of)">
 				<archref id="parentCollection" xlink:href="37-wht">
 					<unitid identifier="http://catalog.archives.gov/id/597542" type="naId"
 						label="National Archives Identifier">597542</unitid>
 					<unittitle id="collectionTitle" label="Collection">White House Tapes</unittitle>
-				</archref> $roomArchrefSeries <archref id="parentFile" xlink:href="37-wht-audiotape-{$tapeID}">
+				</archref>
+        {$roomArchrefSeries}
+        <archref id="parentFile" xlink:href="37-wht-audiotape-{$tapeID}">
 					<unitid identifier="http://catalog.archives.gov/id/{$audiotapeNARAid}" type="naId"
 						label="National Archives Identifier">{$audiotapeNARAid}</unitid>
 					<unittitle id="audiotapeTitle" label="File">Audiotape {$tapeID}</unittitle>
@@ -410,23 +421,21 @@ let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[ma
 				<extent encodinganalog="300$a" type="totalTime" unit="hhmmss">00:00:00</extent>
 			</physdesc> -->
 			<repository label="Repository">
-				<corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon
-					Presidential Library and Museum</corpname>
+				<corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>
 			</repository>
 			<!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
 			<unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID"
-				label="Local Call Number">$locationCode {$tapeID}-{$convID}</unitid>
+				label="Local Call Number">{$c/locationCode} {$tapeID}-{$convID}</unitid>
 			<!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-			<abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)"
-				>$descriptionSummary Topics of conversation included ....</abstract>
+			<abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">{$statement} Topics of conversation included ....</abstract>
 			<!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
-			$roomAbstract <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language
+			{$roomAbstract}
+      <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language
 					langcode="eng" scriptcode="Latn">English</language></langmaterial>
 		</did>
-		<odd id="conversationDateTime" encodinganalog="518$d"
-			altrender="{$c/startDateTime}/{$c/endDateTime}" type="eventNote">
+		<odd id="conversationDateTime" encodinganalog="518$d" altrender="{$startDateTime}/{$endDateTime}" type="eventNote">
 			<p id="conversationDate">{$dateDateRange}</p>
-			<p id="conversationTime">{$timeTimeRange}</p>
+			<p id="conversationTime">{$timeTimeRange/text()}</p>
 		</odd>
 		
 		{$roomRecordingHistory}
@@ -447,9 +456,7 @@ let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[ma
 				
 				<arrangement id="subjectLogArrangement">
 					<head>About the Subject Log</head>
-					<p>To assist listeners in understanding the conversation and finding segments pertinent to their own interests, a
-						team of archivists has created a Subject Log, which outlines major topics, names, and organizations in sequential
-						order.</p>
+					<p>To assist listeners in understanding the conversation and finding segments pertinent to their own interests, a team of archivists has created a Subject Log, which outlines major topics, names, and organizations in sequential order.</p>
 					<list id="loggingNotes" type="marked">
 						<item>Logs include action statements, which indicate when someone entered or exited a room. Action statements are underlined.</item> <item>If a conversation recorded in one of the offices also captures a telephone conversation, a cross-reference to the corresponding telephone recording is provided.</item>
 						<item>If a telephone recording also captures a conversation taking place in one of the offices, a cross-reference to the corresponding room conversation is provided.</item>
@@ -460,9 +467,8 @@ let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[ma
 				
 				<arrangement id="audioFormat">
 					<head>Audio Format</head>
-					<p>This conversation was recorded to audiotape on a system maintained by the United States Secret Service. The
-						National Archives transferred the original audiotape to Digital Audio Tape (DAT), which, in turn, was later
-						converted to digital audio files.</p> <p>The audio recording of this conversation has been digitized and made available to the public. <!-- For portions that have been deemed withdrawn (withheld), a _ten-second tone_ replaces the removed portion. --></p>
+					<p>This conversation was recorded to audiotape on a system maintained by the United States Secret Service. The National Archives transferred the original audiotape to Digital Audio Tape (DAT), which, in turn, was later converted to digital audio files.</p>
+          <p>The audio recording of this conversation has been digitized and made available to the public. <!-- For portions that have been deemed withdrawn (withheld), a _ten-second tone_ replaces the removed portion. --></p>
 						<note id="digitalRemastering" label="Digital Remastering Project">
 						<p>The White House Tapes are currently undergoing preservation remastering, from which digital derivatives will be made and released to the public as appopriate.</p>
 						</note>
@@ -479,31 +485,31 @@ let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[ma
 				<p>These processing categories are governed by the <title
 					xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new"
 					authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> and the 2007 Deed of Gift.</p>
-				<!--			
-					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01">Abuse of Governmental Powers / Watergate</subject>
-							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-01">Misuse of Government Agencies</subject>
-							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-02">Watergate Break-In</subject>
-							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-03">Watergate Cover-Up</subject>
-							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-04">Campaign Practices</subject>
-							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-05">Obstruction of Justice</subject>
-							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-07">Milk Fund</subject>
-							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-08">Hughes-Rebozo Investigation</subject>
-							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-09">Emoluments and Tax Evasion</subject>
-							<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-10">International Telephone and Telegraph</subject>
-					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination02">Administrative Powers</subject>
-					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination03">Department Policies, Agency Policies, and Executive Decisions</subject>
-					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination04">Legislative Leader</subject>
-					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination05">Presidential Foreign Relations Power</subject>
-					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination06">Commander-in-Chief</subject>
-					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination07">White House Internal or Institutional Organization</subject>
-					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination08">Ceremonial Duties of the President</subject>
-					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination09">Official Travel, Head of State, and Foreign Visits</subject>
-					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination10">Presidential Statements</subject>
-					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination11">Presidential Appointments and Personnel Management</subject>
-					<subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination12">White House Entertainment and Social Affairs</subject>
-					
-					<subject encodinganalog="690$a" source="deedOfGift2007" authfilenumber="deedOfGift2007">Deed of Gift, 2007</subject>					
-				-->
+				<!--
+        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01">Abuse of Governmental Powers / Watergate</subject>
+          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-01">Misuse of Government Agencies</subject>
+          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-02">Watergate Break-In</subject>
+          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-03">Watergate Cover-Up</subject>
+          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-04">Campaign Practices</subject>
+          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-05">Obstruction of Justice</subject>
+          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-07">Milk Fund</subject>
+          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-08">Hughes-Rebozo Investigation</subject>
+          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-09">Emoluments and Tax Evasion</subject>
+          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-10">International Telephone and Telegraph</subject>
+        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination02">Administrative Powers</subject>
+        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination03">Department Policies, Agency Policies, and Executive Decisions</subject>
+        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination04">Legislative Leader</subject>
+        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination05">Presidential Foreign Relations Power</subject>
+        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination06">Commander-in-Chief</subject>
+        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination07">White House Internal or Institutional Organization</subject>
+        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination08">Ceremonial Duties of the President</subject>
+        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination09">Official Travel, Head of State, and Foreign Visits</subject>
+        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination10">Presidential Statements</subject>
+        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination11">Presidential Appointments and Personnel Management</subject>
+        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination12">White House Entertainment and Social Affairs</subject>
+        
+        <subject encodinganalog="690$a" source="deedOfGift2007" authfilenumber="deedOfGift2007">Deed of Gift, 2007</subject>
+        -->
 			</controlaccess>
 			
 			<controlaccess id="recordingLocation">
@@ -513,22 +519,12 @@ let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[ma
 			
 			<controlaccess id="topicalHeadings">
 				<head>Related Topics</head>
-					<genreform encodinganalog="655" rules="rda" source="lcnaf"
-					authfilenumber="http://id.loc.gov/authorities/subjects/sh85101069">Audiotapes</genreform>
-				<persname
-					encodinganalog="600" role="subject" rules="rda" source="lcnaf"
-					authfilenumber="http://id.loc.gov/authorities/names/n79018757">Nixon, Richard M. (Richard Milhous),
-					1913-1994</persname>
-				<subject encodinganalog="650" rules="rda" source="lcsh"
-					authfilenumber="http://id.loc.gov/authorities/subjects/sh85106465">Presidents -- United
-					States</subject> <corpname encodinganalog="610" role="subject" rules="rda" source="lcnaf"
-					authfilenumber="http://id.loc.gov/authorities/names/n79007288">United States. President (1969-1974 :
-					Nixon)</corpname>
-				<geogname encodinganalog="651" role="subject" rules="rda" source="lcsh"
-					authfilenumber="http://id.loc.gov/authorities/subjects/sh85140471">United States -- Politics and
-					government -- 1969-1974</geogname>
-				<!-- Insert conversation-specific LC Subject Headings here with id.loc.gov links (map to ARC/OPA headings ?)
-					alphabetized by tag name and term name thereunder -->
+        <genreform encodinganalog="655" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/subjects/sh85101069">Audiotapes</genreform>
+        <persname encodinganalog="600" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79018757">Nixon, Richard M. (Richard Milhous), 1913-1994</persname>
+        <subject encodinganalog="650" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85106465">Presidents -- United States</subject>
+        <corpname encodinganalog="610" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79007288">United States. President (1969-1974 : Nixon)</corpname>
+        <geogname encodinganalog="651" role="subject" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85140471">United States -- Politics and government -- 1969-1974</geogname>
+        <!-- Insert conversation-specific LC Subject Headings here with id.loc.gov links (map to ARC/OPA headings ?) alphabetized by tag name and term name thereunder -->
 			</controlaccess>
 			
 			<controlaccess id="topicsOfConversation">
@@ -542,7 +538,7 @@ let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[ma
 		<!-- Use separated materials and related materials clips here to enter in information. -->
 		
 		<!-- Indicate alternative formats / digitized audio below -->
-		<!--
+
 		<altformavail type="audio">
 		<head>Digitized Audio</head>
 		
@@ -555,7 +551,7 @@ let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[ma
 			</altformavail>
 			
 		</altformavail>
-		-->
+
 		
 		<dsc type="combined">
 			<head>Conversation Subject Log</head>
@@ -582,13 +578,9 @@ let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[ma
 				-->
 				
 				<p>Access is governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new"
- authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title
- 	xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of
- 	Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to
-						classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
+ authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
 				
-				<p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex"
-					authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>:
+				<p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>:
 					<extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov" xlink:type="simple" >nixon@nara.gov</extref> or (301) 837-3290.</p>
 			</accessrestrict>
 			
@@ -608,29 +600,16 @@ let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[ma
 					</extref>
 				</p>
 				
-				<p>The materials processed and released under the <title
-					xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new"
-					authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> are
-					considered United States government works and, as such, are not eligible for copyright protection in the United
-					States. Thus, they may be treated as being in the public domain. Materials processed and released under the 2007
-					Deed of Gift are also considered property of the United States and therefore may be treated as being in the public
-					domain.</p>
-				<p>Unless expressly stated otherwise, the organization that made this item available makes no warranties about the
-					item and cannot guarantee the accuracy of this rights statement. You are responsible for your own use.</p>
-				<p>According to 36 C.F.R. &#167; 1254.62, you are responsible for obtaining any necessary permission for use,
-					copying, and publication from copyright holders and for any other applicable provisions of the Copyright Act (Title
-					17, United States Code).</p>
-				<p>Certain individuals recorded may claim rights in their recorded voices, under state law. Use of such recorded
-					voices found in this conversation may be subject to these claims. You may need to obtain other permissions for your
-					intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.</p>
-				<p>Any materials used for academic research or otherwise should be fully credited with the source.</p>
+				<p>The materials processed and released under the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> are considered United States government works and, as such, are not eligible for copyright protection in the United States. Thus, they may be treated as being in the public domain. Materials processed and released under the 2007 Deed of Gift are also considered property of the United States and therefore may be treated as being in the public domain.</p>
+        <p>Unless expressly stated otherwise, the organization that made this item available makes no warranties about the item and cannot guarantee the accuracy of this rights statement. You are responsible for your own use.</p>
+        <p>According to 36 C.F.R. &#167; 1254.62, you are responsible for obtaining any necessary permission for use, copying, and publication from copyright holders and for any other applicable provisions of the Copyright Act (Title 17, United States Code).</p>
+				<p>Certain individuals recorded may claim rights in their recorded voices, under state law. Use of such recorded voices found in this conversation may be subject to these claims. You may need to obtain other permissions for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.</p>
+        <p>Any materials used for academic research or otherwise should be fully credited with the source.</p>
 			</userestrict>
 			
 			<prefercite>
 				<head>Preferred Citation</head>
-					<p>Conversation {$tapeID}-{$convID}<!-- (National Archives Identifier ######) -->, Audiotape {$tapeID},
-					{$c/locationNaturalLanguage} Sound Recordings, White House Tapes, Richard Nixon Presidential Library and Museum,
-					National Archives and Records Administration.</p>
+					<p>Conversation {$tapeID}-{$convID}<!-- (National Archives Identifier ######) -->, Audiotape {$tapeID}, {$c/locationNaturalLanguage} Sound Recordings, White House Tapes, Richard Nixon Presidential Library and Museum, National Archives and Records Administration.</p>
 			</prefercite>
 			
 			<acqinfo encodinganalog="541">
@@ -639,19 +618,15 @@ let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[ma
 				<acqinfo id="acqPRMPA">
 					<head>Presidential Recordings and Materials Preservation Act of 1974</head>
 					<p>The Nixon-era White House Tapes are subject to the Presidential Recordings and Materials Preservation Act of 1974 (PRMPA). PRMPA, which applies only to the Nixon Presidential Materials, stipulates that those materials relevant to the understanding of Abuse of Governmental Power and Watergate are to be processed and released to the public prior to the release of all other materials. Materials related to the Abuse of Governmental Power and the constitutional and statutory duties of the President and his White House staff are retained by the National Archives. PRMPA mandated the promulgation of access restrictions for the processing of the Nixon Tapes.</p>
-            <p>The resulting Nixon Public Acccess Regulations 36 CFR 1275 state that the National Archives must segregate and return to the estate of former President Nixon those materials identified as purely &quot;personal-private&quot; or &quot;personal-political,&quot; and unrelated to the President's constitutional and statutory duties. This conversation has been processed under these regulations.</p>
+            <p>The resulting Nixon Public Acccess Regulations 36 CFR 1275 state that the National Archives must segregate and return to the estate of former President Nixon those materials identified as purely &quot;personal-private&quot; or &quot;personal-political,&quot; and unrelated to the President&#39;s constitutional and statutory duties. This conversation has been processed under these regulations.</p>
 				</acqinfo>
 				
 				<acqinfo id="acqDeed2007">
 					<head>2007 Deed of Gift</head>
-					<p>However, in 2007, the estate of Richard Nixon negotiated a Deed of Gift with the Richard Nixon
-						Presidential Library and Museum. By this agreement, materials deemed
-						&quot;personal-political&quot; have been deeded back to the National Archives for release to the
-						public. Materials originally deemed &quot;person-private&quot; have been deeded back to the
-						National Archives, with the exception of materials concerning the medical history or
-						non-Watergate-related personal finances of Richard Nixon or the non-public activities of the
-						First Family.</p>
-					{$deedReviewChron}	
+					<p>However, in 2007, the estate of Richard Nixon negotiated a Deed of Gift with the Richard Nixon Presidential Library and Museum. By this agreement, materials deemed &quot;personal-political&quot; have been deeded back to the National Archives for release to the public. Materials originally deemed &quot;person-private&quot; have been deeded back to the National Archives, with the exception of materials concerning the medical history or non-Watergate-related personal finances of Richard Nixon or the non-public activities of the First Family.</p>
+            
+					{$deedReviewChron}
+          
 				</acqinfo>
 				
 			</acqinfo>
@@ -660,17 +635,14 @@ let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[ma
 				<head>Processing Information</head>
 				<processinfo type="chronRelease">
 					<p>Processed by the <corpname encodinganalog="583$k" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004831"
-						normal="Richard Nixon Presidential Library and Museum. Tapes Team">Tapes Team of the Richard Nixon Presidential
-						Library and Museum</corpname>, as part of the <archref id="chronRelease" xlink:href="37-wht-{$chronNum}" xlink:show="new">
+						normal="Richard Nixon Presidential Library and Museum. Tapes Team">Tapes Team of the Richard Nixon Presidential Library and Museum</corpname>, as part of the <archref id="chronRelease" xlink:href="37-wht-{$chronNum}" xlink:show="new">
               <unittitle encodinganalog="583$b">{$c/releaseChron}</unittitle> (<unitid id="{$chronNum}">{$chronCode}</unitid>)
 						</archref>, and released on <date encodinganalog="583$c" normal="{$c/releaseDate-MachineReadable}" type="releaseDate">{$c/releaseDate-NatLang}</date>.</p>
 				</processinfo>
 				
 				<note id="supportNote">
-					<p>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership
-						between the <corpname source="nixonTapesIndex" role="repository" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
-					
-						<p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="United States. National Archives and Records Administration. Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
+					<p>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the <corpname source="nixonTapesIndex" role="repository" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
+          <p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="United States. National Archives and Records Administration. Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
 				</note>
 				
 				<note id="encodingHistory">
