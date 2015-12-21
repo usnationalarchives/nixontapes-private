@@ -2,14 +2,25 @@ import module namespace functx = 'http://www.functx.com' at 'http://www.xqueryfu
 
 declare namespace xlink="http://www.w3.org/1999/xlink";
 
+declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";   
 declare option output:method "xml";
 declare option output:omit-xml-declaration "no";
 declare option output:indent "yes";
-declare option output:standalone "no";
-
+declare option output:standalone "no"; 
+  
+  
 let $coll := collection("nixontapes-private-base")
 
-  for $c in $coll/root/row[not(contains(tapeNo,'test'))]
+  for $d in distinct-values($coll/root/row[not(contains(tapeNo,'test'))])
+  let $my-doc :=  
+
+<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+    
+  {
+ 
+for $c in $coll/root/row[matches(.,$d)]
 
 (: identifying information :)
   let $tapeID := data($c/tapeNo3Dig)
@@ -206,20 +217,17 @@ let $coll := collection("nixontapes-private-base")
                 if (contains($descPart, "[Uncompleted call]"))
                 then concat("A telephone call was attempted at an unknown date, sometime between ",$sTime," on ",$c/startDate-NaturalLanguage," and ",$eTime," on ",$c/endDate-NaturalLanguage,", but the call was not completed. ",$device)
                 else concat($descPart," ",$location," on an unknown date, sometime between ",$sTime," on ",$c/startDate-NaturalLanguage," and ",$eTime," on ",$c/endDate-NaturalLanguage,". ",$device)
-            else "!"
-  where contains(data($c/locationNaturalLanguage),'Executive') 
+            else "!"    
+
+  where data($conversation) eq "Conversation 001-001"
   order by $conversation       
   return
-<ead>
 
-	<eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"
-		repositoryencoding="iso15511" relatedencoding="DC" scriptencoding="iso15924">
 
-		<eadid encodinganalog="856$u" countrycode="US" mainagencycode="US-DNA"
-			publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::$tapeID-$convID::White House Tapes:
-			Conversation $tapeID-$convID)//EN" url="http://nixonlibrary.gov/tapes/37-wht-conversation-$tapeID-$convID.html">37-wht-conversation-$tapeID-$convID</eadid>  
+	<eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" repositoryencoding="iso15511" relatedencoding="DC" scriptencoding="iso15924">
+  		<eadid encodinganalog="856$u" countrycode="US" mainagencycode="US-DNA" publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::{$tapeID}-{$convID}::White House Tapes: Conversation {$tapeID}-{$convID})//EN" url="http://nixonlibrary.gov/tapes/37-wht-conversation-{$tapeID}-{$convID}.html">37-wht-conversation-{$tapeID}-{$convID}</eadid>  
   
-  <filedesc>
+		<filedesc>
 			<titlestmt>
 
 				<titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation {$tapeID}-{$convID},
@@ -235,7 +243,7 @@ let $coll := collection("nixontapes-private-base")
 					at the National Archives and Records Administration.<lb/> Digitization of the White House Tapes and
 					related activities by the Richard Nixon Presidential Library and Museum are supported by the
 					Preservation Programs Division and the Office of Innovation at the National Archives and Records
-					Administration. </sponsor>
+					Administration.</sponsor>
 
 			</titlestmt>
 
@@ -294,8 +302,7 @@ let $coll := collection("nixontapes-private-base")
 				<item></item>
 			</change>
 		</revisiondesc> -->
-
-	</eadheader>
+  </eadheader>}
 
 	<frontmatter>
 		<titlepage>
@@ -320,7 +327,6 @@ let $coll := collection("nixontapes-private-base")
 
 		</titlepage>
 	</frontmatter>
-
 
 	<archdesc level="otherlevel" otherlevel="item" relatedencoding="MARC21">
 		<did>
@@ -754,5 +760,12 @@ let $coll := collection("nixontapes-private-base")
 		</descgrp>
 
 	</archdesc>
-  
+ 
+
 </ead>
+
+let $id := substring(distinct-values($my-doc/File/Core/INAM), 11, 3)  
+let $filename := concat("audiotape-",$id,"_bwf-base.xml")  
+let $dir := "X:\Project01\Nixon_Tapes_Portal\XML\BWF\Base BWF XML\"  
+let $path := concat($dir, $filename)  
+return file:write($path, $my-doc)  
