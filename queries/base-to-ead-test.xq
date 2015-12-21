@@ -7,10 +7,14 @@ declare option output:method "xml";
 declare option output:omit-xml-declaration "no";
 declare option output:indent "yes"; 
 
-
 let $coll := collection("nixontapes-private-base")
 
-for $c in $coll/root/row[not(contains(tapeNo,'test'))]
+for $r in $coll/root/row[not(contains(tapeNo,'test'))]
+where data($r/tapeNo3Dig) eq "919"
+
+let $my-doc :=  
+
+let $c := $coll/root/row[matches(.,$r)]
 (: identifying information :)
   let $tapeID := data($c/tapeNo3Dig)
   let $convID := data($c/convNo3Dig)
@@ -82,6 +86,8 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
             else " am"
           )  
         )
+        
+let $releaseChron := $c/releaseChron
 
 (: chron in sortable number :)
   let $chronNum :=
@@ -98,22 +104,22 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
           then "4"
           else
             if (contains($c/releaseChron,"Fifth") and contains($c/releaseChron,"Part IV"))
-            then "5.4"
+            then "5-4"
             else
               if (contains($c/releaseChron,"Fifth") and contains($c/releaseChron,"Part V"))
-              then "5.5"
+              then "5-5"
               else
                 if (contains($c/releaseChron,"Fifth") and contains($c/releaseChron,"Part III"))
-                then "5.3"
+                then "5-3"
                 else
                   if (contains($c/releaseChron,"Fifth") and contains($c/releaseChron,"Part II"))
-                  then "5.2"
+                  then "5-2"
                   else
                     if (contains($c/releaseChron,"Fifth") and contains($c/releaseChron,"Part I"))
-                    then "5.1"
+                    then "5-1"
                     else
                       if (contains($c/releaseChron,"Cabinet"))   
-                      then "Cabinet"
+                      then "cabinet"
                       else "!"
   
 (: Chron Abbreviation :)
@@ -226,7 +232,19 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
   
  (: timeTimeRange :) 
  
- let $timeTimeRange := $c/convTime-Extended-Lower
+ let $timeTimeRange := 
+   (: 1 :)
+   if ($sTime eq $eTime) and (data($timeCert) eq "certain")
+     then concat("at ",$sTime)
+       else
+   (: 2 :)
+   if ($sTime eq $eTime) and (data($timeCert) eq "estimated")
+     then concat("around ",$sTime)
+       else
+   (: 3 :)
+   if ($timeCert eq "estimated")
+     then concat("at an unknown time between ",$sTime," and ",$eTime)
+       else concat("from ",$sTime," to ",$eTime)
  
   (: if/then statements for content :)
     let $statement :=
@@ -296,7 +314,10 @@ let $roomAbstract := $c/roomDescriptions/room[attribute::id[matches(.,$c/locatio
 
 let $roomArchrefSeries := $c/roomDescriptions/room[attribute::id[matches(.,$c/locationCode)]]/archref
 
-  where data($conversation) eq "Conversation 693-001"
+let $releaseDate-MachineReadable := $c/releaseDate-MachineReadable
+
+let $releaseDate-NatLang := $c/releaseDate-NatLang|releaseDateNatLang
+
   order by $conversation       
   return
 
@@ -580,8 +601,7 @@ let $roomArchrefSeries := $c/roomDescriptions/room[attribute::id[matches(.,$c/lo
 				<p>Access is governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new"
  authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
 				
-				<p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>:
-					<extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov" xlink:type="simple" >nixon@nara.gov</extref> or (301) 837-3290.</p>
+				<p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov" xlink:type="simple" >nixon@nara.gov</extref> or (301) 837-3290.</p>
 			</accessrestrict>
 			
 			<userestrict encodinganalog="540">
@@ -634,10 +654,9 @@ let $roomArchrefSeries := $c/roomDescriptions/room[attribute::id[matches(.,$c/lo
 			<processinfo encodinganalog="583$z">
 				<head>Processing Information</head>
 				<processinfo type="chronRelease">
-					<p>Processed by the <corpname encodinganalog="583$k" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004831"
-						normal="Richard Nixon Presidential Library and Museum. Tapes Team">Tapes Team of the Richard Nixon Presidential Library and Museum</corpname>, as part of the <archref id="chronRelease" xlink:href="37-wht-{$chronNum}" xlink:show="new">
-              <unittitle encodinganalog="583$b">{$c/releaseChron}</unittitle> (<unitid id="{$chronNum}">{$chronCode}</unitid>)
-						</archref>, and released on <date encodinganalog="583$c" normal="{$c/releaseDate-MachineReadable}" type="releaseDate">{$c/releaseDate-NatLang}</date>.</p>
+					<p>Processed by the <corpname encodinganalog="583$k" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004831" normal="Richard Nixon Presidential Library and Museum. Tapes Team">Tapes Team of the Richard Nixon Presidential Library and Museum</corpname>, as part of the <archref id="chronRelease" xlink:href="37-wht-chron{$chronNum}" xlink:show="new">
+              <unittitle encodinganalog="583$b">{$releaseChron}</unittitle> (<unitid id="chron{$chronNum}">{$chronCode}</unitid>)
+						</archref>, and released on <date encodinganalog="583$c" normal="{$releaseDate-MachineReadable}" type="releaseDate">{$releaseDate-NatLang}</date>.</p>
 				</processinfo>
 				
 				<note id="supportNote">
@@ -654,3 +673,16 @@ let $roomArchrefSeries := $c/roomDescriptions/room[attribute::id[matches(.,$c/lo
 	</archdesc>
   
 </ead>
+
+return
+  $my-doc
+
+(:
+let $dir := "/Users/atrossity/Documents/nixontapes-private/37-wht/test/"
+let $filename := concat($d,".xml")
+let $path := concat($dir, $filename)
+
+where contains($d,"37-wht-conversation-919-001")
+
+return file:write($path, $my-doc)
+:)
