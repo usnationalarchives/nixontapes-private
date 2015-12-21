@@ -236,6 +236,10 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 <ead xmlns="urn:isbn:1-931666-22-9" xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
+
+	<eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b"
+		repositoryencoding="iso15511" relatedencoding="DC" scriptencoding="iso15924">
+    
   <eadid encodinganalog="856$u" countrycode="US" mainagencycode="US-DNA"
 			publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::{$tapeID}-{$convID}::White House Tapes:
 			Conversation {$tapeID}-{$convID})//EN"
@@ -290,5 +294,57 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 
 		</filedesc> 
 
+		<profiledesc>
+			<creation>Base machine-readable finding aid derived using XQuery scripts written by Amanda T. Ross<lb/>
+				<date normal="2015-12-21">December 21, 2015</date>
+			</creation>
+			<langusage>Description is in <language encodinganalog="Language" langcode="eng" scriptcode="Latn"
+					>English</language>
+			</langusage>
+
+			<descrules>This finding aid was prepared using <bibref><title render="italic">Describing Archives: A Content
+						Standard</title>, <edition>2nd edition</edition>, <imprint><geogname>Chicago</geogname>:
+							<publisher>Society of American Archivists</publisher>, <date type="publication"
+							normal="2013">2013</date>
+					</imprint></bibref> (DACS).</descrules>
+
+		</profiledesc>
     
-  </ead>
+    		<!-- <revisiondesc>
+			<change>
+				<date normal="" type="addition"></date>
+				<item></item>
+			</change>
+			<change>
+				<date normal="" type="edit"></date>
+				<item></item>
+			</change>
+		</revisiondesc> -->
+    
+	<frontmatter>
+		<titlepage>
+			<titleproper>White House Tapes: Conversation {$tapeID}-{$convID}, <date>{$dateDateRange}</date>
+			</titleproper>
+
+			<publisher>Richard Nixon Presidential Library and Museum</publisher>
+
+			<date normal="2015" encodinganalog="Date" type="publication">2015</date>
+			<p>Under United States copyright laws, the portions of this finding aid produced as part of United States
+				federal government work are not subject to copyright restrictions.</p>
+
+			<sponsor id="descriptiveSponsor" encodinganalog="536$a">Description, encoding, and public access to the
+				White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential
+				Library and Museum and the Office of Innovation at the National Archives and Records
+				Administration.</sponsor>
+
+			<sponsor id="digitizationSponsor" encodinganalog="536$a">Digitization of the White House Tapes and related
+				activities by the Richard Nixon Presidential Library and Museum are supported by the Preservation
+				Programs Division and the Office of Innovation at the National Archives and Records
+				Administration.</sponsor>
+
+		</titlepage>
+	</frontmatter>
+    
+	</eadheader>
+  
+</ead>
