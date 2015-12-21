@@ -246,7 +246,7 @@
 			
 			<controlaccess id="recordingLocation">
 				<head>Location of Recording</head>
-				<geogname encodinganalog="518$p" normal="{$latitude}, {$longitude}" source="GeoHack" role="location">{$roomName}</geogname>
+				<geogname encodinganalog="518$p" normal="{$latitude}, {$longitude}" source="GeoHack" role="location">{$locationNaturalLanguage}</geogname>
 			</controlaccess>
 			
 			<controlaccess id="topicalHeadings">
@@ -371,7 +371,7 @@
 			<prefercite>
 				<head>Preferred Citation</head>
 					<p>Conversation {$tapeID}-{$convID}<!-- (National Archives Identifier ######) -->, Audiotape {$tapeID},
-					{$roomName} Sound Recordings, White House Tapes, Richard Nixon Presidential Library and Museum,
+						{$locationNaturalLanguage} Sound Recordings, White House Tapes, Richard Nixon Presidential Library and Museum,
 					National Archives and Records Administration.</p>
 			</prefercite>
 			
@@ -411,9 +411,10 @@
 				<processinfo type="chronRelease">
 					<p>Processed by the <corpname encodinganalog="583$k" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004831"
 						normal="Richard Nixon Presidential Library and Museum. Tapes Team">Tapes Team of the Richard Nixon Presidential
-						Library and Museum</corpname>, as part of the <archref id="chronRelease" xlink:href="37-wht-{$chronCode}" xlink:show="new">
-							<unitid id="{$chronCode}">{$chronAbbrev}</unitid>
-							<unittitle encodinganalog="583$b">{$chronNameFull}</unittitle>
+						Library and Museum</corpname>, as part of the <archref id="chronRelease" xlink:href="37-wht-{$chronNum}" xlink:show="new">
+							
+							<unittitle encodinganalog="583$b">{$releaseChron}</unittitle> 
+							<unitid id="{$chronNum}">({$chronCode})</unitid>
 						</archref>, and released on <date encodinganalog="583$c" normal="{$releaseDateMachine}" type="releaseDate">{$releaseDateNat}</date>.</p>
 				</processinfo>
 				

@@ -14,7 +14,9 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 (: identifying information :)
   let $tapeID := data($c/tapeNo3Dig)
   let $convID := data($c/convNo3Dig)
-  let $digitalID := data($c/filename)  
+  let $digitalID := data($c/filename)
+  let $audiotapeNARAid := $c/audiotapes/catalogRecord[audiotapeNumber[matches(.,$tapeID)]]/attribute::naraID
+    
   let $conversation := normalize-space(concat("Conversation ",$tapeID,"-",$convID))
 
 (: participants, with encodinganalog removed :)
@@ -110,6 +112,41 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
                       if (contains($c/releaseChron,"Cabinet"))   
                       then "Cabinet"
                       else "!"
+  
+(: Chron Abbreviation :)
+
+(: chron in sortable number :)
+  let $chronCode :=
+    if (contains($c/releaseChron,"First"))
+    then "Chron I"
+    else
+      if (contains($c/releaseChron,"Second"))
+      then "Chron II"
+      else
+        if (contains($c/releaseChron,"Third"))
+        then "Chron III"
+        else
+          if (contains($c/releaseChron,"Fourth"))
+          then "Chron IV"
+          else
+            if (contains($c/releaseChron,"Fifth") and contains($c/releaseChron,"Part IV"))
+            then "Chron V, Part IV"
+            else
+              if (contains($c/releaseChron,"Fifth") and contains($c/releaseChron,"Part V"))
+              then "Chron V, Part V"
+              else
+                if (contains($c/releaseChron,"Fifth") and contains($c/releaseChron,"Part III"))
+                then "Chron V, Part III"
+                else
+                  if (contains($c/releaseChron,"Fifth") and contains($c/releaseChron,"Part II"))
+                  then "Chron V, Part II"
+                  else
+                    if (contains($c/releaseChron,"Fifth") and contains($c/releaseChron,"Part I"))
+                    then "Chron V, Part I"
+                    else
+                      if (contains($c/releaseChron,"Cabinet"))   
+                      then "Cabinet"
+                      else "!"  
                       
 (: description section :)
 
@@ -174,8 +211,12 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
       )
         else 
         (: 3 :)
-        concat("at an unknown date between ",data($c/startDate-NaturalLanguage)," and ",data($c/endDate-NaturalLanguage)) 
+        concat("on an unknown date between ",data($c/startDate-NaturalLanguage)," and ",data($c/endDate-NaturalLanguage)) 
   
+ (: timeTimeRange :) 
+ 
+ let $timeTimeRange := $c/convTime-Extended-Lower
+ 
   (: if/then statements for content :)
     let $statement :=
     (: 1 :)
@@ -227,7 +268,18 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
                 if (contains($descPart, "[Uncompleted call]"))
                 then concat("A telephone call was attempted at an unknown date, sometime between ",$sTime," on ",$c/startDate-NaturalLanguage," and ",$eTime," on ",$c/endDate-NaturalLanguage,", but the call was not completed. ",$device)
                 else concat($descPart," ",$location," on an unknown date, sometime between ",$sTime," on ",$c/startDate-NaturalLanguage," and ",$eTime," on ",$c/endDate-NaturalLanguage,". ",$device)
-            else "!"    
+            else "!"   
+
+let $deedReviewChron :=
+
+  if (data($c/releaseChron) eq "Fifth Chronological Release")
+    then $coll/deedReview/chron5
+      else $coll/deedReview/chron1-4
+
+let $roomRecordingHistory :=
+  $c/roomDescriptions/room[attribute::id[matches(.,$c/locationCode)]]/bioghist
+
+let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[matches(.,$c/locationCode)]]/scopecontent[attribute::id[matches(.,"recordingNotes")]]
 
   where data($conversation) eq "Conversation 040-001"
   order by $conversation       
@@ -256,12 +308,7 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 
 				<author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
 
-				<sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by
-					a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation
-					at the National Archives and Records Administration.<lb/> Digitization of the White House Tapes and
-					related activities by the Richard Nixon Presidential Library and Museum are supported by the
-					Preservation Programs Division and the Office of Innovation at the National Archives and Records
-					Administration. </sponsor>
+				<sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.<lb/> Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the Preservation Programs Division and the Office of Innovation at the National Archives and Records Administration.</sponsor>
 
 			</titlestmt>
 
@@ -279,14 +326,12 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 					being in the public domain. <lb/>
 					<extref xlink:href="http://creativecommons.org/publicdomain/zero/1.0/" xlink:show="new"
 						xlink:title="Creative Commons License CC0">
-						<extptr xlink:role="license" xlink:href="http://i.creativecommons.org/p/zero/1.0/88x31.png"
-							xlink:show="embed" xlink:title="Creative Commons License 0"/>
+						<extptr xlink:role="license" xlink:href="http://i.creativecommons.org/p/zero/1.0/88x31.png" xlink:show="embed" xlink:title="Creative Commons License 0"/>
 					</extref>
 					<lb/>
 					<extref xlink:href="http://creativecommons.org/publicdomain/mark/1.0/" xlink:show="new"
 						xlink:title="Public Domain Mark 1.0">
-						<extptr xlink:role="license" xlink:href="http://i.creativecommons.org/p/mark/1.0/88x31.png"
-							xlink:show="embed" xlink:title="Public Domain Mark"/>
+						<extptr xlink:role="license" xlink:href="http://i.creativecommons.org/p/mark/1.0/88x31.png" xlink:show="embed" xlink:title="Public Domain Mark"/>
 					</extref>
 				</p>
 
@@ -302,11 +347,7 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 					>English</language>
 			</langusage>
 
-			<descrules>This finding aid was prepared using <bibref><title render="italic">Describing Archives: A Content
-						Standard</title>, <edition>2nd edition</edition>, <imprint><geogname>Chicago</geogname>:
-							<publisher>Society of American Archivists</publisher>, <date type="publication"
-							normal="2013">2013</date>
-					</imprint></bibref> (DACS).</descrules>
+			<descrules>This finding aid was prepared using <bibref><title render="italic">Describing Archives: A Content Standard</title>, <edition>2nd edition</edition>, <imprint><geogname>Chicago</geogname>: <publisher>Society of American Archivists</publisher>, <date type="publication" normal="2013">2013</date> </imprint></bibref> (DACS).</descrules>
 
 		</profiledesc>
     
@@ -383,7 +424,7 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 					langcode="eng" scriptcode="Latn">English</language></langmaterial>
 		</did>
 		<odd id="conversationDateTime" encodinganalog="518$d"
-			altrender="{$startDateTime-MR}/{$endDateTime-MR}" type="eventNote">
+			altrender="{$c/startDateTime}/{$c/endDateTime}" type="eventNote">
 			<p id="conversationDate">{$dateDateRange}</p>
 			<p id="conversationTime">{$timeTimeRange}</p>
 		</odd>
@@ -395,7 +436,7 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 			<head>Collection Overview</head>
 			<scopecontent id="conversationSummary">
 				<head>Conversation Summary</head>
-				<p>{$descriptionSummary}</p>
+				<p>{$statement}</p>
 				<p>Topics of conversation included ...</p>
 			</scopecontent>
 			
@@ -410,16 +451,10 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 						team of archivists has created a Subject Log, which outlines major topics, names, and organizations in sequential
 						order.</p>
 					<list id="loggingNotes" type="marked">
-						<item>Logs include action statements, which indicate when
-							someone entered or exited a room. Action statements are underlined.</item> <item>If a conversation recorded in
-								one of the offices also captures a telephone conversation, a cross-reference to the corresponding telephone recording is provided.</item>
-						<item>If a telephone recording also captures a conversation taking place in one of the offices, a cross-reference
-							to the corresponding room conversation is provided.</item>
-						<item>Logs indicate which portions, if any, were reviewed under the <title authfilenumber="deedOfGift2007">2007
-							Deed of Gift</title>.</item>
-						<item>In some cases, the Watergate Special Prosecution Force or court-ordered mandates resulted in a transcript of
-							the entire conversation or portions of conversation. For these portions, archivists have provided a citation to
-							the related transcript<!--, in place of subject logging -->.</item>
+						<item>Logs include action statements, which indicate when someone entered or exited a room. Action statements are underlined.</item> <item>If a conversation recorded in one of the offices also captures a telephone conversation, a cross-reference to the corresponding telephone recording is provided.</item>
+						<item>If a telephone recording also captures a conversation taking place in one of the offices, a cross-reference to the corresponding room conversation is provided.</item>
+						<item>Logs indicate which portions, if any, were reviewed under the <title authfilenumber="deedOfGift2007">2007 Deed of Gift</title>.</item>
+						<item>In some cases, the Watergate Special Prosecution Force or court-ordered mandates resulted in a transcript of the entire conversation or portions of conversation. For these portions, archivists have provided a citation to the related transcript<!--, in place of subject logging -->.</item>
 					</list>
 				</arrangement>
 				
@@ -427,11 +462,9 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 					<head>Audio Format</head>
 					<p>This conversation was recorded to audiotape on a system maintained by the United States Secret Service. The
 						National Archives transferred the original audiotape to Digital Audio Tape (DAT), which, in turn, was later
-						converted to digital audio files.</p> <p>The audio recording of this conversation has been digitized and made
-							available to the public. <!-- For portions that have been deemed withdrawn (withheld), a _ten-second tone_ replaces the removed portion. --></p>
+						converted to digital audio files.</p> <p>The audio recording of this conversation has been digitized and made available to the public. <!-- For portions that have been deemed withdrawn (withheld), a _ten-second tone_ replaces the removed portion. --></p>
 						<note id="digitalRemastering" label="Digital Remastering Project">
-						<p>The White House Tapes are currently undergoing preservation remastering, from which digital derivatives will be
-							made and released to the public as appopriate.</p>
+						<p>The White House Tapes are currently undergoing preservation remastering, from which digital derivatives will be made and released to the public as appopriate.</p>
 						</note>
 					<p/>
 				</arrangement>
@@ -475,7 +508,7 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 			
 			<controlaccess id="recordingLocation">
 				<head>Location of Recording</head>
-				<geogname encodinganalog="518$p" normal="{$latitude}, {$longitude}" source="GeoHack" role="location">{$roomName}</geogname>
+				<geogname encodinganalog="518$p" normal="{$c/latitude}, {$c/longitude}" source="GeoHack" role="location">{$c/locationNaturalLanguage}</geogname>
 			</controlaccess>
 			
 			<controlaccess id="topicalHeadings">
@@ -552,8 +585,7 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
  authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title
  	xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of
  	Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to
-						classified national security information, including <title
-							xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
+						classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
 				
 				<p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex"
 					authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>:
@@ -566,16 +598,13 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 				<p id="ccZero">
 					<extref id="cc0" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/" xlink:show="new"
 						xlink:title="Creative Commons License CC0">
-						<extptr xlink:role="license" xlink:href="http://i.creativecommons.org/p/zero/1.0/88x31.png"
-							xlink:show="embed" xlink:title="Creative Commons License 0"/>
+						<extptr xlink:role="license" xlink:href="http://i.creativecommons.org/p/zero/1.0/88x31.png" xlink:show="embed" xlink:title="Creative Commons License 0"/>
 					</extref>
 				</p>
 				
 				<p id="publicDomain">
-					<extref id="pdm" xlink:href="http://creativecommons.org/publicdomain/mark/1.0/" xlink:show="new"
-						xlink:title="Public Domain Mark 1.0">
-						<extptr xlink:role="license" xlink:href="http://i.creativecommons.org/p/mark/1.0/88x31.png"
-							xlink:show="embed" xlink:title="Public Domain Mark"/>
+					<extref id="pdm" xlink:href="http://creativecommons.org/publicdomain/mark/1.0/" xlink:show="new" xlink:title="Public Domain Mark 1.0">
+						<extptr xlink:role="license" xlink:href="http://i.creativecommons.org/p/mark/1.0/88x31.png" xlink:show="embed" xlink:title="Public Domain Mark"/>
 					</extref>
 				</p>
 				
@@ -600,7 +629,7 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 			<prefercite>
 				<head>Preferred Citation</head>
 					<p>Conversation {$tapeID}-{$convID}<!-- (National Archives Identifier ######) -->, Audiotape {$tapeID},
-					{$roomName} Sound Recordings, White House Tapes, Richard Nixon Presidential Library and Museum,
+					{$c/locationNaturalLanguage} Sound Recordings, White House Tapes, Richard Nixon Presidential Library and Museum,
 					National Archives and Records Administration.</p>
 			</prefercite>
 			
@@ -609,16 +638,8 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 				
 				<acqinfo id="acqPRMPA">
 					<head>Presidential Recordings and Materials Preservation Act of 1974</head>
-					<p>The Nixon-era White House Tapes are subject to the Presidential Recordings and Materials Preservation Act of
-						1974 (PRMPA). PRMPA, which applies only to the Nixon Presidential Materials, stipulates that those materials
-						relevant to the understanding of Abuse of Governmental Power and Watergate are to be processed and released to the
-						public prior to the release of all other materials. Materials related to the Abuse of Governmental Power and the
-						constitutional and statutory duties of the President and his White House staff are retained by the National
-						Archives. PRMPA mandated the promulgation of access restrictions for the processing of the Nixon Tapes.</p> <p>The
-							resulting Nixon Public Acccess Regulations 36 CFR 1275 state that the National Archives must segregate and return
-							to the estate of former President Nixon those materials identified as purely &quot;personal-private&quot; or
-							&quot;personal-political,&quot; and unrelated to the President's constitutional and statutory duties. This
-							conversation has been processed under these regulations.</p>
+					<p>The Nixon-era White House Tapes are subject to the Presidential Recordings and Materials Preservation Act of 1974 (PRMPA). PRMPA, which applies only to the Nixon Presidential Materials, stipulates that those materials relevant to the understanding of Abuse of Governmental Power and Watergate are to be processed and released to the public prior to the release of all other materials. Materials related to the Abuse of Governmental Power and the constitutional and statutory duties of the President and his White House staff are retained by the National Archives. PRMPA mandated the promulgation of access restrictions for the processing of the Nixon Tapes.</p>
+            <p>The resulting Nixon Public Acccess Regulations 36 CFR 1275 state that the National Archives must segregate and return to the estate of former President Nixon those materials identified as purely &quot;personal-private&quot; or &quot;personal-political,&quot; and unrelated to the President's constitutional and statutory duties. This conversation has been processed under these regulations.</p>
 				</acqinfo>
 				
 				<acqinfo id="acqDeed2007">
@@ -640,22 +661,16 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 				<processinfo type="chronRelease">
 					<p>Processed by the <corpname encodinganalog="583$k" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004831"
 						normal="Richard Nixon Presidential Library and Museum. Tapes Team">Tapes Team of the Richard Nixon Presidential
-						Library and Museum</corpname>, as part of the <archref id="chronRelease" xlink:href="37-wht-{$chronCode}" xlink:show="new">
-							<unitid id="{$chronCode}">{$chronAbbrev}</unitid>
-							<unittitle encodinganalog="583$b">{$chronNameFull}</unittitle>
-						</archref>, and released on <date encodinganalog="583$c" normal="{$releaseDateMachine}" type="releaseDate">{$releaseDateNat}</date>.</p>
+						Library and Museum</corpname>, as part of the <archref id="chronRelease" xlink:href="37-wht-{$chronNum}" xlink:show="new">
+              <unittitle encodinganalog="583$b">{$c/releaseChron}</unittitle> (<unitid id="{$chronNum}">{$chronCode}</unitid>)
+						</archref>, and released on <date encodinganalog="583$c" normal="{$c/releaseDate-MachineReadable}" type="releaseDate">{$c/releaseDate-NatLang}</date>.</p>
 				</processinfo>
 				
 				<note id="supportNote">
 					<p>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership
-						between the <corpname source="nixonTapesIndex" role="repository" authfilenumber="37-wht-eac-00003482"
-							normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
+						between the <corpname source="nixonTapesIndex" role="repository" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
 					
-						<p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and
-							Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex"
-								authfilenumber="37-wht-eac-00004830" normal="United States. National Archives and Records Administration.
-								Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor"
-									source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
+						<p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="United States. National Archives and Records Administration. Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
 				</note>
 				
 				<note id="encodingHistory">
