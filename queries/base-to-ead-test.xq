@@ -321,7 +321,9 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 			</change>
 		</revisiondesc> -->
     
-	<frontmatter>
+	</eadheader>
+  
+  	<frontmatter>
 		<titlepage>
 			<titleproper>White House Tapes: Conversation {$tapeID}-{$convID}, <date>{$dateDateRange}</date>
 			</titleproper>
@@ -344,7 +346,5 @@ for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 
 		</titlepage>
 	</frontmatter>
-    
-	</eadheader>
   
 </ead>
