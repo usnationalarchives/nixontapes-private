@@ -1,6 +1,6 @@
 <ead xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-22-9" xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" repositoryencoding="iso15511" relatedencoding="DC" scriptencoding="iso15924">
-    <eadid encodinganalog="856$u" countrycode="US" mainagencycode="US-DNA" publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::100-016::White House Tapes:    Conversation 100-016)//EN" url="http://nixonlibrary.gov/tapes/37-wht-conversation-100-016.html">37-wht-conversation-100-016</eadid>
+    <eadid encodinganalog="856$u" countrycode="US" mainagencycode="US-DNA" publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::100-016::White House Tapes:    Conversation 100-016)//EN" url="http://nixonlibrary.gov/tapes/37-wht-conversation-100-016.xml">37-wht-conversation-100-016</eadid>
     <filedesc>
       <titlestmt>
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 100-016, <date>on an unknown date between May 5, 1972 and May 8, 1972</date>
@@ -72,12 +72,16 @@
         <corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003467" normal="WHTG">White House tour group</corpname>
       </origination>
       <origination id="isPartOf" label="Parent Materials (Is Part Of)">
-        <archref id="parentCollection" xlink:href="37-wht">
+        <archref id="parentCollection" xlink:href="37-wht.xml">
           <unitid identifier="http://catalog.archives.gov/id/597542" type="naId" label="National Archives Identifier">597542</unitid>
           <unittitle id="collectionTitle" label="Collection">White House Tapes</unittitle>
         </archref>
-        <archref id="parentFile" xlink:href="37-wht-audiotape-100">
-          <unitid identifier="http://catalog.archives.gov/id/" type="naId" label="National Archives Identifier"/>
+        <archref xmlns="" xlink:href="37-wht-series-{$locationCodeLower}.xml" id="parentSeries">
+          <unitid identifier="http://catalog.archives.gov/id/12006803" type="naId" label="NARA Identifier">12006803</unitid>
+          <unittitle id="seriesTitle" label="Series">Cabinet Room Sound Recordings</unittitle>
+        </archref>
+        <archref id="parentFile" xlink:href="37-wht-audiotape-100.xml">
+          <unitid identifier="http://catalog.archives.gov/id/6852473" type="naId" label="National Archives Identifier">6852473</unitid>
           <unittitle id="audiotapeTitle" label="File">Audiotape 100</unittitle>
         </archref>
       </origination>
@@ -92,6 +96,7 @@
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">a White House tour group met in the Cabinet Room of the White House on an unknown date, sometime between 11:37 am on May 5, 1972 and 9:10 am on May 8, 1972. The Cabinet Room taping system captured this recording, which is known as Conversation 100-016 of the White House Tapes. Topics of conversation included ....</abstract>
       <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+      <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>
     </did>
@@ -103,12 +108,29 @@
       <p id="endTime">9:10 am</p>
       <p id="timeCertainty">estimated</p>
     </odd>
+    <bioghist id="recordingHistory" encodinganalog="545$a">
+      <head>Recording Location and Taping System History</head>
+      <p>Beginning in 1971, President Richard Nixon authorized the installation of a secret taping system in selected portions of the White House, Cabinet Room, Oval Office, Old Executive Office Building, and Camp David. Collectively, these recordings constitute the Nixon Administration's White House Tapes.</p>
+      <p>In February 1971, the United States Secret Service installed listening devices in the White House. They placed two microphones in the Cabinet Room, under the table near the President's chair. The Secret Service technicians wired all devices to central mixers that were then connected to recorders in an old locker room in the White House basement. The Cabinet Room recording system was a manual system, generally activated by Alexander Butterfield, a Special Assistant to the President who managed the President's activities in the West Wing of the White House. Butterfield typically initiated recording by a switch on his desk; the Secret Service also placed on/off switches on either side of the President's chair at the Cabinet Room table. When Butterfield inadvertently left the system activated, the tape recorders captured non-historical conversations as well as hours of room noise.</p>
+      <p>On July 16, 1973, Special Assistant to the President Alexander Butterfield revealed the existence of the White House taping system during his testimony before the Senate Watergate Committee. Following this public revelation, White House Chief of Staff Alexander Haig ordered the removal of the entire presidential taping system.</p>
+    </bioghist>
+    <!-- possibly import brief biogHist notes for participants -->
     <scopecontent>
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>a White House tour group met in the Cabinet Room of the White House on an unknown date, sometime between 11:37 am on May 5, 1972 and 9:10 am on May 8, 1972. The Cabinet Room taping system captured this recording, which is known as Conversation 100-016 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
+      </scopecontent>
+      <scopecontent id="recordingNotes">
+        <scopecontent id="audioQuality">
+          <head>Audio Quality</head>
+          <p>The audio quality of the Nixon White House Tapes is generally poor. While some locations generated better quality recordings than others, inferior recording equipment, cheap tape stock, improper microphone placement, taping system malfunctions, volume fluctuation, background noise, and electrical interference contributed to the poor quality of the recordings. Other noises greatly affect the audibility of conversations, including such small happenings as the signing of documents or the clinking of coffee cups.</p>
+        </scopecontent>
+        <scopecontent id="natureOfRecording">
+          <head>Nature of the Recording</head>
+          <p>The White House Tapes comprise secretly recorded human conversation. Most participants were unaware that their meetings and telephone calls were being recorded. The taping system captured often unstructured and free-flowing discussions between close personal associates intimately familiar with the topic. As a result, users may find the recorded conversations difficult to follow.</p>
+        </scopecontent>
       </scopecontent>
       <arrangement>
         <head>Collection Arrangement</head>
@@ -167,7 +189,7 @@
       </controlaccess>
       <controlaccess id="recordingLocation">
         <head>Location of Recording</head>
-        <geogname encodinganalog="518$p" normal=", " source="GeoHack" role="location"/>
+        <geogname encodinganalog="518$p" normal="38.8975, -77.0374" source="GeoHack" role="location"/>
       </controlaccess>
       <controlaccess id="topicalHeadings">
         <head>Topics</head>
@@ -255,7 +277,7 @@
         <processinfo type="chronRelease">
           <p>Processed by the <corpname encodinganalog="583$k" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004831" normal="Richard Nixon Presidential Library and Museum. Tapes Team">Tapes Team of the Richard Nixon Presidential Library and Museum</corpname>, as part of the <archref id="chronRelease" xlink:href="37-wht-chroncabinet" xlink:show="new">
               <unittitle encodinganalog="583$b">Cabinet Room Release</unittitle> (<unitid id="chroncabinet">Cabinet</unitid>)
-						</archref>, and released on <date encodinganalog="583$c" normal="1997-10-16" type="releaseDate"/>.</p>
+						</archref>, and released on <date encodinganalog="583$c" normal="1997-10-16" type="releaseDate">October 16, 1997</date>.</p>
         </processinfo>
         <note id="supportNote">
           <p>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the <corpname source="nixonTapesIndex" role="repository" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
