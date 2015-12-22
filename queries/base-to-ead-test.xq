@@ -308,7 +308,6 @@ let $releaseDate-NatLang := $c/releaseDate-NatLang|releaseDateNatLang
 let $sDate := $c/startDate-NaturalLanguage
 
 let $eDate := $c/endDate-NaturalLanguage
-  where $tapeID eq "919"
   order by $conversation       
   return
 
@@ -664,10 +663,9 @@ let $eDate := $c/endDate-NaturalLanguage
 
 return
 
-let $dir := "/Users/atrossity/Documents/nixontapes-private/37-wht/test/"
+let $audiotape := $c/tapeNo3Dig
+let $dir := concat("/Users/atrossity/Documents/nixontapes-private/37-wht/findingaids/audiotape-",$audiotape,"/")
 let $filename := concat($c/filename,".xml")
 let $path := concat($dir, $filename)
-
-where contains($c/filename,"37-wht-conversation-919")
 
 return file:write($path, $my-doc)
