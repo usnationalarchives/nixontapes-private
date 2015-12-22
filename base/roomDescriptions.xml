@@ -4,7 +4,7 @@
     <room id="cab">
         
         <archref id="parentSeries">
-            <unitid identifier="http://catalog.archives.gov/id/12006803" type="naraID" label="NARA Identifier">12006803</unitid>
+            <unitid identifier="http://catalog.archives.gov/id/12006803" type="naId" label="NARA Identifier">12006803</unitid>
             <unittitle id="seriesTitle" label="Series">Cabinet Room Sound Recordings</unittitle>
         </archref>
         
@@ -47,7 +47,7 @@
     <room id="cdhw">
 
         <archref id="parentSeries">
-            <unitid identifier="http://catalog.archives.gov/id/17408783" type="naraID" label="NARA Identifier">17408783</unitid>
+            <unitid identifier="http://catalog.archives.gov/id/17408783" type="naId" label="NARA Identifier">17408783</unitid>
             <unittitle id="seriesTitle" label="Series">Camp David Hard Wire Sound Recordings</unittitle>
         </archref>
 
@@ -92,7 +92,7 @@
     <room id="cdsd">
         
         <archref id="parentSeries">
-            <unitid identifier="http://catalog.archives.gov/id/17408953" type="naraID" label="NARA Identifier">17408953</unitid>
+            <unitid identifier="http://catalog.archives.gov/id/17408953" type="naId" label="NARA Identifier">17408953</unitid>
             <unittitle id="seriesTitle" label="Series">Camp David Study Desk Telephone Recordings</unittitle>
         </archref>
         
@@ -138,7 +138,7 @@
     <room id="cdst">
         
         <archref id="parentSeries">
-            <unitid identifier="http://catalog.archives.gov/id/17409122" type="naraID" label="NARA Identifier">17409122</unitid>
+            <unitid identifier="http://catalog.archives.gov/id/17409122" type="naId" label="NARA Identifier">17409122</unitid>
             <unittitle id="seriesTitle" label="Series">Camp David Study Table Telephone Recordings</unittitle>
         </archref>
         
@@ -185,7 +185,7 @@
     <room id="eob">
 
         <archref id="parentSeries">
-            <unitid identifier="http://catalog.archives.gov/id/17409890" type="naraID" label="NARA Identifier">17409890</unitid>
+            <unitid identifier="http://catalog.archives.gov/id/17409890" type="naId" label="NARA Identifier">17409890</unitid>
             <unittitle id="seriesTitle" label="Series">Executive Office Building Sound Recordings</unittitle>
         </archref>
 
@@ -231,7 +231,7 @@
     <room id="oval">
         
         <archref id="parentSeries">
-            <unitid identifier="http://catalog.archives.gov/id/17409633" type="naraID" label="NARA Identifier">17409633</unitid>
+            <unitid identifier="http://catalog.archives.gov/id/17409633" type="naId" label="NARA Identifier">17409633</unitid>
             <unittitle id="seriesTitle" label="Series">Oval Office Sound Recordings</unittitle>
         </archref>
         
@@ -277,7 +277,7 @@
     <room id="wht">
         
         <archref id="parentSeries">
-            <unitid identifier="http://catalog.archives.gov/id/17412458" type="naraID" label="NARA Identifier">17412458</unitid>
+            <unitid identifier="http://catalog.archives.gov/id/17412458" type="naId" label="NARA Identifier">17412458</unitid>
             <unittitle id="seriesTitle" label="Series">White House Telephone Recordings</unittitle>
         </archref>
         
