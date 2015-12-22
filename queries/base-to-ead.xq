@@ -764,8 +764,8 @@ for $c in $coll/root/row[matches(.,$d)]
 
 </ead>
 
-let $id := substring(distinct-values($my-doc/File/Core/INAM), 11, 3)  
-let $filename := concat("audiotape-",$id,"_bwf-base.xml")  
+ 
+let $filename := concat("37-wht-",$digitalID,".xml")
 let $dir := "X:\Project01\Nixon_Tapes_Portal\XML\BWF\Base BWF XML\"  
 let $path := concat($dir, $filename)  
 return file:write($path, $my-doc)  
