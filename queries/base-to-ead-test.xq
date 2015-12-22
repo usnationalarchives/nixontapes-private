@@ -20,7 +20,7 @@ let $my-doc :=
   let $tapeID := data($c/tapeNo3Dig)
   let $convID := data($c/convNo3Dig)
   let $digitalID := data($c/filename)
-  let $audiotapeNARAid := $c/audiotapes/catalogRecord[audiotapeNumber[matches(.,$tapeID)]]/attribute::naraID
+  let $audiotapeNARAid := data($coll/audiotapes/catalogRecord[audiotapeNumber[matches(.,$tapeID)]]/attribute::naraID)
     
   let $conversation := normalize-space(concat("Conversation ",$tapeID,"-",$convID))
 
@@ -286,6 +286,9 @@ let $releaseChron := $c/releaseChron
                 else concat($descPart," ",$location," on an unknown date, sometime between ",$sTime," on ",$c/startDate-NaturalLanguage," and ",$eTime," on ",$c/endDate-NaturalLanguage,". ",$device)
             else "!"   
 
+
+let $locationCodeLower := lower-case($c/locationCode)
+
 let $deedReviewChron :=
 
   if (contains($c/releaseChron,"Fifth"))
@@ -293,13 +296,15 @@ let $deedReviewChron :=
       else $coll/deedReview/chron1-4/p
 
 let $roomRecordingHistory :=
-  $c/roomDescriptions/room[attribute::id[matches(.,$c/locationCode)]]/bioghist
+  $coll/roomDescriptions/room[attribute::id[matches(.,$locationCodeLower)]]/bioghist
 
-let $roomScopeContentRecordingNotes := $c/roomDescriptions/room[attribute::id[matches(.,$c/locationCode)]]/scopecontent[attribute::id[matches(.,"recordingNotes")]]
+let $roomScopeContentRecordingNotes := $coll/roomDescriptions/room[attribute::id[matches(.,$locationCodeLower)]]/scopecontent[attribute::id[matches(.,"recordingNotes")]]
 
-let $roomAbstract := $c/roomDescriptions/room[attribute::id[matches(.,$c/locationCode)]]/abstract
+let $roomAbstract := $coll/roomDescriptions/room[attribute::id[matches(.,$locationCodeLower)]]/abstract
 
-let $roomArchrefSeries := $c/roomDescriptions/room[attribute::id[matches(.,$c/locationCode)]]/archref
+let $roomArchrefSeries := $coll/roomDescriptions/room[attribute::id[matches(.,$locationCodeLower)]]/archref
+
+let $roomArchrefAdded := functx:add-attributes($roomArchrefSeries,xs:QName('xlink:href'),"37-wht-series-{$locationCodeLower}.xml")
 
 let $releaseDate-MachineReadable := $c/releaseDate-MachineReadable
 
@@ -308,6 +313,11 @@ let $releaseDate-NatLang := $c/(releaseDate-NatLang|releaseDateNatLang)
 let $sDate := $c/startDate-NaturalLanguage
 
 let $eDate := $c/endDate-NaturalLanguage
+
+let $latitude := $c/latitude
+
+let $longitude := $c/longitude
+
   order by $conversation       
   return
 
@@ -321,7 +331,7 @@ let $eDate := $c/endDate-NaturalLanguage
   <eadid encodinganalog="856$u" countrycode="US" mainagencycode="US-DNA"
 			publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::{$tapeID}-{$convID}::White House Tapes:
 			Conversation {$tapeID}-{$convID})//EN"
-			url="http://nixonlibrary.gov/tapes/37-wht-conversation-{$tapeID}-{$convID}.html"
+			url="http://nixonlibrary.gov/tapes/37-wht-conversation-{$tapeID}-{$convID}.xml"
 			>37-wht-conversation-{$tapeID}-{$convID}</eadid>
      
      <filedesc>
@@ -415,15 +425,13 @@ let $eDate := $c/endDate-NaturalLanguage
       {$participants/child::*}
       </origination>
 			<origination id="isPartOf" label="Parent Materials (Is Part Of)">
-				<archref id="parentCollection" xlink:href="37-wht">
-					<unitid identifier="http://catalog.archives.gov/id/597542" type="naId"
-						label="National Archives Identifier">597542</unitid>
+				<archref id="parentCollection" xlink:href="37-wht.xml">
+					<unitid identifier="http://catalog.archives.gov/id/597542" type="naId" label="National Archives Identifier">597542</unitid>
 					<unittitle id="collectionTitle" label="Collection">White House Tapes</unittitle>
 				</archref>
-        {$roomArchrefSeries}
-        <archref id="parentFile" xlink:href="37-wht-audiotape-{$tapeID}">
-					<unitid identifier="http://catalog.archives.gov/id/{$audiotapeNARAid}" type="naId"
-						label="National Archives Identifier">{$audiotapeNARAid}</unitid>
+        {$roomArchrefAdded}
+        <archref id="parentFile" xlink:href="37-wht-audiotape-{$tapeID}.xml">
+					<unitid identifier="http://catalog.archives.gov/id/{$audiotapeNARAid}" type="naId" label="National Archives Identifier">{$audiotapeNARAid}</unitid>
 					<unittitle id="audiotapeTitle" label="File">Audiotape {$tapeID}</unittitle>
 				</archref>
 			</origination>
@@ -451,9 +459,11 @@ let $eDate := $c/endDate-NaturalLanguage
 			<p id="endTime">{$eTime}</p>
 			<p id="timeCertainty">{$timeCert}</p>
 		</odd>
-		
+		   
 		{$roomRecordingHistory}
-		
+		   
+		<!-- possibly import brief biogHist notes for participants -->
+		   
 		<scopecontent>
 			
 			<head>Collection Overview</head>
@@ -528,7 +538,7 @@ let $eDate := $c/endDate-NaturalLanguage
 			
 			<controlaccess id="recordingLocation">
 				<head>Location of Recording</head>
-				<geogname encodinganalog="518$p" normal="{$c/latitude}, {$c/longitude}" source="GeoHack" role="location">{$c/locationNaturalLanguage}</geogname>
+				<geogname encodinganalog="518$p" normal="{$latitude}, {$longitude}" source="GeoHack" role="location">{$c/locationNaturalLanguage}</geogname>
 			</controlaccess>
 			
 			<controlaccess id="topicalHeadings">
@@ -664,9 +674,12 @@ let $eDate := $c/endDate-NaturalLanguage
 return
 
 let $audiotape := $c/tapeNo3Dig
+(:
 let $dir := concat("/Users/atrossity/Documents/nixontapes-private/37-wht/findingaids/audiotape-",$audiotape,"/")
+:)
+let $dir := concat("..\37-wht\findingaids\audiotape-",$audiotape,"\")
 let $filename := concat($c/filename,".xml")
 let $path := concat($dir, $filename)
-where data($audiotape) eq "919"
+where data($audiotape) eq "100"
 
 return file:write($path, $my-doc)
