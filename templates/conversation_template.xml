@@ -155,8 +155,12 @@
 		</did>
 		<odd id="conversationDateTime" encodinganalog="518$d"
 			altrender="{$startDateTime-MR}/{$endDateTime-MR}" type="eventNote">
-			<p id="conversationDate">{$dateDateRange}</p>
-			<p id="conversationTime">{$timeTimeRange}</p>
+			<p id="startDate">{$startDate-NatLang</p>
+			<p id="endDate">{$endDate-NatLang}</p>
+			<p id="dateCertainty">{$dateCertainty}</p>
+			<p id="startTime">{$startTime-NatLang}</p>
+			<p id="endTime">{$endTime-NatLang}</p>
+			<p id="timeCertainty">{$timeCertainty}</p>
 		</odd>
 		
 		{$roomRecordingHistory}
@@ -280,9 +284,10 @@
 		<!-- Use separated materials and related materials clips here to enter in information. -->
 		
 		<!-- Indicate alternative formats / digitized audio below -->
+		
 		<!--
 		<altformavail type="audio">
-		<head>Digitized Audio</head>
+			<head>Digitized Audio</head>
 		
 			<altformavail id="37-wht-conversation-{$tapeID}-{$convID}.mp3" type="mp3" encodinganalog="530$a">
 				<p>The original audio has been converted to digital format and is available to the public as an MP3 file.</p>
