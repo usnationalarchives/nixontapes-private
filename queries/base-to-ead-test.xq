@@ -12,11 +12,9 @@ declare option output:indent "yes";
 
 let $coll := collection("nixontapes-private-base")
 
-(: for $r in $coll/root/row[not(contains(tapeNo,'test'))] :)
+for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 
 let $my-doc :=  
-
-for $c in $coll/root/row[not(contains(tapeNo,'test'))]
 
 (: identifying information :)
   let $tapeID := data($c/tapeNo3Dig)
@@ -176,6 +174,8 @@ let $releaseChron := $c/releaseChron
   let $pTo := ("during ", "unknown")
   
   let $descLower := functx:replace-multi($descPart,$pFr,$pTo)
+  
+  let $locationNaturalLanguage := $c/locationNaturalLanguage/text()
 
   (: location phrase :)
     let $location := 
@@ -288,7 +288,7 @@ let $releaseChron := $c/releaseChron
 
 let $deedReviewChron :=
 
-  if (data($c/releaseChron) eq "Fifth Chronological Release")
+  if (contains($c/releaseChron,"Fifth"))
     then $coll/deedReview/chron5/p
       else $coll/deedReview/chron1-4/p
 
@@ -445,8 +445,8 @@ let $eDate := $c/endDate-NaturalLanguage
 					langcode="eng" scriptcode="Latn">English</language></langmaterial>
 		</did>
 		<odd id="conversationDateTime" encodinganalog="518$d" altrender="{$startDateTime}/{$endDateTime}" type="eventNote">
-			<p id="startDate">{$sDate}</p>
-			<p id="endDate">{$eDate}</p>
+			<p id="startDate">{data($sDate)}</p>
+			<p id="endDate">{data($eDate)}</p>
 			<p id="dateCertainty">{$dateCert}</p>
 			<p id="startTime">{$sTime}</p>
 			<p id="endTime">{$eTime}</p>
@@ -533,19 +533,13 @@ let $eDate := $c/endDate-NaturalLanguage
 			</controlaccess>
 			
 			<controlaccess id="topicalHeadings">
-				<head>Related Topics</head>
+				<head>Topics</head>
         <genreform encodinganalog="655" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/subjects/sh85101069">Audiotapes</genreform>
         <persname encodinganalog="600" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79018757">Nixon, Richard M. (Richard Milhous), 1913-1994</persname>
         <subject encodinganalog="650" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85106465">Presidents -- United States</subject>
         <corpname encodinganalog="610" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79007288">United States. President (1969-1974 : Nixon)</corpname>
         <geogname encodinganalog="651" role="subject" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85140471">United States -- Politics and government -- 1969-1974</geogname>
-        <!-- Insert conversation-specific LC Subject Headings here with id.loc.gov links (map to ARC/OPA headings ?) alphabetized by tag name and term name thereunder -->
-			</controlaccess>
-			
-			<controlaccess id="topicsOfConversation">
-				<head>Topics of Conversation</head>
-				<!-- Insert conversation-specific LC Subject Headings here with id.loc.gov links (map to ARC/OPA headings ?)
-					alphabetized by tag name and term name thereunder -->
+        <!-- Insert conversation-specific LC Subject Headings here with id.loc.gov links; alphabetize -->
 			</controlaccess>
 			
 		</controlaccess>
@@ -557,11 +551,11 @@ let $eDate := $c/endDate-NaturalLanguage
 		<altformavail type="audio">
 		<head>Digitized Audio</head>
 		
-			<altformavail id="37-wht-conversation-{$tapeID}-{$convID}.mp3" type="mp3" encodinganalog="530$a">
+			<altformavail id="audiofile-37-wht-conversation-{$tapeID}-{$convID}.mp3" type="mp3" encodinganalog="530$a">
 				<p>The original audio has been converted to digital format and is available to the public as an MP3 file.</p>
 			</altformavail>
 			
-			<altformavail id="37-wht-conversation-{$tapeID}-{$convID}.wav" type="bwf" encodinganalog="530$a">
+			<altformavail id="audiofile-37-wht-conversation-{$tapeID}-{$convID}.wav" type="bwf" encodinganalog="530$a">
 				<p>The original audio has been converted to digital format and is available to the public as a Broadcast WAVE Format (BWF) file.</p>
 			</altformavail>
 			
@@ -623,7 +617,7 @@ let $eDate := $c/endDate-NaturalLanguage
 			
 			<prefercite>
 				<head>Preferred Citation</head>
-					<p>Conversation {$tapeID}-{$convID}<!-- (National Archives Identifier ######) -->, Audiotape {$tapeID}, {$c/locationNaturalLanguage} Sound Recordings, White House Tapes, Richard Nixon Presidential Library and Museum, National Archives and Records Administration.</p>
+					<p>Conversation {$tapeID}-{$convID}<!-- (National Archives Identifier ######) -->, Audiotape {$tapeID}, {$locationNaturalLanguage} Sound Recordings, White House Tapes, Richard Nixon Presidential Library and Museum, National Archives and Records Administration.</p>
 			</prefercite>
 			
 			<acqinfo encodinganalog="541">
@@ -649,8 +643,8 @@ let $eDate := $c/endDate-NaturalLanguage
 				<head>Processing Information</head>
 				<processinfo type="chronRelease">
 					<p>Processed by the <corpname encodinganalog="583$k" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004831" normal="Richard Nixon Presidential Library and Museum. Tapes Team">Tapes Team of the Richard Nixon Presidential Library and Museum</corpname>, as part of the <archref id="chronRelease" xlink:href="37-wht-chron{$chronNum}" xlink:show="new">
-              <unittitle encodinganalog="583$b">{$releaseChron}</unittitle> (<unitid id="chron{$chronNum}">{$chronCode}</unitid>)
-						</archref>, and released on <date encodinganalog="583$c" normal="{$releaseDate-MachineReadable}" type="releaseDate">{$releaseDate-NatLang}</date>.</p>
+              <unittitle encodinganalog="583$b">{data($releaseChron)}</unittitle> (<unitid id="chron{$chronNum}">{$chronCode}</unitid>)
+						</archref>, and released on <date encodinganalog="583$c" normal="{$releaseDate-MachineReadable}" type="releaseDate">{data($releaseDate-NatLang)}</date>.</p>
 				</processinfo>
 				
 				<note id="supportNote">
@@ -669,14 +663,11 @@ let $eDate := $c/endDate-NaturalLanguage
 </ead>
 
 return
-  $my-doc
 
-(:
 let $dir := "/Users/atrossity/Documents/nixontapes-private/37-wht/test/"
-let $filename := concat($d,".xml")
+let $filename := concat($c/filename,".xml")
 let $path := concat($dir, $filename)
 
-where contains($d,"37-wht-conversation-919-001")
+where contains($c/filename,"37-wht-conversation-919")
 
 return file:write($path, $my-doc)
-:)
