@@ -1,4 +1,7 @@
-import module namespace functx = 'http://www.functx.com' at 'http://www.xqueryfunctions.com/xq/functx-1.0-doc-2007-01.xq';
+(: import module namespace functx = 'http://www.functx.com' at 'http://www.xqueryfunctions.com/xq/functx-1.0-doc-2007-01.xq'; :)
+
+
+import module namespace functx = 'http://www.functx.com' at 'https://raw.githubusercontent.com/28msec/zorba/master/modules/functx/functx.xq';
 
 declare namespace xlink="http://www.w3.org/1999/xlink";
 
@@ -9,12 +12,12 @@ declare option output:indent "yes";
 
 let $coll := collection("nixontapes-private-base")
 
-for $r in $coll/root/row[not(contains(tapeNo,'test'))]
-where data($r/tapeNo3Dig) eq "919"
+(: for $r in $coll/root/row[not(contains(tapeNo,'test'))] :)
 
 let $my-doc :=  
 
-let $c := $coll/root/row[matches(.,$r)]
+for $c in $coll/root/row[not(contains(tapeNo,'test'))]
+
 (: identifying information :)
   let $tapeID := data($c/tapeNo3Dig)
   let $convID := data($c/convNo3Dig)
@@ -229,22 +232,6 @@ let $releaseChron := $c/releaseChron
         else 
         (: 3 :)
         concat("on an unknown date between ",data($c/startDate-NaturalLanguage)," and ",data($c/endDate-NaturalLanguage)) 
-  
- (: timeTimeRange :) 
- 
- let $timeTimeRange := 
-   (: 1 :)
-   if ($sTime eq $eTime) and (data($timeCert) eq "certain")
-     then concat("at ",$sTime)
-       else
-   (: 2 :)
-   if ($sTime eq $eTime) and (data($timeCert) eq "estimated")
-     then concat("around ",$sTime)
-       else
-   (: 3 :)
-   if ($timeCert eq "estimated")
-     then concat("at an unknown time between ",$sTime," and ",$eTime)
-       else concat("from ",$sTime," to ",$eTime)
  
   (: if/then statements for content :)
     let $statement :=
@@ -318,6 +305,10 @@ let $releaseDate-MachineReadable := $c/releaseDate-MachineReadable
 
 let $releaseDate-NatLang := $c/releaseDate-NatLang|releaseDateNatLang
 
+let $sDate := $c/startDate-NaturalLanguage
+
+let $eDate := $c/endDate-NaturalLanguage
+  where $tapeID eq "919"
   order by $conversation       
   return
 
@@ -420,8 +411,7 @@ let $releaseDate-NatLang := $c/releaseDate-NatLang|releaseDateNatLang
 		<did>
 			<head>Descriptive Summary</head>
 			<unittitle label="Title" encodinganalog="245$a">White House Tapes: Conversation {$tapeID}-{$convID}</unittitle>
-			<unitdate label="Date" encodinganalog="245$d" normal="1971-02-16/1971-02-16" type="inclusive"
-				certainty="supplied">{$dateDateRange}</unitdate>
+			<unitdate label="Date" encodinganalog="245$d" normal="1971-02-16/1971-02-16" type="inclusive" certainty="supplied">{$dateDateRange}</unitdate>
 			<origination id="participants" label="Participants">
       {$participants/child::*}
       </origination>
@@ -455,8 +445,12 @@ let $releaseDate-NatLang := $c/releaseDate-NatLang|releaseDateNatLang
 					langcode="eng" scriptcode="Latn">English</language></langmaterial>
 		</did>
 		<odd id="conversationDateTime" encodinganalog="518$d" altrender="{$startDateTime}/{$endDateTime}" type="eventNote">
-			<p id="conversationDate">{$dateDateRange}</p>
-			<p id="conversationTime">{$timeTimeRange/text()}</p>
+			<p id="startDate">{$sDate}</p>
+			<p id="endDate">{$eDate}</p>
+			<p id="dateCertainty">{$dateCert}</p>
+			<p id="startTime">{$sTime}</p>
+			<p id="endTime">{$eTime}</p>
+			<p id="timeCertainty">{$timeCert}</p>
 		</odd>
 		
 		{$roomRecordingHistory}
