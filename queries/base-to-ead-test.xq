@@ -303,7 +303,7 @@ let $roomArchrefSeries := $c/roomDescriptions/room[attribute::id[matches(.,$c/lo
 
 let $releaseDate-MachineReadable := $c/releaseDate-MachineReadable
 
-let $releaseDate-NatLang := $c/releaseDate-NatLang|releaseDateNatLang
+let $releaseDate-NatLang := $c/(releaseDate-NatLang|releaseDateNatLang)
 
 let $sDate := $c/startDate-NaturalLanguage
 
@@ -667,5 +667,6 @@ let $audiotape := $c/tapeNo3Dig
 let $dir := concat("/Users/atrossity/Documents/nixontapes-private/37-wht/findingaids/audiotape-",$audiotape,"/")
 let $filename := concat($c/filename,".xml")
 let $path := concat($dir, $filename)
+where data($audiotape) eq "919"
 
 return file:write($path, $my-doc)
