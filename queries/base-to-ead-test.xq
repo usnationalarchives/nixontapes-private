@@ -674,10 +674,14 @@ let $longitude := $c/longitude
 return
 
 let $audiotape := $c/tapeNo3Dig
-(:
+
+(: for Mac, absolute path :)
 let $dir := concat("/Users/atrossity/Documents/nixontapes-private/37-wht/findingaids/audiotape-",$audiotape,"/")
+
+(: for Windows, relative path :)
+(: let $dir := concat("..\37-wht\findingaids\audiotape-",$audiotape,"\")
 :)
-let $dir := concat("..\37-wht\findingaids\audiotape-",$audiotape,"\")
+
 let $filename := concat($c/filename,".xml")
 let $path := concat($dir, $filename)
 where data($audiotape) eq "100"
