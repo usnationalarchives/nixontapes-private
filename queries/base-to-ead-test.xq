@@ -728,11 +728,11 @@ let $dateOfEAD-MR := functx:substring-before-match(xs:string(data(current-date()
 
 return
 
-let $audiotape := $c/tapeNo3Dig
-let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"findingaids",file:dir-separator(),"audiotape-",$audiotape,file:dir-separator())
-let $filename := concat($c/filename,".xml")
-let $path := concat($dir, $filename)
+  let $audiotape := $c/tapeNo3Dig
+  let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"findingaids",file:dir-separator(),"audiotape-",$audiotape,file:dir-separator())
+  let $filename := concat($c/filename,".xml")
+  let $path := concat($dir, $filename)
 
-where data($audiotape) ge "901" and data($audiotape) le "950"
+  where data($audiotape) ge "901" and data($audiotape) le "950"
 
-return file:write($path, $my-doc)
+  return file:write($path, $my-doc)
