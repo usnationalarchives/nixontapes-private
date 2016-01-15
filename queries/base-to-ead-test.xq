@@ -729,21 +729,10 @@ let $dateOfEAD-MR := functx:substring-before-match(xs:string(data(current-date()
 return
 
 let $audiotape := $c/tapeNo3Dig
-
-(: Relative file path [parent of parent directory] :)
-(: let $dir := concat(file:parent(file:parent(static-base-uri())),"/37-wht/findingaids/audiotape-",$audiotape,"/")
-:)
-
-(: Experiment with filepath separators :)
 let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"findingaids",file:dir-separator(),"audiotape-",$audiotape,file:dir-separator())
-
 let $filename := concat($c/filename,".xml")
-
-(: join directory path + file name; adjust to native file path format for OS
-let $path := file:path-to-native(concat($dir, $filename))
- :)
- 
 let $path := concat($dir, $filename)
-where data($audiotape) ge "201" and data($audiotape) le "300"
+
+where data($audiotape) ge "901" and data($audiotape) le "950"
 
 return file:write($path, $my-doc)
