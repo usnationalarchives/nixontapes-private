@@ -1,7 +1,7 @@
 (: import module namespace functx = 'http://www.functx.com' at 'http://www.xqueryfunctions.com/xq/functx-1.0-doc-2007-01.xq'; :)
 
 
-import module namespace functx = 'http://www.functx.com' at 'https://raw.githubusercontent.com/28msec/zorba/master/modules/functx/functx.xq';
+import module namespace functx = 'http://www.functx.com' at 'functx-1.0-doc-2007-01.xq';
 
 declare namespace xlink="http://www.w3.org/1999/xlink";
 
@@ -32,6 +32,20 @@ let $my-doc :=
 :)
 
   let $participants := $c/participantsWithLineBreaks
+  
+  let $topicPers :=
+  
+    for $partPers in $participants//persname
+    order by $partPers/. ascending
+    return
+      functx:update-attributes($partPers/.,(xs:QName('encodinganalog'),xs:QName('role')),('600$a','subject'))
+    
+    
+  let $topicCorp :=
+  for $partCorp in $participants/corpname
+  order by $partCorp/. ascending
+  return
+    functx:update-attributes($partCorp/.,(xs:QName('encodinganalog'),xs:QName('role')),('610$a','subject'))
   
 (: date certainty :)
   let $dateCert :=
@@ -318,6 +332,10 @@ let $latitude := $c/latitude
 
 let $longitude := $c/longitude
 
+let $dateOfEAD-NL := concat(functx:month-name-en(current-date())," ",day-from-date(current-date()),", ",year-from-date(current-date()))
+
+let $dateOfEAD-MR := functx:substring-before-match(xs:string(data(current-date())),"-0[0-9]:00")
+
   order by $conversation       
   return
 
@@ -329,10 +347,9 @@ let $longitude := $c/longitude
 		repositoryencoding="iso15511" relatedencoding="DC" scriptencoding="iso15924">
     
   <eadid encodinganalog="856$u" countrycode="US" mainagencycode="US-DNA"
-			publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::{$tapeID}-{$convID}::White House Tapes:
-			Conversation {$tapeID}-{$convID})//EN"
-			url="http://nixonlibrary.gov/tapes/37-wht-conversation-{$tapeID}-{$convID}.xml"
-			>37-wht-conversation-{$tapeID}-{$convID}</eadid>
+			publicid="-//us::us-dna::37-wht-conversation-{$tapeID}-{$convID}//National Archives and Records Administration::Richard Nixon Presidential Library and Museum::White House Tapes::Conversation {$tapeID}-{$convID})//EN"
+			url="http://nixonlibrary.gov/tapes/audiotape-{$tapeID}/37-wht-conversation-{$tapeID}-{$convID}.xml">
+      37-wht-conversation-{$tapeID}-{$convID}</eadid>
      
      <filedesc>
 			<titlestmt>
@@ -343,7 +360,9 @@ let $longitude := $c/longitude
 
 				<author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
 
-				<sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.<lb/> Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the Preservation Programs Division and the Office of Innovation at the National Archives and Records Administration.</sponsor>
+				<sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
+        <lb/> 
+        Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the Preservation Programs Division and the Office of Innovation at the National Archives and Records Administration.</sponsor>
 
 			</titlestmt>
 
@@ -376,7 +395,7 @@ let $longitude := $c/longitude
 
 		<profiledesc>
 			<creation>Base machine-readable finding aid derived using XQuery scripts written by Amanda T. Ross<lb/>
-				<date normal="2015-12-21">December 21, 2015</date>
+				<date normal="{$dateOfEAD-MR}">{$dateOfEAD-NL}</date>
 			</creation>
 			<langusage>Description is in <language encodinganalog="Language" langcode="eng" scriptcode="Latn"
 					>English</language>
@@ -425,14 +444,20 @@ let $longitude := $c/longitude
       {$participants/child::*}
       </origination>
 			<origination id="isPartOf" label="Parent Materials (Is Part Of)">
-				<archref id="parentCollection" xlink:href="37-wht.xml">
+				<archref id="parentCollection" xlink:href="37-wht">
+        
 					<unitid identifier="http://catalog.archives.gov/id/597542" type="naId" label="National Archives Identifier">597542</unitid>
 					<unittitle id="collectionTitle" label="Collection">White House Tapes</unittitle>
 				</archref>
-        {$roomArchrefAdded}
-        <archref id="parentFile" xlink:href="37-wht-audiotape-{$tapeID}.xml">
+
+				<archref id="parentSeries" xlink:href="37-wht-audiotape-{$locationCodeLower}">
+					{$roomArchrefSeries/child::node()}
+				</archref>
+        
+        <archref id="parentFile" xlink:href="37-wht-audiotape-{$tapeID}">
 					<unitid identifier="http://catalog.archives.gov/id/{$audiotapeNARAid}" type="naId" label="National Archives Identifier">{$audiotapeNARAid}</unitid>
 					<unittitle id="audiotapeTitle" label="File">Audiotape {$tapeID}</unittitle>
+          
 				</archref>
 			</origination>
 			<!-- <physdesc label="Duration">
@@ -508,31 +533,31 @@ let $longitude := $c/longitude
 				<head>Determination Categories</head>
 				<p>These processing categories are governed by the <title
 					xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new"
-					authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> and the 2007 Deed of Gift.</p>
+					authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> and the 2007 Deed of Gift. These categories are based upon the constitutional and statutory duties of the President of the United States, as well as the Watergate investigation.</p>
 				<!--
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01">Abuse of Governmental Powers / Watergate</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-01">Misuse of Government Agencies</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-02">Watergate Break-In</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-03">Watergate Cover-Up</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-04">Campaign Practices</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-05">Obstruction of Justice</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-07">Milk Fund</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-08">Hughes-Rebozo Investigation</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-09">Emoluments and Tax Evasion</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-10">International Telephone and Telegraph</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination02">Administrative Powers</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination03">Department Policies, Agency Policies, and Executive Decisions</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination04">Legislative Leader</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination05">Presidential Foreign Relations Power</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination06">Commander-in-Chief</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination07">White House Internal or Institutional Organization</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination08">Ceremonial Duties of the President</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination09">Official Travel, Head of State, and Foreign Visits</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination10">Presidential Statements</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination11">Presidential Appointments and Personnel Management</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination12">White House Entertainment and Social Affairs</subject>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01">Abuse of Governmental Powers / Watergate</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-01">Misuse of Government Agencies</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-02">Watergate Break-In</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-03">Watergate Cover-Up</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-04">Campaign Practices</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-05">Obstruction of Justice</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-07">Milk Fund</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-08">Hughes-Rebozo Investigation</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-09">Emoluments and Tax Evasion</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-10">International Telephone and Telegraph</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination02">Administrative Powers</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination03">Department Policies, Agency Policies, and Executive Decisions</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination04">Legislative Leader</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination05">Presidential Foreign Relations Power</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination06">Commander-in-Chief</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination07">White House Internal or Institutional Organization</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination08">Ceremonial Duties of the President</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination09">Official Travel, Head of State, and Foreign Visits</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination10">Presidential Statements</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination11">Presidential Appointments and Personnel Management</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination12">White House Entertainment and Social Affairs</function>
         
-        <subject encodinganalog="690$a" source="deedOfGift2007" authfilenumber="deedOfGift2007">Deed of Gift, 2007</subject>
+        <function encodinganalog="657$a" source="deedOfGift2007" authfilenumber="deedOfGift2007">Deed of Gift, 2007</function>
         -->
 			</controlaccess>
 			
@@ -541,14 +566,44 @@ let $longitude := $c/longitude
 				<geogname encodinganalog="518$p" normal="{$latitude}, {$longitude}" source="GeoHack" role="location">{$c/locationNaturalLanguage}</geogname>
 			</controlaccess>
 			
-			<controlaccess id="topicalHeadings">
-				<head>Topics</head>
-        <genreform encodinganalog="655" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/subjects/sh85101069">Audiotapes</genreform>
-        <persname encodinganalog="600" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79018757">Nixon, Richard M. (Richard Milhous), 1913-1994</persname>
-        <subject encodinganalog="650" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85106465">Presidents -- United States</subject>
+			<controlaccess id="relatedTopics">
+				<head>Related Topics</head>
+        
         <corpname encodinganalog="610" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79007288">United States. President (1969-1974 : Nixon)</corpname>
+        
+        <genreform encodinganalog="655" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/subjects/sh85101069">Audiotapes</genreform>
+        
         <geogname encodinganalog="651" role="subject" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85140471">United States -- Politics and government -- 1969-1974</geogname>
-        <!-- Insert conversation-specific LC Subject Headings here with id.loc.gov links; alphabetize -->
+        
+        <persname encodinganalog="600" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79018757">Nixon, Richard M. (Richard Milhous), 1913-1994</persname>
+        
+        <subject encodinganalog="650" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85106465">Presidents -- United States</subject>
+			
+			</controlaccess>
+            
+			<controlaccess id="topicsOfConversation">
+				<head>Topics of Conversation</head>
+                
+				<controlaccess id="peopleDiscussed">
+          <head>People</head>
+          <!-- Remove xmlns -->
+          {$topicPers/.}
+				</controlaccess>        
+                
+				<controlaccess id="placesDiscussed">
+          <head>Places</head>
+				</controlaccess>
+
+				<controlaccess id="organizationsDiscussed">
+          <head>Organizations</head>
+          <!-- Remove xmlns -->
+          {$topicCorp/.}
+				</controlaccess>  
+        
+				<controlaccess id="topicsDiscussed">
+          <head>Topics</head>
+				</controlaccess>  
+        
 			</controlaccess>
 			
 		</controlaccess>
@@ -662,7 +717,7 @@ let $longitude := $c/longitude
 				</note>
 				
 				<note id="encodingHistory">
-					<p>Encoded by Amanda T. Ross, <date normal="2015-12">December 2015</date></p>
+					<p>Encoded by Amanda T. Ross, <date normal="{$dateOfEAD-MR}">{$dateOfEAD-NL}</date></p>
 					<!-- Edited by ?, Mm yyyy -->
 				</note>
 			</processinfo>
@@ -675,15 +730,20 @@ return
 
 let $audiotape := $c/tapeNo3Dig
 
-(: for Mac, absolute path :)
-let $dir := concat("/Users/atrossity/Documents/nixontapes-private/37-wht/findingaids/audiotape-",$audiotape,"/")
-
-(: for Windows, relative path :)
-(: let $dir := concat("..\37-wht\findingaids\audiotape-",$audiotape,"\")
+(: Relative file path [parent of parent directory] :)
+(: let $dir := concat(file:parent(file:parent(static-base-uri())),"/37-wht/findingaids/audiotape-",$audiotape,"/")
 :)
 
+(: Experiment with filepath separators :)
+let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"findingaids",file:dir-separator(),"audiotape-",$audiotape,file:dir-separator())
+
 let $filename := concat($c/filename,".xml")
+
+(: join directory path + file name; adjust to native file path format for OS
+let $path := file:path-to-native(concat($dir, $filename))
+ :)
+ 
 let $path := concat($dir, $filename)
-where data($audiotape) eq "100"
+where data($audiotape) ge "801" and data($audiotape) le "950"
 
 return file:write($path, $my-doc)
