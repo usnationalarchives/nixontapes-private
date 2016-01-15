@@ -224,24 +224,24 @@
         <controlaccess id="peopleDiscussed">
           <head>People</head>
           <!-- Remove xmlns -->
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000019" normal="STA">Agnew, Spiro T. (Vice President)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000102" normal="ALA">Atherton, Alfred L.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000336" normal="SBB">Bull, Stephen B.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000360" normal="GHWB">Bush, George H. W.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001069" normal="AMH">Haig, Alexander M., Jr.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001179" normal="RMH">Helms, Richard M.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001242" normal="JHH">Holdridge, John H.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001321" normal="JNI">Irwin, John N., II</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001377" normal="UAJ">Johnson, U. Alexis</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001459" normal="RTK">Kennedy, Richard T. (Col.)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001494" normal="HAK">Kissinger, Henry A.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001545" normal="MRL">Laird, Melvin R.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001919" normal="THM">Moorer, Thomas H. (Adm.)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002316" normal="WPR">Rogers, William P.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002393" normal="HHS">Saunders, Harold H.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002481" normal="FJS">Shakespeare, Frank J.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002547" normal="JJS">Sisco, Joseph J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000019" normal="STA">Agnew, Spiro T. (Vice President)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000102" normal="ALA">Atherton, Alfred L.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000336" normal="SBB">Bull, Stephen B.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000360" normal="GHWB">Bush, George H. W.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001069" normal="AMH">Haig, Alexander M., Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001179" normal="RMH">Helms, Richard M.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001242" normal="JHH">Holdridge, John H.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001321" normal="JNI">Irwin, John N., II</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001377" normal="UAJ">Johnson, U. Alexis</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001459" normal="RTK">Kennedy, Richard T. (Col.)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001494" normal="HAK">Kissinger, Henry A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001545" normal="MRL">Laird, Melvin R.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001919" normal="THM">Moorer, Thomas H. (Adm.)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002316" normal="WPR">Rogers, William P.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002393" normal="HHS">Saunders, Harold H.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002481" normal="FJS">Shakespeare, Frank J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002547" normal="JJS">Sisco, Joseph J.</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
           <head>Places</head>

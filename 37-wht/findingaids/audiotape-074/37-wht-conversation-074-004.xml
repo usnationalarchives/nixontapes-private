@@ -237,35 +237,35 @@
         <controlaccess id="peopleDiscussed">
           <head>People</head>
           <!-- Remove xmlns -->
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003666" normal="JABe">Beirne, Joseph A.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003708" normal="CBrancini">Brancini, Caesar</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003700" normal="LBrannick">Brannick, Linda</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000727" normal="MKD">Duval, Merlin K. ("Morty") (Dr.)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003702" normal="HEnnes">Ennes, Howard</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003686" normal="MAHaynes">Haynes, M. Alfred (Dr.)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003697" normal="RLaur">Laur, Robert (Dr.)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003699" normal="JLaventhal">Laventhal, Josee</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003687" normal="RMcGall">McGall, Richard</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001829" normal="JAMcM">McMahon, J. Alexander</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003688" normal="WMcN">McNerney, Walter</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003704" normal="PMeek">Meek, Peter</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003705" normal="LMendel">Mendel, Levitt</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003689" normal="ACNielson">Nielson, A. C.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003690" normal="JTP">Painter, Joseph T.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003706" normal="CPearson">Pearson, Clarence</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003691" normal="WPetersmeyer">Petersmeyer, Wrede</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002452" normal="SSSt">Scott, Stanley S.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003693" normal="DSeymour">Seymour, David</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003694" normal="IShapiro">Shapiro, Irving (Dr.)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003692" normal="CASiegfried">Siegfried, Charles A.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003695" normal="SSimonds">Simonds, Scott</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003696" normal="JHSmith">Smith, J. Henry</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003701" normal="GUrrows">Urrows, Grace</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003703" normal="PWarter">Warter, Peter (Dr.)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003698" normal="VWeingarten">Weingarten, VIctor</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003707" normal="GWheatley">Wheatley, George (Dr.)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003685" normal="JWilson">Wilson, Joseph</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003666" normal="JABe">Beirne, Joseph A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003708" normal="CBrancini">Brancini, Caesar</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003700" normal="LBrannick">Brannick, Linda</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000727" normal="MKD">Duval, Merlin K. ("Morty") (Dr.)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003702" normal="HEnnes">Ennes, Howard</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003686" normal="MAHaynes">Haynes, M. Alfred (Dr.)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003697" normal="RLaur">Laur, Robert (Dr.)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003699" normal="JLaventhal">Laventhal, Josee</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003687" normal="RMcGall">McGall, Richard</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001829" normal="JAMcM">McMahon, J. Alexander</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003688" normal="WMcN">McNerney, Walter</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003704" normal="PMeek">Meek, Peter</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003705" normal="LMendel">Mendel, Levitt</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003689" normal="ACNielson">Nielson, A. C.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003690" normal="JTP">Painter, Joseph T.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003706" normal="CPearson">Pearson, Clarence</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003691" normal="WPetersmeyer">Petersmeyer, Wrede</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002452" normal="SSSt">Scott, Stanley S.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003693" normal="DSeymour">Seymour, David</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003694" normal="IShapiro">Shapiro, Irving (Dr.)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003692" normal="CASiegfried">Siegfried, Charles A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003695" normal="SSimonds">Simonds, Scott</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003696" normal="JHSmith">Smith, J. Henry</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003701" normal="GUrrows">Urrows, Grace</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003703" normal="PWarter">Warter, Peter (Dr.)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003698" normal="VWeingarten">Weingarten, VIctor</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003707" normal="GWheatley">Wheatley, George (Dr.)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003685" normal="JWilson">Wilson, Joseph</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
           <head>Places</head>
@@ -273,8 +273,8 @@
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
           <!-- Remove xmlns -->
-          <corpname xmlns="" encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003684" normal="CFNHEF">Committee to Form a National Health Education Foundation</corpname>
-          <corpname xmlns="" encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002920" normal="WHP">White House photographer</corpname>
+          <corpname encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003684" normal="CFNHEF">Committee to Form a National Health Education Foundation</corpname>
+          <corpname encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002920" normal="WHP">White House photographer</corpname>
         </controlaccess>
         <controlaccess id="topicsDiscussed">
           <head>Topics</head>

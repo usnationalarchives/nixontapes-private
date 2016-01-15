@@ -221,21 +221,21 @@
         <controlaccess id="peopleDiscussed">
           <head>People</head>
           <!-- Remove xmlns -->
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000176" normal="CMB">Bedell, Catherine May</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003559" normal="FSB">Besson, Frank S. (Gen.)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003560" normal="DEBr">Bradshaw, David E.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003566" normal="CClapp">Clapp, Charles</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000752" normal="JDE">Ehrlichman, John D.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003561" normal="JJGil">Gilhooley, John J.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003552" normal="DWK">Kendall, David W.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001529" normal="EK">Krogh, Egil ("Bud"), Jr.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003562" normal="ADLewis">Lewis, Arthur D.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003563" normal="CLuna">Luna, Charles</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002063" normal="JPO">Olsson, John P.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003565" normal="WJQ">Quinn, William J.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002265" normal="DBR">Rice, Donald B.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002825" normal="JAV">Volpe, John A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000176" normal="CMB">Bedell, Catherine May</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003559" normal="FSB">Besson, Frank S. (Gen.)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003560" normal="DEBr">Bradshaw, David E.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003566" normal="CClapp">Clapp, Charles</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000752" normal="JDE">Ehrlichman, John D.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003561" normal="JJGil">Gilhooley, John J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003552" normal="DWK">Kendall, David W.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001529" normal="EK">Krogh, Egil ("Bud"), Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003562" normal="ADLewis">Lewis, Arthur D.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003563" normal="CLuna">Luna, Charles</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002063" normal="JPO">Olsson, John P.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003565" normal="WJQ">Quinn, William J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002265" normal="DBR">Rice, Donald B.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002825" normal="JAV">Volpe, John A.</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
           <head>Places</head>

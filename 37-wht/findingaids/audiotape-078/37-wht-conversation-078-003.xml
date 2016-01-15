@@ -219,19 +219,19 @@
         <controlaccess id="peopleDiscussed">
           <head>People</head>
           <!-- Remove xmlns -->
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003792" normal="TBevill">Bevill, Tom</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003792" normal="OBurleson">Burleson, Omar</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000528" normal="WMC">Colmer, William M.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000554" normal="RKC">Cook, Richard K.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000752" normal="JDE">Ehrlichman, John D.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001186" normal="DNH">Henderson, David N.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003793" normal="AAL">Lennon, Alton A.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001681" normal="CMacG">MacGregor, Clark</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001695" normal="GHM">Mahon, George H.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002517" normal="GPS">Shultz, George P.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002701" normal="OET">Teague, Olin E.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002834" normal="JDW">Waggonner, Joe D., Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003792" normal="TBevill">Bevill, Tom</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003792" normal="OBurleson">Burleson, Omar</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000528" normal="WMC">Colmer, William M.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000554" normal="RKC">Cook, Richard K.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000752" normal="JDE">Ehrlichman, John D.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001186" normal="DNH">Henderson, David N.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003793" normal="AAL">Lennon, Alton A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001681" normal="CMacG">MacGregor, Clark</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001695" normal="GHM">Mahon, George H.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002517" normal="GPS">Shultz, George P.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002701" normal="OET">Teague, Olin E.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002834" normal="JDW">Waggonner, Joe D., Jr.</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
           <head>Places</head>

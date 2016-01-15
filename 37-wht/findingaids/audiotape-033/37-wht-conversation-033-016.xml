@@ -211,9 +211,9 @@
         <controlaccess id="peopleDiscussed">
           <head>People</head>
           <!-- Remove xmlns -->
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002178" normal="BP">Powell, Beverly</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002183" normal="WesP">Powell, Wesley</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002178" normal="BP">Powell, Beverly</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002183" normal="WesP">Powell, Wesley</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
           <head>Places</head>

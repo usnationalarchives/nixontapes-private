@@ -217,8 +217,8 @@
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
           <!-- Remove xmlns -->
-          <corpname xmlns="" encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002794" normal="USSS">United States Secret Service agents</corpname>
-          <corpname xmlns="" encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002919" normal="WHO">White House operator</corpname>
+          <corpname encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002794" normal="USSS">United States Secret Service agents</corpname>
+          <corpname encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002919" normal="WHO">White House operator</corpname>
         </controlaccess>
         <controlaccess id="topicsDiscussed">
           <head>Topics</head>

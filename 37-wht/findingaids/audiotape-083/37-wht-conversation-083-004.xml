@@ -217,16 +217,16 @@
         <controlaccess id="peopleDiscussed">
           <head>People</head>
           <!-- Remove xmlns -->
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000349" normal="CWBur">Burgener, Clair W.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000443" normal="JHCv">Cavanaugh, James H.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000521" normal="KRC">Cole, Kenneth R., Jr.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003807" normal="JHD">Douglas, Joseph H.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001228" normal="PRH">Hitt, Patricia R.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002267" normal="ELR">Richardson, Elliot L.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003804" normal="KRo">Robinson, Kenneth</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003805" normal="JRockefeller">Rockefeller, Jeannette</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003806" normal="NUlle">Ulle, Nan</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000349" normal="CWBur">Burgener, Clair W.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000443" normal="JHCv">Cavanaugh, James H.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000521" normal="KRC">Cole, Kenneth R., Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003807" normal="JHD">Douglas, Joseph H.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001228" normal="PRH">Hitt, Patricia R.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002267" normal="ELR">Richardson, Elliot L.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003804" normal="KRo">Robinson, Kenneth</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003805" normal="JRockefeller">Rockefeller, Jeannette</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003806" normal="NUlle">Ulle, Nan</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
           <head>Places</head>
@@ -234,7 +234,7 @@
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
           <!-- Remove xmlns -->
-          <corpname xmlns="" encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003803" normal="CoMR">Committee on Mental Retardation</corpname>
+          <corpname encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003803" normal="CoMR">Committee on Mental Retardation</corpname>
         </controlaccess>
         <controlaccess id="topicsDiscussed">
           <head>Topics</head>

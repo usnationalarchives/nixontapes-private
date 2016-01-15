@@ -210,8 +210,8 @@
         <controlaccess id="peopleDiscussed">
           <head>People</head>
           <!-- Remove xmlns -->
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000622" normal="JWD">Dean, John W., III</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001082" normal="HRH">Haldeman, H. R. ("Bob")</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000622" normal="JWD">Dean, John W., III</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001082" normal="HRH">Haldeman, H. R. ("Bob")</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
           <head>Places</head>

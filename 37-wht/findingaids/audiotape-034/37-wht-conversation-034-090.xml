@@ -210,8 +210,8 @@
         <controlaccess id="peopleDiscussed">
           <head>People</head>
           <!-- Remove xmlns -->
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000331" normal="SAB">Buchanan, Shelley A. (Scarney)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002229" normal="CGR">Rebozo, Charles G. ("Bebe")</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000331" normal="SAB">Buchanan, Shelley A. (Scarney)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002229" normal="CGR">Rebozo, Charles G. ("Bebe")</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
           <head>Places</head>

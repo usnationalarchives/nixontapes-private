@@ -208,8 +208,8 @@
         <controlaccess id="peopleDiscussed">
           <head>People</head>
           <!-- Remove xmlns -->
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001069" normal="AMH">Haig, Alexander M., Jr.</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001679" normal="DMacA">MacArthur, Douglas, II</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001069" normal="AMH">Haig, Alexander M., Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001679" normal="DMacA">MacArthur, Douglas, II</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
           <head>Places</head>
