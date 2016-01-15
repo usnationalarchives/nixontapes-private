@@ -744,6 +744,6 @@ let $path := file:path-to-native(concat($dir, $filename))
  :)
  
 let $path := concat($dir, $filename)
-where data($audiotape) ge "001" and data($audiotape) le "002"
+where data($audiotape) ge "003" and data($audiotape) le "100"
 
 return file:write($path, $my-doc)
