@@ -1,6 +1,7 @@
 <ead xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-22-9" xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" repositoryencoding="iso15511" relatedencoding="DC" scriptencoding="iso15924">
-    <eadid encodinganalog="856$u" countrycode="US" mainagencycode="US-DNA" publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::781-005::White House Tapes:    Conversation 781-005)//EN" url="http://nixonlibrary.gov/tapes/37-wht-conversation-781-005.html">37-wht-conversation-781-005</eadid>
+    <eadid encodinganalog="856$u" countrycode="US" mainagencycode="US-DNA" publicid="-//us::us-dna::37-wht-conversation-781-005//National Archives and Records Administration::Richard Nixon Presidential Library and Museum::White House Tapes::Conversation 781-005)//EN" url="http://nixonlibrary.gov/tapes/audiotape-781/37-wht-conversation-781-005.xml">
+      37-wht-conversation-781-005</eadid>
     <filedesc>
       <titlestmt>
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 781-005, <date>September 18, 1972</date>
@@ -8,7 +9,9 @@
         <titleproper type="filing">Conversation 781-005</titleproper>
         <subtitle>A Subject Log of the Conversation between President Richard M. Nixon and H. R. ("Bob") Haldeman</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
-        <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.<lb/> Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the Preservation Programs Division and the Office of Innovation at the National Archives and Records Administration.</sponsor>
+        <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
+        <lb/> 
+        Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the Preservation Programs Division and the Office of Innovation at the National Archives and Records Administration.</sponsor>
       </titlestmt>
       <publicationstmt>
         <publisher encodinganalog="Publisher">National Archives and Records Administration</publisher>
@@ -31,7 +34,7 @@
     </filedesc>
     <profiledesc>
       <creation>Base machine-readable finding aid derived using XQuery scripts written by Amanda T. Ross<lb/>
-        <date normal="2015-12-21">December 21, 2015</date>
+        <date normal="2016-01-14">January 14, 2016</date>
       </creation>
       <langusage>Description is in <language encodinganalog="Language" langcode="eng" scriptcode="Latn">English</language>
       </langusage>
@@ -77,8 +80,12 @@
           <unitid identifier="http://catalog.archives.gov/id/597542" type="naId" label="National Archives Identifier">597542</unitid>
           <unittitle id="collectionTitle" label="Collection">White House Tapes</unittitle>
         </archref>
+        <archref id="parentSeries" xlink:href="37-wht-audiotape-oval">
+          <unitid identifier="http://catalog.archives.gov/id/17409633" type="naId" label="National Archives Identifier">17409633</unitid>
+          <unittitle id="seriesTitle" label="Series">Oval Office Sound Recordings</unittitle>
+        </archref>
         <archref id="parentFile" xlink:href="37-wht-audiotape-781">
-          <unitid identifier="http://catalog.archives.gov/id/" type="naId" label="National Archives Identifier"/>
+          <unitid identifier="http://catalog.archives.gov/id/6920394" type="naId" label="National Archives Identifier">6920394</unitid>
           <unittitle id="audiotapeTitle" label="File">Audiotape 781</unittitle>
         </archref>
       </origination>
@@ -93,6 +100,7 @@
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On September 18, 1972, President Richard M. Nixon and H. R. ("Bob") Haldeman met in the Oval Office of the White House from 10:16 am to 10:18 am. The Oval Office taping system captured this recording, which is known as Conversation 781-005 of the White House Tapes. Topics of conversation included ....</abstract>
       <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+      <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>
     </did>
@@ -104,12 +112,31 @@
       <p id="endTime">10:18 am</p>
       <p id="timeCertainty">certain</p>
     </odd>
+    <bioghist id="recordingHistory" encodinganalog="545$a">
+      <head>Recording Location and Taping System History</head>
+      <p>Beginning in 1971, President Richard Nixon authorized the installation of a secret taping system in selected portions of the White House, Cabinet Room, Oval Office, Old Executive Office Building, and Camp David. Collectively, these recordings constitute the Nixon Administration's White House Tapes.</p>
+      <p>In February 1971, the United State Secret Service installed listening devices in the White House. They placed seven microphones in the Oval Office: five in the President's desk and one on each side of the fireplace. The Secret Service technicians wired these devices to central mixers that were then connected to recorders in an old locker room in the White House basement. These recordings became known as the Oval Office recordings.</p>
+      <p>This system was a secret taping system maintained by the Secret Service. Only President Nixon, H. R. Haldeman, and a few of the President's close personal assistants knew the system existed. One of its key features was that the recording equipment in the Oval Office, the EOB office, at Camp David, and on the telephones was sound-activated, operating without a conscious decision by the President to record a specific conversation. The taping system was tied to the Presidential Locator System, which was also operated by the Secret Service, and was designed to continue recording for fifteen to thirty seconds after the President left the room.</p>
+      <p>On July 16, 1973, Special Assistant to the President Alexander Butterfield revealed the existence of the White House taping system during his testimony before the Senate Watergate Committee. Following this public revelation, White House Chief of Staff Alexander Haig ordered the removal of the entire presidential taping system.</p>
+    </bioghist>
+    <!-- possibly import brief biogHist notes for participants -->
     <scopecontent>
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On September 18, 1972, President Richard M. Nixon and H. R. ("Bob") Haldeman met in the Oval Office of the White House from 10:16 am to 10:18 am. The Oval Office taping system captured this recording, which is known as Conversation 781-005 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
+      </scopecontent>
+      <scopecontent id="recordingNotes">
+        <scopecontent id="audioQuality">
+          <head>Audio Quality</head>
+          <p>The audio quality of the Nixon White House Tapes is generally poor. While some locations generated better quality recordings than others, inferior recording equipment, cheap tape stock, improper microphone placement, taping system malfunctions, volume fluctuation, background noise, and electrical interference contributed to the poor quality of the recordings. Other noises greatly affect the audibility of conversations, including such small happenings as the signing of documents or the clinking of coffee cups.</p>
+          <p>As a result of the microphone coverage, Oval Office conversations have clear audio relative to other Nixon White House Tapes. Even still, extraneous room noises and background sounds are evident and can obscure portions of conversations. The microphones in the desk picked up the sound of anyone writing on the desk or the setting down a coffee cup or a glass. Furthermore, the desk microphones captured the sound of President Nixon's chair banging into the desk, the President's feet banging on the desk as he put his feet up, and the sound of the President's knees knocking against the kneewell of his desk. The microphone installed near the telephone captured the ringing of the telephone, which sometimes blocked out small portions of conversation. On occasion, the helicopter rotor blades from Marine One completely obliterated conversation taking place in the Oval Office. The recording system also captured the sirens of ambulances, fire engines, and police vehicles as they blared in through open windows. On occasion, the opening and closing of interior and exterior doors briefly interfered with conversations.</p>
+        </scopecontent>
+        <scopecontent id="natureOfRecording">
+          <head>Nature of the Recording</head>
+          <p>The White House Tapes comprise secretly recorded human conversation. Most participants were unaware that their meetings and telephone calls were being recorded. The taping system captured often unstructured and free-flowing discussions between close personal associates intimately familiar with the topic. As a result, users may find the recorded conversations difficult to follow.</p>
+        </scopecontent>
       </scopecontent>
       <arrangement>
         <head>Collection Arrangement</head>
@@ -139,45 +166,63 @@
     <controlaccess>
       <controlaccess id="PRMPAdeedCategories">
         <head>Determination Categories</head>
-        <p>These processing categories are governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> and the 2007 Deed of Gift.</p>
+        <p>These processing categories are governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> and the 2007 Deed of Gift. These categories are based upon the constitutional and statutory duties of the President of the United States, as well as the Watergate investigation.</p>
         <!--
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01">Abuse of Governmental Powers / Watergate</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-01">Misuse of Government Agencies</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-02">Watergate Break-In</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-03">Watergate Cover-Up</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-04">Campaign Practices</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-05">Obstruction of Justice</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-07">Milk Fund</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-08">Hughes-Rebozo Investigation</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-09">Emoluments and Tax Evasion</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-10">International Telephone and Telegraph</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination02">Administrative Powers</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination03">Department Policies, Agency Policies, and Executive Decisions</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination04">Legislative Leader</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination05">Presidential Foreign Relations Power</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination06">Commander-in-Chief</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination07">White House Internal or Institutional Organization</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination08">Ceremonial Duties of the President</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination09">Official Travel, Head of State, and Foreign Visits</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination10">Presidential Statements</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination11">Presidential Appointments and Personnel Management</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination12">White House Entertainment and Social Affairs</subject>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01">Abuse of Governmental Powers / Watergate</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-01">Misuse of Government Agencies</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-02">Watergate Break-In</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-03">Watergate Cover-Up</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-04">Campaign Practices</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-05">Obstruction of Justice</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-07">Milk Fund</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-08">Hughes-Rebozo Investigation</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-09">Emoluments and Tax Evasion</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-10">International Telephone and Telegraph</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination02">Administrative Powers</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination03">Department Policies, Agency Policies, and Executive Decisions</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination04">Legislative Leader</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination05">Presidential Foreign Relations Power</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination06">Commander-in-Chief</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination07">White House Internal or Institutional Organization</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination08">Ceremonial Duties of the President</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination09">Official Travel, Head of State, and Foreign Visits</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination10">Presidential Statements</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination11">Presidential Appointments and Personnel Management</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination12">White House Entertainment and Social Affairs</function>
         
-        <subject encodinganalog="690$a" source="deedOfGift2007" authfilenumber="deedOfGift2007">Deed of Gift, 2007</subject>
+        <function encodinganalog="657$a" source="deedOfGift2007" authfilenumber="deedOfGift2007">Deed of Gift, 2007</function>
         -->
       </controlaccess>
       <controlaccess id="recordingLocation">
         <head>Location of Recording</head>
-        <geogname encodinganalog="518$p" normal=", " source="GeoHack" role="location"/>
+        <geogname encodinganalog="518$p" normal="38.8974, -77.0374" source="GeoHack" role="location"/>
       </controlaccess>
-      <controlaccess id="topicalHeadings">
-        <head>Topics</head>
+      <controlaccess id="relatedTopics">
+        <head>Related Topics</head>
+        <corpname encodinganalog="610" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79007288">United States. President (1969-1974 : Nixon)</corpname>
         <genreform encodinganalog="655" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/subjects/sh85101069">Audiotapes</genreform>
+        <geogname encodinganalog="651" role="subject" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85140471">United States -- Politics and government -- 1969-1974</geogname>
         <persname encodinganalog="600" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79018757">Nixon, Richard M. (Richard Milhous), 1913-1994</persname>
         <subject encodinganalog="650" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85106465">Presidents -- United States</subject>
-        <corpname encodinganalog="610" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79007288">United States. President (1969-1974 : Nixon)</corpname>
-        <geogname encodinganalog="651" role="subject" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85140471">United States -- Politics and government -- 1969-1974</geogname>
-        <!-- Insert conversation-specific LC Subject Headings here with id.loc.gov links; alphabetize -->
+      </controlaccess>
+      <controlaccess id="topicsOfConversation">
+        <head>Topics of Conversation</head>
+        <controlaccess id="peopleDiscussed">
+          <head>People</head>
+          <!-- Remove xmlns -->
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001082" normal="HRH">Haldeman, H. R. ("Bob")</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
+        </controlaccess>
+        <controlaccess id="placesDiscussed">
+          <head>Places</head>
+        </controlaccess>
+        <controlaccess id="organizationsDiscussed">
+          <head>Organizations</head>
+          <!-- Remove xmlns -->
+        </controlaccess>
+        <controlaccess id="topicsDiscussed">
+          <head>Topics</head>
+        </controlaccess>
       </controlaccess>
     </controlaccess>
     <!-- Use separated materials and related materials clips here to enter in information. -->
@@ -256,14 +301,14 @@
         <processinfo type="chronRelease">
           <p>Processed by the <corpname encodinganalog="583$k" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004831" normal="Richard Nixon Presidential Library and Museum. Tapes Team">Tapes Team of the Richard Nixon Presidential Library and Museum</corpname>, as part of the <archref id="chronRelease" xlink:href="37-wht-chron4" xlink:show="new">
               <unittitle encodinganalog="583$b">Fourth Chronological Release</unittitle> (<unitid id="chron4">Chron IV</unitid>)
-						</archref>, and released on <date encodinganalog="583$c" normal="2003-12-10" type="releaseDate"/>.</p>
+						</archref>, and released on <date encodinganalog="583$c" normal="2003-12-10" type="releaseDate">December 10, 2003</date>.</p>
         </processinfo>
         <note id="supportNote">
           <p>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the <corpname source="nixonTapesIndex" role="repository" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
           <p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="United States. National Archives and Records Administration. Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
         </note>
         <note id="encodingHistory">
-          <p>Encoded by Amanda T. Ross, <date normal="2015-12">December 2015</date>
+          <p>Encoded by Amanda T. Ross, <date normal="2016-01-14">January 14, 2016</date>
           </p>
           <!-- Edited by ?, Mm yyyy -->
         </note>

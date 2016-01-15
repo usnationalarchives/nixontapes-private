@@ -211,9 +211,9 @@
         <controlaccess id="peopleDiscussed">
           <head>People</head>
           <!-- Remove xmlns -->
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000708" normal="HCD">Drown, Helene (Colesie)</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000755" normal="JNE">Eisenhower, Julie Nixon</persname>
-          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002004" normal="TCRN">Nixon, Thelma C. ("Pat") (Ryan)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000708" normal="HCD">Drown, Helene (Colesie)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000755" normal="JNE">Eisenhower, Julie Nixon</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002004" normal="TCRN">Nixon, Thelma C. ("Pat") (Ryan)</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
           <head>Places</head>

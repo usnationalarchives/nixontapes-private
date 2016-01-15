@@ -1,6 +1,7 @@
 <ead xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="urn:isbn:1-931666-22-9" xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">
   <eadheader audience="internal" countryencoding="iso3166-1" dateencoding="iso8601" langencoding="iso639-2b" repositoryencoding="iso15511" relatedencoding="DC" scriptencoding="iso15924">
-    <eadid encodinganalog="856$u" countrycode="US" mainagencycode="US-DNA" publicid="-//Richard Nixon Presidential Library and Museum//TEXT (US::US-DNA::744-002::White House Tapes:    Conversation 744-002)//EN" url="http://nixonlibrary.gov/tapes/37-wht-conversation-744-002.html">37-wht-conversation-744-002</eadid>
+    <eadid encodinganalog="856$u" countrycode="US" mainagencycode="US-DNA" publicid="-//us::us-dna::37-wht-conversation-744-002//National Archives and Records Administration::Richard Nixon Presidential Library and Museum::White House Tapes::Conversation 744-002)//EN" url="http://nixonlibrary.gov/tapes/audiotape-744/37-wht-conversation-744-002.xml">
+      37-wht-conversation-744-002</eadid>
     <filedesc>
       <titlestmt>
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 744-002, <date>June 30, 1972</date>
@@ -8,7 +9,9 @@
         <titleproper type="filing">Conversation 744-002</titleproper>
         <subtitle>A Subject Log of the Conversation between During a photographic session, President Richard M. Nixon and incumbent Republican senators and representatives as well as Congressional candidates, including Howard H. Baker, Jr., J. Caleb Boggs, Edward W. Brooke, Clifford P. Case, Mark O. Hatfield, Charles H. Percy, Jr., James B. Pearson, John G. Tower, John B. Anderson, Mark Andrews, William Archer, Jr., Leslie C. Arends, John M. Ashbrook, Edward G. Biester, Jr., William G. Bray, Clarence J. Brown, Jr. [?], James T. Broyhill, John H. Buchanan, Jr., J. Herbert Burke, John N. ("Happy") Camp, Elford A. Cederberg, Don H. Clausen, Delwin M. Clawson, James C. Cleveland, Harold R. Collier, Silvio O. Conte, Philip M. Crane, Glenn R. Davis, Edward J. Derwinski, William L. Dickinson, John J. Duncan, Pierre S. duPont, IV, William J. ("Jack") Edwards, John N. Erlenborn, Marvin L. Esch, Paul Findley, Bill Frenzel, H. R. Gross, James R. Grover, Charles S. Gubser, William H. Harsha, James Harvey, H. John Heinz, III, Craig Hosmer, Jack F. Kemp, Daniel Kuykendall, John Kyl, Sherman Lloyd, Manuel Lujan, Jr., James A. McCLure, Jack H. McDonald, Robert C. McEwen, William S. Mailliard, Richard W. Mallary, Robert B. Mathias, David T. Martin, Wiley Mayne, Clarence E. Miller, William E. Minshall, Charles A. Mosher, John T. Myers, Ancher Nelson, Alvin E. O'Konski, Jerry L. Pettis, Walter E. Powell, Albert H. Quie, Thomas F. Railsback, John J. Rhodes, Donald W. Riegle, Jr., Howard W. Robison, Earl B. Ruth, Charles W. Sandman, Jr., John P. Saylor, William J. Scherle, Herman T. Schneebeli, William L. Scott, Joe Skubitz, M. Gene Snyder, Robert H. Steele, Sam Steiger, William A. Steiger, Charles M. Teague, Vernon W. Thomson, Guy Vander Jagt, William C. Wampler, John Ware, Charles W. Whalen, Jr., G. William Whitehurst, Lawrence G. Williams, Robert C. ("Bob") Wilson, Wendall Wyatt, C. W. ("Bill") Young, John M. Zwach, James Abdnor, Alfred Adams, Stockton Adkins, William Armstrong, Charles A. Avarello, Wayne Bobbitt, L. A. ("Skip") Bafalis, Bill Baker, Charles T. Banken, Jr., Raymond E. Barrows, Robin L. Beard, Paul D. Bethel, Allan Bloom, Joseph H. Boyd, Jr., Richard T. Bozzone, Fuller H. Brooks, Bill Brophy, Vernon E. Brown, Frederick D. Bryant, Clair W. Burgener, Carl Butler, Caldwell Butler, Gil Carmichael, Robert Carter, J. C. Carter, Roland S. Catarinella, Charles E. Chase, William Chin-Lee, William Thad Cochran, John B. Conlan, Rodney M. Cook, John W. Cooper, Jr., David R. Countie, Paul W. Cronin, Robert W. Daniel, Jr., Atlee Dodge, Peter V. Domenici, William F. Dowd, James E. Doyle, Jonathan Dugan, Theodore R. Ellsworth, Lewis Emerich, Ernest C. Fackler, Billy Joe Finney, Philip T. Fleuchaus, Richard O. Funsch, John F. Gangemi, Benjamin A. Gilman, Cliff Gosney, James Griffin, Donald W. Gropp, Tennyson Guyer, Jon Haaven, Bruce R. Haller, Robert P. Hanrahan, Peter Hannaford, Phil Hansen, Carol D. Harner, Doug Harlan, James M. Hewgley, Jr., Robert Hirsch, John J. Hoellen, Robert Holcomb, Marjorie S. Holt, Eugene W. Hubler, William H. Hudnut, III, Laban P. Jackson, James D. Johnson, William A. Johnson, Phil Kaelin, Jr., William M. Ketchum, Leonard C. Koldin, Robert B. Lamkin, Jane Pickens Langley, Jesse Ledbetter, II, Thomas Lento, Louise Leonard, Alvin W. Levenhagen, J. Sidi Limehouse, Trent Lott, Rayfield Lundy, Charles D. McAtee, Ronald McDonald, Ronald V. McGrath, Joe McGraw, Nicholas R. Macchio, Jr., Edward R. Madigan, Joseph J. Maraziti, Alfred Marroletti, James G. Martin, Edward J. Mason, Kenneth C. Miller, Donald J. Mitchell, Robert D. Morrow, Joe Neal, Ed Nelson, George M. O'Brien, Standford E. Parris, Gus A. Pedicone, Joseph Pereira, William Pfender, B. Leonard Phillips, Edlo E. Powell, Robert L. Prange, George E. Presson, Bill Reams, Ralph S. Regula, Matthew J. Rinaldo, Ralph Rhoades, Joseph C. Richards, Courtney Roberts, Ronald A. Sarasin, Alfred D. Schiaffo, William Scholes, Dieter J. Schrader, Garth Seehawer, E. G. ("Bud") Shuster, Herbert Edgar Smith, Howard J. Snider, Robert Statchen, Alan Steelman, Wardell F. Steigerwalt, Gregg Tria, Ben Valentine, Carl A. Vergari, John Vickerman, Thomas E. Vilt, John F. Walsh, William F. Walsh, Wayne N. Whatley, Robert K. Wolthuis, Samuel H. Young, Sergio J. Zilli, John E. Nidecker, and Clark MacGregor as well as unknown person(s) [technicians],</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
-        <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.<lb/> Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the Preservation Programs Division and the Office of Innovation at the National Archives and Records Administration.</sponsor>
+        <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
+        <lb/> 
+        Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the Preservation Programs Division and the Office of Innovation at the National Archives and Records Administration.</sponsor>
       </titlestmt>
       <publicationstmt>
         <publisher encodinganalog="Publisher">National Archives and Records Administration</publisher>
@@ -31,7 +34,7 @@
     </filedesc>
     <profiledesc>
       <creation>Base machine-readable finding aid derived using XQuery scripts written by Amanda T. Ross<lb/>
-        <date normal="2015-12-21">December 21, 2015</date>
+        <date normal="2016-01-14">January 14, 2016</date>
       </creation>
       <langusage>Description is in <language encodinganalog="Language" langcode="eng" scriptcode="Latn">English</language>
       </langusage>
@@ -308,8 +311,12 @@
           <unitid identifier="http://catalog.archives.gov/id/597542" type="naId" label="National Archives Identifier">597542</unitid>
           <unittitle id="collectionTitle" label="Collection">White House Tapes</unittitle>
         </archref>
+        <archref id="parentSeries" xlink:href="37-wht-audiotape-oval">
+          <unitid identifier="http://catalog.archives.gov/id/17409633" type="naId" label="National Archives Identifier">17409633</unitid>
+          <unittitle id="seriesTitle" label="Series">Oval Office Sound Recordings</unittitle>
+        </archref>
         <archref id="parentFile" xlink:href="37-wht-audiotape-744">
-          <unitid identifier="http://catalog.archives.gov/id/" type="naId" label="National Archives Identifier"/>
+          <unitid identifier="http://catalog.archives.gov/id/6852532" type="naId" label="National Archives Identifier">6852532</unitid>
           <unittitle id="audiotapeTitle" label="File">Audiotape 744</unittitle>
         </archref>
       </origination>
@@ -324,6 +331,7 @@
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On June 30, 1972, during a photographic session, President Richard M. Nixon and incumbent Republican senators and representatives as well as Congressional candidates, including Howard H. Baker, Jr., J. Caleb Boggs, Edward W. Brooke, Clifford P. Case, Mark O. Hatfield, Charles H. Percy, Jr., James B. Pearson, John G. Tower, John B. Anderson, Mark Andrews, William Archer, Jr., Leslie C. Arends, John M. Ashbrook, Edward G. Biester, Jr., William G. Bray, Clarence J. Brown, Jr. [?], James T. Broyhill, John H. Buchanan, Jr., J. Herbert Burke, John N. ("Happy") Camp, Elford A. Cederberg, Don H. Clausen, Delwin M. Clawson, James C. Cleveland, Harold R. Collier, Silvio O. Conte, Philip M. Crane, Glenn R. Davis, Edward J. Derwinski, William L. Dickinson, John J. Duncan, Pierre S. duPont, IV, William J. ("Jack") Edwards, John N. Erlenborn, Marvin L. Esch, Paul Findley, Bill Frenzel, H. R. Gross, James R. Grover, Charles S. Gubser, William H. Harsha, James Harvey, H. John Heinz, III, Craig Hosmer, Jack F. Kemp, Daniel Kuykendall, John Kyl, Sherman Lloyd, Manuel Lujan, Jr., James A. McCLure, Jack H. McDonald, Robert C. McEwen, William S. Mailliard, Richard W. Mallary, Robert B. Mathias, David T. Martin, Wiley Mayne, Clarence E. Miller, William E. Minshall, Charles A. Mosher, John T. Myers, Ancher Nelson, Alvin E. O'Konski, Jerry L. Pettis, Walter E. Powell, Albert H. Quie, Thomas F. Railsback, John J. Rhodes, Donald W. Riegle, Jr., Howard W. Robison, Earl B. Ruth, Charles W. Sandman, Jr., John P. Saylor, William J. Scherle, Herman T. Schneebeli, William L. Scott, Joe Skubitz, M. Gene Snyder, Robert H. Steele, Sam Steiger, William A. Steiger, Charles M. Teague, Vernon W. Thomson, Guy Vander Jagt, William C. Wampler, John Ware, Charles W. Whalen, Jr., G. William Whitehurst, Lawrence G. Williams, Robert C. ("Bob") Wilson, Wendall Wyatt, C. W. ("Bill") Young, John M. Zwach, James Abdnor, Alfred Adams, Stockton Adkins, William Armstrong, Charles A. Avarello, Wayne Bobbitt, L. A. ("Skip") Bafalis, Bill Baker, Charles T. Banken, Jr., Raymond E. Barrows, Robin L. Beard, Paul D. Bethel, Allan Bloom, Joseph H. Boyd, Jr., Richard T. Bozzone, Fuller H. Brooks, Bill Brophy, Vernon E. Brown, Frederick D. Bryant, Clair W. Burgener, Carl Butler, Caldwell Butler, Gil Carmichael, Robert Carter, J. C. Carter, Roland S. Catarinella, Charles E. Chase, William Chin-Lee, William Thad Cochran, John B. Conlan, Rodney M. Cook, John W. Cooper, Jr., David R. Countie, Paul W. Cronin, Robert W. Daniel, Jr., Atlee Dodge, Peter V. Domenici, William F. Dowd, James E. Doyle, Jonathan Dugan, Theodore R. Ellsworth, Lewis Emerich, Ernest C. Fackler, Billy Joe Finney, Philip T. Fleuchaus, Richard O. Funsch, John F. Gangemi, Benjamin A. Gilman, Cliff Gosney, James Griffin, Donald W. Gropp, Tennyson Guyer, Jon Haaven, Bruce R. Haller, Robert P. Hanrahan, Peter Hannaford, Phil Hansen, Carol D. Harner, Doug Harlan, James M. Hewgley, Jr., Robert Hirsch, John J. Hoellen, Robert Holcomb, Marjorie S. Holt, Eugene W. Hubler, William H. Hudnut, III, Laban P. Jackson, James D. Johnson, William A. Johnson, Phil Kaelin, Jr., William M. Ketchum, Leonard C. Koldin, Robert B. Lamkin, Jane Pickens Langley, Jesse Ledbetter, II, Thomas Lento, Louise Leonard, Alvin W. Levenhagen, J. Sidi Limehouse, Trent Lott, Rayfield Lundy, Charles D. McAtee, Ronald McDonald, Ronald V. McGrath, Joe McGraw, Nicholas R. Macchio, Jr., Edward R. Madigan, Joseph J. Maraziti, Alfred Marroletti, James G. Martin, Edward J. Mason, Kenneth C. Miller, Donald J. Mitchell, Robert D. Morrow, Joe Neal, Ed Nelson, George M. O'Brien, Standford E. Parris, Gus A. Pedicone, Joseph Pereira, William Pfender, B. Leonard Phillips, Edlo E. Powell, Robert L. Prange, George E. Presson, Bill Reams, Ralph S. Regula, Matthew J. Rinaldo, Ralph Rhoades, Joseph C. Richards, Courtney Roberts, Ronald A. Sarasin, Alfred D. Schiaffo, William Scholes, Dieter J. Schrader, Garth Seehawer, E. G. ("Bud") Shuster, Herbert Edgar Smith, Howard J. Snider, Robert Statchen, Alan Steelman, Wardell F. Steigerwalt, Gregg Tria, Ben Valentine, Carl A. Vergari, John Vickerman, Thomas E. Vilt, John F. Walsh, William F. Walsh, Wayne N. Whatley, Robert K. Wolthuis, Samuel H. Young, Sergio J. Zilli, John E. Nidecker, and Clark MacGregor as well as unknown person(s) [technicians], met in the Oval Office of the White House from 8:50 am to 9:53 am. The Oval Office taping system captured this recording, which is known as Conversation 744-002 of the White House Tapes. Topics of conversation included ....</abstract>
       <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+      <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>
     </did>
@@ -335,12 +343,31 @@
       <p id="endTime">9:53 am</p>
       <p id="timeCertainty">certain</p>
     </odd>
+    <bioghist id="recordingHistory" encodinganalog="545$a">
+      <head>Recording Location and Taping System History</head>
+      <p>Beginning in 1971, President Richard Nixon authorized the installation of a secret taping system in selected portions of the White House, Cabinet Room, Oval Office, Old Executive Office Building, and Camp David. Collectively, these recordings constitute the Nixon Administration's White House Tapes.</p>
+      <p>In February 1971, the United State Secret Service installed listening devices in the White House. They placed seven microphones in the Oval Office: five in the President's desk and one on each side of the fireplace. The Secret Service technicians wired these devices to central mixers that were then connected to recorders in an old locker room in the White House basement. These recordings became known as the Oval Office recordings.</p>
+      <p>This system was a secret taping system maintained by the Secret Service. Only President Nixon, H. R. Haldeman, and a few of the President's close personal assistants knew the system existed. One of its key features was that the recording equipment in the Oval Office, the EOB office, at Camp David, and on the telephones was sound-activated, operating without a conscious decision by the President to record a specific conversation. The taping system was tied to the Presidential Locator System, which was also operated by the Secret Service, and was designed to continue recording for fifteen to thirty seconds after the President left the room.</p>
+      <p>On July 16, 1973, Special Assistant to the President Alexander Butterfield revealed the existence of the White House taping system during his testimony before the Senate Watergate Committee. Following this public revelation, White House Chief of Staff Alexander Haig ordered the removal of the entire presidential taping system.</p>
+    </bioghist>
+    <!-- possibly import brief biogHist notes for participants -->
     <scopecontent>
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On June 30, 1972, during a photographic session, President Richard M. Nixon and incumbent Republican senators and representatives as well as Congressional candidates, including Howard H. Baker, Jr., J. Caleb Boggs, Edward W. Brooke, Clifford P. Case, Mark O. Hatfield, Charles H. Percy, Jr., James B. Pearson, John G. Tower, John B. Anderson, Mark Andrews, William Archer, Jr., Leslie C. Arends, John M. Ashbrook, Edward G. Biester, Jr., William G. Bray, Clarence J. Brown, Jr. [?], James T. Broyhill, John H. Buchanan, Jr., J. Herbert Burke, John N. ("Happy") Camp, Elford A. Cederberg, Don H. Clausen, Delwin M. Clawson, James C. Cleveland, Harold R. Collier, Silvio O. Conte, Philip M. Crane, Glenn R. Davis, Edward J. Derwinski, William L. Dickinson, John J. Duncan, Pierre S. duPont, IV, William J. ("Jack") Edwards, John N. Erlenborn, Marvin L. Esch, Paul Findley, Bill Frenzel, H. R. Gross, James R. Grover, Charles S. Gubser, William H. Harsha, James Harvey, H. John Heinz, III, Craig Hosmer, Jack F. Kemp, Daniel Kuykendall, John Kyl, Sherman Lloyd, Manuel Lujan, Jr., James A. McCLure, Jack H. McDonald, Robert C. McEwen, William S. Mailliard, Richard W. Mallary, Robert B. Mathias, David T. Martin, Wiley Mayne, Clarence E. Miller, William E. Minshall, Charles A. Mosher, John T. Myers, Ancher Nelson, Alvin E. O'Konski, Jerry L. Pettis, Walter E. Powell, Albert H. Quie, Thomas F. Railsback, John J. Rhodes, Donald W. Riegle, Jr., Howard W. Robison, Earl B. Ruth, Charles W. Sandman, Jr., John P. Saylor, William J. Scherle, Herman T. Schneebeli, William L. Scott, Joe Skubitz, M. Gene Snyder, Robert H. Steele, Sam Steiger, William A. Steiger, Charles M. Teague, Vernon W. Thomson, Guy Vander Jagt, William C. Wampler, John Ware, Charles W. Whalen, Jr., G. William Whitehurst, Lawrence G. Williams, Robert C. ("Bob") Wilson, Wendall Wyatt, C. W. ("Bill") Young, John M. Zwach, James Abdnor, Alfred Adams, Stockton Adkins, William Armstrong, Charles A. Avarello, Wayne Bobbitt, L. A. ("Skip") Bafalis, Bill Baker, Charles T. Banken, Jr., Raymond E. Barrows, Robin L. Beard, Paul D. Bethel, Allan Bloom, Joseph H. Boyd, Jr., Richard T. Bozzone, Fuller H. Brooks, Bill Brophy, Vernon E. Brown, Frederick D. Bryant, Clair W. Burgener, Carl Butler, Caldwell Butler, Gil Carmichael, Robert Carter, J. C. Carter, Roland S. Catarinella, Charles E. Chase, William Chin-Lee, William Thad Cochran, John B. Conlan, Rodney M. Cook, John W. Cooper, Jr., David R. Countie, Paul W. Cronin, Robert W. Daniel, Jr., Atlee Dodge, Peter V. Domenici, William F. Dowd, James E. Doyle, Jonathan Dugan, Theodore R. Ellsworth, Lewis Emerich, Ernest C. Fackler, Billy Joe Finney, Philip T. Fleuchaus, Richard O. Funsch, John F. Gangemi, Benjamin A. Gilman, Cliff Gosney, James Griffin, Donald W. Gropp, Tennyson Guyer, Jon Haaven, Bruce R. Haller, Robert P. Hanrahan, Peter Hannaford, Phil Hansen, Carol D. Harner, Doug Harlan, James M. Hewgley, Jr., Robert Hirsch, John J. Hoellen, Robert Holcomb, Marjorie S. Holt, Eugene W. Hubler, William H. Hudnut, III, Laban P. Jackson, James D. Johnson, William A. Johnson, Phil Kaelin, Jr., William M. Ketchum, Leonard C. Koldin, Robert B. Lamkin, Jane Pickens Langley, Jesse Ledbetter, II, Thomas Lento, Louise Leonard, Alvin W. Levenhagen, J. Sidi Limehouse, Trent Lott, Rayfield Lundy, Charles D. McAtee, Ronald McDonald, Ronald V. McGrath, Joe McGraw, Nicholas R. Macchio, Jr., Edward R. Madigan, Joseph J. Maraziti, Alfred Marroletti, James G. Martin, Edward J. Mason, Kenneth C. Miller, Donald J. Mitchell, Robert D. Morrow, Joe Neal, Ed Nelson, George M. O'Brien, Standford E. Parris, Gus A. Pedicone, Joseph Pereira, William Pfender, B. Leonard Phillips, Edlo E. Powell, Robert L. Prange, George E. Presson, Bill Reams, Ralph S. Regula, Matthew J. Rinaldo, Ralph Rhoades, Joseph C. Richards, Courtney Roberts, Ronald A. Sarasin, Alfred D. Schiaffo, William Scholes, Dieter J. Schrader, Garth Seehawer, E. G. ("Bud") Shuster, Herbert Edgar Smith, Howard J. Snider, Robert Statchen, Alan Steelman, Wardell F. Steigerwalt, Gregg Tria, Ben Valentine, Carl A. Vergari, John Vickerman, Thomas E. Vilt, John F. Walsh, William F. Walsh, Wayne N. Whatley, Robert K. Wolthuis, Samuel H. Young, Sergio J. Zilli, John E. Nidecker, and Clark MacGregor as well as unknown person(s) [technicians], met in the Oval Office of the White House from 8:50 am to 9:53 am. The Oval Office taping system captured this recording, which is known as Conversation 744-002 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
+      </scopecontent>
+      <scopecontent id="recordingNotes">
+        <scopecontent id="audioQuality">
+          <head>Audio Quality</head>
+          <p>The audio quality of the Nixon White House Tapes is generally poor. While some locations generated better quality recordings than others, inferior recording equipment, cheap tape stock, improper microphone placement, taping system malfunctions, volume fluctuation, background noise, and electrical interference contributed to the poor quality of the recordings. Other noises greatly affect the audibility of conversations, including such small happenings as the signing of documents or the clinking of coffee cups.</p>
+          <p>As a result of the microphone coverage, Oval Office conversations have clear audio relative to other Nixon White House Tapes. Even still, extraneous room noises and background sounds are evident and can obscure portions of conversations. The microphones in the desk picked up the sound of anyone writing on the desk or the setting down a coffee cup or a glass. Furthermore, the desk microphones captured the sound of President Nixon's chair banging into the desk, the President's feet banging on the desk as he put his feet up, and the sound of the President's knees knocking against the kneewell of his desk. The microphone installed near the telephone captured the ringing of the telephone, which sometimes blocked out small portions of conversation. On occasion, the helicopter rotor blades from Marine One completely obliterated conversation taking place in the Oval Office. The recording system also captured the sirens of ambulances, fire engines, and police vehicles as they blared in through open windows. On occasion, the opening and closing of interior and exterior doors briefly interfered with conversations.</p>
+        </scopecontent>
+        <scopecontent id="natureOfRecording">
+          <head>Nature of the Recording</head>
+          <p>The White House Tapes comprise secretly recorded human conversation. Most participants were unaware that their meetings and telephone calls were being recorded. The taping system captured often unstructured and free-flowing discussions between close personal associates intimately familiar with the topic. As a result, users may find the recorded conversations difficult to follow.</p>
+        </scopecontent>
       </scopecontent>
       <arrangement>
         <head>Collection Arrangement</head>
@@ -370,45 +397,294 @@
     <controlaccess>
       <controlaccess id="PRMPAdeedCategories">
         <head>Determination Categories</head>
-        <p>These processing categories are governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> and the 2007 Deed of Gift.</p>
+        <p>These processing categories are governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> and the 2007 Deed of Gift. These categories are based upon the constitutional and statutory duties of the President of the United States, as well as the Watergate investigation.</p>
         <!--
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01">Abuse of Governmental Powers / Watergate</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-01">Misuse of Government Agencies</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-02">Watergate Break-In</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-03">Watergate Cover-Up</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-04">Campaign Practices</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-05">Obstruction of Justice</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-07">Milk Fund</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-08">Hughes-Rebozo Investigation</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-09">Emoluments and Tax Evasion</subject>
-          <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination01-10">International Telephone and Telegraph</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination02">Administrative Powers</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination03">Department Policies, Agency Policies, and Executive Decisions</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination04">Legislative Leader</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination05">Presidential Foreign Relations Power</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination06">Commander-in-Chief</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination07">White House Internal or Institutional Organization</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination08">Ceremonial Duties of the President</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination09">Official Travel, Head of State, and Foreign Visits</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination10">Presidential Statements</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination11">Presidential Appointments and Personnel Management</subject>
-        <subject encodinganalog="690$a" source="PRMPA" authfilenumber="determination12">White House Entertainment and Social Affairs</subject>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01">Abuse of Governmental Powers / Watergate</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-01">Misuse of Government Agencies</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-02">Watergate Break-In</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-03">Watergate Cover-Up</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-04">Campaign Practices</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-05">Obstruction of Justice</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-07">Milk Fund</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-08">Hughes-Rebozo Investigation</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-09">Emoluments and Tax Evasion</function>
+          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-10">International Telephone and Telegraph</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination02">Administrative Powers</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination03">Department Policies, Agency Policies, and Executive Decisions</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination04">Legislative Leader</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination05">Presidential Foreign Relations Power</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination06">Commander-in-Chief</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination07">White House Internal or Institutional Organization</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination08">Ceremonial Duties of the President</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination09">Official Travel, Head of State, and Foreign Visits</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination10">Presidential Statements</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination11">Presidential Appointments and Personnel Management</function>
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination12">White House Entertainment and Social Affairs</function>
         
-        <subject encodinganalog="690$a" source="deedOfGift2007" authfilenumber="deedOfGift2007">Deed of Gift, 2007</subject>
+        <function encodinganalog="657$a" source="deedOfGift2007" authfilenumber="deedOfGift2007">Deed of Gift, 2007</function>
         -->
       </controlaccess>
       <controlaccess id="recordingLocation">
         <head>Location of Recording</head>
-        <geogname encodinganalog="518$p" normal=", " source="GeoHack" role="location"/>
+        <geogname encodinganalog="518$p" normal="38.8974, -77.0374" source="GeoHack" role="location"/>
       </controlaccess>
-      <controlaccess id="topicalHeadings">
-        <head>Topics</head>
+      <controlaccess id="relatedTopics">
+        <head>Related Topics</head>
+        <corpname encodinganalog="610" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79007288">United States. President (1969-1974 : Nixon)</corpname>
         <genreform encodinganalog="655" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/subjects/sh85101069">Audiotapes</genreform>
+        <geogname encodinganalog="651" role="subject" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85140471">United States -- Politics and government -- 1969-1974</geogname>
         <persname encodinganalog="600" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79018757">Nixon, Richard M. (Richard Milhous), 1913-1994</persname>
         <subject encodinganalog="650" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85106465">Presidents -- United States</subject>
-        <corpname encodinganalog="610" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79007288">United States. President (1969-1974 : Nixon)</corpname>
-        <geogname encodinganalog="651" role="subject" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85140471">United States -- Politics and government -- 1969-1974</geogname>
-        <!-- Insert conversation-specific LC Subject Headings here with id.loc.gov links; alphabetize -->
+      </controlaccess>
+      <controlaccess id="topicsOfConversation">
+        <head>Topics of Conversation</head>
+        <controlaccess id="peopleDiscussed">
+          <head>People</head>
+          <!-- Remove xmlns -->
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000003" normal="JAbd">Abdnor, James</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004338" normal="AAdams">Adams, Alfred</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004338" normal="AAdams">Adams, Alfred</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004339" normal="SAdkins">Adkins, Stockton</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004339" normal="SAdkins">Adkins, Stockton</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003604" normal="JBAnderson">Anderson, John B.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000080" normal="MA">Andrews, Mark</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000086" normal="LCA">Arends, Leslie C.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004340" normal="WiArm">Armstrong, William</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004340" normal="WiArm">Armstrong, William</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004313" normal="JMA">Ashbrook, John M.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004341" normal="CAAv">Avarello, Charles A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004341" normal="CAAv">Avarello, Charles A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004342" normal="WBa">Babbitt, Wayne</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004342" normal="WBa">Babbitt, Wayne</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004342" normal="WBa">Babbitt, Wayne</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000111" normal="LAB">Bafalis, L. A. ("Skip")</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000117" normal="HHB">Baker, Howard H., Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004344" normal="CTBJr">Banken, Charles T., Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004345" normal="REBa">Barrows, Raymond E.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000171" normal="RLB">Beard, Robin L.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004346" normal="PDB">Bethel, Paul D.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004314" normal="EGBiJr">Biester, Edward G., Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004347" normal="ABloom">Bloom, Allan</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000254" normal="JCB">Boggs, J. Caleb</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004348" normal="JHBoydJr">Boyd, Joseph H., Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004349" normal="RTB">Bozzone, Richard T.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003212" normal="WGB">Bray, William G.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000305" normal="EWB">Brooke, Edward W.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004350" normal="FHBr">Brooks, Fuller H.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004351" normal="BBr">Brophy, Bill</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000311" normal="CJB">Brown, Clarence J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004352" normal="VEB">Brown, Vernon E.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004315" normal="JaTBr">Broyhill, James T.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004353" normal="FDB">Bryant, Frederick D.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000328" normal="JHBc">Buchanan, John H., Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000349" normal="CWBur">Burgener, Clair W.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004316" normal="JHBu">Burke, J. Herbert</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000364" normal="CBu">Butler, Caldwell</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004354" normal="CButler">Butler, Carl</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004318" normal="JNCamp">Camp, John N. ("Happy")</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004355" normal="GCar">Carmichael, Gil</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004356" normal="JCCa">Carter, J. C.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000422" normal="RCt">Carter, Robert</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000424" normal="CPCa">Case, Clifford P.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004357" normal="RSCa">Catarinella, Roland S.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004182" normal="EACe">Cederberg, Elford A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004358" normal="CEC">Chase, Charles E.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004359" normal="WiCL">Chin-Lee, William</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000495" normal="DHC">Clausen, Don H.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004248" normal="DMC">Clawson, Delwin M.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004317" normal="JCCl">Cleveland, James C.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004360" normal="WTCo">Cochran, William Thad</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004250" normal="HRC">Collier, Harold R.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000537" normal="JCon">Conlan, John B.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000546" normal="SOC">Conte, Silvio O.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004361" normal="RMCook">Cook, Rodney M.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004361" normal="RMCook">Cook, Rodney M.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004363" normal="DRC">Countie, David R.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000577" normal="PMC">Crane, Philip M.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000582" normal="PWC">Cronin, Paul W.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002293" normal="RWD">Daniel, Robert W., Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000610" normal="GRD">Davis, Glenn R.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003285" normal="EJD">Derwinski, Edward J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004090" normal="WLD">Dickinson, William L.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004364" normal="ADodge">Dodge, Atlee</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000683" normal="PVD">Domenici, Peter V.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004365" normal="WFD">Dowd, William F.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004366" normal="JED">Doyle, James E.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000723" normal="PSD">DuPont, Pierre S.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004367" normal="JoDu">Dugan, Jonathan</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004282" normal="JDu">Duncan, John</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000749" normal="WJE">Edwards, William J. ("Jack")</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004368" normal="TREll">Ellsworth, Theodore R.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004369" normal="LEm">Emerich, Lewis</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004319" normal="JNEr">Erlenborn, John N.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000785" normal="MLE">Esch, Marvin L.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004370" normal="ECF">Fackler, Ernest C.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000844" normal="PFind">Findley, Paul</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004371" normal="BJF">Finney, Billy Joe</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004372" normal="PTF">Fleuchaus, Philip T.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004320" normal="BFr">Frenzel, Bill</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004373" normal="ROF">Funsch, Richard O.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004374" normal="JFGan">Gangemi, John F.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000978" normal="BAG">Gilman, Benjamin A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004375" normal="CGosney">Gosney, James</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004376" normal="JaGr">Griffin, James</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004377" normal="DWGr">Gropp, Donald W.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001044" normal="HRG">Gross, H. R.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001047" normal="JRG">Grover, James R.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001055" normal="CSG">Gubser, Charles S.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001064" normal="TGuyer">Guyer, Tennyson</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004378" normal="JHaaven">Haaven, Jon</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004379" normal="BRH">Haller, Bruce R.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004380" normal="PHann">Hannaford, Peter</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001114" normal="RPH">Hanrahan, Robert P.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004381" normal="PHansen">Hansen, Phil</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004383" normal="DHarlan">Harlan, Doug</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004382" normal="CDH">Harner, Carol D.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004321" normal="WHHa">Harsha, William H.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001149" normal="JHv">Harvey, James</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001152" normal="MOHMr">Hatfield, Mark O.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001175" normal="HJH">Heinz, H. John, III</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004384" normal="JMHJr">Hewgley, James M., Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001223" normal="RHirsch">Hirsch, Robert</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004385" normal="JJH">Hoellen, John J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004386" normal="RoHo">Holcomb, Robert</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001252" normal="MSHolt">Holt, Marjorie S.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001272" normal="CrH">Hosmer, Craig</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004387" normal="EWH">Hubler, Eugene W.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001288" normal="WHH">Hudnut, William H., III</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004388" normal="LPJ">Jackson, Laban P.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004388" normal="LPJ">Jackson, Laban P.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004197" normal="WAJ">Johnson, William A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004390" normal="PKJr">Kaelin, Phil, Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001449" normal="JFKemp">Kemp, Jack F.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001464" normal="WMK">Ketchum, William M.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004391" normal="LCK">Koldin, Leonard C.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001540" normal="DHK">Kuykendall, Daniel H.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001541" normal="JKyl">Kyl, John</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004392" normal="RBLa">Lamkin, Robert B.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004393" normal="JPLa">Langley, Jane Pickens</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004394" normal="JLII">Ledbetter, Jesse, II</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004395" normal="TLento">Lento, Thomas</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004396" normal="LLeo">Leonard, Louise</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004397" normal="AWLe">Levenhagen, Alvin W.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004398" normal="JSLi">Limehouse, J. Sidi</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001625" normal="SL">Lloyd, Sherman</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001644" normal="TL">Lott, Trent</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001408" normal="MLJ">Lujan, Manuel, Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004399" normal="RLu">Lundy, Rayfield</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001681" normal="CMacG">MacGregor, Clark</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004404" normal="NRMJr">Macchio, Nicholas R., Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001686" normal="EMad">Madigan, Edward R.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003645" normal="WSMailliard">Mailliard, William S.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001702" normal="RWM">Mallary, Richard W.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004405" normal="JJMara">Maraziti, Joseph J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004406" normal="AMarroletti">Marroletti, Alfred</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001737" normal="DTM">Martin, David T.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001739" normal="JMart">Martin, James G.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004622" normal="EJM">Mason, Edward J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004324" normal="RBM">Mathias, Robert B.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001768" normal="WMayne">Mayne, Wiley</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004400" normal="CDMcA">McAtee, Charles D.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001785" normal="JAMcC">McClure, James A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001797" normal="JHMcD">McDonald, Jack H.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004401" normal="RMcD">McDonald, Ronald</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004402" normal="RVMcG">McGrath, Robert V.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004403" normal="JMcGr">McGraw, Joe</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001875" normal="CEM">Miller, Clarence E.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004623" normal="KCM">Miller, Kenneth C.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003955" normal="WEM">Minshall, William E.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001895" normal="DMit">Mitchell, Donald J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004407" normal="RDMorrow">Morrow, Robert D.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004325" normal="CAMo">Mosher, Charles A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001967" normal="JTM">Myers, John T.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004408" normal="JNeal">Neal, Joe</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001979" normal="AN">Nelsen, Ancher</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004409" normal="ENelson">Nelson, Ed</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001994" normal="JEN">Nidecker, John E.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002044" normal="GMO">O'Brien, George M.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002039" normal="AEOK">O'Konski, Alvin E.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002108" normal="SEP">Parris, Stanford E.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004311" normal="JBP">Pearson, James B.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004410" normal="GAP">Pedicone, Gus A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002127" normal="CHP">Percy, Charles H.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004411" normal="JoPe">Pereira, Joseph</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004326" normal="JLPe">Pettis, Jerry L.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004412" normal="WPf">Pfender, William</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004413" normal="BLPh">Phillips, B. Leonard</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004414" normal="EEP">Powell, Edlo E.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004093" normal="WEP">Powell, Walter E.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004415" normal="RLP">Prange, Robert L.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004416" normal="GEP">Presson, George E.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003608" normal="AHQ">Quie, Albert H.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004327" normal="TFR">Railsback, Thomas F.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004417" normal="BReams">Reams, Bill</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002241" normal="RReg">Regula, Ralph S.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004418" normal="RRh">Rhoades, Ralph</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002262" normal="JJRh">Rhodes, John J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004419" normal="JCRi">Richards, Joseph C.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004328" normal="DWRie">Riegle, Donald W., Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002281" normal="MJRin">Rinaldo, Matthew J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004420" normal="CRob">Roberts, Courtney</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004329" normal="HWRo">Robison, Howard W.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002365" normal="EBR">Ruth, Earl B.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002386" normal="CWSm">Sandman, Charles W., Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002390" normal="RSar">Sarasin, Ronald A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004252" normal="JPSa">Saylor, John P.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002409" normal="WJS">Scherle, William J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004421" normal="ADSch">Schiaffo, Alfred D.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003809" normal="HTS">Schneebeli, Herman T.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004422" normal="WScholes">Scholes, William</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004423" normal="DJSch">Schrader, Dieter J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002454" normal="WLScott">Scott, William L.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004424" normal="GSee">Seehawer, Garth</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004425" normal="EGSh">Shuster, E. G. ("Bud")</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004330" normal="JSku">Skubitz, Joe</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004426" normal="EESm">Smith, Herbert Edgar</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004427" normal="HJSn">Snider, Howard J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002580" normal="MGS">Snyder, M. Gene</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004428" normal="RSta">Statchen, Robert</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002627" normal="RHS">Steele, Robert H.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002629" normal="AS">Steelman, Alan</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004331" normal="SSteiger">Steiger, Sam</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004332" normal="WASteiger">Steiger, William A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004429" normal="WFSt">Steigerwalt, Wardell F.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002700" normal="CMT">Teague, Charles M.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004333" normal="VWT">Thomson, Vernon W.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002754" normal="JGT">Tower, John G.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004430" normal="GTria">Tria, Gregg</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004431" normal="BVal">Valentine, Ben</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004334" normal="GVJ">Vander Jagt, Guy</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004432" normal="CAV">Vergari, Carl A.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004433" normal="JVi">Vickerman, John</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004434" normal="TEV">Vilt, Thomas E.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004435" normal="JFW">Walsh, John F.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002853" normal="WFW">Walsh, William F.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004335" normal="WCWa">Wampler, William C.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004336" normal="JWare">Ware, John</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004337" normal="CWWJr">Whalen, Charles W., Jr.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004436" normal="WNW">Whatley, Wayne N.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004091" normal="GWW">Whitehurst, G. William</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002952" normal="LGWMr">Williams, Lawrence G.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003605" normal="RCWilson">Wilson, Robert C. ("Bob")</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004437" normal="RKW">Wolthuis, Robert K.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003003" normal="WW">Wyatt, Wendell</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004092" normal="CWY">Young, C. W. ("Bill")</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003026" normal="SHY">Young, Samuel H.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004438" normal="SJZ">Zilli, Sergio J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003044" normal="JMZ">Zwach, John M.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002795" normal="Unk">[Unknown person(s)]</persname>
+        </controlaccess>
+        <controlaccess id="placesDiscussed">
+          <head>Places</head>
+        </controlaccess>
+        <controlaccess id="organizationsDiscussed">
+          <head>Organizations</head>
+          <!-- Remove xmlns -->
+        </controlaccess>
+        <controlaccess id="topicsDiscussed">
+          <head>Topics</head>
+        </controlaccess>
       </controlaccess>
     </controlaccess>
     <!-- Use separated materials and related materials clips here to enter in information. -->
@@ -487,14 +763,14 @@
         <processinfo type="chronRelease">
           <p>Processed by the <corpname encodinganalog="583$k" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004831" normal="Richard Nixon Presidential Library and Museum. Tapes Team">Tapes Team of the Richard Nixon Presidential Library and Museum</corpname>, as part of the <archref id="chronRelease" xlink:href="37-wht-chron3" xlink:show="new">
               <unittitle encodinganalog="583$b">Third Chronological Release</unittitle> (<unitid id="chron3">Chron III</unitid>)
-						</archref>, and released on <date encodinganalog="583$c" normal="2002-02-28" type="releaseDate"/>.</p>
+						</archref>, and released on <date encodinganalog="583$c" normal="2002-02-28" type="releaseDate">February 28, 2002</date>.</p>
         </processinfo>
         <note id="supportNote">
           <p>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the <corpname source="nixonTapesIndex" role="repository" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
           <p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="United States. National Archives and Records Administration. Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
         </note>
         <note id="encodingHistory">
-          <p>Encoded by Amanda T. Ross, <date normal="2015-12">December 2015</date>
+          <p>Encoded by Amanda T. Ross, <date normal="2016-01-14">January 14, 2016</date>
           </p>
           <!-- Edited by ?, Mm yyyy -->
         </note>
