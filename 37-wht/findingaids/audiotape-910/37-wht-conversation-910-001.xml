@@ -34,7 +34,7 @@
     </filedesc>
     <profiledesc>
       <creation>Base machine-readable finding aid derived using XQuery scripts written by Amanda T. Ross<lb/>
-        <date normal="2016-01-15">January 15, 2016</date>
+        <date normal="2016-01-19">January 19, 2016</date>
       </creation>
       <langusage>Description is in <language encodinganalog="Language" langcode="eng" scriptcode="Latn">English</language>
       </langusage>
@@ -85,7 +85,7 @@
           <unittitle id="collectionTitle" label="Collection">White House Tapes</unittitle>
         </archref>
         <archref id="parentSeries" xlink:href="37-wht-audiotape-oval">
-          <unitid identifier="http://catalog.archives.gov/id/17409633" type="naId" label="National Archives Identifier">17409633</unitid>
+          <unitid identifier="http://catalog.archives.gov/id/17409633" type="naId" label="NARA Identifier">17409633</unitid>
           <unittitle id="seriesTitle" label="Series">Oval Office Sound Recordings</unittitle>
         </archref>
         <archref id="parentFile" xlink:href="37-wht-audiotape-910">
@@ -214,12 +214,12 @@
         <controlaccess id="peopleDiscussed">
           <head>People</head>
           <!-- Remove xmlns -->
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001112" normal="JAH">Hannah, John A. (Dr.)</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001494" normal="HAK">Kissinger, Henry A.</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002110" normal="OEP">Passman, Otto E.</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002732" normal="WET">Timmons, William E.</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002795" normal="Unk">[Unknown person(s)]</persname>
+          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001112" normal="JAH">Hannah, John A. (Dr.)</persname>
+          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001494" normal="HAK">Kissinger, Henry A.</persname>
+          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
+          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002110" normal="OEP">Passman, Otto E.</persname>
+          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002732" normal="WET">Timmons, William E.</persname>
+          <persname xmlns="" encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002795" normal="Unk">[Unknown person(s)]</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
           <head>Places</head>
@@ -252,7 +252,7 @@
       <head>Administrative Information</head>
       <accessrestrict>
         <head>Access Restrictions</head>
-        <!-- if/then accessrestrict
+        <!-- Use OxygenXML code templates for accessrestrict
 				
 				1) <accessrestrict encodinganalog="506" type="accessUnrestricted">
 					<p>This conversation has no restrictions and is fully open to the public.</p>
@@ -316,7 +316,7 @@
           <p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="United States. National Archives and Records Administration. Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
         </note>
         <note id="encodingHistory">
-          <p>Encoded by Amanda T. Ross, <date normal="2016-01-15">January 15, 2016</date>
+          <p>Encoded by Amanda T. Ross, <date normal="2016-01-19">January 19, 2016</date>
           </p>
           <!-- Edited by ?, Mm yyyy -->
         </note>
