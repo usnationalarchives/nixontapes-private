@@ -10,6 +10,18 @@ declare option output:method "xml";
 declare option output:omit-xml-declaration "no";
 declare option output:indent "yes"; 
 
+declare variable $inProcessMDR :=   (   
+				<processinfo type="inProcess-MDR">
+					<p>The Richard Nixon Presidential Library and Museum is in the process of submitting national security withdrawals (PRMPA-B) within this conversation for mandatory declassification review. If portions of this conversation are declassified, the changes and updated logging will be noted in a revised version of this finding aid.</p>
+				</processinfo>
+      );
+      
+declare variable $inProcessG := (
+				<processinfo type="inProcess-gReview">
+					<p>The Nixon Presidential Library and Museum is in the process of reviewing personal-returnable (PRMPA-G) withdrawals within this conversation. If portions of this conversation are opened to the public, the changes and updated logging will be noted in a revised version of this finding aid.</p>
+				</processinfo>
+      );
+
 let $coll := collection("nixontapes-private-base")
 
 for $c in $coll/root/row[not(contains(tapeNo,'test'))]
@@ -308,6 +320,8 @@ let $deedReviewChron :=
   if (contains($c/releaseChron,"Fifth"))
     then $coll/deedReview/chron5/p
       else $coll/deedReview/chron1-4/p
+      
+
 
 let $roomRecordingHistory :=
   $coll/roomDescriptions/room[attribute::id[matches(.,$locationCodeLower)]]/bioghist
@@ -732,7 +746,9 @@ return
   let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"findingaids",file:dir-separator(),"audiotape-",$audiotape,file:dir-separator())
   let $filename := concat($c/filename,".xml")
   let $path := concat($dir, $filename)
+  
+  where data($audiotape) eq "910"
 
-  where data($audiotape) ge "901" and data($audiotape) le "950"
+  (: where data($audiotape) ge "901" and data($audiotape) le "950" :)
 
   return file:write($path, $my-doc)
