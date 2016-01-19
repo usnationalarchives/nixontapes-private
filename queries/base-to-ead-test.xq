@@ -635,7 +635,7 @@ let $dateOfEAD-MR := functx:substring-before-match(xs:string(data(current-date()
 			<head>Administrative Information</head>
 			<accessrestrict>
 				<head>Access Restrictions</head>
-				<!-- if/then accessrestrict
+				<!-- Use OxygenXML code templates for accessrestrict
 				
 				1) <accessrestrict encodinganalog="506" type="accessUnrestricted">
 					<p>This conversation has no restrictions and is fully open to the public.</p>
