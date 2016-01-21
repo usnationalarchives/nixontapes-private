@@ -1,5 +1,15 @@
-(: import module namespace functx = 'http://www.functx.com' at 'http://www.xqueryfunctions.com/xq/functx-1.0-doc-2007-01.xq'; :)
+xquery version "1.0";
 
+(:~
+ : Script Name: Base to EAD Test
+ : Author: Amanda Ross
+ : Script Version: 1.0
+ : Date: 2016 January
+ : Copyright: Public Domain
+ : Proproetary XQuery Extensions Used: None
+ : XQuery Specification: January 2007
+ : Script Overview: This script converts base/source data about the Nixon-era White House Tapes to conversation-level EAD 2002 finding aids with archdes ready to be populated by subject logging.
+:)
 
 import module namespace functx = 'http://www.functx.com' at 'functx-1.0-doc-2007-01.xq';
 
