@@ -1,5 +1,15 @@
-(: import module namespace functx = 'http://www.functx.com' at 'http://www.xqueryfunctions.com/xq/functx-1.0-doc-2007-01.xq'; :)
+xquery version "1.0";
 
+(:~
+ : Script Name: Base to EAD Test
+ : Author: Amanda Ross
+ : Script Version: 1.0
+ : Date: 2016 January
+ : Copyright: Public Domain
+ : Proproetary XQuery Extensions Used: None
+ : XQuery Specification: January 2007
+ : Script Overview: This script converts base/source data about the Nixon-era White House Tapes to conversation-level EAD 2002 finding aids with archdes ready to be populated by subject logging.
+:)
 
 import module namespace functx = 'http://www.functx.com' at 'functx-1.0-doc-2007-01.xq';
 
@@ -9,6 +19,18 @@ declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";
 declare option output:method "xml";
 declare option output:omit-xml-declaration "no";
 declare option output:indent "yes"; 
+
+declare variable $inProcessMDR :=   (   
+				<processinfo type="inProcess-MDR">
+					<p>The Richard Nixon Presidential Library and Museum is in the process of submitting national security withdrawals (PRMPA-B) within this conversation for mandatory declassification review. If portions of this conversation are declassified, the changes and updated logging will be noted in a revised version of this finding aid.</p>
+				</processinfo>
+      );
+      
+declare variable $inProcessG := (
+				<processinfo type="inProcess-gReview">
+					<p>The Nixon Presidential Library and Museum is in the process of reviewing personal-returnable (PRMPA-G) withdrawals within this conversation. If portions of this conversation are opened to the public, the changes and updated logging will be noted in a revised version of this finding aid.</p>
+				</processinfo>
+      );
 
 let $coll := collection("nixontapes-private-base")
 
@@ -308,6 +330,8 @@ let $deedReviewChron :=
   if (contains($c/releaseChron,"Fifth"))
     then $coll/deedReview/chron5/p
       else $coll/deedReview/chron1-4/p
+      
+
 
 let $roomRecordingHistory :=
   $coll/roomDescriptions/room[attribute::id[matches(.,$locationCodeLower)]]/bioghist
@@ -635,7 +659,7 @@ let $dateOfEAD-MR := functx:substring-before-match(xs:string(data(current-date()
 			<head>Administrative Information</head>
 			<accessrestrict>
 				<head>Access Restrictions</head>
-				<!-- if/then accessrestrict
+				<!-- Use OxygenXML code templates for accessrestrict
 				
 				1) <accessrestrict encodinganalog="506" type="accessUnrestricted">
 					<p>This conversation has no restrictions and is fully open to the public.</p>
@@ -732,7 +756,9 @@ return
   let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"findingaids",file:dir-separator(),"audiotape-",$audiotape,file:dir-separator())
   let $filename := concat($c/filename,".xml")
   let $path := concat($dir, $filename)
+  
+  where data($audiotape) eq "910"
 
-  where data($audiotape) ge "901" and data($audiotape) le "950"
+  (: where data($audiotape) ge "901" and data($audiotape) le "950" :)
 
   return file:write($path, $my-doc)
