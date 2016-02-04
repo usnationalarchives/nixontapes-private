@@ -338,8 +338,10 @@ let $my-doc :=
                 <p>During Ferriero's administration, the National Archives has cooperated with the Office of Management and Budget to implement the President Obama's 2011 Memorandum on Managing Government Records.  In August 2012, NARA produced the Managing Government Records Directive to modernize and improve federal records management practices.<span localType="#fn12" style="sup" xml:id="ref14">[14]</span>  The National Archives advocated for revisions to the 1950 Federal Records Act, which led to the bipartisan passage of the Presidential and Federal Records Act Amendments of 2014.  On November 26, 2014, President Obama signed H.R. 1233 into law, modernizing federal records management by focusing more directly on electronic records.<span localType="#fn12" style="sup" xml:id="ref15">[15]</span></p> 
                 
                 <p>Ferriero is married to Gail Zimmermann, a public television manager.  As of 2015, the couple resides in Durham, North Carolina and Washington, D.C.</p>
-              
+                
                 <!-- Footnotes/Endnotes -->
+                
+                <!-- Test Comment --><p><span localType="header">References</span></p>
                 
                 <citation xml:id="fn01" xlink:href="#ref01" xlink:type="simple">[1] Department of Public Health, Registry of Vital Records and Statistics. Massachusetts Vital Records Index to Births [1916–1970], vol. 61. Ancestry.com. Viewed online March 6, 2015.</citation>
                 <citation xml:id="fn02" xlink:href="ref02" xlink:type="simple">[2] &quot;Anthony Ferriero: Obituary,&quot; Danvers, Massachusetts: <span style="font-style:italic" localType="title">The Danvers Herald</span>, March 2012. Legacy.com. (Accessed online March 6, 2015: http://www.legacy.com/obituaries/wickedlocal-danvers/obituary.aspx?n=anthony-ferriero&amp;pid=156593174)</citation>
