@@ -9,6 +9,7 @@ xquery version "1.0";
  : Proproetary XQuery Extensions Used: None
  : XQuery Specification: January 2007
  : Script Overview: This script converts base/source data about the Nixon-era White House Tapes participants to EAC records
+ : Test Again
 :)
 
 import module namespace functx = 'http://www.functx.com' at 'functx-1.0-doc-2007-01.xq';
@@ -293,7 +294,7 @@ let $my-doc :=
                 
                 <place localType="marcfield:370$f">
                     <placeRole>duty station location</placeRole>
-                    <placeEntry vocabularySource="lcsh" latitude="16.067" longitude="108.217">Đà Nẵng (Vietnam)</placeEntry>
+                    <placeEntry vocabularySource="lcsh" latitude="16.067" longitude="108.217">Đà Nẵng (Vietnam)</placeEntry>
                     <dateRange>
                         <fromDate>1970</fromDate>
                         <toDate>1970</toDate>
@@ -301,7 +302,7 @@ let $my-doc :=
                 </place>
                 <place localType="marcfield:370$f">
                     <placeRole>duty station location</placeRole>
-                    <placeEntry vocabularySource="lcsh" latitude="16.131" longitude="108.177">Đà Nẵng Harbor (Vietnam)</placeEntry>
+                    <placeEntry vocabularySource="lcsh" latitude="16.131" longitude="108.177">Đà Nẵng Harbor (Vietnam)</placeEntry>
                     <dateRange>
                         <fromDate>1970</fromDate>
                         <toDate>1971</toDate>
