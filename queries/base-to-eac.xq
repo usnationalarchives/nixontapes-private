@@ -9,7 +9,7 @@ xquery version "1.0";
  : Proproetary XQuery Extensions Used: None
  : XQuery Specification: January 2007
  : Script Overview: This script converts base/source data about the Nixon-era White House Tapes participants to EAC records
- : Test Again
+ : Test Again and Again
 :)
 
 import module namespace functx = 'http://www.functx.com' at 'functx-1.0-doc-2007-01.xq';
