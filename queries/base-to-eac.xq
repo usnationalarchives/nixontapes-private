@@ -22,12 +22,98 @@ declare option output:indent "yes";
 
 let $coll := collection("nixontapes-private-base")
 
-for $n in $coll/nixonNames/participant
+for $n in $coll/nixonNames/participant[1]
+let $entityType :=
+  if (exists($n/persname))
+  then "person"
+  else "corporateBody"
 
-let $my-doc :=  
+let $lcnaf :=
+  if (exists($n/persname))
+  then
+  <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="eng">
+    <part localType="marcfield:110$a"></part>
+    <part localType="marcfield:100$b"></part>
+    <part localType="marcfield:100$c"></part>
+    <part localType="marcfield:100$q"></part>
+    <part localType="marcfield:100$d"></part>
+    <authorizedForm>lcnaf</authorizedForm>
+    <!-- 
+      <authorizedForm>VIAF</authorizedForm>
+      <authorizedForm>WorldCat</authorizedForm>
+      <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
+  </nameEntry>
+  else
+    <nameEntry localType="marcfield:110" scriptCode="Latn" xml:lang="eng">
+      <part localType="marcfield:110$a"></part>
+      <part localType="marcfield:110$b"></part>
+      <part localType="marcfield:110$b"></part>    
+      <part localType="marcfield:100$n"></part>
+      <part localType="marcfield:100$d"></part>
+      <part localType="marcfield:100$c"></part>
+      <authorizedForm>lcnaf</authorizedForm>
+      <!-- 
+        <authorizedForm>VIAF</authorizedForm>
+        <authorizedForm>WorldCat</authorizedForm>
+        <authorizedForm>USNARA-LCDRG</authorizedForm>
+       -->
+    </nameEntry>
+    
+let $familyName :=
+  if(exists($n/lastName))
+  then 
+    <part localType="familyName">{data($n/lastName)}</part>
+  else ""
+  
+let $givenName :=
+  if(exists($n/firstPart))
+  then 
+    <part localType="givenName">{data($n/firstPart)}</part>
+  else "" 
+  
+let $nickname :=
+  if(exists($n/nickname))
+  then 
+    <part localType="nickname">{data($n/nickname)}</part>
+  else ""
+  
+let $maidenName :=
+  if(exists($n/maidenName))
+  then 
+    <part localType="maidenName">{data($n/maidenName)}</part>
+  else ""
+
+let $generationalMarker :=
+  if(exists($n/generationalMarker))
+  then 
+    <part localType="generationalMarker">{data($n/maidenName)}</part>
+  else ""
+  
+let $nixonEntry :=  
+  if (exists($n/persname))
+  then
+    <nameEntry localType="nixonNames" scriptCode="Latn" xml:lang="eng">
+      {$familyName} 
+      {$givenName}
+      {$nickname}
+      {$maidenName}
+      {$maidenName}
+      {$generationalMarker}
+      <part localType="militaryRankOrOfficialTitle"/>
+      <part localType="Mrs."/>
+      <alternativeForm>NixonTapesIndex</alternativeForm>
+    </nameEntry>
+  else
+    ""
+ 
+let $indirect := data($n/indirectOrder)
+let $direct := data($n/directOrder)
+
+(: let $my-doc :=  :)
 
 (: Edit this Ferriero record :)
-
+return
 <eac-cpf
     xmlns="urn:isbn:1-931666-33-4"
     xmlns:mads="http://www.loc.gov/mads/"
@@ -38,7 +124,7 @@ let $my-doc :=
     xmlns:xlink="http://www.w3.org/1999/xlink">
     
     <control>
-        <recordId>{$n//authfilenumber}</recordId>
+        <recordId>{data($n//attribute::authfilenumber)}</recordId>
         
         <maintenanceStatus>new</maintenanceStatus>
         
@@ -141,27 +227,22 @@ let $my-doc :=
     <cpfDescription>
         
         <identity>
-            <entityType>person</entityType>
+            <entityType>{$entityType}</entityType>
             
-            <nameEntry localType="marcfield:100">
-                <part localType="marcfield:100$a"></part>
-                <part localType="marcfield:100$d"></part>
-                <authorizedForm>lcnaf</authorizedForm>
-                <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
+            <nameEntry localType="nixonIndirectOrder" scriptCode="Latn" xml:lang="eng">
+            <part>{$indirect}</part>
+            <authorizedForm>NixonTapesIndex</authorizedForm>
+            </nameEntry>
+
+            <nameEntry localType="nixonDirectOrder" scriptCode="Latn" xml:lang="eng">
+            <part>{$direct}</part>
+            <alternativeForm>NixonTapesIndex</alternativeForm>
             </nameEntry>
             
-            <nameEntry localType="nixonNames">
-                <part localType="family name"></part>
-                <part localType="given name"></part>
-                <part localType="nickname"></part>
-                <part localType="maiden name"></part>
-                <part localtype="generational marker"></part>
-                <part localType="military rank or official title"></part>
-                <part localType="Mrs."></part>
-                <alternativeForm>NixonTapesIndex</alternativeForm>
-            </nameEntry>
+            {$lcnaf}
+            
+            {$nixonEntry}
+            
 
             <nameEntry localType="marcfield:400">
                 <part localType="marcfield:400$a">Ferriero, David</part>
@@ -563,9 +644,11 @@ let $my-doc :=
     </cpfDescription>
 </eac-cpf>
 
+(:
 return
 
   let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"authorities")
   let $filename := concat(data($n/attribute::identifier),".xml")
   let $path := concat($dir, $filename)
   return file:write($path, $my-doc)
+:)
