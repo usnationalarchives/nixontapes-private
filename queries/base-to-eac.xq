@@ -6,7 +6,7 @@ xquery version "1.0";
  : Script Version: 1.0
  : Date: 2016 January
  : Copyright: Public Domain
- : Proproetary XQuery Extensions Used: None
+ : Proprietary XQuery Extensions Used: None
  : XQuery Specification: January 2007
  : Script Overview: This script converts base/source data about the Nixon-era White House Tapes participants to EAC records
 :)
@@ -22,7 +22,7 @@ declare option output:indent "yes";
 
 let $coll := collection("nixontapes-private-base")
 
-for $n in $coll/nixonNames
+for $n in $coll/nixonNames/participant
 
 let $my-doc :=  
 
@@ -38,10 +38,7 @@ let $my-doc :=
     xmlns:xlink="http://www.w3.org/1999/xlink">
     
     <control>
-        <recordId></recordId>
-        <!-- <otherRecordId localType="http://catalog.archives.gov/id/"></otherRecordId> -->
-        <!-- <otherRecordId localType="http://viaf.org/viaf/terms#viafID"></otherRecordId> -->
-        <otherRecordId localType="http://www.loc.gov/standards/mads/rdf/v1.html#Authority"></otherRecordId>
+        <recordId>{$n//authfilenumber}</recordId>
         
         <maintenanceStatus>new</maintenanceStatus>
         
@@ -104,9 +101,10 @@ let $my-doc :=
         <maintenanceHistory>
             <maintenanceEvent>
                 <eventType>created</eventType>
-                <eventDateTime></eventDateTime>
+                <eventDateTime>{current-dateTime()}</eventDateTime>
                 <agentType>machine</agentType>
                 <agent>base-to-eac.xq</agent>
+                <eventDescription>Local source XML data about the Nixon-era White House Tapes participants was converted to EAC records using base-to-eac.xq script written by Amanda T. Ross</eventDescription>
             </maintenanceEvent>
             <!--
             <maintenanceEvent>
@@ -125,15 +123,17 @@ let $my-doc :=
         </maintenanceHistory>
         
         <sources>
-            <source xlink:href="https://catalog.archives.gov/id/16411430" xlink:type="simple" lastDateTimeVerified="2015-03-18">
-                <sourceEntry>National Archives and Records Administration Authority List</sourceEntry>
+            <!-- 
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
             </source>
-            <source xlink:href="http://id.loc.gov/authorities/names/n2010043877" xlink:type="simple" lastDateTimeVerified="2015-03-18">
-                <sourceEntry>Library of Congress Name Authority File</sourceEntry>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
             </source>
-            <source xlink:href="http://viaf.org/viaf/145658657" xlink:type="simple" lastDateTimeVerified="2015-03-18">
-                <sourceEntry>Virtual International Authority File</sourceEntry>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
             </source>
+             -->
         </sources>
         
     </control>
