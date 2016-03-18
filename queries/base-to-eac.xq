@@ -2,9 +2,9 @@ xquery version "1.0";
 
 (:~
  : Script Name: Base to EAC
- : Author: Amanda T. Ross
+ : Author: Amanda Ross
  : Script Version: 1.0
- : Date: 2016 February
+ : Date: 2016 January
  : Copyright: Public Domain
  : Proprietary XQuery Extensions Used: None
  : XQuery Specification: January 2007
@@ -22,23 +22,6 @@ declare option output:indent "yes";
 
 let $coll := collection("nixontapes-private-base")
 
-<<<<<<< HEAD
-for $n in $coll/nixonNames/participant
-let $id := functx:trim(data($n//attribute::authfilenumber))
-let $type := node-name($n/persname|corpname)
-let $entityType :=
-  if (string(data($type)) eq "persname")
-    then "person"
-      else 
-        if (string(data($type)) eq "corpname")
-          then "corporateBody"
-            else ""
-
-let $gender := data($coll/csv/record[matches(attribute::Identifier,$id)]/genderTerms)
-let $genderScore := data($coll/csv/record[matches(attribute::Identifier,$id)]/scale)
-
-let $my-doc :=  
-=======
 for $n in $coll/nixonNames/participant[1]
 
 let $id := $n//attribute::authfilenumber
@@ -169,7 +152,6 @@ let $genderEntry :=
                 </localDescription>
       </localDescriptions>
   else null
->>>>>>> usnationalarchives/master
 
 (: let $my-doc :=  :)
 
@@ -203,12 +185,12 @@ return
         
         <conventionDeclaration>
             <abbreviation>RDA</abbreviation>
-            <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-19">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+            <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2015-03-18">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
         </conventionDeclaration>
         
         <conventionDeclaration>
             <abbreviation>USNARA-LCDRG</abbreviation>
-            <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-19">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+            <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2015-03-18">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
         </conventionDeclaration>
         
         <conventionDeclaration>
@@ -218,24 +200,24 @@ return
         
         <conventionDeclaration>
             <abbreviation>NixonTapesIndex</abbreviation>
-            <citation xlink:href="https://nixonlibrary.gov/forresearchers/find/tapes" xlink:type="simple" lastDateTimeVerified="2016-02-29">Index to the White House Tapes of the Nixon Administration</citation>
+            <citation xlink:href="https://nixonlibrary.gov/forresearchers/find/tapes" xlink:type="simple" lastDateTimeVerified="2016-01-21">Index to the White House Tapes of the Nixon Administration</citation>
         </conventionDeclaration>
         
         <!-- Convention Declarations for Controlled Vocabularies -->
         
         <conventionDeclaration>
             <abbreviation>lcsh</abbreviation>
-            <citation xlink:href="http://id.loc.gov/authorities/subjects.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Library of Congress Subject Headings</citation>
+            <citation xlink:href="http://id.loc.gov/authorities/subjects.html" xlink:type="simple" lastDateTimeVerified="2015-03-18">Library of Congress Subject Headings</citation>
         </conventionDeclaration>
         
         <conventionDeclaration>
             <abbreviation>lcnaf</abbreviation>
-            <citation xlink:href="http://id.loc.gov/authorities/names.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Library of Congress Name Authority File</citation>
+            <citation xlink:href="http://id.loc.gov/authorities/names.html" xlink:type="simple" lastDateTimeVerified="2015-03-18">Library of Congress Name Authority File</citation>
         </conventionDeclaration>
         
         <conventionDeclaration>
             <abbreviation>marc:relators</abbreviation>
-            <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
+            <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2015-03-18">MARC Code List for Relators</citation>
         </conventionDeclaration>
         
         <!-- Convention Declarations for Style Guides -->
@@ -251,11 +233,7 @@ return
                 <eventDateTime>{current-dateTime()}</eventDateTime>
                 <agentType>machine</agentType>
                 <agent>base-to-eac.xq</agent>
-<<<<<<< HEAD
-                <eventDescription>Converted base/source data to EAC-CPF through XQuery script written by Amanda T. Ross of the United States National Archives and Records Administration.</eventDescription>
-=======
                 <eventDescription>Local source XML data about the Nixon-era White House Tapes participants was converted to EAC records using base-to-eac.xq script written by Amanda T. Ross</eventDescription>
->>>>>>> usnationalarchives/master
             </maintenanceEvent>
             <!--
             <maintenanceEvent>
@@ -274,18 +252,6 @@ return
         </maintenanceHistory>
         
         <sources>
-<<<<<<< HEAD
-            
-            <source xlink:href="https://catalog.archives.gov" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-                <sourceEntry>National Archives and Records Administration Authority List</sourceEntry>
-            </source>
-             -->
-            <source xlink:href="http://id.loc.gov/authorities/names" xlink:type="simple" lastDateTimeVerified="[dateTime]">
-                <sourceEntry>Library of Congress Name Authority File</sourceEntry>
-            </source>
-            <source xlink:href="http://viaf.org" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-                <sourceEntry>Virtual International Authority File</sourceEntry>
-=======
             <!-- 
             <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
                 <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
@@ -295,79 +261,16 @@ return
             </source>
             <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
                 <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
->>>>>>> usnationalarchives/master
             </source>
              -->
         </sources>
-      
+        
     </control>
     
     <cpfDescription>
         
-        
         <identity>
             <entityType>{$entityType}</entityType>
-<<<<<<< HEAD
-
-            if ($entityType eq "person")
-              then
-              
-            <nameEntry localType="marcfield:100">
-                <part localType="marcfield:100$a"></part>
-                <part localType="marcfield:100$d"></part>
-                <authorizedForm>lcnaf</authorizedForm>
-                <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
-            </nameEntry>
-              
-            <nameEntry localType="nixonNames">
-                <part localType="familyName">{$n/lastName}</part>
-                <part localType="givenName">{$n/firstPart}</part>
-                <part localType="nickname">{$n/nickname}</part>
-                <part localType="maiden name"></part>
-                <part localtype="generational marker"></part>
-                <part localType="military rank or official title"></part>
-                <part localType="Mrs."></part>
-                <authorizedForm>NixonTapesIndex</authorizedForm>
-            </nameEntry>
-
-            <nameEntry localType="marcfield:400">
-                <part localType="marcfield:400$a"></part>
-                <alternativeForm>USNARA-LCDRG</alternativeForm>
-            </nameEntry>
-
-            <nameEntry localType="marcfield:400">
-                <part localType="marcfield:400$a"></part>
-                <alternativeForm>USNARA-LCDRG</alternativeForm>
-            </nameEntry>
-            
-
-      else
-      <nameEntry localType="marcfield:110">
-                <part localType="marcfield:110$a"></part>
-                <part localType="marcfield:110$d"></part>
-                <authorizedForm>lcnaf</authorizedForm>
-                <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
-            </nameEntry>
-              
-            <nameEntry localType="nixonNames">
-                <part localType="directOrder">{$n/directOrder}</part>
-                <alternativeForm>NixonTapesIndex</alternativeForm>
-            </nameEntry>
-
-            <nameEntry localType="marcfield:410">
-                <part localType="marcfield:410$a"></part>
-                <alternativeForm>USNARA-LCDRG</alternativeForm>
-            </nameEntry>
-
-            <nameEntry localType="marcfield:410">
-                <part localType="marcfield:410$a"></part>
-                <alternativeForm>USNARA-LCDRG</alternativeForm>
-            </nameEntry>
-=======
             
             <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="eng">
             <part localType="marcfield:100$a">{$indirect}</part>
@@ -384,58 +287,14 @@ return
             {$lcnaf}
             
           <!-- Insert variant names -->
->>>>>>> usnationalarchives/master
             
         </identity>
         
         <description>
-<<<<<<< HEAD
-            <existDates localType="marcfield:046">
-                <dateRange>
-                    <fromDate standardDate=""></fromDate>
-                    <toDate />
-                </dateRange>
-            </existDates>
-            
-            <occupations>
-                <occupation localType="marcfield:374$a">
-                    <term vocabularySource="lcsh"></term>
-                </occupation>
-                <occupation localType="marcfield:374$a">
-                    <term vocabularySource="lcsh"></term>
-                </occupation>
-                <occupation localType="marcfield:374$a">
-                    <term vocabularySource="lcsh"></term>
-                    <dateRange>
-                        <fromDate standardDate="2009-11-13">November 13, 2009</fromDate>
-                        <toDate />
-                    </dateRange>
-                </occupation>
-                <occupation localType="marcfield:374$a">
-                    <term vocabularySource="lcsh"></term>
-                </occupation>
-            </occupations>
-=======
             <!-- Insert Exist Dates, if relevant -->
->>>>>>> usnationalarchives/master
             
             <!-- Insert Occupations, if relevant -->
             
-<<<<<<< HEAD
-            <localDescriptions localType="http://viaf.org/viaf/terms#gender">
-                <localDescription localType="marcfield:375">
-                    <term>{$gender}</term>
-                    <descriptiveNote>Gender certainty score, via Namsor: {$genderScore}</descriptiveNote>
-                </localDescription>
-            </localDescriptions>
-            
-            <localDescriptions localType="http://viaf.org/viaf/terms#AssociatedSubject">
-                <localDescription localType="marcfield:372$a">
-                    <term vocabularySource="lcsh"></term>
-                </localDescription>
-            </localDescriptions>
-            
-=======
             <!-- Insert Functions, if relevant -->
 
             <!-- Insert Language Used, if relevant -->
@@ -443,36 +302,11 @@ return
             <!-- Insert Gender, if relevant -->
             
             {$genderEntry}
->>>>>>> usnationalarchives/master
             
             <!-- Insert Nationality, if relevant -->
 
             <!-- Insert Citizenship, if relevant -->
             
-<<<<<<< HEAD
-            <places localType="http://socialarchive.iath.virginia.edu/control/term#AssociatedPlace">
-                <place localType="marcfield:370$c">
-                    <placeRole>associated country</placeRole>
-                    <placeEntry vocabularySource="lcsh" countryCode="US" latitude="39.76" longitude="-98.5">United States</placeEntry>
-                </place>
-                
-                <place localType="marcfield:370$a">
-                    <placeRole>birthplace</placeRole>
-                    <placeEntry vocabularySource="lcsh" latitude="" longitude=""></placeEntry>
-                    <date standardDate=""></date>
-                </place>
-                
-            </places>
-            
-            <biogHist>
-                
-                <abstract>{data($n/directOrder)} ...</abstract>
-                
-                <p>{data($n/directOrder)} ...</p>
-              
-                <!-- Footnotes/Endnotes -->
-                <citation></citation>
-=======
             <!-- Insert Title or Honorific, if relevant -->
 
             <!-- Insert Topical Subjects, if relevant -->
@@ -490,7 +324,6 @@ return
                 
                   <!-- Insert citation -->
 
->>>>>>> usnationalarchives/master
             </biogHist>
             
         </description>
@@ -498,29 +331,6 @@ return
         <relations>
             
             <!-- Relationships to Corporate Bodies -->
-<<<<<<< HEAD
-            
-                 <!-- Education -->
-            
-                 <!-- Employers -->
-           
-            <!-- Relationships to Persons-->
-            
-                <!-- Family Members -->                 
-                <!-- Professional Relationships -->
-           
-            
-            <!-- Relationship to Resources, creatorOf -->
-            
-            <resourceRelation xmlns:xlink="http://www.w3.org/1999/xlink" xlink:arcrole="participantIn" xlink:href="" xlink:role="archivalResource" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-                <relationEntry></relationEntry> 
-            </resourceRelation>                   
-            <!-- Relationship to Resources, subjectOf -->
-            
-            <resourceRelation xlink:arcrole="subjectOf" xlink:role="archivalResource" xlink:type="simple" xlink:href="" lastDateTimeVerified="">
-                <relationEntry></relationEntry>
-            </resourceRelation>  
-=======
              
             <!-- Relationships to Persons-->
             
@@ -531,7 +341,6 @@ return
             <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
                          
             <!-- Relationship to Bibliographic Works, subjectOf -->  
->>>>>>> usnationalarchives/master
             
         </relations>
     </cpfDescription>
@@ -540,8 +349,8 @@ return
 (:
 return
 
-  let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"authorities",file:dir-separator())
-  let $filename := concat(data($id),".xml")
+  let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"authorities")
+  let $filename := concat(data($n/attribute::identifier),".xml")
   let $path := concat($dir, $filename)
   return file:write($path, $my-doc)
 :)
