@@ -4906,11 +4906,11 @@
     	<indirectOrder>Cohn, Samuel M. (Mrs.)</indirectOrder>
     	<directOrder>Mrs. Samuel M. Cohn</directOrder>
     </participant>
-    <participant identifier="518" abbreviation="JColby">
+	<participant identifier="00000518" abbreviation="JColby">
     	<abbreviation>JColby</abbreviation>
     	<lastName>Colby</lastName>
     	<firstPart>John</firstPart>
-    	<persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-518" normal="JColby">Colby, John</persname>
+		<persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000518" normal="JColby">Colby, John</persname>
     	<indirectOrder>Colby, John</indirectOrder>
     	<directOrder>John Colby</directOrder>
     </participant>
@@ -31224,7 +31224,7 @@
     	<indirectOrder>MacDonald, Philip</indirectOrder>
     	<directOrder>Philip MacDonald</directOrder>
     </participant>
-    <participant identifier="DRMcO" abbreviation="00003854">
+	<participant identifier="00003854" abbreviation="DRMcO">
     	<abbreviation>DRMcO</abbreviation>
     	<lastName>McOmber</lastName>
     	<firstPart>Dale R.</firstPart>
