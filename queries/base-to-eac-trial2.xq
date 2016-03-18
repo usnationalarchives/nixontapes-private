@@ -185,39 +185,39 @@ return
         
         <conventionDeclaration>
             <abbreviation>RDA</abbreviation>
-            <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2015-03-18">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+            <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
         </conventionDeclaration>
         
         <conventionDeclaration>
             <abbreviation>USNARA-LCDRG</abbreviation>
-            <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2015-03-18">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+            <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
         </conventionDeclaration>
         
         <conventionDeclaration>
             <abbreviation>DACS-2nd</abbreviation>
-            <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2015-03-18">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+            <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
         </conventionDeclaration>
         
         <conventionDeclaration>
             <abbreviation>NixonTapesIndex</abbreviation>
-            <citation xlink:href="https://nixonlibrary.gov/forresearchers/find/tapes" xlink:type="simple" lastDateTimeVerified="2016-01-21">Index to the White House Tapes of the Nixon Administration</citation>
+            <citation xlink:href="https://nixonlibrary.gov/forresearchers/find/tapes" xlink:type="simple" lastDateTimeVerified="2016-02-29">Index to the White House Tapes of the Nixon Administration</citation>
         </conventionDeclaration>
         
         <!-- Convention Declarations for Controlled Vocabularies -->
         
         <conventionDeclaration>
             <abbreviation>lcsh</abbreviation>
-            <citation xlink:href="http://id.loc.gov/authorities/subjects.html" xlink:type="simple" lastDateTimeVerified="2015-03-18">Library of Congress Subject Headings</citation>
+            <citation xlink:href="http://id.loc.gov/authorities/subjects.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Library of Congress Subject Headings</citation>
         </conventionDeclaration>
         
         <conventionDeclaration>
             <abbreviation>lcnaf</abbreviation>
-            <citation xlink:href="http://id.loc.gov/authorities/names.html" xlink:type="simple" lastDateTimeVerified="2015-03-18">Library of Congress Name Authority File</citation>
+            <citation xlink:href="http://id.loc.gov/authorities/names.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Library of Congress Name Authority File</citation>
         </conventionDeclaration>
         
         <conventionDeclaration>
             <abbreviation>marc:relators</abbreviation>
-            <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2015-03-18">MARC Code List for Relators</citation>
+            <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
         </conventionDeclaration>
         
         <!-- Convention Declarations for Style Guides -->
@@ -233,7 +233,11 @@ return
                 <eventDateTime>{current-dateTime()}</eventDateTime>
                 <agentType>machine</agentType>
                 <agent>base-to-eac.xq</agent>
+<<<<<<< HEAD
+                <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
+=======
                 <eventDescription>Local source XML data about the Nixon-era White House Tapes participants was converted to EAC records using base-to-eac.xq script written by Amanda T. Ross</eventDescription>
+>>>>>>> usnationalarchives/master
             </maintenanceEvent>
             <!--
             <maintenanceEvent>
@@ -349,8 +353,8 @@ return
 (:
 return
 
-  let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"authorities")
-  let $filename := concat(data($n/attribute::identifier),".xml")
+  let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"authorities",file:dir-separator())
+  let $filename := concat(data($id),".xml")
   let $path := concat($dir, $filename)
   return file:write($path, $my-doc)
 :)
