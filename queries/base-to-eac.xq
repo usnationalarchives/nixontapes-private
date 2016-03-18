@@ -233,11 +233,9 @@ return
                 <eventDateTime>{current-dateTime()}</eventDateTime>
                 <agentType>machine</agentType>
                 <agent>base-to-eac.xq</agent>
-<<<<<<< HEAD
+
                 <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
-=======
-                <eventDescription>Local source XML data about the Nixon-era White House Tapes participants was converted to EAC records using base-to-eac.xq script written by Amanda T. Ross</eventDescription>
->>>>>>> usnationalarchives/master
+
             </maintenanceEvent>
             <!--
             <maintenanceEvent>
