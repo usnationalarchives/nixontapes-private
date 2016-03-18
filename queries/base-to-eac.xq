@@ -22,7 +22,7 @@ declare option output:indent "yes";
 
 let $coll := collection("nixontapes-private-base")
 
-for $n in $coll/nixonNames/participant[corpname][39]
+for $n in $coll/nixonNames/participant[1]
 
 let $id := $n//attribute::authfilenumber
 
@@ -348,8 +348,8 @@ return
         <identity>
             <entityType>{$entityType}</entityType>
             
-            <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="eng">
-            <part localType="marcfield:100$a">{$indirect}</part>
+            <nameEntry localType="{$marcfield}" scriptCode="Latn" xml:lang="eng">
+            <part localType="{$marcfield}$a">{$indirect}</part>
             <authorizedForm>NixonTapesIndex</authorizedForm>
             </nameEntry>
 
