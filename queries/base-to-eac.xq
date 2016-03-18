@@ -22,7 +22,7 @@ declare option output:indent "yes";
 
 let $coll := collection("nixontapes-private-base")
 
-for $n in $coll/nixonNames/participant[1]
+for $n in $coll/nixonNames/participant[corpname][39]
 
 let $id := $n//attribute::authfilenumber
 
@@ -33,62 +33,75 @@ let $entityType :=
   if (exists($n/persname))
   then "person"
   else "corporateBody"
-  
+
+let $marcfield :=
+  if ($entityType eq "person")
+  then "marcfield:100"
+  else "marcfield:110"
+
 let $orgParts :=
   if (exists($n/corpname))
   then 
-    for $orgPart in tokenize($direct,"\. ")
-      return  
-         <part localType="marcfield:110$a">{$orgPart}</part>  
+    let $orgSeq :=
+      for $token in tokenize($direct,"\. ")
+      return <part>{$token}</part> 
+    for $p in $orgSeq
+    let $position := index-of($orgSeq,$p)
+    let $subfield :=
+      if ($position = 1)
+      then "marcfield:110$a"
+      else "marcfield:110$b"
+    return <part xmlns="urn:isbn:1-931666-33-4" localType="{$subfield}">{data($p)}</part>
+
   else null
-(: Continue to work on scripting parts! First equals 100$a, thereafter 100$b :)
+
     
 let $familyName :=
   if(exists($n/lastName))
   then 
-    <part localType="familyName">{data($n/lastName)}</part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="familyName">{data($n/lastName)}</part>
   else null
   
 let $givenName :=
   if(exists($n/firstPart))
   then 
-    <part localType="givenName">{data($n/firstPart)}</part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="givenName">{data($n/firstPart)}</part>
   else null 
   
 let $nickname :=
   if(exists($n/nickname))
   then 
-    <part localType="nickname">{data($n/nickname)}</part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="nickname">{data($n/nickname)}</part>
   else null
   
 let $maidenName :=
   if(exists($n/maidenName))
   then 
-    <part localType="maidenName">{data($n/maidenName)}</part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="maidenName">{data($n/maidenName)}</part>
   else null
   
 let $generationalMarker :=
   if(exists($n/generationalMarker))
   then 
-    <part localType="generationalMarker">{data($n/generationalMarker)}</part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="generationalMarker">{data($n/generationalMarker)}</part>
   else null
 
 let $titleHonorific :=
   if(exists($n/titleHonorific))
   then 
-    <part localType="titleHonorific">{data($n/titleHonorific)}</part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="titleHonorific">{data($n/titleHonorific)}</part>
   else null
   
 let $marriedDesignator :=
   if(exists($n/marriedMrs))
   then 
-    <part localType="marriedDesignator">{data($n/marriedMrs)}</part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="marriedDesignator">{data($n/marriedMrs)}</part>
   else null
  
 let $nixonEntry :=  
   if (exists($n/persname))
   then
-    <nameEntry localType="nixonNames/#parsed" scriptCode="Latn" xml:lang="eng">
+    <nameEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonNames/#parsed" scriptCode="Latn" xml:lang="eng">
       {$familyName}
       {$givenName}
       {$nickname}
@@ -100,7 +113,7 @@ let $nixonEntry :=
       <alternativeForm>NixonTapesIndex</alternativeForm>
     </nameEntry>
   else
-    <nameEntry localType="marcfield:110" scriptCode="Latn" xml:lang="eng">
+    <nameEntry xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110" scriptCode="Latn" xml:lang="eng">
       {$orgParts}
       <alternativeForm>NixonTapesIndex</alternativeForm>
     </nameEntry>
@@ -109,12 +122,12 @@ let $nixonEntry :=
 let $lcnaf :=
   if (exists($n/persname))
   then
-  <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="eng">
-    <part localType="marcfield:100$a"></part>
-    <part localType="marcfield:100$b"></part>
-    <part localType="marcfield:100$c"></part>
-    <part localType="marcfield:100$q"></part>
-    <part localType="marcfield:100$d"></part>
+  <nameEntry xmlns="urn:isbn:1-931666-33-4" localType="marcfield:100" scriptCode="Latn" xml:lang="eng">
+    <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:100$a"></part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:100$b"></part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:100$c"></part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:100$q"></part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:100$d"></part>
     <authorizedForm>lcnaf</authorizedForm>
     <!-- 
       <authorizedForm>VIAF</authorizedForm>
@@ -123,13 +136,14 @@ let $lcnaf :=
      -->
   </nameEntry>
   else
-    <nameEntry localType="marcfield:110" scriptCode="Latn" xml:lang="eng">
-      <part localType="marcfield:110$a"></part>
-      <part localType="marcfield:110$b"></part>
-      <part localType="marcfield:110$b"></part>
-      <part localType="marcfield:110$n"></part>
-      <part localType="marcfield:110$d"></part>
-      <part localType="marcfield:110$c"></part>
+
+    <nameEntry xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110" scriptCode="Latn" xml:lang="eng">
+      <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110$a"></part>
+      <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110$b"></part>
+      <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110$b"></part>
+      <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110$n"></part>
+      <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110$d"></part>
+      <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110$c"></part>
       <authorizedForm>lcnaf</authorizedForm>
       <!-- 
         <authorizedForm>VIAF</authorizedForm>
@@ -145,17 +159,77 @@ let $genderScore := data($genderRecord/scale)
 let $genderEntry :=
   if (exists($n/persname))
   then
-      <localDescriptions localType="http://viaf.org/viaf/terms#gender">
-        <localDescription localType="marcfield:375">
+      <localDescriptions xmlns="urn:isbn:1-931666-33-4" localType="http://viaf.org/viaf/terms#gender">
+        <localDescription xmlns="urn:isbn:1-931666-33-4" localType="marcfield:375">
           <term vocabularySource="namSor">{$genderTerm}</term>
-          <descriptiveNote>Gender term predicted by NamSor gender analytics, with a certainty scale of {$genderScore}</descriptiveNote>
+          <descriptiveNote>Gender term predicted based on given and family names using NamSor gender analytics, which generated a certainty scale of {$genderScore}</descriptiveNote>
                 </localDescription>
       </localDescriptions>
   else null
+  
+let $rowMatch := $coll/root/row[participantsWithLineBreaks/(persname|corpname)/attribute::authfilenumber=$id]
+  
+let $conversations :=
+  for $row in $rowMatch
+  let $c := data($row/filename)
+  order by $c
+  return 
+<resourceRelation xmlns="urn:isbn:1-931666-33-4" resourceRelationType="participantIn" xlink:href="{$c}">{$c}</resourceRelation>
+
+let $nDirect :=
+    if (exists($n/corpname))
+    then concat("Representatives of the ",replace($direct,'\.','&apos;s'))
+    else $direct
+
+let $corporateRelations :=
+  for $cpfCorp in functx:distinct-deep($coll/root/row[participantsWithLineBreaks/(persname|corpname)/attribute::authfilenumber=$id]/participantsWithLineBreaks/corpname)
+  let $cpfCorpID := data($cpfCorp/attribute::authfilenumber)
+  let $cpfCorpName := data($cpfCorp)
+  let $cpfCorpDirect := data($coll/nixonNames/participant[(persname|corpname)/attribute::authfilenumber=$cpfCorpID]/directOrder)
+  let $cpfCorpFreq := count($rowMatch[participantsWithLineBreaks/(persname|corpname)/attribute::authfilenumber=$cpfCorpID])
+  let $cpfCorpTimes :=
+     if ($cpfCorpFreq eq 1)
+     then ' time'
+     else ' times'
+
+  order by $cpfCorpName
+  where not($id = $cpfCorpID)
+  return
+  <cpfRelation xmlns="urn:isbn:1-931666-33-4" cpfRelationType="associative" xlink:href="" xlink:type="simple">
+  <relationEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#conversedWith" scriptCode="Latn" xml:lang="eng">{$cpfCorpName}</relationEntry>
+    <descriptiveNote>{$nDirect} and representatives of the {$cpfCorpDirect} conversed <span localType="frequency">{$cpfCorpFreq}</span> {$cpfCorpTimes} on the White House Tapes of the Nixon Administation.</descriptiveNote>
+  </cpfRelation>
+  
+let $personRelations :=
+
+  for $cpfPers in functx:distinct-deep($coll/root/row[participantsWithLineBreaks/(persname|corpname)/attribute::authfilenumber=$id]/participantsWithLineBreaks/persname)
+  let $cpfPersID := data($cpfPers/attribute::authfilenumber)
+  let $cpfPersName := data($cpfPers)
+  let $cpfPersDirect := data($coll/nixonNames/participant[(persname|corpname)/attribute::authfilenumber=$cpfPersID]/directOrder)
+  let $cpfPersNum := 
+    for $cpfPersRow in $coll/root/row
+    where $cpfPersRow/participantsWithLineBreaks[contains(.,$cpfPers)] and $cpfPersRow/participantsWithLineBreaks[contains(.,$n)]
+    return $cpfPersRow/filename
+
+  let $cpfPersFreq := count($rowMatch[participantsWithLineBreaks/(persname|corpname)/attribute::authfilenumber=$cpfPersID])
+  let $cpfPersTimes :=
+     if ($cpfPersFreq eq 1)
+     then ' time'
+     else ' times'
+  
+    order by $cpfPersName
+    where not($id = $cpfPersID)
+  return
+  <cpfRelation xmlns="urn:isbn:1-931666-33-4" cpfRelationType="associative" xlink:href="{$cpfPersID}" xlink:type="simple">
+  <relationEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#conversedWith" scriptCode="Latn" xml:lang="eng">{$cpfPersName}</relationEntry>
+  <descriptiveNote>
+    <p>{$nDirect} and {$cpfPersDirect} conversed <span localType="frequency">{$cpfPersFreq}</span> {$cpfPersTimes} on the White House Tapes of the Nixon Administation.</p>
+    </descriptiveNote>
+  </cpfRelation>  
+
 
 (: let $my-doc :=  :)
 
-(: Edit this Ferriero record :)
 return
 <eac-cpf
     xmlns="urn:isbn:1-931666-33-4"
@@ -285,6 +359,7 @@ return
             </nameEntry>
 
             {$nixonEntry}
+=
             
             {$lcnaf}
             
@@ -317,32 +392,50 @@ return
 
             
             <biogHist>
-                
+                <!-- Abstract -->
+
                 <abstract><!-- Insert Abstract --></abstract>
                 
-                <p><!-- Insert biogHist --></p> 
+                <!-- Biography or Administrative History Note -->
+                
+                <!-- Insert biogHist content -->
+                
+                                <!-- Chronology -->
               
                 <!-- Footnotes/Endnotes -->
                 
-                  <!-- Insert citation -->
+                  <!-- Insert citations -->
 
             </biogHist>
+
+            <!-- Insert structureOrGenealogy, if relevant -->
+
             
         </description>
         
         <relations>
+        
+            <!-- CPF RELATIONS -->
             
-            <!-- Relationships to Corporate Bodies -->
-             
-            <!-- Relationships to Persons-->
+              <!-- Relationships to Persons-->
+              {$personRelations}
+              
+              <!-- Relationships to Families -->
+              
+              <!-- Relationships to Corporate Bodies -->
+              
+              {$corporateRelations}
             
-            <!-- Relationships to Families -->
             
-            <!-- Relationship to Nixon Tapes Conversations --> 
+            <!-- RESOURCE RELATIONS -->
 
-            <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
-                         
-            <!-- Relationship to Bibliographic Works, subjectOf -->  
+              {$conversations}
+              
+              <!-- Relationship to Nixon Tapes Conversations --> 
+  
+              <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+                           
+              <!-- Relationship to Bibliographic Works, subjectOf -->  
             
         </relations>
     </cpfDescription>
