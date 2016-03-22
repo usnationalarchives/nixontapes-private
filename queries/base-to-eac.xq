@@ -18,11 +18,12 @@ declare namespace xlink="http://www.w3.org/1999/xlink";
 declare namespace output = "http://www.w3.org/2010/xslt-xquery-serialization";   
 declare option output:method "xml";
 declare option output:omit-xml-declaration "no";
+declare option output:encoding "UTF-8";
 declare option output:indent "yes"; 
 
 let $coll := collection("nixontapes-private-base")
 
-for $n in $coll/nixonNames/participant[attribute::identifier="00001001"]
+for $n in $coll/nixonNames/participant
 
 let $id := $n//attribute::authfilenumber
 
@@ -105,7 +106,7 @@ let $marriedDesignator :=
 let $nixonEntry :=  
   if (exists($n/persname))
   then
-    <nameEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonNames/#parsed" scriptCode="Latn" xml:lang="eng">
+    <nameEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonNames/#parsed" scriptCode="Latn" xml:lang="en">
       {$familyName}
       {$givenName}
       {$nickname}
@@ -117,7 +118,7 @@ let $nixonEntry :=
       <alternativeForm>NixonTapesIndex</alternativeForm>
     </nameEntry>
   else
-    <nameEntry xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110" scriptCode="Latn" xml:lang="eng">
+    <nameEntry xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110" scriptCode="Latn" xml:lang="en">
       {$orgParts}
       <alternativeForm>NixonTapesIndex</alternativeForm>
     </nameEntry>
@@ -126,7 +127,7 @@ let $nixonEntry :=
 let $lcnaf :=
   if (exists($n/persname))
   then
-  <nameEntry xmlns="urn:isbn:1-931666-33-4" localType="marcfield:100" scriptCode="Latn" xml:lang="eng">
+  <nameEntry xmlns="urn:isbn:1-931666-33-4" localType="marcfield:100" scriptCode="Latn" xml:lang="en">
     <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:100$a"></part>
     <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:100$b"></part>
     <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:100$c"></part>
@@ -141,7 +142,7 @@ let $lcnaf :=
   </nameEntry>
   else
 
-    <nameEntry xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110" scriptCode="Latn" xml:lang="eng">
+    <nameEntry xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110" scriptCode="Latn" xml:lang="en">
       <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110$a"></part>
       <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110$b"></part>
       <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110$b"></part>
@@ -207,7 +208,7 @@ let $corporateRelations :=
   order by data($cpfCorpName)
   return
   <cpfRelation xmlns="urn:isbn:1-931666-33-4" cpfRelationType="associative" xlink:href="" xlink:type="simple">
-  <relationEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#conversedWith" scriptCode="Latn" xml:lang="eng">{$cpfCorpName}</relationEntry>
+  <relationEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#conversedWith" scriptCode="Latn" xml:lang="en">{$cpfCorpName}</relationEntry>
     <descriptiveNote>
       <p>{$nDirect} and representatives of the {$cpfCorpDirect} conversed <span localType="frequency">{$cpfCorpFreq}</span> {$cpfCorpTimes} on the White House Tapes of the Nixon Administation.</p>
     </descriptiveNote>
@@ -234,7 +235,7 @@ let $personRelations :=
     order by $cpfPersName
   return
   <cpfRelation xmlns="urn:isbn:1-931666-33-4" cpfRelationType="associative" xlink:href="{$cpfPersID}" xlink:type="simple">
-  <relationEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#conversedWith" scriptCode="Latn" xml:lang="eng">{$cpfPersName}</relationEntry>
+  <relationEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#conversedWith" scriptCode="Latn" xml:lang="en">{$cpfPersName}</relationEntry>
   <descriptiveNote>
     <p>{$nDirect} and {$cpfPersDirect} conversed <span localType="frequency">{$cpfPersFreq}</span> {$cpfPersTimes} on the White House Tapes of the Nixon Administation.</p>
     </descriptiveNote>
@@ -358,12 +359,12 @@ let $my-doc :=
         <identity>
             <entityType>{$entityType}</entityType>
             
-            <nameEntry localType="{$marcfield}" scriptCode="Latn" xml:lang="eng">
+            <nameEntry localType="{$marcfield}" scriptCode="Latn" xml:lang="en">
             <part localType="{$marcfield}$a">{$indirect}</part>
             <authorizedForm>NixonTapesIndex</authorizedForm>
             </nameEntry>
 
-            <nameEntry localType="nixonNames" scriptCode="Latn" xml:lang="eng">
+            <nameEntry localType="nixonNames" scriptCode="Latn" xml:lang="en">
             <part localType="directOrder">{$direct}</part>
             <alternativeForm>NixonTapesIndex</alternativeForm>
             </nameEntry>
@@ -449,6 +450,8 @@ let $my-doc :=
         </relations>
     </cpfDescription>
 </eac-cpf>
+
+where $n[attribute::identifier="00002003"]
 
 return
 
