@@ -337,9 +337,9 @@ let $my-doc :=
             </maintenanceEvent> 
             -->
         </maintenanceHistory>
-        
+
+        <!--         
         <sources>
-            <!-- 
             <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
                 <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
             </source>
@@ -349,9 +349,8 @@ let $my-doc :=
             <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
                 <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
             </source>
-             -->
         </sources>
-        
+        -->        
     </control>
     
     <cpfDescription>
