@@ -22,12 +22,16 @@ declare option output:indent "yes";
 
 let $coll := collection("nixontapes-private-base")
 
-for $n in $coll/nixonNames/participant[1]
+for $n in $coll/nixonNames/participant[attribute::identifier="00001001"]
 
 let $id := $n//attribute::authfilenumber
 
 let $indirect := data($n/indirectOrder)
 let $direct := data($n/directOrder)
+let $nDirect :=
+    if (exists($n/corpname))
+    then concat("Representatives of the ",replace($direct,'\.','&apos;s'))
+    else $direct
 
 let $entityType :=
   if (exists($n/persname))
@@ -155,6 +159,10 @@ let $lcnaf :=
 let $genderRecord := $coll/csv/record[matches(data(Identifier),data($id))]
 let $genderTerm := data($genderRecord/genderTerms)
 let $genderScore := data($genderRecord/scale)
+let $genderChange := 
+  if(exists($n/marriedMrs))
+  then <p>For name entries qualified by the 'Mrs.' designator, NamSor originally scored the names based on the husband&apos;s name, generating 'male.' The gender term was flipped manually to 'female.'</p>
+  else null
 
 let $genderEntry :=
   if (exists($n/persname))
@@ -162,24 +170,28 @@ let $genderEntry :=
       <localDescriptions xmlns="urn:isbn:1-931666-33-4" localType="http://viaf.org/viaf/terms#gender">
         <localDescription xmlns="urn:isbn:1-931666-33-4" localType="marcfield:375">
           <term vocabularySource="namSor">{$genderTerm}</term>
-          <descriptiveNote>Gender term predicted based on given and family names using NamSor gender analytics, which generated a certainty scale of {$genderScore}</descriptiveNote>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">{$genderScore}</span>.</p>
+            {$genderChange}
+          </descriptiveNote>
                 </localDescription>
       </localDescriptions>
   else null
-  
+
 let $rowMatch := $coll/root/row[participantsWithLineBreaks/(persname|corpname)/attribute::authfilenumber=$id]
   
 let $conversations :=
   for $row in $rowMatch
   let $c := data($row/filename)
+  let $cTitle := concat("Conversation ",data($row/tapeNo3Dig),"-",data($row/convNo3Dig)) 
   order by $c
   return 
-<resourceRelation xmlns="urn:isbn:1-931666-33-4" resourceRelationType="participantIn" xlink:href="{$c}">{$c}</resourceRelation>
-
-let $nDirect :=
-    if (exists($n/corpname))
-    then concat("Representatives of the ",replace($direct,'\.','&apos;s'))
-    else $direct
+<resourceRelation xmlns="urn:isbn:1-931666-33-4" resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="{$c}">
+  <relationEntry>White House Tapes: {$cTitle}</relationEntry>
+  <descriptiveNote>
+    <p>{$nDirect} participated in {$cTitle} on the White House Tapes of the Nixon Administration</p>
+  </descriptiveNote>
+</resourceRelation>
 
 let $corporateRelations :=
   for $cpfCorp in functx:distinct-deep($coll/root/row[participantsWithLineBreaks/(persname|corpname)/attribute::authfilenumber=$id]/participantsWithLineBreaks/corpname)
@@ -196,7 +208,9 @@ let $corporateRelations :=
   return
   <cpfRelation xmlns="urn:isbn:1-931666-33-4" cpfRelationType="associative" xlink:href="" xlink:type="simple">
   <relationEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#conversedWith" scriptCode="Latn" xml:lang="eng">{$cpfCorpName}</relationEntry>
-    <descriptiveNote>{$nDirect} and representatives of the {$cpfCorpDirect} conversed <span localType="frequency">{$cpfCorpFreq}</span> {$cpfCorpTimes} on the White House Tapes of the Nixon Administation.</descriptiveNote>
+    <descriptiveNote>
+      <p>{$nDirect} and representatives of the {$cpfCorpDirect} conversed <span localType="frequency">{$cpfCorpFreq}</span> {$cpfCorpTimes} on the White House Tapes of the Nixon Administation.</p>
+    </descriptiveNote>
   </cpfRelation>
   
 let $personRelations :=
@@ -226,10 +240,8 @@ let $personRelations :=
     </descriptiveNote>
   </cpfRelation>  
 
+let $my-doc :=
 
-(: let $my-doc :=  :)
-
-return
 <eac-cpf
     xmlns="urn:isbn:1-931666-33-4"
     xmlns:mads="http://www.loc.gov/mads/"
@@ -358,7 +370,6 @@ return
             </nameEntry>
 
             {$nixonEntry}
-=
             
             {$lcnaf}
             
@@ -440,11 +451,9 @@ return
     </cpfDescription>
 </eac-cpf>
 
-(:
 return
 
   let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"authorities",file:dir-separator())
   let $filename := concat(data($id),".xml")
   let $path := concat($dir, $filename)
   return file:write($path, $my-doc)
-:)
