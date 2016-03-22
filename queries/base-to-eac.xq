@@ -191,9 +191,8 @@ let $corporateRelations :=
      if ($cpfCorpFreq eq 1)
      then ' time'
      else ' times'
-
-  order by $cpfCorpName
   where not($id = $cpfCorpID)
+  order by data($cpfCorpName)
   return
   <cpfRelation xmlns="urn:isbn:1-931666-33-4" cpfRelationType="associative" xlink:href="" xlink:type="simple">
   <relationEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#conversedWith" scriptCode="Latn" xml:lang="eng">{$cpfCorpName}</relationEntry>
@@ -216,9 +215,9 @@ let $personRelations :=
      if ($cpfPersFreq eq 1)
      then ' time'
      else ' times'
-  
-    order by $cpfPersName
+
     where not($id = $cpfPersID)
+    order by $cpfPersName
   return
   <cpfRelation xmlns="urn:isbn:1-931666-33-4" cpfRelationType="associative" xlink:href="{$cpfPersID}" xlink:type="simple">
   <relationEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#conversedWith" scriptCode="Latn" xml:lang="eng">{$cpfPersName}</relationEntry>
