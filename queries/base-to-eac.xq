@@ -23,7 +23,7 @@ declare option output:indent "yes";
 
 let $coll := collection("nixontapes-private-base")
 
-for $n in $coll/nixonNames/participant[1]
+for $n in $coll/nixonNames/participant
 
 let $id := $n//attribute::authfilenumber
 
