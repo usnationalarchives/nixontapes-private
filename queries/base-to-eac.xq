@@ -23,7 +23,7 @@ declare option output:indent "yes";
 
 let $coll := collection("nixontapes-private-base")
 
-for $n in $coll/nixonNames/participant
+for $n in $coll/nixonNames/participant[1]
 
 let $id := $n//attribute::authfilenumber
 
@@ -60,59 +60,64 @@ let $orgParts :=
 
   else null
 
-    
-let $familyName :=
-  if(exists($n/lastName))
+let $familyName := data($n/lastName)   
+let $familyNameEntry :=
+  if (exists($n/lastName))
   then 
-    <part xmlns="urn:isbn:1-931666-33-4" localType="familyName">{data($n/lastName)}</part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="familyName">{data($familyName)}</part>
   else null
   
-let $givenName :=
-  if(exists($n/firstPart))
+let $givenName := data($n/firstPart)
+let $givenNameEntry :=
+  if (exists($n/firstPart))
   then 
-    <part xmlns="urn:isbn:1-931666-33-4" localType="givenName">{data($n/firstPart)}</part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="givenName">{$givenName}</part>
   else null 
-  
-let $nickname :=
-  if(exists($n/nickname))
+
+let $nickname := data($n/nickname)
+let $nicknameEntry :=
+  if (exists($n/nickname))
   then 
-    <part xmlns="urn:isbn:1-931666-33-4" localType="nickname">{data($n/nickname)}</part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="nickname">{$nickname}</part>
   else null
   
-let $maidenName :=
-  if(exists($n/maidenName))
+let $maidenName := data($n/maidenName)
+let $maidenNameEntry :=
+  if (exists($n/maidenName))
   then 
-    <part xmlns="urn:isbn:1-931666-33-4" localType="maidenName">{data($n/maidenName)}</part>
-  else null
-  
-let $generationalMarker :=
-  if(exists($n/generationalMarker))
-  then 
-    <part xmlns="urn:isbn:1-931666-33-4" localType="generationalMarker">{data($n/generationalMarker)}</part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="maidenName">{$maidenName}</part>
   else null
 
-let $titleHonorific :=
+let $generationalMarker := data($n/generationalMarker)  
+let $generationalMarkerEntry :=
+  if (exists($n/generationalMarker))
+  then 
+    <part xmlns="urn:isbn:1-931666-33-4" localType="generationalMarker">{$generationalMarker}</part>
+  else null
+
+let $titleHonorific := data($n/titleHonorific)
+let $titleHonorificEntry :=
   if(exists($n/titleHonorific))
   then 
-    <part xmlns="urn:isbn:1-931666-33-4" localType="titleHonorific">{data($n/titleHonorific)}</part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="titleHonorific">{$titleHonorific}</part>
   else null
   
-let $marriedDesignator :=
-  if(exists($n/marriedMrs))
+let $marriedDesignator := data($n/marriedMrs)
+let $marriedDesignatorEntry :=
+  if (exists($n/marriedMrs))
   then 
-    <part xmlns="urn:isbn:1-931666-33-4" localType="marriedDesignator">{data($n/marriedMrs)}</part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="marriedDesignator">{$marriedDesignator}</part>
   else null
  
 let $nixonEntry :=  
   if (exists($n/persname))
   then
     <nameEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonNames/#parsed" scriptCode="Latn" xml:lang="en">
-      {$familyName}
-      {$givenName}
-      {$nickname}
-      {$maidenName}
-      {$maidenName}
-      {$generationalMarker}
+      {$familyNameEntry}
+      {$givenNameEntry}
+      {$nicknameEntry}
+      {$maidenNameEntry}
+      {$generationalMarkerEntry}
       {$titleHonorific}
       {$marriedDesignator}
       <alternativeForm>NixonTapesIndex</alternativeForm>
@@ -135,9 +140,9 @@ let $lcnaf :=
     <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:100$d"></part>
     <authorizedForm>lcnaf</authorizedForm>
     <!-- 
-      <authorizedForm>VIAF</authorizedForm>
-      <authorizedForm>WorldCat</authorizedForm>
-      <authorizedForm>USNARA-LCDRG</authorizedForm>
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>WorldCat</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
      -->
   </nameEntry>
   else
@@ -151,9 +156,9 @@ let $lcnaf :=
       <part xmlns="urn:isbn:1-931666-33-4" localType="marcfield:110$c"></part>
       <authorizedForm>lcnaf</authorizedForm>
       <!-- 
-        <authorizedForm>VIAF</authorizedForm>
-        <authorizedForm>WorldCat</authorizedForm>
-        <authorizedForm>USNARA-LCDRG</authorizedForm>
+      <authorizedForm>VIAF</authorizedForm>
+      <authorizedForm>WorldCat</authorizedForm>
+      <authorizedForm>USNARA-LCDRG</authorizedForm>
        -->
     </nameEntry>
 
@@ -241,7 +246,9 @@ let $personRelations :=
     </descriptiveNote>
   </cpfRelation>  
 
+(: return :)
 let $my-doc :=
+
 
 <eac-cpf
     xmlns="urn:isbn:1-931666-33-4"
@@ -439,10 +446,9 @@ let $my-doc :=
             
             <!-- RESOURCE RELATIONS -->
 
+              <!-- Relationship to Nixon Tapes Conversations -->
               {$conversations}
-              
-              <!-- Relationship to Nixon Tapes Conversations --> 
-  
+
               <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
                            
               <!-- Relationship to Bibliographic Works, subjectOf -->  
@@ -451,7 +457,7 @@ let $my-doc :=
     </cpfDescription>
 </eac-cpf>
 
-where $n[attribute::identifier="00002003"]
+where $n[not(attribute::identifier="00002003")]
 
 return
 
