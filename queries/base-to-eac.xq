@@ -23,7 +23,7 @@ declare option output:indent "yes";
 
 let $coll := collection("nixontapes-private-base")
 
-for $n in $coll/nixonNames/participant[1]
+for $n in $coll/nixonNames/participant
 
 let $id := $n//attribute::authfilenumber
 
@@ -163,7 +163,7 @@ let $lcnaf :=
 let $genderRecord := $coll/csv/record[matches(data(Identifier),data($id))]
 let $genderTerm := data($genderRecord/genderTerms)
 let $genderScore := data($genderRecord/scale)
-let $genderChange := 
+let $genderRevisionNote := 
   if(exists($n/marriedMrs))
   then <p xmlns="urn:isbn:1-931666-33-4">For name entries qualified by the 'Mrs.' designator, NamSor originally scored the names based on the husband&apos;s name, generating 'male.' The gender term was flipped manually to 'female.'</p>
   else null
@@ -176,11 +176,12 @@ let $genderEntry :=
           <term vocabularySource="NixonTapesIndex">{$genderTerm}</term>
           <descriptiveNote>
             <p>This gender term has been predicted based on given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">{$genderScore}</span>.</p>
-            {$genderChange}
+            {$genderRevisionNote}
           </descriptiveNote>
         </localDescription>
         <descriptiveNote>
-          <p>Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect. Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and align gender terms to best reflect how the person self-identified.</p>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and align gender terms to better reflect how the person self-identified.</p>
         </descriptiveNote>
       </localDescriptions>
   else null
@@ -252,10 +253,10 @@ let $racialCategory :=
   then
 <localDescriptions xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#racialCategory">
   <localDescription localType="marcfield:373">
-    <term vocabularySource="uscensus"></term>
+    <term vocabularySource="uscensus:race"></term>
   </localDescription>
   <descriptiveNote>
-    <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, &quot;We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one&apos;s family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors.&quot; Racial category has been used here in an attempt to best reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+    <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, &quot;We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one&apos;s family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors.&quot; Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
   </descriptiveNote>
 </localDescriptions>
   else null            
@@ -268,14 +269,13 @@ let $ethnicCulturalHeritage :=
     <term vocabularySource="lcsh"></term>
   </localDescription>
   <descriptiveNote>
-    <p>Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, &quot;We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one&apos;s family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors.&quot; Ethnic and cultural heritage have been described in an attempt to best reflect how the person self-identified or identified their background or family.</p>
+    <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, &quot;We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one&apos;s family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors.&quot; Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
   </descriptiveNote>
 </localDescriptions>
   else null
 
- return 
-(: let $my-doc := :)
-
+(: return :)
+let $my-doc :=
 
 <eac-cpf
     xmlns="urn:isbn:1-931666-33-4"
@@ -341,6 +341,11 @@ let $ethnicCulturalHeritage :=
         <conventionDeclaration>
             <abbreviation>marc:relators</abbreviation>
             <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
+        </conventionDeclaration>
+        
+        <conventionDeclaration>
+            <abbreviation>uscensus:race</abbreviation>
+            <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
         </conventionDeclaration>
         
         <!-- Convention Declarations for Style Guides -->
@@ -577,7 +582,6 @@ let $ethnicCulturalHeritage :=
     </cpfDescription>
 </eac-cpf>
 
-(:
 where $n[not(attribute::identifier="00002003")]
 
 return
@@ -586,4 +590,3 @@ return
   let $filename := concat(data($id),".xml")
   let $path := concat($dir, $filename)
   return file:write($path, $my-doc)
-:)
