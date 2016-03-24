@@ -64,7 +64,7 @@ let $familyName := data($n/lastName)
 let $familyNameEntry :=
   if (exists($n/lastName))
   then 
-    <part xmlns="urn:isbn:1-931666-33-4" localType="familyName">{data($familyName)}</part>
+    <part xmlns="urn:isbn:1-931666-33-4" localType="familyName">{$familyName}</part>
   else null
   
 let $givenName := data($n/firstPart)
@@ -112,14 +112,14 @@ let $marriedDesignatorEntry :=
 let $nixonEntry :=  
   if (exists($n/persname))
   then
-    <nameEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonNames/#parsed" scriptCode="Latn" xml:lang="en">
+    <nameEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
       {$familyNameEntry}
       {$givenNameEntry}
       {$nicknameEntry}
       {$maidenNameEntry}
       {$generationalMarkerEntry}
-      {$titleHonorific}
-      {$marriedDesignator}
+      {$titleHonorificEntry}
+      {$marriedDesignatorEntry}
       <alternativeForm>NixonTapesIndex</alternativeForm>
     </nameEntry>
   else
@@ -167,7 +167,7 @@ let $genderTerm := data($genderRecord/genderTerms)
 let $genderScore := data($genderRecord/scale)
 let $genderChange := 
   if(exists($n/marriedMrs))
-  then <p>For name entries qualified by the 'Mrs.' designator, NamSor originally scored the names based on the husband&apos;s name, generating 'male.' The gender term was flipped manually to 'female.'</p>
+  then <p xmlns="urn:isbn:1-931666-33-4">For name entries qualified by the 'Mrs.' designator, NamSor originally scored the names based on the husband&apos;s name, generating 'male.' The gender term was flipped manually to 'female.'</p>
   else null
 
 let $genderEntry :=
@@ -215,7 +215,7 @@ let $corporateRelations :=
   <cpfRelation xmlns="urn:isbn:1-931666-33-4" cpfRelationType="associative" xlink:href="" xlink:type="simple">
   <relationEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#conversedWith" scriptCode="Latn" xml:lang="en">{$cpfCorpName}</relationEntry>
     <descriptiveNote>
-      <p>{$nDirect} and representatives of the {$cpfCorpDirect} conversed <span localType="frequency">{$cpfCorpFreq}</span> {$cpfCorpTimes} on the White House Tapes of the Nixon Administation.</p>
+      <p>{$nDirect} and representatives of the {$cpfCorpDirect} conversed <span localType="frequency">{$cpfCorpFreq}</span> {$cpfCorpTimes} on the White House Tapes of the Nixon Administration.</p>
     </descriptiveNote>
   </cpfRelation>
   
@@ -242,7 +242,7 @@ let $personRelations :=
   <cpfRelation xmlns="urn:isbn:1-931666-33-4" cpfRelationType="associative" xlink:href="{$cpfPersID}" xlink:type="simple">
   <relationEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#conversedWith" scriptCode="Latn" xml:lang="en">{$cpfPersName}</relationEntry>
   <descriptiveNote>
-    <p>{$nDirect} and {$cpfPersDirect} conversed <span localType="frequency">{$cpfPersFreq}</span> {$cpfPersTimes} on the White House Tapes of the Nixon Administation.</p>
+    <p>{$nDirect} and {$cpfPersDirect} conversed <span localType="frequency">{$cpfPersFreq}</span> {$cpfPersTimes} on the White House Tapes of the Nixon Administration.</p>
     </descriptiveNote>
   </cpfRelation>  
 
