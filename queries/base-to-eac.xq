@@ -141,7 +141,6 @@ let $lcnaf :=
     <authorizedForm>lcnaf</authorizedForm>
     <!-- 
     <authorizedForm>VIAF</authorizedForm>
-    <authorizedForm>WorldCat</authorizedForm>
     <authorizedForm>USNARA-LCDRG</authorizedForm>
      -->
   </nameEntry>
@@ -157,7 +156,6 @@ let $lcnaf :=
       <authorizedForm>lcnaf</authorizedForm>
       <!-- 
       <authorizedForm>VIAF</authorizedForm>
-      <authorizedForm>WorldCat</authorizedForm>
       <authorizedForm>USNARA-LCDRG</authorizedForm>
        -->
     </nameEntry>
@@ -326,7 +324,6 @@ let $my-doc :=
                 <eventDateTime>{current-dateTime()}</eventDateTime>
                 <agentType>machine</agentType>
                 <agent>base-to-eac.xq</agent>
-
                 <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
 
             </maintenanceEvent>
@@ -336,12 +333,14 @@ let $my-doc :=
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent> 
             -->
         </maintenanceHistory>
@@ -364,23 +363,25 @@ let $my-doc :=
     <cpfDescription>
         
         <identity>
-            <entityType>{$entityType}</entityType>
-            
-            <nameEntry localType="{$marcfield}" scriptCode="Latn" xml:lang="en">
+          <entityType>{$entityType}</entityType>
+          
+          <!-- Authorized Name Entries -->
+          
+          <nameEntry localType="{$marcfield}" scriptCode="Latn" xml:lang="en">
             <part localType="{$marcfield}$a">{$indirect}</part>
             <authorizedForm>NixonTapesIndex</authorizedForm>
-            </nameEntry>
+          </nameEntry>
 
-            <nameEntry localType="nixonNames" scriptCode="Latn" xml:lang="en">
+          {$lcnaf}
+            
+          <!-- Variant Name Entries -->
+          
+          <nameEntry localType="nixonNames" scriptCode="Latn" xml:lang="en">
             <part localType="directOrder">{$direct}</part>
             <alternativeForm>NixonTapesIndex</alternativeForm>
-            </nameEntry>
-
-            {$nixonEntry}
+          </nameEntry>
             
-            {$lcnaf}
-            
-          <!-- Insert variant names -->
+          {$nixonEntry}
             
         </identity>
         
