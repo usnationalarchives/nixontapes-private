@@ -178,7 +178,10 @@ let $genderEntry :=
             <p>This gender term has been predicted based on given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">{$genderScore}</span>.</p>
             {$genderChange}
           </descriptiveNote>
-                </localDescription>
+        </localDescription>
+        <descriptiveNote>
+          <p>Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect. Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and align gender terms to best reflect how the person self-identified.</p>
+        </descriptiveNote>
       </localDescriptions>
   else null
 
@@ -244,19 +247,47 @@ let $personRelations :=
     </descriptiveNote>
   </cpfRelation>  
 
+let $racialCategory :=
+  if($n/persname)
+  then
+<localDescriptions xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#racialCategory">
+  <localDescription localType="marcfield:373">
+    <term vocabularySource="uscensus"></term>
+  </localDescription>
+  <descriptiveNote>
+    <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, &quot;We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one&apos;s family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors.&quot; Racial category has been used here in an attempt to best reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+  </descriptiveNote>
+</localDescriptions>
+  else null            
+
+let $ethnicCulturalHeritage :=
+  if (exists($n/persname)) 
+  then
+<localDescriptions xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#ethnicCulturalHeritage">
+  <localDescription localType="marcfield:373">
+    <term vocabularySource="lcsh"></term>
+  </localDescription>
+  <descriptiveNote>
+    <p>Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, &quot;We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one&apos;s family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors.&quot; Ethnic and cultural heritage have been described in an attempt to best reflect how the person self-identified or identified their background or family.</p>
+  </descriptiveNote>
+</localDescriptions>
+  else null
+
  return 
 (: let $my-doc := :)
 
 
 <eac-cpf
     xmlns="urn:isbn:1-931666-33-4"
-    xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd" 
     xmlns:mads="http://www.loc.gov/mads/"
     xmlns:marcxml="http://www.loc.gov/MARC21/slim"
+    xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:snac="http://socialarchive.iath.virginia.edu/"
-    xmlns:xlink="http://www.w3.org/1999/xlink">
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
     
     <control>
         <recordId>{data($n//attribute::authfilenumber)}</recordId>
@@ -398,39 +429,31 @@ let $personRelations :=
             </existDates>
             -->
             
-            <!--
-            <localDescriptions localType="nixonTapes/#subject">
-                        
-            </localDescriptions>
-            -->
-
             <!-- Gender/Gender Identity -->
             {$genderEntry}
-            
+
+            <!-- Citizenship -->
+            <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+                  
             <!-- Nationality -->
             <!--
             <localDescriptions localType="nixonTapes/#nationality">
             
             </localDescriptions>
-            --> 
-
-            <!-- Citizenship -->
+            -->
             
             <!-- Racial Category -->
-            <!-- 
-            <localDescriptions localType="nixonTapes/#racialCategory">
-              <localDescription localType="marcfield:373">
-              <term vocabularySource="uscensus"></term>
-              </localDescription>
-              <descriptiveNote>
-                <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, &quot;We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one&apos;s family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors.&quot; Racial category has been used here in an attempt to best reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
-              </descriptiveNote>
-            </localDescriptions>            
-            -->
 
-
-               
-            <!-- Ethnic/Cutural Heritage -->
+            {$racialCategory}           
+  
+            <!-- Ethnic/Cultural Heritage -->
+            
+            {$ethnicCulturalHeritage}
             
             <!-- Tribal Affiliations -->
             
@@ -454,9 +477,29 @@ let $personRelations :=
             -->
             
             <!-- Occupations -->
+            <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
             
             <!-- Functions -->
-            
+            <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+           
             <!-- Political Affiliations -->
             
             <!--
@@ -468,19 +511,32 @@ let $personRelations :=
             <!-- Religious Affiliations -->
 
             <!-- Topical Subjects -->
-
+            <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+            
             <!-- Associated Places -->
+            <places>
+            </places>
 
             <biogHist>
+            
                 <!-- Abstract -->
-
-                <abstract><!-- Insert Abstract --></abstract>
+                <abstract></abstract>
                 
                 <!-- Biography or Administrative History Note -->
                 
-                <!-- Insert biogHist content -->
-                
-                                <!-- Chronology -->
+                <!-- Chronology -->
               
                 <!-- Footnotes/Endnotes -->
                 
