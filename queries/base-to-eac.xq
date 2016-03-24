@@ -409,7 +409,7 @@ let $ethnicCulturalHeritage :=
             
           <!-- Variant Name Entries -->
           
-          <nameEntry localType="nixonNames" scriptCode="Latn" xml:lang="en">
+          <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
             <part localType="directOrder">{$direct}</part>
             <alternativeForm>NixonTapesIndex</alternativeForm>
           </nameEntry>
@@ -447,6 +447,16 @@ let $ethnicCulturalHeritage :=
             </localDescriptions>
             -->
             
+            <!-- Languages Used -->
+            <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->  
+            
             <!-- Racial Category -->
 
             {$racialCategory}           
@@ -456,16 +466,7 @@ let $ethnicCulturalHeritage :=
             {$ethnicCulturalHeritage}
             
             <!-- Tribal Affiliations -->
-            
-            <!-- Languages Used -->
-            <!--
-            <languagesUsed> 
-              <languageUsed localType="marcfield:377">
-                <language languageCode="eng">English</language>
-                <script scriptCode="Latn">Latin</script>
-              </languageUsed>
-            </lanugagesUsed>
-            -->            
+                      
             
             <!-- Title or Honorific -->
             <!--
