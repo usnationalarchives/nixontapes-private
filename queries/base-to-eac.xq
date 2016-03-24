@@ -23,7 +23,7 @@ declare option output:indent "yes";
 
 let $coll := collection("nixontapes-private-base")
 
-for $n in $coll/nixonNames/participant
+for $n in $coll/nixonNames/participant[1]
 
 let $id := $n//attribute::authfilenumber
 
@@ -173,7 +173,7 @@ let $genderEntry :=
   then
       <localDescriptions xmlns="urn:isbn:1-931666-33-4" localType="http://viaf.org/viaf/terms#gender">
         <localDescription xmlns="urn:isbn:1-931666-33-4" localType="marcfield:375">
-          <term vocabularySource="namSor">{$genderTerm}</term>
+          <term vocabularySource="NixonTapesIndex">{$genderTerm}</term>
           <descriptiveNote>
             <p>This gender term has been predicted based on given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">{$genderScore}</span>.</p>
             {$genderChange}
@@ -244,12 +244,13 @@ let $personRelations :=
     </descriptiveNote>
   </cpfRelation>  
 
-(: return :)
-let $my-doc :=
+ return 
+(: let $my-doc := :)
 
 
 <eac-cpf
     xmlns="urn:isbn:1-931666-33-4"
+    xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd" 
     xmlns:mads="http://www.loc.gov/mads/"
     xmlns:marcxml="http://www.loc.gov/MARC21/slim"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -367,11 +368,12 @@ let $my-doc :=
           
           <!-- Authorized Name Entries -->
           
+          <!-- Nixon Tapes Index -->
           <nameEntry localType="{$marcfield}" scriptCode="Latn" xml:lang="en">
             <part localType="{$marcfield}$a">{$indirect}</part>
             <authorizedForm>NixonTapesIndex</authorizedForm>
           </nameEntry>
-
+          
           {$lcnaf}
             
           <!-- Variant Name Entries -->
@@ -380,35 +382,95 @@ let $my-doc :=
             <part localType="directOrder">{$direct}</part>
             <alternativeForm>NixonTapesIndex</alternativeForm>
           </nameEntry>
-            
+  
           {$nixonEntry}
+          
+          <!-- Insert Variant Names from LCNAF/LCDRG -->
+
             
         </identity>
         
         <description>
-            <!-- Insert Exist Dates, if relevant -->
+            <!-- Exist Dates -->
+            <!--
+            <existDates>
             
-            <!-- Insert Occupations, if relevant -->
+            </existDates>
+            -->
             
-            <!-- Insert Functions, if relevant -->
+            <!--
+            <localDescriptions localType="nixonTapes/#subject">
+                        
+            </localDescriptions>
+            -->
 
-            <!-- Insert Language Used, if relevant -->
-
-            <!-- Insert Gender, if relevant -->
-            
+            <!-- Gender/Gender Identity -->
             {$genderEntry}
             
-            <!-- Insert Nationality, if relevant -->
-
-            <!-- Insert Citizenship, if relevant -->
+            <!-- Nationality -->
+            <!--
+            <localDescriptions localType="nixonTapes/#nationality">
             
-            <!-- Insert Title or Honorific, if relevant -->
+            </localDescriptions>
+            --> 
 
-            <!-- Insert Topical Subjects, if relevant -->
-
-            <!-- Insert Associated Places, if relevant -->
-
+            <!-- Citizenship -->
             
+            <!-- Racial Category -->
+            <!-- 
+            <localDescriptions localType="nixonTapes/#racialCategory">
+              <localDescription localType="marcfield:373">
+              <term vocabularySource="uscensus"></term>
+              </localDescription>
+              <descriptiveNote>
+                <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, &quot;We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one&apos;s family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors.&quot; Racial category has been used here in an attempt to best reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+              </descriptiveNote>
+            </localDescriptions>            
+            -->
+
+
+               
+            <!-- Ethnic/Cutural Heritage -->
+            
+            <!-- Tribal Affiliations -->
+            
+            <!-- Languages Used -->
+            <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </lanugagesUsed>
+            -->            
+            
+            <!-- Title or Honorific -->
+            <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+            
+            <!-- Occupations -->
+            
+            <!-- Functions -->
+            
+            <!-- Political Affiliations -->
+            
+            <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+            
+            <!-- Religious Affiliations -->
+
+            <!-- Topical Subjects -->
+
+            <!-- Associated Places -->
+
             <biogHist>
                 <!-- Abstract -->
 
@@ -458,6 +520,7 @@ let $my-doc :=
     </cpfDescription>
 </eac-cpf>
 
+(:
 where $n[not(attribute::identifier="00002003")]
 
 return
@@ -466,3 +529,4 @@ return
   let $filename := concat(data($id),".xml")
   let $path := concat($dir, $filename)
   return file:write($path, $my-doc)
+:)
