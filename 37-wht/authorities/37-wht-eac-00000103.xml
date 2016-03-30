@@ -1,9 +1,6 @@
-<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4">
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
   <control>
-    <recordId/>
-    <!-- <otherRecordId localType="http://catalog.archives.gov/id/"></otherRecordId> -->
-    <!-- <otherRecordId localType="http://viaf.org/viaf/terms#viafID"></otherRecordId> -->
-    <otherRecordId localType="http://www.loc.gov/standards/mads/rdf/v1.html#Authority"/>
+    <recordId>37-wht-eac-00000103</recordId>
     <maintenanceStatus>new</maintenanceStatus>
     <maintenanceAgency>
       <agencyCode>US-DNA</agencyCode>
@@ -16,15 +13,15 @@
     <!-- Convention Declarations for Content Standards -->
     <conventionDeclaration>
       <abbreviation>RDA</abbreviation>
-      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-19">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>USNARA-LCDRG</abbreviation>
-      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-19">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>DACS-2nd</abbreviation>
-      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2015-03-18">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>NixonTapesIndex</abbreviation>
@@ -43,6 +40,10 @@
       <abbreviation>marc:relators</abbreviation>
       <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
     </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>uscensus:race</abbreviation>
+      <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
+    </conventionDeclaration>
     <!-- Convention Declarations for Style Guides -->
     <conventionDeclaration>
       <abbreviation>CMOS-16th</abbreviation>
@@ -51,10 +52,10 @@
     <maintenanceHistory>
       <maintenanceEvent>
         <eventType>created</eventType>
-        <eventDateTime>2016-03-01T01:02:57.824-05:00</eventDateTime>
+        <eventDateTime>2016-03-29T16:05:09.994-04:00</eventDateTime>
         <agentType>machine</agentType>
         <agent>base-to-eac.xq</agent>
-        <eventDescription>Converted base/source data to EAC-CPF through XQuery script written by Amanda T. Ross of the United States National Archives and Records Administration.</eventDescription>
+        <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
       <!--
             <maintenanceEvent>
@@ -62,161 +63,2397 @@
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent> 
             -->
     </maintenanceHistory>
-    <sources>
-      <source xlink:href="https://catalog.archives.gov" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>National Archives and Records Administration Authority List</sourceEntry>
-      </source>
-             --&gt;
-            <source xlink:href="http://id.loc.gov/authorities/names" xlink:type="simple" lastDateTimeVerified="[dateTime]">
-        <sourceEntry>Library of Congress Name Authority File</sourceEntry>
-      </source>
-      <source xlink:href="http://viaf.org" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>Virtual International Authority File</sourceEntry>
-      </source>
-    </sources>
+    <!--         
+        <sources>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
+            </source>
+        </sources>
+        -->
   </control>
   <cpfDescription>
     <identity>
       <entityType>person</entityType>
-
-            if ($entityType eq "person")
-              then
-              
-            <nameEntry localType="marcfield:100">
-        <part localType="marcfield:100$a"/>
-        <part localType="marcfield:100$d"/>
-        <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
-      </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="familyName"/>
-        <part localType="givenName"/>
-        <part localType="nickname"/>
-        <part localType="maiden name"/>
-        <part localtype="generational marker"/>
-        <part localType="military rank or official title"/>
-        <part localType="Mrs."/>
+      <!-- Authorized Name Entries -->
+      <!-- Nixon Tapes Index -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Atkins, Oliver F. ("Ollie")</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-            
-
-      else
-      <nameEntry localType="marcfield:110">
-        <part localType="marcfield:110$a"/>
-        <part localType="marcfield:110$d"/>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a"/>
+        <part localType="marcfield:100$b"/>
+        <part localType="marcfield:100$c"/>
+        <part localType="marcfield:100$q"/>
+        <part localType="marcfield:100$d"/>
         <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
+        <!-- 
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
       </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="directOrder"/>
+      <!-- Variant Name Entries -->
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">Oliver F. ("Ollie") Atkins</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Atkins</part>
+        <part localType="givenName">Oliver F.</part>
+        <part localType="nickname">Ollie</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
+      <!-- Insert Variant Names from LCNAF/LCDRG -->
     </identity>
     <description>
-      <existDates localType="marcfield:046">
-        <dateRange>
-          <fromDate standardDate=""/>
-          <toDate/>
-        </dateRange>
-      </existDates>
-      <occupations>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-          <dateRange>
-            <fromDate standardDate="2009-11-13">November 13, 2009</fromDate>
-            <toDate/>
-          </dateRange>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-      </occupations>
-      <languageUsed>
-        <language languageCode="eng">English</language>
-        <script scriptCode="Latn">Latin</script>
-      </languageUsed>
+      <!-- Exist Dates -->
+      <!--
+            <existDates>
+            
+            </existDates>
+            -->
+      <!-- Gender/Gender Identity -->
       <localDescriptions localType="http://viaf.org/viaf/terms#gender">
         <localDescription localType="marcfield:375">
-          <term/>
-          <descriptiveNote>Gender certainty score, via Namsor: </descriptiveNote>
+          <term vocabularySource="NixonTapesIndex">male</term>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">-1.0</span>.</p>
+          </descriptiveNote>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescriptions localType="http://viaf.org/viaf/terms#AssociatedSubject">
-        <localDescription localType="marcfield:372$a">
+      <!-- Citizenship -->
+      <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+      <!-- Nationality -->
+      <!--
+            <localDescriptions localType="nixonTapes/#nationality">
+            
+            </localDescriptions>
+            -->
+      <!-- Languages Used -->
+      <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->
+      <!-- Racial Category -->
+      <localDescriptions localType="nixonTapes/#racialCategory">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="uscensus:race"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Ethnic/Cultural Heritage -->
+      <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
+        <localDescription localType="marcfield:373">
           <term vocabularySource="lcsh"/>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescription localType="http://viaf.org/viaf/terms#nationalityOfEntity">
-        <placeEntry vocabularySource="lcsh" countryCode="US">United States</placeEntry>
-      </localDescription>
-      <places localType="http://socialarchive.iath.virginia.edu/control/term#AssociatedPlace">
-        <place localType="marcfield:370$c">
-          <placeRole>associated country</placeRole>
-          <placeEntry vocabularySource="lcsh" countryCode="US" latitude="39.76" longitude="-98.5">United States</placeEntry>
-        </place>
-        <place localType="marcfield:370$a">
-          <placeRole>birthplace</placeRole>
-          <placeEntry vocabularySource="lcsh" latitude="" longitude=""/>
-          <date standardDate=""/>
-        </place>
-      </places>
+      <!-- Tribal Affiliations -->
+      <!-- Title or Honorific -->
+      <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Occupations -->
+      <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
+      <!-- Functions -->
+      <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+      <!-- Political Affiliations -->
+      <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+      <!-- Religious Affiliations -->
+      <!-- Topical Subjects -->
+      <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Associated Places -->
+      <places/>
       <biogHist>
-        <abstract> ...</abstract>
-        <p> ...</p>
+        <!-- Abstract -->
+        <abstract/>
+        <!-- Biography or Administrative History Note -->
+        <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
-        <citation/>
+        <!-- Insert citations -->
       </biogHist>
+      <!-- Insert structureOrGenealogy, if relevant -->
     </description>
     <relations>
-      <!-- Relationships to Corporate Bodies -->
-      <!-- Education -->
-      <!-- Employers -->
-      <!-- Relationships to Persons-->
-      <!-- Family Members -->
-      <!-- Professional Relationships -->
-      <!-- Relationship to Resources, creatorOf -->
-      <resourceRelation xlink:arcrole="participantIn" xlink:href="" xlink:role="archivalResource" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <relationEntry/>
+      <!-- CPF RELATIONS -->
+      <!-- Relationships to Persons: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000008" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Abrams, Creighton W., Jr. (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Gen. Creighton W. Abrams, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000010" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Abshire, David M.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and David M. Abshire conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000012" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Acker, Marjorie P.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Marjorie P. Acker conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000013" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Acree, Vernon D.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Vernon D. Acree conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003289" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Adams, C. Morris</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and C. Morris Adams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000019" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Agnew, Spiro T. (Vice President)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Vice President Spiro T. Agnew conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000028" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Albert, Carl B.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Carl B. Albert conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000040" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Allen, James B.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and James B. Allen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000048" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Allums, Betsy</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Betsy Allums conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000049" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Allums, Bill</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Bill Allums conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000063" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ambrose, Myles J.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Myles J. Ambrose conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000098" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ash, Roy L.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Roy L. Ash conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000117" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Baker, Howard H., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Howard H. Baker, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000165" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Beam, Jacob D.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Jacob D. Beam conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003271" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Beard, J. W.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and J. W. Beard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000187" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bell, George T.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and George T. Bell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003292" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bencini, William</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and William Bencini conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000229" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Blas&amp;#233;, A. J. ("Bob")</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and A. J. ("Bob") Blasé conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000230" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Blass, Stephen</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Stephen Blass conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000260" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bolling, Landrum</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Landrum Bolling conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000277" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Boyer, Marie A.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Marie A. Boyer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000280" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Braden, Jean</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Jean Braden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000285" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brandon, Henry</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Henry Brandon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000299" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brimmer, Andrew F.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Andrew F. Brimmer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000303" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brock, William</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and William Brock conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000320" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, Robert J.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Robert J. Brown conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000321" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, William N.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and William N. Brown conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000322" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Broyhill, Joel T.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Joel T. Broyhill conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000328" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Buchanan, John H., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John H. Buchanan, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000336" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bull, Stephen B.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Stephen B. Bull conversed <span localType="frequency">33</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000355" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Burns, Arthur F.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Arthur F. Burns conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000360" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bush, George H. W.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and George H. W. Bush conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000363" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Busterude, John</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John Busterude conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000370" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butterfield, Alexander P.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Alexander P. Butterfield conversed <span localType="frequency">10</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000418" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carruthers, William H.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and William H. Carruthers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000433" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cashen, Henry C., II</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Henry C. Cashen, II conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003272" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cheeseman, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Robert Cheeseman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000472" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chevager, Dorothy</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Dorothy Chevager conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000451" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chia-Kan, Yen</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Yen Chai-Kan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000475" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chong-pil, Kim</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Kim Chong-pil conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000484" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cisneros, Henry G.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Henry G. Cisneros conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000519" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cole, Albert L.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Albert L. Cole conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000530" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Colson, Charles W.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Charles W. Colson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000541" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Connally, John B.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John B. Connally conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000546" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Conte, Silvio O.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Silvio O. Conte conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003098" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cook, Peter W.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Peter W. Cook conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000557" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cooper, John Sherman</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John Sherman Cooper conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000573" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cox, Edward R. F.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Edward R. F. Cox conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000600" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">D'Arcy, John P.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John P. D'Arcy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000594" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Daane, J. Dewey</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and J. Dewey Daane conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000603" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Davenport, W. R.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and W. R. Davenport conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003088" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Derzis, Peter N.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Peter N. Derzis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000647" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Devine, Samuel L.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Samuel L. Devine conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000651" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dewey, Arthur E.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Arthur E. Dewey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003097" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dey, Robert A.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Robert A. Dey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000674" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Domenici, Claire</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Claire Domenici conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000675" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Domenici, David</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and David Domenici conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000676" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Domenici, Helen</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Helen Domenici conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000677" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Domenici, Lisa</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Lisa Domenici conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000679" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Domenici, Nancy [Burk]</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Nancy [Burk] (Burk) Domenici conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000678" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Domenici, Nanette</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Nanette Domenici conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000680" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Domenici, Nella</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Nella Domenici conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000681" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Domenici, Paula</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Paula Domenici conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000683" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Domenici, Peter V.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Peter V. Domenici conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000682" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Domenici, Peter, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Peter Domenici, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000684" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dominick, Peter H.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Peter H. Dominick conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000728" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dwinell, Elizabeth (Cushman)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Elizabeth (Cushman) Dwinell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000729" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dwinell, Lane</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Lane Dwinell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000736" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Eastland, James O.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and James O. Eastland conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000747" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Edwards, Willard</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Willard Edwards conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003068" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Edwards, Willard (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mrs. Willard Edwards conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000752" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ehrlichman, John D.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John D. Ehrlichman conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000786" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Esembel, Melih</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Melih Esembel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000803" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fairbanks, Richard M., III</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Richard M. Fairbanks, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000833" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ferry, Hugh K.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Hugh K. Ferry conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000856" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fitzsimmons, Frank E.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Frank E. Fitzsimmons conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000857" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Flanigan, Peter M.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Peter M. Flanigan conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000856" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Flanigan, Peter M.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Frank E. Fitzsimmons conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000874" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ford, Antoinette</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Antoinette Ford conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000875" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ford, Gerald R.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Gerald R. Ford conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000882" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fox, Alonzo</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Alonzo Fox conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000887" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Frank, John N.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John N. Frank conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003377" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Frank, John N. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mrs. John N. Frank conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000886" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Frank, Joniece</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Joniece Frank conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000910" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Friedersdorf, Max L.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Max L. Friedersdorf conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000911" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Friedman, Milton</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Milton Friedman conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000914" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Froehlke, Robert F.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Robert F. Froehlke conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000919" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Funk, Paul E.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Paul E. Funk conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000925" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gage, Stephen J.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Stephen J. Gage conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000929" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Galbreath, Daniel M.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Daniel M. Galbreath conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000935" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gannon, Franklin R.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Franklin R. Gannon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000941" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Garment, Leonard</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Leonard Garment conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000953" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">George, Phyllis A.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Phyllis A. George conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000969" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gifford, William L.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and William L. Gifford conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000971" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gilbert, David</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and David Gilbert conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000980" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Giusti, Dave</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Dave Giusti conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000990" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Golden, William L. (Lt. Col.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Lt. Col. William L. Golden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001000" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Goode, Mark I.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mark I. Goode conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001034" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Griffin, C. D. (Adm.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Adm. C. D. Griffin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001042" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Grinalds, John S.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John S. Grinalds conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001055" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gubser, Charles S.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Charles S. Gubser conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001069" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Alexander M., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Alexander M. Haig, Jr. conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001070" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Alexander M., Sr.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Alexander M. Haig, Sr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001071" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Alexander M., Sr. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mrs. Alexander M. Haig, Sr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001073" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Barbara</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Barbara Haig conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001074" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Brian</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Brian Haig conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001075" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Frank</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Frank Haig conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001076" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Patricia</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Patricia Haig conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001082" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haldeman, H. R. ("Bob")</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and H. R. ("Bob") Haldeman conversed <span localType="frequency">11</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001105" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Han, Carl</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Carl Han conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001126" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harkness, Richard L.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Richard L. Harkness conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003291" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hawkins, John</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John Hawkins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001178" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Helms, Jesse A.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Jesse A. Helms conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001187" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Henderson, M. A.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and M. A. Henderson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003294" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Herring, Harold</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Harold Herring conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001227" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hitchcock, Wilfred S. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mrs. Wilfred S. Hitchcock conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001231" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hodgson, James D.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and James D. Hodgson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001246" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Holland, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Robert Holland conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001263" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hope, Lelsie T. ("Bob")</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Lelsie T. ("Bob") Hope conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001273" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Houdek, Robert G.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Robert G. Houdek conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001278" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hovde, Donald I.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Donald I. Hovde conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001289" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Huebner, Lee W.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Lee W. Huebner conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001302" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Huntsman, Jon M.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Jon M. Huntsman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001341" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">James, E. Pendleton</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and E. Pendleton James conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001379" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, Wallace H.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Wallace H. Johnson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001384" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnston, Hunter</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Hunter Johnston conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001385" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnston, J. Bennett, III</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and J. Bennett Johnston, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003395" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnston, J. Bennett, III (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mrs. J. Bennett Johnston, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001386" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnston, J. Bennett, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and J. Bennett Johnston, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003396" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnston, J. Bennett, Jr. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mrs. J. Bennett Johnston, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001388" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnston, Mary</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mary Johnston conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001389" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnston, Sally</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Sally Johnston conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001403" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jordan, Vernon E., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Vernon E. Jordan, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003255" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kelley, Clarence M.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Clarence M. Kelley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001453" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kendall, Glen R.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Glen R. Kendall conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001457" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, David M.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and David M. Kennedy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001459" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, Richard T. (Col.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Col. Richard T. Kennedy conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001460" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kenneth C. Rietz</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Kenneth C. Rietz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001481" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kim, Dong Jo</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Dong Jo Kim conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001494" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kissinger, Henry A.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Henry A. Kissinger conversed <span localType="frequency">13</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001497" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Klein, Herbert G.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Herbert G. Klein conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001504" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kleppe, Thomas S.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Thomas S. Kleppe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001518" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Korologos, Thomas C.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Thomas C. Korologos conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001529" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Krogh, Egil ("Bud"), Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Egil ("Bud") Krogh, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001545" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Laird, Melvin R.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Melvin R. Laird conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001548" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lam, Tran Van</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Tran Van Lam conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001593" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lee, Jill</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Jill Lee conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001595" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lee, Robert D. ("Bob")</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Robert D. ("Bob") Lee conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001599" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Leonard, William A., II</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and William A. Leonard, II conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001609" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lewine, Frances</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Frances Lewine conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001620" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Linkletter, Arthur F. ("Art")</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Arthur F. ("Art") Linkletter conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001669" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lynch, John M. ("Jack")</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John M. ("Jack") Lynch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001674" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lynn, James T.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and James T. Lynn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003406" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lynn, James T. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mrs. James T. Lynn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001698" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Maisel, Sherman J.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Sherman J. Maisel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001699" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Malek, Frederic V.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Frederic V. Malek conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001701" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Malik, Adam</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Adam Malik conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001708" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Manesiotis, Louis G.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Louis G. Manesiotis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001711" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Manning, Gordon</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Gordon Manning conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001712" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mansfield, Michael J. ("Mike")</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Michael J. ("Mike") Mansfield conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003293" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Martin, Barbara</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Barbara Martin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001753" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Matak, Sisowath Sirik</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Sisowath Sirik Matak conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001762" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mattis, Joseph F.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Joseph F. Mattis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001764" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Maurice, John M.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John M. Maurice conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003290" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Maxwell, Richard</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Richard Maxwell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001773" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McCann, Terence D.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Terence D. McCann conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001791" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McCowan, John</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John McCowan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001804" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McFarlane, Rogert C.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Rogert C. McFarlane conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003269" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McMahan, Ronald</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Ronald McMahan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001831" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McMahon, William</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and William McMahon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001860" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Meredith, Edward B.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Edward B. Meredith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003414" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Meredith, Edward B. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mrs. Edward B. Meredith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001861" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Meredith, George (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mrs. George Meredith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001896" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mitchell, George W.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and George W. Mitchell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001897" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mitchell, John N.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John N. Mitchell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003284" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mnich, William</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and William Mnich conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003275" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moon, Kitty</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Kitty Moon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003276" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moore, Horace N.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Horace N. Moore conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003277" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moore, Horace N. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mrs. Horace N. Moore conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001917" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moore, Richard A.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Richard A. Moore conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001919" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moorer, Thomas H. (Adm.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Adm. Thomas H. Moorer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001935" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morton, Rogers C. B.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Rogers C. B. Morton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001954" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Murphy, Bob</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Bob Murphy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003295" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Murrow, Coolidge C.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Coolidge C. Murrow conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001970" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nakis, Sam</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Sam Nakis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001994" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nidecker, John E.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John E. Nidecker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and President Richard M. Nixon conversed <span localType="frequency">72</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002022" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Noling, Michael S.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Michael S. Noling conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002034" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nunn, Louie B.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Louie B. Nunn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002070" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Neill, Thomas P. ("Tip"), Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Thomas P. ("Tip") O'Neill, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002127" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Percy, Charles H.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Charles H. Percy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002136" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Debra</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Debra Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002137" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Eric</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Eric Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003089" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Herbert A.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Herbert A. Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002139" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Herbert A. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mrs. Herbert A. Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002140" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Holly</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Holly Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002142" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Jeffrey</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Jeffrey Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002141" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Jim</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Jim Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002144" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Michael</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Michael Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002146" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Peter G.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Peter G. Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002154" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Phuong, Tran Kim</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Tran Kim Phuong conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002164" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pless, Norman</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Norman Pless conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002171" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pontius, H. Jackson</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and H. Jackson Pontius conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002173" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Porson, Sophia K.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Sophia K. Porson conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002176" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Porter, William J.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and William J. Porter conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002199" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rabin, Yitzhak</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Yitzhak Rabin conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002219" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rather, Dan</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Dan Rather conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002234" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Reece, Deanell</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Deanell Reece conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003273" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Reese, Jack</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Jack Reese conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002246" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Reid, Edward T.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Edward T. Reid conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002250" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Reilly, Gerald</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Gerald Reilly conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002266" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Richardson, Donald W.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Donald W. Richardson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002267" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Richardson, Elliot L.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Elliot L. Richardson conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002291" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Robb, M. Jean</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and M. Jean Robb conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002297" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Robertson, J. L.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and J. L. Robertson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002309" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rodgers, Donald F.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Donald F. Rodgers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002316" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rogers, William P.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and William P. Rogers conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002324" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Romney, George W.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and George W. Romney conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002326" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Romulo, Carlos P.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Carlos P. Romulo conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002339" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rosenthal, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Robert Rosenthal conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002381" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sanchez, Manolo</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Manolo Sanchez conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002400" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schaefer, Laurie Lee</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Laurie Lee Schaefer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002439" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schuyler, Philip</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Philip Schuyler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002447" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scott, Hugh</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Hugh Scott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002452" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scott, Stanley S.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Stanley S. Scott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002456" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scowcroft, Brent G. (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Gen. Brent G. Scowcroft conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002469" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Semiatin, Morris</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Morris Semiatin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002471" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Seneca, Martin E., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Martin E. Seneca, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002490" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shazar, S. Zalman</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and S. Zalman Shazar conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002491" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sheehan, Edward J.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Edward J. Sheehan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002492" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sheehan, Eugene T.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Eugene T. Sheehan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002497" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sheehan, James E. (Lt. Cmdr.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Lt. Cmdr. James E. Sheehan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002493" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sheehan, John</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John Sheehan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002496" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sheehan, Kathleen</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Kathleen Sheehan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002494" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sheehan, Kelly</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Kelly Sheehan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002495" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sheehan, Kevin</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Kevin Sheehan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002499" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shen, James C. H.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and James C. H. Shen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002517" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shultz, George P.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and George P. Shultz conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002519" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shumway, DeVan L.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and DeVan L. Shumway conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002526" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Siebels, George</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and George G. Siebels, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002536" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Simmonds, Marie A.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Marie A. Simmonds conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002561" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, Geneva</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Geneva Smith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002560" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, Gerard C.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Gerard C. Smith conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002590" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sonnenfeldt, Helmut ("Hal")</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Helmut ("Hal") Sonnenfeldt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002600" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sparkman, John J.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John J. Sparkman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002609" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Spirtos, Michael N.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Michael N. Spirtos conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002615" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stafford, Robert T.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Robert T. Stafford conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002619" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stapp, Curtis C.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Curtis C. Stapp conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003440" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stapp, Curtis C. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mrs. Curtis C. Stapp conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002620" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stapp, Donna</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Donna Stapp conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002631" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stein, Herbert</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Herbert Stein conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003099" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stephenson, Richard E.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Richard E. Stephenson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002642" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stevens, Elton</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Elton Stevens conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002644" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stevens, Ted</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Ted Stevens conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002664" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sullivan, Henry</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Henry Sullivan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002676" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sweitzer, Brandon W.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Brandon W. Sweitzer conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002684" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Taft, Robert A., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Robert A. Taft, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002703" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tentschler, Frederick</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Frederick Tentschler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002709" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Thomas, Helen A.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Helen A. Thomas conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002732" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Timmons, William E.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and William E. Timmons conversed <span localType="frequency">10</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002754" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tower, John G.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John G. Tower conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002758" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Train, Russell E.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Russell E. Train conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002771" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Trueblood, D. Elton</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and D. Elton Trueblood conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002772" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tsaffaras, William P.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and William P. Tsaffaras conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002774" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tucker, Fred C., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Fred C. Tucker, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002825" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Volpe, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John A. Volpe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002828" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Voskly, George (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mrs. George Voskly conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003270" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Waldon, C. E.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and C. E. Waldon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002843" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walker, Ronald H.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Ronald H. Walker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002867" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Warren, Gerald L.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Gerald L. Warren conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002897" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wei-ping, Tsai</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Tsai Wei-ping conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002916" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White, Theodore H.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Theodore H. White conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002941" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Willard, Beatrice ("Bettie")</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Beatrice ("Bettie") Willard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002948" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Williams, John C. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mrs. John C. Williams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002952" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Williams, Lawrence G.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Lawrence G. Williams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003456" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Williams, Lawrence G. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Mrs. Lawrence G. Williams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002953" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Williams, Maurice J.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Maurice J. Williams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002956" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Williams, Zachery</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Zachery Williams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002957" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Williamson, John C.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and John C. Williamson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002987" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Woods, Rose Mary</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Rose Mary Woods conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003274" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wright, Alan</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Alan Wright conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003002" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wussler, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Robert Wussler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003016" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Yong-sik, Kim</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Kim Yong-sik conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003018" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Young, David R., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and David R. Young, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003037" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Zerilli-Marimo, Guido</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Guido Zerilli-Marimo conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003038" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ziegler, Ronald L.</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and Ronald L. Ziegler conversed <span localType="frequency">14</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002795" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">[Unknown person(s)]</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and [Unknown person(s)] conversed <span localType="frequency">11</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- Relationships to Families -->
+      <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002919" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House operator</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and representatives of the White House operator conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002920" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House photographer</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins and representatives of the White House photographer conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- RESOURCE RELATIONS -->
+      <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-006-089">
+        <relationEntry>White House Tapes: Conversation 006-089</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 006-089 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
-      <!-- Relationship to Resources, subjectOf -->
-      <resourceRelation xlink:arcrole="subjectOf" xlink:role="archivalResource" xlink:type="simple" xlink:href="" lastDateTimeVerified="">
-        <relationEntry/>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-068-008">
+        <relationEntry>White House Tapes: Conversation 068-008</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 068-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-285-032">
+        <relationEntry>White House Tapes: Conversation 285-032</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 285-032 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-294-025">
+        <relationEntry>White House Tapes: Conversation 294-025</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 294-025 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-356-001">
+        <relationEntry>White House Tapes: Conversation 356-001</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 356-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-394-019">
+        <relationEntry>White House Tapes: Conversation 394-019</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 394-019 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-397-020">
+        <relationEntry>White House Tapes: Conversation 397-020</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 397-020 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-407-026">
+        <relationEntry>White House Tapes: Conversation 407-026</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 407-026 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-460-023">
+        <relationEntry>White House Tapes: Conversation 460-023</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 460-023 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-487-011">
+        <relationEntry>White House Tapes: Conversation 487-011</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 487-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-491-031">
+        <relationEntry>White House Tapes: Conversation 491-031</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 491-031 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-495-014">
+        <relationEntry>White House Tapes: Conversation 495-014</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 495-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-499-006">
+        <relationEntry>White House Tapes: Conversation 499-006</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 499-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-499-021">
+        <relationEntry>White House Tapes: Conversation 499-021</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 499-021 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-499-022">
+        <relationEntry>White House Tapes: Conversation 499-022</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 499-022 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-500-016">
+        <relationEntry>White House Tapes: Conversation 500-016</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 500-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-500-017">
+        <relationEntry>White House Tapes: Conversation 500-017</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 500-017 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-514-008">
+        <relationEntry>White House Tapes: Conversation 514-008</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 514-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-516-002">
+        <relationEntry>White House Tapes: Conversation 516-002</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 516-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-517-010">
+        <relationEntry>White House Tapes: Conversation 517-010</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 517-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-518-009">
+        <relationEntry>White House Tapes: Conversation 518-009</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 518-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-520-003">
+        <relationEntry>White House Tapes: Conversation 520-003</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 520-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-522-005">
+        <relationEntry>White House Tapes: Conversation 522-005</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 522-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-529-021">
+        <relationEntry>White House Tapes: Conversation 529-021</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 529-021 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-532-004">
+        <relationEntry>White House Tapes: Conversation 532-004</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 532-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-532-027">
+        <relationEntry>White House Tapes: Conversation 532-027</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 532-027 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-535-006">
+        <relationEntry>White House Tapes: Conversation 535-006</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 535-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-535-007">
+        <relationEntry>White House Tapes: Conversation 535-007</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 535-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-535-009">
+        <relationEntry>White House Tapes: Conversation 535-009</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 535-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-555-005">
+        <relationEntry>White House Tapes: Conversation 555-005</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 555-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-559-008">
+        <relationEntry>White House Tapes: Conversation 559-008</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 559-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-574-003">
+        <relationEntry>White House Tapes: Conversation 574-003</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 574-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-576-010">
+        <relationEntry>White House Tapes: Conversation 576-010</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 576-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-576-013">
+        <relationEntry>White House Tapes: Conversation 576-013</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 576-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-578-005">
+        <relationEntry>White House Tapes: Conversation 578-005</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 578-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-611-005">
+        <relationEntry>White House Tapes: Conversation 611-005</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 611-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-617-018">
+        <relationEntry>White House Tapes: Conversation 617-018</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 617-018 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-642-001">
+        <relationEntry>White House Tapes: Conversation 642-001</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 642-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-643-001">
+        <relationEntry>White House Tapes: Conversation 643-001</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 643-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-643-002">
+        <relationEntry>White House Tapes: Conversation 643-002</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 643-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-647-012">
+        <relationEntry>White House Tapes: Conversation 647-012</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 647-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-656-027">
+        <relationEntry>White House Tapes: Conversation 656-027</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 656-027 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-659-020">
+        <relationEntry>White House Tapes: Conversation 659-020</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 659-020 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-675-013">
+        <relationEntry>White House Tapes: Conversation 675-013</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 675-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-698-002">
+        <relationEntry>White House Tapes: Conversation 698-002</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 698-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-705-009">
+        <relationEntry>White House Tapes: Conversation 705-009</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 705-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-714-021">
+        <relationEntry>White House Tapes: Conversation 714-021</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 714-021 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-722-007">
+        <relationEntry>White House Tapes: Conversation 722-007</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 722-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-751-004">
+        <relationEntry>White House Tapes: Conversation 751-004</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 751-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-772-004">
+        <relationEntry>White House Tapes: Conversation 772-004</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 772-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-773-009">
+        <relationEntry>White House Tapes: Conversation 773-009</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 773-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-830-002">
+        <relationEntry>White House Tapes: Conversation 830-002</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 830-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-831-018">
+        <relationEntry>White House Tapes: Conversation 831-018</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 831-018 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-831-020">
+        <relationEntry>White House Tapes: Conversation 831-020</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 831-020 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-832-001">
+        <relationEntry>White House Tapes: Conversation 832-001</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 832-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-832-004">
+        <relationEntry>White House Tapes: Conversation 832-004</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 832-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-833-013">
+        <relationEntry>White House Tapes: Conversation 833-013</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 833-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-833-020">
+        <relationEntry>White House Tapes: Conversation 833-020</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 833-020 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-834-006">
+        <relationEntry>White House Tapes: Conversation 834-006</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 834-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-834-010">
+        <relationEntry>White House Tapes: Conversation 834-010</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 834-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-834-011">
+        <relationEntry>White House Tapes: Conversation 834-011</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 834-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-834-013">
+        <relationEntry>White House Tapes: Conversation 834-013</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 834-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-834-016">
+        <relationEntry>White House Tapes: Conversation 834-016</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 834-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-836-008">
+        <relationEntry>White House Tapes: Conversation 836-008</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 836-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-836-009">
+        <relationEntry>White House Tapes: Conversation 836-009</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 836-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-838-019">
+        <relationEntry>White House Tapes: Conversation 838-019</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 838-019 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-841-013">
+        <relationEntry>White House Tapes: Conversation 841-013</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 841-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-842-008">
+        <relationEntry>White House Tapes: Conversation 842-008</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 842-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-843-014">
+        <relationEntry>White House Tapes: Conversation 843-014</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 843-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-844-003">
+        <relationEntry>White House Tapes: Conversation 844-003</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 844-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-845-008">
+        <relationEntry>White House Tapes: Conversation 845-008</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 845-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-881-005">
+        <relationEntry>White House Tapes: Conversation 881-005</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 881-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-911-018">
+        <relationEntry>White House Tapes: Conversation 911-018</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 911-018 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-911-021">
+        <relationEntry>White House Tapes: Conversation 911-021</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 911-021 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-911-027">
+        <relationEntry>White House Tapes: Conversation 911-027</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 911-027 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-933-005">
+        <relationEntry>White House Tapes: Conversation 933-005</relationEntry>
+        <descriptiveNote>
+          <p>Oliver F. ("Ollie") Atkins participated in Conversation 933-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+      <!-- Relationship to Bibliographic Works, subjectOf -->
     </relations>
   </cpfDescription>
 </eac-cpf>

@@ -1,9 +1,6 @@
-<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4">
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
   <control>
-    <recordId/>
-    <!-- <otherRecordId localType="http://catalog.archives.gov/id/"></otherRecordId> -->
-    <!-- <otherRecordId localType="http://viaf.org/viaf/terms#viafID"></otherRecordId> -->
-    <otherRecordId localType="http://www.loc.gov/standards/mads/rdf/v1.html#Authority"/>
+    <recordId>37-wht-eac-00000187</recordId>
     <maintenanceStatus>new</maintenanceStatus>
     <maintenanceAgency>
       <agencyCode>US-DNA</agencyCode>
@@ -16,15 +13,15 @@
     <!-- Convention Declarations for Content Standards -->
     <conventionDeclaration>
       <abbreviation>RDA</abbreviation>
-      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-19">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>USNARA-LCDRG</abbreviation>
-      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-19">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>DACS-2nd</abbreviation>
-      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2015-03-18">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>NixonTapesIndex</abbreviation>
@@ -43,6 +40,10 @@
       <abbreviation>marc:relators</abbreviation>
       <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
     </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>uscensus:race</abbreviation>
+      <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
+    </conventionDeclaration>
     <!-- Convention Declarations for Style Guides -->
     <conventionDeclaration>
       <abbreviation>CMOS-16th</abbreviation>
@@ -51,10 +52,10 @@
     <maintenanceHistory>
       <maintenanceEvent>
         <eventType>created</eventType>
-        <eventDateTime>2016-03-01T01:02:57.824-05:00</eventDateTime>
+        <eventDateTime>2016-03-29T16:05:09.994-04:00</eventDateTime>
         <agentType>machine</agentType>
         <agent>base-to-eac.xq</agent>
-        <eventDescription>Converted base/source data to EAC-CPF through XQuery script written by Amanda T. Ross of the United States National Archives and Records Administration.</eventDescription>
+        <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
       <!--
             <maintenanceEvent>
@@ -62,161 +63,1238 @@
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent> 
             -->
     </maintenanceHistory>
-    <sources>
-      <source xlink:href="https://catalog.archives.gov" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>National Archives and Records Administration Authority List</sourceEntry>
-      </source>
-             --&gt;
-            <source xlink:href="http://id.loc.gov/authorities/names" xlink:type="simple" lastDateTimeVerified="[dateTime]">
-        <sourceEntry>Library of Congress Name Authority File</sourceEntry>
-      </source>
-      <source xlink:href="http://viaf.org" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>Virtual International Authority File</sourceEntry>
-      </source>
-    </sources>
+    <!--         
+        <sources>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
+            </source>
+        </sources>
+        -->
   </control>
   <cpfDescription>
     <identity>
       <entityType>person</entityType>
-
-            if ($entityType eq "person")
-              then
-              
-            <nameEntry localType="marcfield:100">
-        <part localType="marcfield:100$a"/>
-        <part localType="marcfield:100$d"/>
-        <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
-      </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="familyName"/>
-        <part localType="givenName"/>
-        <part localType="nickname"/>
-        <part localType="maiden name"/>
-        <part localtype="generational marker"/>
-        <part localType="military rank or official title"/>
-        <part localType="Mrs."/>
+      <!-- Authorized Name Entries -->
+      <!-- Nixon Tapes Index -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Bell, George T.</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-            
-
-      else
-      <nameEntry localType="marcfield:110">
-        <part localType="marcfield:110$a"/>
-        <part localType="marcfield:110$d"/>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a"/>
+        <part localType="marcfield:100$b"/>
+        <part localType="marcfield:100$c"/>
+        <part localType="marcfield:100$q"/>
+        <part localType="marcfield:100$d"/>
         <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
+        <!-- 
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
       </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="directOrder"/>
+      <!-- Variant Name Entries -->
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">George T. Bell</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Bell</part>
+        <part localType="givenName">George T.</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
+      <!-- Insert Variant Names from LCNAF/LCDRG -->
     </identity>
     <description>
-      <existDates localType="marcfield:046">
-        <dateRange>
-          <fromDate standardDate=""/>
-          <toDate/>
-        </dateRange>
-      </existDates>
-      <occupations>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-          <dateRange>
-            <fromDate standardDate="2009-11-13">November 13, 2009</fromDate>
-            <toDate/>
-          </dateRange>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-      </occupations>
-      <languageUsed>
-        <language languageCode="eng">English</language>
-        <script scriptCode="Latn">Latin</script>
-      </languageUsed>
+      <!-- Exist Dates -->
+      <!--
+            <existDates>
+            
+            </existDates>
+            -->
+      <!-- Gender/Gender Identity -->
       <localDescriptions localType="http://viaf.org/viaf/terms#gender">
         <localDescription localType="marcfield:375">
-          <term/>
-          <descriptiveNote>Gender certainty score, via Namsor: </descriptiveNote>
+          <term vocabularySource="NixonTapesIndex">male</term>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">-1.0</span>.</p>
+          </descriptiveNote>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescriptions localType="http://viaf.org/viaf/terms#AssociatedSubject">
-        <localDescription localType="marcfield:372$a">
+      <!-- Citizenship -->
+      <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+      <!-- Nationality -->
+      <!--
+            <localDescriptions localType="nixonTapes/#nationality">
+            
+            </localDescriptions>
+            -->
+      <!-- Languages Used -->
+      <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->
+      <!-- Racial Category -->
+      <localDescriptions localType="nixonTapes/#racialCategory">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="uscensus:race"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Ethnic/Cultural Heritage -->
+      <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
+        <localDescription localType="marcfield:373">
           <term vocabularySource="lcsh"/>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescription localType="http://viaf.org/viaf/terms#nationalityOfEntity">
-        <placeEntry vocabularySource="lcsh" countryCode="US">United States</placeEntry>
-      </localDescription>
-      <places localType="http://socialarchive.iath.virginia.edu/control/term#AssociatedPlace">
-        <place localType="marcfield:370$c">
-          <placeRole>associated country</placeRole>
-          <placeEntry vocabularySource="lcsh" countryCode="US" latitude="39.76" longitude="-98.5">United States</placeEntry>
-        </place>
-        <place localType="marcfield:370$a">
-          <placeRole>birthplace</placeRole>
-          <placeEntry vocabularySource="lcsh" latitude="" longitude=""/>
-          <date standardDate=""/>
-        </place>
-      </places>
+      <!-- Tribal Affiliations -->
+      <!-- Title or Honorific -->
+      <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Occupations -->
+      <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
+      <!-- Functions -->
+      <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+      <!-- Political Affiliations -->
+      <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+      <!-- Religious Affiliations -->
+      <!-- Topical Subjects -->
+      <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Associated Places -->
+      <places/>
       <biogHist>
-        <abstract> ...</abstract>
-        <p> ...</p>
+        <!-- Abstract -->
+        <abstract/>
+        <!-- Biography or Administrative History Note -->
+        <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
-        <citation/>
+        <!-- Insert citations -->
       </biogHist>
+      <!-- Insert structureOrGenealogy, if relevant -->
     </description>
     <relations>
-      <!-- Relationships to Corporate Bodies -->
-      <!-- Education -->
-      <!-- Employers -->
-      <!-- Relationships to Persons-->
-      <!-- Family Members -->
-      <!-- Professional Relationships -->
-      <!-- Relationship to Resources, creatorOf -->
-      <resourceRelation xlink:arcrole="participantIn" xlink:href="" xlink:role="archivalResource" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <relationEntry/>
+      <!-- CPF RELATIONS -->
+      <!-- Relationships to Persons: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000057" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Amabali, Louis</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Louis Amabali conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000087" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Arevala, Tommy (Lt.)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Lt. Tommy Arevala conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000101" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ast, Raymond</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Raymond Ast conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000103" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Atkins, Oliver F. ("Ollie")</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Oliver F. ("Ollie") Atkins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003131" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Attebery, Joe G.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Joe G. Attebery conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000104" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Attebery, Joe G. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Mrs. Joe G. Attebery conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000105" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Au, Ronald G. S.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Ronald G. S. Au conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000137" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Barhydt, Emily T.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Emily T. Barhydt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000228" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bland, Richard E.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Richard E. Bland conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000239" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Blueth, Louis</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Louis Blueth conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000287" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Breitholz, Ernst G.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Ernst G. Breitholz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000294" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brickfield, Cyril</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Cyril Brickfield conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000334" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bugbee, Perce</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Perce Bugbee conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000336" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bull, Stephen B.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Stephen B. Bull conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000427" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Casey, James</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and James Casey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000436" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Castaldo, Crensenzi W.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Crensenzi W. Castaldo conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000449" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chace, Carleton J.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Carleton J. Chace conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003593" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chamberlain, Charles J.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Charles J. Chamberlain conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000530" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Colson, Charles W.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Charles W. Colson conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003151" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Conley, Dennis</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Dennis Conley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000538" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Conley, Dennis (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Mrs. Dennis Conley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000547" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cook, Bonnie</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Bonnie Cook conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003591" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Coughlin, C. J.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and C. J. Coughlin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000580" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Crippen, Dorothy</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Dorothy Crippen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000609" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Davis, Gertrude G.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Gertrude G. Davis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000612" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Davis, Jeanne Wilson</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Jeanne Wilson Davis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000630" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">DeLuca, Frank</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Frank DeLuca conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000635" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dennis, C. L.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and C. L. Dennis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003088" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Derzis, Peter N.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Peter N. Derzis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000654" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">DiChiara, Aldo F.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Aldo F. DiChiara conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000716" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Duke, Dorothy S.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Dorothy S. Duke conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000720" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dunn, Bradley P.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Bradley P. Dunn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000740" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Eckert, Ernst R. G.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Ernst R. G. Eckert conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000817" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fassen, Fred</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Fred Fassen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000835" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fichtner, Charles C.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Charles C. Fichtner conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000843" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Finch, Robert H.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Robert H. Finch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000849" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Firestone, Harvey</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Harvey Firestone conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000861" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Flemming, Arthur S.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Arthur S. Flemming conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000903" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Freeman, Roger M.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Roger M. Freeman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000940" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gardner, Ted R.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Ted R. Gardner conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003379" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gardner, Ted R. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Mrs. Ted R. Gardner conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000972" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gilbert, George E.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and George E. Gilbert conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000976" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gillingham, Robert C.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Robert C. Gillingham conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003589" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gladney, Frank T.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Frank T. Gladney conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001023" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Graybill, Ben W.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Ben W. Graybill conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001053" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gualtier, Fred</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Fred Gualtier conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001057" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gunderson, Barbara B.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Barbara B. Gunderson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001078" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haimbach, Mary</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Mary Haimbach conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001102" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hampton, Robert E.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Robert E. Hampton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001113" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hannan, James M.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and James M. Hannan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001174" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hechtman, Robert</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Robert Hechtman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001189" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hendler, H. Benjamin</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and H. Benjamin Hendler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001210" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hicks, Florence Johnson</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Florence Johnson Hicks conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001221" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hillyard, Ray</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Ray Hillyard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001228" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hitt, Patricia R.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Patricia R. Hitt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001231" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hodgson, James D.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and James D. Hodgson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001236" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hoffman, Oswald</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Oswald Hoffman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001243" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hole, Albert E.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Albert E. Hole conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001289" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Huebner, Lee W.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Lee W. Huebner conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001308" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hurley, John F.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and John F. Hurley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001323" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jablonsky, John L.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and John L. Jablonsky conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001365" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, Eva M.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Eva M. Johnson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001366" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, Glenn R. (Col.)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Col. Glenn R. Johnson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001508" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Klinger, Keith E.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Keith E. Klinger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001518" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Korologos, Thomas C.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Thomas C. Korologos conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003594" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Krause, Anthony L.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Anthony L. Krause conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001525" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Krieger, Florence</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Florence Krieger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001574" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">LaSpada, Carmella</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Carmella LaSpada conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001602" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">LeTendre, Andre</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Andre LeTendre conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001635" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Long, Leslie O.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Leslie O. Long conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003563" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Luna, Charles</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Charles Luna conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001667" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Luzak, Karen</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Karen Luzak conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001690" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Magee, David M.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and David M. Magee conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001708" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Manesiotis, Louis G.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Louis G. Manesiotis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001733" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Marshall, J. Paull</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and J. Paull Marshall conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001738" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Martin, John B.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and John B. Martin conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001754" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mathias, A. O.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and A. O. Mathias conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001780" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McClennan, W. Howard</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and W. Howard McClennan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003590" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McNamara, John J.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and John J. McNamara conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001844" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Meadows, Ed W.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Ed W. Meadows conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003411" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Meadows, Ed W. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Mrs. Ed W. Meadows conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001863" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Merrill, Edward C., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Edward C. Merrill, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001882" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Miller, Luther L.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Luther L. Miller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001912" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moody, Juanita Morris</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Juanita Morris Moody conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001917" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moore, Richard A.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Richard A. Moore conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001924" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morgan, Essie Davis</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Essie Davis Morgan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001932" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morris, Thomas E.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Thomas E. Morris conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001946" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mullen, Robert R.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Robert R. Mullen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001970" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nakis, Sam</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Sam Nakis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001972" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nash, Bernard E.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Bernard E. Nash conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001989" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Newton, Michael</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Michael Newton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001990" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Newton, Richard (Lt.)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Richard Newton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003418" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Newton, Richard (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Mrs. Richard Newton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and President Richard M. Nixon conversed <span localType="frequency">16</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003598" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Brien, J. W.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and J. W. O'Brien conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002047" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Connor, F. E.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and F. E. O'Connor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002050" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Donnell, Emmett</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Emmett O'Donnell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002066" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Neill, Chris J.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Chris J. O'Neill conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003596" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Otto, A. T., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and A. T. Otto, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002100" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Park, Judith E.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Judith E. Park conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003597" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pfenning, Charles R.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Charles R. Pfenning conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002151" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Phillips, Anne W. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Dr. Anne W. Phillips conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002175" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Porter, Edgar B.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Edgar B. Porter conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002184" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Powell, William J.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and William J. Powell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002185" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pratt, Foster J.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Foster J. Pratt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002190" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Price, Raymond K., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Raymond K. Price, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002194" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Proven, John A.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and John A. Proven conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003075" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rapp, Rita M.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Rita M. Rapp conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002226" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ray, Willie C.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Willie C. Ray conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002255" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rensselaer, Bernard S. Van</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Bernard S. Van Rensselaer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002337" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rosenblatt, Joan Raup</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Joan Raup Rosenblatt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002384" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sandberg, J. Cecil</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and J. Cecil Sandberg conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002435" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schuettner, Arthur</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Arthur Schuettner conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002465" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Segrest, Susan</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Susan Segrest conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002551" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Slade, Katherine G.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Katherine G. Slade conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003599" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, Richard W.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Richard W. Smith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002595" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Spain, Jayne B.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Jayne B. Spain conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002601" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sparks, Arthur L.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Arthur L. Sparks conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003439" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sparks, Arthur L. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Mrs. Arthur L. Sparks conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002609" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Spirtos, Michael N.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Michael N. Spirtos conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002645" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stevenson, Cecil W.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Cecil W. Stevenson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002649" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stone, James W.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and James W. Stone conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003443" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stone, James W. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Mrs. James W. Stone conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002681" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Switzer, Mary</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Mary Switzer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002692" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tarr, Clarence M.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Clarence M. Tarr conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003444" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tarr, Clarence M. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Mrs. Clarence M. Tarr conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002707" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Thomas, Charles</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Charles Thomas conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002729" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tiller, H. A.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and H. A. Tiller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002730" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tilly, Lola</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Lola Tilly conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002734" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tipton, Howard D.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Howard D. Tipton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003595" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tipton, J. R.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and J. R. Tipton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002772" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tsaffaras, William P.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and William P. Tsaffaras conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002781" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Turrisi, Charles J.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Charles J. Turrisi conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003445" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Turrisi, Charles J. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Mrs. Charles J. Turrisi conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002793" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Unitas, Johnny C.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Johnny C. Unitas conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002796" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Usery, Willie J., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Willie J. Usery, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002825" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Volpe, John A.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and John A. Volpe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002840" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walkendifer, Vincent G.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Vincent G. Walkendifer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003451" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walkendifer, Vincent G. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Mrs. Vincent G. Walkendifer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002860" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walters, Thomas G.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Thomas G. Walters conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003452" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walters, Thomas G. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Mrs. Thomas G. Walters conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002909" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whitaker, Baron</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Baron Whitaker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002913" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White, Francis E.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Francis E. White conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002933" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wieting, Frederick C.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Frederick C. Wieting conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002944" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Williams, Carnen</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Carnen Williams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002958" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Willis, Clayton</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Clayton Willis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002960" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wilmot, Jennie S.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Jennie S. Wilmot conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003592" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Winpisinger, William W.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and William W. Winpsinger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002983" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wood, Frank G.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Frank G. Wood conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002988" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Woodward, Emma</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Emma Woodward conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002998" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wright, Lloyd</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and Lloyd Wright conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003600" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Yost, James E.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and James E. Yost conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003027" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Young, William J.</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and William J. Young conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- Relationships to Families -->
+      <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002920" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House photographer</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell and representatives of the White House photographer conversed <span localType="frequency">13</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- RESOURCE RELATIONS -->
+      <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-061-002">
+        <relationEntry>White House Tapes: Conversation 061-002</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 061-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
-      <!-- Relationship to Resources, subjectOf -->
-      <resourceRelation xlink:arcrole="subjectOf" xlink:role="archivalResource" xlink:type="simple" xlink:href="" lastDateTimeVerified="">
-        <relationEntry/>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-455-006">
+        <relationEntry>White House Tapes: Conversation 455-006</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 455-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-460-006">
+        <relationEntry>White House Tapes: Conversation 460-006</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 460-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-460-008">
+        <relationEntry>White House Tapes: Conversation 460-008</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 460-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-460-012">
+        <relationEntry>White House Tapes: Conversation 460-012</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 460-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-464-010">
+        <relationEntry>White House Tapes: Conversation 464-010</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 464-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-471-016">
+        <relationEntry>White House Tapes: Conversation 471-016</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 471-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-484-008">
+        <relationEntry>White House Tapes: Conversation 484-008</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 484-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-487-009">
+        <relationEntry>White House Tapes: Conversation 487-009</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 487-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-530-011">
+        <relationEntry>White House Tapes: Conversation 530-011</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 530-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-532-027">
+        <relationEntry>White House Tapes: Conversation 532-027</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 532-027 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-559-009">
+        <relationEntry>White House Tapes: Conversation 559-009</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 559-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-569-007">
+        <relationEntry>White House Tapes: Conversation 569-007</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 569-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-576-015">
+        <relationEntry>White House Tapes: Conversation 576-015</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 576-015 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-577-001">
+        <relationEntry>White House Tapes: Conversation 577-001</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 577-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-594-007">
+        <relationEntry>White House Tapes: Conversation 594-007</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 594-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-619-016">
+        <relationEntry>White House Tapes: Conversation 619-016</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 619-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-699-004">
+        <relationEntry>White House Tapes: Conversation 699-004</relationEntry>
+        <descriptiveNote>
+          <p>George T. Bell participated in Conversation 699-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+      <!-- Relationship to Bibliographic Works, subjectOf -->
     </relations>
   </cpfDescription>
 </eac-cpf>
