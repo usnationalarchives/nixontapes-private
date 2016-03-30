@@ -1,0 +1,832 @@
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+  <control>
+    <recordId>37-wht-eac-00002043</recordId>
+    <maintenanceStatus>new</maintenanceStatus>
+    <maintenanceAgency>
+      <agencyCode>US-DNA</agencyCode>
+      <agencyName>United States. National Archives and Records Administration</agencyName>
+    </maintenanceAgency>
+    <languageDeclaration>
+      <language languageCode="eng">English</language>
+      <script scriptCode="Latn">Latin alphabet</script>
+    </languageDeclaration>
+    <!-- Convention Declarations for Content Standards -->
+    <conventionDeclaration>
+      <abbreviation>RDA</abbreviation>
+      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>USNARA-LCDRG</abbreviation>
+      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>DACS-2nd</abbreviation>
+      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>NixonTapesIndex</abbreviation>
+      <citation xlink:href="https://nixonlibrary.gov/forresearchers/find/tapes" xlink:type="simple" lastDateTimeVerified="2016-02-29">Index to the White House Tapes of the Nixon Administration</citation>
+    </conventionDeclaration>
+    <!-- Convention Declarations for Controlled Vocabularies -->
+    <conventionDeclaration>
+      <abbreviation>lcsh</abbreviation>
+      <citation xlink:href="http://id.loc.gov/authorities/subjects.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Library of Congress Subject Headings</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>lcnaf</abbreviation>
+      <citation xlink:href="http://id.loc.gov/authorities/names.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Library of Congress Name Authority File</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>marc:relators</abbreviation>
+      <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>uscensus:race</abbreviation>
+      <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
+    </conventionDeclaration>
+    <!-- Convention Declarations for Style Guides -->
+    <conventionDeclaration>
+      <abbreviation>CMOS-16th</abbreviation>
+      <citation>University of Chicago Press. The Chicago Manual of Style, 16th edition. Chicago and London: The University of Chicago Press, 2010.</citation>
+    </conventionDeclaration>
+    <maintenanceHistory>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime>2016-03-29T16:05:09.994-04:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>base-to-eac.xq</agent>
+        <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
+      </maintenanceEvent>
+      <!--
+            <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime></eventDateTime>
+                <agentType></agentType>
+                <agent></agent>
+                <eventDescription></eventDescription>
+            </maintenanceEvent>
+            <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime></eventDateTime>
+                <agentType></agentType>
+                <agent></agent>
+                <eventDescription></eventDescription>
+            </maintenanceEvent> 
+            -->
+    </maintenanceHistory>
+    <!--         
+        <sources>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
+            </source>
+        </sources>
+        -->
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType>person</entityType>
+      <!-- Authorized Name Entries -->
+      <!-- Nixon Tapes Index -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">O'Brien, Ed</part>
+        <authorizedForm>NixonTapesIndex</authorizedForm>
+      </nameEntry>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a"/>
+        <part localType="marcfield:100$b"/>
+        <part localType="marcfield:100$c"/>
+        <part localType="marcfield:100$q"/>
+        <part localType="marcfield:100$d"/>
+        <authorizedForm>lcnaf</authorizedForm>
+        <!-- 
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
+      </nameEntry>
+      <!-- Variant Name Entries -->
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">Ed O'Brien</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
+      </nameEntry>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">O'Brien</part>
+        <part localType="givenName">Ed</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
+      </nameEntry>
+      <!-- Insert Variant Names from LCNAF/LCDRG -->
+    </identity>
+    <description>
+      <!-- Exist Dates -->
+      <!--
+            <existDates>
+            
+            </existDates>
+            -->
+      <!-- Gender/Gender Identity -->
+      <localDescriptions localType="http://viaf.org/viaf/terms#gender">
+        <localDescription localType="marcfield:375">
+          <term vocabularySource="NixonTapesIndex">male</term>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">-1.0</span>.</p>
+          </descriptiveNote>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Citizenship -->
+      <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+      <!-- Nationality -->
+      <!--
+            <localDescriptions localType="nixonTapes/#nationality">
+            
+            </localDescriptions>
+            -->
+      <!-- Languages Used -->
+      <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->
+      <!-- Racial Category -->
+      <localDescriptions localType="nixonTapes/#racialCategory">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="uscensus:race"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Ethnic/Cultural Heritage -->
+      <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="lcsh"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Tribal Affiliations -->
+      <!-- Title or Honorific -->
+      <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Occupations -->
+      <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
+      <!-- Functions -->
+      <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+      <!-- Political Affiliations -->
+      <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+      <!-- Religious Affiliations -->
+      <!-- Topical Subjects -->
+      <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Associated Places -->
+      <places/>
+      <biogHist>
+        <!-- Abstract -->
+        <abstract/>
+        <!-- Biography or Administrative History Note -->
+        <!-- Chronology -->
+        <!-- Footnotes/Endnotes -->
+        <!-- Insert citations -->
+      </biogHist>
+      <!-- Insert structureOrGenealogy, if relevant -->
+    </description>
+    <relations>
+      <!-- CPF RELATIONS -->
+      <!-- Relationships to Persons: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004755" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Agnew, Bruce</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Bruce Agnew conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000107" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Axelson, Gary</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Gary Axelson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000110" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bacon, Donald</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Donald Bacon conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000113" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bailey, Charles W.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Charles W. Bailey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000143" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Barnett, Dave</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Dave Barnett conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004753" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Barnett, David</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and David Barnett conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000261" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bonavita, Fred</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Fred Bonavita conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004735" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Boyd, Forrest</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Forrest Boyd conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004754" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Boyd, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Robert Boyd conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004734" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Breasted, David</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and David Breasted conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000329" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Buchanan, Patrick J.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Patrick J. Buchanan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000336" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bull, Stephen B.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Stephen B. Bull conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004738" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butler, Gil</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Gil Butler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004752" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carey, Jim</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Jim Carey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004731" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carlson, Gene</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Gene Carlson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004748" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carter, Stan</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Stan Carter conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000423" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cary, Jim</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Jim Cary conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003114" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cauley, John</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and John Cauley conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000530" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Colson, Charles W.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Charles W. Colson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000563" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cormier, Frank</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Frank Cormier conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000619" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Deakin, Jim</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Jim Deakin conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000752" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ehrlichman, John D.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and John D. Ehrlichman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004745" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Elliott, Karen</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Karen Elliott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000774" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Embrey, George</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and George Embrey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000788" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Evans, Clifford</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Clifford Evans conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004744" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Farrar, Fred</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Fred Farrar conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004737" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fulsom, Donald</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Donald Fulsom conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004750" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gannon, Jim</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Jim Gannon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000956" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Germond, Jack</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Jack Germond conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004740" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Girard, Thomas</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Thomas conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001082" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haldeman, H. R. ("Bob")</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and H. R. ("Bob") Haldeman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001142" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harris, Ralph</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Ralph Harris conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004747" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Healy, Paul</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Paul Healy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004728" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Heffernan, John W. ("Pat")</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and John W. ("Pat") Heffernan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004766" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hong, Jin Tae</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Jin Tae Hong conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001267" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Horner, Garnett D. ("Jack")</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Garnett D. ("Jack") Horner conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004729" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hutten, Marc</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Marc Hutten conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004732" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jarriel, Thomas E.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Thomas E. Jarriel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001415" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kane, Frank</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Frank Kane conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004727" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kempster, Norman</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Norman Kempster conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001478" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kilpatrick, Carroll</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Carroll Kilpatrick conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004765" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kondo, Hiroshi</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Hiroshi Kondo conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001523" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kraslow, David</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and David Kraslow conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004741" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kumpa, Peter</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Peter Kumpa conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001586" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Leacocas, Jack</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Jack Leacocas conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001612" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lewis, Jesse</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Jesse Lewis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001616" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Linden, Frank van der</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Frank van der Linden conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001622" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lisagor, Peter</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Peter Lisagor conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004743" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Littlewood, Tom</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Tom Littlewood conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001681" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">MacGregor, Clark</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Clark MacGregor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003115" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mark, Ross</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Ross Mark conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004767" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Matsumura, Tatsuro</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Tatsuro Matsumura conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004736" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Maus, Mike</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Mike Maus conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004761" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McCartney, Roy</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Roy McCartney conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004746" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McClendon, Sarah</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Sarah McClendon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004751" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McGrory, Mary</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Mary McGrory conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001827" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McLendon, Sarah</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Sarah McLendon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004742" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Micciche, Sal</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Sal Micciche conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004730" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moisy, Claude</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Claude Moisy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001903" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mollenhoff, Clark R.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Clark R. Mollenhoff conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and President Richard M. Nixon conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004764" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Noguchi, Akira</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Akira Noguchi conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002008" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nolan, Martin</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Martin Nolan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004758" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Norton, Howard</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Howard Norton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004749" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Rourke, Larry</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Larry O'Rourke conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002076" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Osborne, John F.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and John F. Osborne conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004733" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pierpoint, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Robert Pierpoint conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002166" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Poe, Edgar Allen</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Edgar Allen Poe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002177" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Potter, Phil</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Phil Potter conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002283" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Risher, Eugene V.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Eugene V. Risher conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002398" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scali, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and John A. Scali conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002406" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schecter, Jerrold L.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Jerrold L. Schecter conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002427" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schram, Martin</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Martin Schram conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002470" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Semple, Robert B., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Robert B. Semple, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002477" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shackford, R. H.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and R. H. Shackford conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002489" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shaw, Gaylord</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Gaylord Shaw conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002498" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sheldon, Courtney</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Courtney Sheldon conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002523" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sidey, Hugh S.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Hugh S. Sidey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004760" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sprague, Bill</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Bill Sprague conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004759" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sullivan, Al</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Al Sullivan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002672" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sutherland, John P. ("Jack")</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and John P. ("Jack") Sutherland conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002750" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Toth, Bob</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Bob Toth conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004739" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Van Dyke, Charles</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Charles Van Dyke conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004763" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wakamatsu, Kenji</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Kenji Wakamatsu conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002869" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Warren, Lucian C</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Lucian C. Warren conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002869" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Warren, Lucian C.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Lucian C. Warren conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002900" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wells, Fay G.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Fay G. Wells conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003038" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ziegler, Ronald L.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Ronald L. Ziegler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002795" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">[Unknown person(s)]</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and [Unknown person(s)] conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004762" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">de Segonzac, Dave</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Dave de Segonzac conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002704" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">terHorst, Jerald F. ("Jerry")</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Jerald F. ("Jerry") terHorst conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002704" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">terHorst, Jerrold F.</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien and Jerald F. ("Jerry") terHorst conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- Relationships to Families -->
+      <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
+      <!-- RESOURCE RELATIONS -->
+      <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-693-001">
+        <relationEntry>White House Tapes: Conversation 693-001</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien participated in Conversation 693-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-792-001">
+        <relationEntry>White House Tapes: Conversation 792-001</relationEntry>
+        <descriptiveNote>
+          <p>Ed O'Brien participated in Conversation 792-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+      <!-- Relationship to Bibliographic Works, subjectOf -->
+    </relations>
+  </cpfDescription>
+</eac-cpf>
