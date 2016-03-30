@@ -1,0 +1,424 @@
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+  <control>
+    <recordId>37-wht-eac-00002491</recordId>
+    <maintenanceStatus>new</maintenanceStatus>
+    <maintenanceAgency>
+      <agencyCode>US-DNA</agencyCode>
+      <agencyName>United States. National Archives and Records Administration</agencyName>
+    </maintenanceAgency>
+    <languageDeclaration>
+      <language languageCode="eng">English</language>
+      <script scriptCode="Latn">Latin alphabet</script>
+    </languageDeclaration>
+    <!-- Convention Declarations for Content Standards -->
+    <conventionDeclaration>
+      <abbreviation>RDA</abbreviation>
+      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>USNARA-LCDRG</abbreviation>
+      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>DACS-2nd</abbreviation>
+      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>NixonTapesIndex</abbreviation>
+      <citation xlink:href="https://nixonlibrary.gov/forresearchers/find/tapes" xlink:type="simple" lastDateTimeVerified="2016-02-29">Index to the White House Tapes of the Nixon Administration</citation>
+    </conventionDeclaration>
+    <!-- Convention Declarations for Controlled Vocabularies -->
+    <conventionDeclaration>
+      <abbreviation>lcsh</abbreviation>
+      <citation xlink:href="http://id.loc.gov/authorities/subjects.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Library of Congress Subject Headings</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>lcnaf</abbreviation>
+      <citation xlink:href="http://id.loc.gov/authorities/names.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Library of Congress Name Authority File</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>marc:relators</abbreviation>
+      <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>uscensus:race</abbreviation>
+      <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
+    </conventionDeclaration>
+    <!-- Convention Declarations for Style Guides -->
+    <conventionDeclaration>
+      <abbreviation>CMOS-16th</abbreviation>
+      <citation>University of Chicago Press. The Chicago Manual of Style, 16th edition. Chicago and London: The University of Chicago Press, 2010.</citation>
+    </conventionDeclaration>
+    <maintenanceHistory>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime>2016-03-29T16:05:09.994-04:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>base-to-eac.xq</agent>
+        <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
+      </maintenanceEvent>
+      <!--
+            <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime></eventDateTime>
+                <agentType></agentType>
+                <agent></agent>
+                <eventDescription></eventDescription>
+            </maintenanceEvent>
+            <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime></eventDateTime>
+                <agentType></agentType>
+                <agent></agent>
+                <eventDescription></eventDescription>
+            </maintenanceEvent> 
+            -->
+    </maintenanceHistory>
+    <!--         
+        <sources>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
+            </source>
+        </sources>
+        -->
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType>person</entityType>
+      <!-- Authorized Name Entries -->
+      <!-- Nixon Tapes Index -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Sheehan, Edward J.</part>
+        <authorizedForm>NixonTapesIndex</authorizedForm>
+      </nameEntry>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a"/>
+        <part localType="marcfield:100$b"/>
+        <part localType="marcfield:100$c"/>
+        <part localType="marcfield:100$q"/>
+        <part localType="marcfield:100$d"/>
+        <authorizedForm>lcnaf</authorizedForm>
+        <!-- 
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
+      </nameEntry>
+      <!-- Variant Name Entries -->
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">Edward J. Sheehan</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
+      </nameEntry>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Sheehan</part>
+        <part localType="givenName">Edward J.</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
+      </nameEntry>
+      <!-- Insert Variant Names from LCNAF/LCDRG -->
+    </identity>
+    <description>
+      <!-- Exist Dates -->
+      <!--
+            <existDates>
+            
+            </existDates>
+            -->
+      <!-- Gender/Gender Identity -->
+      <localDescriptions localType="http://viaf.org/viaf/terms#gender">
+        <localDescription localType="marcfield:375">
+          <term vocabularySource="NixonTapesIndex">male</term>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">-1.0</span>.</p>
+          </descriptiveNote>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Citizenship -->
+      <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+      <!-- Nationality -->
+      <!--
+            <localDescriptions localType="nixonTapes/#nationality">
+            
+            </localDescriptions>
+            -->
+      <!-- Languages Used -->
+      <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->
+      <!-- Racial Category -->
+      <localDescriptions localType="nixonTapes/#racialCategory">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="uscensus:race"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Ethnic/Cultural Heritage -->
+      <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="lcsh"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Tribal Affiliations -->
+      <!-- Title or Honorific -->
+      <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Occupations -->
+      <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
+      <!-- Functions -->
+      <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+      <!-- Political Affiliations -->
+      <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+      <!-- Religious Affiliations -->
+      <!-- Topical Subjects -->
+      <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Associated Places -->
+      <places/>
+      <biogHist>
+        <!-- Abstract -->
+        <abstract/>
+        <!-- Biography or Administrative History Note -->
+        <!-- Chronology -->
+        <!-- Footnotes/Endnotes -->
+        <!-- Insert citations -->
+      </biogHist>
+      <!-- Insert structureOrGenealogy, if relevant -->
+    </description>
+    <relations>
+      <!-- CPF RELATIONS -->
+      <!-- Relationships to Persons: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000103" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Atkins, Oliver F. ("Ollie")</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Oliver F. ("Ollie") Atkins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000299" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brimmer, Andrew F.</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Andrew F. Brimmer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000355" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Burns, Arthur F.</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Arthur F. Burns conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000557" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cooper, John Sherman</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and John Sherman Cooper conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000594" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Daane, J. Dewey</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and J. Dewey Daane conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000857" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Flanigan, Peter M.</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Peter M. Flanigan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001034" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Griffin, C. D. (Adm.)</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Adm. C. D. Griffin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001246" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Holland, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Robert Holland conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001341" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">James, E. Pendleton</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and E. Pendleton James conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001698" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Maisel, Sherman J.</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Sherman J. Maisel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001699" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Malek, Frederic V.</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Frederic V. Malek conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001896" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mitchell, George W.</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and George W. Mitchell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and President Richard M. Nixon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002034" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nunn, Louie B.</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Louie B. Nunn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002297" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Robertson, J. L.</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and J. L. Robertson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002492" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sheehan, Eugene T.</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Eugene T. Sheehan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002497" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sheehan, James E. (Lt. Cmdr.)</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Lt. Cmdr. James E. Sheehan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002493" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sheehan, John</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and John Sheehan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002496" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sheehan, Kathleen</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Kathleen Sheehan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002494" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sheehan, Kelly</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Kelly Sheehan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002495" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sheehan, Kevin</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Kevin Sheehan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002517" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shultz, George P.</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and George P. Shultz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002561" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, Geneva</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Geneva Smith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002600" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sparkman, John J.</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and John J. Sparkman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002631" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stein, Herbert</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan and Herbert Stein conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- Relationships to Families -->
+      <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
+      <!-- RESOURCE RELATIONS -->
+      <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-647-012">
+        <relationEntry>White House Tapes: Conversation 647-012</relationEntry>
+        <descriptiveNote>
+          <p>Edward J. Sheehan participated in Conversation 647-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+      <!-- Relationship to Bibliographic Works, subjectOf -->
+    </relations>
+  </cpfDescription>
+</eac-cpf>

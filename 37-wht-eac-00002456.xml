@@ -1,0 +1,2297 @@
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
+  <control>
+    <recordId>37-wht-eac-00002456</recordId>
+    <maintenanceStatus>new</maintenanceStatus>
+    <maintenanceAgency>
+      <agencyCode>US-DNA</agencyCode>
+      <agencyName>United States. National Archives and Records Administration</agencyName>
+    </maintenanceAgency>
+    <languageDeclaration>
+      <language languageCode="eng">English</language>
+      <script scriptCode="Latn">Latin alphabet</script>
+    </languageDeclaration>
+    <!-- Convention Declarations for Content Standards -->
+    <conventionDeclaration>
+      <abbreviation>RDA</abbreviation>
+      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>USNARA-LCDRG</abbreviation>
+      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>DACS-2nd</abbreviation>
+      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>NixonTapesIndex</abbreviation>
+      <citation xlink:href="https://nixonlibrary.gov/forresearchers/find/tapes" xlink:type="simple" lastDateTimeVerified="2016-02-29">Index to the White House Tapes of the Nixon Administration</citation>
+    </conventionDeclaration>
+    <!-- Convention Declarations for Controlled Vocabularies -->
+    <conventionDeclaration>
+      <abbreviation>lcsh</abbreviation>
+      <citation xlink:href="http://id.loc.gov/authorities/subjects.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Library of Congress Subject Headings</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>lcnaf</abbreviation>
+      <citation xlink:href="http://id.loc.gov/authorities/names.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Library of Congress Name Authority File</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>marc:relators</abbreviation>
+      <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
+    </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>uscensus:race</abbreviation>
+      <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
+    </conventionDeclaration>
+    <!-- Convention Declarations for Style Guides -->
+    <conventionDeclaration>
+      <abbreviation>CMOS-16th</abbreviation>
+      <citation>University of Chicago Press. The Chicago Manual of Style, 16th edition. Chicago and London: The University of Chicago Press, 2010.</citation>
+    </conventionDeclaration>
+    <maintenanceHistory>
+      <maintenanceEvent>
+        <eventType>created</eventType>
+        <eventDateTime>2016-03-29T16:05:09.994-04:00</eventDateTime>
+        <agentType>machine</agentType>
+        <agent>base-to-eac.xq</agent>
+        <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
+      </maintenanceEvent>
+      <!--
+            <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime></eventDateTime>
+                <agentType></agentType>
+                <agent></agent>
+                <eventDescription></eventDescription>
+            </maintenanceEvent>
+            <maintenanceEvent>
+                <eventType>revised</eventType>
+                <eventDateTime></eventDateTime>
+                <agentType></agentType>
+                <agent></agent>
+                <eventDescription></eventDescription>
+            </maintenanceEvent> 
+            -->
+    </maintenanceHistory>
+    <!--         
+        <sources>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
+            </source>
+        </sources>
+        -->
+  </control>
+  <cpfDescription>
+    <identity>
+      <entityType>person</entityType>
+      <!-- Authorized Name Entries -->
+      <!-- Nixon Tapes Index -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Scowcroft, Brent G. (Gen.)</part>
+        <authorizedForm>NixonTapesIndex</authorizedForm>
+      </nameEntry>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a"/>
+        <part localType="marcfield:100$b"/>
+        <part localType="marcfield:100$c"/>
+        <part localType="marcfield:100$q"/>
+        <part localType="marcfield:100$d"/>
+        <authorizedForm>lcnaf</authorizedForm>
+        <!-- 
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
+      </nameEntry>
+      <!-- Variant Name Entries -->
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">Gen. Brent G. Scowcroft</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
+      </nameEntry>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Scowcroft</part>
+        <part localType="givenName">Brent G.</part>
+        <part localType="titleHonorific">Gen.</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
+      </nameEntry>
+      <!-- Insert Variant Names from LCNAF/LCDRG -->
+    </identity>
+    <description>
+      <!-- Exist Dates -->
+      <!--
+            <existDates>
+            
+            </existDates>
+            -->
+      <!-- Gender/Gender Identity -->
+      <localDescriptions localType="http://viaf.org/viaf/terms#gender">
+        <localDescription localType="marcfield:375">
+          <term vocabularySource="NixonTapesIndex">male</term>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">-1.0</span>.</p>
+          </descriptiveNote>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Citizenship -->
+      <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+      <!-- Nationality -->
+      <!--
+            <localDescriptions localType="nixonTapes/#nationality">
+            
+            </localDescriptions>
+            -->
+      <!-- Languages Used -->
+      <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->
+      <!-- Racial Category -->
+      <localDescriptions localType="nixonTapes/#racialCategory">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="uscensus:race"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Ethnic/Cultural Heritage -->
+      <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="lcsh"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Tribal Affiliations -->
+      <!-- Title or Honorific -->
+      <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Occupations -->
+      <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
+      <!-- Functions -->
+      <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+      <!-- Political Affiliations -->
+      <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+      <!-- Religious Affiliations -->
+      <!-- Topical Subjects -->
+      <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Associated Places -->
+      <places/>
+      <biogHist>
+        <!-- Abstract -->
+        <abstract/>
+        <!-- Biography or Administrative History Note -->
+        <!-- Chronology -->
+        <!-- Footnotes/Endnotes -->
+        <!-- Insert citations -->
+      </biogHist>
+      <!-- Insert structureOrGenealogy, if relevant -->
+    </description>
+    <relations>
+      <!-- CPF RELATIONS -->
+      <!-- Relationships to Persons: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000004" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Abdallah, Abdel Rahman</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Abdel Rahman Abdallah conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000008" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Abrams, Creighton W., Jr. (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Gen. Creighton W. Abrams, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000019" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Agnew, Spiro T. (Vice President)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Vice President Spiro T. Agnew conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003237" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ali, Hossain</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Hossain Ali conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000044" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Allin, Lyndon K.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Lyndon K. Allin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000052" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Alsop, Joseph W.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Joseph W. Alsop conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000078" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Andrews, John K., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John K. Andrews, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003221" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Arantes do Nascimento, Edson ("Pele")</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Edson ("Pele") Arantes do Nascimento conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000089" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Arima, Tatsuo</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Tatsuo Arima conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000093" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Armstrong, Anne L.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Anne L. Armstrong conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000098" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ash, Roy L.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Roy L. Ash conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000103" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Atkins, Oliver F. ("Ollie")</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Oliver F. ("Ollie") Atkins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000117" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Baker, Howard H., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Howard H. Baker, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000144" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Barnum, John W.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John W. Barnum conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000145" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Baroody, William J., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and William J. Baroody, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000163" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Beall, J. Glenn, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and J. Glenn Beall, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003263" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bennett, John C. (Maj. Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Maj. Gen. John C. Bennett conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000247" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Boganova, Lyubov I.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Lyubov I. Boganova conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000288" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brennan, John V.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John V. Brennan conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000289" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brennan, Peter J.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Peter J. Brennan conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000300" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brinegar, Claude S.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Claude S. Brinegar conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000303" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brock, William</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and William Brock conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000329" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Buchanan, Patrick J.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Patrick J. Buchanan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000336" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bull, Stephen B.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Stephen B. Bull conversed <span localType="frequency">14</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000360" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bush, George H. W.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and George H. W. Bush conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000370" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butterfield, Alexander P.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Alexander P. Butterfield conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000372" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butz, Earl L.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Earl L. Butz conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004276" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Byrom, Fletcher L.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Fletcher L. Byrom conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000379" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cadorette, Dorothy Vann</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Dorothy Vann Cadorette conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000397" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Campbell, J. Philip</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and J. Philip Campbell conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000394" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Campbell, Jane</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Jane Campbell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000396" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Campbell, John L.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John L. Campbell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003226" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cannon, Howard W.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Howard W. Cannon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000408" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carlucci, Frank C., III</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Frank C. Carlucci, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003224" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Casta, Rico</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Rico Casta conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000443" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cavanaugh, James H.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and James H. Cavanaugh conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003222" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cholbi, Rosemeri dos Reis (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Mrs. Rosemeri dos Reis Cholbi conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004292" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clark, George J.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and George J. Clark conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004277" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clark, John W.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John W. Clark conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004635" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clarke, Bruce</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Bruce Clarke conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000499" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clawson, Kenneth W.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Kenneth W. Clawson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004633" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clements, William P., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and William P. Clements, Jr. conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000506" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Coffey, Craig</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Craig Coffey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000507" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Coffey, Karen</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Karen Coffey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000508" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Coffey, Sarah</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Sarah Coffey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000510" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Coffey, Vernon C., III</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Vernon C. Coffey, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000509" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Coffey, Vernon C., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Vernon C. Coffey, Jr. conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000521" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cole, Kenneth R., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Kenneth R. Cole, Jr. conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000530" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Colson, Charles W.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Charles W. Colson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000541" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Connally, John B.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John B. Connally conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004278" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cox, Donald M.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Donald M. Cox conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003191" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Crihfield, Brevard</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Brevard Crihfield conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003478" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dam, Kenneth W.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Kenneth W. Dam conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004280" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">DeRosso, Alphonse</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Alphonse DeRosso conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003073" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dent, Frederick B.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Frederick B. Dent conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000653" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">DiBona, Charles J.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Charles J. DiBona conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004281" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Diebold, John</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John Diebold conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000659" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dimitriyev, Vikentiy D.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Vikentiy D. Dimitriyev conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000660" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dinitz, Simcha</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Simcha Dinitz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000670" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dnysh, Renald I.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Renald I. Dnysh conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000672" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dobrynin, Anatoliy F.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Anatoliy F. Dobrynin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004634" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Duckett, Carl</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Carl Duckett conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004282" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Duncan, John</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John Duncan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000718" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dunlop, John T.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John T. Dunlop conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000751" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Eger, John Mitchell</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John Mitchell Eger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000752" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ehrlichman, John D.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John D. Ehrlichman conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000762" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Elbourne, Timothy G.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Timothy G. Elbourne conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000803" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fairbanks, Richard M., III</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Richard M. Fairbanks, III conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000806" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Falk, James H.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and James H. Falk conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004667" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Falkiewicz, Andrew T.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Andrew T. Falkiewicz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000812" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Farley, Philip J.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Philip J. Farley conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000815" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Farrell, Michael J.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Michael J. Farrell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000836" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fielding, Fred F.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Fred F. Fielding conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000843" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Finch, Robert H.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Robert H. Finch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000857" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Flanigan, Peter M.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Peter M. Flanigan conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003180" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Flynn, John B.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John B. Flynn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000882" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fox, Alonzo</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Alonzo Fox conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004283" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Foy, Lewis W.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Lewis W. Foy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000910" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Friedersdorf, Max L.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Max L. Friedersdorf conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000914" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Froehlke, Robert F.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Robert F. Froehlke conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004284" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gallagher, John F.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John F. Gallagher conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000941" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Garment, Leonard</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Leonard Garment conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004285" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gavin, James M. (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Gen. James M. Gavin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000954" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gergen, David R.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and David R. Gergen conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000963" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ghanem, M. Hafez</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and M. Hafez Ghanem conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000990" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Golden, William L. (Lt. Col.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Lt. Col. William L. Golden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001005" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Goodpaster, Andrew J. (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Gen. Andrew J. Goodpaster conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004286" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Granville, Maurice F.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Maurice F. Granville conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001022" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gray, L[ouis] Patrick, III</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and L[ouis] Patrick Gray, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001037" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Griffin, Robert P.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Robert P. Griffin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001048" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Grubb, Evelyn</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Evelyn Grubb conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004287" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gyelin, Henry R.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Henry R. Gyelin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001069" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Alexander M., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Alexander M. Haig, Jr. conversed <span localType="frequency">10</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001070" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Alexander M., Sr.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Alexander M. Haig, Sr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001071" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Alexander M., Sr. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Mrs. Alexander M. Haig, Sr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001073" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Barbara</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Barbara Haig conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001072" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Barbara E.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Barbara E. Haig conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001074" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Brian</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Brian Haig conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001075" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Frank</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Frank Haig conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001076" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Patricia</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Patricia Haig conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003306" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haile, Minassie</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Minassie Haile conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001082" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haldeman, H. R. ("Bob")</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and H. R. ("Bob") Haldeman conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001104" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hamza, Abdel Aziz al-Nasri (Ambassador)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Ambassador Abdel Aziz al-Nasri Hamza conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001118" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hanson, Carol</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Carol Hanson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001128" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harlow, Bryce N.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Bryce N. Harlow conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004288" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hart, A. S.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and A. S. Hart conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003225" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hartke, Vance</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Vance Hartke conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001153" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hathaway, Harry</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Harry Hathaway conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001179" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Helms, Richard M.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Richard M. Helms conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003262" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Henkel, Willam H., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Willam H. Henkel, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004289" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hickey, William M.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and William M. Hickey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001213" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Higby, Lawrence M.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Lawrence M. Higby conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001231" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hodgson, James D.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and James D. Hodgson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001282" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Howard, W. Richard</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and W. Richard Howard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001289" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Huebner, Lee W.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Lee W. Huebner conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001292" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hughes, James D. ("Don")</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and James D. ("Don") Hughes conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001294" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hullin, Tod R.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Tod R. Hullin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001297" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hunt, Olive</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Olive Hunt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004673" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hyde, Floyd H.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Floyd H. Hyde conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003265" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hyland, William G.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and William G. Hyland conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001314" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Il’Yashevasaya, Lyudmila I.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Lyudmila I. Il'Yashevasaya conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001321" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Irwin, John N., II</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John N. Irwin, II conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001322" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ismail, Hafez</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Hafez Ismail conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001351" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jeffery, Robert D.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Robert D. Jeffery conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003393" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jeffery, Robert D. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Mrs. Robert D. Jeffery conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003264" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jenkins, Garry M.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Garry M. Jenkins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001374" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, Roger E.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Roger E. Johnson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001377" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, U. Alexis</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and U. Alexis Johnson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004669" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jones, Jerry H.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Jerry H. Jones conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001404" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jorden, William J.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and William J. Jorden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003187" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kakehashi, Kumashi</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Kumashi Kakehashi conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003184" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kaneko, Masanou</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Masanou Kaneko conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001439" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kehrli, Bruce A.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Bruce A. Kehrli conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001450" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kendall, Donald McI.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Donald McI. Kendall conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001457" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, David M.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and David M. Kennedy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004290" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, James R.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and James R. Kennedy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001461" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Keogh, James</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and James Keogh conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003183" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kimura, Morie</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Morie Kimura conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001482" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kimura, Toshio</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Toshio Kimura conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001494" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kissinger, Henry A.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Henry A. Kissinger conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001497" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Klein, Herbert G.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Herbert G. Klein conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001499" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kleindienst, Richard G.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Richard G. Kleindienst conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001510" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Knauer, Virginia H.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Virginia H. Knauer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003188" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kodama, Masao</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Masao Kodama conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001517" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Korbut, Olga V.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Olga V. Korbut conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001518" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Korologos, Thomas C.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Thomas C. Korologos conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001520" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Koshel, Antonina V.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Antonina V. Koshel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001539" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kusuda, Minoru</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Minoru Kusuda conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001545" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Laird, Melvin R.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Melvin R. Laird conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001566" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Larzelere, Alexander R. (Cmdr.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Cmdr. Alexander R. Larzelere conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001567" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Larzelere, Alexander R., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Alexander R. Larzelere, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001568" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Larzelere, Paul</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Paul Larzelere conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001569" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Larzelere, William</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and William Larzelere conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001584" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lazakovich, Tamara V.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Tamara V. Lazakovich conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004291" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lindley, Fritz G.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Fritz G. Lindley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004293" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lumpkin, Thomas D.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Thomas D. Lumpkin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001673" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lynn, James T.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and James T. Lynn conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001681" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">MacGregor, Clark</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Clark MacGregor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001699" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Malek, Frederic V.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Frederic V. Malek conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004294" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Marusi, Augustine R.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Augustine R. Marusi conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001820" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McLane, James W.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and James W. McLane conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001828" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McLin, Walter S., III</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Walter S. McLin, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001843" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mead, Dana G.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Dana G. Mead conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001854" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Meir, Golda</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Golda Meir conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001860" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Meredith, Edward B.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Edward B. Meredith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003414" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Meredith, Edward B. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Mrs. Edward B. Meredith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001861" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Meredith, George (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Mrs. George Meredith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004134" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Miller, Michael</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Michael Miller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004295" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Milliken, Frank R.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Frank R. Milliken conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003239" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moore, Mrs. G. Curtis (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Mrs. Mrs. G. Curtis Moore conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001917" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moore, Richard A.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Richard A. Moore conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001919" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moorer, Thomas H. (Adm.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Adm. Thomas H. Moorer conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003509" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morrill, William</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and William Morrill conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001935" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morton, Rogers C. B.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Rogers C. B. Morton conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003227" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moss, Frank E.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Frank E. Moss conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001952" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Murato, Ryohei</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Ryohei Murato conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001953" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Muromcew, Cyril</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Cyril Muromcew conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001962" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Murray, Robert P.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Robert P. Murray conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001988" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Newsom, David N.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and David N. Newsom conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003192" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nichimura, Ichiro</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Ichiro Nichimura conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001994" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nidecker, John E.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John E. Nidecker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001997" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nitze, Paul H.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Paul H. Nitze conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and President Richard M. Nixon conversed <span localType="frequency">68</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002004" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Thelma C. ("Pat") (Ryan)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Thelma C. ("Pat") (Ryan) Nixon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003238" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Noel, Mrs. Cleo (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Mrs. Mrs. Cleo Noel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003508" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Odeen, Philip A.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Philip A. Odeen conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003186" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ogiyama, Yoshio</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Yoshio Ogiyama conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003189" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ogowa, Masakichi</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Masakichi Ogowa conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002102" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Parker, David N.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and David N. Parker conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004296" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Percopo, Michael W.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Michael W. Percopo conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004668" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Petersmeyer, C. Gregg</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and C. Gregg Petersmeyer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002154" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Phuong, Tran Kim</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Tran Kim Phuong conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003223" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pottasch, Allan</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Allan Pottasch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002190" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Price, Raymond K., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Raymond K. Price, Jr. conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002199" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rabin, Yitzhak</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Yitzhak Rabin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002216" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rastrotskiy, Vladislav A.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Vladislav A. Rastrotskiy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002224" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ray, Janice</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Janice Ray conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002267" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Richardson, Elliot L.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Elliot L. Richardson conversed <span localType="frequency">9</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004297" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ritchie, J. D.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and J. D. Ritchie conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004298" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rockefeller, David</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and David Rockefeller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004299" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rockefeller, Rodman</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Rodman Rockefeller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002309" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rodgers, Donald F.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Donald F. Rodgers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002316" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rogers, William P.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and William P. Rogers conversed <span localType="frequency">9</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004300" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rollins, J. Donald</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and J. Donald Rollins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002324" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Romney, George W.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and George W. Romney conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002357" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rumsfeld, Donald H.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Donald H. Rumsfeld conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003507" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rush, Henri F., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Henri F. Rush, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002362" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rush, [David] Kenneth</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and [David] Kenneth Rush conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002381" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sanchez, Manolo</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Manolo Sanchez conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002392" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sato, Eisaku</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Eisaku Sato conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002398" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scali, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John A. Scali conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002417" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schlesinger, James R. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Dr. James R. Schlesinger conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003190" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schneider, Richard L.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Richard L. Schneider conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002434" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schubert, Richard F.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Richard F. Schubert conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004301" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schwartz, Harvey L.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Harvey L. Schwartz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002452" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scott, Stanley S.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Stanley S. Scott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003510" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Seevers, Gary L.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Gary L. Seevers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003305" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Selassie, Haile</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Haile Selassie conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004302" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Seymour, Daniel</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Daniel Seymour conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002501" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shepard, Geoffrey C.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Geoffrey C. Shepard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002504" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shields, Roger E.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Roger E. Shields conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002504" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shields, Roger W.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Roger E. Shields conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002517" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shultz, George P.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and George P. Shultz conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003236" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Siddiqui, Mustafizur Rahman</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Mustafizur Rahman Siddiqui conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002527" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sievers, Frank A.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Frank A. Sievers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002534" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sikharulidze, Rusudan A.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Rusudan A. Sikharulidze conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002537" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Simon, William E.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and William E. Simon conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002543" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Singleton, James A. (Capt.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Capt. James A. Singleton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003438" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Singleton, James A. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Mrs. James A. Singleton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002577" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smolevskiy, Vladimir M.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Vladimir M. Smolevskiy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004439" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sohmer, Arthur J.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Arthur J. Sohmer conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002590" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sonnenfeldt, Helmut ("Hal")</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Helmut ("Hal") Sonnenfeldt conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004626" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Spiers, Ronald I.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Ronald I. Spiers conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002631" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stein, Herbert</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Herbert Stein conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002646" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stever, H. Guyford</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and H. Guyford Stever conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003179" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stockdale, James B.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and James B. Stockdale conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004303" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Taylor, A. Thomas</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and A. Thomas Taylor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002732" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Timmons, William E.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and William E. Timmons conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003185" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tomono, Taketo</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Taketo Tomono conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002760" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Trapeznikov, Vadim A.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Vadim A. Trapeznikov conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002780" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Turishcheva, Lyudmila I.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Lyudmila I. Turishcheva conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002797" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ushiba, Nobuhiko</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Nobuhiko Ushiba conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002804" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Vann, Eugene</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Eugene Vann conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002805" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Vann, Frank</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Frank Vann conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002806" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Vann, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John A. Vann conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002809" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Vann, Mary Jane</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Mary Jane Vann conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002810" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Vann, Peter</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Peter Vann conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002811" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Vann, Thomas</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Thomas Vann conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002825" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Volpe, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and John A. Volpe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002865" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Warnack, William</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and William Warnack conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002867" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Warren, Gerald L.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Gerald L. Warren conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002893" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Weinberger, Caspar W. ("Cap")</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Caspar W. ("Cap") Weinberger conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002926" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whitman, Marina von Neumann</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Marina von Neumann Whitman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002931" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wickel, James J.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and James J. Wickel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002987" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Woods, Rose Mary</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Rose Mary Woods conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003007" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Yamanaka, Sadanori</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Sadanori Yamanaka conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003033" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Zarechnak, Dimtry</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Dimtry Zarechnak conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003038" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ziegler, Ronald L.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Ronald L. Ziegler conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004304" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Zwick, Charles J.</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Charles J. Zwick conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002795" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">[Unknown person(s)]</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and [Unknown person(s)] conversed <span localType="frequency">13</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004279" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">de Cubas, Jose</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and Jose de Cubas conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- Relationships to Families -->
+      <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003469" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cabinet officers</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and representatives of the Cabinet officers conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002071" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Camp David Operator</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and representatives of the Camp David operator conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004272" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Council of the Americas</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and representatives of the Council of the Americas conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004826" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Members of the press</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and representatives of the members of the press conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003465" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">National Security Council</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and representatives of the National Security Council conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002919" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House operator</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and representatives of the White House operator conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002920" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House photographer</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft and representatives of the White House photographer conversed <span localType="frequency">20</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- RESOURCE RELATIONS -->
+      <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-037-188">
+        <relationEntry>White House Tapes: Conversation 037-188</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 037-188 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-037-197">
+        <relationEntry>White House Tapes: Conversation 037-197</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 037-197 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-037-199">
+        <relationEntry>White House Tapes: Conversation 037-199</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 037-199 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-040-029">
+        <relationEntry>White House Tapes: Conversation 040-029</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 040-029 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-040-031">
+        <relationEntry>White House Tapes: Conversation 040-031</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 040-031 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-040-056">
+        <relationEntry>White House Tapes: Conversation 040-056</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 040-056 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-043-088">
+        <relationEntry>White House Tapes: Conversation 043-088</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 043-088 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-043-097">
+        <relationEntry>White House Tapes: Conversation 043-097</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 043-097 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-101-001">
+        <relationEntry>White House Tapes: Conversation 101-001</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 101-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-114-001">
+        <relationEntry>White House Tapes: Conversation 114-001</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 114-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-117-002">
+        <relationEntry>White House Tapes: Conversation 117-002</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 117-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-119-001">
+        <relationEntry>White House Tapes: Conversation 119-001</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 119-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-120-001">
+        <relationEntry>White House Tapes: Conversation 120-001</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 120-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-121-002">
+        <relationEntry>White House Tapes: Conversation 121-002</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 121-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-122-002">
+        <relationEntry>White House Tapes: Conversation 122-002</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 122-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-124-002">
+        <relationEntry>White House Tapes: Conversation 124-002</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 124-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-124-006">
+        <relationEntry>White House Tapes: Conversation 124-006</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 124-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-124-007">
+        <relationEntry>White House Tapes: Conversation 124-007</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 124-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-126-001">
+        <relationEntry>White House Tapes: Conversation 126-001</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 126-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-186-004">
+        <relationEntry>White House Tapes: Conversation 186-004</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 186-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-410-032">
+        <relationEntry>White House Tapes: Conversation 410-032</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 410-032 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-421-010">
+        <relationEntry>White House Tapes: Conversation 421-010</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 421-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-421-019">
+        <relationEntry>White House Tapes: Conversation 421-019</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 421-019 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-422-022">
+        <relationEntry>White House Tapes: Conversation 422-022</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 422-022 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-443-037">
+        <relationEntry>White House Tapes: Conversation 443-037</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 443-037 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-444-014">
+        <relationEntry>White House Tapes: Conversation 444-014</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 444-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-444-016">
+        <relationEntry>White House Tapes: Conversation 444-016</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 444-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-445-001">
+        <relationEntry>White House Tapes: Conversation 445-001</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 445-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-607-020">
+        <relationEntry>White House Tapes: Conversation 607-020</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 607-020 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-679-008">
+        <relationEntry>White House Tapes: Conversation 679-008</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 679-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-682-005">
+        <relationEntry>White House Tapes: Conversation 682-005</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 682-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-701-010">
+        <relationEntry>White House Tapes: Conversation 701-010</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 701-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-737-005">
+        <relationEntry>White House Tapes: Conversation 737-005</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 737-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-737-007">
+        <relationEntry>White House Tapes: Conversation 737-007</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 737-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-833-013">
+        <relationEntry>White House Tapes: Conversation 833-013</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 833-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-845-006">
+        <relationEntry>White House Tapes: Conversation 845-006</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 845-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-848-012">
+        <relationEntry>White House Tapes: Conversation 848-012</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 848-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-853-014">
+        <relationEntry>White House Tapes: Conversation 853-014</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 853-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-854-021">
+        <relationEntry>White House Tapes: Conversation 854-021</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 854-021 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-854-026">
+        <relationEntry>White House Tapes: Conversation 854-026</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 854-026 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-855-012">
+        <relationEntry>White House Tapes: Conversation 855-012</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 855-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-856-003">
+        <relationEntry>White House Tapes: Conversation 856-003</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 856-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-857-003">
+        <relationEntry>White House Tapes: Conversation 857-003</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 857-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-857-005">
+        <relationEntry>White House Tapes: Conversation 857-005</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 857-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-861-018">
+        <relationEntry>White House Tapes: Conversation 861-018</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 861-018 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-862-010">
+        <relationEntry>White House Tapes: Conversation 862-010</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 862-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-866-015">
+        <relationEntry>White House Tapes: Conversation 866-015</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 866-015 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-869-010">
+        <relationEntry>White House Tapes: Conversation 869-010</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 869-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-874-012">
+        <relationEntry>White House Tapes: Conversation 874-012</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 874-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-882-010">
+        <relationEntry>White House Tapes: Conversation 882-010</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 882-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-884-008">
+        <relationEntry>White House Tapes: Conversation 884-008</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 884-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-885-006">
+        <relationEntry>White House Tapes: Conversation 885-006</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 885-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-886-002">
+        <relationEntry>White House Tapes: Conversation 886-002</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 886-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-886-004">
+        <relationEntry>White House Tapes: Conversation 886-004</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 886-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-886-010">
+        <relationEntry>White House Tapes: Conversation 886-010</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 886-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-887-005">
+        <relationEntry>White House Tapes: Conversation 887-005</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 887-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-887-019">
+        <relationEntry>White House Tapes: Conversation 887-019</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 887-019 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-891-004">
+        <relationEntry>White House Tapes: Conversation 891-004</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 891-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-891-005">
+        <relationEntry>White House Tapes: Conversation 891-005</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 891-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-891-006">
+        <relationEntry>White House Tapes: Conversation 891-006</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 891-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-891-007">
+        <relationEntry>White House Tapes: Conversation 891-007</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 891-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-893-013">
+        <relationEntry>White House Tapes: Conversation 893-013</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 893-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-895-013">
+        <relationEntry>White House Tapes: Conversation 895-013</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 895-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-912-015">
+        <relationEntry>White House Tapes: Conversation 912-015</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 912-015 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-913-005">
+        <relationEntry>White House Tapes: Conversation 913-005</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 913-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-918-017">
+        <relationEntry>White House Tapes: Conversation 918-017</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 918-017 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-921-012">
+        <relationEntry>White House Tapes: Conversation 921-012</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 921-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-921-014">
+        <relationEntry>White House Tapes: Conversation 921-014</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 921-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-937-015">
+        <relationEntry>White House Tapes: Conversation 937-015</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 937-015 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-941-007">
+        <relationEntry>White House Tapes: Conversation 941-007</relationEntry>
+        <descriptiveNote>
+          <p>Gen. Brent G. Scowcroft participated in Conversation 941-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+      <!-- Relationship to Bibliographic Works, subjectOf -->
+    </relations>
+  </cpfDescription>
+</eac-cpf>
