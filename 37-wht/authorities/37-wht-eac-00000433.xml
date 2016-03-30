@@ -1,9 +1,6 @@
-<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4">
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
   <control>
-    <recordId/>
-    <!-- <otherRecordId localType="http://catalog.archives.gov/id/"></otherRecordId> -->
-    <!-- <otherRecordId localType="http://viaf.org/viaf/terms#viafID"></otherRecordId> -->
-    <otherRecordId localType="http://www.loc.gov/standards/mads/rdf/v1.html#Authority"/>
+    <recordId>37-wht-eac-00000433</recordId>
     <maintenanceStatus>new</maintenanceStatus>
     <maintenanceAgency>
       <agencyCode>US-DNA</agencyCode>
@@ -16,15 +13,15 @@
     <!-- Convention Declarations for Content Standards -->
     <conventionDeclaration>
       <abbreviation>RDA</abbreviation>
-      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-19">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>USNARA-LCDRG</abbreviation>
-      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-19">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>DACS-2nd</abbreviation>
-      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2015-03-18">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>NixonTapesIndex</abbreviation>
@@ -43,6 +40,10 @@
       <abbreviation>marc:relators</abbreviation>
       <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
     </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>uscensus:race</abbreviation>
+      <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
+    </conventionDeclaration>
     <!-- Convention Declarations for Style Guides -->
     <conventionDeclaration>
       <abbreviation>CMOS-16th</abbreviation>
@@ -51,10 +52,10 @@
     <maintenanceHistory>
       <maintenanceEvent>
         <eventType>created</eventType>
-        <eventDateTime>2016-03-01T01:02:57.824-05:00</eventDateTime>
+        <eventDateTime>2016-03-29T16:05:09.994-04:00</eventDateTime>
         <agentType>machine</agentType>
         <agent>base-to-eac.xq</agent>
-        <eventDescription>Converted base/source data to EAC-CPF through XQuery script written by Amanda T. Ross of the United States National Archives and Records Administration.</eventDescription>
+        <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
       <!--
             <maintenanceEvent>
@@ -62,161 +63,1671 @@
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent> 
             -->
     </maintenanceHistory>
-    <sources>
-      <source xlink:href="https://catalog.archives.gov" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>National Archives and Records Administration Authority List</sourceEntry>
-      </source>
-             --&gt;
-            <source xlink:href="http://id.loc.gov/authorities/names" xlink:type="simple" lastDateTimeVerified="[dateTime]">
-        <sourceEntry>Library of Congress Name Authority File</sourceEntry>
-      </source>
-      <source xlink:href="http://viaf.org" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>Virtual International Authority File</sourceEntry>
-      </source>
-    </sources>
+    <!--         
+        <sources>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
+            </source>
+        </sources>
+        -->
   </control>
   <cpfDescription>
     <identity>
       <entityType>person</entityType>
-
-            if ($entityType eq "person")
-              then
-              
-            <nameEntry localType="marcfield:100">
-        <part localType="marcfield:100$a"/>
-        <part localType="marcfield:100$d"/>
-        <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
-      </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="familyName"/>
-        <part localType="givenName"/>
-        <part localType="nickname"/>
-        <part localType="maiden name"/>
-        <part localtype="generational marker"/>
-        <part localType="military rank or official title"/>
-        <part localType="Mrs."/>
+      <!-- Authorized Name Entries -->
+      <!-- Nixon Tapes Index -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Cashen, Henry C., II</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-            
-
-      else
-      <nameEntry localType="marcfield:110">
-        <part localType="marcfield:110$a"/>
-        <part localType="marcfield:110$d"/>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a"/>
+        <part localType="marcfield:100$b"/>
+        <part localType="marcfield:100$c"/>
+        <part localType="marcfield:100$q"/>
+        <part localType="marcfield:100$d"/>
         <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
+        <!-- 
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
       </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="directOrder"/>
+      <!-- Variant Name Entries -->
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">Henry C. Cashen, II</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Cashen</part>
+        <part localType="givenName">Henry C.</part>
+        <part localType="generationalMarker">II</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
+      <!-- Insert Variant Names from LCNAF/LCDRG -->
     </identity>
     <description>
-      <existDates localType="marcfield:046">
-        <dateRange>
-          <fromDate standardDate=""/>
-          <toDate/>
-        </dateRange>
-      </existDates>
-      <occupations>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-          <dateRange>
-            <fromDate standardDate="2009-11-13">November 13, 2009</fromDate>
-            <toDate/>
-          </dateRange>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-      </occupations>
-      <languageUsed>
-        <language languageCode="eng">English</language>
-        <script scriptCode="Latn">Latin</script>
-      </languageUsed>
+      <!-- Exist Dates -->
+      <!--
+            <existDates>
+            
+            </existDates>
+            -->
+      <!-- Gender/Gender Identity -->
       <localDescriptions localType="http://viaf.org/viaf/terms#gender">
         <localDescription localType="marcfield:375">
-          <term/>
-          <descriptiveNote>Gender certainty score, via Namsor: </descriptiveNote>
+          <term vocabularySource="NixonTapesIndex">male</term>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">-1.0</span>.</p>
+          </descriptiveNote>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescriptions localType="http://viaf.org/viaf/terms#AssociatedSubject">
-        <localDescription localType="marcfield:372$a">
+      <!-- Citizenship -->
+      <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+      <!-- Nationality -->
+      <!--
+            <localDescriptions localType="nixonTapes/#nationality">
+            
+            </localDescriptions>
+            -->
+      <!-- Languages Used -->
+      <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->
+      <!-- Racial Category -->
+      <localDescriptions localType="nixonTapes/#racialCategory">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="uscensus:race"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Ethnic/Cultural Heritage -->
+      <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
+        <localDescription localType="marcfield:373">
           <term vocabularySource="lcsh"/>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescription localType="http://viaf.org/viaf/terms#nationalityOfEntity">
-        <placeEntry vocabularySource="lcsh" countryCode="US">United States</placeEntry>
-      </localDescription>
-      <places localType="http://socialarchive.iath.virginia.edu/control/term#AssociatedPlace">
-        <place localType="marcfield:370$c">
-          <placeRole>associated country</placeRole>
-          <placeEntry vocabularySource="lcsh" countryCode="US" latitude="39.76" longitude="-98.5">United States</placeEntry>
-        </place>
-        <place localType="marcfield:370$a">
-          <placeRole>birthplace</placeRole>
-          <placeEntry vocabularySource="lcsh" latitude="" longitude=""/>
-          <date standardDate=""/>
-        </place>
-      </places>
+      <!-- Tribal Affiliations -->
+      <!-- Title or Honorific -->
+      <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Occupations -->
+      <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
+      <!-- Functions -->
+      <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+      <!-- Political Affiliations -->
+      <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+      <!-- Religious Affiliations -->
+      <!-- Topical Subjects -->
+      <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Associated Places -->
+      <places/>
       <biogHist>
-        <abstract> ...</abstract>
-        <p> ...</p>
+        <!-- Abstract -->
+        <abstract/>
+        <!-- Biography or Administrative History Note -->
+        <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
-        <citation/>
+        <!-- Insert citations -->
       </biogHist>
+      <!-- Insert structureOrGenealogy, if relevant -->
     </description>
     <relations>
-      <!-- Relationships to Corporate Bodies -->
-      <!-- Education -->
-      <!-- Employers -->
-      <!-- Relationships to Persons-->
-      <!-- Family Members -->
-      <!-- Professional Relationships -->
-      <!-- Relationship to Resources, creatorOf -->
-      <resourceRelation xlink:arcrole="participantIn" xlink:href="" xlink:role="archivalResource" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <relationEntry/>
+      <!-- CPF RELATIONS -->
+      <!-- Relationships to Persons: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004471" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Affeldt, Paul</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Paul Affeldt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004472" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Alagia, Paul</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Paul Alagia conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000047" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Allott, Gordon L.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Gordon L. Allott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000103" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Atkins, Oliver F. ("Ollie")</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Oliver F. ("Ollie") Atkins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000116" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Baker, Frank K.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Frank K. Baker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004820" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Balsdon, Kathleen W.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Kathleen W. Balsdon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000129" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Balzano, Michael P.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Michael P. Balzano conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004819" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Barker, Desmond J., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Desmond J. Barker, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000149" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bartlett, Wes H.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Wes H. Bartlett conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000196" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bennett, Nora</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Nora Bennett conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004473" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Besemer, Melvin</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Melvin Besemer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000263" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Boone, Pat</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Pat Boone conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003104" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Boone, Shirley</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Shirley Boone conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000284" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Branca, Ralph</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Ralph Branca conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000290" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Breslin, John J., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John J. Breslin, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000295" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brickley, William</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and William Brickley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000307" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brooks, Sidney</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Sidney Brooks conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000319" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, Peter C.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Peter C. Brown conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000320" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, Robert J.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Robert J. Brown conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000321" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, William N.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and William N. Brown conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000336" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bull, Stephen B.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Stephen B. Bull conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000345" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Buonconti, Nick</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Nick Buonconti conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000354" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Burnett, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Robert Burnett conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000367" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butrico, Tony</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Tony Butrico conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000369" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butterbrodt, John E.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John E. Butterbrodt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000370" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butterfield, Alexander P.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Alexander P. Butterfield conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000397" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Campbell, J. Philip</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and J. Philip Campbell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000403" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carlesimo, Peter</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Peter Carlesimo conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000405" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carlson, John G.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John G. Carlson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000406" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carlson, Randy (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Mrs. Randy Carlson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000430" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Casey, William J.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and William J. Casey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003143" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cashen, Raymond</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Raymond Cashen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000434" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cashen, Raymond (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Mrs. Raymond Cashen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000460" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chang, Marguerite S.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Marguerite S. Chang conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000491" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clark, R. A. Ingham</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and R. A. Ingham Clark conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003148" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clausen, Henry C.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Henry C. Clausen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000494" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clausen, Henry C. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Mrs. Henry C. Clausen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000496" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clawson, Brooke A.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Brooke A. Clawson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000497" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clawson, Courtney</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Courtney J. Clawson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000498" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clawson, James</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and James Clawson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003150" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clawson, James (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Mrs. James Clawson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000109" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clawson, Jason B.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Jason B. Clawson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000502" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cochran, Barbara</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Barbara Cochran conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000503" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cochran, Bobby</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Bobby Cochran conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000504" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cochran, Marilyn</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Marilyn Cochran conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000515" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cohen, Howard A.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Howard A. Cohen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004821" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cohen, Howard A.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Howard A. Cohen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000530" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Colson, Charles W.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Charles W. Colson conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000546" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Conte, Silvio O.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Silvio O. Conte conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000559" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Coover, Darrell</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Darrell Coover conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000583" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cronus, Joseph E.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Joseph E. Cronus conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003096" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Crowe, Albert E. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Mrs. Albert E. Crowe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000588" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cullen, Jo Ann</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Jo Ann Cullen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000591" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Curry, Bill</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Bill Curry conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000611" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Davis, Harold</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Harold Davis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000615" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Davis, Sammy, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Sammy Davis, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000671" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Doane, Harvey R.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Harvey R. Doane conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000685" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Donfeld, Jeffrey</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Jeffrey Donfeld conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004474" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Eckles, Bill</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Bill Eckles conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000752" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ehrlichman, John D.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John D. Ehrlichman conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000772" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Elman, Bruce</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Bruce Elman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000789" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Evans, Constance R.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Constance R. Evans conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000791" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Evans, Elizabeth G.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Elizabeth G. Evans conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000794" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Evans, John F., III</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John F. Evans, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000795" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Evans, Katherine R.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Katherine R. Evans conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004822" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Evans, Llewelyn J. ("Bud")</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Llewelyn J. ("Bud") Evans conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000824" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Feeney, Charles S.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Charles S. Feeney conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000845" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fine, Phil David</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Phil David Fine conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000889" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Franklin, Barbara H.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Barbara H. Franklin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004488" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Galbraith, William E.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and William E. Galbraith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000944" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Garvey, Ed</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Ed Garvey conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000973" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gill, Rhoda</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Rhoda Gill conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000975" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gilley, Jerry</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Jerry Gilley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000994" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gonzalez, Aida L.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Aida L. Gonzalez conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004475" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gregg, Don</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Don Gregg conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001032" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gremillian, Jerry</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Jerry Gremillian conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004476" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Griffith, W. R.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and W. R. Griffith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001060" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gurash, John</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John Gurash conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001082" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haldeman, H. R. ("Bob")</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and H. R. ("Bob") Haldeman conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001094" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hallett, Douglas</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Douglas Hallett conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001101" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hampton, Lionel</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Lionel Hampton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004477" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hansen, Carlyle</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Carlyle Hansen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001117" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hansen, Zenon C. R.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Zenon C. R. Hansen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001121" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hardin, Clifford M.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Clifford M. Hardin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001140" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harris, Jane</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Jane Harris conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004478" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harrison, Marion Edwyn</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Marion Edwyn Harrison conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004479" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hillings, Patrick J.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Patrick J. Hillings conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001231" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hodgson, James D.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and James D. Hodgson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001257" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hone, Ralph (Sir)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Sir Ralph Hone conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003365" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hone, Sybil (Simond) (Lady)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Lady Sybil (Simond) Hone conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001278" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hovde, Donald I.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Donald I. Hovde conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001282" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Howard, W. Richard</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and W. Richard Howard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001325" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jackson, Andrew</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Andrew Jackson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004480" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, Wesley</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Wesley Johnson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001383" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson-Gilbert, Ian A. (Sir)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Sir Ian A. Johnson-Gilbert conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001419" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Karalekas, S. Steven</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and S. Steven Karalekas conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001448" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kelly, John B., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John B. Kelly, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001500" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kleinknecht, C. Fred</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and C. Fred Kleinknecht conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001507" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kline, Richard G.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Richard G. Kline conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001514" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Koch, Noel C.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Noel C. Koch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001530" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Krol, John Cardinal</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John Cardinal Krol conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001533" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kuhn, Bowie K.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Bowie K. Kuhn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001534" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kull, John</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John Kull conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001556" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Larkin, Felix E.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Felix E. Larkin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001600" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Leone, Gene</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Gene Leone conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001606" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Levitas, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Robert Levitas conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004724" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Leyden, John F.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John F. Leyden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001627" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lockwood, R. Lee</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and R. Lee Lockwood conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003403" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lockwood, R. Lee (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Mrs. R. Lee Lockwood conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001634" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lombardi, Marie</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Marie Lombardi conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001650" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Low, James</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and James Low conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001665" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Luther, Edwin R.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Edwin R. Luther conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003405" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Luther, Edwin R. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Mrs. Edwin R. Luther conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001671" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lyng, Richard E.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Richard E. Lyng conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001683" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mackey, John</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John Mackey conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003407" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mackey, John (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Mrs. John Mackey conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001684" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mackin, Francis C.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Francis C. Mackin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001714" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mara, Wellington T.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Wellington T. Mara conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001727" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Marrs, Mabel</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Mabel Marrs conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001730" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Marsh, Winston W.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Winston W. Marsh conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001756" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Matson, Barbara</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Barbara Matson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001757" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Matson, Bruce</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Bruce Matson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001758" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Matson, Ollie</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Ollie Matson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003408" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Matson, Ollie (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Mrs. Ollie Matson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001771" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McArthur, Richard W.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Richard W. McArthur conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001776" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McCarthy, Jack</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Jack McCarthy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001794" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McCrane, Joseph M.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Joseph M. McCrane conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001802" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McFarland, Basil (Sir)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Sir Basil McFarland conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001850" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Meek, John</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John Meek conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001852" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Meeuwsen, Beverly</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Beverly Meeuwsen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001853" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Meeuwsen, Terry Ann</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Terry Ann Meeuwsen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001881" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Miller, Jack R.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Jack R. Miller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001878" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Miller, Jaynie K.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Jaynie K. Miller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001897" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mitchell, John N.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John N. Mitchell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001925" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morgan, Edward L.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Edward L. Morgan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004481" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moser, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John A. Moser conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001943" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mulcahy, John A. ("Jack")</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John A. ("Jack") Mulcahy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004482" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nelson, Harold S.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Harold S. Nelson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001985" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Newbury, George A.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and George A. Newbury conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and President Richard M. Nixon conversed <span localType="frequency">31</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002051" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Donnell, Harry</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Harry O'Donnell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003420" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Donnell, Harry (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Mrs. Patrick E. O'Donnell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002052" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Donnell, Patrick E.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Patrick E. O'Donnell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002084" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Page, Vickie</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Vickie Page conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002094" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Palmby, Clarence D.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Clarence D. Palmby conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002102" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Parker, David N.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and David N. Parker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004483" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Parr, David L.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and David L. Parr conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002115" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Patterson, Floyd</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Floyd Patterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003422" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Patterson, Floyd (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Mrs. Floyd Patterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002116" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Patterson, Janene</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Janene Patterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002117" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Patterson, Jennifer</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Jennifer Patterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002126" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pendleton, Terry</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Terry Pendleton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002134" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Perrymore, Dale</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Dale Perrymore conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004725" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Poli, Robert E.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Robert E. Poli conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002171" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pontius, H. Jackson</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and H. Jackson Pontius conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004484" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Powell, Bill</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Bill Powell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002189" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Price, Patrick H.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Patrick H. Price conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002190" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Price, Raymond K., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Raymond K. Price, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002252" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Renberg, Timothy</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Timothy Renberg conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002258" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rhatican, William F.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and William F. Rhatican conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002265" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rice, Donald B.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Donald B. Rice conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002267" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Richardson, Elliot L.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Elliot L. Richardson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002268" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Richardson, John, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John Richardson, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004485" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Robinson, P. L.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and P. L. Robinson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002305" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rock, Frances</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Frances Rock conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002309" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rodgers, Donald F.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Donald F. Rodgers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002324" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Romney, George W.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and George W. Romney conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002338" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rosenbloom, Carroll D.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Carroll D. Rosenbloom conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003059" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ruth, Claire (Hodgson)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Claire (Hodgson) Ruth conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002368" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ryan, John J.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John J. Ryan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002385" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sanders, H. E.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and H. E. Sanders conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003427" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sanders, H. E. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Mrs. H. E. Sanders conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002394" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sax, Arnold</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Arnold Sax conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003428" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sax, Arnold (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Mrs. Arnold Sax conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002400" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schaefer, Laurie Lee</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Laurie Lee Schaefer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002440" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schwager, Dorothy</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Dorothy Schwager conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002502" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shepard, Joshua K.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Joshua K. Shepard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002511" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Short, Robert E.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Robert E. Short conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002514" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shriver, Lucille</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Lucille Shriver conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002517" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shultz, George P.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and George P. Shultz conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002549" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sisneros, Joseph</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Joseph Sisneros conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002608" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Spina, Jack</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Jack Spina conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002613" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Squire, Jeanne</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Jeanne Squire conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002638" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stephens, Melville L.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Melville L. Stephens conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004726" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sturgil, Robert C.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Robert C. Sturgil conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002665" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sullivan, William H.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and William H. Sullivan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002699" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Taylor, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Robert Taylor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002714" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Thompson, Bobby</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Bobby Thompson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002732" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Timmons, William E.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and William E. Timmons conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002733" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tipone, William</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and William Tipone conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002761" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Travis, Alice</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Alice Travis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002774" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tucker, Fred C., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Fred C. Tucker, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002825" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Volpe, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John A. Volpe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004486" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Vose, Avery</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Avery Vose conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002831" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wade, Deborah</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Deborah Wade conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002852" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walsh, Michael P.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Michael P. Walsh conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002871" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Washington, Gary</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Gary Washington conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002911" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whitaker, John C.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John C. Whitaker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004487" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White, Frank</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Frank White conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002915" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White, Stuart C.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Stuart C. White conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003454" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White, Stuart C. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Mrs. Stuart C. White conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002946" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Williams, Harold</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Harold Williams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002955" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Williams, Theodore S. ("Ted")</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Theodore S. ("Ted") Williams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002957" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Williamson, John C.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and John C. Williamson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002967" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wilson, Michael</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Michael Wilson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002981" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Witter, Donald L.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Donald L. Witter conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002987" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Woods, Rose Mary</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Rose Mary Woods conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003011" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Yastrzemski, Carl M.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Carl M. Yastrzemski conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003014" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Yeates, Harry</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Harry Yeates conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003038" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ziegler, Ronald L.</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and Ronald L. Ziegler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002795" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">[Unknown person(s)]</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and [Unknown person(s)] conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- Relationships to Families -->
+      <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004723" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Professional Air Traffic Controllers Organization</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and representatives of the Professional Air Traffic Controllers Organization conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002920" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House photographer</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II and representatives of the White House photographer conversed <span localType="frequency">15</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- RESOURCE RELATIONS -->
+      <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-051-001">
+        <relationEntry>White House Tapes: Conversation 051-001</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 051-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
-      <!-- Relationship to Resources, subjectOf -->
-      <resourceRelation xlink:arcrole="subjectOf" xlink:role="archivalResource" xlink:type="simple" xlink:href="" lastDateTimeVerified="">
-        <relationEntry/>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-104-011">
+        <relationEntry>White House Tapes: Conversation 104-011</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 104-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-452-012">
+        <relationEntry>White House Tapes: Conversation 452-012</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 452-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-455-014">
+        <relationEntry>White House Tapes: Conversation 455-014</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 455-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-468-011">
+        <relationEntry>White House Tapes: Conversation 468-011</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 468-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-468-012">
+        <relationEntry>White House Tapes: Conversation 468-012</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 468-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-476-029">
+        <relationEntry>White House Tapes: Conversation 476-029</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 476-029 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-477-005">
+        <relationEntry>White House Tapes: Conversation 477-005</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 477-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-478-008">
+        <relationEntry>White House Tapes: Conversation 478-008</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 478-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-487-013">
+        <relationEntry>White House Tapes: Conversation 487-013</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 487-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-515-002">
+        <relationEntry>White House Tapes: Conversation 515-002</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 515-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-520-003">
+        <relationEntry>White House Tapes: Conversation 520-003</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 520-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-528-016">
+        <relationEntry>White House Tapes: Conversation 528-016</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 528-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-529-001">
+        <relationEntry>White House Tapes: Conversation 529-001</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 529-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-534-011">
+        <relationEntry>White House Tapes: Conversation 534-011</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 534-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-551-008">
+        <relationEntry>White House Tapes: Conversation 551-008</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 551-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-574-011">
+        <relationEntry>White House Tapes: Conversation 574-011</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 574-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-590-004">
+        <relationEntry>White House Tapes: Conversation 590-004</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 590-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-616-001">
+        <relationEntry>White House Tapes: Conversation 616-001</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 616-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-630-013">
+        <relationEntry>White House Tapes: Conversation 630-013</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 630-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-685-006">
+        <relationEntry>White House Tapes: Conversation 685-006</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 685-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-740-004">
+        <relationEntry>White House Tapes: Conversation 740-004</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 740-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-760-009">
+        <relationEntry>White House Tapes: Conversation 760-009</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 760-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-765-020">
+        <relationEntry>White House Tapes: Conversation 765-020</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 765-020 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-778-017">
+        <relationEntry>White House Tapes: Conversation 778-017</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 778-017 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-781-007">
+        <relationEntry>White House Tapes: Conversation 781-007</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 781-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-791-005">
+        <relationEntry>White House Tapes: Conversation 791-005</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 791-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-794-005">
+        <relationEntry>White House Tapes: Conversation 794-005</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 794-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-797-014">
+        <relationEntry>White House Tapes: Conversation 797-014</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 797-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-801-017">
+        <relationEntry>White House Tapes: Conversation 801-017</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 801-017 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-855-018">
+        <relationEntry>White House Tapes: Conversation 855-018</relationEntry>
+        <descriptiveNote>
+          <p>Henry C. Cashen, II participated in Conversation 855-018 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+      <!-- Relationship to Bibliographic Works, subjectOf -->
     </relations>
   </cpfDescription>
 </eac-cpf>
