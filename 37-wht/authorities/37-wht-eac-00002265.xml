@@ -1,9 +1,6 @@
-<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4">
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
   <control>
-    <recordId/>
-    <!-- <otherRecordId localType="http://catalog.archives.gov/id/"></otherRecordId> -->
-    <!-- <otherRecordId localType="http://viaf.org/viaf/terms#viafID"></otherRecordId> -->
-    <otherRecordId localType="http://www.loc.gov/standards/mads/rdf/v1.html#Authority"/>
+    <recordId>37-wht-eac-00002265</recordId>
     <maintenanceStatus>new</maintenanceStatus>
     <maintenanceAgency>
       <agencyCode>US-DNA</agencyCode>
@@ -16,15 +13,15 @@
     <!-- Convention Declarations for Content Standards -->
     <conventionDeclaration>
       <abbreviation>RDA</abbreviation>
-      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-19">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>USNARA-LCDRG</abbreviation>
-      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-19">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>DACS-2nd</abbreviation>
-      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2015-03-18">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>NixonTapesIndex</abbreviation>
@@ -43,6 +40,10 @@
       <abbreviation>marc:relators</abbreviation>
       <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
     </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>uscensus:race</abbreviation>
+      <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
+    </conventionDeclaration>
     <!-- Convention Declarations for Style Guides -->
     <conventionDeclaration>
       <abbreviation>CMOS-16th</abbreviation>
@@ -51,10 +52,10 @@
     <maintenanceHistory>
       <maintenanceEvent>
         <eventType>created</eventType>
-        <eventDateTime>2016-03-01T01:02:57.824-05:00</eventDateTime>
+        <eventDateTime>2016-03-29T16:05:09.994-04:00</eventDateTime>
         <agentType>machine</agentType>
         <agent>base-to-eac.xq</agent>
-        <eventDescription>Converted base/source data to EAC-CPF through XQuery script written by Amanda T. Ross of the United States National Archives and Records Administration.</eventDescription>
+        <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
       <!--
             <maintenanceEvent>
@@ -62,161 +63,1076 @@
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent> 
             -->
     </maintenanceHistory>
-    <sources>
-      <source xlink:href="https://catalog.archives.gov" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>National Archives and Records Administration Authority List</sourceEntry>
-      </source>
-             --&gt;
-            <source xlink:href="http://id.loc.gov/authorities/names" xlink:type="simple" lastDateTimeVerified="[dateTime]">
-        <sourceEntry>Library of Congress Name Authority File</sourceEntry>
-      </source>
-      <source xlink:href="http://viaf.org" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>Virtual International Authority File</sourceEntry>
-      </source>
-    </sources>
+    <!--         
+        <sources>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
+            </source>
+        </sources>
+        -->
   </control>
   <cpfDescription>
     <identity>
       <entityType>person</entityType>
-
-            if ($entityType eq "person")
-              then
-              
-            <nameEntry localType="marcfield:100">
-        <part localType="marcfield:100$a"/>
-        <part localType="marcfield:100$d"/>
-        <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
-      </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="familyName"/>
-        <part localType="givenName"/>
-        <part localType="nickname"/>
-        <part localType="maiden name"/>
-        <part localtype="generational marker"/>
-        <part localType="military rank or official title"/>
-        <part localType="Mrs."/>
+      <!-- Authorized Name Entries -->
+      <!-- Nixon Tapes Index -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Rice, Donald B.</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-            
-
-      else
-      <nameEntry localType="marcfield:110">
-        <part localType="marcfield:110$a"/>
-        <part localType="marcfield:110$d"/>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a"/>
+        <part localType="marcfield:100$b"/>
+        <part localType="marcfield:100$c"/>
+        <part localType="marcfield:100$q"/>
+        <part localType="marcfield:100$d"/>
         <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
+        <!-- 
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
       </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="directOrder"/>
+      <!-- Variant Name Entries -->
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">Donald B. Rice</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Rice</part>
+        <part localType="givenName">Donald B.</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
+      <!-- Insert Variant Names from LCNAF/LCDRG -->
     </identity>
     <description>
-      <existDates localType="marcfield:046">
-        <dateRange>
-          <fromDate standardDate=""/>
-          <toDate/>
-        </dateRange>
-      </existDates>
-      <occupations>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-          <dateRange>
-            <fromDate standardDate="2009-11-13">November 13, 2009</fromDate>
-            <toDate/>
-          </dateRange>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-      </occupations>
-      <languageUsed>
-        <language languageCode="eng">English</language>
-        <script scriptCode="Latn">Latin</script>
-      </languageUsed>
+      <!-- Exist Dates -->
+      <!--
+            <existDates>
+            
+            </existDates>
+            -->
+      <!-- Gender/Gender Identity -->
       <localDescriptions localType="http://viaf.org/viaf/terms#gender">
         <localDescription localType="marcfield:375">
-          <term/>
-          <descriptiveNote>Gender certainty score, via Namsor: </descriptiveNote>
+          <term vocabularySource="NixonTapesIndex">male</term>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">-1.0</span>.</p>
+          </descriptiveNote>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescriptions localType="http://viaf.org/viaf/terms#AssociatedSubject">
-        <localDescription localType="marcfield:372$a">
+      <!-- Citizenship -->
+      <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+      <!-- Nationality -->
+      <!--
+            <localDescriptions localType="nixonTapes/#nationality">
+            
+            </localDescriptions>
+            -->
+      <!-- Languages Used -->
+      <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->
+      <!-- Racial Category -->
+      <localDescriptions localType="nixonTapes/#racialCategory">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="uscensus:race"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Ethnic/Cultural Heritage -->
+      <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
+        <localDescription localType="marcfield:373">
           <term vocabularySource="lcsh"/>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescription localType="http://viaf.org/viaf/terms#nationalityOfEntity">
-        <placeEntry vocabularySource="lcsh" countryCode="US">United States</placeEntry>
-      </localDescription>
-      <places localType="http://socialarchive.iath.virginia.edu/control/term#AssociatedPlace">
-        <place localType="marcfield:370$c">
-          <placeRole>associated country</placeRole>
-          <placeEntry vocabularySource="lcsh" countryCode="US" latitude="39.76" longitude="-98.5">United States</placeEntry>
-        </place>
-        <place localType="marcfield:370$a">
-          <placeRole>birthplace</placeRole>
-          <placeEntry vocabularySource="lcsh" latitude="" longitude=""/>
-          <date standardDate=""/>
-        </place>
-      </places>
+      <!-- Tribal Affiliations -->
+      <!-- Title or Honorific -->
+      <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Occupations -->
+      <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
+      <!-- Functions -->
+      <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+      <!-- Political Affiliations -->
+      <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+      <!-- Religious Affiliations -->
+      <!-- Topical Subjects -->
+      <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Associated Places -->
+      <places/>
       <biogHist>
-        <abstract> ...</abstract>
-        <p> ...</p>
+        <!-- Abstract -->
+        <abstract/>
+        <!-- Biography or Administrative History Note -->
+        <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
-        <citation/>
+        <!-- Insert citations -->
       </biogHist>
+      <!-- Insert structureOrGenealogy, if relevant -->
     </description>
     <relations>
-      <!-- Relationships to Corporate Bodies -->
-      <!-- Education -->
-      <!-- Employers -->
-      <!-- Relationships to Persons-->
-      <!-- Family Members -->
-      <!-- Professional Relationships -->
-      <!-- Relationship to Resources, creatorOf -->
-      <resourceRelation xlink:arcrole="participantIn" xlink:href="" xlink:role="archivalResource" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <relationEntry/>
+      <!-- CPF RELATIONS -->
+      <!-- Relationships to Persons: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000018" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Adkins, Roger</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Roger Adkins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004471" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Affeldt, Paul</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Paul Affeldt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000021" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ahlgram, Henry</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Henry Ahlgren conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004472" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Alagia, Paul</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Paul Alagia conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000031" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Alger, Mark W.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Mark W. Alger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003841" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Baldwin, Velma N.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Velma N. Baldwin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000150" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Barzel, Rainer</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Rainer Barzel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000176" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bedell, Catherine May</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Catherine May Bedell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003838" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Benton, Charles E.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Charles E. Benton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004473" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Besemer, Melvin</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Melvin Besemer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003559" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Besson, Frank S. (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Gen. Frank S. Besson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000221" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bingman, Charles</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Charles Bingman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000241" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Blum, James</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and James Blum conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000242" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Blum, Seymour</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Seymour Blum conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000243" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Blunt, William W.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and William W. Blunt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003560" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bradshaw, David E.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and David E. Bradshaw conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003839" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bray, David</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and David Bray conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003840" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Breese, Lawrence</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Lawrence conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000336" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bull, Stephen B.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Stephen B. Bull conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000369" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butterbrodt, John E.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and John E. Butterbrodt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000397" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Campbell, J. Philip</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and J. Philip Campbell conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000408" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carlucci, Frank C., III</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Frank C. Carlucci, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000433" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cashen, Henry C., II</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Henry C. Cashen, II conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000463" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chapin, Russell</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Russell Chapin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003566" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clapp, Charles</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Charles Clapp conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003866" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clarke, Raymond</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Raymond Clarke conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003076" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cohn, Samuel M.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Samuel M. Cohn conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000541" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Connally, John B.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and John B. Connally conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000554" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cook, Richard K.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Richard K. Cook conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000560" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Copf, Jerry</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Jerry Copf conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000576" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Crabill, Donald E.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Donald E. Crabill conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000584" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cross, Christopher T.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Christopher T. Cross conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003478" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dam, Kenneth W.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Kenneth W. Dam conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003842" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dame, Philip</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Philip Dame conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000620" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dean, Alan</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Alan Dean conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004114" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Deane, John Russell, III</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and John Russell Deane, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003843" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Derman, Donald A.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Donald A. Derman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004474" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Eckles, Bill</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Bill Eckles conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000752" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ehrlichman, John D.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and John D. Ehrlichman conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000767" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Elliott, Emerson J.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Emerson J. Elliott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003844" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Etheredge, Lynn</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Lynn Etheredge conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000793" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Evans, John F., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and John F. Evans, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000842" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Finch, James</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and James Finch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000850" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fischer, C. William</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and C. William Fischer conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000855" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fitz-Patrick, William</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and William Fitz-Patrick conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003845" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Frey, James M.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and James M. Frey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000917" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fuller, Bill</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Bill Fuller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004488" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Galbraith, William E.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and William E. Galbraith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000943" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gartland, John</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and John Gartland conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000969" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gifford, William L.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and William L. Gifford conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003561" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gilhooley, John J.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and John J. Gilhooley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001018" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Granlich, Ned</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Ned Granlich conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001029" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Greene, Rodger L.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Rodger L. Greene conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004475" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gregg, Don</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Don Gregg conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004476" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Griffith, W. R.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and W. R. Griffith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003847" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haase, Walter W.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Walter W. Haase conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001098" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hamm, William</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and William Hamm conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004477" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hansen, Carlyle</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Carlyle Hansen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001121" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hardin, Clifford M.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Clifford M. Hardin conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001130" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harper, Edwin L.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Edwin L. Harper conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004478" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harrison, Marion Edwyn</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Marion Edwyn Harrison conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001156" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Havens, Harry S.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Harry S. Havens conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004479" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hillings, Patrick J.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Patrick J. Hillings conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003846" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hunt, Wilmer</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Wilmer Hunt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001308" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hurley, John F.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and John F. Hurley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001319" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ink, Dwight A.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Dwight A. Ink conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004480" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, Wesley</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Wesley Johnson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001378" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, William H.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and William H. Johnson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001405" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Joss, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Robert Joss conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003552" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kendall, David W.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and David W. Kendall conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003628" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kohlberg, William H.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and William H. Kohlberg conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003865" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kraus, Charles</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Charles Kraus conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001529" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Krogh, Egil ("Bud"), Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Egil ("Bud") Krogh, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003870" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Laffer, Arthur B.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Arthur B. Laffer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003848" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Laitin, Joseph</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Joseph Laitin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003562" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lewis, Arthur D.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Arthur D. Lewis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003849" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lind, Susanne</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Susanne Lind conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001647" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lovell, Malcolm R., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Malcolm R. Lovell, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003850" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Loweth, Hugh F.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Hugh F. Loweth conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003563" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Luna, Charles</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Charles Luna conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003851" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lutz, Theodore C.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Theodore C. Lutz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001671" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lyng, Richard E.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Richard E. Lyng conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003853" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">MacDonald, Philip</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Philip MacDonald conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001819" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McLane, James</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and James McLane conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003854" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McOmber, Dale R.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Dale R. McOmber conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001843" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mead, Dana G.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Dana G. Mead conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001870" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Michel, Peter</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Peter Michel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003852" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Modlin, C. Peter, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and C. Peter Modlin, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001925" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morgan, Edward L.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Edward L. Morgan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004481" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moser, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and John A. Moser conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001973" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nathan, Richard P.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Richard P. Nathan conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004482" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nelson, Harold S.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Harold S. Nelson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003867" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Niskanen, William A.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and William A. Niskanen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and President Richard M. Nixon conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003855" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Norwood, Douglas</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Douglas Norwood conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002069" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Neill, Paul H.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Paul H. O'Neill conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002063" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Olsson, John P.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and John P. Olsson conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002073" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Orlebeck, Charles J.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Charles J. Orlebeck conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002078" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ottina, John R.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and John R. Ottina conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002083" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Page, David</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and David Page conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002094" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Palmby, Clarence D.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Clarence D. Palmby conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004483" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Parr, David L.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and David L. Parr conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002120" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pauls, Rolf</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Rolf Pauls conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002132" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Perry, Charles R.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Charles R. Perry conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004484" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Powell, Bill</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Bill Powell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003565" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Quinn, William J.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and William J. Quinn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002258" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rhatican, William F.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and William F. Rhatican conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002260" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rhode, Earl D.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Earl D. Rhode conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004485" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Robinson, P. L.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and P. L. Robinson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002301" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Robinson, William</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and William Robinson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002322" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rommel, Wilfred H.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Wilfred H. Rommel conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002391" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sasaki, Wesley K.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Wesley K. Sasaki conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003856" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schleede, Glenn R.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Glenn R. Schleede conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002506" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shiskin, Julius</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Julius Shiskin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002517" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shultz, George P.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and George P. Shultz conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003857" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stubbing, Richard</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Richard Stubbing conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003858" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sullivan, Reardon</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Reardon Sullivan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002675" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sweeney, Naomi</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Naomi Sweeney conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003859" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Taft, Daniel H.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Daniel H. Taft conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003868" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Taft, William H., IV</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and William H. Taft, IV conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003869" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Taylor, David P.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and David P. Taylor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002719" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Thompson, Larry</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Larry Thompson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002728" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tiller, Carl W.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Carl W. Tiller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003860" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Torrey, Barbara</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Barbara conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003861" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tschirigi, James D.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and James D. Tschirigi conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003862" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Turen, Milton</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Milton Turen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003863" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Veatch, Ellis H.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Ellis H. Veatch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002814" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Velde, Richard W.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Richard W. Velde conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002825" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Volpe, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and John A. Volpe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004486" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Vose, Avery</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Avery Vose conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002836" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Waldeman, Raymond J.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Raymond J. Waldeman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003864" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walker, Joyce</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Joyce Walker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002858" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walters, Raymond L.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Raymond L. Walters conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002890" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Weidenbaum, Murray L.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Murray L. Weidenbaum conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002893" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Weinberger, Caspar W. ("Cap")</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Caspar W. ("Cap") Weinberger conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002911" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whitaker, John C.</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and John C. Whitaker conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004487" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White, Frank</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and Frank White conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- Relationships to Families -->
+      <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002920" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House photographer</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice and representatives of the White House photographer conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- RESOURCE RELATIONS -->
+      <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-051-001">
+        <relationEntry>White House Tapes: Conversation 051-001</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice participated in Conversation 051-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
-      <!-- Relationship to Resources, subjectOf -->
-      <resourceRelation xlink:arcrole="subjectOf" xlink:role="archivalResource" xlink:type="simple" xlink:href="" lastDateTimeVerified="">
-        <relationEntry/>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-060-002">
+        <relationEntry>White House Tapes: Conversation 060-002</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice participated in Conversation 060-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-088-001">
+        <relationEntry>White House Tapes: Conversation 088-001</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice participated in Conversation 088-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-472-021">
+        <relationEntry>White House Tapes: Conversation 472-021</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice participated in Conversation 472-021 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-473-006">
+        <relationEntry>White House Tapes: Conversation 473-006</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice participated in Conversation 473-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-475-004">
+        <relationEntry>White House Tapes: Conversation 475-004</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice participated in Conversation 475-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-709-016">
+        <relationEntry>White House Tapes: Conversation 709-016</relationEntry>
+        <descriptiveNote>
+          <p>Donald B. Rice participated in Conversation 709-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+      <!-- Relationship to Bibliographic Works, subjectOf -->
     </relations>
   </cpfDescription>
 </eac-cpf>
