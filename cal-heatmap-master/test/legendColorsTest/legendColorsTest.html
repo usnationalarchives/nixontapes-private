@@ -52,7 +52,7 @@
             subDomain: "day", // Split each month into days
             cellSize: 12,
             domainGutter: 4,
-            range: 36,
+            range: 30,
             displayLegend: true, // Display legend
             legendHorizontalPosition: "center", // Center legend
             legendColors: legendcolors, // Match legend colors
@@ -60,10 +60,10 @@
             browsing: true, // Enable browsing
             considerMissingDataAsZero: considermData, // Consider missing data as null rather than zero
             weekStartOnMonday: false,
-            highlight: [new Date(1971, 1, 16)],
+            highlight: [new Date(1971, 1, 16), new Date(1973, 6, 12)],
             itemName: ["conversation", "conversations"],
             itemSelector: DOMElID,
-            start: new Date(1971, 0, 1), // Start date of January 1, 1971        
+            start: new Date(1971, 1, 1), // Start date of February 1, 1971        
             data: "data-nixon-sample.json" // Data source = datas-hours.json
         });
     }
