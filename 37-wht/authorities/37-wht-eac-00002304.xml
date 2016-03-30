@@ -1,9 +1,6 @@
-<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4">
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
   <control>
-    <recordId/>
-    <!-- <otherRecordId localType="http://catalog.archives.gov/id/"></otherRecordId> -->
-    <!-- <otherRecordId localType="http://viaf.org/viaf/terms#viafID"></otherRecordId> -->
-    <otherRecordId localType="http://www.loc.gov/standards/mads/rdf/v1.html#Authority"/>
+    <recordId>37-wht-eac-00002304</recordId>
     <maintenanceStatus>new</maintenanceStatus>
     <maintenanceAgency>
       <agencyCode>US-DNA</agencyCode>
@@ -16,15 +13,15 @@
     <!-- Convention Declarations for Content Standards -->
     <conventionDeclaration>
       <abbreviation>RDA</abbreviation>
-      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-19">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>USNARA-LCDRG</abbreviation>
-      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-19">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>DACS-2nd</abbreviation>
-      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2015-03-18">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>NixonTapesIndex</abbreviation>
@@ -43,6 +40,10 @@
       <abbreviation>marc:relators</abbreviation>
       <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
     </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>uscensus:race</abbreviation>
+      <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
+    </conventionDeclaration>
     <!-- Convention Declarations for Style Guides -->
     <conventionDeclaration>
       <abbreviation>CMOS-16th</abbreviation>
@@ -51,10 +52,10 @@
     <maintenanceHistory>
       <maintenanceEvent>
         <eventType>created</eventType>
-        <eventDateTime>2016-03-01T01:02:57.824-05:00</eventDateTime>
+        <eventDateTime>2016-03-29T16:05:09.994-04:00</eventDateTime>
         <agentType>machine</agentType>
         <agent>base-to-eac.xq</agent>
-        <eventDescription>Converted base/source data to EAC-CPF through XQuery script written by Amanda T. Ross of the United States National Archives and Records Administration.</eventDescription>
+        <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
       <!--
             <maintenanceEvent>
@@ -62,161 +63,770 @@
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent> 
             -->
     </maintenanceHistory>
-    <sources>
-      <source xlink:href="https://catalog.archives.gov" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>National Archives and Records Administration Authority List</sourceEntry>
-      </source>
-             --&gt;
-            <source xlink:href="http://id.loc.gov/authorities/names" xlink:type="simple" lastDateTimeVerified="[dateTime]">
-        <sourceEntry>Library of Congress Name Authority File</sourceEntry>
-      </source>
-      <source xlink:href="http://viaf.org" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>Virtual International Authority File</sourceEntry>
-      </source>
-    </sources>
+    <!--         
+        <sources>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
+            </source>
+        </sources>
+        -->
   </control>
   <cpfDescription>
     <identity>
       <entityType>person</entityType>
-
-            if ($entityType eq "person")
-              then
-              
-            <nameEntry localType="marcfield:100">
-        <part localType="marcfield:100$a"/>
-        <part localType="marcfield:100$d"/>
-        <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
-      </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="familyName"/>
-        <part localType="givenName"/>
-        <part localType="nickname"/>
-        <part localType="maiden name"/>
-        <part localtype="generational marker"/>
-        <part localType="military rank or official title"/>
-        <part localType="Mrs."/>
+      <!-- Authorized Name Entries -->
+      <!-- Nixon Tapes Index -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Roche, James M.</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-            
-
-      else
-      <nameEntry localType="marcfield:110">
-        <part localType="marcfield:110$a"/>
-        <part localType="marcfield:110$d"/>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a"/>
+        <part localType="marcfield:100$b"/>
+        <part localType="marcfield:100$c"/>
+        <part localType="marcfield:100$q"/>
+        <part localType="marcfield:100$d"/>
         <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
+        <!-- 
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
       </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="directOrder"/>
+      <!-- Variant Name Entries -->
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">James M. Roche</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Roche</part>
+        <part localType="givenName">James M.</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
+      <!-- Insert Variant Names from LCNAF/LCDRG -->
     </identity>
     <description>
-      <existDates localType="marcfield:046">
-        <dateRange>
-          <fromDate standardDate=""/>
-          <toDate/>
-        </dateRange>
-      </existDates>
-      <occupations>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-          <dateRange>
-            <fromDate standardDate="2009-11-13">November 13, 2009</fromDate>
-            <toDate/>
-          </dateRange>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-      </occupations>
-      <languageUsed>
-        <language languageCode="eng">English</language>
-        <script scriptCode="Latn">Latin</script>
-      </languageUsed>
+      <!-- Exist Dates -->
+      <!--
+            <existDates>
+            
+            </existDates>
+            -->
+      <!-- Gender/Gender Identity -->
       <localDescriptions localType="http://viaf.org/viaf/terms#gender">
         <localDescription localType="marcfield:375">
-          <term/>
-          <descriptiveNote>Gender certainty score, via Namsor: </descriptiveNote>
+          <term vocabularySource="NixonTapesIndex">male</term>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">-1.0</span>.</p>
+          </descriptiveNote>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescriptions localType="http://viaf.org/viaf/terms#AssociatedSubject">
-        <localDescription localType="marcfield:372$a">
+      <!-- Citizenship -->
+      <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+      <!-- Nationality -->
+      <!--
+            <localDescriptions localType="nixonTapes/#nationality">
+            
+            </localDescriptions>
+            -->
+      <!-- Languages Used -->
+      <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->
+      <!-- Racial Category -->
+      <localDescriptions localType="nixonTapes/#racialCategory">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="uscensus:race"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Ethnic/Cultural Heritage -->
+      <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
+        <localDescription localType="marcfield:373">
           <term vocabularySource="lcsh"/>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescription localType="http://viaf.org/viaf/terms#nationalityOfEntity">
-        <placeEntry vocabularySource="lcsh" countryCode="US">United States</placeEntry>
-      </localDescription>
-      <places localType="http://socialarchive.iath.virginia.edu/control/term#AssociatedPlace">
-        <place localType="marcfield:370$c">
-          <placeRole>associated country</placeRole>
-          <placeEntry vocabularySource="lcsh" countryCode="US" latitude="39.76" longitude="-98.5">United States</placeEntry>
-        </place>
-        <place localType="marcfield:370$a">
-          <placeRole>birthplace</placeRole>
-          <placeEntry vocabularySource="lcsh" latitude="" longitude=""/>
-          <date standardDate=""/>
-        </place>
-      </places>
+      <!-- Tribal Affiliations -->
+      <!-- Title or Honorific -->
+      <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Occupations -->
+      <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
+      <!-- Functions -->
+      <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+      <!-- Political Affiliations -->
+      <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+      <!-- Religious Affiliations -->
+      <!-- Topical Subjects -->
+      <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Associated Places -->
+      <places/>
       <biogHist>
-        <abstract> ...</abstract>
-        <p> ...</p>
+        <!-- Abstract -->
+        <abstract/>
+        <!-- Biography or Administrative History Note -->
+        <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
-        <citation/>
+        <!-- Insert citations -->
       </biogHist>
+      <!-- Insert structureOrGenealogy, if relevant -->
     </description>
     <relations>
-      <!-- Relationships to Corporate Bodies -->
-      <!-- Education -->
-      <!-- Employers -->
-      <!-- Relationships to Persons-->
-      <!-- Family Members -->
-      <!-- Professional Relationships -->
-      <!-- Relationship to Resources, creatorOf -->
-      <resourceRelation xlink:arcrole="participantIn" xlink:href="" xlink:role="archivalResource" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <relationEntry/>
+      <!-- CPF RELATIONS -->
+      <!-- Relationships to Persons: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000005" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Abel, I[lorwith] W.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Ilorwith W. Abel conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000011" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Acheson, Dean G.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Dean G. Acheson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003616" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Atkinson, Robert</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Robert Atkinson conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000122" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ball, George W.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and George W. Ball conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000148" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bartlett, Dewey F.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Dewey F. Bartlett conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003666" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Beirne, Joseph A.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Joseph A. Beirne conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000184" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Belindo, John</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and John Belindo conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003612" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Branch, Harllee, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Harllee Branch, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000336" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bull, Stephen B.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Stephen B. Bull conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000356" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Burrell, Berkeley G.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Berkeley G. Burrell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000421" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carter, Edward W.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Edward W. Carter conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004570" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clay, Lucius DuB., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Lucius DuB. Clay, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003623" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Coleman, William T., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and William T. Coleman, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004557" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Comarow, Murray</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Murray Comarow conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000541" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Connally, John B.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and John B. Connally conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004558" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Coy, Francis A.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Francis A. Coy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000604" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">David, Edward E., Jr. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Dr. Edward E. David, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000718" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dunlop, John T.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and John T. Dunlop conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000752" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ehrlichman, John D.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and John D. Ehrlichman conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000831" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fernandez, Ben</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Ben Fernandez conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000842" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Finch, James</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and James Finch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004559" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Furness, Betty</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Betty Furness conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000941" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Garment, Leonard</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Leonard Garment conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000958" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gerstenbeerg, Richard C.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Richard C. Gerstenbeerg conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003621" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Goldfinger, Nathaniel</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Nathaniel Goldfinger conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001005" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Goodpaster, Andrew J. (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Gen. Andrew J. Goodpaster conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003626" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Greenberg, Leon</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Leon Greenberg conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004569" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gruenther, Al (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Gen. Al Gruenther conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001069" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Alexander M., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Alexander M. Haig, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003627" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Heffner, Hubert (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Dr. Hubert Heffner conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004560" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Heineman, Ben W.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Ben W. Heineman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001231" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hodgson, James D.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and James D. Hodgson conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003624" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, Howard W.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Howard W. Johnson conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001398" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jonsson, J. Erik</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and J. Erik Jonsson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004568" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Katzenbach, Nicholas deB.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Nicholas deB. Katzenbach conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001494" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kissinger, Henry A.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Henry A. Kissinger conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003628" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kohlberg, William H.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and William H. Kohlberg conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001545" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Laird, Melvin R.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Melvin R. Laird conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004571" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lemnitzer, Lyman L. (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Gen. Lyman L. Lemnitzer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004561" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lindsay, Franklin A.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Franklin A. Lindsay conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001629" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lodge, Henry Cabot</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Henry Cabot Lodge conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003615" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lohrentz, W. L.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and W. L. Lohrentz conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001662" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lundin, Oscar A.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Oscar A. Lundin conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001720" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Marks, Leonard H.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Leonard H. Marks conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001784" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McCloy, John J.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and John J. McCloy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001793" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McCracken, Paul W.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Paul W. McCracken conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001846" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Meany, George</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and George Meany conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003625" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Miller, Arjay</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Arjay Miller conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004562" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Minow, Newton</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Newton Minow conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001919" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moorer, Thomas H. (Adm.)</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Adm. Thomas H. Moorer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003622" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Newell, Reginald</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Reginald Newell conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and President Richard M. Nixon conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003940" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Norstad, Lauris (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Gen. Lauris Norstad conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003613" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Connell, John</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and John O'Connell conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004563" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Paget, Richard M.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Richard M. Paget conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004564" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Parker, Jack S.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Jack S. Parker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002109" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Passer, Harold C.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Harold C. Passer conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002146" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Peter G.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Peter G. Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004574" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Read, William H.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and William H. Read conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004565" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Reynolds, James J.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and James J. Reynolds conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004555" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Robson, John E.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and John E. Robson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002316" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rogers, William P.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and William P. Rogers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002341" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rosow, Jerome M.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Jerome M. Rosow conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004554" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sanford, Terry</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Terry Sanford conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003630" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Savit, Carl</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Carl Savit conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003614" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shaver, J. Warren</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and J. Warren Shaver conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002517" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shultz, George P.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and George P. Shultz conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002522" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Siciliano, Rocco C.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Rocco C. Siciliano conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003618" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, Floyd E. ("Red")</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Floyd E. ("Red") Smith conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004573" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">St. John, Adrian, II (Brig. Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Brig. Gen. Adrian St. John, II conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002617" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stans, Maurice H.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Maurice H. Stans conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002629" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Steelman, Alan</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Alan Steelman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004566" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stults, Allen P.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Allen P. Stults conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004556" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Thayer, Walter N.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Walter N. Thayer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004572" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Vance, Cyrus R.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Cyrus R. Vance conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002815" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Venable, Abraham</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Abraham Venable conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002849" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wallis, W. Allen</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and W. Allen Wallis conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002890" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Weidenbaum, Murray L.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Murray L. Weidenbaum conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003620" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Weinberg, Nat</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Nat Weinberg conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003619" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Woodcock, Leonard</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Leonard Woodcock conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003629" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wool, Harold</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Harold Wool conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003000" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wriston, Walter B.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Walter B. Wriston conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003005" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wyly, Samuel E.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Samuel E. Wyly conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004567" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Young, Andrew J., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and Andrew J. Young, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- Relationships to Families -->
+      <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004553" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Citizens' Committee for Government Reorganization</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and representatives of the Citizens' Committee for Government Reorganization conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003610" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">National Commission on Productivity</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and representatives of the National Commission on Productivity conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002920" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House photographer</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche and representatives of the White House photographer conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- RESOURCE RELATIONS -->
+      <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-057-001">
+        <relationEntry>White House Tapes: Conversation 057-001</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche participated in Conversation 057-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
-      <!-- Relationship to Resources, subjectOf -->
-      <resourceRelation xlink:arcrole="subjectOf" xlink:role="archivalResource" xlink:type="simple" xlink:href="" lastDateTimeVerified="">
-        <relationEntry/>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-057-003">
+        <relationEntry>White House Tapes: Conversation 057-003</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche participated in Conversation 057-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-063-004">
+        <relationEntry>White House Tapes: Conversation 063-004</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche participated in Conversation 063-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-063-005">
+        <relationEntry>White House Tapes: Conversation 063-005</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche participated in Conversation 063-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-455-005">
+        <relationEntry>White House Tapes: Conversation 455-005</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche participated in Conversation 455-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-498-011">
+        <relationEntry>White House Tapes: Conversation 498-011</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche participated in Conversation 498-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-679-011">
+        <relationEntry>White House Tapes: Conversation 679-011</relationEntry>
+        <descriptiveNote>
+          <p>James M. Roche participated in Conversation 679-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+      <!-- Relationship to Bibliographic Works, subjectOf -->
     </relations>
   </cpfDescription>
 </eac-cpf>

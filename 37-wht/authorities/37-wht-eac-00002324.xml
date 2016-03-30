@@ -1,9 +1,6 @@
-<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4">
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
   <control>
-    <recordId/>
-    <!-- <otherRecordId localType="http://catalog.archives.gov/id/"></otherRecordId> -->
-    <!-- <otherRecordId localType="http://viaf.org/viaf/terms#viafID"></otherRecordId> -->
-    <otherRecordId localType="http://www.loc.gov/standards/mads/rdf/v1.html#Authority"/>
+    <recordId>37-wht-eac-00002324</recordId>
     <maintenanceStatus>new</maintenanceStatus>
     <maintenanceAgency>
       <agencyCode>US-DNA</agencyCode>
@@ -16,15 +13,15 @@
     <!-- Convention Declarations for Content Standards -->
     <conventionDeclaration>
       <abbreviation>RDA</abbreviation>
-      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-19">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>USNARA-LCDRG</abbreviation>
-      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-19">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>DACS-2nd</abbreviation>
-      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2015-03-18">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>NixonTapesIndex</abbreviation>
@@ -43,6 +40,10 @@
       <abbreviation>marc:relators</abbreviation>
       <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
     </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>uscensus:race</abbreviation>
+      <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
+    </conventionDeclaration>
     <!-- Convention Declarations for Style Guides -->
     <conventionDeclaration>
       <abbreviation>CMOS-16th</abbreviation>
@@ -51,10 +52,10 @@
     <maintenanceHistory>
       <maintenanceEvent>
         <eventType>created</eventType>
-        <eventDateTime>2016-03-01T01:02:57.824-05:00</eventDateTime>
+        <eventDateTime>2016-03-29T16:05:09.994-04:00</eventDateTime>
         <agentType>machine</agentType>
         <agent>base-to-eac.xq</agent>
-        <eventDescription>Converted base/source data to EAC-CPF through XQuery script written by Amanda T. Ross of the United States National Archives and Records Administration.</eventDescription>
+        <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
       <!--
             <maintenanceEvent>
@@ -62,161 +63,2156 @@
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent> 
             -->
     </maintenanceHistory>
-    <sources>
-      <source xlink:href="https://catalog.archives.gov" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>National Archives and Records Administration Authority List</sourceEntry>
-      </source>
-             --&gt;
-            <source xlink:href="http://id.loc.gov/authorities/names" xlink:type="simple" lastDateTimeVerified="[dateTime]">
-        <sourceEntry>Library of Congress Name Authority File</sourceEntry>
-      </source>
-      <source xlink:href="http://viaf.org" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>Virtual International Authority File</sourceEntry>
-      </source>
-    </sources>
+    <!--         
+        <sources>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
+            </source>
+        </sources>
+        -->
   </control>
   <cpfDescription>
     <identity>
       <entityType>person</entityType>
-
-            if ($entityType eq "person")
-              then
-              
-            <nameEntry localType="marcfield:100">
-        <part localType="marcfield:100$a"/>
-        <part localType="marcfield:100$d"/>
-        <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
-      </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="familyName"/>
-        <part localType="givenName"/>
-        <part localType="nickname"/>
-        <part localType="maiden name"/>
-        <part localtype="generational marker"/>
-        <part localType="military rank or official title"/>
-        <part localType="Mrs."/>
+      <!-- Authorized Name Entries -->
+      <!-- Nixon Tapes Index -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Romney, George W.</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-            
-
-      else
-      <nameEntry localType="marcfield:110">
-        <part localType="marcfield:110$a"/>
-        <part localType="marcfield:110$d"/>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a"/>
+        <part localType="marcfield:100$b"/>
+        <part localType="marcfield:100$c"/>
+        <part localType="marcfield:100$q"/>
+        <part localType="marcfield:100$d"/>
         <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
+        <!-- 
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
       </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="directOrder"/>
+      <!-- Variant Name Entries -->
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">George W. Romney</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Romney</part>
+        <part localType="givenName">George W.</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
+      <!-- Insert Variant Names from LCNAF/LCDRG -->
     </identity>
     <description>
-      <existDates localType="marcfield:046">
-        <dateRange>
-          <fromDate standardDate=""/>
-          <toDate/>
-        </dateRange>
-      </existDates>
-      <occupations>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-          <dateRange>
-            <fromDate standardDate="2009-11-13">November 13, 2009</fromDate>
-            <toDate/>
-          </dateRange>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-      </occupations>
-      <languageUsed>
-        <language languageCode="eng">English</language>
-        <script scriptCode="Latn">Latin</script>
-      </languageUsed>
+      <!-- Exist Dates -->
+      <!--
+            <existDates>
+            
+            </existDates>
+            -->
+      <!-- Gender/Gender Identity -->
       <localDescriptions localType="http://viaf.org/viaf/terms#gender">
         <localDescription localType="marcfield:375">
-          <term/>
-          <descriptiveNote>Gender certainty score, via Namsor: </descriptiveNote>
+          <term vocabularySource="NixonTapesIndex">male</term>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">-1.0</span>.</p>
+          </descriptiveNote>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescriptions localType="http://viaf.org/viaf/terms#AssociatedSubject">
-        <localDescription localType="marcfield:372$a">
+      <!-- Citizenship -->
+      <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+      <!-- Nationality -->
+      <!--
+            <localDescriptions localType="nixonTapes/#nationality">
+            
+            </localDescriptions>
+            -->
+      <!-- Languages Used -->
+      <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->
+      <!-- Racial Category -->
+      <localDescriptions localType="nixonTapes/#racialCategory">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="uscensus:race"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Ethnic/Cultural Heritage -->
+      <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
+        <localDescription localType="marcfield:373">
           <term vocabularySource="lcsh"/>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescription localType="http://viaf.org/viaf/terms#nationalityOfEntity">
-        <placeEntry vocabularySource="lcsh" countryCode="US">United States</placeEntry>
-      </localDescription>
-      <places localType="http://socialarchive.iath.virginia.edu/control/term#AssociatedPlace">
-        <place localType="marcfield:370$c">
-          <placeRole>associated country</placeRole>
-          <placeEntry vocabularySource="lcsh" countryCode="US" latitude="39.76" longitude="-98.5">United States</placeEntry>
-        </place>
-        <place localType="marcfield:370$a">
-          <placeRole>birthplace</placeRole>
-          <placeEntry vocabularySource="lcsh" latitude="" longitude=""/>
-          <date standardDate=""/>
-        </place>
-      </places>
+      <!-- Tribal Affiliations -->
+      <!-- Title or Honorific -->
+      <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Occupations -->
+      <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
+      <!-- Functions -->
+      <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+      <!-- Political Affiliations -->
+      <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+      <!-- Religious Affiliations -->
+      <!-- Topical Subjects -->
+      <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Associated Places -->
+      <places/>
       <biogHist>
-        <abstract> ...</abstract>
-        <p> ...</p>
+        <!-- Abstract -->
+        <abstract/>
+        <!-- Biography or Administrative History Note -->
+        <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
-        <citation/>
+        <!-- Insert citations -->
       </biogHist>
+      <!-- Insert structureOrGenealogy, if relevant -->
     </description>
     <relations>
-      <!-- Relationships to Corporate Bodies -->
-      <!-- Education -->
-      <!-- Employers -->
-      <!-- Relationships to Persons-->
-      <!-- Family Members -->
-      <!-- Professional Relationships -->
-      <!-- Relationship to Resources, creatorOf -->
-      <resourceRelation xlink:arcrole="participantIn" xlink:href="" xlink:role="archivalResource" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <relationEntry/>
+      <!-- CPF RELATIONS -->
+      <!-- Relationships to Persons: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004644" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Abrahams, Albert E.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Albert E. Abrahams conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000019" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Agnew, Spiro T. (Vice President)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Vice President Spiro T. Agnew conversed <span localType="frequency">13</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004026" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Alexander, Lee</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Lee Alexander conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004647" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Alfultis, Richard J.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Richard J. Alfultis conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004024" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Alioto, Joseph</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Joseph Alioto conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003604" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Anderson, John B.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John B. Anderson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000074" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Anderson, Martin C. ("Marty")</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Martin C. ("Marty") Anderson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000103" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Atkins, Oliver F. ("Ollie")</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Oliver F. ("Ollie") Atkins conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000117" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Baker, Howard H., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Howard H. Baker, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000123" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ball, Neal</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Neal Ball conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003968" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Batson, Charles</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Charles Batson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000179" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Beggs, James M.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and James M. Beggs conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004824" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bird, William</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and William Bird conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004017" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Blackwell, Robert J.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Robert J. Blackwell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000238" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Blount, Winton M. ("Red"), Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Winton M. ("Red") Blount, Jr. conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000259" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Boldt, George H.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and George H. Boldt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000280" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Braden, Jean</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Jean Braden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000320" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, Robert J.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Robert J. Brown conversed <span localType="frequency">13</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003474" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, William H., III</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and William H. Brown, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000321" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, William N.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and William N. Brown conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004534" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, [First name unknown]</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and [First name unknown] Brown conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000336" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bull, Stephen B.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Stephen B. Bull conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000346" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Burch, Dean</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Dean Burch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000355" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Burns, Arthur F.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Arthur F. Burns conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004642" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bush, Barbara (Pierce)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Barbara (Pierce) Bush conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000360" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bush, George H. W.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and George H. W. Bush conversed <span localType="frequency">17</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000368" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Buttari, Edgar A.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Edgar A. Buttari conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000370" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butterfield, Alexander P.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Alexander P. Butterfield conversed <span localType="frequency">18</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000372" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butz, Earl L.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Earl L. Butz conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000397" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Campbell, J. Philip</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and J. Philip Campbell conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000408" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carlucci, Frank C., III</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Frank C. Carlucci, III conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000433" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cashen, Henry C., II</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Henry C. Cashen, II conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003555" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cenker, Louis</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Louis Cenker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004491" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cervantes, Alfonso J.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Alfonso J. Cervantes conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000447" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cespedes, Louie</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Louie Cespedes conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000450" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chafee, John H.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John H. Chafee conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000462" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chapin, Dwight L.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Dwight L. Chapin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003990" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chapin, Richard</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Richard Chapin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000470" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cheney, Richard B.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Richard B. Cheney conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004532" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chisholm, Shirley</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Shirley Chisholm conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004524" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clay, William L.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and William L. Clay conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000521" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cole, Kenneth R., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Kenneth R. Cole, Jr. conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004525" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Collins, George W.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and George W. Collins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000530" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Colson, Charles W.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Charles W. Colson conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004653" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Concklin, Bert M.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Bert M. Concklin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000540" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Connally, Idanell ("Nellie") (Brill)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Idanell ("Nellie") (Brill) Connally conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000541" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Connally, John B.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John B. Connally conversed <span localType="frequency">23</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004651" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Connor, James</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and James Connor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004526" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Conyers, John, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John Conyers, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004441" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cook, Gary</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Gary Cook conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000587" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Crutchfield, Charles</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Charles Crutchfield conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004497" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Curran, Frank</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Frank Curran conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004657" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Curtis, Thomas B.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Thomas B. Curtis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004498" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">D'Alesandro, Thomas J., III</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Thomas J. D'Alesandro, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000604" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">David, Edward E., Jr. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Dr. Edward E. David, Jr. conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000622" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dean, John W., III</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John W. Dean, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004527" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dellums, Ronald V.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Ronald V. Dellums conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000638" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dent, Harry S.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Harry S. Dent conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004522" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Diggs, Charles C., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Charles C. Diggs, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004504" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dole, Hollis M.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Hollis M. Dole conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000673" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dole, Robert J.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Robert J. Dole conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000705" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Driggs, John W.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John W. Driggs conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004494" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dyke, William D.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and William D. Dyke conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003969" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Eaton, Daniel R.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Daniel R. Eaton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000752" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ehrlichman, John D.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John D. Ehrlichman conversed <span localType="frequency">26</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000779" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Engman, Lewis A.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Lewis A. Engman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000793" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Evans, John F., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John F. Evans, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000822" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fauntroy, Walter E.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Walter E. Fauntroy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003970" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fetzer, John</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John Fetzer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000841" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Finch, Carol (Crothers)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Carol (Crothers) Finch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000843" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Finch, Robert H.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Robert H. Finch conversed <span localType="frequency">15</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004503" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Flaherty, Peter F.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Peter F. Flaherty conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000857" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Flanigan, Peter M.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Peter M. Flanigan conversed <span localType="frequency">17</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000861" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Flemming, Arthur S.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Arthur S. Flemming conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000864" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fletcher, Arthur A. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Dr. Arthur A. Fletcher conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000868" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fletcher, James C.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and James C. Fletcher conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004505" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Freeman, S. David</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and S. David Freeman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000941" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Garment, Leonard</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Leonard Garment conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004659" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Geimer, William</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and William Geimer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000965" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Giberga, Manuel R.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Manuel R. Giberga conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004031" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gibson, Kenneth A.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Kenneth A. Gibson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000969" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gifford, William L.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and William L. Gifford conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003971" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gilmore, James S., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and James G. Gilmore, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003045" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gonzalez, Manuel A.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Manuel A. Gonzalez conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001024" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Grayson, C. Jackson ("Dan"), Jr. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Dr. C. Jackson ("Dan") Grayson, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004648" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Greener, William I. ("Bill"), Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and William I. ("Bill") Greener, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004020" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gribbs, Roman S.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Roman S. Gribbs conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001059" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gunther, John J.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John J. Gunther conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001069" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Alexander M., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Alexander M. Haig, Jr. conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001082" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haldeman, H. R. ("Bob")</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and H. R. ("Bob") Haldeman conversed <span localType="frequency">14</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001102" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hampton, Robert E.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Robert E. Hampton conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001112" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hannah, John A. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Dr. John A. Hannah conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001121" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hardin, Clifford M.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Clifford M. Hardin conversed <span localType="frequency">14</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003105" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hardin, Martha L. (Wood)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Martha L. (Wood) Hardin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004533" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hargrove, James W.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and James W. Hargrove conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001130" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harper, Edwin L.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Edwin L. Harper conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004022" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haskell, Harry G.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Harry G. Haskell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004523" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hawkins, August F.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and August F. Hawkins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004495" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hays, Will H., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Will H. Hays, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001168" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Healy, Patrick</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Patrick Healy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001179" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Helms, Richard M.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Richard M. Helms conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001212" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hidalgo, Hilda A.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Hilda A. Hidalgo conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001228" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hitt, Patricia R.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Patricia R. Hitt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001231" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hodgson, James D.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and James D. Hodgson conversed <span localType="frequency">25</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004639" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hodgson, Maria (Denend)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Maria (Denend) Hodgson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001244" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Holifield, Chet</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Chet Holifield conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001253" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Holton, Linwood</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Linwood Holton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001278" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hovde, Donald I.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Donald I. Hovde conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001319" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ink, Dwight A.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Dwight A. Ink conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001321" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Irwin, John N., II</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John N. Irwin, II conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003972" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Israel, Larry</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Larry Israel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001329" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jackson, Samuel C.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Samuel C. Jackson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001362" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, Donald E.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Donald E. Johnson conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001377" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, U. Alexis</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and U. Alexis Johnson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001457" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, David M.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and David M. Kennedy conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004641" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, Lenora (Bingham)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Lenora (Bingham) Kennedy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001459" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, Richard T. (Col.)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Col. Richard T. Kennedy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004501" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kilgore, Ann H.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Ann H. Kilgore conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001494" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kissinger, Henry A.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Henry A. Kissinger conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001497" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Klein, Herbert G.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Herbert G. Klein conversed <span localType="frequency">14</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001499" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kleindienst, Richard G.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Richard G. Kleindienst conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001504" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kleppe, Thomas S.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Thomas S. Kleppe conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003973" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kluge, John</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John Kluge conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001510" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Knauer, Virginia H.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Virginia H. Knauer conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004502" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Knecht, Robert W.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Robert W. Knecht conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004645" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kosters, Marvin H.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Marvin H. Koster conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004493" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kramer, Lawrence F.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Lawrence F. Kramer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001526" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kriegsman, William E.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and William E. Kriegsman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001529" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Krogh, Egil ("Bud"), Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Egil ("Bud") Krogh, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001535" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kunzig, Robert L.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Robert L. Kunzig conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001545" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Laird, Melvin R.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Melvin R. Laird conversed <span localType="frequency">13</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004018" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Landrieu, Maurice E. ("Moon")</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Maurice E. ("Moon") Landrieu conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004662" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lane, C. Robert</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and C. Robert Lane conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001615" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lincoln, George A. (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Gen. George A. Lincoln conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004492" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lindsay, John V.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John V. Lindsay conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001647" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lovell, Malcolm R., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Malcolm R. Lovell, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001652" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lozano, Ignacio E., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Ignacio E. Lozano, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001658" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lugar, Richard G.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Richard G. Lugar conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001673" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lynn, James T.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and James T. Lynn conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001674" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lynn, James T.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and James T. Lynn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003406" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lynn, James T. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Mrs. James T. Lynn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001681" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">MacGregor, Clark</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Clark MacGregor conversed <span localType="frequency">17</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003720" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Maier, Henry W.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Henry W. Maier conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001699" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Malek, Frederic V.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Frederic V. Malek conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001704" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Maltester, Jack D.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Jack D. Maltester conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001718" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Marin, Eugene A.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Eugene A. Marin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003554" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Martin, George</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and George Martin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001746" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Martinez, Ted F.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Ted F. Martinez conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004019" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Massell, Sam</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Sam Massell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003475" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Maxwell, David</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and David Maxwell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001793" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McCracken, Paul W.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Paul W. McCracken conversed <span localType="frequency">11</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001820" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McLane, James W.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and James W. McLane conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003974" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mechem, Charles S.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Charles S. Mechem conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004528" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Metcalfe, Ralph</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Ralph Metcalfe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003975" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Michaels, Bill</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Bill Michaels conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001870" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Michel, Peter</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Peter Michel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001897" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mitchell, John N.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John N. Mitchell conversed <span localType="frequency">18</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004636" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mitchell, Martha (Beall)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Martha Beall Mitchell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004529" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mitchell, Parren J.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Parren J. Mitchell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001917" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moore, Richard A.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Richard A. Moore conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001919" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moorer, Thomas H. (Adm.)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Adm. Thomas H. Moorer conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001921" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moot, Robert C.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Robert C. Moot conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004665" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morey, Roy D.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Roy D. Morey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001925" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morgan, Edward L.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Edward L. Morgan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004637" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morton, Anne (Jones)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Anne (Jones) Morton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001935" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morton, Rogers C. B.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Rogers C. B. Morton conversed <span localType="frequency">15</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004643" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mullaney, Joseph</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Joseph Mullaney conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004661" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Murdoch, Donald R.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Donald R. Murdoch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003976" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Murphy, John T.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Murphy, John T. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004530" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nix, Robert N. C.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Robert N. C. Nix conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and President Richard M. Nixon conversed <span localType="frequency">41</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002004" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Thelma C. ("Pat") (Ryan)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Thelma C. ("Pat") (Ryan) Nixon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002055" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Oldaker, William C.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and William C. Oldaker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004649" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Paarlberg, Donald A.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Donald A. Paarlberg conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002082" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Packard, David</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and David Packard conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003977" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Paine, Ancil</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Ancil Paine conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004650" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Partee, J. Charles</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and J. Charles Partee conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002111" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pastore, John O.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John O. Pastore conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004440" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Patricelli, Robert E.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Robert E. Patricelli conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002125" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pecora, William T.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and William T. Pecora conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002132" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Perry, Charles R.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Charles R. Perry conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002140" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Holly</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Holly Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002141" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Jim</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Jim Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002144" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Michael</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Michael Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002146" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Peter G.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Peter G. Peterson conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002171" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pontius, H. Jackson</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and H. Jackson Pontius conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003978" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Poor, John</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John Poor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004658" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Preston, Edward</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Edward Preston conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002188" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Price, John R., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John R. Price, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002190" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Price, Raymond K., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Raymond K. Price, Jr. conversed <span localType="frequency">19</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003979" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Quaal, Ward</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Ward Quaal conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002211" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ramirez, Henry M. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Dr. Henry M. Ramirez conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002215" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rangel, Charles B.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Charles B. Rangel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002250" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Reilly, Gerald</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Gerald Reilly conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003980" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Reinsch, Leonard</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Leonard Reinsch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002260" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rhode, Earl D.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Earl D. Rhode conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004640" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Richardson, Anne</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Anne Richardson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002267" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Richardson, Elliot L.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Elliot L. Richardson conversed <span localType="frequency">15</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002311" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rodriguez, Antonio</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Antonio Rodriguez conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002314" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rogers, Adele (Langston)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Adele (Langston) Rogers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003756" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rogers, W.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and W. Rogers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002316" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rogers, William P.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and William P. Rogers conversed <span localType="frequency">15</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003556" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rogg, Nathaniel</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Nathaniel Rogg conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002325" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Romney, Lenore L.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Lenore L. Romney conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002357" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rumsfeld, Donald H.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Donald H. Rumsfeld conversed <span localType="frequency">16</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002360" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rumsfeld, Joyce (Pierson)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Joyce (Pierson) Rumsfeld conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002362" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rush, [David] Kenneth</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and [David] Kenneth Rush conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002375" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Safire, William L.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and William L. Safire conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002377" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sampson, Arthur F.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Arthur F. Sampson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003577" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Samuels, Nathanial</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Nathanial Samuels conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002381" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sanchez, Manolo</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Manolo Sanchez conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002383" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sanchez, Phillip V.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Phillip V. Sanchez conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002398" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scali, John A.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John A. Scali conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002417" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schlesinger, James R. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Dr. James R. Schlesinger conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002456" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scowcroft, Brent G. (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Gen. Brent G. Scowcroft conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004507" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Seaborg, Glenn T. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Dr. Glenn T. Seaborg conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002481" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shakespeare, Frank J.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Frank J. Shakespeare conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003981" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shaw, Bill</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Bill Shaw conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004506" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shaw, Milton</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Milton Shaw conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003982" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shaw, Reid L.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Reid L. Shaw conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002501" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shepard, Geoffrey C.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Geoffrey C. Shepard conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002517" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shultz, George P.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and George P. Shultz conversed <span localType="frequency">29</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002518" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shultz, Helena M. ("Obie")</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Helena M. ("Obie") Shultz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002526" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Siebels, George G., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and George G. Siebels, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002535" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Silberman, Laurence H.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Laurence H. Silberman conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003983" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Slaughter, Robert</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Robert Slaughter conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002559" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, Donald</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Donald Smith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002560" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, Gerard C.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Gerard C. Smith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002579" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Snyder, Alvin</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Alvin Snyder conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003984" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Snyder, Franklin C.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Franklin C. Snyder conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004439" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sohmer, Arthur J.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Arthur J. Sohmer conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002585" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Solomon, Ezra</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Ezra Solomon conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003985" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sonderling, Egmont</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Egmont Sonderling conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004825" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Spurgeon, Chester C.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Chester C. Spurgeon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004638" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stans, Kathleen</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Kathleen Stans conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002617" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stans, Maurice H.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Maurice H. Stans conversed <span localType="frequency">17</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003553" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stastny, John A.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John A. Stastny conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002631" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stein, Herbert</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Herbert Stein conversed <span localType="frequency">9</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004489" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stokes, Carl B.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Carl B. Stokes conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004531" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stokes, Louis</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Louis Stokes conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004500" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sullivan, George M.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and George M. Sullivan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002676" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sweitzer, Brandon W.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Brandon W. Sweitzer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004490" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tate, James H. J.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and James H. J. Tate conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002732" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Timmons, William E.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and William E. Timmons conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002767" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tristani, Jorge E.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Jorge E. Tristani conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002774" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tucker, Fred C., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Fred C. Tucker, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002784" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Uccello, Antonina</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Antonina Uccello conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003986" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Vadeboncoeur, E. R.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and E. R. Vadeboncoeur conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000725" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Van Dusen, Richard C.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Richard C. Van Dusen conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002816" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Veneman, John G.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John G. Veneman conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002824" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Volcker, Paul A.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Paul A. Volcker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002826" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Volpe, Jennie (Benedetto)</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Jennie (Benedetto) Volpe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002825" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Volpe, John A.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John A. Volpe conversed <span localType="frequency">18</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004664" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Waldman, Raymond J.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Raymond J. Waldman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002841" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walker, Charls E.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Charls E. Walker conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002843" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walker, Ronald H.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Ronald H. Walker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004660" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walker, William</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and William Walker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004656" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walters, Johnnie M.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Johnnie M. Walters conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003557" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Waranck, Stanley</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Stanley Waranck conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002867" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Warren, Gerald L.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Gerald L. Warren conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003987" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Waters, M. C.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and M. C. Waters conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002880" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Watson, Norman V.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Norman V. Watson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002885" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Weber, Arnold R.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Arnold R. Weber conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003988" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Weber, Fred</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Fred Weber conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002893" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Weinberger, Caspar W. ("Cap")</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Caspar W. ("Cap") Weinberger conversed <span localType="frequency">13</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002899" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Welch, Louie</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Louie Welch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003989" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wells, Robert</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Robert Wells conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002911" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whitaker, John C.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John C. Whitaker conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004496" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White, Kevin D.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Kevin D. White conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002921" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whitehead, Clay T.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Clay T. ("Tom") Whitehead conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002926" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whitman, Marina von Neumann</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Marina von Neumann Whitman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002957" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Williamson, John C.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and John C. Williamson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002987" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Woods, Rose Mary</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Rose Mary Woods conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003029" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Yturri, Edward M.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Edward M. Yturri conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003038" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ziegler, Ronald L.</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and Ronald L. Ziegler conversed <span localType="frequency">18</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002795" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">[Unknown person(s)]</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and [Unknown person(s)] conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- Relationships to Families -->
+      <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003470" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cabinet Committee on Executive Reorganization</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and representatives of the Cabinet Committee on Executive Reorganization conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003473" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cabinet Committee on Opportunities for the Spanish Speaking</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and representatives of the Cabinet Committee on Opportunities for the Spanish Speaking conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003469" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cabinet officers</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and representatives of the Cabinet officers conversed <span localType="frequency">18</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004521" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Congressional Black Caucus</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and representatives of the Congressional Black Caucus conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003468" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cost of Living Council</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and representatives of the Cost of Living Council conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003551" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">National Association of Home Builders</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and representatives of the National Association of Home Builders conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002919" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House operator</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and representatives of the White House operator conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002920" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House photographer</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney and representatives of the White House photographer conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- RESOURCE RELATIONS -->
+      <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-007-142">
+        <relationEntry>White House Tapes: Conversation 007-142</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 007-142 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
-      <!-- Relationship to Resources, subjectOf -->
-      <resourceRelation xlink:arcrole="subjectOf" xlink:role="archivalResource" xlink:type="simple" xlink:href="" lastDateTimeVerified="">
-        <relationEntry/>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-017-064">
+        <relationEntry>White House Tapes: Conversation 017-064</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 017-064 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-019-118">
+        <relationEntry>White House Tapes: Conversation 019-118</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 019-118 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-047-001">
+        <relationEntry>White House Tapes: Conversation 047-001</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 047-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-050-007">
+        <relationEntry>White House Tapes: Conversation 050-007</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 050-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-051-002">
+        <relationEntry>White House Tapes: Conversation 051-002</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 051-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-051-012">
+        <relationEntry>White House Tapes: Conversation 051-012</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 051-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-051-013">
+        <relationEntry>White House Tapes: Conversation 051-013</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 051-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-053-001">
+        <relationEntry>White House Tapes: Conversation 053-001</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 053-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-055-003">
+        <relationEntry>White House Tapes: Conversation 055-003</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 055-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-056-004">
+        <relationEntry>White House Tapes: Conversation 056-004</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 056-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-058-004">
+        <relationEntry>White House Tapes: Conversation 058-004</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 058-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-059-004">
+        <relationEntry>White House Tapes: Conversation 059-004</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 059-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-060-001">
+        <relationEntry>White House Tapes: Conversation 060-001</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 060-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-067-011">
+        <relationEntry>White House Tapes: Conversation 067-011</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 067-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-067-013">
+        <relationEntry>White House Tapes: Conversation 067-013</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 067-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-069-002">
+        <relationEntry>White House Tapes: Conversation 069-002</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 069-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-073-002">
+        <relationEntry>White House Tapes: Conversation 073-002</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 073-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-073-005">
+        <relationEntry>White House Tapes: Conversation 073-005</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 073-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-077-002">
+        <relationEntry>White House Tapes: Conversation 077-002</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 077-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-079-001">
+        <relationEntry>White House Tapes: Conversation 079-001</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 079-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-081-004">
+        <relationEntry>White House Tapes: Conversation 081-004</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 081-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-082-004">
+        <relationEntry>White House Tapes: Conversation 082-004</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 082-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-083-001">
+        <relationEntry>White House Tapes: Conversation 083-001</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 083-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-087-010">
+        <relationEntry>White House Tapes: Conversation 087-010</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 087-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-093-001">
+        <relationEntry>White House Tapes: Conversation 093-001</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 093-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-096-004">
+        <relationEntry>White House Tapes: Conversation 096-004</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 096-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-101-001">
+        <relationEntry>White House Tapes: Conversation 101-001</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 101-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-101-009">
+        <relationEntry>White House Tapes: Conversation 101-009</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 101-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-103-004">
+        <relationEntry>White House Tapes: Conversation 103-004</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 103-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-104-009">
+        <relationEntry>White House Tapes: Conversation 104-009</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 104-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-105-009">
+        <relationEntry>White House Tapes: Conversation 105-009</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 105-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-318-007">
+        <relationEntry>White House Tapes: Conversation 318-007</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 318-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-487-022">
+        <relationEntry>White House Tapes: Conversation 487-022</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 487-022 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-520-003">
+        <relationEntry>White House Tapes: Conversation 520-003</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 520-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-555-009">
+        <relationEntry>White House Tapes: Conversation 555-009</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 555-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-646-005">
+        <relationEntry>White House Tapes: Conversation 646-005</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 646-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-675-013">
+        <relationEntry>White House Tapes: Conversation 675-013</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 675-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-678-001">
+        <relationEntry>White House Tapes: Conversation 678-001</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 678-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-767-020">
+        <relationEntry>White House Tapes: Conversation 767-020</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 767-020 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-815-011">
+        <relationEntry>White House Tapes: Conversation 815-011</relationEntry>
+        <descriptiveNote>
+          <p>George W. Romney participated in Conversation 815-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+      <!-- Relationship to Bibliographic Works, subjectOf -->
     </relations>
   </cpfDescription>
 </eac-cpf>
