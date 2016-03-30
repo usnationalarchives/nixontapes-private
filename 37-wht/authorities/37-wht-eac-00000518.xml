@@ -1,6 +1,6 @@
 <eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
   <control>
-    <recordId>37-wht-eac-00000543</recordId>
+    <recordId>37-wht-eac-00000518</recordId>
     <maintenanceStatus>new</maintenanceStatus>
     <maintenanceAgency>
       <agencyCode>US-DNA</agencyCode>
@@ -103,7 +103,7 @@
       <!-- Authorized Name Entries -->
       <!-- Nixon Tapes Index -->
       <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
-        <part localType="marcfield:100$a">Connor, Julie Casterman</part>
+        <part localType="marcfield:100$a">Colby, John</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
       <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
@@ -120,12 +120,12 @@
       </nameEntry>
       <!-- Variant Name Entries -->
       <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
-        <part localType="directOrder">Julie Casterman Connor</part>
+        <part localType="directOrder">John Colby</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
       <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
-        <part localType="familyName">Connor</part>
-        <part localType="givenName">Julie Casterman</part>
+        <part localType="familyName">Colby</part>
+        <part localType="givenName">John</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
       <!-- Insert Variant Names from LCNAF/LCDRG -->
@@ -140,9 +140,9 @@
       <!-- Gender/Gender Identity -->
       <localDescriptions localType="http://viaf.org/viaf/terms#gender">
         <localDescription localType="marcfield:375">
-          <term vocabularySource="NixonTapesIndex">female</term>
+          <term vocabularySource="NixonTapesIndex"/>
           <descriptiveNote>
-            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">0.5</span>.</p>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty"/>.</p>
           </descriptiveNote>
         </localDescription>
         <descriptiveNote>
@@ -257,140 +257,20 @@
     <relations>
       <!-- CPF RELATIONS -->
       <!-- Relationships to Persons: Nixon White House Tapes -->
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000032" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Allan, Virginia R.</relationEntry>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000573" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cox, Edward R. F.</relationEntry>
         <descriptiveNote>
-          <p>Julie Casterman Connor and Virginia R. Allan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000095" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Arnold, Margaret Long (Dr.)</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Dr. Margaret Long Arnold conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000209" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Bethel, Paul (Mrs.)</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Mrs. Paul Bethel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000227" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Blair, Lorraine L.</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Lorraine L. Blair conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000590" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Cunningham, Sarah Jane</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Sarah Jane Cunningham conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000735" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">East, Catherine</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Catherine East conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000889" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Franklin, Barbara H.</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Barbara H. Franklin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001036" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Griffin, Robert A.</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Robert A. Griffin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001063" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Gutwillig, Jacqueline G.</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Jacqueline G. Gutwillig conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003113" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Hacke, Maxine R.</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Maxine R. Hacke conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001096" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Hamel, Charles M. (Mrs.)</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Mrs. Charles M. Hamel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001427" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Kaufman, Judy</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Judy Kaufman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001516" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Koontz, Elizabeth D.</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Elizabeth D. Koontz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001845" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Mealey, Margaret J.</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Margaret J. Mealey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and President Richard M. Nixon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002091" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Palmer, Hazel</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Hazel Palmer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002256" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Revercomb, Chapman (Mrs.)</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Mrs. Chapman Revercomb conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002873" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Wasserman, Daniel H. (Mrs.)</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Mrs. Daniel H. Wasserman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002929" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Whittaker, Bertha</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Bertha Whittaker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002979" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">Wischer, Irene</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and Irene Wischer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>John Colby and Edward R. F. Cox conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <!-- Relationships to Families -->
       <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002920" xlink:type="simple">
-        <relationEntry scriptCode="Latn" xml:lang="en">White House photographer</relationEntry>
-        <descriptiveNote>
-          <p>Julie Casterman Connor and representatives of the White House photographer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
-        </descriptiveNote>
-      </cpfRelation>
       <!-- RESOURCE RELATIONS -->
       <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
-      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-686-006">
-        <relationEntry>White House Tapes: Conversation 686-006</relationEntry>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-025-007">
+        <relationEntry>White House Tapes: Conversation 025-007</relationEntry>
         <descriptiveNote>
-          <p>Julie Casterman Connor participated in Conversation 686-006 on the White House Tapes of the Nixon Administration</p>
+          <p>John Colby participated in Conversation 025-007 on the White House Tapes of the Nixon Administration</p>
         </descriptiveNote>
       </resourceRelation>
       <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->

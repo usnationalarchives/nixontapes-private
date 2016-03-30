@@ -1,9 +1,6 @@
-<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4">
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
   <control>
-    <recordId/>
-    <!-- <otherRecordId localType="http://catalog.archives.gov/id/"></otherRecordId> -->
-    <!-- <otherRecordId localType="http://viaf.org/viaf/terms#viafID"></otherRecordId> -->
-    <otherRecordId localType="http://www.loc.gov/standards/mads/rdf/v1.html#Authority"/>
+    <recordId>37-wht-eac-00000575</recordId>
     <maintenanceStatus>new</maintenanceStatus>
     <maintenanceAgency>
       <agencyCode>US-DNA</agencyCode>
@@ -16,15 +13,15 @@
     <!-- Convention Declarations for Content Standards -->
     <conventionDeclaration>
       <abbreviation>RDA</abbreviation>
-      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-19">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>USNARA-LCDRG</abbreviation>
-      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-19">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>DACS-2nd</abbreviation>
-      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2015-03-18">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>NixonTapesIndex</abbreviation>
@@ -43,6 +40,10 @@
       <abbreviation>marc:relators</abbreviation>
       <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
     </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>uscensus:race</abbreviation>
+      <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
+    </conventionDeclaration>
     <!-- Convention Declarations for Style Guides -->
     <conventionDeclaration>
       <abbreviation>CMOS-16th</abbreviation>
@@ -51,10 +52,10 @@
     <maintenanceHistory>
       <maintenanceEvent>
         <eventType>created</eventType>
-        <eventDateTime>2016-03-01T01:02:57.824-05:00</eventDateTime>
+        <eventDateTime>2016-03-29T16:05:09.994-04:00</eventDateTime>
         <agentType>machine</agentType>
         <agent>base-to-eac.xq</agent>
-        <eventDescription>Converted base/source data to EAC-CPF through XQuery script written by Amanda T. Ross of the United States National Archives and Records Administration.</eventDescription>
+        <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
       <!--
             <maintenanceEvent>
@@ -62,161 +63,2210 @@
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent> 
             -->
     </maintenanceHistory>
-    <sources>
-      <source xlink:href="https://catalog.archives.gov" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>National Archives and Records Administration Authority List</sourceEntry>
-      </source>
-             --&gt;
-            <source xlink:href="http://id.loc.gov/authorities/names" xlink:type="simple" lastDateTimeVerified="[dateTime]">
-        <sourceEntry>Library of Congress Name Authority File</sourceEntry>
-      </source>
-      <source xlink:href="http://viaf.org" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>Virtual International Authority File</sourceEntry>
-      </source>
-    </sources>
+    <!--         
+        <sources>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
+            </source>
+        </sources>
+        -->
   </control>
   <cpfDescription>
     <identity>
       <entityType>person</entityType>
-
-            if ($entityType eq "person")
-              then
-              
-            <nameEntry localType="marcfield:100">
-        <part localType="marcfield:100$a"/>
-        <part localType="marcfield:100$d"/>
-        <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
-      </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="familyName"/>
-        <part localType="givenName"/>
-        <part localType="nickname"/>
-        <part localType="maiden name"/>
-        <part localtype="generational marker"/>
-        <part localType="military rank or official title"/>
-        <part localType="Mrs."/>
+      <!-- Authorized Name Entries -->
+      <!-- Nixon Tapes Index -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Cox, Tricia Nixon</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-            
-
-      else
-      <nameEntry localType="marcfield:110">
-        <part localType="marcfield:110$a"/>
-        <part localType="marcfield:110$d"/>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a"/>
+        <part localType="marcfield:100$b"/>
+        <part localType="marcfield:100$c"/>
+        <part localType="marcfield:100$q"/>
+        <part localType="marcfield:100$d"/>
         <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
+        <!-- 
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
       </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="directOrder"/>
+      <!-- Variant Name Entries -->
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">Tricia Nixon Cox</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Cox</part>
+        <part localType="givenName">Tricia Nixon</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
+      <!-- Insert Variant Names from LCNAF/LCDRG -->
     </identity>
     <description>
-      <existDates localType="marcfield:046">
-        <dateRange>
-          <fromDate standardDate=""/>
-          <toDate/>
-        </dateRange>
-      </existDates>
-      <occupations>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-          <dateRange>
-            <fromDate standardDate="2009-11-13">November 13, 2009</fromDate>
-            <toDate/>
-          </dateRange>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-      </occupations>
-      <languageUsed>
-        <language languageCode="eng">English</language>
-        <script scriptCode="Latn">Latin</script>
-      </languageUsed>
+      <!-- Exist Dates -->
+      <!--
+            <existDates>
+            
+            </existDates>
+            -->
+      <!-- Gender/Gender Identity -->
       <localDescriptions localType="http://viaf.org/viaf/terms#gender">
         <localDescription localType="marcfield:375">
-          <term/>
-          <descriptiveNote>Gender certainty score, via Namsor: </descriptiveNote>
+          <term vocabularySource="NixonTapesIndex">female</term>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">1.0</span>.</p>
+          </descriptiveNote>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescriptions localType="http://viaf.org/viaf/terms#AssociatedSubject">
-        <localDescription localType="marcfield:372$a">
+      <!-- Citizenship -->
+      <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+      <!-- Nationality -->
+      <!--
+            <localDescriptions localType="nixonTapes/#nationality">
+            
+            </localDescriptions>
+            -->
+      <!-- Languages Used -->
+      <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->
+      <!-- Racial Category -->
+      <localDescriptions localType="nixonTapes/#racialCategory">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="uscensus:race"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Ethnic/Cultural Heritage -->
+      <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
+        <localDescription localType="marcfield:373">
           <term vocabularySource="lcsh"/>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescription localType="http://viaf.org/viaf/terms#nationalityOfEntity">
-        <placeEntry vocabularySource="lcsh" countryCode="US">United States</placeEntry>
-      </localDescription>
-      <places localType="http://socialarchive.iath.virginia.edu/control/term#AssociatedPlace">
-        <place localType="marcfield:370$c">
-          <placeRole>associated country</placeRole>
-          <placeEntry vocabularySource="lcsh" countryCode="US" latitude="39.76" longitude="-98.5">United States</placeEntry>
-        </place>
-        <place localType="marcfield:370$a">
-          <placeRole>birthplace</placeRole>
-          <placeEntry vocabularySource="lcsh" latitude="" longitude=""/>
-          <date standardDate=""/>
-        </place>
-      </places>
+      <!-- Tribal Affiliations -->
+      <!-- Title or Honorific -->
+      <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Occupations -->
+      <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
+      <!-- Functions -->
+      <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+      <!-- Political Affiliations -->
+      <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+      <!-- Religious Affiliations -->
+      <!-- Topical Subjects -->
+      <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Associated Places -->
+      <places/>
       <biogHist>
-        <abstract> ...</abstract>
-        <p> ...</p>
+        <!-- Abstract -->
+        <abstract/>
+        <!-- Biography or Administrative History Note -->
+        <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
-        <citation/>
+        <!-- Insert citations -->
       </biogHist>
+      <!-- Insert structureOrGenealogy, if relevant -->
     </description>
     <relations>
-      <!-- Relationships to Corporate Bodies -->
-      <!-- Education -->
-      <!-- Employers -->
-      <!-- Relationships to Persons-->
-      <!-- Family Members -->
-      <!-- Professional Relationships -->
-      <!-- Relationship to Resources, creatorOf -->
-      <resourceRelation xlink:arcrole="participantIn" xlink:href="" xlink:role="archivalResource" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <relationEntry/>
+      <!-- CPF RELATIONS -->
+      <!-- Relationships to Persons: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000007" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Abplanalp, Robert H.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Robert H. Abplanalp conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000093" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Armstrong, Anne L.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Anne L. Armstrong conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000120" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Baker, Steven</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Steven Baker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000213" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bible, Alan</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Alan Bible conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000300" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brinegar, Claude S.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Claude S. Brinegar conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000336" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bull, Stephen B.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Stephen B. Bull conversed <span localType="frequency">13</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000360" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bush, George H. W.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and George H. W. Bush conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000370" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butterfield, Alexander P.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Alexander P. Butterfield conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000462" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chapin, Dwight L.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Dwight L. Chapin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000511" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Coffin, Ann</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Ann Coffin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000530" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Colson, Charles W.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Charles W. Colson conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000532" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Conant, Howell</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Howell Conant conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000554" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cook, Richard K.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Richard K. Cook conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000573" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cox, Edward R. F.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Edward R. F. Cox conversed <span localType="frequency">11</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="eac-nixon-00003047" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cox, Edward R. F.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and  conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000599" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Daley, Richard J.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Richard J. Daley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000612" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Davis, Jeanne Wilson</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Jeanne Wilson Davis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000617" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Davis, Thomas M.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Thomas M. Davis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000638" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dent, Harry S.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Harry S. Dent conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000685" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Donfeld, Jeffrey</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Jeffrey Donfeld conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000752" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ehrlichman, John D.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and John D. Ehrlichman conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000755" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Eisenhower, Julie Nixon</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Julie Nixon Eisenhower conversed <span localType="frequency">14</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000754" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Eisenhower, [Dwight] David, II</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and [Dwight] David Eisenhower, II conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000889" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Franklin, Barbara H.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Barbara H. Franklin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000934" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gandy, Helen</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Helen Gandy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001010" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gorton, George K.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and George K. Gorton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001016" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Graham, William F. ("Billy")</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and William F. ("Billy") Graham conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001069" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Alexander M., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Alexander M. Haig, Jr. conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001082" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haldeman, H. R. ("Bob")</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and H. R. ("Bob") Haldeman conversed <span localType="frequency">20</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001102" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hampton, Robert E.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Robert E. Hampton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001124" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hare, Ray M.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Ray M. Hare conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001138" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harris, Angela M.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Angela M. Harris conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001292" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hughes, James D. ("Don")</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and James D. ("Don") Hughes conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001324" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jablonsky, Lea D.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Lea D. Jablonsky conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001443" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Keller, Vickie L.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Vickie L. Keller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001459" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, Richard T. (Col.)</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Col. Richard T. Kennedy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001460" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kenneth C. Rietz</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Kenneth C. Rietz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001466" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Keyes, Paul W.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Paul W. Keyes conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001494" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kissinger, Henry A.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Henry A. Kissinger conversed <span localType="frequency">9</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001499" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kleindienst, Richard G.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Richard G. Kleindienst conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001565" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">LaRue, Fredrick C.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Fredrick C. LaRue conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001611" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lewis, Hobart D.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Hobart D. Lewis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001699" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Malek, Frederic V.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Frederic V. Malek conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001874" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Miller, Angela L.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Angela l. Miller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001897" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mitchell, John N.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and John N. Mitchell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001911" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Monzon, Zosimo T.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Zosimo T. Monzon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001919" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moorer, Thomas H. (Adm.)</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Adm. Thomas H. Moorer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and President Richard M. Nixon conversed <span localType="frequency">244</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002004" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Thelma C. ("Pat") (Ryan)</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Thelma C. ("Pat") (Ryan) Nixon conversed <span localType="frequency">10</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002031" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nugent, Luci Johnson</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Luci Johnson Nugent conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002032" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nugent, Patrick L.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Patrick L. Nugent conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002102" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Parker, David N.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and David N. Parker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002123" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Payton, Sallyanne</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Sallyanne Payton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002221" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Raulinaitis, Valerija B.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Valerija B. Raulinaitis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002228" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Reagan, Ronald W.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Ronald W. Reagan conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002229" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rebozo, Charles G. ("Bebe")</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Charles G. ("Bebe") Rebozo conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002316" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rogers, William P.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and William P. Rogers conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002381" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sanchez, Manolo</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Manolo Sanchez conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002398" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scali, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and John A. Scali conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002455" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scouten, Rex W.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Rex W. Scouten conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002517" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shultz, George P.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and George P. Shultz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002550" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Skelton, Richard ("Red")</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Richard ("Red") Skelton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002567" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, Kenneth M.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Kenneth M. Smith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002595" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Spain, Jayne B.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Jayne B. Spain conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002743" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tolson, Clyde A.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Clyde A. Tolson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002987" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Woods, Rose Mary</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Rose Mary Woods conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003038" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ziegler, Ronald L.</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and Ronald L. Ziegler conversed <span localType="frequency">11</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002795" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">[Unknown person(s)]</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and [Unknown person(s)] conversed <span localType="frequency">14</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- Relationships to Families -->
+      <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002071" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Camp David Operator</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and representatives of the Camp David operator conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002794" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">United States Secret Service agents</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and representatives of the United States Secret Service agents conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002919" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House operator</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and representatives of the White House operator conversed <span localType="frequency">62</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002920" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House photographer</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox and representatives of the White House photographer conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- RESOURCE RELATIONS -->
+      <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-001-047">
+        <relationEntry>White House Tapes: Conversation 001-047</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 001-047 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
-      <!-- Relationship to Resources, subjectOf -->
-      <resourceRelation xlink:arcrole="subjectOf" xlink:role="archivalResource" xlink:type="simple" xlink:href="" lastDateTimeVerified="">
-        <relationEntry/>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-001-068">
+        <relationEntry>White House Tapes: Conversation 001-068</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 001-068 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-002-097">
+        <relationEntry>White House Tapes: Conversation 002-097</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 002-097 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-002-101">
+        <relationEntry>White House Tapes: Conversation 002-101</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 002-101 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-003-083">
+        <relationEntry>White House Tapes: Conversation 003-083</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 003-083 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-003-186">
+        <relationEntry>White House Tapes: Conversation 003-186</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 003-186 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-003-206">
+        <relationEntry>White House Tapes: Conversation 003-206</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 003-206 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-003-208">
+        <relationEntry>White House Tapes: Conversation 003-208</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 003-208 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-003-210">
+        <relationEntry>White House Tapes: Conversation 003-210</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 003-210 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-003-212">
+        <relationEntry>White House Tapes: Conversation 003-212</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 003-212 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-004-024">
+        <relationEntry>White House Tapes: Conversation 004-024</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 004-024 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-004-038">
+        <relationEntry>White House Tapes: Conversation 004-038</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 004-038 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-004-039">
+        <relationEntry>White House Tapes: Conversation 004-039</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 004-039 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-004-073">
+        <relationEntry>White House Tapes: Conversation 004-073</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 004-073 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-004-076">
+        <relationEntry>White House Tapes: Conversation 004-076</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 004-076 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-004-077">
+        <relationEntry>White House Tapes: Conversation 004-077</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 004-077 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-004-078">
+        <relationEntry>White House Tapes: Conversation 004-078</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 004-078 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-004-079">
+        <relationEntry>White House Tapes: Conversation 004-079</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 004-079 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-004-086">
+        <relationEntry>White House Tapes: Conversation 004-086</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 004-086 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-004-105">
+        <relationEntry>White House Tapes: Conversation 004-105</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 004-105 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-005-021">
+        <relationEntry>White House Tapes: Conversation 005-021</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 005-021 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-005-075">
+        <relationEntry>White House Tapes: Conversation 005-075</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 005-075 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-006-067">
+        <relationEntry>White House Tapes: Conversation 006-067</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 006-067 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-006-103">
+        <relationEntry>White House Tapes: Conversation 006-103</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 006-103 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-006-147">
+        <relationEntry>White House Tapes: Conversation 006-147</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 006-147 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-006-167">
+        <relationEntry>White House Tapes: Conversation 006-167</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 006-167 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-007-014">
+        <relationEntry>White House Tapes: Conversation 007-014</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 007-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-007-074">
+        <relationEntry>White House Tapes: Conversation 007-074</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 007-074 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-008-025">
+        <relationEntry>White House Tapes: Conversation 008-025</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 008-025 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-008-095">
+        <relationEntry>White House Tapes: Conversation 008-095</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 008-095 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-009-045">
+        <relationEntry>White House Tapes: Conversation 009-045</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 009-045 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-010-101">
+        <relationEntry>White House Tapes: Conversation 010-101</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 010-101 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-011-038">
+        <relationEntry>White House Tapes: Conversation 011-038</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 011-038 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-011-107">
+        <relationEntry>White House Tapes: Conversation 011-107</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 011-107 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-011-112">
+        <relationEntry>White House Tapes: Conversation 011-112</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 011-112 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-012-059">
+        <relationEntry>White House Tapes: Conversation 012-059</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 012-059 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-013-020">
+        <relationEntry>White House Tapes: Conversation 013-020</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 013-020 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-014-001">
+        <relationEntry>White House Tapes: Conversation 014-001</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 014-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-014-033">
+        <relationEntry>White House Tapes: Conversation 014-033</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 014-033 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-015-034">
+        <relationEntry>White House Tapes: Conversation 015-034</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 015-034 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-015-071">
+        <relationEntry>White House Tapes: Conversation 015-071</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 015-071 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-015-135">
+        <relationEntry>White House Tapes: Conversation 015-135</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 015-135 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-017-098">
+        <relationEntry>White House Tapes: Conversation 017-098</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 017-098 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-017-109">
+        <relationEntry>White House Tapes: Conversation 017-109</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 017-109 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-018-012">
+        <relationEntry>White House Tapes: Conversation 018-012</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 018-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-019-060">
+        <relationEntry>White House Tapes: Conversation 019-060</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 019-060 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-019-080">
+        <relationEntry>White House Tapes: Conversation 019-080</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 019-080 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-020-027">
+        <relationEntry>White House Tapes: Conversation 020-027</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 020-027 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-020-097">
+        <relationEntry>White House Tapes: Conversation 020-097</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 020-097 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-021-029">
+        <relationEntry>White House Tapes: Conversation 021-029</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 021-029 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-021-031">
+        <relationEntry>White House Tapes: Conversation 021-031</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 021-031 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-021-032">
+        <relationEntry>White House Tapes: Conversation 021-032</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 021-032 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-021-034">
+        <relationEntry>White House Tapes: Conversation 021-034</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 021-034 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-021-107">
+        <relationEntry>White House Tapes: Conversation 021-107</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 021-107 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-022-007">
+        <relationEntry>White House Tapes: Conversation 022-007</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 022-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-022-057">
+        <relationEntry>White House Tapes: Conversation 022-057</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 022-057 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-022-063">
+        <relationEntry>White House Tapes: Conversation 022-063</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 022-063 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-022-101">
+        <relationEntry>White House Tapes: Conversation 022-101</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 022-101 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-023-010">
+        <relationEntry>White House Tapes: Conversation 023-010</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 023-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-023-019">
+        <relationEntry>White House Tapes: Conversation 023-019</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 023-019 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-023-021">
+        <relationEntry>White House Tapes: Conversation 023-021</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 023-021 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-023-042">
+        <relationEntry>White House Tapes: Conversation 023-042</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 023-042 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-023-050">
+        <relationEntry>White House Tapes: Conversation 023-050</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 023-050 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-023-116">
+        <relationEntry>White House Tapes: Conversation 023-116</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 023-116 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-024-029">
+        <relationEntry>White House Tapes: Conversation 024-029</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 024-029 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-024-074">
+        <relationEntry>White House Tapes: Conversation 024-074</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 024-074 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-025-040">
+        <relationEntry>White House Tapes: Conversation 025-040</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 025-040 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-025-074">
+        <relationEntry>White House Tapes: Conversation 025-074</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 025-074 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-025-126">
+        <relationEntry>White House Tapes: Conversation 025-126</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 025-126 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-027-038">
+        <relationEntry>White House Tapes: Conversation 027-038</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 027-038 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-027-098">
+        <relationEntry>White House Tapes: Conversation 027-098</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 027-098 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-028-008">
+        <relationEntry>White House Tapes: Conversation 028-008</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 028-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-029-013">
+        <relationEntry>White House Tapes: Conversation 029-013</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 029-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-029-042">
+        <relationEntry>White House Tapes: Conversation 029-042</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 029-042 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-030-049">
+        <relationEntry>White House Tapes: Conversation 030-049</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 030-049 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-031-011">
+        <relationEntry>White House Tapes: Conversation 031-011</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 031-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-031-054">
+        <relationEntry>White House Tapes: Conversation 031-054</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 031-054 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-031-084">
+        <relationEntry>White House Tapes: Conversation 031-084</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 031-084 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-031-152">
+        <relationEntry>White House Tapes: Conversation 031-152</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 031-152 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-032-082">
+        <relationEntry>White House Tapes: Conversation 032-082</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 032-082 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-032-084">
+        <relationEntry>White House Tapes: Conversation 032-084</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 032-084 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-032-103">
+        <relationEntry>White House Tapes: Conversation 032-103</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 032-103 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-032-104">
+        <relationEntry>White House Tapes: Conversation 032-104</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 032-104 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-032-171">
+        <relationEntry>White House Tapes: Conversation 032-171</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 032-171 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-033-052">
+        <relationEntry>White House Tapes: Conversation 033-052</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 033-052 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-033-083">
+        <relationEntry>White House Tapes: Conversation 033-083</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 033-083 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-034-020">
+        <relationEntry>White House Tapes: Conversation 034-020</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 034-020 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-034-026">
+        <relationEntry>White House Tapes: Conversation 034-026</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 034-026 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-034-073">
+        <relationEntry>White House Tapes: Conversation 034-073</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 034-073 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-035-134">
+        <relationEntry>White House Tapes: Conversation 035-134</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 035-134 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-037-048">
+        <relationEntry>White House Tapes: Conversation 037-048</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 037-048 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-037-126">
+        <relationEntry>White House Tapes: Conversation 037-126</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 037-126 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-037-152">
+        <relationEntry>White House Tapes: Conversation 037-152</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 037-152 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-037-172">
+        <relationEntry>White House Tapes: Conversation 037-172</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 037-172 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-037-184">
+        <relationEntry>White House Tapes: Conversation 037-184</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 037-184 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-039-011">
+        <relationEntry>White House Tapes: Conversation 039-011</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 039-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-039-012">
+        <relationEntry>White House Tapes: Conversation 039-012</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 039-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-039-013">
+        <relationEntry>White House Tapes: Conversation 039-013</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 039-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-039-014">
+        <relationEntry>White House Tapes: Conversation 039-014</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 039-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-039-015">
+        <relationEntry>White House Tapes: Conversation 039-015</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 039-015 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-039-016">
+        <relationEntry>White House Tapes: Conversation 039-016</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 039-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-039-018">
+        <relationEntry>White House Tapes: Conversation 039-018</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 039-018 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-039-019">
+        <relationEntry>White House Tapes: Conversation 039-019</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 039-019 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-039-122">
+        <relationEntry>White House Tapes: Conversation 039-122</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 039-122 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-040-022">
+        <relationEntry>White House Tapes: Conversation 040-022</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 040-022 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-041-039">
+        <relationEntry>White House Tapes: Conversation 041-039</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 041-039 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-041-059">
+        <relationEntry>White House Tapes: Conversation 041-059</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 041-059 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-041-067">
+        <relationEntry>White House Tapes: Conversation 041-067</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 041-067 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-042-060">
+        <relationEntry>White House Tapes: Conversation 042-060</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 042-060 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-044-006">
+        <relationEntry>White House Tapes: Conversation 044-006</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 044-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-044-025">
+        <relationEntry>White House Tapes: Conversation 044-025</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 044-025 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-044-100">
+        <relationEntry>White House Tapes: Conversation 044-100</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 044-100 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-044-147">
+        <relationEntry>White House Tapes: Conversation 044-147</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 044-147 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-008">
+        <relationEntry>White House Tapes: Conversation 045-008</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-044">
+        <relationEntry>White House Tapes: Conversation 045-044</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-044 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-046">
+        <relationEntry>White House Tapes: Conversation 045-046</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-046 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-047">
+        <relationEntry>White House Tapes: Conversation 045-047</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-047 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-048">
+        <relationEntry>White House Tapes: Conversation 045-048</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-048 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-049">
+        <relationEntry>White House Tapes: Conversation 045-049</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-049 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-050">
+        <relationEntry>White House Tapes: Conversation 045-050</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-050 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-051">
+        <relationEntry>White House Tapes: Conversation 045-051</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-051 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-052">
+        <relationEntry>White House Tapes: Conversation 045-052</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-052 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-053">
+        <relationEntry>White House Tapes: Conversation 045-053</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-053 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-055">
+        <relationEntry>White House Tapes: Conversation 045-055</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-055 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-056">
+        <relationEntry>White House Tapes: Conversation 045-056</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-056 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-057">
+        <relationEntry>White House Tapes: Conversation 045-057</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-057 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-060">
+        <relationEntry>White House Tapes: Conversation 045-060</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-060 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-061">
+        <relationEntry>White House Tapes: Conversation 045-061</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-061 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-062">
+        <relationEntry>White House Tapes: Conversation 045-062</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-062 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-063">
+        <relationEntry>White House Tapes: Conversation 045-063</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-063 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-068">
+        <relationEntry>White House Tapes: Conversation 045-068</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-068 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-069">
+        <relationEntry>White House Tapes: Conversation 045-069</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-069 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-070">
+        <relationEntry>White House Tapes: Conversation 045-070</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-070 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-045-211">
+        <relationEntry>White House Tapes: Conversation 045-211</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 045-211 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-136-015">
+        <relationEntry>White House Tapes: Conversation 136-015</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 136-015 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-142-005">
+        <relationEntry>White House Tapes: Conversation 142-005</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 142-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-147-012">
+        <relationEntry>White House Tapes: Conversation 147-012</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 147-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-148-012">
+        <relationEntry>White House Tapes: Conversation 148-012</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 148-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-149-002">
+        <relationEntry>White House Tapes: Conversation 149-002</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 149-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-153-013">
+        <relationEntry>White House Tapes: Conversation 153-013</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 153-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-154-011">
+        <relationEntry>White House Tapes: Conversation 154-011</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 154-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-155-021">
+        <relationEntry>White House Tapes: Conversation 155-021</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 155-021 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-156-005">
+        <relationEntry>White House Tapes: Conversation 156-005</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 156-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-157-007">
+        <relationEntry>White House Tapes: Conversation 157-007</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 157-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-158-058">
+        <relationEntry>White House Tapes: Conversation 158-058</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 158-058 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-161-005">
+        <relationEntry>White House Tapes: Conversation 161-005</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 161-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-163-002">
+        <relationEntry>White House Tapes: Conversation 163-002</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 163-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-167-014">
+        <relationEntry>White House Tapes: Conversation 167-014</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 167-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-168-008">
+        <relationEntry>White House Tapes: Conversation 168-008</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 168-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-176-001">
+        <relationEntry>White House Tapes: Conversation 176-001</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 176-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-176-003">
+        <relationEntry>White House Tapes: Conversation 176-003</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 176-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-176-004">
+        <relationEntry>White House Tapes: Conversation 176-004</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 176-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-176-005">
+        <relationEntry>White House Tapes: Conversation 176-005</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 176-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-176-006">
+        <relationEntry>White House Tapes: Conversation 176-006</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 176-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-196-021">
+        <relationEntry>White House Tapes: Conversation 196-021</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 196-021 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-197-017">
+        <relationEntry>White House Tapes: Conversation 197-017</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 197-017 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-199-013">
+        <relationEntry>White House Tapes: Conversation 199-013</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 199-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-201-002">
+        <relationEntry>White House Tapes: Conversation 201-002</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 201-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-201-005">
+        <relationEntry>White House Tapes: Conversation 201-005</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 201-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-202-009">
+        <relationEntry>White House Tapes: Conversation 202-009</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 202-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-202-011">
+        <relationEntry>White House Tapes: Conversation 202-011</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 202-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-203-026">
+        <relationEntry>White House Tapes: Conversation 203-026</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 203-026 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-203-028">
+        <relationEntry>White House Tapes: Conversation 203-028</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 203-028 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-203-030">
+        <relationEntry>White House Tapes: Conversation 203-030</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 203-030 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-210-007">
+        <relationEntry>White House Tapes: Conversation 210-007</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 210-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-213-023">
+        <relationEntry>White House Tapes: Conversation 213-023</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 213-023 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-217-028">
+        <relationEntry>White House Tapes: Conversation 217-028</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 217-028 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-219-014">
+        <relationEntry>White House Tapes: Conversation 219-014</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 219-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-220-002">
+        <relationEntry>White House Tapes: Conversation 220-002</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 220-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-224-019">
+        <relationEntry>White House Tapes: Conversation 224-019</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 224-019 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-227-005">
+        <relationEntry>White House Tapes: Conversation 227-005</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 227-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-229-004">
+        <relationEntry>White House Tapes: Conversation 229-004</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 229-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-230-020">
+        <relationEntry>White House Tapes: Conversation 230-020</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 230-020 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-230-028">
+        <relationEntry>White House Tapes: Conversation 230-028</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 230-028 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-230-029">
+        <relationEntry>White House Tapes: Conversation 230-029</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 230-029 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-231-005">
+        <relationEntry>White House Tapes: Conversation 231-005</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 231-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-233-013">
+        <relationEntry>White House Tapes: Conversation 233-013</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 233-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-238-022">
+        <relationEntry>White House Tapes: Conversation 238-022</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 238-022 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-241-010">
+        <relationEntry>White House Tapes: Conversation 241-010</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 241-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-243-016">
+        <relationEntry>White House Tapes: Conversation 243-016</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 243-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-251-006">
+        <relationEntry>White House Tapes: Conversation 251-006</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 251-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-254-024">
+        <relationEntry>White House Tapes: Conversation 254-024</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 254-024 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-254-027">
+        <relationEntry>White House Tapes: Conversation 254-027</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 254-027 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-254-029">
+        <relationEntry>White House Tapes: Conversation 254-029</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 254-029 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-254-031">
+        <relationEntry>White House Tapes: Conversation 254-031</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 254-031 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-255-033">
+        <relationEntry>White House Tapes: Conversation 255-033</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 255-033 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-255-040">
+        <relationEntry>White House Tapes: Conversation 255-040</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 255-040 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-255-042">
+        <relationEntry>White House Tapes: Conversation 255-042</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 255-042 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-258-015">
+        <relationEntry>White House Tapes: Conversation 258-015</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 258-015 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-260-023">
+        <relationEntry>White House Tapes: Conversation 260-023</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 260-023 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-275-033">
+        <relationEntry>White House Tapes: Conversation 275-033</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 275-033 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-278-028">
+        <relationEntry>White House Tapes: Conversation 278-028</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 278-028 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-287-013">
+        <relationEntry>White House Tapes: Conversation 287-013</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 287-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-291-011">
+        <relationEntry>White House Tapes: Conversation 291-011</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 291-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-310-022">
+        <relationEntry>White House Tapes: Conversation 310-022</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 310-022 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-310-030">
+        <relationEntry>White House Tapes: Conversation 310-030</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 310-030 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-310-031">
+        <relationEntry>White House Tapes: Conversation 310-031</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 310-031 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-316-015">
+        <relationEntry>White House Tapes: Conversation 316-015</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 316-015 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-318-020">
+        <relationEntry>White House Tapes: Conversation 318-020</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 318-020 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-322-030">
+        <relationEntry>White House Tapes: Conversation 322-030</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 322-030 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-322-033">
+        <relationEntry>White House Tapes: Conversation 322-033</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 322-033 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-334-036">
+        <relationEntry>White House Tapes: Conversation 334-036</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 334-036 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-338-039">
+        <relationEntry>White House Tapes: Conversation 338-039</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 338-039 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-341-031">
+        <relationEntry>White House Tapes: Conversation 341-031</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 341-031 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-342-016">
+        <relationEntry>White House Tapes: Conversation 342-016</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 342-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-352-016">
+        <relationEntry>White House Tapes: Conversation 352-016</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 352-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-354-016">
+        <relationEntry>White House Tapes: Conversation 354-016</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 354-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-355-010">
+        <relationEntry>White House Tapes: Conversation 355-010</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 355-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-377-010">
+        <relationEntry>White House Tapes: Conversation 377-010</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 377-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-377-011">
+        <relationEntry>White House Tapes: Conversation 377-011</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 377-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-377-017">
+        <relationEntry>White House Tapes: Conversation 377-017</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 377-017 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-386-004">
+        <relationEntry>White House Tapes: Conversation 386-004</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 386-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-387-004">
+        <relationEntry>White House Tapes: Conversation 387-004</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 387-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-401-022">
+        <relationEntry>White House Tapes: Conversation 401-022</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 401-022 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-422-027">
+        <relationEntry>White House Tapes: Conversation 422-027</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 422-027 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-423-005">
+        <relationEntry>White House Tapes: Conversation 423-005</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 423-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-431-003">
+        <relationEntry>White House Tapes: Conversation 431-003</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 431-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-440-052">
+        <relationEntry>White House Tapes: Conversation 440-052</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 440-052 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-443-030">
+        <relationEntry>White House Tapes: Conversation 443-030</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 443-030 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-448-001">
+        <relationEntry>White House Tapes: Conversation 448-001</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 448-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-466-022">
+        <relationEntry>White House Tapes: Conversation 466-022</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 466-022 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-469-011">
+        <relationEntry>White House Tapes: Conversation 469-011</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 469-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-469-012">
+        <relationEntry>White House Tapes: Conversation 469-012</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 469-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-475-022">
+        <relationEntry>White House Tapes: Conversation 475-022</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 475-022 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-477-014">
+        <relationEntry>White House Tapes: Conversation 477-014</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 477-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-490-002">
+        <relationEntry>White House Tapes: Conversation 490-002</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 490-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-491-005">
+        <relationEntry>White House Tapes: Conversation 491-005</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 491-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-491-009">
+        <relationEntry>White House Tapes: Conversation 491-009</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 491-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-491-025">
+        <relationEntry>White House Tapes: Conversation 491-025</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 491-025 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-502-012">
+        <relationEntry>White House Tapes: Conversation 502-012</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 502-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-518-008">
+        <relationEntry>White House Tapes: Conversation 518-008</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 518-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-566-010">
+        <relationEntry>White House Tapes: Conversation 566-010</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 566-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-573-002">
+        <relationEntry>White House Tapes: Conversation 573-002</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 573-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-595-004">
+        <relationEntry>White House Tapes: Conversation 595-004</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 595-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-603-003">
+        <relationEntry>White House Tapes: Conversation 603-003</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 603-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-621-028">
+        <relationEntry>White House Tapes: Conversation 621-028</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 621-028 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-624-015">
+        <relationEntry>White House Tapes: Conversation 624-015</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 624-015 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-642-039">
+        <relationEntry>White House Tapes: Conversation 642-039</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 642-039 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-672-002">
+        <relationEntry>White House Tapes: Conversation 672-002</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 672-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-681-002">
+        <relationEntry>White House Tapes: Conversation 681-002</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 681-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-685-018">
+        <relationEntry>White House Tapes: Conversation 685-018</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 685-018 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-700-003">
+        <relationEntry>White House Tapes: Conversation 700-003</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 700-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-703-001">
+        <relationEntry>White House Tapes: Conversation 703-001</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 703-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-710-003">
+        <relationEntry>White House Tapes: Conversation 710-003</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 710-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-711-009">
+        <relationEntry>White House Tapes: Conversation 711-009</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 711-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-711-018">
+        <relationEntry>White House Tapes: Conversation 711-018</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 711-018 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-713-002">
+        <relationEntry>White House Tapes: Conversation 713-002</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 713-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-714-014">
+        <relationEntry>White House Tapes: Conversation 714-014</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 714-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-740-007">
+        <relationEntry>White House Tapes: Conversation 740-007</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 740-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-750-010">
+        <relationEntry>White House Tapes: Conversation 750-010</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 750-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-756-005">
+        <relationEntry>White House Tapes: Conversation 756-005</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 756-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-761-003">
+        <relationEntry>White House Tapes: Conversation 761-003</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 761-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-761-007">
+        <relationEntry>White House Tapes: Conversation 761-007</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 761-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-765-014">
+        <relationEntry>White House Tapes: Conversation 765-014</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 765-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-780-015">
+        <relationEntry>White House Tapes: Conversation 780-015</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 780-015 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-799-019">
+        <relationEntry>White House Tapes: Conversation 799-019</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 799-019 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-817-012">
+        <relationEntry>White House Tapes: Conversation 817-012</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 817-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-823-008">
+        <relationEntry>White House Tapes: Conversation 823-008</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 823-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-883-003">
+        <relationEntry>White House Tapes: Conversation 883-003</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 883-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-885-003">
+        <relationEntry>White House Tapes: Conversation 885-003</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 885-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-890-027">
+        <relationEntry>White House Tapes: Conversation 890-027</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 890-027 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-937-003">
+        <relationEntry>White House Tapes: Conversation 937-003</relationEntry>
+        <descriptiveNote>
+          <p>Tricia Nixon Cox participated in Conversation 937-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+      <!-- Relationship to Bibliographic Works, subjectOf -->
     </relations>
   </cpfDescription>
 </eac-cpf>
