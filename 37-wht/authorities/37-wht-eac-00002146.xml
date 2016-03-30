@@ -1,9 +1,6 @@
-<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4">
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
   <control>
-    <recordId/>
-    <!-- <otherRecordId localType="http://catalog.archives.gov/id/"></otherRecordId> -->
-    <!-- <otherRecordId localType="http://viaf.org/viaf/terms#viafID"></otherRecordId> -->
-    <otherRecordId localType="http://www.loc.gov/standards/mads/rdf/v1.html#Authority"/>
+    <recordId>37-wht-eac-00002146</recordId>
     <maintenanceStatus>new</maintenanceStatus>
     <maintenanceAgency>
       <agencyCode>US-DNA</agencyCode>
@@ -16,15 +13,15 @@
     <!-- Convention Declarations for Content Standards -->
     <conventionDeclaration>
       <abbreviation>RDA</abbreviation>
-      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-19">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>USNARA-LCDRG</abbreviation>
-      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-19">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>DACS-2nd</abbreviation>
-      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2015-03-18">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>NixonTapesIndex</abbreviation>
@@ -43,6 +40,10 @@
       <abbreviation>marc:relators</abbreviation>
       <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
     </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>uscensus:race</abbreviation>
+      <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
+    </conventionDeclaration>
     <!-- Convention Declarations for Style Guides -->
     <conventionDeclaration>
       <abbreviation>CMOS-16th</abbreviation>
@@ -51,10 +52,10 @@
     <maintenanceHistory>
       <maintenanceEvent>
         <eventType>created</eventType>
-        <eventDateTime>2016-03-01T01:02:57.824-05:00</eventDateTime>
+        <eventDateTime>2016-03-29T16:05:09.994-04:00</eventDateTime>
         <agentType>machine</agentType>
         <agent>base-to-eac.xq</agent>
-        <eventDescription>Converted base/source data to EAC-CPF through XQuery script written by Amanda T. Ross of the United States National Archives and Records Administration.</eventDescription>
+        <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
       <!--
             <maintenanceEvent>
@@ -62,161 +63,2270 @@
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent> 
             -->
     </maintenanceHistory>
-    <sources>
-      <source xlink:href="https://catalog.archives.gov" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>National Archives and Records Administration Authority List</sourceEntry>
-      </source>
-             --&gt;
-            <source xlink:href="http://id.loc.gov/authorities/names" xlink:type="simple" lastDateTimeVerified="[dateTime]">
-        <sourceEntry>Library of Congress Name Authority File</sourceEntry>
-      </source>
-      <source xlink:href="http://viaf.org" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>Virtual International Authority File</sourceEntry>
-      </source>
-    </sources>
+    <!--         
+        <sources>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
+            </source>
+        </sources>
+        -->
   </control>
   <cpfDescription>
     <identity>
       <entityType>person</entityType>
-
-            if ($entityType eq "person")
-              then
-              
-            <nameEntry localType="marcfield:100">
-        <part localType="marcfield:100$a"/>
-        <part localType="marcfield:100$d"/>
-        <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
-      </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="familyName"/>
-        <part localType="givenName"/>
-        <part localType="nickname"/>
-        <part localType="maiden name"/>
-        <part localtype="generational marker"/>
-        <part localType="military rank or official title"/>
-        <part localType="Mrs."/>
+      <!-- Authorized Name Entries -->
+      <!-- Nixon Tapes Index -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Peterson, Peter G.</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-            
-
-      else
-      <nameEntry localType="marcfield:110">
-        <part localType="marcfield:110$a"/>
-        <part localType="marcfield:110$d"/>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a"/>
+        <part localType="marcfield:100$b"/>
+        <part localType="marcfield:100$c"/>
+        <part localType="marcfield:100$q"/>
+        <part localType="marcfield:100$d"/>
         <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
+        <!-- 
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
       </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="directOrder"/>
+      <!-- Variant Name Entries -->
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">Peter G. Peterson</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Peterson</part>
+        <part localType="givenName">Peter G.</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
+      <!-- Insert Variant Names from LCNAF/LCDRG -->
     </identity>
     <description>
-      <existDates localType="marcfield:046">
-        <dateRange>
-          <fromDate standardDate=""/>
-          <toDate/>
-        </dateRange>
-      </existDates>
-      <occupations>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-          <dateRange>
-            <fromDate standardDate="2009-11-13">November 13, 2009</fromDate>
-            <toDate/>
-          </dateRange>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-      </occupations>
-      <languageUsed>
-        <language languageCode="eng">English</language>
-        <script scriptCode="Latn">Latin</script>
-      </languageUsed>
+      <!-- Exist Dates -->
+      <!--
+            <existDates>
+            
+            </existDates>
+            -->
+      <!-- Gender/Gender Identity -->
       <localDescriptions localType="http://viaf.org/viaf/terms#gender">
         <localDescription localType="marcfield:375">
-          <term/>
-          <descriptiveNote>Gender certainty score, via Namsor: </descriptiveNote>
+          <term vocabularySource="NixonTapesIndex">male</term>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">-1.0</span>.</p>
+          </descriptiveNote>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescriptions localType="http://viaf.org/viaf/terms#AssociatedSubject">
-        <localDescription localType="marcfield:372$a">
+      <!-- Citizenship -->
+      <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+      <!-- Nationality -->
+      <!--
+            <localDescriptions localType="nixonTapes/#nationality">
+            
+            </localDescriptions>
+            -->
+      <!-- Languages Used -->
+      <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->
+      <!-- Racial Category -->
+      <localDescriptions localType="nixonTapes/#racialCategory">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="uscensus:race"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Ethnic/Cultural Heritage -->
+      <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
+        <localDescription localType="marcfield:373">
           <term vocabularySource="lcsh"/>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescription localType="http://viaf.org/viaf/terms#nationalityOfEntity">
-        <placeEntry vocabularySource="lcsh" countryCode="US">United States</placeEntry>
-      </localDescription>
-      <places localType="http://socialarchive.iath.virginia.edu/control/term#AssociatedPlace">
-        <place localType="marcfield:370$c">
-          <placeRole>associated country</placeRole>
-          <placeEntry vocabularySource="lcsh" countryCode="US" latitude="39.76" longitude="-98.5">United States</placeEntry>
-        </place>
-        <place localType="marcfield:370$a">
-          <placeRole>birthplace</placeRole>
-          <placeEntry vocabularySource="lcsh" latitude="" longitude=""/>
-          <date standardDate=""/>
-        </place>
-      </places>
+      <!-- Tribal Affiliations -->
+      <!-- Title or Honorific -->
+      <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Occupations -->
+      <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
+      <!-- Functions -->
+      <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+      <!-- Political Affiliations -->
+      <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+      <!-- Religious Affiliations -->
+      <!-- Topical Subjects -->
+      <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Associated Places -->
+      <places/>
       <biogHist>
-        <abstract> ...</abstract>
-        <p> ...</p>
+        <!-- Abstract -->
+        <abstract/>
+        <!-- Biography or Administrative History Note -->
+        <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
-        <citation/>
+        <!-- Insert citations -->
       </biogHist>
+      <!-- Insert structureOrGenealogy, if relevant -->
     </description>
     <relations>
-      <!-- Relationships to Corporate Bodies -->
-      <!-- Education -->
-      <!-- Employers -->
-      <!-- Relationships to Persons-->
-      <!-- Family Members -->
-      <!-- Professional Relationships -->
-      <!-- Relationship to Resources, creatorOf -->
-      <resourceRelation xlink:arcrole="participantIn" xlink:href="" xlink:role="archivalResource" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <relationEntry/>
+      <!-- CPF RELATIONS -->
+      <!-- Relationships to Persons: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004644" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Abrahams, Albert E.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Albert E. Abrahams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000019" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Agnew, Spiro T. (Vice President)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Vice President Spiro T. Agnew conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004652" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ahalt, J. Dawson</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and J. Dawson Ahalt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000028" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Albert, Carl B.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Carl B. Albert conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004647" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Alfultis, Richard J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Richard J. Alfultis conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003476" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Allen, Richard V. ("Dick")</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Richard V. ("Dick") Allen conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000047" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Allott, Gordon L.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Gordon L. Allott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000068" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Anderson, Clinton P.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Clinton P. Anderson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003604" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Anderson, John B.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John B. Anderson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000074" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Anderson, Martin C. ("Marty")</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Martin C. ("Marty") Anderson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000086" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Arends, Leslie C.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Leslie C. Arends conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000103" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Atkins, Oliver F. ("Ollie")</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Oliver F. ("Ollie") Atkins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000123" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ball, Neal</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Neal Ball conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000132" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Banks, Louis</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Louis Banks conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000183" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">BeLieu, Kenneth E.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Kenneth E. BeLieu conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000176" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bedell, Catherine May</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Catherine May Bedell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000179" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Beggs, James M.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and James M. Beggs conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000197" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bennett, Wallace F.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Wallace F. Bennett conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004015" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bentley, Helen B.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Helen B. Bentley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004007" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Berger, Leo V.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Leo V. Berger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000202" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bergsten, C. Fred</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and C. Fred Bergsten conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003647" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Best, Robert A.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Robert A. Best conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003669" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Binger, James H.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and James H. Binger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004017" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Blackwell, Robert J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Robert J. Blackwell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000238" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Blount, Winton M. ("Red"), Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Winton M. ("Red") Blount, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000240" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bluhdorn, Charles</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Charles Bluhdorn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000254" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Boggs, J. Caleb</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and J. Caleb Boggs conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000255" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Boggs, [Thomas] Hale</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and [Thomas] Hale Boggs conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003670" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Borch, Fred J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Fred J. Borch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000274" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bowen, William</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and William Bowen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000280" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Braden, Jean</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Jean Braden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004654" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brooks, Ronald</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Ronald Brooks conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003672" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, Courtney C. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Dr. Courtney C. Brown Gaylord Freeman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000320" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, Robert J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Robert J. Brown conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004534" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, [First name unknown]</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and [First name unknown] Brown conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004077" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brunthaver, Carroll B.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Carroll G. Brunthaver conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000329" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Buchanan, Patrick J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Patrick J. Buchanan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000336" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bull, Stephen B.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Stephen B. Bull conversed <span localType="frequency">25</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000348" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Burck, Gilbert</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Gilbert Burck conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000355" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Burns, Arthur F.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Arthur F. Burns conversed <span localType="frequency">10</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004642" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bush, Barbara (Pierce)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Barbara (Pierce) Bush conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000360" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bush, George H. W.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and George H. W. Bush conversed <span localType="frequency">10</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000362" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Busia, Kofi A.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Kofi A. Busia conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000370" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butterfield, Alexander P.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Alexander P. Butterfield conversed <span localType="frequency">11</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000372" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butz, Earl L.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Earl L. Butz conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000378" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Byrnes, John W.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John W. Byrnes conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000384" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Calhoon, Jesse M.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Jesse M. Calhoon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000397" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Campbell, J. Philip</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and J. Philip Campbell conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000424" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Case, Clifford P.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Clifford P. Case conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000450" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chafee, John H.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John H. Chafee conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000462" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chapin, Dwight L.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Dwight L. Chapin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000470" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cheney, Richard B.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Richard B. Cheney conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000520" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cole, Jack T. ("Tom")</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Jack T. ("Tom") Cole conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000521" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cole, Kenneth R., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Kenneth R. Cole, Jr. conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000530" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Colson, Charles W.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Charles W. Colson conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000531" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Conable, Barber B., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Barber B. Conable, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004653" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Concklin, Bert M.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Bert M. Concklin conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000540" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Connally, Idanell ("Nellie") (Brill)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Idanell ("Nellie") (Brill) Connally conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000541" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Connally, John B.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John B. Connally conversed <span localType="frequency">21</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004651" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Connor, James</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and James Connor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003603" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cotton, Norris</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Norris Cotton conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000592" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Curtis, Carl T.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Carl T. Curtis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004657" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Curtis, Thomas B.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Thomas B. Curtis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000604" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">David, Edward E., Jr. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Dr. Edward E. David, Jr. conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000638" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dent, Harry S.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Harry S. Dent conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000672" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dobrynin, Anatoliy F.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Anatoliy F. Dobrynin conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000673" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dole, Robert J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Robert J. Dole conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000684" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dominick, Peter H.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Peter H. Dominick conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000687" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Donovan, Hedley W.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Hedley W. Donovan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000738" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Eberle, William D.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and William D. Eberle conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000752" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ehrlichman, John D.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John D. Ehrlichman conversed <span localType="frequency">18</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000764" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ellender, Allen J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Allen J. Ellender conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000779" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Engman, Lewis A.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Lewis A. Engman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000787" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Etherington, Edwin D.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Edwin D. Etherington conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000793" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Evans, John F., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John F. Evans, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000807" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fannin, Paul J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Paul J. Fannin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000841" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Finch, Carol (Crothers)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Carol (Crothers) Finch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000843" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Finch, Robert H.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Robert H. Finch conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000857" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Flanigan, Peter M.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Peter M. Flanigan conversed <span localType="frequency">24</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000861" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Flemming, Arthur S.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Arthur S. Flemming conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000864" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fletcher, Arthur A. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Dr. Arthur A. Fletcher conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000875" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ford, Gerald R.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Gerald R. Ford conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000876" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ford, Henry, II</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Henry Ford, II conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000885" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Frank, Isaiah (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Dr. Isaiah Frank conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000885" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Frank, Isiah (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Dr. Isaiah Frank conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003672" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Freeman, Gaylord</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Dr. Courtney C. Brown Gaylord Freeman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000916" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fulbright, J. William</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and J. William Fulbright conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003673" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gardner, Richard N.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Richard N. Gardner conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000941" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Garment, Leonard</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Leonard Garment conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004659" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Geimer, William</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and William Geimer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000966" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gibson, Andrew E.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Andrew E. Gibson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000969" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gifford, William L.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and William L. Gifford conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000970" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gilbert, Carl J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Carl J. Gilbert conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004011" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gilbride, John R.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John R. Gilbride conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004012" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Goodrich, James F.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and James F. Goodrich conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004648" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Greener, William I. ("Bill"), Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and William I. ("Bill") Greener, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001037" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Griffin, Robert P.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Robert P. Griffin conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001065" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Guzhenko, Timofey B.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Timofey B. Guzhenko conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001069" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Alexander M., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Alexander M. Haig, Jr. conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001082" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haldeman, H. R. ("Bob")</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and H. R. ("Bob") Haldeman conversed <span localType="frequency">14</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001102" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hampton, Robert E.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Robert E. Hampton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001112" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hannah, John A. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Dr. John A. Hannah conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001115" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hansen, Clifford P.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Clifford P. Hansen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001119" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hanzlik, Rayburn D.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Rayburn D. Hanzlik conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001121" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hardin, Clifford M.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Clifford M. Hardin conversed <span localType="frequency">10</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003105" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hardin, Martha L. (Wood)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Martha L. (Wood) Hardin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004533" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hargrove, James W.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and James W. Hargrove conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001128" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harlow, Bryce N.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Bryce N. Harlow conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001130" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harper, Edwin L.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Edwin L. Harper conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001179" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Helms, Richard M.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Richard M. Helms conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001222" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hinton, Deane R.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Deane R. Hinton conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001231" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hodgson, James D.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and James D. Hodgson conversed <span localType="frequency">16</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004639" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hodgson, Maria (Denend)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Maria (Denend) Hodgson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003665" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hormats, Robert D.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Robert D. Hormats conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003472" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Houthakker, Hendrick S.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Hendrik S. Houthakker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001284" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Howell, Carson M.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Carson M. Howell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003391" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Howell, Carson M. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Mrs. Carson M. Howell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001286" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hruska, Roman L.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Roman L. Hruska conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001321" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Irwin, John N., II</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John N. Irwin, II conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001349" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Javits, Jacob K.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Jacob K. Javits conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004008" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, Edwin A.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Edwin A. Johnson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001377" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, U. Alexis</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and U. Alexis Johnson conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004009" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kahn, Joseph</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Joseph Kahn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001457" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, David M.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and David M. Kennedy conversed <span localType="frequency">13</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004641" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, Lenora (Bingham)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Lenora (Bingham) Kennedy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001459" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, Richard T. (Col.)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Col. Richard T. Kennedy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001494" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kissinger, Henry A.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Henry A. Kissinger conversed <span localType="frequency">22</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001497" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Klein, Herbert G.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Herbert G. Klein conversed <span localType="frequency">9</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001499" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kleindienst, Richard G.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Richard G. Kleindienst conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001504" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kleppe, Thomas S.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Thomas S. Kleppe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001510" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Knauer, Virginia H.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Virginia H. Knauer conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003674" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Knoppers, Antonie T.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Antonie T. Knoppers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004645" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kosters, Marvin H.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Marvin H. Koster conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001529" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Krogh, Egil ("Bud"), Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Egil ("Bud") Krogh, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001535" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kunzig, Robert L.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Robert L. Kunzig conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001545" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Laird, Melvin R.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Melvin R. Laird conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004662" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lane, C. Robert</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and C. Robert Lane conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003675" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lee, Stewart M. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Dr. Stewart M. Lee conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001615" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lincoln, George A. (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Gen. George A. Lincoln conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003676" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Littlefield, Edmund W.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Edmund W. Littlefield conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001628" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lodge, Emily (Sears)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Emily (Sears) Lodge conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004078" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Loken, James B.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and James B. Loken conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001636" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Long, Russell B.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Russell B. Long conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001653" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lubar, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Robert Lubar conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001673" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lynn, James T.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and James T. Lynn conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001674" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lynn, James T.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and James T. Lynn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003406" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lynn, James T. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Mrs. James T. Lynn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001681" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">MacGregor, Clark</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Clark MacGregor conversed <span localType="frequency">14</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003607" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Magnuson, Warren G. ("Maggie")</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Warren G. ("Maggie") Magnuson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001699" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Malek, Frederic V.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Frederic V. Malek conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001700" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Malfatti, Franco Mario</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Franco Mario Malfatti conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001712" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mansfield, Michael J. ("Mike")</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Michael J. ("Mike") Mansfield conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001744" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Martin, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Robert Martin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001767" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mayer, Lawrence</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Lawrence Mayer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001793" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McCracken, Paul W.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Paul W. McCracken conversed <span localType="frequency">14</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001820" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McLane, James W.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and James W. McLane conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001870" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Michel, Peter</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Peter Michel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001881" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Miller, Jack R.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Jack R. Miller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001889" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mills, Wilbur D.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Wilbur D. Mills conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001897" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mitchell, John N.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John N. Mitchell conversed <span localType="frequency">10</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004636" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mitchell, Martha (Beall)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Martha Beall Mitchell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004665" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morey, Roy D.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Roy D. Morey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001925" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morgan, Edward L.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Edward L. Morgan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004079" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morris, Robert J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Robert J. Morris conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004637" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morton, Anne (Jones)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Anne (Jones) Morton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001935" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morton, Rogers C. B.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Rogers C. B. Morton conversed <span localType="frequency">9</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001936" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mosbacher, Emil, Jr. (Bus)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Emil ("Bus") Mosbacher, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004643" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mullaney, Joseph</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Joseph Mullaney conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004661" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Murdoch, Donald R.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Donald R. Murdoch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003679" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Naden, Kenneth N.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Kenneth N. Naden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003680" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Neal, Alfred C.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Alfred C. Neal conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and President Richard M. Nixon conversed <span localType="frequency">66</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002004" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Thelma C. ("Pat") (Ryan)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Thelma C. ("Pat") (Ryan) Nixon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004016" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Oates, Walter</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Walter Oates conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004649" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Paarlberg, Donald A.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Donald A. Paarlberg conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002082" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Packard, David</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and David Packard conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003646" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Packwood, Robert W.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Robert W. Packwood conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004650" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Partee, J. Charles</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and J. Charles Partee conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002112" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Patman, Wright</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Wright Patman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002113" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Patolichev, Nikolai S.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Nikolai S. Patolichev conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003681" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pearce, William R.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and William R. Pearce conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002125" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pecora, William T.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and William T. Pecora conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002127" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Percy, Charles H.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Charles H. Percy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002132" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Perry, Charles R.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Charles R. Perry conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002140" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Holly</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Holly Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002141" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Jim</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Jim Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002144" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Michael</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Michael Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002147" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Rudolph A.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Rudolph A. Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002167" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Poff, Richard H.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Richard H. Poff conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004658" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Preston, Edward</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Edward Preston conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002190" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Price, Raymond K., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Raymond K. Price, Jr. conversed <span localType="frequency">9</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002250" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Reilly, Gerald</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Gerald Reilly conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002262" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rhodes, John J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John J. Rhodes conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002264" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ribicoff, Abraham A.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Abraham A. Ribicoff conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004640" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Richardson, Anne</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Anne Richardson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002267" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Richardson, Elliot L.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Elliot L. Richardson conversed <span localType="frequency">9</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002300" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Robinson, R. C. ("Hugh")</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and R. C. ("Hugh") Robinson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002302" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rocco, Frank P.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Frank P. Rocco conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002304" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Roche, James M.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and James M. Roche conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002314" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rogers, Adele (Langston)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Adele (Langston) Rogers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002316" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rogers, William P.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and William P. Rogers conversed <span localType="frequency">16</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002324" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Romney, George W.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and George W. Romney conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002325" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Romney, Lenore L.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Lenore L. Romney conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002335" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rose, Jonathan C.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Jonathan C. Rose conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002357" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rumsfeld, Donald H.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Donald H. Rumsfeld conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002360" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rumsfeld, Joyce (Pierson)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Joyce (Pierson) Rumsfeld conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002362" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rush, [David] Kenneth</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and [David] Kenneth Rush conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002375" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Safire, William L.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and William L. Safire conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003577" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Samuels, Nathanial</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Nathanial Samuels conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002381" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sanchez, Manolo</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Manolo Sanchez conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002398" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scali, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John A. Scali conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002417" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schlesinger, James R. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Dr. James R. Schlesinger conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002447" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scott, Hugh</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Hugh Scott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002466" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Seidenman, Neil A.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Neil A. Seidenman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002468" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Seligman, Daniel</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Daniel Seligman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002481" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shakespeare, Frank J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Frank J. Shakespeare conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002501" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shepard, Geoffrey C.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Geoffrey C. Shepard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002517" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shultz, George P.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and George P. Shultz conversed <span localType="frequency">33</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002518" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shultz, Helena M. ("Obie")</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Helena M. ("Obie") Shultz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002522" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Siciliano, Rocco C.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Rocco C. Siciliano conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002535" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Silberman, Laurence H.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Laurence H. Silberman conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003682" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, Dan Throop (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Dr. Dan Throop Smith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002559" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, Donald</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Donald Smith conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002562" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, H. Allen</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and H. Allen Smith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002570" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, Margaret Chase</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Margaret Chase Smith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004439" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sohmer, Arthur J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Arthur J. Sohmer conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002585" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Solomon, Ezra</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Ezra Solomon conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002590" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sonnenfeldt, Helmut ("Hal")</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Helmut ("Hal") Sonnenfeldt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002600" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sparkman, John J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John J. Sparkman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002615" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stafford, Robert T.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Robert T. Stafford conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004638" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stans, Kathleen</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Kathleen Stans conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002617" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stans, Maurice H.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Maurice H. Stans conversed <span localType="frequency">15</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002631" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stein, Herbert</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Herbert Stein conversed <span localType="frequency">9</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003683" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stinebower, Leroy D.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Leroy D. Stinebower conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003637" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stinson, George A.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and George A. Stinson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002676" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sweitzer, Brandon W.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Brandon W. Sweitzer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003664" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sweizer, Brandon</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Brandon Sweizer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004013" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Timmons, Samuel D.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Samuel D. Timmons conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002732" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Timmons, William E.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and William E. Timmons conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002754" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tower, John G.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John G. Tower conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003648" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Vail, Thomas</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Thomas Vail conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000725" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Van Dusen, Richard C.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Richard C. Van Dusen conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002816" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Veneman, John G.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John G. Veneman conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002824" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Volcker, Paul A.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Paul A. Volcker conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002826" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Volpe, Jennie (Benedetto)</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Jennie (Benedetto) Volpe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002825" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Volpe, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John A. Volpe conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002836" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Waldeman, Raymond J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Raymond J. Waldeman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004664" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Waldman, Raymond J.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Raymond J. Waldman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002841" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walker, Charls E.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Charls E. Walker conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002843" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walker, Ronald H.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Ronald H. Walker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004660" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walker, William</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and William Walker conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004656" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walters, Johnnie M.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Johnnie M. Walters conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002867" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Warren, Gerald L.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Gerald L. Warren conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002882" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Watts, Phil</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Phil Watts conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002885" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Weber, Arnold R.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Arnold R. Weber conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002887" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Webster, Donald A.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Donald A. Webster conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004010" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wei, Chung C.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Chung C. Wei conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002893" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Weinberger, Caspar W. ("Cap")</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Caspar W. ("Cap") Weinberger conversed <span localType="frequency">9</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004663" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wheat, I. David, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and I. David Wheat, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002911" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whitaker, John C.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and John C. Whitaker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002926" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whitman, Marina von Neumann</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Marina von Neumann Whitman conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003662" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Widnall, William B.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and William B. Widnall conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004014" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">William, Walter F.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Walter F. William conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002943" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Williams, Albert L.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Albert L. Williams conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003605" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wilson, Robert C. ("Bob")</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Robert C. ("Bob") Wilson conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002987" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Woods, Rose Mary</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Rose Mary Woods conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003023" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Young, Milton R.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Milton R. Young conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003038" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ziegler, Ronald L.</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and Ronald L. Ziegler conversed <span localType="frequency">19</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002795" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">[Unknown person(s)]</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and [Unknown person(s)] conversed <span localType="frequency">10</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- Relationships to Families -->
+      <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003471" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cabinet Committee on Economic Policy</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and representatives of the Cabinet Committee on Economic Policy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003469" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cabinet officers</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and representatives of the Cabinet officers conversed <span localType="frequency">9</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003468" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cost of Living Council</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and representatives of the Cost of Living Council conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003663" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Council on International Economic Policy</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and representatives of the Council on International Economic Policy conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003668" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Council on International Trade and Investment Policy</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and representatives of the Council on International Trade and Investment Policy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002919" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House operator</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and representatives of the White House operator conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002920" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House photographer</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson and representatives of the White House photographer conversed <span localType="frequency">19</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- RESOURCE RELATIONS -->
+      <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-001-063">
+        <relationEntry>White House Tapes: Conversation 001-063</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 001-063 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
-      <!-- Relationship to Resources, subjectOf -->
-      <resourceRelation xlink:arcrole="subjectOf" xlink:role="archivalResource" xlink:type="simple" xlink:href="" lastDateTimeVerified="">
-        <relationEntry/>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-001-076">
+        <relationEntry>White House Tapes: Conversation 001-076</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 001-076 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-013-122">
+        <relationEntry>White House Tapes: Conversation 013-122</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 013-122 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-051-013">
+        <relationEntry>White House Tapes: Conversation 051-013</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 051-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-052-001">
+        <relationEntry>White House Tapes: Conversation 052-001</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 052-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-052-004">
+        <relationEntry>White House Tapes: Conversation 052-004</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 052-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-053-002">
+        <relationEntry>White House Tapes: Conversation 053-002</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 053-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-054-002">
+        <relationEntry>White House Tapes: Conversation 054-002</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 054-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-054-003">
+        <relationEntry>White House Tapes: Conversation 054-003</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 054-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-056-004">
+        <relationEntry>White House Tapes: Conversation 056-004</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 056-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-058-001">
+        <relationEntry>White House Tapes: Conversation 058-001</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 058-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-060-001">
+        <relationEntry>White House Tapes: Conversation 060-001</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 060-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-063-002">
+        <relationEntry>White House Tapes: Conversation 063-002</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 063-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-066-001">
+        <relationEntry>White House Tapes: Conversation 066-001</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 066-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-069-002">
+        <relationEntry>White House Tapes: Conversation 069-002</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 069-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-070-001">
+        <relationEntry>White House Tapes: Conversation 070-001</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 070-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-071-001">
+        <relationEntry>White House Tapes: Conversation 071-001</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 071-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-073-005">
+        <relationEntry>White House Tapes: Conversation 073-005</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 073-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-074-001">
+        <relationEntry>White House Tapes: Conversation 074-001</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 074-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-077-002">
+        <relationEntry>White House Tapes: Conversation 077-002</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 077-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-079-001">
+        <relationEntry>White House Tapes: Conversation 079-001</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 079-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-086-003">
+        <relationEntry>White House Tapes: Conversation 086-003</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 086-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-087-001">
+        <relationEntry>White House Tapes: Conversation 087-001</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 087-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-093-001">
+        <relationEntry>White House Tapes: Conversation 093-001</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 093-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-096-004">
+        <relationEntry>White House Tapes: Conversation 096-004</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 096-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-101-009">
+        <relationEntry>White House Tapes: Conversation 101-009</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 101-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-103-010">
+        <relationEntry>White House Tapes: Conversation 103-010</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 103-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-103-011">
+        <relationEntry>White House Tapes: Conversation 103-011</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 103-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-105-005">
+        <relationEntry>White House Tapes: Conversation 105-005</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 105-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-105-009">
+        <relationEntry>White House Tapes: Conversation 105-009</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 105-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-107-002">
+        <relationEntry>White House Tapes: Conversation 107-002</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 107-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-254-004">
+        <relationEntry>White House Tapes: Conversation 254-004</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 254-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-295-014">
+        <relationEntry>White House Tapes: Conversation 295-014</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 295-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-452-004">
+        <relationEntry>White House Tapes: Conversation 452-004</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 452-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-461-004">
+        <relationEntry>White House Tapes: Conversation 461-004</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 461-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-464-009">
+        <relationEntry>White House Tapes: Conversation 464-009</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 464-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-472-009">
+        <relationEntry>White House Tapes: Conversation 472-009</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 472-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-475-017">
+        <relationEntry>White House Tapes: Conversation 475-017</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 475-017 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-475-018">
+        <relationEntry>White House Tapes: Conversation 475-018</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 475-018 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-476-025">
+        <relationEntry>White House Tapes: Conversation 476-025</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 476-025 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-477-010">
+        <relationEntry>White House Tapes: Conversation 477-010</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 477-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-478-002">
+        <relationEntry>White House Tapes: Conversation 478-002</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 478-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-481-004">
+        <relationEntry>White House Tapes: Conversation 481-004</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 481-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-491-023">
+        <relationEntry>White House Tapes: Conversation 491-023</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 491-023 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-498-011">
+        <relationEntry>White House Tapes: Conversation 498-011</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 498-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-499-001">
+        <relationEntry>White House Tapes: Conversation 499-001</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 499-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-504-006">
+        <relationEntry>White House Tapes: Conversation 504-006</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 504-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-513-004">
+        <relationEntry>White House Tapes: Conversation 513-004</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 513-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-519-004">
+        <relationEntry>White House Tapes: Conversation 519-004</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 519-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-523-004">
+        <relationEntry>White House Tapes: Conversation 523-004</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 523-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-530-010">
+        <relationEntry>White House Tapes: Conversation 530-010</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 530-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-530-012">
+        <relationEntry>White House Tapes: Conversation 530-012</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 530-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-546-002">
+        <relationEntry>White House Tapes: Conversation 546-002</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 546-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-547-009">
+        <relationEntry>White House Tapes: Conversation 547-009</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 547-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-551-001">
+        <relationEntry>White House Tapes: Conversation 551-001</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 551-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-571-004">
+        <relationEntry>White House Tapes: Conversation 571-004</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 571-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-587-007">
+        <relationEntry>White House Tapes: Conversation 587-007</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 587-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-593-006">
+        <relationEntry>White House Tapes: Conversation 593-006</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 593-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-606-002">
+        <relationEntry>White House Tapes: Conversation 606-002</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 606-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-631-004">
+        <relationEntry>White House Tapes: Conversation 631-004</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 631-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-643-010">
+        <relationEntry>White House Tapes: Conversation 643-010</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 643-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-658-007">
+        <relationEntry>White House Tapes: Conversation 658-007</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 658-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-675-013">
+        <relationEntry>White House Tapes: Conversation 675-013</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 675-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-706-005">
+        <relationEntry>White House Tapes: Conversation 706-005</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 706-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-723-005">
+        <relationEntry>White House Tapes: Conversation 723-005</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 723-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-767-017">
+        <relationEntry>White House Tapes: Conversation 767-017</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 767-017 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-798-013">
+        <relationEntry>White House Tapes: Conversation 798-013</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 798-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-803-018">
+        <relationEntry>White House Tapes: Conversation 803-018</relationEntry>
+        <descriptiveNote>
+          <p>Peter G. Peterson participated in Conversation 803-018 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+      <!-- Relationship to Bibliographic Works, subjectOf -->
     </relations>
   </cpfDescription>
 </eac-cpf>

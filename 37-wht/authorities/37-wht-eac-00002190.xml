@@ -1,9 +1,6 @@
-<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4">
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
   <control>
-    <recordId/>
-    <!-- <otherRecordId localType="http://catalog.archives.gov/id/"></otherRecordId> -->
-    <!-- <otherRecordId localType="http://viaf.org/viaf/terms#viafID"></otherRecordId> -->
-    <otherRecordId localType="http://www.loc.gov/standards/mads/rdf/v1.html#Authority"/>
+    <recordId>37-wht-eac-00002190</recordId>
     <maintenanceStatus>new</maintenanceStatus>
     <maintenanceAgency>
       <agencyCode>US-DNA</agencyCode>
@@ -16,15 +13,15 @@
     <!-- Convention Declarations for Content Standards -->
     <conventionDeclaration>
       <abbreviation>RDA</abbreviation>
-      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-19">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>USNARA-LCDRG</abbreviation>
-      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-19">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>DACS-2nd</abbreviation>
-      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2015-03-18">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>NixonTapesIndex</abbreviation>
@@ -43,6 +40,10 @@
       <abbreviation>marc:relators</abbreviation>
       <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
     </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>uscensus:race</abbreviation>
+      <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
+    </conventionDeclaration>
     <!-- Convention Declarations for Style Guides -->
     <conventionDeclaration>
       <abbreviation>CMOS-16th</abbreviation>
@@ -51,10 +52,10 @@
     <maintenanceHistory>
       <maintenanceEvent>
         <eventType>created</eventType>
-        <eventDateTime>2016-03-01T01:02:57.824-05:00</eventDateTime>
+        <eventDateTime>2016-03-29T16:05:09.994-04:00</eventDateTime>
         <agentType>machine</agentType>
         <agent>base-to-eac.xq</agent>
-        <eventDescription>Converted base/source data to EAC-CPF through XQuery script written by Amanda T. Ross of the United States National Archives and Records Administration.</eventDescription>
+        <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
       <!--
             <maintenanceEvent>
@@ -62,161 +63,2457 @@
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent> 
             -->
     </maintenanceHistory>
-    <sources>
-      <source xlink:href="https://catalog.archives.gov" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>National Archives and Records Administration Authority List</sourceEntry>
-      </source>
-             --&gt;
-            <source xlink:href="http://id.loc.gov/authorities/names" xlink:type="simple" lastDateTimeVerified="[dateTime]">
-        <sourceEntry>Library of Congress Name Authority File</sourceEntry>
-      </source>
-      <source xlink:href="http://viaf.org" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>Virtual International Authority File</sourceEntry>
-      </source>
-    </sources>
+    <!--         
+        <sources>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
+            </source>
+        </sources>
+        -->
   </control>
   <cpfDescription>
     <identity>
       <entityType>person</entityType>
-
-            if ($entityType eq "person")
-              then
-              
-            <nameEntry localType="marcfield:100">
-        <part localType="marcfield:100$a"/>
-        <part localType="marcfield:100$d"/>
-        <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
-      </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="familyName"/>
-        <part localType="givenName"/>
-        <part localType="nickname"/>
-        <part localType="maiden name"/>
-        <part localtype="generational marker"/>
-        <part localType="military rank or official title"/>
-        <part localType="Mrs."/>
+      <!-- Authorized Name Entries -->
+      <!-- Nixon Tapes Index -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Price, Raymond K., Jr.</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-            
-
-      else
-      <nameEntry localType="marcfield:110">
-        <part localType="marcfield:110$a"/>
-        <part localType="marcfield:110$d"/>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a"/>
+        <part localType="marcfield:100$b"/>
+        <part localType="marcfield:100$c"/>
+        <part localType="marcfield:100$q"/>
+        <part localType="marcfield:100$d"/>
         <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
+        <!-- 
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
       </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="directOrder"/>
+      <!-- Variant Name Entries -->
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">Raymond K. Price, Jr.</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Price</part>
+        <part localType="givenName">Raymond K.</part>
+        <part localType="generationalMarker">Jr.</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
+      <!-- Insert Variant Names from LCNAF/LCDRG -->
     </identity>
     <description>
-      <existDates localType="marcfield:046">
-        <dateRange>
-          <fromDate standardDate=""/>
-          <toDate/>
-        </dateRange>
-      </existDates>
-      <occupations>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-          <dateRange>
-            <fromDate standardDate="2009-11-13">November 13, 2009</fromDate>
-            <toDate/>
-          </dateRange>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-      </occupations>
-      <languageUsed>
-        <language languageCode="eng">English</language>
-        <script scriptCode="Latn">Latin</script>
-      </languageUsed>
+      <!-- Exist Dates -->
+      <!--
+            <existDates>
+            
+            </existDates>
+            -->
+      <!-- Gender/Gender Identity -->
       <localDescriptions localType="http://viaf.org/viaf/terms#gender">
         <localDescription localType="marcfield:375">
-          <term/>
-          <descriptiveNote>Gender certainty score, via Namsor: </descriptiveNote>
+          <term vocabularySource="NixonTapesIndex">male</term>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">-1.0</span>.</p>
+          </descriptiveNote>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescriptions localType="http://viaf.org/viaf/terms#AssociatedSubject">
-        <localDescription localType="marcfield:372$a">
+      <!-- Citizenship -->
+      <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+      <!-- Nationality -->
+      <!--
+            <localDescriptions localType="nixonTapes/#nationality">
+            
+            </localDescriptions>
+            -->
+      <!-- Languages Used -->
+      <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->
+      <!-- Racial Category -->
+      <localDescriptions localType="nixonTapes/#racialCategory">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="uscensus:race"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Ethnic/Cultural Heritage -->
+      <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
+        <localDescription localType="marcfield:373">
           <term vocabularySource="lcsh"/>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescription localType="http://viaf.org/viaf/terms#nationalityOfEntity">
-        <placeEntry vocabularySource="lcsh" countryCode="US">United States</placeEntry>
-      </localDescription>
-      <places localType="http://socialarchive.iath.virginia.edu/control/term#AssociatedPlace">
-        <place localType="marcfield:370$c">
-          <placeRole>associated country</placeRole>
-          <placeEntry vocabularySource="lcsh" countryCode="US" latitude="39.76" longitude="-98.5">United States</placeEntry>
-        </place>
-        <place localType="marcfield:370$a">
-          <placeRole>birthplace</placeRole>
-          <placeEntry vocabularySource="lcsh" latitude="" longitude=""/>
-          <date standardDate=""/>
-        </place>
-      </places>
+      <!-- Tribal Affiliations -->
+      <!-- Title or Honorific -->
+      <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Occupations -->
+      <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
+      <!-- Functions -->
+      <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+      <!-- Political Affiliations -->
+      <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+      <!-- Religious Affiliations -->
+      <!-- Topical Subjects -->
+      <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Associated Places -->
+      <places/>
       <biogHist>
-        <abstract> ...</abstract>
-        <p> ...</p>
+        <!-- Abstract -->
+        <abstract/>
+        <!-- Biography or Administrative History Note -->
+        <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
-        <citation/>
+        <!-- Insert citations -->
       </biogHist>
+      <!-- Insert structureOrGenealogy, if relevant -->
     </description>
     <relations>
-      <!-- Relationships to Corporate Bodies -->
-      <!-- Education -->
-      <!-- Employers -->
-      <!-- Relationships to Persons-->
-      <!-- Family Members -->
-      <!-- Professional Relationships -->
-      <!-- Relationship to Resources, creatorOf -->
-      <resourceRelation xlink:arcrole="participantIn" xlink:href="" xlink:role="archivalResource" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <relationEntry/>
+      <!-- CPF RELATIONS -->
+      <!-- Relationships to Persons: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000012" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Acker, Marjorie P.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Marjorie P. Acker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000019" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Agnew, Spiro T. (Vice President)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Vice President Spiro T. Agnew conversed <span localType="frequency">24</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003604" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Anderson, John B.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John B. Anderson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000074" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Anderson, Martin C. ("Marty")</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Martin C. ("Marty") Anderson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000078" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Andrews, John K., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John K. Andrews, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000093" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Armstrong, Anne L.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Anne L. Armstrong conversed <span localType="frequency">10</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000098" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ash, Roy L.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Roy L. Ash conversed <span localType="frequency">10</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000117" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Baker, Howard H., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Howard H. Baker, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000121" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bakshian, Aram, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Aram Bakshian, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000123" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ball, Neal</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Neal Ball conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000144" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Barnum, John W.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John W. Barnum conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000145" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Baroody, William J., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and William J. Baroody, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003500" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bartlit, Fred</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Fred Bartlit conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000183" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">BeLieu, Kenneth E.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Kenneth E. BeLieu conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000179" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Beggs, James M.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and James M. Beggs conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000187" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bell, George T.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and George T. Bell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000190" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bellinger, Cecelia D.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Cecelia D. Bellinger conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004824" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bird, William</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and William Bird conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000238" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Blount, Winton M. ("Red"), Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Winton M. ("Red") Blount, Jr. conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000244" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Boatner, James G.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and James G. Boatner conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003502" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bork, Robert H.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Robert H. Bork conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000289" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brennan, Peter J.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Peter J. Brennan conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000300" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brinegar, Claude S.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Claude S. Brinegar conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000320" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, Robert J.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Robert J. Brown conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004534" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, [First name unknown]</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and [First name unknown] Brown conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000329" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Buchanan, Patrick J.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Patrick J. Buchanan conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000336" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bull, Stephen B.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Stephen B. Bull conversed <span localType="frequency">15</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000355" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Burns, Arthur F.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Arthur F. Burns conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004642" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bush, Barbara (Pierce)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Barbara (Pierce) Bush conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000360" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bush, George H. W.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and George H. W. Bush conversed <span localType="frequency">28</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000370" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butterfield, Alexander P.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Alexander P. Butterfield conversed <span localType="frequency">24</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000372" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butz, Earl L.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Earl L. Butz conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003169" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Buzhardt, J. Fred, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and J. Fred Buzhardt, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000397" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Campbell, J. Philip</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and J. Philip Campbell conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000396" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Campbell, John L.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John L. Campbell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000398" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Campbell, Rodney C.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Rodney C. Campbell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000408" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carlucci, Frank C., III</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Frank C. Carlucci, III conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000430" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Casey, William J.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and William J. Casey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000433" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cashen, Henry C., II</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Henry C. Cashen, II conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000443" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cavanaugh, James H.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and James H. Cavanaugh conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000450" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chafee, John H.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John H. Chafee conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003499" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chaffetz, Hammond</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Hammond Chaffetz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000462" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chapin, Dwight L.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Dwight L. Chapin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000476" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chotiner, Murray M.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Murray M. Chotiner conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000498" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clawson, James</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and James Clawson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000499" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clawson, Kenneth W.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Kenneth W. Clawson conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004633" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clements, William P., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and William P. Clements, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000521" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cole, Kenneth R., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Kenneth R. Cole, Jr. conversed <span localType="frequency">11</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000530" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Colson, Charles W.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Charles W. Colson conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000540" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Connally, Idanell ("Nellie") (Brill)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Idanell ("Nellie") (Brill) Connally conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000541" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Connally, John B.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John B. Connally conversed <span localType="frequency">22</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004441" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cook, Gary</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Gary Cook conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000554" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cook, Richard K.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Richard K. Cook conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003478" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dam, Kenneth W.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Kenneth W. Dam conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000604" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">David, Edward E., Jr. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Dr. Edward E. David, Jr. conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000622" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dean, John W., III</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John W. Dean, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003073" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dent, Frederick B.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Frederick B. Dent conversed <span localType="frequency">11</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000638" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dent, Harry S.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Harry S. Dent conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004504" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dole, Hollis M.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Hollis M. Dole conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000673" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dole, Robert J.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Robert J. Dole conversed <span localType="frequency">9</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000718" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dunlop, John T.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John T. Dunlop conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000752" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ehrlichman, John D.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John D. Ehrlichman conversed <span localType="frequency">26</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000755" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Eisenhower, Julie Nixon</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Julie Nixon Eisenhower conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000779" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Engman, Lewis A.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Lewis A. Engman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000793" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Evans, John F., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John F. Evans, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000803" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fairbanks, Richard M., III</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Richard M. Fairbanks, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000806" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Falk, James H.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and James H. Falk conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000841" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Finch, Carol (Crothers)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Carol (Crothers) Finch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000843" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Finch, Robert H.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Robert H. Finch conversed <span localType="frequency">13</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000857" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Flanigan, Peter M.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Peter M. Flanigan conversed <span localType="frequency">24</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000864" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fletcher, Arthur A. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Dr. Arthur A. Fletcher conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000868" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fletcher, James C.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and James C. Fletcher conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004505" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Freeman, S. David</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and S. David Freeman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000935" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gannon, Franklin R.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Franklin R. Gannon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000941" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Garment, Leonard</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Leonard Garment conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000952" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Geneen, Harold S.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Harold S. Geneen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000954" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gergen, David R.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and David R. Gergen conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000991" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Goldenson, Leonard H.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Leonard H. Goldenson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001016" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Graham, William F. ("Billy")</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and William F. ("Billy") Graham conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004666" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Guthrie, John S., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John S. Guthrie, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001067" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haggerty, Patrick E.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Patrick E. Haggerty conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001069" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Alexander M., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Alexander M. Haig, Jr. conversed <span localType="frequency">18</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001082" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haldeman, H. R. ("Bob")</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and H. R. ("Bob") Haldeman conversed <span localType="frequency">37</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001083" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haley, Carl W.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Carl W. Haley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003382" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haley, Carl W. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Mrs. Carl W. Haley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001102" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hampton, Robert E.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Robert E. Hampton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001112" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hannah, John A. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Dr. John A. Hannah conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001121" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hardin, Clifford M.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Clifford M. Hardin conversed <span localType="frequency">13</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003105" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hardin, Martha L. (Wood)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Martha L. (Wood) Hardin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004533" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hargrove, James W.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and James W. Hargrove conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001128" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harlow, Bryce N.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Bryce N. Harlow conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001130" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harper, Edwin L.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Edwin L. Harper conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001145" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hart, Milledge A.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Milledge A. Hart conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003498" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hastings, Wilmot R.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Wilmot R. Hastings conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001179" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Helms, Richard M.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Richard M. Helms conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001213" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Higby, Lawrence M.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Lawrence M. Higby conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001231" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hodgson, James D.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and James D. Hodgson conversed <span localType="frequency">17</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004639" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hodgson, Maria (Denend)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Maria (Denend) Hodgson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001236" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hoffman, Oswald</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Oswald Hoffman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001244" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Holifield, Chet</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Chet Holifield conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001258" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hoopes, David C.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and David C. Hoopes conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001289" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Huebner, Lee W.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Lee W. Huebner conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001294" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hullin, Tod R.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Tod R. Hullin conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004673" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hyde, Floyd H.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Floyd H. Hyde conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001321" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Irwin, John N., II</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John N. Irwin, II conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003501" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jentes, William</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and William Jentes conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001362" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, Donald E.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Donald E. Johnson conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001377" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, U. Alexis</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and U. Alexis Johnson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001457" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, David M.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and David M. Kennedy conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004641" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, Lenora (Bingham)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Lenora (Bingham) Kennedy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001459" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, Richard T. (Col.)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Col. Richard T. Kennedy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001494" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kissinger, Henry A.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Henry A. Kissinger conversed <span localType="frequency">10</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001497" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Klein, Herbert G.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Herbert G. Klein conversed <span localType="frequency">17</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001499" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kleindienst, Richard G.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Richard G. Kleindienst conversed <span localType="frequency">11</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001504" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kleppe, Thomas S.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Thomas S. Kleppe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001510" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Knauer, Virginia H.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Virginia H. Knauer conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001514" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Koch, Noel C.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Noel C. Koch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001526" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kriegsman, William E.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and William E. Kriegsman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001529" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Krogh, Egil ("Bud"), Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Egil ("Bud") Krogh, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001535" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kunzig, Robert L.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Robert L. Kunzig conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001545" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Laird, Melvin R.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Melvin R. Laird conversed <span localType="frequency">17</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001603" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Letson, William N.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and William N. Letson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001613" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lezar, Harold L., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Harold L. Lezar, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001615" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lincoln, George A. (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Gen. George A. Lincoln conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001646" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Love, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John A. Love conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001647" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lovell, Malcolm R., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Malcolm R. Lovell, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001673" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lynn, James T.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and James T. Lynn conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001681" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">MacGregor, Clark</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Clark MacGregor conversed <span localType="frequency">16</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001699" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Malek, Frederic V.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Frederic V. Malek conversed <span localType="frequency">9</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003503" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McAuliffe, Daniel</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Daniel McAuliffe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001793" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McCracken, Paul W.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Paul W. McCracken conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001796" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McDonald, John B.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John B. McDonald conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001801" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McFall, Rusell</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Rusell McFall conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001824" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McLaughlin, Rev. John J.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Rev. John J. McLaughlin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001843" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mead, Dana G.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Dana G. Mead conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001870" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Michel, Peter</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Peter Michel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001897" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mitchell, John N.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John N. Mitchell conversed <span localType="frequency">15</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004636" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mitchell, Martha (Beall)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Martha Beall Mitchell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001917" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moore, Richard A.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Richard A. Moore conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001919" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moorer, Thomas H. (Adm.)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Adm. Thomas H. Moorer conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001921" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moot, Robert C.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Robert C. Moot conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004665" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morey, Roy D.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Roy D. Morey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001923" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morgan, Ann M.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Ann M. Morgan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001925" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morgan, Edward L.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Edward L. Morgan conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004637" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morton, Anne (Jones)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Anne (Jones) Morton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001935" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morton, Rogers C. B.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Rogers C. B. Morton conversed <span localType="frequency">23</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and President Richard M. Nixon conversed <span localType="frequency">143</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002004" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Thelma C. ("Pat") (Ryan)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Thelma C. ("Pat") (Ryan) Nixon conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002069" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Neill, Paul H.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Paul H. O'Neill conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002082" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Packard, David</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and David Packard conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002102" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Parker, David N.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and David N. Parker conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002111" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pastore, John O.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John O. Pastore conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004440" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Patricelli, Robert E.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Robert E. Patricelli conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002121" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Paulson, Hank</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Hank Paulson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002125" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pecora, William T.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and William T. Pecora conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002146" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Peter G.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Peter G. Peterson conversed <span localType="frequency">9</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002172" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Popper, David H.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and David H. Popper conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002188" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Price, John R., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John R. Price, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002259" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rhoads, John B.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John B. Rhoads conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004640" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Richardson, Anne</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Anne Richardson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002267" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Richardson, Elliot L.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Elliot L. Richardson conversed <span localType="frequency">23</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002314" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rogers, Adele (Langston)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Adele (Langston) Rogers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003756" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rogers, W.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and W. Rogers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002316" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rogers, William P.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and William P. Rogers conversed <span localType="frequency">22</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002324" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Romney, George W.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and George W. Romney conversed <span localType="frequency">19</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002325" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Romney, Lenore L.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Lenore L. Romney conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002353" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ruckelshaus, William D.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and William D. Ruckelshaus conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002357" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rumsfeld, Donald H.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Donald H. Rumsfeld conversed <span localType="frequency">14</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002360" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rumsfeld, Joyce (Pierson)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Joyce (Pierson) Rumsfeld conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002362" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rush, [David] Kenneth</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and [David] Kenneth Rush conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002375" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Safire, William L.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and William L. Safire conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002377" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sampson, Arthur F.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Arthur F. Sampson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003577" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Samuels, Nathanial</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Nathanial Samuels conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002381" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sanchez, Manolo</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Manolo Sanchez conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002385" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sanders, H. E.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and H. E. Sanders conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003427" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sanders, H. E. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Mrs. H. E. Sanders conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002398" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scali, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John A. Scali conversed <span localType="frequency">12</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002417" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schlesinger, James R. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Dr. James R. Schlesinger conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002434" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schubert, Richard F.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Richard F. Schubert conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002452" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scott, Stanley S.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Stanley S. Scott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002453" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scott, Walter D.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Walter D. Scott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002456" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scowcroft, Brent G. (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Gen. Brent G. Scowcroft conversed <span localType="frequency">8</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004507" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Seaborg, Glenn T. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Dr. Glenn T. Seaborg conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002481" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shakespeare, Frank J.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Frank J. Shakespeare conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004506" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shaw, Milton</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Milton Shaw conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002500" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shenfield, Arthur A.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Arthur A. Shenfield conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002501" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shepard, Geoffrey C.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Geoffrey C. Shepard conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002517" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shultz, George P.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and George P. Shultz conversed <span localType="frequency">30</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002518" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shultz, Helena M. ("Obie")</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Helena M. ("Obie") Shultz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002535" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Silberman, Laurence H.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Laurence H. Silberman conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002537" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Simon, William E.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and William E. Simon conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002560" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, Gerard C.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Gerard C. Smith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004671" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sneed, Joseph T.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Joseph T. Sneed conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004439" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sohmer, Arthur J.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Arthur J. Sohmer conversed <span localType="frequency">14</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002585" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Solomon, Ezra</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Ezra Solomon conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002603" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Spence, A. N.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and A. N. Spence conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004825" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Spurgeon, Chester C.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Chester C. Spurgeon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004638" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stans, Kathleen</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Kathleen Stans conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002617" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stans, Maurice H.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Maurice H. Stans conversed <span localType="frequency">15</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002618" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stanton, Frank</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Frank Stanton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002631" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stein, Herbert</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Herbert Stein conversed <span localType="frequency">15</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002732" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Timmons, William E.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and William E. Timmons conversed <span localType="frequency">17</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002736" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tkach, Walter R.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Dr. Walter R. Tkach conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002758" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Train, Russell E.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Russell E. Train conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002785" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Udall, James</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and James Udall conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000725" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Van Dusen, Richard C.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Richard C. Van Dusen conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002816" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Veneman, John G.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John G. Veneman conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002824" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Volcker, Paul A.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Paul A. Volcker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002826" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Volpe, Jennie (Benedetto)</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Jennie (Benedetto) Volpe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002825" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Volpe, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John A. Volpe conversed <span localType="frequency">16</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004672" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wakefield, Stephen A.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Stephen A. Wakefield conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004664" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Waldman, Raymond J.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Raymond J. Waldman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002841" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walker, Charls E.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Charls E. Walker conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002867" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Warren, Gerald L.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Gerald L. Warren conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002885" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Weber, Arnold R.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Arnold R. Weber conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002893" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Weinberger, Caspar W. ("Cap")</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Caspar W. ("Cap") Weinberger conversed <span localType="frequency">21</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002911" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whitaker, John C.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and John C. Whitaker conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002922" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whitehouse, Charles</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Charles Whitehouse conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002987" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Woods, Rose Mary</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Rose Mary Woods conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003256" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wright, Charles A.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Charles A. Wright conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003005" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wyly, Samuel E.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Samuel E. Wyly conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003012" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Yates, Nellie L.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Nellie L. Yates conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003038" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ziegler, Ronald L.</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and Ronald L. Ziegler conversed <span localType="frequency">37</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002795" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">[Unknown person(s)]</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and [Unknown person(s)] conversed <span localType="frequency">13</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- Relationships to Families -->
+      <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003477" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cabinet Committee on Education</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and representatives of the Cabinet Committee on Education conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003469" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cabinet officers</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and representatives of the Cabinet officers conversed <span localType="frequency">30</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002919" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House operator</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and representatives of the White House operator conversed <span localType="frequency">17</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002920" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House photographer</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. and representatives of the White House photographer conversed <span localType="frequency">19</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- RESOURCE RELATIONS -->
+      <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-003-134">
+        <relationEntry>White House Tapes: Conversation 003-134</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 003-134 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
-      <!-- Relationship to Resources, subjectOf -->
-      <resourceRelation xlink:arcrole="subjectOf" xlink:role="archivalResource" xlink:type="simple" xlink:href="" lastDateTimeVerified="">
-        <relationEntry/>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-008-046">
+        <relationEntry>White House Tapes: Conversation 008-046</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 008-046 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-008-048">
+        <relationEntry>White House Tapes: Conversation 008-048</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 008-048 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-008-051">
+        <relationEntry>White House Tapes: Conversation 008-051</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 008-051 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-008-053">
+        <relationEntry>White House Tapes: Conversation 008-053</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 008-053 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-008-054">
+        <relationEntry>White House Tapes: Conversation 008-054</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 008-054 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-008-055">
+        <relationEntry>White House Tapes: Conversation 008-055</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 008-055 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-008-076">
+        <relationEntry>White House Tapes: Conversation 008-076</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 008-076 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-010-072">
+        <relationEntry>White House Tapes: Conversation 010-072</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 010-072 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-010-074">
+        <relationEntry>White House Tapes: Conversation 010-074</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 010-074 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-010-080">
+        <relationEntry>White House Tapes: Conversation 010-080</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 010-080 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-012-023">
+        <relationEntry>White House Tapes: Conversation 012-023</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 012-023 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-018-044">
+        <relationEntry>White House Tapes: Conversation 018-044</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 018-044 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-018-089">
+        <relationEntry>White House Tapes: Conversation 018-089</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 018-089 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-019-017">
+        <relationEntry>White House Tapes: Conversation 019-017</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 019-017 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-020-048">
+        <relationEntry>White House Tapes: Conversation 020-048</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 020-048 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-025-021">
+        <relationEntry>White House Tapes: Conversation 025-021</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 025-021 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-030-036">
+        <relationEntry>White House Tapes: Conversation 030-036</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 030-036 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-031-037">
+        <relationEntry>White House Tapes: Conversation 031-037</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 031-037 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-031-045">
+        <relationEntry>White House Tapes: Conversation 031-045</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 031-045 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-032-105">
+        <relationEntry>White House Tapes: Conversation 032-105</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 032-105 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-032-108">
+        <relationEntry>White House Tapes: Conversation 032-108</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 032-108 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-032-110">
+        <relationEntry>White House Tapes: Conversation 032-110</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 032-110 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-032-134">
+        <relationEntry>White House Tapes: Conversation 032-134</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 032-134 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-032-138">
+        <relationEntry>White House Tapes: Conversation 032-138</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 032-138 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-032-160">
+        <relationEntry>White House Tapes: Conversation 032-160</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 032-160 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-035-031">
+        <relationEntry>White House Tapes: Conversation 035-031</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 035-031 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-036-042">
+        <relationEntry>White House Tapes: Conversation 036-042</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 036-042 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-036-091">
+        <relationEntry>White House Tapes: Conversation 036-091</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 036-091 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-040-103">
+        <relationEntry>White House Tapes: Conversation 040-103</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 040-103 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-046-071">
+        <relationEntry>White House Tapes: Conversation 046-071</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 046-071 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-047-001">
+        <relationEntry>White House Tapes: Conversation 047-001</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 047-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-050-007">
+        <relationEntry>White House Tapes: Conversation 050-007</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 050-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-051-013">
+        <relationEntry>White House Tapes: Conversation 051-013</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 051-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-053-001">
+        <relationEntry>White House Tapes: Conversation 053-001</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 053-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-055-003">
+        <relationEntry>White House Tapes: Conversation 055-003</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 055-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-056-004">
+        <relationEntry>White House Tapes: Conversation 056-004</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 056-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-058-004">
+        <relationEntry>White House Tapes: Conversation 058-004</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 058-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-060-001">
+        <relationEntry>White House Tapes: Conversation 060-001</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 060-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-064-006">
+        <relationEntry>White House Tapes: Conversation 064-006</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 064-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-067-011">
+        <relationEntry>White House Tapes: Conversation 067-011</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 067-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-069-002">
+        <relationEntry>White House Tapes: Conversation 069-002</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 069-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-073-005">
+        <relationEntry>White House Tapes: Conversation 073-005</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 073-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-077-002">
+        <relationEntry>White House Tapes: Conversation 077-002</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 077-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-079-001">
+        <relationEntry>White House Tapes: Conversation 079-001</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 079-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-083-001">
+        <relationEntry>White House Tapes: Conversation 083-001</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 083-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-087-010">
+        <relationEntry>White House Tapes: Conversation 087-010</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 087-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-093-001">
+        <relationEntry>White House Tapes: Conversation 093-001</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 093-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-094-003">
+        <relationEntry>White House Tapes: Conversation 094-003</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 094-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-101-001">
+        <relationEntry>White House Tapes: Conversation 101-001</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 101-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-101-009">
+        <relationEntry>White House Tapes: Conversation 101-009</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 101-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-104-009">
+        <relationEntry>White House Tapes: Conversation 104-009</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 104-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-111-002">
+        <relationEntry>White House Tapes: Conversation 111-002</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 111-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-111-004">
+        <relationEntry>White House Tapes: Conversation 111-004</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 111-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-113-001">
+        <relationEntry>White House Tapes: Conversation 113-001</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 113-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-114-001">
+        <relationEntry>White House Tapes: Conversation 114-001</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 114-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-117-007">
+        <relationEntry>White House Tapes: Conversation 117-007</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 117-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-121-002">
+        <relationEntry>White House Tapes: Conversation 121-002</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 121-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-123-002">
+        <relationEntry>White House Tapes: Conversation 123-002</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 123-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-124-002">
+        <relationEntry>White House Tapes: Conversation 124-002</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 124-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-124-006">
+        <relationEntry>White House Tapes: Conversation 124-006</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 124-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-126-001">
+        <relationEntry>White House Tapes: Conversation 126-001</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 126-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-128-003">
+        <relationEntry>White House Tapes: Conversation 128-003</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 128-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-164-048">
+        <relationEntry>White House Tapes: Conversation 164-048</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 164-048 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-165-042">
+        <relationEntry>White House Tapes: Conversation 165-042</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 165-042 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-253-016">
+        <relationEntry>White House Tapes: Conversation 253-016</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 253-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-253-022">
+        <relationEntry>White House Tapes: Conversation 253-022</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 253-022 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-272-016">
+        <relationEntry>White House Tapes: Conversation 272-016</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 272-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-274-032">
+        <relationEntry>White House Tapes: Conversation 274-032</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 274-032 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-274-034">
+        <relationEntry>White House Tapes: Conversation 274-034</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 274-034 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-274-038">
+        <relationEntry>White House Tapes: Conversation 274-038</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 274-038 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-274-040">
+        <relationEntry>White House Tapes: Conversation 274-040</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 274-040 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-274-046">
+        <relationEntry>White House Tapes: Conversation 274-046</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 274-046 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-275-005">
+        <relationEntry>White House Tapes: Conversation 275-005</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 275-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-275-009">
+        <relationEntry>White House Tapes: Conversation 275-009</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 275-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-278-017">
+        <relationEntry>White House Tapes: Conversation 278-017</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 278-017 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-282-039">
+        <relationEntry>White House Tapes: Conversation 282-039</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 282-039 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-283-020">
+        <relationEntry>White House Tapes: Conversation 283-020</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 283-020 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-283-022">
+        <relationEntry>White House Tapes: Conversation 283-022</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 283-022 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-283-031">
+        <relationEntry>White House Tapes: Conversation 283-031</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 283-031 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-313-021">
+        <relationEntry>White House Tapes: Conversation 313-021</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 313-021 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-314-017">
+        <relationEntry>White House Tapes: Conversation 314-017</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 314-017 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-315-004">
+        <relationEntry>White House Tapes: Conversation 315-004</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 315-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-315-024">
+        <relationEntry>White House Tapes: Conversation 315-024</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 315-024 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-319-006">
+        <relationEntry>White House Tapes: Conversation 319-006</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 319-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-319-009">
+        <relationEntry>White House Tapes: Conversation 319-009</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 319-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-319-019">
+        <relationEntry>White House Tapes: Conversation 319-019</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 319-019 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-341-009">
+        <relationEntry>White House Tapes: Conversation 341-009</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 341-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-341-012">
+        <relationEntry>White House Tapes: Conversation 341-012</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 341-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-371-016">
+        <relationEntry>White House Tapes: Conversation 371-016</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 371-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-376-018">
+        <relationEntry>White House Tapes: Conversation 376-018</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 376-018 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-376-020">
+        <relationEntry>White House Tapes: Conversation 376-020</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 376-020 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-376-024">
+        <relationEntry>White House Tapes: Conversation 376-024</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 376-024 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-379-002">
+        <relationEntry>White House Tapes: Conversation 379-002</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 379-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-379-005">
+        <relationEntry>White House Tapes: Conversation 379-005</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 379-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-379-007">
+        <relationEntry>White House Tapes: Conversation 379-007</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 379-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-379-011">
+        <relationEntry>White House Tapes: Conversation 379-011</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 379-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-380-032">
+        <relationEntry>White House Tapes: Conversation 380-032</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 380-032 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-390-004">
+        <relationEntry>White House Tapes: Conversation 390-004</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 390-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-390-005">
+        <relationEntry>White House Tapes: Conversation 390-005</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 390-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-391-008">
+        <relationEntry>White House Tapes: Conversation 391-008</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 391-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-391-009">
+        <relationEntry>White House Tapes: Conversation 391-009</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 391-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-391-010">
+        <relationEntry>White House Tapes: Conversation 391-010</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 391-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-391-018">
+        <relationEntry>White House Tapes: Conversation 391-018</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 391-018 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-395-016">
+        <relationEntry>White House Tapes: Conversation 395-016</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 395-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-396-007">
+        <relationEntry>White House Tapes: Conversation 396-007</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 396-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-397-005">
+        <relationEntry>White House Tapes: Conversation 397-005</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 397-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-397-007">
+        <relationEntry>White House Tapes: Conversation 397-007</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 397-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-397-008">
+        <relationEntry>White House Tapes: Conversation 397-008</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 397-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-397-016">
+        <relationEntry>White House Tapes: Conversation 397-016</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 397-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-397-025">
+        <relationEntry>White House Tapes: Conversation 397-025</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 397-025 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-398-001">
+        <relationEntry>White House Tapes: Conversation 398-001</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 398-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-398-007">
+        <relationEntry>White House Tapes: Conversation 398-007</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 398-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-398-009">
+        <relationEntry>White House Tapes: Conversation 398-009</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 398-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-399-011">
+        <relationEntry>White House Tapes: Conversation 399-011</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 399-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-400-011">
+        <relationEntry>White House Tapes: Conversation 400-011</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 400-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-400-014">
+        <relationEntry>White House Tapes: Conversation 400-014</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 400-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-402-017">
+        <relationEntry>White House Tapes: Conversation 402-017</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 402-017 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-404-006">
+        <relationEntry>White House Tapes: Conversation 404-006</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 404-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-404-011">
+        <relationEntry>White House Tapes: Conversation 404-011</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 404-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-407-007">
+        <relationEntry>White House Tapes: Conversation 407-007</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 407-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-435-042">
+        <relationEntry>White House Tapes: Conversation 435-042</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 435-042 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-440-003">
+        <relationEntry>White House Tapes: Conversation 440-003</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 440-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-444-014">
+        <relationEntry>White House Tapes: Conversation 444-014</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 444-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-444-024">
+        <relationEntry>White House Tapes: Conversation 444-024</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 444-024 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-445-001">
+        <relationEntry>White House Tapes: Conversation 445-001</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 445-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-445-020">
+        <relationEntry>White House Tapes: Conversation 445-020</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 445-020 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-445-023">
+        <relationEntry>White House Tapes: Conversation 445-023</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 445-023 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-451-012">
+        <relationEntry>White House Tapes: Conversation 451-012</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 451-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-455-006">
+        <relationEntry>White House Tapes: Conversation 455-006</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 455-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-455-008">
+        <relationEntry>White House Tapes: Conversation 455-008</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 455-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-455-009">
+        <relationEntry>White House Tapes: Conversation 455-009</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 455-009 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-455-010">
+        <relationEntry>White House Tapes: Conversation 455-010</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 455-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-455-011">
+        <relationEntry>White House Tapes: Conversation 455-011</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 455-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-455-012">
+        <relationEntry>White House Tapes: Conversation 455-012</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 455-012 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-455-014">
+        <relationEntry>White House Tapes: Conversation 455-014</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 455-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-455-016">
+        <relationEntry>White House Tapes: Conversation 455-016</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 455-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-465-008">
+        <relationEntry>White House Tapes: Conversation 465-008</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 465-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-564-004">
+        <relationEntry>White House Tapes: Conversation 564-004</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 564-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-651-010">
+        <relationEntry>White House Tapes: Conversation 651-010</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 651-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-744-013">
+        <relationEntry>White House Tapes: Conversation 744-013</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 744-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-751-014">
+        <relationEntry>White House Tapes: Conversation 751-014</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 751-014 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-789-006">
+        <relationEntry>White House Tapes: Conversation 789-006</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 789-006 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-797-003">
+        <relationEntry>White House Tapes: Conversation 797-003</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 797-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-798-010">
+        <relationEntry>White House Tapes: Conversation 798-010</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 798-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-798-015">
+        <relationEntry>White House Tapes: Conversation 798-015</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 798-015 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-847-008">
+        <relationEntry>White House Tapes: Conversation 847-008</relationEntry>
+        <descriptiveNote>
+          <p>Raymond K. Price, Jr. participated in Conversation 847-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+      <!-- Relationship to Bibliographic Works, subjectOf -->
     </relations>
   </cpfDescription>
 </eac-cpf>
