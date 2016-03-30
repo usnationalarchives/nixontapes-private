@@ -1,9 +1,6 @@
-<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4">
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
   <control>
-    <recordId/>
-    <!-- <otherRecordId localType="http://catalog.archives.gov/id/"></otherRecordId> -->
-    <!-- <otherRecordId localType="http://viaf.org/viaf/terms#viafID"></otherRecordId> -->
-    <otherRecordId localType="http://www.loc.gov/standards/mads/rdf/v1.html#Authority"/>
+    <recordId>37-wht-eac-00000910</recordId>
     <maintenanceStatus>new</maintenanceStatus>
     <maintenanceAgency>
       <agencyCode>US-DNA</agencyCode>
@@ -16,15 +13,15 @@
     <!-- Convention Declarations for Content Standards -->
     <conventionDeclaration>
       <abbreviation>RDA</abbreviation>
-      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-19">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>USNARA-LCDRG</abbreviation>
-      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-19">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>DACS-2nd</abbreviation>
-      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2015-03-18">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>NixonTapesIndex</abbreviation>
@@ -43,6 +40,10 @@
       <abbreviation>marc:relators</abbreviation>
       <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
     </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>uscensus:race</abbreviation>
+      <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
+    </conventionDeclaration>
     <!-- Convention Declarations for Style Guides -->
     <conventionDeclaration>
       <abbreviation>CMOS-16th</abbreviation>
@@ -51,10 +52,10 @@
     <maintenanceHistory>
       <maintenanceEvent>
         <eventType>created</eventType>
-        <eventDateTime>2016-03-01T01:02:57.824-05:00</eventDateTime>
+        <eventDateTime>2016-03-29T16:05:09.994-04:00</eventDateTime>
         <agentType>machine</agentType>
         <agent>base-to-eac.xq</agent>
-        <eventDescription>Converted base/source data to EAC-CPF through XQuery script written by Amanda T. Ross of the United States National Archives and Records Administration.</eventDescription>
+        <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
       <!--
             <maintenanceEvent>
@@ -62,161 +63,1886 @@
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent> 
             -->
     </maintenanceHistory>
-    <sources>
-      <source xlink:href="https://catalog.archives.gov" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>National Archives and Records Administration Authority List</sourceEntry>
-      </source>
-             --&gt;
-            <source xlink:href="http://id.loc.gov/authorities/names" xlink:type="simple" lastDateTimeVerified="[dateTime]">
-        <sourceEntry>Library of Congress Name Authority File</sourceEntry>
-      </source>
-      <source xlink:href="http://viaf.org" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>Virtual International Authority File</sourceEntry>
-      </source>
-    </sources>
+    <!--         
+        <sources>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
+            </source>
+        </sources>
+        -->
   </control>
   <cpfDescription>
     <identity>
       <entityType>person</entityType>
-
-            if ($entityType eq "person")
-              then
-              
-            <nameEntry localType="marcfield:100">
-        <part localType="marcfield:100$a"/>
-        <part localType="marcfield:100$d"/>
-        <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
-      </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="familyName"/>
-        <part localType="givenName"/>
-        <part localType="nickname"/>
-        <part localType="maiden name"/>
-        <part localtype="generational marker"/>
-        <part localType="military rank or official title"/>
-        <part localType="Mrs."/>
+      <!-- Authorized Name Entries -->
+      <!-- Nixon Tapes Index -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Friedersdorf, Max L.</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-            
-
-      else
-      <nameEntry localType="marcfield:110">
-        <part localType="marcfield:110$a"/>
-        <part localType="marcfield:110$d"/>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a"/>
+        <part localType="marcfield:100$b"/>
+        <part localType="marcfield:100$c"/>
+        <part localType="marcfield:100$q"/>
+        <part localType="marcfield:100$d"/>
         <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
+        <!-- 
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
       </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="directOrder"/>
+      <!-- Variant Name Entries -->
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">Max L. Friedersdorf</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Friedersdorf</part>
+        <part localType="givenName">Max L.</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
+      <!-- Insert Variant Names from LCNAF/LCDRG -->
     </identity>
     <description>
-      <existDates localType="marcfield:046">
-        <dateRange>
-          <fromDate standardDate=""/>
-          <toDate/>
-        </dateRange>
-      </existDates>
-      <occupations>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-          <dateRange>
-            <fromDate standardDate="2009-11-13">November 13, 2009</fromDate>
-            <toDate/>
-          </dateRange>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-      </occupations>
-      <languageUsed>
-        <language languageCode="eng">English</language>
-        <script scriptCode="Latn">Latin</script>
-      </languageUsed>
+      <!-- Exist Dates -->
+      <!--
+            <existDates>
+            
+            </existDates>
+            -->
+      <!-- Gender/Gender Identity -->
       <localDescriptions localType="http://viaf.org/viaf/terms#gender">
         <localDescription localType="marcfield:375">
-          <term/>
-          <descriptiveNote>Gender certainty score, via Namsor: </descriptiveNote>
+          <term vocabularySource="NixonTapesIndex">male</term>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">-1.0</span>.</p>
+          </descriptiveNote>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescriptions localType="http://viaf.org/viaf/terms#AssociatedSubject">
-        <localDescription localType="marcfield:372$a">
+      <!-- Citizenship -->
+      <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+      <!-- Nationality -->
+      <!--
+            <localDescriptions localType="nixonTapes/#nationality">
+            
+            </localDescriptions>
+            -->
+      <!-- Languages Used -->
+      <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->
+      <!-- Racial Category -->
+      <localDescriptions localType="nixonTapes/#racialCategory">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="uscensus:race"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Ethnic/Cultural Heritage -->
+      <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
+        <localDescription localType="marcfield:373">
           <term vocabularySource="lcsh"/>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescription localType="http://viaf.org/viaf/terms#nationalityOfEntity">
-        <placeEntry vocabularySource="lcsh" countryCode="US">United States</placeEntry>
-      </localDescription>
-      <places localType="http://socialarchive.iath.virginia.edu/control/term#AssociatedPlace">
-        <place localType="marcfield:370$c">
-          <placeRole>associated country</placeRole>
-          <placeEntry vocabularySource="lcsh" countryCode="US" latitude="39.76" longitude="-98.5">United States</placeEntry>
-        </place>
-        <place localType="marcfield:370$a">
-          <placeRole>birthplace</placeRole>
-          <placeEntry vocabularySource="lcsh" latitude="" longitude=""/>
-          <date standardDate=""/>
-        </place>
-      </places>
+      <!-- Tribal Affiliations -->
+      <!-- Title or Honorific -->
+      <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Occupations -->
+      <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
+      <!-- Functions -->
+      <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+      <!-- Political Affiliations -->
+      <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+      <!-- Religious Affiliations -->
+      <!-- Topical Subjects -->
+      <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Associated Places -->
+      <places/>
       <biogHist>
-        <abstract> ...</abstract>
-        <p> ...</p>
+        <!-- Abstract -->
+        <abstract/>
+        <!-- Biography or Administrative History Note -->
+        <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
-        <citation/>
+        <!-- Insert citations -->
       </biogHist>
+      <!-- Insert structureOrGenealogy, if relevant -->
     </description>
     <relations>
-      <!-- Relationships to Corporate Bodies -->
-      <!-- Education -->
-      <!-- Employers -->
-      <!-- Relationships to Persons-->
-      <!-- Family Members -->
-      <!-- Professional Relationships -->
-      <!-- Relationship to Resources, creatorOf -->
-      <resourceRelation xlink:arcrole="participantIn" xlink:href="" xlink:role="archivalResource" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <relationEntry/>
+      <!-- CPF RELATIONS -->
+      <!-- Relationships to Persons: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003289" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Adams, C. Morris</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and C. Morris Adams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000019" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Agnew, Spiro T. (Vice President)</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Vice President Spiro T. Agnew conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000024" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Aiken, George D.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and George D. Aiken conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000028" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Albert, Carl B.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Carl B. Albert conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000044" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Allin, Lyndon K.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Lyndon K. Allin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003604" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Anderson, John B.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John B. Anderson conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000080" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Andrews, Mark</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Mark Andrews conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004312" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Archer, William, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William Archer, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000086" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Arends, Leslie C.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Leslie C. Arends conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000093" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Armstrong, Anne L.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Anne L. Armstrong conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000098" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ash, Roy L.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Roy L. Ash conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000103" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Atkins, Oliver F. ("Ollie")</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Oliver F. ("Ollie") Atkins conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000117" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Baker, Howard H., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Howard H. Baker, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000145" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Baroody, William J., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William J. Baroody, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003271" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Beard, J. W.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and J. W. Beard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000191" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bellmon, Henry L.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Henry L. Bellmon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003292" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bencini, William</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William Bencini conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000197" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bennett, Wallace F.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Wallace F. Bennett conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004314" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Biester, Edward G., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Edward G. Biester, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004674" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bishop, John J., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John J. Bishop, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000258" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Boland, Edward P.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Edward P. Boland conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004269" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bolling, Richard W.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Richard W. Bolling conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003212" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bray, William G.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William G. Bray conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000289" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brennan, Peter J.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Peter J. Brennan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000300" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brinegar, Claude S.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Claude S. Brinegar conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000303" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brock, William</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William Brock conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003532" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brock, William E., III</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William E. Brock, III conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000305" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brooke, Edward W.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Edward W. Brooke conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000312" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, Garry E.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Garry E. Brown conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000322" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Broyhill, Joel T.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Joel T. Broyhill conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000329" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Buchanan, Patrick J.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Patrick J. Buchanan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000333" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Buckley, James L.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and James L. Buckley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000336" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bull, Stephen B.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Stephen B. Bull conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004316" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Burke, J. Herbert</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and J. Herbert Burke conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000360" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bush, George H. W.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and George H. W. Bush conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000364" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butler, Caldwell</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Caldwell Butler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000372" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butz, Earl L.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Earl L. Butz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000397" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Campbell, J. Philip</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and J. Philip Campbell conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000404" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carlson, Clifford D.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Clifford D. Carlson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000419" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carson, Carol A.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Carol A. Carson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000424" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Case, Clifford P.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Clifford P. Case conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000443" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cavanaugh, James H.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and James H. Cavanaugh conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004182" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cederberg, Elford A.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Elford A. Cederberg conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003272" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cheeseman, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Robert Cheeseman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003240" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clancy, Donald D.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Donald D. Clancy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003217" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clancy, George</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and George Clancy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003218" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clancy, Mrs. George (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Mrs. Mrs. George Clancy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000495" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clausen, Don H.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Don H. Clausen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004248" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clawson, Delwin M.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Delwin M. Clawson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000499" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clawson, Kenneth W.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Kenneth W. Clawson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004633" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clements, William P., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William P. Clements, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000521" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cole, Kenneth R., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Kenneth R. Cole, Jr. conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000527" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Collins, James M.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and James M. Collins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000531" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Conable, Barber B., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Barber B. Conable, Jr. conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000546" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Conte, Silvio O.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Silvio O. Conte conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000554" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cook, Richard K.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Richard K. Cook conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000559" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Coover, Darrell</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Darrell Coover conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003241" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cornett, Chester</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Chester Cornett conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003603" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cotton, Norris</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Norris Cotton conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003108" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cowden, Thomas K.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Thomas K. Cowden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000577" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Crane, Philip M.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Philip M. Crane conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000592" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Curtis, Carl T.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Carl T. Curtis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000610" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Davis, Glenn R.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Glenn R. Davis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003073" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dent, Frederick B.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Frederick B. Dent conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003285" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Derwinski, Edward J.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Edward J. Derwinski conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000647" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Devine, Samuel L.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Samuel L. Devine conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004090" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dickinson, William L.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William L. Dickinson conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000673" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dole, Robert J.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Robert J. Dole conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003245" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Donovan, Betsy</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Betsy Donovan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003244" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Donovan, Danny</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Danny Donovan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003246" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Donovan, Shawn</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Shawn Donovan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003242" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Donovan, Thomas</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Thomas Donovan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003243" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Donovan, Thomas (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Mrs. Thomas Donovan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000689" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dorn, William J. B.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William J. B. Dorn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004365" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dowd, William F.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William F. Dowd conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003196" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Draper, Stanley C.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Stanley C. Draper conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004282" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Duncan, John</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John Duncan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000718" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dunlop, John T.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John T. Dunlop conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004545" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ebaugh, Harold C.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Harold C. Ebaugh conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000749" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Edwards, William J. ("Jack")</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William J. ("Jack") Edwards conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003200" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ellison, C. D.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and C. D. Ellison conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004319" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Erlenborn, John N.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John N. Erlenborn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003198" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Everest, Harvey P.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Harvey P. Everest conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000803" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fairbanks, Richard M., III</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Richard M. Fairbanks, III conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000806" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Falk, James H.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and James H. Falk conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004667" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Falkiewicz, Andrew T.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Andrew T. Falkiewicz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000815" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Farrell, Michael J.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Michael J. Farrell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000836" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fielding, Fred F.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Fred F. Fielding conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000844" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Findley, Paul</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Paul Findley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000857" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Flanigan, Peter M.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Peter M. Flanigan conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003278" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Foley, Thomas S.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Thomas S. Foley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000875" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ford, Gerald R.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Gerald R. Ford conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004546" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">French, Warren B., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Warren B. French, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000916" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fulbright, J. William</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and J. William Fulbright conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004548" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fullarton, David C.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and David C. Fullarton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004488" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Galbraith, William E.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William E. Galbraith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003193" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gaylord, Edward King</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Edward King Gaylord conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000954" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gergen, David R.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and David R. Gergen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000961" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gettys, Thomas S.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Thomas S. Gettys conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003197" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Goldman, Sylvan N.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Sylvan N. Goldman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000992" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Goldwater, Barry M.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Barry M. Goldwater conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003300" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Goodling, George A.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and George A. Goodling conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003363" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Goodnough, Robert G.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Robert G. Goodnough conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001037" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Griffin, Robert P.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Robert P. Griffin conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001055" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gubser, Charles S.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Charles S. Gubser conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001173" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">H&amp;#233;bert, F. Edward</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and F. Edward Hébert conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001069" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Alexander M., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Alexander M. Haig, Jr. conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001082" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haldeman, H. R. ("Bob")</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and H. R. ("Bob") Haldeman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001097" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hamil, David A.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and David A. Hamil conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001112" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hannah, John A. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Dr. John A. Hannah conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001121" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hardin, Clifford M.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Clifford M. Hardin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001128" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harlow, Bryce N.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Bryce N. Harlow conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001152" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hatfield, Mark O.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Mark O. Hatfield conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003214" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hawes, Frederick K.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Frederick K. Hawes conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003215" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hawes, Frederick K. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Mrs. Frederick K. Hawes conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003291" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hawkins, John</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John Hawkins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003279" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Heerensperger, David J.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and David J. Heerensperger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004549" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Heller, Ross</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Ross Heller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001178" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Helms, Jesse A.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Jesse A. Helms conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003294" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Herring, Harold</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Harold Herring conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003283" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hewlett, Frank</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Frank Hewlett conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001213" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Higby, Lawrence M.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Lawrence M. Higby conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001272" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hosmer, Craig</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Craig Hosmer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001282" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Howard, W. Richard</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and W. Richard Howard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001289" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Huebner, Lee W.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Lee W. Huebner conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003199" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ingram, Charles C.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Charles C. Ingram conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004267" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Inouye, Daniel K.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Daniel K. Inouye conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001346" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jarman, John</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John Jarman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001349" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Javits, Jacob K.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Jacob K. Javits conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004669" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jones, Jerry H.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Jerry H. Jones conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001439" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kehrli, Bruce A.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Bruce A. Kehrli conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003194" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, Donald S.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Donald S. Kennedy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001494" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kissinger, Henry A.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Henry A. Kissinger conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001497" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Klein, Herbert G.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Herbert G. Klein conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001499" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kleindienst, Richard G.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Richard G. Kleindienst conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001518" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Korologos, Thomas C.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Thomas C. Korologos conversed <span localType="frequency">7</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001541" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kyl, John</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John Kyl conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001545" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Laird, Melvin R.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Melvin R. Laird conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004270" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lehman, John F., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John F. Lehman, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003286" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Liang, Mabel</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Mabel Liang conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003287" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Liang, Yuan</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Yuan Liang conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003288" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Liang, Yuan (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Mrs. Yuan Liang conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001636" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Long, Russell B.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Russell B. Long conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003282" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lucero, James</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and James Lucero conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001408" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lujan, Manuel, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Manuel Lujan, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001673" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lynn, James T.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and James T. Lynn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001681" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">MacGregor, Clark</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Clark MacGregor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001695" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mahon, George H.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and George H. Mahon conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003645" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mailliard, William S.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William S. Mailliard conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001699" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Malek, Frederic V.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Frederic V. Malek conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001712" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mansfield, Michael J. ("Mike")</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Michael J. ("Mike") Mansfield conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003293" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Martin, Barbara</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Barbara Martin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001737" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Martin, David T.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and David T. Martin conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003290" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Maxwell, Richard</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Richard Maxwell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001779" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McClellan, John L.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John L. McClellan conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001800" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McFall, John J.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John J. McFall conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003269" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McMahan, Ronald</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Ronald McMahan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001843" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mead, Dana G.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Dana G. Mead conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001871" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Michel, Robert H.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Robert H. Michel conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001881" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Miller, Jack R.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Jack R. Miller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003955" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Minshall, William E.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William E. Minshall conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003284" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mnich, William</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William Mnich conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003275" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moon, Kitty</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Kitty Moon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003276" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moore, Horace N.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Horace N. Moore conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003277" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moore, Horace N. (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Mrs. Horace N. Moore conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001917" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Moore, Richard A.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Richard A. Moore conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003644" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morgan, Thomas E. ("Doc") (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Dr. Thomas E. ("Doc") Morgan conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001935" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morton, Rogers C. B.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Rogers C. B. Morton conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004325" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mosher, Charles A.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Charles A. Mosher conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004547" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mott, William C. (Adm.)</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Adm. William C. Mott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001960" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Murray, Hyde</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Hyde Murray conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003295" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Murrow, Coolidge C.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Coolidge C. Murrow conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004518" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Myers, John T.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John T. Myers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001979" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nelsen, Ancher</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Ancher Nelsen conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001994" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nidecker, John E.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John E. Nidecker conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and President Richard M. Nixon conversed <span localType="frequency">28</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004268" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nunn, Sam</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Sam Nunn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002039" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Konski, Alvin E.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Alvin E. O'Konski conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002070" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Neill, Thomas P. ("Tip"), Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Thomas P. ("Tip") O'Neill, Jr. conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003646" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Packwood, Robert W.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Robert W. Packwood conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002102" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Parker, David N.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and David N. Parker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002108" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Parris, Stanford E.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Stanford E. Parris conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003364" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Parrish, Harry</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Harry Parrish conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003203" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pate, Margaret F.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Margaret F. Pate conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003202" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pate, Stanton S., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Stanton S. Pate, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002112" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Patman, Wright</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Wright Patman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004551" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Payne, Harold G.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Harold G. Payne conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002127" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Percy, Charles H.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Charles H. Percy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004668" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Petersmeyer, C. Gregg</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and C. Gregg Petersmeyer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004552" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, A. Harold</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and A. Harold Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003219" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Plainte, Lyle</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Lyle Plainte conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003220" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Plainte, Mrs. Lyle (Mrs.)</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Mrs. Mrs. Lyle Plainte conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002165" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ploch, Debbie</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Debbie Ploch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003723" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Poage, William R.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William R. Poage conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002195" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Proxmire, William</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William Proxmire conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003273" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Reese, Jack</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Jack Reese conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002262" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rhodes, John J.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John J. Rhodes conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002267" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Richardson, Elliot L.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Elliot L. Richardson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004329" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Robison, Howard W.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Howard W. Robison conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002309" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rodgers, Donald F.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Donald F. Rodgers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002316" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rogers, William P.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William P. Rogers conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004675" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ruppe, Philip E.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Philip E. Ruppe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002381" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sanchez, Manolo</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Manolo Sanchez conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002386" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sandman, Charles W., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Charles W. Sandman, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004252" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Saylor, John P.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John P. Saylor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002398" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scali, John A.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John A. Scali conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002409" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scherle, William J.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William J. Scherle conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002417" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schlesinger, James R. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Dr. James R. Schlesinger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003809" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schneebeli, Herman T.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Herman T. Schneebeli conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002447" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scott, Hugh</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Hugh Scott conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002452" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scott, Stanley S.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Stanley S. Scott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002454" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scott, William L.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William L. Scott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002456" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scowcroft, Brent G. (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Gen. Brent G. Scowcroft conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002501" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shepard, Geoffrey C.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Geoffrey C. Shepard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003537" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shriver, Garner</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Garner Shriver conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002517" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shultz, George P.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and George P. Shultz conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004550" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Snowden, Eldon M.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Eldon M. Snowden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002580" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Snyder, M. Gene</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and M. Gene Snyder conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004439" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sohmer, Arthur J.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Arthur J. Sohmer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004309" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stanton, J. William</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and J. William Stanton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002631" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stein, Herbert</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Herbert Stein conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003280" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sterr, William, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William Sterr, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003281" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sterr, William, Sr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William Sterr, Sr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002644" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stevens, Ted</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Ted Stevens conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004271" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Symington, W[illiam] Stuart, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and W[illiam] Stuart Symington, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003722" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Talmadge, Herman E.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Herman E. Talmadge conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002700" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Teague, Charles M.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Charles M. Teague conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004333" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Thomson, Vernon W.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Vernon W. Thomson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002726" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Thurmond, Strom</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Strom Thurmond conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002732" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Timmons, William E.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William E. Timmons conversed <span localType="frequency">14</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002754" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tower, John G.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John G. Tower conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003270" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Waldon, C. E.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and C. E. Waldon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002867" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Warren, Gerald L.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Gerald L. Warren conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003195" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Webb, James E.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and James E. Webb conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004310" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Webber, Frederick L.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Frederick L. Webber conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002893" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Weinberger, Caspar W. ("Cap")</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Caspar W. ("Cap") Weinberger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004543" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Weitzell, Everett C.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Everett C. Weitzell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002911" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whitaker, John C.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John C. Whitaker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003216" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whitcomb, Barbara</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Barbara Whitcomb conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003662" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Widnall, William B.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and William B. Widnall conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003201" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Williams, Garland R.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Garland R. Williams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002968" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wilson, Peter B.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Peter B. Wilson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002987" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Woods, Rose Mary</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Rose Mary Woods conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003274" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wright, Alan</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Alan Wright conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004544" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wright, James R.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and James R. Wright conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003017" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Young, Donald E.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Donald E. Young conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003023" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Young, Milton R.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Milton R. Young conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003038" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ziegler, Ronald L.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and Ronald L. Ziegler conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003044" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Zwach, John M.</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and John M. Zwach conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- Relationships to Families -->
+      <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003469" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cabinet officers</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and representatives of the Cabinet officers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004826" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Members of the press</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and representatives of the members of the press conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002920" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House photographer</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf and representatives of the White House photographer conversed <span localType="frequency">14</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- RESOURCE RELATIONS -->
+      <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-056-003">
+        <relationEntry>White House Tapes: Conversation 056-003</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 056-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
-      <!-- Relationship to Resources, subjectOf -->
-      <resourceRelation xlink:arcrole="subjectOf" xlink:role="archivalResource" xlink:type="simple" xlink:href="" lastDateTimeVerified="">
-        <relationEntry/>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-120-001">
+        <relationEntry>White House Tapes: Conversation 120-001</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 120-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-121-003">
+        <relationEntry>White House Tapes: Conversation 121-003</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 121-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-123-003">
+        <relationEntry>White House Tapes: Conversation 123-003</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 123-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-124-003">
+        <relationEntry>White House Tapes: Conversation 124-003</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 124-003 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-124-005">
+        <relationEntry>White House Tapes: Conversation 124-005</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 124-005 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-126-002">
+        <relationEntry>White House Tapes: Conversation 126-002</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 126-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-128-001">
+        <relationEntry>White House Tapes: Conversation 128-001</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 128-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-493-011">
+        <relationEntry>White House Tapes: Conversation 493-011</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 493-011 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-624-010">
+        <relationEntry>White House Tapes: Conversation 624-010</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 624-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-714-007">
+        <relationEntry>White House Tapes: Conversation 714-007</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 714-007 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-758-017">
+        <relationEntry>White House Tapes: Conversation 758-017</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 758-017 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-776-013">
+        <relationEntry>White House Tapes: Conversation 776-013</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 776-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-781-015">
+        <relationEntry>White House Tapes: Conversation 781-015</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 781-015 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-878-019">
+        <relationEntry>White House Tapes: Conversation 878-019</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 878-019 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-880-008">
+        <relationEntry>White House Tapes: Conversation 880-008</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 880-008 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-887-013">
+        <relationEntry>White House Tapes: Conversation 887-013</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 887-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-895-016">
+        <relationEntry>White House Tapes: Conversation 895-016</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 895-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-900-021">
+        <relationEntry>White House Tapes: Conversation 900-021</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 900-021 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-911-018">
+        <relationEntry>White House Tapes: Conversation 911-018</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 911-018 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-911-020">
+        <relationEntry>White House Tapes: Conversation 911-020</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 911-020 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-911-021">
+        <relationEntry>White House Tapes: Conversation 911-021</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 911-021 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-911-023">
+        <relationEntry>White House Tapes: Conversation 911-023</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 911-023 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-911-024">
+        <relationEntry>White House Tapes: Conversation 911-024</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 911-024 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-911-027">
+        <relationEntry>White House Tapes: Conversation 911-027</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 911-027 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-912-013">
+        <relationEntry>White House Tapes: Conversation 912-013</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 912-013 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-918-021">
+        <relationEntry>White House Tapes: Conversation 918-021</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 918-021 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-921-018">
+        <relationEntry>White House Tapes: Conversation 921-018</relationEntry>
+        <descriptiveNote>
+          <p>Max L. Friedersdorf participated in Conversation 921-018 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+      <!-- Relationship to Bibliographic Works, subjectOf -->
     </relations>
   </cpfDescription>
 </eac-cpf>

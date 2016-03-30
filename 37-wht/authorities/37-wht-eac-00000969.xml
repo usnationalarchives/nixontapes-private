@@ -1,9 +1,6 @@
-<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4">
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
   <control>
-    <recordId/>
-    <!-- <otherRecordId localType="http://catalog.archives.gov/id/"></otherRecordId> -->
-    <!-- <otherRecordId localType="http://viaf.org/viaf/terms#viafID"></otherRecordId> -->
-    <otherRecordId localType="http://www.loc.gov/standards/mads/rdf/v1.html#Authority"/>
+    <recordId>37-wht-eac-00000969</recordId>
     <maintenanceStatus>new</maintenanceStatus>
     <maintenanceAgency>
       <agencyCode>US-DNA</agencyCode>
@@ -16,15 +13,15 @@
     <!-- Convention Declarations for Content Standards -->
     <conventionDeclaration>
       <abbreviation>RDA</abbreviation>
-      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-19">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>USNARA-LCDRG</abbreviation>
-      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-19">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>DACS-2nd</abbreviation>
-      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2015-03-18">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>NixonTapesIndex</abbreviation>
@@ -43,6 +40,10 @@
       <abbreviation>marc:relators</abbreviation>
       <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
     </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>uscensus:race</abbreviation>
+      <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
+    </conventionDeclaration>
     <!-- Convention Declarations for Style Guides -->
     <conventionDeclaration>
       <abbreviation>CMOS-16th</abbreviation>
@@ -51,10 +52,10 @@
     <maintenanceHistory>
       <maintenanceEvent>
         <eventType>created</eventType>
-        <eventDateTime>2016-03-01T01:02:57.824-05:00</eventDateTime>
+        <eventDateTime>2016-03-29T16:05:09.994-04:00</eventDateTime>
         <agentType>machine</agentType>
         <agent>base-to-eac.xq</agent>
-        <eventDescription>Converted base/source data to EAC-CPF through XQuery script written by Amanda T. Ross of the United States National Archives and Records Administration.</eventDescription>
+        <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
       <!--
             <maintenanceEvent>
@@ -62,161 +63,1112 @@
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent> 
             -->
     </maintenanceHistory>
-    <sources>
-      <source xlink:href="https://catalog.archives.gov" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>National Archives and Records Administration Authority List</sourceEntry>
-      </source>
-             --&gt;
-            <source xlink:href="http://id.loc.gov/authorities/names" xlink:type="simple" lastDateTimeVerified="[dateTime]">
-        <sourceEntry>Library of Congress Name Authority File</sourceEntry>
-      </source>
-      <source xlink:href="http://viaf.org" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>Virtual International Authority File</sourceEntry>
-      </source>
-    </sources>
+    <!--         
+        <sources>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
+            </source>
+        </sources>
+        -->
   </control>
   <cpfDescription>
     <identity>
       <entityType>person</entityType>
-
-            if ($entityType eq "person")
-              then
-              
-            <nameEntry localType="marcfield:100">
-        <part localType="marcfield:100$a"/>
-        <part localType="marcfield:100$d"/>
-        <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
-      </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="familyName"/>
-        <part localType="givenName"/>
-        <part localType="nickname"/>
-        <part localType="maiden name"/>
-        <part localtype="generational marker"/>
-        <part localType="military rank or official title"/>
-        <part localType="Mrs."/>
+      <!-- Authorized Name Entries -->
+      <!-- Nixon Tapes Index -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Gifford, William L.</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-            
-
-      else
-      <nameEntry localType="marcfield:110">
-        <part localType="marcfield:110$a"/>
-        <part localType="marcfield:110$d"/>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a"/>
+        <part localType="marcfield:100$b"/>
+        <part localType="marcfield:100$c"/>
+        <part localType="marcfield:100$q"/>
+        <part localType="marcfield:100$d"/>
         <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
+        <!-- 
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
       </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="directOrder"/>
+      <!-- Variant Name Entries -->
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">William L. Gifford</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Gifford</part>
+        <part localType="givenName">William L.</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
+      <!-- Insert Variant Names from LCNAF/LCDRG -->
     </identity>
     <description>
-      <existDates localType="marcfield:046">
-        <dateRange>
-          <fromDate standardDate=""/>
-          <toDate/>
-        </dateRange>
-      </existDates>
-      <occupations>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-          <dateRange>
-            <fromDate standardDate="2009-11-13">November 13, 2009</fromDate>
-            <toDate/>
-          </dateRange>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-      </occupations>
-      <languageUsed>
-        <language languageCode="eng">English</language>
-        <script scriptCode="Latn">Latin</script>
-      </languageUsed>
+      <!-- Exist Dates -->
+      <!--
+            <existDates>
+            
+            </existDates>
+            -->
+      <!-- Gender/Gender Identity -->
       <localDescriptions localType="http://viaf.org/viaf/terms#gender">
         <localDescription localType="marcfield:375">
-          <term/>
-          <descriptiveNote>Gender certainty score, via Namsor: </descriptiveNote>
+          <term vocabularySource="NixonTapesIndex">male</term>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">-1.0</span>.</p>
+          </descriptiveNote>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescriptions localType="http://viaf.org/viaf/terms#AssociatedSubject">
-        <localDescription localType="marcfield:372$a">
+      <!-- Citizenship -->
+      <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+      <!-- Nationality -->
+      <!--
+            <localDescriptions localType="nixonTapes/#nationality">
+            
+            </localDescriptions>
+            -->
+      <!-- Languages Used -->
+      <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->
+      <!-- Racial Category -->
+      <localDescriptions localType="nixonTapes/#racialCategory">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="uscensus:race"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Ethnic/Cultural Heritage -->
+      <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
+        <localDescription localType="marcfield:373">
           <term vocabularySource="lcsh"/>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescription localType="http://viaf.org/viaf/terms#nationalityOfEntity">
-        <placeEntry vocabularySource="lcsh" countryCode="US">United States</placeEntry>
-      </localDescription>
-      <places localType="http://socialarchive.iath.virginia.edu/control/term#AssociatedPlace">
-        <place localType="marcfield:370$c">
-          <placeRole>associated country</placeRole>
-          <placeEntry vocabularySource="lcsh" countryCode="US" latitude="39.76" longitude="-98.5">United States</placeEntry>
-        </place>
-        <place localType="marcfield:370$a">
-          <placeRole>birthplace</placeRole>
-          <placeEntry vocabularySource="lcsh" latitude="" longitude=""/>
-          <date standardDate=""/>
-        </place>
-      </places>
+      <!-- Tribal Affiliations -->
+      <!-- Title or Honorific -->
+      <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Occupations -->
+      <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
+      <!-- Functions -->
+      <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+      <!-- Political Affiliations -->
+      <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+      <!-- Religious Affiliations -->
+      <!-- Topical Subjects -->
+      <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Associated Places -->
+      <places/>
       <biogHist>
-        <abstract> ...</abstract>
-        <p> ...</p>
+        <!-- Abstract -->
+        <abstract/>
+        <!-- Biography or Administrative History Note -->
+        <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
-        <citation/>
+        <!-- Insert citations -->
       </biogHist>
+      <!-- Insert structureOrGenealogy, if relevant -->
     </description>
     <relations>
-      <!-- Relationships to Corporate Bodies -->
-      <!-- Education -->
-      <!-- Employers -->
-      <!-- Relationships to Persons-->
-      <!-- Family Members -->
-      <!-- Professional Relationships -->
-      <!-- Relationship to Resources, creatorOf -->
-      <resourceRelation xlink:arcrole="participantIn" xlink:href="" xlink:role="archivalResource" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <relationEntry/>
+      <!-- CPF RELATIONS -->
+      <!-- Relationships to Persons: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000006" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ablard, Charles D.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Charles D. Ablard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004644" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Abrahams, Albert E.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Albert E. Abrahams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000019" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Agnew, Spiro T. (Vice President)</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Vice President Spiro T. Agnew conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004647" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Alfultis, Richard J.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Richard J. Alfultis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000031" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Alger, Mark W.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Mark W. Alger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000047" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Allott, Gordon L.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Gordon L. Allott conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003604" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Anderson, John B.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and John B. Anderson conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000086" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Arends, Leslie C.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Leslie C. Arends conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000103" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Atkins, Oliver F. ("Ollie")</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Oliver F. ("Ollie") Atkins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003841" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Baldwin, Velma N.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Velma N. Baldwin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000123" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ball, Neal</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Neal Ball conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000197" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bennett, Wallace F.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Wallace F. Bennett conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003838" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Benton, Charles E.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Charles E. Benton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000271" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bow, Frank T.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Frank T. Bow conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003839" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bray, David</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and David Bray conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003840" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Breese, Lawrence</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Lawrence conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000310" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brower, Charles N.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Charles N. Brower conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000329" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Buchanan, Patrick J.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Patrick J. Buchanan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000333" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Buckley, James L.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and James L. Buckley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000336" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bull, Stephen B.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Stephen B. Bull conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000355" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Burns, Arthur F.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Arthur F. Burns conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000370" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butterfield, Alexander P.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Alexander P. Butterfield conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000378" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Byrnes, John W.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and John W. Byrnes conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000397" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Campbell, J. Philip</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and J. Philip Campbell conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000408" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carlucci, Frank C., III</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Frank C. Carlucci, III conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000470" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cheney, Richard B.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Richard B. Cheney conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000451" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chia-Kan, Yen</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Yen Chai-Kan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003866" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clarke, Raymond</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Raymond Clarke conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003076" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cohn, Samuel M.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Samuel M. Cohn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000521" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cole, Kenneth R., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Kenneth R. Cole, Jr. conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000531" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Conable, Barber B., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Barber B. Conable, Jr. conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000541" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Connally, John B.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and John B. Connally conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004651" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Connor, James</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and James Connor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000554" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cook, Richard K.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Richard K. Cook conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003603" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cotton, Norris</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Norris Cotton conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003478" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dam, Kenneth W.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Kenneth W. Dam conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003842" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dame, Philip</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Philip Dame conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000638" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dent, Harry S.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Harry S. Dent conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003843" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Derman, Donald A.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Donald A. Derman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000647" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Devine, Samuel L.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Samuel L. Devine conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000673" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dole, Robert J.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Robert J. Dole conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000684" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dominick, Peter H.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Peter H. Dominick conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000749" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Edwards, William J. ("Jack")</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and William J. ("Jack") Edwards conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000752" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ehrlichman, John D.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and John D. Ehrlichman conversed <span localType="frequency">6</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003844" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Etheredge, Lynn</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Lynn Etheredge conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000836" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fielding, Fred F.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Fred F. Fielding conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000850" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fischer, C. William</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and C. William Fischer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000875" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ford, Gerald R.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Gerald R. Ford conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003845" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Frey, James M.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and James M. Frey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000992" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Goldwater, Barry M.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Barry M. Goldwater conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001037" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Griffin, Robert P.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Robert P. Griffin conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003847" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haase, Walter W.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Walter W. Haase conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001069" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haig, Alexander M., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Alexander M. Haig, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001106" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hancock, Joseph</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Joseph Hancock conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001128" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harlow, Bryce N.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Bryce N. Harlow conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001231" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hodgson, James D.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and James D. Hodgson conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003846" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hunt, Wilmer</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Wilmer Hunt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001308" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hurley, John F.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and John F. Hurley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001319" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ink, Dwight A.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Dwight A. Ink conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001349" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Javits, Jacob K.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Jacob K. Javits conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001379" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, Wallace H.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Wallace H. Johnson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001459" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, Richard T. (Col.)</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Col. Richard T. Kennedy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001494" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kissinger, Henry A.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Henry A. Kissinger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001497" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Klein, Herbert G.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Herbert G. Klein conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001510" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Knauer, Virginia H.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Virginia H. Knauer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001514" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Koch, Noel C.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Noel C. Koch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003628" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kohlberg, William H.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and William H. Kohlberg conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001518" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Korologos, Thomas C.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Thomas C. Korologos conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004645" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kosters, Marvin H.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Marvin H. Koster conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003865" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kraus, Charles</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Charles Kraus conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001529" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Krogh, Egil ("Bud"), Jr.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Egil ("Bud") Krogh, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003870" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Laffer, Arthur B.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Arthur B. Laffer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003848" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Laitin, Joseph</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Joseph Laitin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001615" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lincoln, George A. (Gen.)</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Gen. George A. Lincoln conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003849" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lind, Susanne</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Susanne Lind conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003850" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Loweth, Hugh F.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Hugh F. Loweth conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003851" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lutz, Theodore C.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Theodore C. Lutz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003853" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">MacDonald, Philip</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Philip MacDonald conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001681" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">MacGregor, Clark</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Clark MacGregor conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003475" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Maxwell, David</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and David Maxwell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001783" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McCloskey, Robert J.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Robert J. McCloskey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001820" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McLane, James W.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and James W. McLane conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003854" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McOmber, Dale R.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Dale R. McOmber conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003852" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Modlin, C. Peter, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and C. Peter Modlin, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001935" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Morton, Rogers C. B.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Rogers C. B. Morton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004643" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mullaney, Joseph</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Joseph Mullaney conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003867" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Niskanen, William A.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and William A. Niskanen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and President Richard M. Nixon conversed <span localType="frequency">9</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003855" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Norwood, Douglas</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Douglas Norwood conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002069" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Neill, Paul H.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Paul H. O'Neill conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002132" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Perry, Charles R.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Charles R. Perry conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002146" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Peter G.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Peter G. Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002167" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Poff, Richard H.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Richard H. Poff conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002262" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rhodes, John J.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and John J. Rhodes conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002265" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rice, Donald B.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Donald B. Rice conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002267" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Richardson, Elliot L.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Elliot L. Richardson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002308" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rockefeller, Nelson A.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Nelson A. Rockefeller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002316" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rogers, William P.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and William P. Rogers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002322" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rommel, Wilfred H.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Wilfred H. Rommel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002324" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Romney, George W.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and George W. Romney conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002327" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ronan, William A.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and William A. Ronan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002357" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rumsfeld, Donald H.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Donald H. Rumsfeld conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002391" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sasaki, Wesley K.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Wesley K. Sasaki conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003856" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schleede, Glenn R.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Glenn R. Schleede conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002417" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schlesinger, James R. (Dr.)</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Dr. James R. Schlesinger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002447" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scott, Hugh</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Hugh Scott conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002499" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shen, James C. H.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and James C. H. Shen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002501" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shepard, Geoffrey C.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Geoffrey C. Shepard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002506" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shiskin, Julius</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Julius Shiskin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002517" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shultz, George P.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and George P. Shultz conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002559" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, Donald</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Donald Smith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002562" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, H. Allen</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and H. Allen Smith conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002563" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, James E.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and James E. Smith conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002573" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, Ralph T.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Ralph T. Smith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002617" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stans, Maurice H.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Maurice H. Stans conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002631" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stein, Herbert</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Herbert Stein conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003857" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Stubbing, Richard</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Richard Stubbing conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003858" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sullivan, Reardon</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Reardon Sullivan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003859" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Taft, Daniel H.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Daniel H. Taft conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003868" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Taft, William H., IV</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and William H. Taft, IV conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003869" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Taylor, David P.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and David P. Taylor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002721" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Thompson, Reggie</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Reggie Thompson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002732" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Timmons, William E.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and William E. Timmons conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003860" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Torrey, Barbara</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Barbara conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002754" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tower, John G.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and John G. Tower conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003861" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tschirigi, James D.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and James D. Tschirigi conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003862" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Turen, Milton</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Milton Turen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003863" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Veatch, Ellis H.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Ellis H. Veatch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002825" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Volpe, John A.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and John A. Volpe conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002841" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walker, Charls E.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Charls E. Walker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003864" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walker, Joyce</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Joyce Walker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002867" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Warren, Gerald L.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Gerald L. Warren conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002897" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wei-ping, Tsai</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Tsai Wei-ping conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002893" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Weinberger, Caspar W. ("Cap")</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Caspar W. ("Cap") Weinberger conversed <span localType="frequency">5</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003605" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wilson, Robert C. ("Bob")</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Robert C. ("Bob") Wilson conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003023" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Young, Milton R.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Milton R. Young conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003038" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ziegler, Ronald L.</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and Ronald L. Ziegler conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002795" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">[Unknown person(s)]</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and [Unknown person(s)] conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- Relationships to Families -->
+      <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003470" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cabinet Committee on Executive Reorganization</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and representatives of the Cabinet Committee on Executive Reorganization conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003468" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cost of Living Council</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and representatives of the Cost of Living Council conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002920" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">White House photographer</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford and representatives of the White House photographer conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- RESOURCE RELATIONS -->
+      <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-081-004">
+        <relationEntry>White House Tapes: Conversation 081-004</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford participated in Conversation 081-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
-      <!-- Relationship to Resources, subjectOf -->
-      <resourceRelation xlink:arcrole="subjectOf" xlink:role="archivalResource" xlink:type="simple" xlink:href="" lastDateTimeVerified="">
-        <relationEntry/>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-088-001">
+        <relationEntry>White House Tapes: Conversation 088-001</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford participated in Conversation 088-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-088-002">
+        <relationEntry>White House Tapes: Conversation 088-002</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford participated in Conversation 088-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-096-004">
+        <relationEntry>White House Tapes: Conversation 096-004</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford participated in Conversation 096-004 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-102-001">
+        <relationEntry>White House Tapes: Conversation 102-001</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford participated in Conversation 102-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-105-010">
+        <relationEntry>White House Tapes: Conversation 105-010</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford participated in Conversation 105-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-107-001">
+        <relationEntry>White House Tapes: Conversation 107-001</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford participated in Conversation 107-001 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-108-002">
+        <relationEntry>White House Tapes: Conversation 108-002</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford participated in Conversation 108-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-739-010">
+        <relationEntry>White House Tapes: Conversation 739-010</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford participated in Conversation 739-010 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-834-016">
+        <relationEntry>White House Tapes: Conversation 834-016</relationEntry>
+        <descriptiveNote>
+          <p>William L. Gifford participated in Conversation 834-016 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
+      </resourceRelation>
+      <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+      <!-- Relationship to Bibliographic Works, subjectOf -->
     </relations>
   </cpfDescription>
 </eac-cpf>
