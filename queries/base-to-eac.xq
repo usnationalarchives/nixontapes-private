@@ -4,7 +4,7 @@ xquery version "1.0";
  : Script Name: Base to EAC
  : Author: Amanda Ross
  : Script Version: 1.0
- : Date: 2016 January
+ : Date: 2016 March
  : Copyright: Public Domain
  : Proprietary XQuery Extensions Used: None
  : XQuery Specification: January 2007
@@ -165,8 +165,8 @@ let $genderTerm := data($genderRecord/genderTerms)
 let $genderScore := data($genderRecord/scale)
 let $genderRevisionNote := 
   if(exists($n/marriedMrs))
-  then <p xmlns="urn:isbn:1-931666-33-4">For name entries qualified by the 'Mrs.' designator, NamSor originally scored the names based on the husband&apos;s name, generating 'male.' The gender term was flipped manually to 'female.'</p>
-  else null
+  then <p xmlns="urn:isbn:1-931666-33-4">This gender term has been predicted based on the combination of given and family names using NamSor gender analytics. For name entries qualified by the 'Mrs.' designator, NamSor originally scored the names based on the husband&apos;s name, generating 'male.' The gender term was manually flipped to 'female' and the certainty scale changed to <span localType="certainty">1.0</span>.</p>
+  else <p xmlns="urn:isbn:1-931666-33-4">This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">{$genderScore}</span>.</p>
 
 let $genderEntry :=
   if (exists($n/persname))
@@ -175,18 +175,17 @@ let $genderEntry :=
         <localDescription xmlns="urn:isbn:1-931666-33-4" localType="marcfield:375">
           <term vocabularySource="NixonTapesIndex">{$genderTerm}</term>
           <descriptiveNote>
-            <p>This gender term has been predicted based on given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">{$genderScore}</span>.</p>
             {$genderRevisionNote}
           </descriptiveNote>
         </localDescription>
         <descriptiveNote>
           <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
-          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and align gender terms to better reflect how the person self-identified.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
         </descriptiveNote>
       </localDescriptions>
   else null
 
-let $rowMatch := $coll/root/row[participantsWithLineBreaks/(persname|corpname)/attribute::authfilenumber=$id]
+let $rowMatch := $coll/root/row[not(contains(tapeNo,'test'))][participantsWithLineBreaks/(persname|corpname)/attribute::authfilenumber=$id]
   
 let $conversations :=
   for $row in $rowMatch
@@ -202,7 +201,7 @@ let $conversations :=
 </resourceRelation>
 
 let $corporateRelations :=
-  for $cpfCorp in functx:distinct-deep($coll/root/row[participantsWithLineBreaks/(persname|corpname)/attribute::authfilenumber=$id]/participantsWithLineBreaks/corpname)
+  for $cpfCorp in functx:distinct-deep($coll/root/row[not(contains(tapeNo,'test'))][participantsWithLineBreaks/(persname|corpname)/attribute::authfilenumber=$id]/participantsWithLineBreaks/corpname)
   let $cpfCorpID := data($cpfCorp/attribute::authfilenumber)
   let $cpfCorpName := data($cpfCorp)
   let $cpfCorpDirect := data($coll/nixonNames/participant[(persname|corpname)/attribute::authfilenumber=$cpfCorpID]/directOrder)
@@ -214,8 +213,8 @@ let $corporateRelations :=
   where not($id = $cpfCorpID)
   order by data($cpfCorpName)
   return
-  <cpfRelation xmlns="urn:isbn:1-931666-33-4" cpfRelationType="associative" xlink:href="" xlink:type="simple">
-  <relationEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#conversedWith" scriptCode="Latn" xml:lang="en">{$cpfCorpName}</relationEntry>
+  <cpfRelation xmlns="urn:isbn:1-931666-33-4" cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="{$cpfCorpID}" xlink:type="simple">
+  <relationEntry xmlns="urn:isbn:1-931666-33-4" scriptCode="Latn" xml:lang="en">{$cpfCorpName}</relationEntry>
     <descriptiveNote>
       <p>{$nDirect} and representatives of the {$cpfCorpDirect} conversed <span localType="frequency">{$cpfCorpFreq}</span> {$cpfCorpTimes} on the White House Tapes of the Nixon Administration.</p>
     </descriptiveNote>
@@ -223,12 +222,12 @@ let $corporateRelations :=
   
 let $personRelations :=
 
-  for $cpfPers in functx:distinct-deep($coll/root/row[participantsWithLineBreaks/(persname|corpname)/attribute::authfilenumber=$id]/participantsWithLineBreaks/persname)
+  for $cpfPers in functx:distinct-deep($coll/root/row[not(contains(tapeNo,'test'))][participantsWithLineBreaks/(persname|corpname)/attribute::authfilenumber=$id]/participantsWithLineBreaks/persname)
   let $cpfPersID := data($cpfPers/attribute::authfilenumber)
   let $cpfPersName := data($cpfPers)
   let $cpfPersDirect := data($coll/nixonNames/participant[(persname|corpname)/attribute::authfilenumber=$cpfPersID]/directOrder)
   let $cpfPersNum := 
-    for $cpfPersRow in $coll/root/row
+    for $cpfPersRow in $coll/root/row[not(contains(tapeNo,'test'))]
     where $cpfPersRow/participantsWithLineBreaks[contains(.,$cpfPers)] and $cpfPersRow/participantsWithLineBreaks[contains(.,$n)]
     return $cpfPersRow/filename
 
@@ -241,8 +240,8 @@ let $personRelations :=
     where not($id = $cpfPersID)
     order by $cpfPersName
   return
-  <cpfRelation xmlns="urn:isbn:1-931666-33-4" cpfRelationType="associative" xlink:href="{$cpfPersID}" xlink:type="simple">
-  <relationEntry xmlns="urn:isbn:1-931666-33-4" localType="nixonTapes/#conversedWith" scriptCode="Latn" xml:lang="en">{$cpfPersName}</relationEntry>
+  <cpfRelation xmlns="urn:isbn:1-931666-33-4" cpfRelationType="associative"  xlink:arcrole="nixonTapes/#conversedWith" xlink:href="{$cpfPersID}" xlink:type="simple">
+  <relationEntry xmlns="urn:isbn:1-931666-33-4" scriptCode="Latn" xml:lang="en">{$cpfPersName}</relationEntry>
   <descriptiveNote>
     <p>{$nDirect} and {$cpfPersDirect} conversed <span localType="frequency">{$cpfPersFreq}</span> {$cpfPersTimes} on the White House Tapes of the Nixon Administration.</p>
     </descriptiveNote>
@@ -384,14 +383,23 @@ let $my-doc :=
 
         <!--         
         <sources>
-            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
-                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
             </source>
             <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
                 <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
             </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
             <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
                 <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
             </source>
         </sources>
         -->        
@@ -559,19 +567,20 @@ let $my-doc :=
         
             <!-- CPF RELATIONS -->
             
-              <!-- Relationships to Persons-->
+              <!-- Relationships to Persons: Nixon White House Tapes -->
+
               {$personRelations}
               
               <!-- Relationships to Families -->
               
-              <!-- Relationships to Corporate Bodies -->
+              <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
               
               {$corporateRelations}
             
             
             <!-- RESOURCE RELATIONS -->
 
-              <!-- Relationship to Nixon Tapes Conversations -->
+              <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
               {$conversations}
 
               <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
@@ -590,3 +599,4 @@ return
   let $filename := concat(data($id),".xml")
   let $path := concat($dir, $filename)
   return file:write($path, $my-doc)
+  
