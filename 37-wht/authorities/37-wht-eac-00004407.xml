@@ -1,9 +1,6 @@
-<eac-cpf xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4">
+<eac-cpf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:snac="http://socialarchive.iath.virginia.edu/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:nixonTapes="http://www.nixonlibrary.gov/37-wht" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:mads="http://www.loc.gov/mads/" xmlns="urn:isbn:1-931666-33-4" xsi:schemaLocation="urn:isbn:1-931666-33-4 cpf.xsd">
   <control>
-    <recordId/>
-    <!-- <otherRecordId localType="http://catalog.archives.gov/id/"></otherRecordId> -->
-    <!-- <otherRecordId localType="http://viaf.org/viaf/terms#viafID"></otherRecordId> -->
-    <otherRecordId localType="http://www.loc.gov/standards/mads/rdf/v1.html#Authority"/>
+    <recordId>37-wht-eac-00004407</recordId>
     <maintenanceStatus>new</maintenanceStatus>
     <maintenanceAgency>
       <agencyCode>US-DNA</agencyCode>
@@ -16,15 +13,15 @@
     <!-- Convention Declarations for Content Standards -->
     <conventionDeclaration>
       <abbreviation>RDA</abbreviation>
-      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-19">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
+      <citation xlink:href="http://www.rda-jsc.org/rda.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">Joint Steering Committee for the Development of RDA. RDA: Resource Description and Access. Chicago: American Library Association, 2010-</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>USNARA-LCDRG</abbreviation>
-      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-19">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
+      <citation xlink:href="http://www.archives.gov/research/search/lcdrg/" xlink:type="simple" lastDateTimeVerified="2016-02-29">United States National Archives and Records Administration. Lifecycle Data Requirements Guide, 2nd edition. Washington, D.C.: U.S National Archives and Records Administration, 2002-.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>DACS-2nd</abbreviation>
-      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2015-03-18">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
+      <citation xlink:href="http://www2.archivists.org/standards/DACS" xlink:type="simple" lastDateTimeVerified="2016-02-29">Society of American Archivists. Describing Archives: A Content Standard, 2nd edition. Chicago: Society of American Archivists, 2013.</citation>
     </conventionDeclaration>
     <conventionDeclaration>
       <abbreviation>NixonTapesIndex</abbreviation>
@@ -43,6 +40,10 @@
       <abbreviation>marc:relators</abbreviation>
       <citation xlink:href="http://id.loc.gov/vocabulary/relators.html" xlink:type="simple" lastDateTimeVerified="2016-02-29">MARC Code List for Relators</citation>
     </conventionDeclaration>
+    <conventionDeclaration>
+      <abbreviation>uscensus:race</abbreviation>
+      <citation xlink:href="http://www.census.gov/topics/population/race/about.html" xlink:type="simple" lastDateTimeVerified="2016-03-24">United States Census Bureau Race and Ethnicity</citation>
+    </conventionDeclaration>
     <!-- Convention Declarations for Style Guides -->
     <conventionDeclaration>
       <abbreviation>CMOS-16th</abbreviation>
@@ -51,10 +52,10 @@
     <maintenanceHistory>
       <maintenanceEvent>
         <eventType>created</eventType>
-        <eventDateTime>2016-03-01T01:02:57.824-05:00</eventDateTime>
+        <eventDateTime>2016-03-30T13:38:03.12-04:00</eventDateTime>
         <agentType>machine</agentType>
         <agent>base-to-eac.xq</agent>
-        <eventDescription>Converted base/source data to EAC-CPF through XQuery script written by Amanda T. Ross of the United States National Archives and Records Administration.</eventDescription>
+        <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
       <!--
             <maintenanceEvent>
@@ -62,161 +63,1556 @@
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
                 <eventDateTime></eventDateTime>
                 <agentType></agentType>
                 <agent></agent>
+                <eventDescription></eventDescription>
             </maintenanceEvent> 
             -->
     </maintenanceHistory>
-    <sources>
-      <source xlink:href="https://catalog.archives.gov" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>National Archives and Records Administration Authority List</sourceEntry>
-      </source>
-             --&gt;
-            <source xlink:href="http://id.loc.gov/authorities/names" xlink:type="simple" lastDateTimeVerified="[dateTime]">
-        <sourceEntry>Library of Congress Name Authority File</sourceEntry>
-      </source>
-      <source xlink:href="http://viaf.org" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <sourceEntry>Virtual International Authority File</sourceEntry>
-      </source>
-    </sources>
+    <!--         
+        <sources>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
+            </source>
+            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
+                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
+            </source>
+        </sources>
+        -->
   </control>
   <cpfDescription>
     <identity>
       <entityType>person</entityType>
-
-            if ($entityType eq "person")
-              then
-              
-            <nameEntry localType="marcfield:100">
-        <part localType="marcfield:100$a"/>
-        <part localType="marcfield:100$d"/>
-        <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
-      </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="familyName"/>
-        <part localType="givenName"/>
-        <part localType="nickname"/>
-        <part localType="maiden name"/>
-        <part localtype="generational marker"/>
-        <part localType="military rank or official title"/>
-        <part localType="Mrs."/>
+      <!-- Authorized Name Entries -->
+      <!-- Nixon Tapes Index -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Morrow, Robert D.</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-      <nameEntry localType="marcfield:400">
-        <part localType="marcfield:400$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
-            
-
-      else
-      <nameEntry localType="marcfield:110">
-        <part localType="marcfield:110$a"/>
-        <part localType="marcfield:110$d"/>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a"/>
+        <part localType="marcfield:100$b"/>
+        <part localType="marcfield:100$c"/>
+        <part localType="marcfield:100$q"/>
+        <part localType="marcfield:100$d"/>
         <authorizedForm>lcnaf</authorizedForm>
-        <!-- <authorizedForm>VIAF</authorizedForm>
-                <authorizedForm>WorldCat</authorizedForm>
-                <authorizedForm>USNARA-LCDRG</authorizedForm> -->
+        <!-- 
+    <authorizedForm>VIAF</authorizedForm>
+    <authorizedForm>USNARA-LCDRG</authorizedForm>
+     -->
       </nameEntry>
-      <nameEntry localType="nixonNames">
-        <part localType="directOrder"/>
+      <!-- Variant Name Entries -->
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">Robert D. Morrow</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Morrow</part>
+        <part localType="givenName">Robert D.</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:410">
-        <part localType="marcfield:410$a"/>
-        <alternativeForm>USNARA-LCDRG</alternativeForm>
-      </nameEntry>
+      <!-- Insert Variant Names from LCNAF/LCDRG -->
     </identity>
     <description>
-      <existDates localType="marcfield:046">
-        <dateRange>
-          <fromDate standardDate=""/>
-          <toDate/>
-        </dateRange>
-      </existDates>
-      <occupations>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-          <dateRange>
-            <fromDate standardDate="2009-11-13">November 13, 2009</fromDate>
-            <toDate/>
-          </dateRange>
-        </occupation>
-        <occupation localType="marcfield:374$a">
-          <term vocabularySource="lcsh"/>
-        </occupation>
-      </occupations>
-      <languageUsed>
-        <language languageCode="eng">English</language>
-        <script scriptCode="Latn">Latin</script>
-      </languageUsed>
+      <!-- Exist Dates -->
+      <!--
+            <existDates>
+            
+            </existDates>
+            -->
+      <!-- Gender/Gender Identity -->
       <localDescriptions localType="http://viaf.org/viaf/terms#gender">
         <localDescription localType="marcfield:375">
-          <term/>
-          <descriptiveNote>Gender certainty score, via Namsor: </descriptiveNote>
+          <term vocabularySource="NixonTapesIndex">male</term>
+          <descriptiveNote>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">-1.0</span>.</p>
+          </descriptiveNote>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescriptions localType="http://viaf.org/viaf/terms#AssociatedSubject">
-        <localDescription localType="marcfield:372$a">
+      <!-- Citizenship -->
+      <!-- 
+
+            <localDescriptions localType="nixonTapes/#citizenship">
+
+            </localDescriptions>
+            -->
+      <!-- Nationality -->
+      <!--
+            <localDescriptions localType="nixonTapes/#nationality">
+            
+            </localDescriptions>
+            -->
+      <!-- Languages Used -->
+      <!--
+            <languagesUsed> 
+              <languageUsed localType="marcfield:377">
+                <language languageCode="eng">English</language>
+                <script scriptCode="Latn">Latin</script>
+              </languageUsed>
+            </languagesUsed>
+            -->
+      <!-- Racial Category -->
+      <localDescriptions localType="nixonTapes/#racialCategory">
+        <localDescription localType="marcfield:373">
+          <term vocabularySource="uscensus:race"/>
+        </localDescription>
+        <descriptiveNote>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+        </descriptiveNote>
+      </localDescriptions>
+      <!-- Ethnic/Cultural Heritage -->
+      <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
+        <localDescription localType="marcfield:373">
           <term vocabularySource="lcsh"/>
         </localDescription>
+        <descriptiveNote>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+        </descriptiveNote>
       </localDescriptions>
-      <localDescription localType="http://viaf.org/viaf/terms#nationalityOfEntity">
-        <placeEntry vocabularySource="lcsh" countryCode="US">United States</placeEntry>
-      </localDescription>
-      <places localType="http://socialarchive.iath.virginia.edu/control/term#AssociatedPlace">
-        <place localType="marcfield:370$c">
-          <placeRole>associated country</placeRole>
-          <placeEntry vocabularySource="lcsh" countryCode="US" latitude="39.76" longitude="-98.5">United States</placeEntry>
-        </place>
-        <place localType="marcfield:370$a">
-          <placeRole>birthplace</placeRole>
-          <placeEntry vocabularySource="lcsh" latitude="" longitude=""/>
-          <date standardDate=""/>
-        </place>
-      </places>
+      <!-- Tribal Affiliations -->
+      <!-- Title or Honorific -->
+      <!--
+            <localDescriptions localType="nixonTapes/#titleHonorific">
+              <localDescription localType="marcfield:368">
+                <term vocabularySource="NixonTapesIndex">{$titleHonorific}</term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Occupations -->
+      <!--
+            <occupations localType="nixonTapes/#occupations">
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+              <occupation localType="marcfield:374">
+                <term vocabularySource="NixonTapesIndex"></term>
+              </occupation>
+            </occupations>
+            -->
+      <!-- Functions -->
+      <!--
+            <functions localType="nixonTapes/#functions">
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+              <function localType="marcfield:372">
+                <term vocabularySource="lcdrg"></term>
+              </function>
+            </functions> 
+            -->
+      <!-- Political Affiliations -->
+      <!--
+            <localDescriptions localType="nixonTapes/#politicalAffiliation">
+            
+            </localDescriptions>
+            -->
+      <!-- Religious Affiliations -->
+      <!-- Topical Subjects -->
+      <!-- 
+            <localDescriptions localType="nixonTapes/#subject">
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+              <localDescription localType="marcfield:372">
+                <term vocabularySource="lcsh"></term>
+              </localDescription>
+            </localDescriptions>
+            -->
+      <!-- Associated Places -->
+      <places/>
       <biogHist>
-        <abstract> ...</abstract>
-        <p> ...</p>
+        <!-- Abstract -->
+        <abstract/>
+        <!-- Biography or Administrative History Note -->
+        <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
-        <citation/>
+        <!-- Insert citations -->
       </biogHist>
+      <!-- Insert structureOrGenealogy, if relevant -->
     </description>
     <relations>
-      <!-- Relationships to Corporate Bodies -->
-      <!-- Education -->
-      <!-- Employers -->
-      <!-- Relationships to Persons-->
-      <!-- Family Members -->
-      <!-- Professional Relationships -->
-      <!-- Relationship to Resources, creatorOf -->
-      <resourceRelation xlink:arcrole="participantIn" xlink:href="" xlink:role="archivalResource" xlink:type="simple" lastDateTimeVerified="2016-02-29">
-        <relationEntry/>
+      <!-- CPF RELATIONS -->
+      <!-- Relationships to Persons: Nixon White House Tapes -->
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Abdnor, James</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and James Abdnor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004338" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Adams, Alfred</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Alfred Adams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004339" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Adkins, Stockton</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Stockton Adkins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003604" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Anderson, John B.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John B. Anderson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000080" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Andrews, Mark</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Mark Andrews conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000086" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Arends, Leslie C.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Leslie C. Arends conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004340" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Armstrong, William</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William Armstrong conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004313" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ashbrook, John M.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John M. Ashbrook conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004341" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Avarello, Charles A.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Charles A. Avarello conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004342" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Babbitt, Wayne</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Wayne Babbitt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000111" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bafalis, L. A. ("Skip")</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and L. A. ("Skip") Bafalis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000117" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Baker, Howard H., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Howard H. Baker, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004344" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Banken, Charles T., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Charles T. Banken, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004345" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Barrows, Raymond E.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Raymond E. Barrows conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000171" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Beard, Robin L.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Robin L. Beard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004346" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bethel, Paul D.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Paul D. Bethel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004314" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Biester, Edward G., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Edward G. Biester, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004347" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bloom, Allan</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Allan Bloom conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000254" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Boggs, J. Caleb</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and J. Caleb Boggs conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004348" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Boyd, Joseph H., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Joseph H. Boyd, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004349" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bozzone, Richard T.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Richard T. Bozzone conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003212" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bray, William G.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William G. Bray conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000305" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brooke, Edward W.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Edward W. Brooke conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004350" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brooks, Fuller H.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Fuller H. Brooks conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004351" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brophy, Bill</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Bill Brophy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000311" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, Clarence J.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Clarence J. Brown conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004352" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Brown, Vernon E.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Vernon E. Brown conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004315" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Broyhill, James T.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and James T. Broyhill conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004353" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Bryant, Frederick D.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Frederick D. Bryant conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000328" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Buchanan, John H., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John H. Buchanan, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000349" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Burgener, Clair W.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Clair W. Burgener conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004316" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Burke, J. Herbert</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and J. Herbert Burke conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000364" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butler, Caldwell</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Caldwell Butler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004354" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Butler, Carl</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Carl Butler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004318" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Camp, John N. ("Happy")</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John N. ("Happy") Camp conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004355" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carmichael, Gil</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Gil Carmichael conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004356" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carter, J. C.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and J. C. Carter conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000422" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Carter, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Robert Carter conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000424" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Case, Clifford P.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Clifford P. Case conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004357" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Catarinella, Roland S.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Roland S. Catarinella conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004182" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cederberg, Elford A.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Elford A. Cederberg conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004358" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chase, Charles E.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Charles E. Chase conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004359" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Chin-Lee, William</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William Chin-Lee conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000495" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clausen, Don H.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Don H. Clausen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004248" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Clawson, Delwin M.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Delwin M. Clawson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004317" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cleveland, James C.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and James C. Cleveland conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004360" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cochran, William Thad</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William Thad Cochran conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004250" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Collier, Harold R.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Harold R. Collier conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000537" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Conlan, John B.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John B. Conlan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000546" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Conte, Silvio O.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Silvio O. Conte conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004361" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cook, Rodney M.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Rodney M. Cook conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004363" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Countie, David R.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and David R. Countie conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000577" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Crane, Philip M.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Philip M. Crane conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000582" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Cronin, Paul W.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Paul W. Cronin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002293" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Daniel, Robert W., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Robert W. Daniel, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000610" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Davis, Glenn R.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Glenn R. Davis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003285" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Derwinski, Edward J.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Edward J. Derwinski conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004090" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dickinson, William L.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William L. Dickinson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004364" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dodge, Atlee</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Atlee Dodge conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000683" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Domenici, Peter V.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Peter V. Domenici conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004365" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dowd, William F.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William F. Dowd conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004366" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Doyle, James E.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and James E. Doyle conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000723" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">DuPont, Pierre S.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Pierre S. DuPont conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004367" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Dugan, Jonathan</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Jonathan Dugan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004282" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Duncan, John</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John Duncan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000749" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Edwards, William J. ("Jack")</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William J. ("Jack") Edwards conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004368" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ellsworth, Theodore R.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Theodore R. Ellsworth conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004369" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Emerich, Lewis</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Lewis Emerich conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004319" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Erlenborn, John N.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John N. Erlenborn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000785" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Esch, Marvin L.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Marvin L. Esch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004370" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fackler, Ernest C.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Ernest C. Fackler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000844" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Findley, Paul</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Paul Findley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004371" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Finney, Billy Joe</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Billy Joe Finney conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004372" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Fleuchaus, Philip T.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Philip T. Fleuchaus conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004320" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Frenzel, Bill</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Bill Frenzel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004373" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Funsch, Richard O.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Richard O. Funsch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004374" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gangemi, John F.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John F. Gangemi conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000978" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gilman, Benjamin A.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Benjamin A. Gilman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004375" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gosney, James</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and James Gosney conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004376" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Griffin, James</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and James Griffin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004377" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gropp, Donald W.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Donald W. Gropp conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001044" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gross, H. R.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and H. R. Gross conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001047" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Grover, James R.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and James R. Grover conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001055" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Gubser, Charles S.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Charles S. Gubser conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001064" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Guyer, Tennyson</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Tennyson Guyer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004378" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haaven, Jon</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Jon Haaven conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004379" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Haller, Bruce R.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Bruce R. Haller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004380" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hannaford, Peter</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Peter Hannaford conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001114" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hanrahan, Robert P.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Robert P. Hanrahan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004381" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hansen, Phil</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Phil Hansen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004383" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harlan, Doug</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Doug Harlan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004382" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harner, Carol D.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Carol D. Harner conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004321" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harsha, William H.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William H. Harsha conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001149" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Harvey, James</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and James Harvey conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001152" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hatfield, Mark O.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Mark O. Hatfield conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001175" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Heinz, H. John, III</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and H. John Heinz, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004384" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hewgley, James M., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and James M. Hewgley, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001223" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hirsch, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Robert Hirsch conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004385" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hoellen, John J.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John J. Hoellen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004386" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Holcomb, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Robert Holcomb conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001252" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Holt, Marjorie S.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Marjorie S. Holt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001272" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hosmer, Craig</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Craig Hosmer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004387" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hubler, Eugene W.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Eugene W. Hubler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001288" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Hudnut, William H., III</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William H. Hudnut, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004388" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Jackson, Laban P.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Laban P. Jackson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004197" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Johnson, William A.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William A. Johnson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004390" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kaelin, Phil, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Phil Kaelin, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001449" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kemp, Jack F.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Jack F. Kemp conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001464" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ketchum, William M.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William M. Ketchum conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004391" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Koldin, Leonard C.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Leonard C. Koldin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001540" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kuykendall, Daniel H.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Daniel H. Kuykendall conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001541" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Kyl, John</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John Kyl conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004392" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lamkin, Robert B.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Robert B. Lamkin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004393" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Langley, Jane Pickens</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Jane Pickens Langley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004394" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ledbetter, Jesse, II</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Jesse Ledbetter, II conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004395" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lento, Thomas</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Thomas Lento conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004396" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Leonard, Louise</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Louise Leonard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004397" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Levenhagen, Alvin W.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Alvin W. Levenhagen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004398" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Limehouse, J. Sidi</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and J. Sidi Limehouse conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001625" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lloyd, Sherman</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Sherman Lloyd conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001644" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lott, Trent</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Trent Lott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001408" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lujan, Manuel, Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Manuel Lujan, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004399" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Lundy, Rayfield</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Rayfield Lundy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001681" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">MacGregor, Clark</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Clark MacGregor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004404" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Macchio, Nicholas R., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Nicholas R. Macchio, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001686" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Madigan, Edward R.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Edward R. Madigan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003645" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mailliard, William S.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William S. Mailliard conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001702" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mallary, Richard W.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Richard W. Mallary conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004405" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Maraziti, Joseph J.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Joseph J. Maraziti conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004406" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Marroletti, Alfred</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Alfred Marroletti conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001737" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Martin, David T.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and David T. Martin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001739" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Martin, James G.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and James G. Martin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004622" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mason, Edward J.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Edward J. Mason conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004324" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mathias, Robert B.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Robert B. Mathias conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001768" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mayne, Wiley</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Wiley Mayne conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004400" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McAtee, Charles D.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Charles D. McAtee conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001785" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McClure, James A.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and James A. McClure conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001797" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McDonald, Jack H.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Jack H. McDonald conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004401" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McDonald, Ronald</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Ronald McDonald conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004402" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McGrath, Robert V.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Robert V. McGrath conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004403" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">McGraw, Joe</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Joe McGraw conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001875" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Miller, Clarence E.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Clarence E. Miller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004623" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Miller, Kenneth C.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Kenneth C. Miller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003955" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Minshall, William E.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William E. Minshall conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001895" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mitchell, Donald J.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Donald J. Mitchell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004325" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Mosher, Charles A.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Charles A. Mosher conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001967" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Myers, John T.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John T. Myers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004408" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Neal, Joe</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Joe Neal conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001979" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nelsen, Ancher</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Ancher Nelsen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004409" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nelson, Ed</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Ed Nelson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001994" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nidecker, John E.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John E. Nidecker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and President Richard M. Nixon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002044" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Brien, George M.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and George M. O'Brien conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002039" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">O'Konski, Alvin E.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Alvin E. O'Konski conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002108" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Parris, Stanford E.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Stanford E. Parris conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004311" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pearson, James B.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and James B. Pearson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004410" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pedicone, Gus A.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Gus A. Pedicone conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002127" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Percy, Charles H.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Charles H. Percy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004411" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pereira, Joseph</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Joseph Pereira conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004326" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pettis, Jerry L.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Jerry L. Pettis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004412" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Pfender, William</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William Pfender conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004413" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Phillips, B. Leonard</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and B. Leonard Phillips conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004414" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Powell, Edlo E.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Edlo E. Powell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004093" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Powell, Walter E.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Walter E. Powell Conover, William conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004415" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Prange, Robert L.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Robert L. Prange conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004416" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Presson, George E.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and George E. Presson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003608" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Quie, Albert H.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Albert H. Quie conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004327" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Railsback, Thomas F.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Thomas F. Railsback conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004417" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Reams, Bill</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Bill Reams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002241" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Regula, Ralph S.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Ralph S. Regula conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004418" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rhoades, Ralph</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Ralph Rhoades Ralph Rhoades conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002262" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rhodes, John J.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John J. Rhodes conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004419" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Richards, Joseph C.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Joseph C. Richards Joseph C. Richards conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004328" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Riegle, Donald W., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Donald W. Riegle, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002281" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Rinaldo, Matthew J.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Matthew J. Rinaldo conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004420" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Roberts, Courtney</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Courtney Roberts Courtney Roberts conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004329" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Robison, Howard W.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Howard W. Robison conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002365" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ruth, Earl B.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Earl B. Ruth conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002386" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sandman, Charles W., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Charles W. Sandman, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002390" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Sarasin, Ronald A.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Ronald A. Sarasin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004252" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Saylor, John P.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John P. Saylor conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002409" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scherle, William J.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William J. Scherle conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004421" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schiaffo, Alfred D.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Alfred D. Schiaffo conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003809" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schneebeli, Herman T.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Herman T. Schneebeli conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004422" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scholes, William</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William Scholes conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004423" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Schrader, Dieter J.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Dieter J. Schrader conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002454" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Scott, William L.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William L. Scott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004424" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Seehawer, Garth</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Garth Seehawer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004425" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Shuster, E. G. ("Bud")</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and E. G. ("Bud") Shuster conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004330" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Skubitz, Joe</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Joe Skubitz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004426" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Smith, Herbert Edgar</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Herbert Edgar Smith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004427" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Snider, Howard J.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Howard J. Snider conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002580" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Snyder, M. Gene</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and M. Gene Snyder conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004428" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Statchen, Robert</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Robert Statchen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002627" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Steele, Robert H.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Robert H. Steele conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002629" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Steelman, Alan</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Alan Steelman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004331" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Steiger, Sam</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Sam Steiger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004332" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Steiger, William A.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William A. Steiger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004429" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Steigerwalt, Wardell F.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Wardell F. Steigerwalt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002700" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Teague, Charles M.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Charles M. Teague conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004333" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Thomson, Vernon W.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Vernon W. Thomson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002754" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tower, John G.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John G. Tower conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004430" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Tria, Gregg</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Gregg Tria conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004431" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Valentine, Ben</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Ben Valentine conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004334" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Vander Jagt, Guy</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Guy Vander Jagt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004432" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Vergari, Carl A.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Carl A. Vergari conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004433" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Vickerman, John</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John Vickerman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004434" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Vilt, Thomas E.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Thomas E. Vilt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004435" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walsh, John F.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John F. Walsh conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002853" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Walsh, William F.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William F. Walsh conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004335" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wampler, William C.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and William C. Wampler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004336" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Ware, John</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John Ware conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004337" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whalen, Charles W., Jr.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Charles W. Whalen, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004436" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whatley, Wayne N.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Wayne N. Whatley conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004091" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Whitehurst, G. William</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and G. William Whitehurst conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002952" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Williams, Lawrence G.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Lawrence G. Williams conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003605" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wilson, Robert C. ("Bob")</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Robert C. ("Bob") Wilson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004437" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wolthuis, Robert K.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Robert K. Wolthuis conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003003" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Wyatt, Wendell</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Wendell Wyatt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004092" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Young, C. W. ("Bill")</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and C. W. ("Bill") Young conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003026" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Young, Samuel H.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Samuel H. Young conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004438" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Zilli, Sergio J.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and Sergio J. Zilli conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003044" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">Zwach, John M.</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and John M. Zwach conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002795" xlink:type="simple">
+        <relationEntry scriptCode="Latn" xml:lang="en">[Unknown person(s)]</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow and [Unknown person(s)] conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+        </descriptiveNote>
+      </cpfRelation>
+      <!-- Relationships to Families -->
+      <!-- Relationships to Corporate Bodies: Nixon White House Tapes -->
+      <!-- RESOURCE RELATIONS -->
+      <!-- Relationship to Nixon White House Tapes Conversations, participantIn -->
+      <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-744-002">
+        <relationEntry>White House Tapes: Conversation 744-002</relationEntry>
+        <descriptiveNote>
+          <p>Robert D. Morrow participated in Conversation 744-002 on the White House Tapes of the Nixon Administration</p>
+        </descriptiveNote>
       </resourceRelation>
-      <!-- Relationship to Resources, subjectOf -->
-      <resourceRelation xlink:arcrole="subjectOf" xlink:role="archivalResource" xlink:type="simple" xlink:href="" lastDateTimeVerified="">
-        <relationEntry/>
-      </resourceRelation>
+      <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
+      <!-- Relationship to Bibliographic Works, subjectOf -->
     </relations>
   </cpfDescription>
 </eac-cpf>
