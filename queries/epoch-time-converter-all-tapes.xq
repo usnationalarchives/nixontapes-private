@@ -33,6 +33,10 @@ let $c := data($row/filename)
 let $sDateTime := $row/startDateTime
   
 let $sEpoch := (xs:dateTime($sDateTime) - xs:dateTime("1970-01-01T00:00:00-00:00")) div xs:dayTimeDuration('PT1S')
+
+let $eDateTime := $row/endDateTime
+
+let $eEpoch := (xs:dateTime($eDateTime) - xs:dateTime("1970-01-01T00:00:00-00:00")) div xs:dayTimeDuration('PT1S')
   
 order by $c ascending
   
@@ -40,6 +44,7 @@ return
   <conversation>
     <id>{$c}</id>
     <startEpochTime>{$sEpoch}</startEpochTime>
+    <endEpochTime>{$eEpoch}</endEpochTime>
   </conversation>
 }
 </epochTimes>  
