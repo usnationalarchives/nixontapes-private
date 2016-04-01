@@ -306,7 +306,7 @@
           <p>E. Carl Uehlein, Jr. and Robert A. Georgine conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
-      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-0000386" xlink:type="simple">
+      <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003876" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Halvorson, Carl M.</relationEntry>
         <descriptiveNote>
           <p>E. Carl Uehlein, Jr. and Carl M. Halvorson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
