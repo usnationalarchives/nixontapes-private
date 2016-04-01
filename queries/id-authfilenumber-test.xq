@@ -3,4 +3,5 @@ for $nn in $coll/nixonNames/participant
 let $id := data($nn/attribute::identifier)
 let $auth := data($nn/(persname|corpname)/attribute::authfilenumber)
 let $string := substring-after($auth,"37-wht-eac-")
+where not($id eq $string)
 return $string
