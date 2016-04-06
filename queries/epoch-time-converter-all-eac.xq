@@ -8,7 +8,7 @@ xquery version "1.0";
  : Copyright: Public Domain
  : Proprietary XQuery Extensions Used: None
  : XQuery Specification: January 2007
- : Script Overview: This script converts conversation start dateTime to Unix/epoch time across the entire dataset.
+ : Script Overview: This script converts conversation start dateTime for each Nixon Tapes EAC-CPF record.
 :)
 
 import module namespace functx = 'http://www.functx.com' at 'functx-1.0-doc-2007-01.xq';
