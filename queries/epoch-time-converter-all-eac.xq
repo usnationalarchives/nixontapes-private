@@ -15,8 +15,13 @@ import module namespace functx = 'http://www.functx.com' at 'functx-1.0-doc-2007
 
 declare namespace xlink="http://www.w3.org/1999/xlink";
 
+declare namespace eac='urn:isbn:1-931666-33-4';
+
+declare namespace ead='http://www.loc.gov/ead/ead.xsd';
+
+
 let $coll := collection("37-wht")
-return (data($coll/*/*/*)[1])
+return data(($coll/eac:eac-cpf)[3]//eac:recordId)
 
 (:
 
