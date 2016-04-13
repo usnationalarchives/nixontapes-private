@@ -14,31 +14,51 @@ xquery version "1.0";
 import module namespace functx = 'http://www.functx.com' at 'functx-1.0-doc-2007-01.xq';
 
 declare namespace xlink="http://www.w3.org/1999/xlink";
-
 declare namespace eac='urn:isbn:1-931666-33-4';
-
 declare namespace ead='http://www.loc.gov/ead/ead.xsd';
-
+declare namespace xpath='http://www.w3.org/2005/xpath-functions';
 
 let $coll := collection("37-wht")
-return data(($coll/eac:eac-cpf)[3]//eac:recordId)
 
-(:
+let $quot := "&#34;"
 
-let $epochAll := doc("37-wht/intermediate-files/37-wht-conversation-epoch-times.xml")
+  for $eac in ($coll/eac:eac-cpf)
+  let $eacID := data($eac//eac:recordId)
+  
+  let $conversations :=
+    <conversations>
+    {
+    for $cID in data($eac//eac:resourceRelation/attribute::xlink:href)
+    return <cID>{$cID}</cID>
+  }
+  </conversations>
 
-for $conversation in $eac//resourceRelation
-let $cID := data($eac/relationEntry)
+  let $epoch := 
+    <epoch>
+    { 
+    for $c in data($conversations/cID)
+      let $cMatch := $coll/epochTimes/conversation[id eq $c]
+      let $eStart := data($cMatch/startEpochTime) 
+      order by xs:integer($eStart) ascending    
+      return 
+        <cEpoch>{$eStart}</cEpoch>
+     }
+     </epoch> 
+  
+  let $keyValue :=
+    for $e in distinct-values($epoch/cEpoch)
+    let $count := count(matches($epoch/cEpoch,$e))
+    return concat($quot,data($e),$quot,": ",$count)
+    
+  let $join := string-join($keyValue,",")
 
 
 let $my-doc :=
-{}
-where 
+
+    concat("{",$join,"}")
 
 return
-  let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"intermediate-files",file:dir-separator(),"37-wht-epoch-times")
-  let $filename := concat(data($id),".xml")
+  let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"intermediate-files",file:dir-separator(),"37-wht-authorities-epoch-times",file:dir-separator())
+  let $filename := concat(data($eacID),"-epoch-times_data.json")
   let $path := concat($dir, $filename)
   return file:write($path, $my-doc)
-  
-  :)
