@@ -58,7 +58,7 @@ let $my-doc :=
     concat("{",$join,"}")
 
 return
-  let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"intermediate-files",file:dir-separator(),"37-wht-authorities-epoch-times",file:dir-separator())
-  let $filename := concat(data($eacID),"-epoch-times_data.json")
+  let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"intermediate-files",file:dir-separator(),"authorities-cal-heatmap_data",file:dir-separator())
+  let $filename := concat(data($eacID),"-cal-heatmap_data.json")
   let $path := concat($dir, $filename)
   return file:write($path, $my-doc)
