@@ -47,7 +47,7 @@ let $quot := "&#34;"
   
   let $keyValue :=
     for $e in distinct-values($epoch/cEpoch)
-    let $count := count(matches($epoch/cEpoch,$e))
+    let $count := count($epoch/cEpoch[contains(.,$e)])
     return concat($quot,data($e),$quot,": ",$count)
     
   let $join := string-join($keyValue,",")
@@ -57,6 +57,7 @@ let $my-doc :=
 
     concat("{",$join,"}")
 
+where matches($eacID,"37-wht-eac-00001173")
 return
   let $dir := concat(file:parent(file:parent(static-base-uri())),file:dir-separator(),"37-wht",file:dir-separator(),"intermediate-files",file:dir-separator(),"authorities-cal-heatmap_data",file:dir-separator())
   let $filename := concat(data($eacID),"-cal-heatmap_data.json")
