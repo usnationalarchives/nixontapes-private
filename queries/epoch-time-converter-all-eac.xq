@@ -1,7 +1,7 @@
 xquery version "1.0";
 
 (:~
- : Script Name: Epoch Time Converter: All Tapes
+ : Script Name: Epoch Time Converter: All Conversation Participants
  : Author: Amanda Ross
  : Script Version: 1.0
  : Date: 2016 April
