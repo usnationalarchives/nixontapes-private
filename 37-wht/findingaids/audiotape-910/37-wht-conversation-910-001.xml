@@ -10,8 +10,8 @@
         <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, Otto E. Passman, Dr. John A. Hannah, William E. Timmons, Henry A. Kissinger, and unknown person(s)</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
-        <lb/> 
-        Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the Preservation Programs Division and the Office of Innovation at the National Archives and Records Administration.</sponsor>
+          <lb/> 
+          Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the Preservation Programs Division and the Office of Innovation at the National Archives and Records Administration.</sponsor>
       </titlestmt>
       <publicationstmt>
         <publisher encodinganalog="Publisher">National Archives and Records Administration</publisher>
@@ -20,8 +20,8 @@
         </address>
         <date normal="2015" encodinganalog="Date" type="publication">2015</date>
         <p id="findingAidCopyright">This finding aid is considered United States government works and, as such,
-					is not eligible for copyright protection in the United States. Thus, this document may be treated as
-					being in the public domain. <lb/>
+          is not eligible for copyright protection in the United States. Thus, this document may be treated as
+          being in the public domain. <lb/>
           <extref xlink:href="http://creativecommons.org/publicdomain/zero/1.0/" xlink:show="new" xlink:title="Creative Commons License CC0">
             <extptr xlink:role="license" xlink:href="http://i.creativecommons.org/p/zero/1.0/88x31.png" xlink:show="embed" xlink:title="Creative Commons License 0"/>
           </extref>
@@ -39,21 +39,36 @@
       <langusage>Description is in <language encodinganalog="Language" langcode="eng" scriptcode="Latn">English</language>
       </langusage>
       <descrules>This finding aid was prepared using <bibref>
-          <title render="italic">Describing Archives: A Content Standard</title>, <edition>2nd edition</edition>, <imprint>
-            <geogname>Chicago</geogname>: <publisher>Society of American Archivists</publisher>, <date type="publication" normal="2013">2013</date>
-          </imprint>
-        </bibref> (DACS).</descrules>
+        <title render="italic">Describing Archives: A Content Standard</title>, <edition>2nd edition</edition>, <imprint>
+          <geogname>Chicago</geogname>: <publisher>Society of American Archivists</publisher>, <date type="publication" normal="2013">2013</date>
+        </imprint>
+      </bibref> (DACS).</descrules>
     </profiledesc>
-    <!-- <revisiondesc>
-			<change>
-				<date normal="" type="addition"></date>
-				<item></item>
-			</change>
-			<change>
-				<date normal="" type="edit"></date>
-				<item></item>
-			</change>
-		</revisiondesc> -->
+    <revisiondesc>
+      <change>
+        <date normal="2016-05-18" type="addition">May 18, 2016</date>
+        <item>Added related conversation (continuedFrom)</item>
+        <item>Added subject logging and tagged persname and corpname</item>
+        <item>Added controlaccess terms</item>
+      </change>
+      <change>
+        <date normal="2016-05-19" type="edit">May 19, 2016</date>
+        <item>Edited determination codes</item>
+        <item>Edited abstract and scopecontent to include topics of conversation</item>
+      </change>
+      <change>
+        <date normal="2016-05-20" type="addition">May 20, 2016</date>
+        <item>Added location statement within geogname</item>
+        <item>Added room code to local call number</item>
+        <item>Added track number</item>
+        <item>Added duration</item>
+        <item>Added timecodes and timestamps to start and end c01</item>
+      </change>
+      <change>
+        <date normal="2016-05-20" type="edit">May 20, 2016</date>
+        <item>Edited accessrestrict to none</item>
+      </change>
+    </revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
@@ -93,16 +108,16 @@
           <unittitle id="audiotapeTitle" label="File">Audiotape 910</unittitle>
         </archref>
       </origination>
-      <!-- <physdesc label="Duration">
-				<extent encodinganalog="300$a" type="totalTime" unit="hhmmss">00:00:00</extent>
-			</physdesc> -->
+      <physdesc label="Duration">
+				<extent encodinganalog="300$a" type="totalTime" unit="hhmmss">00:30:15</extent>
+			</physdesc>
       <repository label="Repository">
         <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
-      <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">910-001</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On May 2, 1973, President Richard M. Nixon, Otto E. Passman, Dr. John A. Hannah, William E. Timmons, Henry A. Kissinger, and unknown person(s) met in the Oval Office of the White House at an unknown time between 5:10 pm and 5:49 pm. The Oval Office taping system captured this recording, which is known as Conversation 910-001 of the White House Tapes. Topics of conversation included ....</abstract>
+      <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">OVAL 910-001</unitid>
+      <container id="wht-audiotape-910_track-001" type="track" label="Track">1</container>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On May 2, 1973, President Richard M. Nixon, Otto E. Passman, Dr. John A. Hannah, William E. Timmons, Henry A. Kissinger, and unknown person(s) met in the Oval Office of the White House at an unknown time between 5:10 pm and 5:49 pm. The Oval Office taping system captured this recording, which is known as Conversation 910-001 of the White House Tapes. Topics of conversation included negotiations to end the Vietnam War, economic assistance to North Vietnam, Congressional legislation on foreign aid, and flooding in Louisiana.</abstract>
       <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -123,13 +138,13 @@
       <p>This system was a secret taping system maintained by the Secret Service. Only President Nixon, H. R. Haldeman, and a few of the President's close personal assistants knew the system existed. One of its key features was that the recording equipment in the Oval Office, the EOB office, at Camp David, and on the telephones was sound-activated, operating without a conscious decision by the President to record a specific conversation. The taping system was tied to the Presidential Locator System, which was also operated by the Secret Service, and was designed to continue recording for fifteen to thirty seconds after the President left the room.</p>
       <p>On July 16, 1973, Special Assistant to the President Alexander Butterfield revealed the existence of the White House taping system during his testimony before the Senate Watergate Committee. Following this public revelation, White House Chief of Staff Alexander Haig ordered the removal of the entire presidential taping system.</p>
     </bioghist>
-    <!-- possibly import brief biogHist notes for participants -->
+
     <scopecontent>
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On May 2, 1973, President Richard M. Nixon, Otto E. Passman, Dr. John A. Hannah, William E. Timmons, Henry A. Kissinger, and unknown person(s) met in the Oval Office of the White House at an unknown time between 5:10 pm and 5:49 pm. The Oval Office taping system captured this recording, which is known as Conversation 910-001 of the White House Tapes.</p>
-        <p>Topics of conversation included ...</p>
+        <p>Topics of conversation included negotiations to end the Vietnam War, economic assistance to North Vietnam, Congressional legislation on foreign aid, and flooding in Louisiana.</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
         <scopecontent id="audioQuality">
@@ -168,47 +183,31 @@
       </arrangement>
     </scopecontent>
     <controlaccess>
+      
       <controlaccess id="PRMPAdeedCategories">
         <head>Determination Categories</head>
-        <p>These processing categories are governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> and the 2007 Deed of Gift. These categories are based upon the constitutional and statutory duties of the President of the United States, as well as the Watergate investigation.</p>
-        <!--
-        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01">Abuse of Governmental Powers / Watergate</function>
-          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-01">Misuse of Government Agencies</function>
-          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-02">Watergate Break-In</function>
-          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-03">Watergate Cover-Up</function>
-          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-04">Campaign Practices</function>
-          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-05">Obstruction of Justice</function>
-          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-07">Milk Fund</function>
-          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-08">Hughes-Rebozo Investigation</function>
-          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-09">Emoluments and Tax Evasion</function>
-          <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination01-10">International Telephone and Telegraph</function>
-        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination02">Administrative Powers</function>
+        <p>These processing categories are governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title> and the 2007 Deed of Gift. These categories are based upon the constitutional and statutory duties of the President of the United States, as well as the Watergate investigation.</p>     	
         <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination03">Department Policies, Agency Policies, and Executive Decisions</function>
         <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination04">Legislative Leader</function>
         <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination05">Presidential Foreign Relations Power</function>
-        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination06">Commander-in-Chief</function>
-        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination07">White House Internal or Institutional Organization</function>
         <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination08">Ceremonial Duties of the President</function>
-        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination09">Official Travel, Head of State, and Foreign Visits</function>
-        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination10">Presidential Statements</function>
-        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination11">Presidential Appointments and Personnel Management</function>
-        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination12">White House Entertainment and Social Affairs</function>
-        
-        <function encodinganalog="657$a" source="deedOfGift2007" authfilenumber="deedOfGift2007">Deed of Gift, 2007</function>
-        -->
+        <function encodinganalog="657$a" source="PRMPA" authfilenumber="determination10">Presidential Statements</function>     
       </controlaccess>
+      
       <controlaccess id="recordingLocation">
         <head>Location of Recording</head>
-        <geogname encodinganalog="518$p" normal="38.8974, -77.0374" source="GeoHack" role="location"/>
+        <geogname encodinganalog="518$p" normal="38.8974, -77.0374" source="GeoHack" role="location">Oval Office, White House, Washington, D.C.</geogname>
       </controlaccess>
+      
       <controlaccess id="relatedTopics">
         <head>Related Topics</head>
-        <corpname encodinganalog="610" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79007288">United States. President (1969-1974 : Nixon)</corpname>
-        <genreform encodinganalog="655" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/subjects/sh85101069">Audiotapes</genreform>
-        <geogname encodinganalog="651" role="subject" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85140471">United States -- Politics and government -- 1969-1974</geogname>
-        <persname encodinganalog="600" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79018757">Nixon, Richard M. (Richard Milhous), 1913-1994</persname>
-        <subject encodinganalog="650" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85106465">Presidents -- United States</subject>
+        <corpname encodinganalog="610$a" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79007288">United States. President (1969-1974 : Nixon)</corpname>
+        <genreform encodinganalog="655$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85101069">Audiotapes</genreform>
+        <geogname encodinganalog="651$a" role="subject" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85140471">United States -- Politics and government -- 1969-1974</geogname>
+        <persname encodinganalog="600$a" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79018757">Nixon, Richard M. (Richard Milhous), 1913-1994</persname>
+        <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85106465">Presidents -- United States</subject>
       </controlaccess>
+      
       <controlaccess id="topicsOfConversation">
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
@@ -220,23 +219,26 @@
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002732" normal="WET">Timmons, William E.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002795" normal="Unk">[Unknown person(s)]</persname>
         </controlaccess>
+        
         <controlaccess id="placesDiscussed">
           <head>Places</head>
           <geogname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79138970">Louisiana</geogname>
           <geogname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79032874">Vietnam (Democratic Republic)</geogname>
           <geogname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n96003700">Vietnam (Republic)</geogname>
         </controlaccess>
+        
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
           <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n78008230">United States. Congress. Senate. Committee on Foreign Relations</corpname>
         </controlaccess>
+        
         <controlaccess id="topicsDiscussed">
           <head>Topics</head>
           <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85040767">Economic assistance</subject>
           <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85050519">Foreign relations</subject>
-          <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85143277">Vietnam War, 1961-1975</subject>
-          
+          <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85143277">Vietnam War, 1961-1975</subject>         
         </controlaccess>
+        
       </controlaccess>
     </controlaccess>
 
@@ -244,8 +246,6 @@
       <p>Continued from: <archref xlink:href="37-wht-conversation-909-030" xlink:arcrole="continuedFrom">White House Tapes: Conversation 909-030</archref></p>
     </relatedmaterial>
 
-
-    <!-- Indicate alternative formats / digitized audio below -->
     <altformavail type="audio">
       <head>Digitized Audio</head>
       <altformavail id="audiofile-37-wht-conversation-910-001.mp3" type="mp3" encodinganalog="530$a">
@@ -260,7 +260,10 @@
       
       <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">An unknown portion of this conversation was not recorded while the audiotape reels were changed.</unittitle></did></c01>
       
-      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The President met with <persname>Otto E. Passman</persname>, <persname>John Hannah</persname>, <persname>William E. Timmons</persname>, and <persname>Henry A. Kissinger</persname>.</unittitle></did>
+      <c01 level="otherlevel" otherlevel="audio-segment"><did>
+        <container type="timecode">00:00:47</container>
+        <container type="timestamp">00:00:00</container>
+        <unittitle type="action-statement">The <persname>President</persname> met with <persname>Otto E. Passman</persname>, <persname>John Hannah</persname>, <persname>William E. Timmons</persname>, and <persname>Henry A. Kissinger</persname>.</unittitle></did>
       
       	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle><geogname>Vietnam</geogname></unittitle></did>
       		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Negotiations with <geogname>North Vietnam</geogname></unittitle></did>
@@ -740,7 +743,13 @@
       	</c02>
       </c01>
       
-      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Passman et al. left at 5:49 pm.</unittitle></did></c01>
+      <c01 level="otherlevel" otherlevel="audio-segment">
+        <did>
+          <container type="timecode">00:31:02</container>
+          <container type="timestamp">00:30:15</container>
+          <unittitle type="action-statement">Passman et al. left at 5:49 pm.</unittitle>
+        </did>
+      </c01>
       
       
     </dsc>
@@ -748,20 +757,9 @@
       <head>Administrative Information</head>
       <accessrestrict>
         <head>Access Restrictions</head>
-        <!-- if/then accessrestrict
-				
-				1) <accessrestrict encodinganalog="506" type="accessUnrestricted">
+        <accessrestrict encodinganalog="506" type="accessUnrestricted">
 					<p>This conversation has no restrictions and is fully open to the public.</p>
 				</accessrestrict>
-				
-				2) <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
-					<p>Portions of this conversation are closed to the public: _ withdrawal(s) for _.</p>
-				</accessrestrict>
-				
-				3) <accessrestrict encodinganalog="506" type="accessFullyRestricted">
-					<p>This conversation is closed to the public in its entirety: 1 withdrawal for _.</p>
-				</accessrestrict>
-				-->
         <p>Access is governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
         <p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov" xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
       </accessrestrict>
@@ -812,9 +810,8 @@
           <p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="United States. National Archives and Records Administration. Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
         </note>
         <note id="encodingHistory">
-          <p>Encoded by Amanda T. Ross, <date normal="2016-01-15">January 15, 2016</date>
-          </p>
-          <!-- Edited by ?, Mm yyyy -->
+          <p>Encoded by Amanda T. Ross, <date normal="2016-01-15">January 15, 2016</date></p>
+          <p>Edited by Amanda T. Ross, <date normal="2016-05">May 2016</date></p>
         </note>
       </processinfo>
     </descgrp>
