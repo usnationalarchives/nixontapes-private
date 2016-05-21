@@ -194,15 +194,15 @@
       </controlaccess>
       <controlaccess id="recordingLocation">
         <head>Location of Recording</head>
-        <geogname encodinganalog="518$p" normal="38.8974, -77.0374" source="GeoHack" role="location"/>
+        <geogname encodinganalog="518$p" normal="38.8974, -77.0374" source="GeoHack" role="location">Oval Office, White House, Washington, D.C.</geogname>
       </controlaccess>
       <controlaccess id="relatedTopics">
         <head>Related Topics</head>
-        <corpname encodinganalog="610" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79007288">United States. President (1969-1974 : Nixon)</corpname>
-        <genreform encodinganalog="655" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/subjects/sh85101069">Audiotapes</genreform>
-        <geogname encodinganalog="651" role="subject" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85140471">United States -- Politics and government -- 1969-1974</geogname>
-        <persname encodinganalog="600" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79018757">Nixon, Richard M. (Richard Milhous), 1913-1994</persname>
-        <subject encodinganalog="650" rules="rda" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85106465">Presidents -- United States</subject>
+        <corpname encodinganalog="610$a" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79007288">United States. President (1969-1974 : Nixon)</corpname>
+        <genreform encodinganalog="655$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85101069">Audiotapes</genreform>
+        <geogname encodinganalog="651$a" role="subject" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85140471">United States -- Politics and government -- 1969-1974</geogname>
+        <persname encodinganalog="600$a" role="subject" rules="rda" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79018757">Nixon, Richard M. (Richard Milhous), 1913-1994</persname>
+        <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85106465">Presidents -- United States</subject>
       </controlaccess>
       <controlaccess id="topicsOfConversation">
         <head>Topics of Conversation</head>
