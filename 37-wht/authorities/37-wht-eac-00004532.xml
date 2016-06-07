@@ -88,6 +88,9 @@
           <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/10580919" lastDateTimeVerified="2016-06-07">
             <sourceEntry>National Archives and Records Administration Authority List: 10580919</sourceEntry>
           </source>
+          <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://socialarchive.iath.virginia.edu/ark:/99166/w6v69wzc" lastDateTimeVerified="2016-06-07">
+            <sourceEntry>Social Networks and Archival Context: w6v69wzc</sourceEntry>
+          </source>
           <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/69058172" lastDateTimeVerified="2016-06-07">
             <sourceEntry>Virtual International Authority File: 69058172</sourceEntry>
             </source>
