@@ -74,28 +74,31 @@
             </maintenanceEvent> 
             -->
     </maintenanceHistory>
-    <!--         
+      
         <sources>
-            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/[ISNI ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
-                <sourceEntry>International Standard Name Identitifier: [ISNI ID]</sourceEntry>
+          <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://bioguide.congress.gov/scripts/biodisplay.pl?index=c000371" lastDateTimeVerified="2016-06-07">
+            <sourceEntry>Biographical Directory of the United States Congress: c000371</sourceEntry>
+          </source>
+          <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://isni.org/isni/0000000021812965" lastDateTimeVerified="2016-06-07">
+            <sourceEntry>International Standard Name Identitifier: 0000 0000 2181 2965</sourceEntry>
+          </source>
+          <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/n50038170" lastDateTimeVerified="2016-06-07">
+            <sourceEntry>Library of Congress Name Authority File: n50038170</sourceEntry>
+          </source>
+          <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/10580919" lastDateTimeVerified="2016-06-07">
+            <sourceEntry>National Archives and Records Administration Authority List: 10580919</sourceEntry>
+          </source>
+          <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/69058172" lastDateTimeVerified="2016-06-07">
+            <sourceEntry>Virtual International Authority File: 69058172</sourceEntry>
             </source>
-            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://id.loc.gov/authorities/names/[LOC ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
-                <sourceEntry>Library of Congress Name Authority File: [LOC ID]</sourceEntry>
-            </source>
-            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://catalog.archives.gov/id/[NARA ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
-                <sourceEntry>National Archives and Records Administration Authority List: [NARA ID]</sourceEntry>
-            </source>
-            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://viaf.org/viaf/[VIAF ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
-                <sourceEntry>Virtual International Authority File: [VIAF ID]</sourceEntry>
-            </source>
-            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikidata ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
-                <sourceEntry>Wikidata: [Wikidata ID]</sourceEntry>
-            </source>
-            <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="http://en.wikipedia.org/wiki/[Wikipedia ID]" xlink:type="simple" lastDateTimeVerified="[Current Date]">
-                <sourceEntry>Wikipedia: [Wikipedia ID]</sourceEntry>
-            </source>
+          <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://www.wikidata.org/wiki/Q239657" lastDateTimeVerified="2016-06-07">
+            <sourceEntry>Wikidata: Q239657</sourceEntry>
+          </source>
+          <source xlink:actuate="onRequest" xlink:show="new" xlink:type="simple" xlink:href="https://en.wikipedia.org/wiki/Shirley_Chisholm" lastDateTimeVerified="2016-06-07">
+            <sourceEntry>Wikipedia: Shirley_Chisholm</sourceEntry>
+          </source>
         </sources>
-        -->
+
   </control>
   <cpfDescription>
     <identity>
@@ -107,11 +110,8 @@
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
       <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
-        <part localType="marcfield:100$a"/>
-        <part localType="marcfield:100$b"/>
-        <part localType="marcfield:100$c"/>
-        <part localType="marcfield:100$q"/>
-        <part localType="marcfield:100$d"/>
+        <part localType="marcfield:100$a">Chisholm, Shirley, </part>
+        <part localType="marcfield:100$d">1924-2005</part>       
         <authorizedForm>lcnaf</authorizedForm>
         <!-- 
     <authorizedForm>VIAF</authorizedForm>
@@ -129,25 +129,32 @@
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
       <!-- Insert Variant Names from LCNAF/LCDRG -->
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Saint Hill, Shirley Anita, </part>
+        <part localType="marcfield:100$d">1924-2005</part>       
+        <authorizedForm>lcnaf</authorizedForm>
+      </nameEntry>
     </identity>
     <description>
       <!-- Exist Dates -->
-      <!--
-            <existDates>
-            
-            </existDates>
-            -->
+      <existDates>
+        <dateRange>
+          <fromDate standardDate="1924-11-20">November 20, 1924</fromDate>
+          <toDate standardDate="2005-01-01">January 1, 2005</toDate>
+        </dateRange>
+      </existDates>
       <!-- Gender/Gender Identity -->
       <localDescriptions localType="http://viaf.org/viaf/terms#gender">
         <localDescription localType="marcfield:375">
           <term vocabularySource="NixonTapesIndex">female</term>
           <descriptiveNote>
             <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">1.0</span>.</p>
+            <p>Gender identity term confirmed via Library of Congress authority record n50038170</p>
           </descriptiveNote>
         </localDescription>
         <descriptiveNote>
           <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
-          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis has confirmed the gender terms reflect how the person self-identified.</p>
         </descriptiveNote>
       </localDescriptions>
       <!-- Citizenship -->
@@ -178,7 +185,7 @@
           <term vocabularySource="uscensus:race"/>
         </localDescription>
         <descriptiveNote>
-          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
+          <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, &quot;We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors.&quot; Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
         </descriptiveNote>
       </localDescriptions>
       <!-- Ethnic/Cultural Heritage -->
@@ -187,7 +194,7 @@
           <term vocabularySource="lcsh"/>
         </localDescription>
         <descriptiveNote>
-          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
+          <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, &quot;We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors.&quot; Ethnic and cultural heritage have been described in an attempt to reflect how the person self-identified or identified their family or cultural background.</p>
         </descriptiveNote>
       </localDescriptions>
       <!-- Tribal Affiliations -->
