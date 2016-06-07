@@ -192,7 +192,7 @@
       </controlaccess>
       <controlaccess id="recordingLocation">
         <head>Location of Recording</head>
-        <geogname encodinganalog="518$p" normal="38.8975, -77.0374" source="GeoHack" role="location">Cabinet Room, White House, Washington, D.C.<geogname>
+        <geogname encodinganalog="518$p" normal="38.8975, -77.0374" source="GeoHack" role="location">Cabinet Room, White House, Washington, D.C.</geogname>
       </controlaccess>
       <controlaccess id="relatedTopics">
         <head>Related Topics</head>
