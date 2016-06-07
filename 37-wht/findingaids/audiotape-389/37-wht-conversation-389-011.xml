@@ -210,7 +210,7 @@
       </controlaccess>
       <controlaccess id="recordingLocation">
         <head>Location of Recording</head>
-        <geogname encodinganalog="518$p" normal="38.897567, -77.039147" source="GeoHack" role="location">Old Executive Office Building, Washington, D.C.<geogname>
+        <geogname encodinganalog="518$p" normal="38.897567, -77.039147" source="GeoHack" role="location">Old Executive Office Building, Washington, D.C.</geogname>
       </controlaccess>
       <controlaccess id="relatedTopics">
         <head>Related Topics</head>
