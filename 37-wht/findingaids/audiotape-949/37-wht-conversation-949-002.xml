@@ -44,16 +44,12 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
-    <!-- <revisiondesc>
+    <revisiondesc>
 			<change>
-				<date normal="" type="addition"></date>
-				<item></item>
+				<date normal="2016-06-08" type="addition">June 8, 2016</date>
+				<item>Added subject logging, accessrestrict statement</item>
 			</change>
-			<change>
-				<date normal="" type="edit"></date>
-				<item></item>
-			</change>
-		</revisiondesc> -->
+		</revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
@@ -122,7 +118,7 @@
       <p>This system was a secret taping system maintained by the Secret Service. Only President Nixon, H. R. Haldeman, and a few of the President's close personal assistants knew the system existed. One of its key features was that the recording equipment in the Oval Office, the EOB office, at Camp David, and on the telephones was sound-activated, operating without a conscious decision by the President to record a specific conversation. The taping system was tied to the Presidential Locator System, which was also operated by the Secret Service, and was designed to continue recording for fifteen to thirty seconds after the President left the room.</p>
       <p>On July 16, 1973, Special Assistant to the President Alexander Butterfield revealed the existence of the White House taping system during his testimony before the Senate Watergate Committee. Following this public revelation, White House Chief of Staff Alexander Haig ordered the removal of the entire presidential taping system.</p>
     </bioghist>
-    <!-- possibly import brief biogHist notes for participants -->
+
     <scopecontent>
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
@@ -244,26 +240,472 @@
     </altformavail>
     <dsc type="combined">
       <head>Conversation Subject Log</head>
-      <!-- Logging here -->
+
+<c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Alexander M. Haig, Jr. met with Dr. Walter R. Tkach and Dr. William M. Lukash.</unittitle></did> 
+
+  <!-- Begin 2007 Deed of Gift Segment -->
+  <c02 level="otherlevel" otherlevel="2007deedOfGift-open">
+    <did><unittitle type="segment-notation">Dead of Gift Segment</unittitle></did>
+    <processinfo type="2007deedOfGift">
+      <p>This portion of conversation was reviewed and released under the 2007 Deed of Gift.</p>
+    </processinfo>
+
+    <c03 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's schedule</unittitle></did>	  
+  		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Camp David</unittitle></did>
+  			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Tkach's recommendations</unittitle></did>
+  			</c05>
+  			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Return to Washington, DC</unittitle></did>
+  			</c05>
+  			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+  				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>X-ray</unittitle></did>
+  				</c06>
+  			</c05>
+  			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Swimming</unittitle></did>
+  				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's health</unittitle></did>
+  				</c06>
+  				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Fever</unittitle></did>
+  				</c06>
+  			</c05>
+  		</c04>
+  		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's health</unittitle></did>
+  			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Viral pneumonia</unittitle></did>
+  				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Recovery</unittitle></did>
+  					<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to bacterial pneumonia and influenza [?]</unittitle></did>
+  					</c07>
+  				</c06>
+  				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Symptoms</unittitle></did>
+  				</c06>
+  				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>X-ray</unittitle></did>
+  				</c06>
+  			</c05>
+  		</c04>
+  	</c03>
+    
+    <!-- Begin Personal-Returnable (PRMPA-G) Withdrawal -->
+    <c03 level="otherlevel" otherlevel="withdrawal" id="withdrawal-949-002-w001a">
+      <did>
+        <container type="timecode">##:##:## - ##:##:##</container>
+        <!-- <container type="timestamp">00:00:00 - 00:00:00</container> -->
+        <unitid type="withdrawnItemID">withdrawal-949-002-w001a</unitid>
+        <unittitle type="withdrawn">[Withdrawn Item No. 1A]</unittitle>
+        <physdesc label="Duration">
+          <extent type="withdrawalTime" unit="hhmmss">00:00:06</extent>
+        </physdesc>
+      </did>
+      
+      <accessrestrict type="PRMPA-G">
+        <p>Restricted as Personal-Returnable Material</p>
+      </accessrestrict>
+    </c03>
+    <!-- End Personal-Returnable (PRMPA-G) Withdrawal -->
+
+	<c03 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's schedule</unittitle></did>
+		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's health</unittitle></did>
+			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Viral pneumonia</unittitle></did>
+				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Symptoms</unittitle></did>
+				</c06>
+				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Duration</unittitle></did>
+				</c06>
+				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>X-ray</unittitle></did>
+				</c06>
+			</c05>
+		</c04>
+		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Work load</unittitle></did>
+			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Hospital</unittitle></did>
+			</c05>
+			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Papers</unittitle></did>
+			</c05>
+			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Economic policy</unittitle></did>
+			</c05>
+		</c04>
+	</c03>
+ 
+    <!-- Begin Deed of Gift - Privacy Withdrawal -->
+    <c03 level="otherlevel" otherlevel="withdrawal" id="withdrawal-949-002-wu001b">
+      <did>
+        <container type="timecode">##:##:## - ##:##:##</container>
+        <!-- <container type="timestamp">00:00:00 - 00:00:00</container> -->
+        <unitid type="withdrawnItemID">withdrawal-949-002-wu001b</unitid>
+        <unittitle type="withdrawn">[Withdrawn Item No. 1B]</unittitle>
+        <physdesc label="Duration">
+          <extent type="withdrawalTime" unit="hhmmss">00:00:14</extent>
+        </physdesc>
+      </did>
+      
+      <accessrestrict type="deedOfGift-privacy">
+        <p>Restricted as Deed of Gift - Privacy</p>
+      </accessrestrict>
+    </c03>
+    <!-- End Deed of Gift - Privacy Withdrawal -->
+
+	<c03 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's schedule</unittitle></did>
+		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's health</unittitle></did>
+			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Publicity</unittitle></did>
+			</c05>
+		</c04>
+		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Economic policy</unittitle></did>
+		</c04>
+		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's health</unittitle></did>
+			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Publicity</unittitle></did>
+				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>X-ray results</unittitle></did>
+				</c06>
+			</c05>
+		</c04>
+		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cancellations</unittitle></did>
+			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House staff, Congress members</unittitle></did>
+			</c05>
+			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Donald McI. Kendall</unittitle></did>
+			</c05>
+			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Excuse</unittitle></did>
+			</c05>
+		</c04>
+		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's health</unittitle></did>
+			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Viral pneumonia</unittitle></did>
+				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Stigma</unittitle></did>
+				</c06>
+			</c05>
+			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Publicity</unittitle></did>
+				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>X-ray results</unittitle></did>
+				</c06>
+			</c05>
+			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Symptoms</unittitle></did>
+				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Duration</unittitle></did>
+				</c06>
+			</c05>
+		</c04>
+	</c03>
+
+  </c02>
+  <!-- End 2007 Deed of Gift Segment -->
+
+
+	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's schedule</unittitle></did>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cancellations</unittitle></did>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's health</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Rest</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>X-ray</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Restrictions</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Announcement</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+				</c05>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Trip to Bethesda</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dr. [First name unknown] Jordan</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Telephone</unittitle></did>
+				</c05>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Bethesda Naval Hospital, Navy Clinic</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Press relations</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's desire for prognosis</unittitle></did>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Economic speech</unittitle></did>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Congressional relations</unittitle></did>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Walter Scheel</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Henry A. Kissinger</unittitle></did>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Naval clinic</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's visibility</unittitle></did>
+			</c04>
+		</c03>
+	</c02>
+
+
+  <!-- Begin 2007 Deed of Gift Segment -->
+  <c02 level="otherlevel" otherlevel="2007deedOfGift-open">
+    <did><unittitle type="segment-notation">Dead of Gift Segment</unittitle></did>
+    <processinfo type="2007deedOfGift">
+      <p>This portion of conversation was reviewed and released under the 2007 Deed of Gift.</p>
+    </processinfo>
+      
+    <c03 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's health</unittitle></did>
+      <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>X-ray results</unittitle></did></c04>
+      <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Prognosis</unittitle></did></c04>
+      <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Symptoms</unittitle></did></c04>
+      <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Previous night</unittitle></did>
+      	<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Sleeplessness</unittitle></did>
+      	</c05>
+      </c04>
+    </c03>
+
+  </c02>
+  <!-- End 2007 Deed of Gift Segment -->
+  
+
+	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's health</unittitle></did>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Tkach and Lukash's schedule</unittitle></did>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Announcement</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>X-ray</unittitle></did>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cancellations</unittitle></did>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Naval clinic</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Traffic</unittitle></did>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>X-ray machine</unittitle></did>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's schedule</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Departure for clinic</unittitle></did>
+			</c04>
+		</c03>
+	</c02>
+</c01>
+
+<c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Tkach and Lukash left at 2:29 pm.</unittitle></did>
+
+	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's health</unittitle></did>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Announcement</unittitle></did>
+		</c03>
+	</c02>
+
+	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Samuel J. Ervin, Jr., Lowell P. Weicker, Jr.</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>John N. Mitchell</unittitle></did>
+				</c05>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Haig's meeting with Ronald L. Ziegler, Bryce N. Harlow, and Melvin R. Laird</unittitle></did>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's conversation with Ervin</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Access to files</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee files</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin and Howard Baker</unittitle></did>
+				</c05>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's possible Ervin Committee appearance</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Subpoenas</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Witness schedule</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>H. R. (&quot;Bob&quot;) Haldeman</unittitle></did>
+					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Samuel Dash</unittitle></did>
+					</c06>
+				</c05>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's schedule</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ziegler</unittitle></did>
+				</c05>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Unknown men's access to records</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Notes compared to copies</unittitle></did>
+				</c05>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>John W. Dean, III</unittitle></did>
+				</c05>
+			</c04>
+		</c03>
+	</c02>
+</c01>
+
+<c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Henry A. Kissinger entered at 2:33 pm.</unittitle></did>
+
+	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Norman Mailer's telephone call to Kissinger</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>John N. Mitchell's testimony</unittitle></did>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin's telephone call to President</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Access to files</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dash</unittitle></did>
+				</c05>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Supreme Court</unittitle></did>
+				</c05>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mailer's telephone call to Kissinger</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Popular opinion</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Article arguments [?]</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Central Intelligence Agency [CIA]</unittitle></did>
+					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Conspiracy</unittitle></did>
+					</c06>
+					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Detente policies [?]</unittitle></did>
+					</c06>
+				</c05>
+			</c04>
+		</c03>
+	</c02>
+</c01>
+
+<c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Kissinger left at 2:36 pm.</unittitle></did>
+
+	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Harlow</unittitle></did>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin's telephone call to President</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's schedule</unittitle></did>
+			</c04>
+		</c03>
+	</c02>
+
+
+  <!-- Begin 2007 Deed of Gift Segment -->
+  <c02 level="otherlevel" otherlevel="2007deedOfGift-open">
+    <did><unittitle type="segment-notation">Dead of Gift Segment</unittitle></did>
+    <processinfo type="2007deedOfGift">
+      <p>This portion of conversation was reviewed and released under the 2007 Deed of Gift.</p>
+    </processinfo>
+    
+    
+  	<c03 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's health</unittitle></did>
+  		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Hospital stay</unittitle></did>
+  		</c04>
+  		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Viral pneumonia</unittitle></did>
+  		</c04>
+  		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Walter Reed Medical Center</unittitle></did>
+  			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Suite [?]</unittitle></did>
+  			</c05>
+  		</c04>
+  		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>X-ray</unittitle></did>
+  			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Utility</unittitle></did>
+  			</c05>
+  		</c04>
+  	</c03>
+
+  </c02>
+  <!-- End 2007 Deed of Gift Segment -->
+  
+
+	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Harlow</unittitle></did>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Leonard Garment</unittitle></did>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's conversation with Ervin [?]</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Objectivity</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Michael Gravel</unittitle></did>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Baker</unittitle></did>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ziegler, Gerald L. Warren, Harlow</unittitle></did>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's conversation with Ervin</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>William E. Timmons</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dash</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Unknown man from North Carolina</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin</unittitle></did>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dean's testimony</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell's testimony</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Haldeman's, Charles W. Colson's forthcoming testimony</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Colson's possible conversation with Haig or J. Fred Buzhardt, Jr.</unittitle></did>
+				</c05>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>John B. Connally's view</unittitle></did>
+				</c05>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Use of phrase &quot;Peace with Honor&quot;</unittitle></did>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's conversation with Ervin</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Access to files</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Baker</unittitle></did>
+				</c05>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin's views of President</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Haldeman's forthcoming testimony</unittitle></did>
+				</c05>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's September 15, 1972 conversation with Dean and Haldeman</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dean's activities</unittitle></did>
+			</c04>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Haldeman's forthcoming testimony</unittitle></did>
+			</c04>
+		</c03>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dean</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effects of others' testimony</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell</unittitle></did>
+				</c05>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Richard A. Moore</unittitle></did>
+				</c05>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>March 21, 1973 conversation with President</unittitle></did>
+					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell and Haldeman</unittitle></did>
+					</c06>
+				</c05>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>March 20, 1973 telephone conversation with President</unittitle></did>
+					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible use by White House</unittitle></did>
+					</c06>
+					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House staff involvement</unittitle></did>
+					</c06>
+				</c05>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>March 21, 1973 conversation with President</unittitle></did>
+					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House staff involvement</unittitle></did>
+						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>John D. Ehrlichman</unittitle></did>
+							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ellsberg break-in</unittitle></did>
+							</c08>
+						</c07>
+						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Haldeman</unittitle></did>
+							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>$350,000</unittitle></did>
+							</c08>
+						</c07>
+						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell</unittitle></did>
+						</c07>
+					</c06>
+				</c05>
+			</c04>
+		</c03>
+	</c02>
+
+	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's determination</unittitle></did>
+	</c02>
+</c01>
+
+<c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Haig left at an unknown time before 2:50 pm.</unittitle></did>
+
+</c01>
+
+
     </dsc>
     <descgrp type="admininfo">
       <head>Administrative Information</head>
       <accessrestrict>
+        
         <head>Access Restrictions</head>
-        <!-- if/then accessrestrict
-				
-				1) <accessrestrict encodinganalog="506" type="accessUnrestricted">
-					<p>This conversation has no restrictions and is fully open to the public.</p>
-				</accessrestrict>
-				
-				2) <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
-					<p>Portions of this conversation are closed to the public: _ withdrawal(s) for _.</p>
-				</accessrestrict>
-				
-				3) <accessrestrict encodinganalog="506" type="accessFullyRestricted">
-					<p>This conversation is closed to the public in its entirety: 1 withdrawal for _.</p>
-				</accessrestrict>
-				-->
+        <accessrestrict encodinganalog="506" type="accessRestrictedPartially">
+          <p>Portions of this conversation are closed to the public: 2 withdrawals for Personal Returnable and Deed of Gift - Privacy.</p>
+        </accessrestrict>
+        
         <p>Access is governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
         <p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov" xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
       </accessrestrict>
