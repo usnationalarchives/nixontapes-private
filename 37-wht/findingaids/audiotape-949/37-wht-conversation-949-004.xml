@@ -47,9 +47,15 @@
     <revisiondesc>
 			<change>
 				<date normal="2016-06-08" type="addition">June 8, 2016</date>
-				<item>Added subject logging, accessrestrict</item>
+				<item>Added subject logging</item>
+			  <item>Added accessrestrict</item>
 			</change>
-		</revisiondesc>
+      <change>
+        <date normal="2016-06-08" type="edit">June 8, 2016</date>
+        <item>Edited abstract</item>
+        <item>Edited scopecontent</item>
+      </change>
+    </revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
@@ -96,7 +102,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">949-004</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon, Walter Scheel, Henry A. Kissinger, and Heinz Weiber met in the Oval Office of the White House from 2:50 pm to 2:53 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-004 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon, Walter Scheel, Henry A. Kissinger, and Heinz Weiber met in the Oval Office of the White House from 2:50 pm to 2:53 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-004 of the White House Tapes. Topics of conversation included a White House photo opportunity.</abstract>
       <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -123,7 +129,7 @@
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On July 12, 1973, President Richard M. Nixon, Walter Scheel, Henry A. Kissinger, and Heinz Weiber met in the Oval Office of the White House from 2:50 pm to 2:53 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-004 of the White House Tapes.</p>
-        <p>Topics of conversation included ...</p>
+        <p>Topics of conversation included a White House photo opportunity.</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
         <scopecontent id="audioQuality">
