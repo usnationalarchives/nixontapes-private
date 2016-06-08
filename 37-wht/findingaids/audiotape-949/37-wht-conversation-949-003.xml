@@ -47,11 +47,14 @@
     <revisiondesc>
 			<change>
 				<date normal="2016-06-08" type="addition">June 8, 2016</date>
-				<item>Added subject logging, accessrestrict</item>
+				<item>Added subject logging</item>
+			  <item>Added accessrestrict</item>
+			  <item>Added persname tags to subject logging</item>
 			</change>
 			<change>
 				<date normal="2016-06-08" type="edit">June 8, 2016</date>
-				<item>Edited abstract and scopecontent</item>
+				<item>Edited abstract</item>
+			  <item>Edited scopecontent</item>
 			</change>
 		</revisiondesc>
   </eadheader>
@@ -237,7 +240,7 @@
     <dsc type="combined">
       <head>Conversation Subject Log</head>
 
-      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The President met with an unknown man</unittitle></did>
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The <persname>President</persname> met with an <persname>unknown man</persname>.</unittitle></did>
         
         <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's schedule</unittitle></did>
           <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Photograph session</unittitle></did>
