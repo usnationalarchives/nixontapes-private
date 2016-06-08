@@ -47,8 +47,15 @@
     <revisiondesc>
 			<change>
 				<date normal="2016-06-08" type="addition">June 8, 2016</date>
-				<item>Added subject logging, accessrestrict statement</item>
+				<item>Added subject logging</item>
+        <item>Added accessrestrict</item>
+			  <item>Added persname, corpname, geogname tags in subject logging</item>
 			</change>
+      <change>
+        <date normal="2016-06-08" type="edit">June 8, 2016</date>
+        <item>Edited abstract</item>
+        <item>Edited scopecontent</item>
+      </change>
 		</revisiondesc>
   </eadheader>
   <frontmatter>
@@ -97,7 +104,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">949-002</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon, Dr. Walter R. Tkach, William M. Lukash, Henry A. Kissinger, and Alexander M. Haig, Jr. met in the Oval Office of the White House at an unknown time between 2:15 pm and 2:50 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-002 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon, Dr. Walter R. Tkach, William M. Lukash, Henry A. Kissinger, and Alexander M. Haig, Jr. met in the Oval Office of the White House at an unknown time between 2:15 pm and 2:50 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-002 of the White House Tapes. Topics of conversation included President Nixon's health and medical treatment, the President's schedule, and  Watergate, particularly the Ervin Committee investigation, associated testimony, and the White House's response.</abstract>
       <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -124,7 +131,7 @@
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On July 12, 1973, President Richard M. Nixon, Dr. Walter R. Tkach, William M. Lukash, Henry A. Kissinger, and Alexander M. Haig, Jr. met in the Oval Office of the White House at an unknown time between 2:15 pm and 2:50 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-002 of the White House Tapes.</p>
-        <p>Topics of conversation included ...</p>
+        <p>Topics of conversation included President Nixon's health and medical treatment, the President's schedule, and  Watergate, particularly the Ervin Committee investigation, associated testimony, and the White House's response.</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
         <scopecontent id="audioQuality">
@@ -241,7 +248,7 @@
     <dsc type="combined">
       <head>Conversation Subject Log</head>
 
-<c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Alexander M. Haig, Jr. met with Dr. Walter R. Tkach and Dr. William M. Lukash.</unittitle></did> 
+<c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement"><persname>Alexander M. Haig, Jr.</persname> met with <persname>Dr. Walter R. Tkach</persname> and <persname>Dr. William M. Lukash</persname>.</unittitle></did> 
 
   <!-- Begin 2007 Deed of Gift Segment -->
   <c02 level="otherlevel" otherlevel="2007deedOfGift-open">
@@ -250,11 +257,11 @@
       <p>This portion of conversation was reviewed and released under the 2007 Deed of Gift.</p>
     </processinfo>
 
-    <c03 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's schedule</unittitle></did>	  
-  		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Camp David</unittitle></did>
+    <c03 level="otherlevel" otherlevel="main-topic"><did><unittitle><persname>President</persname>'s schedule</unittitle></did>	  
+  		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Camp David</geogname></unittitle></did>
   			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Tkach's recommendations</unittitle></did>
   			</c05>
-  			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Return to Washington, DC</unittitle></did>
+  			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Return to <geogname>Washington, DC</geogname></unittitle></did>
   			</c05>
   			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
   				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>X-ray</unittitle></did>
@@ -395,12 +402,12 @@
 			</c04>
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Trip to Bethesda</unittitle></did>
 			</c04>
-			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dr. [First name unknown] Jordan</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Dr. [First name unknown] Jordan</persname></unittitle></did>
 				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Telephone</unittitle></did>
 				</c05>
 			</c04>
 		</c03>
-		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Bethesda Naval Hospital, Navy Clinic</unittitle></did>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Bethesda Naval Hospital</corpname>, Navy Clinic</unittitle></did>
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Press relations</unittitle></did>
 			</c04>
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
@@ -412,8 +419,8 @@
 		</c03>
 		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Congressional relations</unittitle></did>
 		</c03>
-		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Walter Scheel</unittitle></did>
-			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Henry A. Kissinger</unittitle></did>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Walter Scheel</persname></unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Henry A. Kissinger</persname></unittitle></did>
 			</c04>
 		</c03>
 		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Naval clinic</unittitle></did>
@@ -478,21 +485,21 @@
 	</c02>
 
 	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
-		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee</unittitle></did>
-			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Samuel J. Ervin, Jr., Lowell P. Weicker, Jr.</unittitle></did>
-				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>John N. Mitchell</unittitle></did>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Ervin Committee</corpname></unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Samuel J. Ervin, Jr.</persname>, <persname>Lowell P. Weicker, Jr.</persname></unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John N. Mitchell</persname></unittitle></did>
 				</c05>
 			</c04>
 		</c03>
 		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
-			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Haig's meeting with Ronald L. Ziegler, Bryce N. Harlow, and Melvin R. Laird</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Haig's meeting with <persname>Ronald L. Ziegler</persname>, <persname>Bryce N. Harlow</persname>, and <persname>Melvin R. Laird</persname></unittitle></did>
 			</c04>
 		</c03>
 		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's conversation with Ervin</unittitle></did>
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Access to files</unittitle></did>
 			</c04>
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee files</unittitle></did>
-				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin and Howard Baker</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin and <persname>Howard Baker</persname></unittitle></did>
 				</c05>
 			</c04>
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's possible Ervin Committee appearance</unittitle></did>
@@ -500,8 +507,8 @@
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Subpoenas</unittitle></did>
 			</c04>
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Witness schedule</unittitle></did>
-				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>H. R. (&quot;Bob&quot;) Haldeman</unittitle></did>
-					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Samuel Dash</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>H. R. (&quot;Bob&quot;) Haldeman</persname></unittitle></did>
+					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Samuel Dash</persname></unittitle></did>
 					</c06>
 				</c05>
 			</c04>
@@ -512,7 +519,7 @@
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Unknown men's access to records</unittitle></did>
 				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Notes compared to copies</unittitle></did>
 				</c05>
-				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>John W. Dean, III</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John W. Dean, III</persname></unittitle></did>
 				</c05>
 			</c04>
 		</c03>
@@ -522,10 +529,10 @@
 <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Henry A. Kissinger entered at 2:33 pm.</unittitle></did>
 
 	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
-		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Norman Mailer's telephone call to Kissinger</unittitle></did>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Norman Mailer</persname>'s telephone call to Kissinger</unittitle></did>
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President</unittitle></did>
 			</c04>
-			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>John N. Mitchell's testimony</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John N. Mitchell</persname>'s testimony</unittitle></did>
 			</c04>
 		</c03>
 		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin's telephone call to President</unittitle></did>
@@ -578,7 +585,7 @@
   		</c04>
   		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Viral pneumonia</unittitle></did>
   		</c04>
-  		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Walter Reed Medical Center</unittitle></did>
+  		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Walter Reed Medical Center</corpname></unittitle></did>
   			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Suite [?]</unittitle></did>
   			</c05>
   		</c04>
@@ -595,12 +602,12 @@
 	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
 		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Harlow</unittitle></did>
 		</c03>
-		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Leonard Garment</unittitle></did>
+		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Leonard Garment</persname></unittitle></did>
 		</c03>
 		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's conversation with Ervin [?]</unittitle></did>
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Objectivity</unittitle></did>
 			</c04>
-			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Michael Gravel</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Michael Gravel</persname></unittitle></did>
 			</c04>
 		</c03>
 		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee</unittitle></did>
@@ -608,15 +615,15 @@
 			</c04>
 		</c03>
 		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
-			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ziegler, Gerald L. Warren, Harlow</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ziegler,<persname> Gerald L. Warren</persname>, Harlow</unittitle></did>
 			</c04>
 		</c03>
 		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's conversation with Ervin</unittitle></did>
-			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>William E. Timmons</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>William E. Timmons</persname></unittitle></did>
 			</c04>
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dash</unittitle></did>
 			</c04>
-			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Unknown man from North Carolina</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Unknown man from North Carolina</persname></unittitle></did>
 			</c04>
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin</unittitle></did>
 			</c04>
@@ -626,12 +633,12 @@
 			</c04>
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell's testimony</unittitle></did>
 			</c04>
-			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Haldeman's, Charles W. Colson's forthcoming testimony</unittitle></did>
-				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Colson's possible conversation with Haig or J. Fred Buzhardt, Jr.</unittitle></did>
+			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Haldeman's, <persname>Charles W. Colson</persname>'s forthcoming testimony</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Colson's possible conversation with Haig or <persname>J. Fred Buzhardt, Jr.</persname></unittitle></did>
 				</c05>
 			</c04>
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
-				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>John B. Connally's view</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John B. Connally</persname>'s view</unittitle></did>
 				</c05>
 			</c04>
 		</c03>
@@ -657,7 +664,7 @@
 			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effects of others' testimony</unittitle></did>
 				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell</unittitle></did>
 				</c05>
-				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Richard A. Moore</unittitle></did>
+				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Richard A. Moore</persname></unittitle></did>
 				</c05>
 				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>March 21, 1973 conversation with President</unittitle></did>
 					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell and Haldeman</unittitle></did>
@@ -671,8 +678,8 @@
 				</c05>
 				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>March 21, 1973 conversation with President</unittitle></did>
 					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House staff involvement</unittitle></did>
-						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>John D. Ehrlichman</unittitle></did>
-							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ellsberg break-in</unittitle></did>
+						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John D. Ehrlichman</persname></unittitle></did>
+							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Ellsberg</persname> break-in</unittitle></did>
 							</c08>
 						</c07>
 						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Haldeman</unittitle></did>
@@ -691,9 +698,7 @@
 	</c02>
 </c01>
 
-<c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Haig left at an unknown time before 2:50 pm.</unittitle></did>
-
-</c01>
+<c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Haig left at an unknown time before 2:50 pm.</unittitle></did></c01>
 
 
     </dsc>
