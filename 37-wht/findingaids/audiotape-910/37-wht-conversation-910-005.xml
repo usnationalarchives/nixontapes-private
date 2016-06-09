@@ -200,7 +200,7 @@
         </controlaccess>
         <controlaccess id="topicsDiscussed">
           <head>Topics</head>
-          <subject encodinganalog="650$a" rules="nara-lcdrg" source="us-nara" authfilenumber="https://catalog.archives.gov/id/10641484">Presidential schedules</subject>
+          <subject encodinganalog="690$a" rules="nara-lcdrg" source="us-nara" authfilenumber="https://catalog.archives.gov/id/10641484">Presidential schedules</subject>
         </controlaccess>
       </controlaccess>
     </controlaccess>
