@@ -44,16 +44,20 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
-    <!-- <revisiondesc>
+    <revisiondesc>
 			<change>
-				<date normal="" type="addition"></date>
-				<item></item>
+				<date normal="2016-06-10" type="addition">June 10, 2016</date>
+				<item>Added subject logging</item>
+			  <item>Added tags for persname, corpname, geogname to logging</item>
+			  <item>Added accessrestrict</item>
+			  <item>Added controlaccess terms</item>
 			</change>
 			<change>
-				<date normal="" type="edit"></date>
-				<item></item>
+			  <date normal="2016-06-10" type="edit">June 10, 2016</date>
+				<item>Edited abstract</item>
+			  <item>Edited scopecontent</item>
 			</change>
-		</revisiondesc> -->
+		</revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
@@ -103,7 +107,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">949-009</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon, Richard E. Bland, W. Howard McClennan, Howard D. Tipton, Dana G. Mead, Walter D. Scott, and White House photographer met in the Oval Office of the White House from 4:25 pm to 4:30 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-009 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon, Richard E. Bland, W. Howard McClennan, Howard D. Tipton, Dana G. Mead, Walter D. Scott, and White House photographer met in the Oval Office of the White House from 4:25 pm to 4:30 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-009 of the White House Tapes. Topics of conversation included the 1973 <title render="italic">America Burning</title> report; forest fires, fire prevention, fire fighting, and volunteer fire fighters; football; and a photograph opportunity.</abstract>
       <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -130,7 +134,7 @@
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On July 12, 1973, President Richard M. Nixon, Richard E. Bland, W. Howard McClennan, Howard D. Tipton, Dana G. Mead, Walter D. Scott, and White House photographer met in the Oval Office of the White House from 4:25 pm to 4:30 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-009 of the White House Tapes.</p>
-        <p>Topics of conversation included ...</p>
+        <p>Topics of conversation included the 1973 <title render="italic">America Burning</title> report; forest fires, fire prevention, fire fighting, and volunteer fire fighters; football; and a photograph opportunity.</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
         <scopecontent id="audioQuality">
@@ -223,7 +227,8 @@
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002734" normal="HDT">Tipton, Howard D.</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
-          <head>Places</head>
+          <head>Places and Governments</head>
+          <geogname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79041717">California</geogname>
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
@@ -232,10 +237,16 @@
         </controlaccess>
         <controlaccess id="topicsDiscussed">
           <head>Topics</head>
+          <title render="italic" xlink:href="http://www.worldcat.org/oclc/678375">America Burning: the Report of the National Commission on Fire Prevention and Control</title>
+          <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85048486">Fire exctinction</subject>
+          <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85048509">Fire prevention</subject>
+          <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85050405">Football</subject>
+          <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85050582">Forest fires</subject>
+          <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh2002002811">Volunteer fire fighters</subject>
         </controlaccess>
       </controlaccess>
     </controlaccess>
-    <!-- Use separated materials and related materials clips here to enter in information. -->
+
     <!-- Indicate alternative formats / digitized audio below -->
     <altformavail type="audio">
       <head>Digitized Audio</head>
@@ -248,26 +259,140 @@
     </altformavail>
     <dsc type="combined">
       <head>Conversation Subject Log</head>
-      <!-- Logging here -->
+
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The <persname>President</persname> met with <persname>Richard E. Bland</persname>, <persname>W. Howard McClennan</persname>, <persname>Howard D. Tipton</persname>, <persname>Dana G. Mead</persname>, and <persname>Walter D. Scott</persname>.  The <corpname>White House photographer</corpname> was present at the beginning of the meeting.</unittitle></did>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Introductions</unittitle></did>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Arrangements for photograph</unittitle></did>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Presentation of report entitled <title render="italic">America Burning</title> to President</unittitle></did>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Volunteer firemen</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>State College, Pennsylvania</corpname></unittitle></did>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Chancellor of <corpname>Pennsylvania State University</corpname></unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cancer</unittitle></did>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Volunteer firemen</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Fires in <geogname>California</geogname></unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Rolling Hills, California</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's friend's house</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Report</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Forest fires</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Legislation</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Program cost</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Fire prevention compared to fire suppression</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Work with <persname>Richard Dale</persname> [?]</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effectiveness</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Photographs</unittitle></did>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Presentation of gifts by President</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cuff links</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Girlfriend, secretary, wife</unittitle></did>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Weather</unittitle></did>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Forest fires</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's travels</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Silverado, California</geogname></unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cigarettes</unittitle></did>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Fireplaces</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Report</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Safety</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's use</unittitle></did>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Football</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Unknown man</persname>'s experience</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Southern California</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Redlands University</corpname></unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cornerback [?]</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Jack F. Kemp</persname></unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's experience at <corpname>Whittier College</corpname></unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Redlands University</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Ben Sheehan</persname> [?]</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Coach</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Thanksgiving Day game</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>University of Southern California-Notre Dame</corpname> football game</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Knute Rockney</persname> [?]</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Notre Dame</corpname>'s 23-game winning streak</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Johnny Baker</persname>'s field goal</unittitle></did>
+            </c04>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Redlands University</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Number of students</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to Whittier</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Unknown man's experience</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Weight</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cornerback [?]</unittitle></did>
+            </c04>
+          </c03>
+        </c02>
+      </c01>
+      
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Bland, et al., left at 4:30 pm.</unittitle></did>
+        
+      </c01>
+      
+
     </dsc>
     <descgrp type="admininfo">
       <head>Administrative Information</head>
       <accessrestrict>
         <head>Access Restrictions</head>
-        <!-- if/then accessrestrict
-				
-				1) <accessrestrict encodinganalog="506" type="accessUnrestricted">
+        <accessrestrict encodinganalog="506" type="accessUnrestricted">
 					<p>This conversation has no restrictions and is fully open to the public.</p>
 				</accessrestrict>
-				
-				2) <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
-					<p>Portions of this conversation are closed to the public: _ withdrawal(s) for _.</p>
-				</accessrestrict>
-				
-				3) <accessrestrict encodinganalog="506" type="accessFullyRestricted">
-					<p>This conversation is closed to the public in its entirety: 1 withdrawal for _.</p>
-				</accessrestrict>
-				-->
         <p>Access is governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
         <p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov" xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
       </accessrestrict>
