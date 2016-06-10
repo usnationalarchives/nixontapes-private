@@ -44,16 +44,21 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
-    <!-- <revisiondesc>
+    <revisiondesc>
 			<change>
-				<date normal="" type="addition"></date>
-				<item></item>
+				<date normal="2016-06-10" type="addition">June 10, 2016</date>
+				<item>Added subject logging</item>
+			  <item>Added controlaccess terms</item>
+			  <item>Added accessrestrict</item>
+			  <item>Added tagging for persname, corpname, geogname in subject logging</item>
 			</change>
 			<change>
-				<date normal="" type="edit"></date>
-				<item></item>
+				<date normal="2016-06-10" type="edit">June 10, 2016</date>
+				<item>Edited abstract</item>
+			  <item>Edited scopecontent</item>
+			  
 			</change>
-		</revisiondesc> -->
+		</revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
@@ -98,7 +103,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">949-007</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon and William E. Timmons met in the Oval Office of the White House from 4:01 pm to 4:22 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-007 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon and William E. Timmons met in the Oval Office of the White House from 4:01 pm to 4:22 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-007 of the White House Tapes. Topics of conversation included Watergate, the investigation by the Senate Select Committe on Presidential Campaign Activitiees (also known as the Ervin Committee), testimony, and the White House response; Congressional relations; and President Nixon's schedule.</abstract>
       <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -125,7 +130,7 @@
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On July 12, 1973, President Richard M. Nixon and William E. Timmons met in the Oval Office of the White House from 4:01 pm to 4:22 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-007 of the White House Tapes.</p>
-        <p>Topics of conversation included ...</p>
+        <p>Topics of conversation included Watergate, the investigation by the Senate Select Committe on Presidential Campaign Activitiees (also known as the Ervin Committee), testimony, and the White House response; Congressional relations; and President Nixon's schedule.</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
         <scopecontent id="audioQuality">
@@ -209,19 +214,17 @@
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
           <head>People</head>
-          <!-- Remove xmlns -->
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002732" normal="WET">Timmons, William E.</persname>
-        </controlaccess>
-        <controlaccess id="placesDiscussed">
-          <head>Places</head>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002795" normal="Unk">[Unknown person(s)]</persname>
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
-          <!-- Remove xmlns -->
+          <corpname encodinganalog="650$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79006865">United States. Congress</corpname>
+          <corpname encodinganalog="650$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80060906">United States. Congress. Senate. Select Committee on Presidential Campaign Activities</corpname>
         </controlaccess>
         <controlaccess id="topicsDiscussed">
           <head>Topics</head>
+          <subject encodinganalog="690$a" rules="nara-lcdrg" source="us-nara" authfilenumber="https://catalog.archives.gov/id/10641484">Presidential schedules</subject>
+          <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85145735">Watergate Affair, 1972-1974</subject>
         </controlaccess>
       </controlaccess>
     </controlaccess>
@@ -238,26 +241,271 @@
     </altformavail>
     <dsc type="combined">
       <head>Conversation Subject Log</head>
-      <!-- Logging here -->
+
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The <persname>President</persname> met with <persname>William Timmons</persname>.</unittitle></did>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Howard H. Baker, Jr.</persname></unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's schedule</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John W. Dean, III</persname></unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Questioning of <persname>John N. Mitchell</persname></unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's conversation with <persname>Samuel J. Ervin, Jr.</persname></unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timmons's conversation with<persname> William E. Brock, III</persname></unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mail</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible conversation with <persname>Pat Wilson</persname></unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>George H. W. Bush</persname></unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Activities</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Baker's questioning</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Baker</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timmons</unittitle></did>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Brock</unittitle></did>
+                </c06>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible attacks</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Tennessee</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Ervin Committee</corpname> members</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Edward J. Gurney</persname></unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Joseph M. Montoya</persname></unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Intelligence</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Baker</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Baker</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's campaigning</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Brock</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Tennessee mail</unittitle></did>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Contacts with White House staff</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee hearings</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dean's testimony</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell's testimony</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Richard A. Moore</persname>'s testimony</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dean</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Access to files</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timmons</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Samuel Dash</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Moore's testimony</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Baker</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timmons's possible actions</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timmons's conversation with Brock</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Baker's questioning of Mitchell</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible attacks by Senators</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Joseph McCarthy</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's meeting with Republican Senators, July 11, 1973</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Age</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Voting record</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Access to files</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Senate</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Support for Ervin Committee</unittitle></did>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Sensitive information in Dean documents</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Leaks by Ervin</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Sensitive information in Dean documents</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Age</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Quote on Senate leaks</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Access to files</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dash</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>H. R. (&quot;Bob&quot;) Haldeman</persname>, <persname>John D. Ehrlichman</persname>, <persname>Charles W. Colson</persname></unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Uninhibited conversation</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>1972 campaign</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>George S. McGovern</persname></unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Baker</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Activities</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Presidential ambitions</unittitle></did>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Adulation of &quot;Georgetown set&quot;</unittitle></did>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Everett M. Dirksen</persname></unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Gurney</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Fred D. Thompson</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dean's testimony</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Meeting with Gurney regarding <corpname>International Telephone and Telegraph</corpname> [ITT]</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Congressional relations</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Senators</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Edward W. Brooke</persname></unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>William B. Saxbe</persname></unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Charles McC. Mathias, Jr.</persname></unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Invitations</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>House</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effect of 1972 elections on composition</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Vetoes</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Melvin R. Laird</persname>, <persname>Bryce N. Harlow</persname></unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Policy committee members</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Benjamin B. Blackburn, III</persname>'s telephone call to Timmons</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Daniel H. Kuykendall</persname></unittitle></did>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Georgia</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Previous meeting with Senators, July 11, 1972</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Carl T. Curtis</persname></unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Selection criteria</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Barry M. Goldwater</persname>, <persname>Paul J. Fannin</persname></unittitle></did>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Roman L. Hruska</persname>, Curtis</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Senators</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Previous meeting with Senators, July 11, 1972</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John G. Tower</persname></unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Fannin</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Blackburn, Kuykendall</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>East Room</geogname></unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Democrat Senators</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John C. Stennis</persname></unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Health</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>James O. Eastland</persname>, <persname>John L. McClellan</persname>, <persname>Sam Nunn</persname>, <persname>James B. Allen</persname>, <persname>Bennett Johnston</persname>, <persname>Russell B. Long</persname>, <persname>Harry F. Byrd, Jr.</persname></unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Gale W. McGee</persname></unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Visit to <corpname>People's Republic of China</corpname> [PRC]</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Warren Magnuson</persname></unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Visit to PRC</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>David K. E. Bruce</persname>'s views</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Henry M. (&quot;Scoop&quot;) Jackson</persname></unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Presidential aspirations</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Patriotism</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's schedule</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Meetings with Congress members</unittitle></did>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Alexander M. Haig, Jr.</persname>'s view</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timmons's conversation with <persname>John B. Anderson</persname></unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Public reaction to issue</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Samuel L. Devine</persname></unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dean</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee testimony</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Appearance</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Glasses</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Request for <persname>Henry A. Kissinger</persname></unittitle></did>
+        </c02>
+      </c01>
+        
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Timmons left at 4:22 pm.</unittitle></did></c01>
+
     </dsc>
     <descgrp type="admininfo">
       <head>Administrative Information</head>
       <accessrestrict>
         <head>Access Restrictions</head>
-        <!-- if/then accessrestrict
-				
-				1) <accessrestrict encodinganalog="506" type="accessUnrestricted">
+        <accessrestrict encodinganalog="506" type="accessUnrestricted">
 					<p>This conversation has no restrictions and is fully open to the public.</p>
 				</accessrestrict>
-				
-				2) <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
-					<p>Portions of this conversation are closed to the public: _ withdrawal(s) for _.</p>
-				</accessrestrict>
-				
-				3) <accessrestrict encodinganalog="506" type="accessFullyRestricted">
-					<p>This conversation is closed to the public in its entirety: 1 withdrawal for _.</p>
-				</accessrestrict>
-				-->
         <p>Access is governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
         <p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov" xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
       </accessrestrict>
