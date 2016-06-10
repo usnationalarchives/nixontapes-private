@@ -45,17 +45,28 @@
         </bibref> (DACS).</descrules>
     </profiledesc>
     <revisiondesc>
-			<change>
-				<date normal="2016-06-08" type="addition">June 8, 2016</date>
-				<item>Added subject logging</item>
-			  <item>Added accessrestrict</item>
-			</change>
-			<change>
-				<date normal="2016-06-08" type="edit">June 8, 2016</date>
-				<item>Edited abstract</item>
-			  <item>Edited scopecontent</item>
-			</change>
-		</revisiondesc>
+		<change>
+			<date normal="2016-06-08" type="addition">June 8, 2016</date>
+			<item>Added subject logging</item>
+		  <item>Added accessrestrict</item>
+		</change>
+		<change>
+			<date normal="2016-06-08" type="edit">June 8, 2016</date>
+			<item>Edited abstract</item>
+		  <item>Edited scopecontent</item>
+		</change>
+    	<change>
+    		<date normal="2016-06-09" type="edit">June 9, 2016</date>
+    		<item>Edited scopecontent</item>
+    	</change>
+    	<change>
+    		<date normal="2016-06-10" type="addition">June 10, 2016</date>
+    	</change>
+    	<change>
+    		<date normal="2016-06-10" type="edit">June 10, 2016</date>
+    		<item>Edited scopecontent</item>
+    	</change>
+    </revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
@@ -101,7 +112,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">949-005</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon, Walter Scheel, and Henry A. Kissinger met in the Oval Office of the White House from 2:56 pm to 3:25 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-005 of the White House Tapes. Topics of conversation included relations between the United States and European countries, such as Germany, France, and the Union of Soviet Socialist Republics (USSR or Soviet Union); the &quot;Year of Europe&quot;, North Atlantic Treaty Organization (NATO); differing political systems and economic approaches; and nuclear policy.</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon, Walter Scheel, and Henry A. Kissinger met in the Oval Office of the White House from 2:56 pm to 3:25 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-005 of the White House Tapes. Topics of conversation included relations between the United States and European countries, such as West Germany, East Germany, France, and the Union of Soviet Socialist Republics (USSR or Soviet Union); the &quot;Year of Europe&quot;, North Atlantic Treaty Organization (NATO); differing political systems and economic approaches; and nuclear policy.</abstract>
       <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -128,7 +139,7 @@
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On July 12, 1973, President Richard M. Nixon, Walter Scheel, and Henry A. Kissinger met in the Oval Office of the White House from 2:56 pm to 3:25 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-005 of the White House Tapes.</p>
-        <p>Topics of conversation included relations between the United States and European countries, such as Germany, France, and the Union of Soviet Socialist Republics (USSR or Soviet Union); the &quot;Year of Europe&quot;, North Atlantic Treaty Organization (NATO); differing political systems and economic approaches; and nuclear policy.</p>
+        <p>Topics of conversation included relations between the United States and European countries, such as West Germany, East Germany, France, and the Union of Soviet Socialist Republics (USSR or Soviet Union); the &quot;Year of Europe&quot;, North Atlantic Treaty Organization (NATO); differing political systems and economic approaches; and nuclear policy.</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
         <scopecontent id="audioQuality">
@@ -217,13 +228,21 @@
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002408" normal="WS">Scheel, Walter</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
-          <head>Places</head>
+			<head>Places and Governments</head>
+			<corpname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79006404">France</corpname>
+			<corpname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80125938">Germany (East)</corpname>
+			<corpname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80125937">Germany (West)</corpname>
+			<corpname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80126312">Soviet Union</corpname>
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
-          <head>Organizations</head>
+          	<head>Organizations</head>
+        	<corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79006743">North Atlantic Treaty Organization</corpname>
         </controlaccess>
         <controlaccess id="topicsDiscussed">
           <head>Topics</head>
+        	<subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85029298">Comparative government</subject>
+        	<subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85040837">Economic policy</subject>
+        	<subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85092943">Nuclear arms control</subject>
         </controlaccess>
       </controlaccess>
     </controlaccess>
