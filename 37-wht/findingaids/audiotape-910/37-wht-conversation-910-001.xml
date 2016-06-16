@@ -221,7 +221,7 @@
         </controlaccess>
         
         <controlaccess id="placesDiscussed">
-          <head>Places</head>
+          <head>Places and Governments</head>
           <geogname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79138970">Louisiana</geogname>
           <geogname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79032874">Vietnam (Democratic Republic)</geogname>
           <geogname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n96003700">Vietnam (Republic)</geogname>

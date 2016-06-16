@@ -209,7 +209,7 @@
           <!-- Remove xmlns -->
         </controlaccess>
         <controlaccess id="placesDiscussed">
-          <head>Places</head>
+          <head>Places and Governments</head>
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
