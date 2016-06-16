@@ -44,16 +44,21 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
-    <!-- <revisiondesc>
+    <revisiondesc>
 			<change>
-				<date normal="" type="addition"></date>
-				<item></item>
+				<date normal="2016-06-16" type="addition">June 16, 2016</date>
+			  <item>Added accessrestrict</item>
+				<item>Added subject logging</item>
+			  <item>Added accessrestrict</item>
+			  <item>Added topical, place, person, and organization subject headings</item>
+			  <item>Added tags for persname, corpname, geogname, and title in subject logging</item>
 			</change>
 			<change>
-				<date normal="" type="edit"></date>
-				<item></item>
+				<date normal="2016-06-16" type="edit">June 16, 2016</date>
+			  <item>Edited abstract</item>
+				<item>Edited scopecontent</item>
 			</change>
-		</revisiondesc> -->
+		</revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
@@ -100,7 +105,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">949-011</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, Rose Mary Woods, unknown person(s), President Richard M. Nixon, and Henry A. Kissinger met in the Oval Office of the White House from 4:48 pm to 5:09 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-011 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, Rose Mary Woods, unknown person(s), President Richard M. Nixon, and Henry A. Kissinger met in the Oval Office of the White House from 4:48 pm to 5:09 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-011 of the White House Tapes. Topics of conversation included Watergate, the investigation by the Senate Select Committe on Presidential Campaign Activitiees (also known as the Ervin Committee), and testimony; United States foreign relations and state dinners, including the Year of Europe and countries such as Germany, Great Britain, Belgium, the Netherlands, and Italy; and meetings with Leonid Brezhnev on the Agreement on the Prevention of Nuclear War; and President Nixon's health.</abstract>
       <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -127,7 +132,7 @@
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On July 12, 1973, Rose Mary Woods, unknown person(s), President Richard M. Nixon, and Henry A. Kissinger met in the Oval Office of the White House from 4:48 pm to 5:09 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-011 of the White House Tapes.</p>
-        <p>Topics of conversation included ...</p>
+        <p>Topics of conversation included Watergate, the investigation by the Senate Select Committe on Presidential Campaign Activitiees (also known as the Ervin Committee), and testimony; United States foreign relations and state dinners, including the Year of Europe and countries such as Germany, Great Britain, Belgium, the Netherlands, and Italy; and meetings with Leonid Brezhnev on the Agreement on the Prevention of Nuclear War; and President Nixon's health.</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
         <scopecontent id="audioQuality">
@@ -161,7 +166,6 @@
           <note id="digitalRemastering" label="Digital Remastering Project">
             <p>The White House Tapes are currently undergoing preservation remastering, from which digital derivatives will be made and released to the public as appopriate.</p>
           </note>
-          <p/>
         </arrangement>
       </arrangement>
     </scopecontent>
@@ -211,7 +215,7 @@
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
           <head>People</head>
-          <!-- Remove xmlns -->
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003266" normal="LIB">Brezhnev, Leonid I.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001494" normal="HAK">Kissinger, Henry A.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002987" normal="RMW">Woods, Rose Mary</persname>
@@ -219,13 +223,21 @@
         </controlaccess>
         <controlaccess id="placesDiscussed">
           <head>Places and Governments</head>
+          <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80126041">Belgium</corpname>
+          <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79006404">France</corpname>
+          <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80125937">Germany (West)</corpname>
+          <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79023147">Great Britain</corpname>
+          <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79021783">Italy</corpname>
+          <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n78085423">Netherlands</corpname>
+          <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80126312">Soviet Union</corpname>          
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
-          <!-- Remove xmlns -->
+          <corpname encodinganalog="650$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80060906">United States. Congress. Senate. Select Committee on Presidential Campaign Activities</corpname>
         </controlaccess>
         <controlaccess id="topicsDiscussed">
           <head>Topics</head>
+          <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85140102">United States -- Foreign relations -- 1969-1974</subject>
         </controlaccess>
       </controlaccess>
     </controlaccess>
@@ -242,26 +254,403 @@
     </altformavail>
     <dsc type="combined">
       <head>Conversation Subject Log</head>
-      <!-- Logging here -->
+
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement"><persname>Rose Mary Woods</persname> met with an <persname>unknown person</persname>.</unittitle></did>
+      
+      	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle><persname>President</persname>'s location</unittitle></did>
+      	</c02>
+      </c01>
+      
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The unknown person left at an unknown time before 5:09 pm.</unittitle></did></c01>
+      
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The President entered at an unknown time after 4:48 pm.</unittitle></did>
+      
+        <!-- Begin 2007 Deed of Gift Segment -->
+        <c02 level="otherlevel" otherlevel="2007deedOfGift-open">
+          <did><unittitle type="segment-notation">Deed of Gift Segment</unittitle></did>
+          <accessrestrict>
+            <legalstatus type="deedOfGift2007-released">Released per 2007 Deed of Gift</legalstatus>
+          </accessrestrict>
+      
+            <c03 level="otherlevel" otherlevel="main-topic"><did><unittitle><persname>Henry A. Kissinger</persname>'s location</unittitle></did>
+            </c03>
+            
+            <c03 level="otherlevel" otherlevel="main-topic"><did><unittitle>Gifts</unittitle></did>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Watch</unittitle></did>
+                <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Julie Nixon Eisenhower</persname></unittitle></did>
+                </c05>
+              </c04>
+            </c03>
+            
+            <c03 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Kissinger entered at 4:50 pm.</unittitle></did>
+            
+              <c04 level="otherlevel" otherlevel="main-topic"><did><unittitle>Gifts</unittitle></did>
+                <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Thelma C. (&quot;Pat&quot;) (Ryan) Nixon</persname></unittitle></did>
+                </c05>
+              </c04>
+
+              <!-- Begin Personal-Returnable (PRMPA-G) Withdrawal -->
+              <c04 level="otherlevel" otherlevel="withdrawal" id="withdrawal-949-011-w001">
+                <did>
+                  <container type="timecode">##:##:## - ##:##:##</container>
+                  <!-- <container type="timestamp">00:00:00 - 00:00:00</container> -->
+                  <unitid type="withdrawnItemID">withdrawal-949-011-w001</unitid>
+                  <unittitle type="withdrawn">[Withdrawn Item No. 1]</unittitle>
+                  <physdesc label="Duration">
+                    <extent type="withdrawalTime" unit="hhmmss">00:00:20</extent>
+                  </physdesc>
+                </did>
+                
+                <accessrestrict type="PRMPA-G">
+                  <p>Restricted as Personal-Returnable Material</p>
+                </accessrestrict>
+              </c04>
+              <!-- End Personal-Returnable (PRMPA-G) Withdrawal -->
+
+            	<c04 level="otherlevel" otherlevel="main-topic"><did><unittitle>Identity of gift giver</unittitle></did></c04>
+            
+            	<c04 level="otherlevel" otherlevel="main-topic"><did><unittitle>Items</unittitle></did>
+            		<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Box</unittitle></did>
+            		</c05>
+            		<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Manolo Sanchez</persname></unittitle></did>
+            		</c05>
+            	</c04>
+        
+          </c03>
+        </c02>
+        <!-- End 2007 Deed of Gift Segment -->
+      </c01>
+      
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Woods left at an unknown time before 5:09 pm.</unittitle></did>
+      
+      	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Kissinger's conversation with <persname>Norman Mailer</persname>, July 12, 1973</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><title render="italic">Life</title> magazine</unittitle></did>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Lunch</unittitle></did>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John N. Mitchell</persname>'s <corpname>Ervin Committee</corpname> testimony</unittitle></did>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Popular opinion of President</unittitle></did>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Access to files</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee</unittitle></did>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Richard A. Moore</persname>'s Ervin Committee testimony</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's knowledge</unittitle></did>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Questioning</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>International Telephone and Telegraph</corpname> [ITT]</unittitle></did>
+      				</c05>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>March 20, 1972 meeting with President</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's knowledge</unittitle></did>
+      				</c05>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Subsequent meeting with <persname>John W. Dean, III</persname></unittitle></did>
+      					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's knowledge</unittitle></did>
+      					</c06>
+      				</c05>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dean</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Conversations with President</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House staff involvement</unittitle></did>
+      					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell, <persname>John D. Ehrlichman</persname>, <persname>H. R. (&quot;Bob&quot;) Haldeman</persname></unittitle></did>
+      					</c06>
+      				</c05>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Kissinger's conversation with Mailer, July 12, 1973</unittitle></did>
+      		</c03>
+      	</c02>
+    
+        <!-- Begin 2007 Deed of Gift Segment -->
+        <c02 level="otherlevel" otherlevel="2007deedOfGift-open">
+          <did><unittitle type="segment-notation">Deed of Gift Segment</unittitle></did>
+          <accessrestrict>
+            <legalstatus type="deedOfGift2007-released">Released per 2007 Deed of Gift</legalstatus>
+          </accessrestrict>         
+      
+        	<c03 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's schedule</unittitle></did>
+        		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's health</unittitle></did>
+        			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Viral pneumonia</unittitle></did>
+        			</c05>
+        			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Medical test</unittitle></did>
+        			</c05>
+        			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Sleeplessness</unittitle></did>
+        			</c05>
+        			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Public knowledge</unittitle></did>
+        			</c05>
+        			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Rest</unittitle></did>
+        			</c05>
+        		</c04>
+        	</c03>
+          
+        </c02>
+        <!-- End 2007 Deed of Gift Segment -->
+      
+      
+      	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Kissinger's conversation with Mailer July 12, 1973</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to <persname>[Thomas] Woodrow Wilson</persname></unittitle></did>
+      				</c05>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Kissinger's discussions with President</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Youth</unittitle></did>
+      				</c05>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Article</unittitle></did>
+      				</c05>
+      			</c04>
+      		</c03>
+      	</c02>
+      
+      	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle><title render="italic" type="initiative">Year of Europe</title></unittitle></did>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's previous meeting with <persname>Walter Scheel</persname></unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Konrad Adenauer</persname></unittitle></did>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>France</corpname></unittitle></did>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Security, economy, political consultation</unittitle></did>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Germany</corpname>, <corpname>Great Britain</corpname>'s support</unittitle></did>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Belgium</corpname></unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Kissinger's consultations</unittitle></did>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>The Netherlands</corpname></unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Support</unittitle></did>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Italy</corpname></unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Enthusiasm</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effect</unittitle></did>
+      				</c05>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Meetings</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Brussels</geogname>, <geogname>Paris</geogname></unittitle></did>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effect on Watergate</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Congressional relations</unittitle></did>
+      			</c04>
+      		</c03>
+      	</c02>
+      
+      	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's conversation with <persname>Samuel J. Ervin, Jr.</persname></unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin's goal</unittitle></did>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin's letter regarding access to files</unittitle></did>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to <persname>Anatoliy F. Dobrynin</persname></unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Tone</unittitle></did>
+      				</c05>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Access to files</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Samuel Dash</persname>'s review</unittitle></did>
+      				</c05>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Leaks</unittitle></did>
+      				</c05>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's schedule</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin</unittitle></did>
+      				</c05>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Howard H. Baker, Jr.</persname></unittitle></did>
+      				</c05>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee's witness schedule</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Haldeman, Ehrlichman</unittitle></did>
+      				</c05>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Access to files</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin's leaks</unittitle></did>
+      				</c05>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Press relations</unittitle></did>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Access to files</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible compromise</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Melvin R. Laird</persname>, <persname>Bryce N. Harlow</persname></unittitle></did>
+      				</c05>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Crisis compared to <corpname>Cambodia</corpname>, Vietnam War</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Alexander M. Haig, Jr.</persname></unittitle></did>
+      				</c05>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's conversation with Ervin</unittitle></did>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Baker</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Questioning of Dean and Mitchell</unittitle></did>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Access to White House, President</unittitle></did>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell's Ervin Committee testimony</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to Dean, <persname>Jeb Stuart Magruder</persname></unittitle></did>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's knowledge</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Testimony of Mitchell, Moore, Haldeman, Ehrlichman, <persname>Charles W. Colson</persname></unittitle></did>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Gordon C. Strachan's possible testimony</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Haldeman</unittitle></did>
+      				</c05>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Kissinger's assessment</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Relevancy</unittitle></did>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Prevalence</unittitle></did>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's knowledge</unittitle></did>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Firing of Haldeman and Ehrlichman</unittitle></did>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's accomplishments</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Contrasted with President's opponents</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Treason</unittitle></did>
+      				</c05>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Theft of Pentagon Papers</unittitle></did>
+      				</c05>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Riots</unittitle></did>
+      				</c05>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cut-off of funds for war</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Kissinger's travels for Vietnam negotiations</unittitle></did>
+      				</c05>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible speech by President</unittitle></did>
+      			</c04>
+      		</c03>
+      	</c02>
+      
+      	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>US foreign relations</unittitle></did>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Year of Europe</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Germany's role</unittitle></did>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Great Britain, Italy, Belgium, Netherlands</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>France's support</unittitle></did>
+      				</c05>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's meetings with <persname>Leonid I. Brezhnev</persname></unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><title type="treaty">Agreement on the Prevention of Nuclear War</title></unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Scheel's viewpoint</unittitle></did>
+      				</c05>
+      			</c04>
+      		</c03>
+      	</c02>
+      
+      	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>State Dinners</unittitle></did>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Invitations</unittitle></did>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ambassadors</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Elegance</unittitle></did>
+      			</c04>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Zulfikar Ali Bhutto</persname></unittitle></did>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Iran</unittitle></did>
+      		</c03>
+      		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ambassadors</unittitle></did>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Anatoliy F. Dobrynin</persname>, <persname>George R. S. Baring [Earl of Cromer]</persname></unittitle></did>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Desirability</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Iran</unittitle></did>
+      				</c05>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cromer</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Availability</unittitle></did>
+      				</c05>
+      			</c04>
+      			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>[Unintelligible name]</unittitle></did>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Great Britain's displeasure</unittitle></did>
+      				</c05>
+      				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Age</unittitle></did>
+      				</c05>
+      			</c04>
+      		</c03>
+      	</c02>
+      
+        <!-- Begin 2007 Deed of Gift Segment -->
+        <c02 level="otherlevel" otherlevel="2007deedOfGift-open">
+          <did><unittitle type="segment-notation">Deed of Gift Segment</unittitle></did>
+          <accessrestrict>
+            <legalstatus type="deedOfGift2007-released">Released per 2007 Deed of Gift</legalstatus>
+          </accessrestrict>
+          <processinfo type="2007deedOfGift">
+            <p>This portion of conversation was revieed and released under the 2007 Deed of Gift.</p>
+          </processinfo>
+          
+      
+        	<c03 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's health</unittitle></did>
+        		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Kissinger's knowledge</unittitle></did>
+        			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>X-ray</unittitle></did>
+        			</c05>
+        			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Julie Nixon Eisenhower</unittitle></did>
+        			</c05>
+        			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's telephone call</unittitle></did>
+        			</c05>
+        		</c04>
+        		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Viral pneumonia</unittitle></did>
+        			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Recovery</unittitle></did>
+        			</c05>
+        		</c04>
+        		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's schedule</unittitle></did>
+        			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Rest</unittitle></did>
+        			</c05>
+        		</c04>
+        		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Public relations [PR]</unittitle></did>
+        			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to press relations</unittitle></did>
+        			</c05>
+        		</c04>
+        		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's schedule</unittitle></did>
+        			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Scheel</unittitle></did>
+        			</c05>
+        			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Commission on Fire Prevention</unittitle></did>
+        			</c05>
+        		</c04>
+        		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>PR</unittitle></did>
+        		</c04>
+        		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Ronald L. Ziegler</persname>'s announcement</unittitle></did>
+        		</c04>
+        		<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's schedule</unittitle></did>
+        			<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Meetings</unittitle></did>
+        				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Location</unittitle></did>
+        				</c06>
+        				<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Announcements</unittitle></did>
+        				</c06>
+        			</c05>
+        		</c04>
+        	</c03>
+          
+          </c02>
+          <!-- End 2007 Deed of Gift Segment -->
+      </c01>
+      
+      
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Kissinger left at 5:09 pm.</unittitle></did></c01>
+
+
     </dsc>
     <descgrp type="admininfo">
       <head>Administrative Information</head>
       <accessrestrict>
         <head>Access Restrictions</head>
-        <!-- if/then accessrestrict
-				
-				1) <accessrestrict encodinganalog="506" type="accessUnrestricted">
-					<p>This conversation has no restrictions and is fully open to the public.</p>
+        <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
+					<p>Portions of this conversation are closed to the public: 1 withdrawal as Personal-Returnable.</p>
 				</accessrestrict>
-				
-				2) <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
-					<p>Portions of this conversation are closed to the public: _ withdrawal(s) for _.</p>
-				</accessrestrict>
-				
-				3) <accessrestrict encodinganalog="506" type="accessFullyRestricted">
-					<p>This conversation is closed to the public in its entirety: 1 withdrawal for _.</p>
-				</accessrestrict>
-				-->
         <p>Access is governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
         <p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov" xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
       </accessrestrict>
@@ -312,9 +701,8 @@
           <p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="United States. National Archives and Records Administration. Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
         </note>
         <note id="encodingHistory">
-          <p>Encoded by Amanda T. Ross, <date normal="2016-01-15">January 15, 2016</date>
-          </p>
-          <!-- Edited by ?, Mm yyyy -->
+          <p>Encoded by Amanda T. Ross, <date normal="2016-01-15">January 15, 2016</date></p>
+          <p>Edited by Amanda T. Ross, <date normal="2016-06">June 2016</date></p>
         </note>
       </processinfo>
     </descgrp>
