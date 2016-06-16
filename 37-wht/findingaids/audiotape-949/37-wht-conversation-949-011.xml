@@ -47,7 +47,6 @@
     <revisiondesc>
 			<change>
 				<date normal="2016-06-16" type="addition">June 16, 2016</date>
-			  <item>Added accessrestrict</item>
 				<item>Added subject logging</item>
 			  <item>Added accessrestrict</item>
 			  <item>Added topical, place, person, and organization subject headings</item>
