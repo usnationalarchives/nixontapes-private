@@ -265,7 +265,7 @@
       <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The President entered at an unknown time after 4:48 pm.</unittitle></did>
       
         <!-- Begin 2007 Deed of Gift Segment -->
-        <c02 level="otherlevel" otherlevel="2007deedOfGift-open">
+        <c02 level="otherlevel" otherlevel="audio-subsegment-2007deedOfGift">
           <did><unittitle type="segment-notation">Deed of Gift Segment</unittitle></did>
           <accessrestrict>
             <legalstatus type="deedOfGift2007-released">Released per 2007 Deed of Gift</legalstatus>
@@ -366,7 +366,7 @@
       	</c02>
     
         <!-- Begin 2007 Deed of Gift Segment -->
-        <c02 level="otherlevel" otherlevel="2007deedOfGift-open">
+        <c02 level="otherlevel" otherlevel="audio-subsegment-2007deedOfGift">
           <did><unittitle type="segment-notation">Deed of Gift Segment</unittitle></did>
           <accessrestrict>
             <legalstatus type="deedOfGift2007-released">Released per 2007 Deed of Gift</legalstatus>
@@ -583,7 +583,7 @@
       	</c02>
       
         <!-- Begin 2007 Deed of Gift Segment -->
-        <c02 level="otherlevel" otherlevel="2007deedOfGift-open">
+        <c02 level="otherlevel" otherlevel="audio-subsegment-2007deedOfGift">
           <did><unittitle type="segment-notation">Deed of Gift Segment</unittitle></did>
           <accessrestrict>
             <legalstatus type="deedOfGift2007-released">Released per 2007 Deed of Gift</legalstatus>

@@ -253,7 +253,7 @@
 <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement"><persname>Alexander M. Haig, Jr.</persname> met with <persname>Dr. Walter R. Tkach</persname> and <persname>Dr. William M. Lukash</persname>.</unittitle></did> 
 
   <!-- Begin 2007 Deed of Gift Segment -->
-  <c02 level="otherlevel" otherlevel="2007deedOfGift-open">
+  <c02 level="otherlevel" otherlevel="audio-subsegment-2007deedOfGift">
     <did><unittitle type="segment-notation">Dead of Gift Segment</unittitle></did>
     <processinfo type="2007deedOfGift">
       <p>This portion of conversation was reviewed and released under the 2007 Deed of Gift.</p>
@@ -433,7 +433,7 @@
 
 
   <!-- Begin 2007 Deed of Gift Segment -->
-  <c02 level="otherlevel" otherlevel="2007deedOfGift-open">
+  <c02 level="otherlevel" otherlevel="audio-subsegment-2007deedOfGift">
     <did><unittitle type="segment-notation">Dead of Gift Segment</unittitle></did>
     <processinfo type="2007deedOfGift">
       <p>This portion of conversation was reviewed and released under the 2007 Deed of Gift.</p>
@@ -575,7 +575,7 @@
 
 
   <!-- Begin 2007 Deed of Gift Segment -->
-  <c02 level="otherlevel" otherlevel="2007deedOfGift-open">
+  <c02 level="otherlevel" otherlevel="audio-subsegment-2007deedOfGift">
     <did><unittitle type="segment-notation">Dead of Gift Segment</unittitle></did>
     <processinfo type="2007deedOfGift">
       <p>This portion of conversation was reviewed and released under the 2007 Deed of Gift.</p>
