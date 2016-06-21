@@ -44,16 +44,20 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
-    <!-- <revisiondesc>
+    <revisiondesc>
 			<change>
-				<date normal="" type="addition"></date>
-				<item></item>
+				<date normal="2016-06-21" type="addition">June 21, 2016</date>
+				<item>Added accessrestrict</item>
+			  <item>Added subject logging</item>
+			  <item>Added persname and corpname tags to logging</item>
+			  <item>Added controlaccess terms</item>
 			</change>
 			<change>
-				<date normal="" type="edit"></date>
-				<item></item>
+			  <date normal="2016-06-21" type="edit">June 21, 2016</date>
+				<item>Edited abstract</item>
+			  <item>Edited scopecontent</item>
 			</change>
-		</revisiondesc> -->
+		</revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
@@ -98,7 +102,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">949-013</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon and Alexander M. Haig, Jr. met in the Oval Office of the White House at an unknown time between 8:22 pm and 8:33 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-013 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon and Alexander M. Haig, Jr. met in the Oval Office of the White House at an unknown time between 8:22 pm and 8:33 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-013 of the White House Tapes. Topics of conversation included Watergate and the investigation by the Senate Select Committe on Presidential Campaign Activitiees (also known as the Ervin Committee), President Nixon's schedule, and the President's health.</abstract>
       <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -125,7 +129,7 @@
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On July 12, 1973, President Richard M. Nixon and Alexander M. Haig, Jr. met in the Oval Office of the White House at an unknown time between 8:22 pm and 8:33 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-013 of the White House Tapes.</p>
-        <p>Topics of conversation included ...</p>
+        <p>Topics of conversation included Watergate and the investigation by the Senate Select Committe on Presidential Campaign Activitiees (also known as the Ervin Committee), President Nixon's schedule, and the President's health.</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
         <scopecontent id="audioQuality">
@@ -213,19 +217,18 @@
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001069" normal="AMH">Haig, Alexander M., Jr.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
         </controlaccess>
-        <controlaccess id="placesDiscussed">
-          <head>Places and Governments</head>
-        </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
-          <!-- Remove xmlns -->
+          <corpname encodinganalog="650$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80060906">United States. Congress. Senate. Select Committee on Presidential Campaign Activities</corpname>
         </controlaccess>
         <controlaccess id="topicsDiscussed">
           <head>Topics</head>
+          <subject encodinganalog="690$a" rules="nara-lcdrg" source="us-nara" authfilenumber="https://catalog.archives.gov/id/10641484">Presidential schedules</subject>
+          <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85145735">Watergate Affair, 1972-1974</subject>
         </controlaccess>
       </controlaccess>
     </controlaccess>
-    <!-- Use separated materials and related materials clips here to enter in information. -->
+
     <!-- Indicate alternative formats / digitized audio below -->
     <altformavail type="audio">
       <head>Digitized Audio</head>
@@ -238,26 +241,86 @@
     </altformavail>
     <dsc type="combined">
       <head>Conversation Subject Log</head>
-      <!-- Logging here -->
+
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The <persname>President</persname> met with <persname>Alexander M. Haig, Jr.</persname></unittitle></did>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's schedule</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Samuel J. Ervin, Jr.</persname></unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Ervin Committee</corpname></unittitle></did>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
+                </c06>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Demans</unittitle></did>
+                </c06>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Return to White House</unittitle></did>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Delay</unittitle></did>
+                </c06>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Access to files</unittitle></did>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's schedule</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Announcement of Phase IV</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Speech</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Hospital</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Paper</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Briefing</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>State visits</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Zulfikar Ali Bhutto</persname></unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Donald McI. Kendall</persname></unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Family</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House staff</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Hospital</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Photographs</unittitle></did>
+            </c04>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's health</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Public's concern</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ronald L. Ziegler's forthcoming announcement</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Reaction by press</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>United States Secret Service</corpname> [USSS] agent</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Haig's forthcoming telephone calls</unittitle></did>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Recommendation from President</unittitle></did>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Agreement</unittitle></did>
+        </c02>
+      </c01>
+      
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Haig left at an unknown time before 8:33 pm.</unittitle></did></c01>
+      
+
     </dsc>
     <descgrp type="admininfo">
       <head>Administrative Information</head>
       <accessrestrict>
         <head>Access Restrictions</head>
-        <!-- if/then accessrestrict
-				
-				1) <accessrestrict encodinganalog="506" type="accessUnrestricted">
+        <accessrestrict encodinganalog="506" type="accessUnrestricted">
 					<p>This conversation has no restrictions and is fully open to the public.</p>
 				</accessrestrict>
-				
-				2) <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
-					<p>Portions of this conversation are closed to the public: _ withdrawal(s) for _.</p>
-				</accessrestrict>
-				
-				3) <accessrestrict encodinganalog="506" type="accessFullyRestricted">
-					<p>This conversation is closed to the public in its entirety: 1 withdrawal for _.</p>
-				</accessrestrict>
-				-->
         <p>Access is governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
         <p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov" xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
       </accessrestrict>
