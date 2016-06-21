@@ -44,16 +44,21 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
-    <!-- <revisiondesc>
+    <revisiondesc>
 			<change>
-				<date normal="" type="addition"></date>
-				<item></item>
+				<date normal="2016-06-21" type="addition">June 21, 2016</date>
+				<item>Added accessrestrict</item>
+			  <item>Added subject logging</item>
+			  <item>Added persname and corpname tags to logging</item>
+			  <item>Added controlaccess terms</item>
+			  <item>Added relatedmaterial (telephone cross-reference)</item>
 			</change>
 			<change>
-				<date normal="" type="edit"></date>
-				<item></item>
+			  <date normal="2016-06-21" type="edit">June 21, 2016</date>
+				<item>Edited abstract</item>
+			  <item>Edited scopecontent</item>
 			</change>
-		</revisiondesc> -->
+		</revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
@@ -102,7 +107,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">949-014</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, Henry A. Kissinger, unknown person(s), Alexander M. Haig, Jr., Ronald L. Ziegler, President Richard M. Nixon, and White House operator met in the Oval Office of the White House at an unknown time between 8:22 pm and 8:44 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-014 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, Henry A. Kissinger, unknown person(s), Alexander M. Haig, Jr., Ronald L. Ziegler, President Richard M. Nixon, and White House operator met in the Oval Office of the White House at an unknown time between 8:22 pm and 8:44 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-014 of the White House Tapes. Topics of conversation included President Nixon's schedule, especially the planned state visit with Zulfikar Ali Bhutto; the President's health; and Watergate and the investigation by the Senate Select Committe on Presidential Campaign Activitiees (also known as the Ervin Committee).</abstract>
       <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -129,7 +134,7 @@
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On July 12, 1973, Henry A. Kissinger, unknown person(s), Alexander M. Haig, Jr., Ronald L. Ziegler, President Richard M. Nixon, and White House operator met in the Oval Office of the White House at an unknown time between 8:22 pm and 8:44 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-014 of the White House Tapes.</p>
-        <p>Topics of conversation included ...</p>
+        <p>Topics of conversation included President Nixon's schedule, especially the planned state visit with Zulfikar Ali Bhutto; the President's health; and Watergate and the investigation by the Senate Select Committe on Presidential Campaign Activitiees (also known as the Ervin Committee).</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
         <scopecontent id="audioQuality">
@@ -213,27 +218,29 @@
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
           <head>People</head>
-          <!-- Remove xmlns -->
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000211" normal="ZAB">Bhutto, Zulfikar Ali</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001069" normal="AMH">Haig, Alexander M., Jr.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001494" normal="HAK">Kissinger, Henry A.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003038" normal="RLZ">Ziegler, Ronald L.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002795" normal="Unk">[Unknown person(s)]</persname>
         </controlaccess>
-        <controlaccess id="placesDiscussed">
-          <head>Places and Governments</head>
-        </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
-          <!-- Remove xmlns -->
+          <corpname encodinganalog="650$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80060906">United States. Congress. Senate. Select Committee on Presidential Campaign Activities</corpname>
           <corpname encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002919" normal="WHO">White House operator</corpname>
         </controlaccess>
         <controlaccess id="topicsDiscussed">
           <head>Topics</head>
+          <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85145735">Watergate Affair, 1972-1974</subject>
         </controlaccess>
       </controlaccess>
     </controlaccess>
-    <!-- Use separated materials and related materials clips here to enter in information. -->
+    
+    <relatedmaterial type="cross-reference-telephone">
+      <p>A portion of this conversation has been logged in <archref xlink:href="37-wht-conversation-041-068"><unittitle>Conversation 041-068</unittitle></archref></p>
+    </relatedmaterial>
+    
     <!-- Indicate alternative formats / digitized audio below -->
     <altformavail type="audio">
       <head>Digitized Audio</head>
@@ -246,26 +253,244 @@
     </altformavail>
     <dsc type="combined">
       <head>Conversation Subject Log</head>
-      <!-- Logging here -->
+      
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement"><persname>Henry A. Kissinger</persname> met with an <persname>unknown man</persname>.</unittitle></did>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle><persname>President</persname>'s schedule</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Departure</unittitle></did>
+          </c03>
+        </c02>
+      </c01>
+      
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement"><persname>Alexander M. Haig, Jr.</persname> entered at an unknown time after 8:22 pm.</unittitle></did>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's health</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's schedule</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Departure</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Bethesda Naval Medical Center</corpname></unittitle></did>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Earlier trip</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Zulfikar Ali Bhutto</persname></unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Spiro T. Agnew</persname>, Kissinger</unittitle></did>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Thelma C. (&quot;Pat&quot;) (Ryan) Nixon</persname></unittitle></did>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Planning</unittitle></did>
+                </c06>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Announcement</unittitle></did>
+          </c03>
+        </c02>
+      </c01>
+      
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement"><persname>Ronald L. Ziegler</persname> entered at an unknown time after 8:22 pm.</unittitle></did>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Announcement</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Length</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's health</unittitle></did>
+          </c03>
+        </c02>
+      </c01>
+      
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Ziegler left at an unknown time before 8:44 pm.</unittitle></did></c01>
+        
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The President entered at an unknown time after 8:22 pm.</unittitle></did>
+          
+          <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's health</unittitle></did>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Rest</unittitle></did>
+            </c03>
+          </c02>
+        </c01>
+        
+        <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The President talked with the <corpname>White House operator</corpname> at 8:33 pm.</unittitle></did>
+           
+          <c02 level="otherlevel" otherlevel="audio-subsegment-subconversation">
+            <did>
+              <unittitle>Conversation 949-014a</unittitle>
+              <unitid>37-wht-conversation-949-014-subconversation-a</unitid>
+            </did>
+            <relatedmaterial type="cross-reference-telephone">
+              <p>See <archref xlink:href="37-wht-conversation-041-068"><unittitle>Conversation 041-068</unittitle></archref> for logging.</p>
+            </relatedmaterial> 
+          </c02>
+          
+          <!-- Begin 2007 Deed of Gift Segment -->
+          <c02 level="otherlevel" otherlevel="audio-subsegment-2007deedOfGift">
+            <did><unittitle type="segment-notation">Deed of Gift Segment</unittitle></did>
+            <accessrestrict>
+              <legalstatus type="deedOfGift2007-released">Released per 2007 Deed of Gift</legalstatus>
+            </accessrestrict>
+          
+           <c03 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's health</unittitle></did>
+             <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Treatment</unittitle></did>
+             </c04>
+           </c03>
+          
+          </c02>
+          <!-- End 2007 Deed of Gift Segment -->
+          
+          
+          <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's schedule</unittitle></did>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Bhutto's state visit</unittitle></did>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cancellation</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Agnew</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Rome</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>William P. Rogers</persname></unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to <corpname>Congress</corpname> members</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's support</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Delay</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Agnew</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Thelma C. (&quot;Pat&quot;) (Ryan) Nixon</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Hospital</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cancellation</unittitle></did>
+                <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Humiliation</unittitle></did>
+                </c05>
+                <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's support</unittitle></did>
+                </c05>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to <persname>Samuel J. Ervin, Jr.</persname></unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to <persname>John C. Stennis</persname></unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Confrontation</unittitle></did>
+                <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Hospital</unittitle></did>
+                </c05>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cancellation</unittitle></did>
+              </c04>
+            </c03>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Signature</unittitle></did>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Haig</unittitle></did>
+              </c04>
+            </c03>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Staff and family</unittitle></did>
+            </c03>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Bhutto</unittitle></did>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to Ervin</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Kissinger's forthcoming telephone call to Pakistani ambassador</unittitle></did>
+              </c04>
+            </c03>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Hospital</unittitle></did>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Duration</unittitle></did>
+              </c04>
+            </c03>
+          </c02>
+        </c01>
+        
+        <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Ziegler entered at an unknown time after 8:33 pm.</unittitle></did>
+          
+          <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's health</unittitle></did>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Announcement</unittitle></did>
+            </c03>
+          </c02>
+        </c01>
+        
+        <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Ziegler left at an unknown time before 8:44 pm.</unittitle></did>
+          
+          <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's health</unittitle></did>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Announcement</unittitle></did>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dr. Walter Tkach's diagnosis</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effect on American people</unittitle></did>
+              </c04>
+            </c03>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's schedule</unittitle></did>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effect on Ervin and <persname>Archibald Cox</persname></unittitle></did>
+              </c04>
+            </c03>
+          </c02>
+          
+          <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's conversation with Ervin</unittitle></did>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin's goal</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Leaks</unittitle></did>
+              </c04>
+            </c03>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Ervin Committee</corpname></unittitle></did>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John N. Mitchell</persname>'s testimony</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Richard A. Moore</persname>'s testimony</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John W. Dean, III</persname>'s testimony</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John D. Ehrlichman</persname>'s possible testimony</unittitle></did>
+              </c04>
+            </c03>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Gordon C. Strachan</persname></unittitle></did>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible Ervin Committee testimony</unittitle></did>
+              </c04>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Immunity</unittitle></did>
+              </c04>
+            </c03>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effect</unittitle></did>
+            </c03>
+          </c02>
+          
+          <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's meeting with <persname>Walter Scheel</persname></unittitle></did>
+          </c02>
+          
+          <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's foreign policy accomplishments</unittitle></did>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Year of Europe</unittitle></did>
+            </c03>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Summit</unittitle></did>
+            </c03>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Vietnam</geogname> War</unittitle></did>
+            </c03>
+          </c02>
+          
+          <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's opponents</unittitle></did>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Rowland Evans</persname></unittitle></did>
+              </c04>
+            </c03>
+          </c02>
+          
+          <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's health</unittitle></did>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ziegler's announcement</unittitle></did>
+            </c03>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House press corps</unittitle></did>
+            </c03>
+            <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's schedule</unittitle></did>
+              <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Kissinger</unittitle></did>
+              </c04>
+            </c03>
+          </c02>
+          
+          <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Haig's schedule</unittitle></did>
+          </c02>
+          
+          <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Ziegler's location</unittitle></did>
+          </c02>
+        </c01>
+        
+        <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Kissinger and Haig left at an unknown time before 8:44 pm.</unittitle></did></c01>
+      
     </dsc>
     <descgrp type="admininfo">
       <head>Administrative Information</head>
       <accessrestrict>
         <head>Access Restrictions</head>
-        <!-- if/then accessrestrict
-				
-				1) <accessrestrict encodinganalog="506" type="accessUnrestricted">
+        <accessrestrict encodinganalog="506" type="accessUnrestricted">
 					<p>This conversation has no restrictions and is fully open to the public.</p>
 				</accessrestrict>
-				
-				2) <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
-					<p>Portions of this conversation are closed to the public: _ withdrawal(s) for _.</p>
-				</accessrestrict>
-				
-				3) <accessrestrict encodinganalog="506" type="accessFullyRestricted">
-					<p>This conversation is closed to the public in its entirety: 1 withdrawal for _.</p>
-				</accessrestrict>
-				-->
         <p>Access is governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
         <p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov" xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
       </accessrestrict>
@@ -318,7 +543,8 @@
         <note id="encodingHistory">
           <p>Encoded by Amanda T. Ross, <date normal="2016-01-15">January 15, 2016</date>
           </p>
-          <!-- Edited by ?, Mm yyyy -->
+          <p>Edited by Amanda T. Ross, <date normal="2016-06-21">June 21, 2016</date>
+          </p>
         </note>
       </processinfo>
     </descgrp>
