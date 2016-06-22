@@ -99,7 +99,6 @@
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">001-002</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On April 6, 1971, unknown person(s) and the White House operator talked on the telephone at an unknown time between 11:51 am and 11:53 am. The White House Telephone taping system captured this recording, which is known as Conversation 001-002 of the White House Tapes. Topics of conversation included ....</abstract>
-      <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
       <abstract id="historicalAbstract" encodinganalog="545$a">This White House Telephone recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>
@@ -209,7 +208,7 @@
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
           <head>People</head>
-          <!-- Remove xmlns -->
+          
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002795" normal="Unk">[Unknown person(s)]</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
@@ -217,7 +216,7 @@
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
-          <!-- Remove xmlns -->
+          
           <corpname encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002919" normal="WHO">White House operator</corpname>
         </controlaccess>
         <controlaccess id="topicsDiscussed">
