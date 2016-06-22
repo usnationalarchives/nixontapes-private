@@ -102,7 +102,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">948-003</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 11, 1973, President Richard M. Nixon and Ronald L. Ziegler met in the Oval Office of the White House from 8:33 am to 8:38 am. The Oval Office taping system captured this recording, which is known as Conversation 948-003 of the White House Tapes. Topics of conversation included Watergate, the hearings by the Senate Select Committe on Presidential Campaign Activitiees (also known as the Ervin Committee), press coverage, and White House response.</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 11, 1973, President Richard M. Nixon and Ronald L. Ziegler met in the Oval Office of the White House from 8:33 am to 8:38 am. The Oval Office taping system captured this recording, which is known as Conversation 948-003 of the White House Tapes. Topics of conversation included Watergate, the hearings by the Senate Select Committe on Presidential Campaign Activitiees (also known as the Ervin Committee), press coverage, White House response, and press interviews by Julie Nixon Eisenhower and David Eisenhower.</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -213,7 +213,8 @@
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
           <head>People</head>
-          
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000754" normal="DDE2">Eisenhower, [Dwight] David, II</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000755" normal="JNE">Eisenhower, Julie Nixon</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003038" normal="RLZ">Ziegler, Ronald L.</persname>
         </controlaccess>
