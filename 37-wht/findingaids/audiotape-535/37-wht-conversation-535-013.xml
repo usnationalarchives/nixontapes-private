@@ -125,7 +125,7 @@
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">535-013</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 2, 1971, President Richard M. Nixon, Wimer D. Mizell, Eddie Bane, Larry Calufetti, Benny Castillo, Bob Ellenberger, John Caneira, Nell Ellenberger, Ron Fraser, Doug Gerlach, Marty Harrington, Peter Helt, Tony Hewitt, Cliff Holland, Fred Lynn, Bill McClain, Roger McGill, Fred Mims, Paul Patterson, Jeff Port, Ken Reed, Jay Smith, Jack Smitheran, Tim Steele, Jackson Todd, Al Torregano, Bobby Winkles, and Elinor Winkles met in the Oval Office of the White House from 11:43 am to 11:52 am. The Oval Office taping system captured this recording, which is known as Conversation 535-013 of the White House Tapes. Topics of conversation included ....</abstract>
-      <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+      
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>

@@ -122,7 +122,7 @@
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">064-005</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 19, 1971, President Richard M. Nixon, William P. Rogers, and bipartisan Congressional leaders, including Michael J. ("Mike") Mansfield, Hugh Scott, John C. Stennis, Margaret Chase Smith, J. William Fulbright, George D. Aiken, Allen J. Ellender, Milton R. Young, Carl B. Albert, [Thomas] Hale Boggs, Gerald R. Ford, Edward H&amp;#233;bert, Leslie C. Arends, Dr. Thomas E. ("Doc") Morgan, William S. Mailliard, George H. Mahon, Frank T. Bow, Henry A. Kissinger, Clark MacGregor, William E. Timmons, Kenneth E. BeLieu, Ronald L. Ziegler, and John A. Scali, met in the Cabinet Room of the White House at an unknown time between 8:36 am and 10:11 am. The Cabinet Room taping system captured this recording, which is known as Conversation 064-005 of the White House Tapes. Topics of conversation included ....</abstract>
-      <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+      
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>

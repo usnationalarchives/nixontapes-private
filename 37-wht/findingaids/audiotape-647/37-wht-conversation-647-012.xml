@@ -123,7 +123,7 @@
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">647-012</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On January 13, 1972, President Richard M. Nixon, Lt. Cmdr. James E. Sheehan, John Sheehan, Kathleen Sheehan, Kelly Sheehan, Kevin Sheehan, Eugene T. Sheehan, Edward J. Sheehan, Geneva Smith, Adm. Adm. C. D. Griffin, Louie B. Nunn, John Sherman Cooper, John J. Sparkman, Arthur F. Burns, J. L. Robertson, George W. Mitchell, J. Dewey Daane, Sherman J. Maisel, Andrew F. Brimmer, Robert Holland, George P. Shultz, Herbert Stein, Peter M. Flanigan, Frederic V. Malek, Oliver F. ("Ollie") Atkins, and E. Pendleton James met in the Oval Office of the White House at an unknown time between 12:37 pm and 1:02 pm. The Oval Office taping system captured this recording, which is known as Conversation 647-012 of the White House Tapes. Topics of conversation included ....</abstract>
-      <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+      
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>

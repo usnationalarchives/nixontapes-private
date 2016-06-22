@@ -120,7 +120,7 @@
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">124-005</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On June 5, 1973, President Richard M. Nixon, Vice President Spiro T. Agnew, and Republican Congressional leaders, including Hugh Scott, Robert P. Griffin, Wallace F. Bennett, John G. Tower, William E. Brock, III, Gerald R. Ford, Leslie C. Arends, John B. Anderson, John J. Rhodes, Samuel L. Devine, Robert H. Michel, David T. Martin, Barber B. Conable, Jr., George H. W. Bush, Henry A. Kissinger, Alexander M. Haig, Jr., William E. Timmons, Thomas C. Korologos, Max L. Friedersdorf, Ronald L. Ziegler, and John F. Lehman, Jr., met in the Cabinet Room of the White House from 8:38 am to 10:19 am. The Cabinet Room taping system captured this recording, which is known as Conversation 124-005 of the White House Tapes. Topics of conversation included ....</abstract>
-      <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+      
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>

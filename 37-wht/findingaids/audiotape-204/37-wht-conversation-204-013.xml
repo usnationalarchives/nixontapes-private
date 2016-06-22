@@ -99,7 +99,7 @@
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">204-013</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">President Richard M. Nixon and Camp David operator met in the Aspen Lodge study at Camp David on an unknown date, sometime between 9:15 am on August 18, 1972 and 11:42 am on August 19, 1972. The Camp David Hard Wire taping system captured this recording, which is known as Conversation 204-013 of the White House Tapes. Topics of conversation included ....</abstract>
-      <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+      
       <abstract id="historicalAbstract" encodinganalog="545$a">This Camp David Hard Wire recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>

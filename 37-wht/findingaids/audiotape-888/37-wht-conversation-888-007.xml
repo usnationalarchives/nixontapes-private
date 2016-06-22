@@ -116,7 +116,7 @@
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">888-007</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On March 27, 1973, President Richard M. Nixon, Corrine ("Lindy") (Clairborne) Boggs, Corinne Jacobs, Thomas Hale Boggs, Jr., Hale Boggs, III, Elizabeth Boggs, Douglas Boggs, Paul Sigmund, Mrs. Paul Sigmund, Paul Sigmund, David Sigmund, Stephen Sigmund, Archie Boggs, Mrs. Archie Boggs, Dan Shoemaker, Mrs. Dan Shoemaker, Bobby Shoemaker, Dan Shoemaker, and Tom Kearney met in the Oval Office of the White House from 3:02 pm to 3:15 pm. The Oval Office taping system captured this recording, which is known as Conversation 888-007 of the White House Tapes. Topics of conversation included ....</abstract>
-      <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+      
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>

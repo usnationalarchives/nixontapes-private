@@ -117,7 +117,7 @@
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">066-001</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 22, 1971, President Richard M. Nixon and bipartisan Senate leaders, including Peter G. Peterson, Clinton P. Anderson, Wallace F. Bennett, J. Caleb Boggs, Clifford P. Case, Carl T. Curtis, Paul J. Fannin, J. William Fulbright, Robert P. Griffin, Clifford P. Hansen, Roman L. Hruska, Jacob K. Javits, Warren G. ("Maggie") Magnuson, Jack R. Miller, Robert W. Packwood, Charles H. Percy, Abraham A. Ribicoff, Robert A. Best, and Thomas Vail, met in the Cabinet Room of the White House at an unknown time between 5:18 pm and 5:34 pm. The Cabinet Room taping system captured this recording, which is known as Conversation 066-001 of the White House Tapes. Topics of conversation included ....</abstract>
-      <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+      
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>

@@ -111,7 +111,7 @@
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">082-001</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On November 4, 1971, President Richard M. Nixon and selected Republican members of the House of Representatives, including Samuel L. Devine, Carleton J. King, William L. Dickinson, John E. Hunt, John H. Kyl, James M. Collins, Robert H. Michel, John Rousselot, Clark MacGregor, William E. Timmons, Richard K. Cook, Alexander P. Butterfield, and John D. Ehrlichman, met in the Cabinet Room of the White House from 5:06 pm to 6:23 pm. The Cabinet Room taping system captured this recording, which is known as Conversation 082-001 of the White House Tapes. Topics of conversation included ....</abstract>
-      <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+      
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>

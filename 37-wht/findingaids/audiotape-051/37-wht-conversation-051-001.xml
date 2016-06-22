@@ -126,7 +126,7 @@
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">051-001</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On March 23, 1971, President Richard M. Nixon and leaders of the dairy industry, including Clifford M. Hardin, J. Philip Campbell, Paul Affeldt, Paul Alagia, Melvin Besemer, John E. Butterbrodt, Bill Eckles, Don Gregg, W. R. Griffith, Carlyle Hansen, Marion Edwyn Harrison, Patrick J. Hillings, Wesley Johnson, John A. Moser, Harold S. Nelson, David L. Parr, Bill Powell, P. L. Robinson, Avery Vose, Frank White, Clarence D. Palmby, Richard E. Lyng, William E. Galbraith, George P. Shultz, John D. Ehrlichman, Donald B. Rice, Henry C. Cashen, II, and John C. Whitaker, met in the Cabinet Room of the White House from 10:35 am to 11:25 am. The Cabinet Room taping system captured this recording, which is known as Conversation 051-001 of the White House Tapes. Topics of conversation included ....</abstract>
-      <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+      
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>

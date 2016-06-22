@@ -122,7 +122,7 @@
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">071-001</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On September 7, 1971, President Richard M. Nixon and the Council on International Economic Policy, including Brandon Sweizer, Peter G. Peterson, Clifford M. Hardin, William P. Rogers, Nathanial Samuels, John B. Connally, Paul A. Volcker, Melvin R. Laird, Maurice H. Stans, James D. Hodgson, David M. Kennedy, George P. Shultz, Paul W. McCracken, Carl J. Gilbert, John D. Ehrlichman, Henry A. Kissinger, Richard V. ("Dick") Allen, Deane R. Hinton, Donald A. Webster, Robert D. Hormats, Raymond J. Waldeman [?], Peter M. Flanigan, and unknown person(s), met in the Cabinet Room of the White House at an unknown time between 8:03 am and 10:36 am. The Cabinet Room taping system captured this recording, which is known as Conversation 071-001 of the White House Tapes. Topics of conversation included ....</abstract>
-      <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+      
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>

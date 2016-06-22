@@ -121,7 +121,7 @@
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">647-014</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On January 13, 1972, President Richard M. Nixon, Arthene Cevey, Andrey Pontier, Karl Wunderlich, Peter Yu, Michael Slattery, Billy McNight, Richard Buck, Stephen Bazo, James Toomey, Russell Burke, Brian Clark, Phillip Beauregard, Pete Wyrough, Brooks Ross, Robert Jones, Brian Bunce, John Sharood, Peter McMahon, Francois VanDerMenbrugge, Christopher Cook, White House photographer, Ronald L. Ziegler, and Stephen B. Bull met in the Oval Office of the White House from 1:03 pm to 1:19 pm. The Oval Office taping system captured this recording, which is known as Conversation 647-014 of the White House Tapes. Topics of conversation included ....</abstract>
-      <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+      
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>

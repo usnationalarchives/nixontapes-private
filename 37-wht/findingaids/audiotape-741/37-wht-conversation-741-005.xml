@@ -107,7 +107,7 @@
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">741-005</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On June 23, 1972, President Richard M. Nixon, Carlos D. Dixon, Mrs. Carlos D. Dixon, Stephen C. Dixon, Kimberley R. Dixon, Earl L. Butz, James V. Smith, John C. Whitaker, White House photographer, and Anita J. Dixon met in the Oval Office of the White House from 12:44 pm to 12:50 pm. The Oval Office taping system captured this recording, which is known as Conversation 741-005 of the White House Tapes. Topics of conversation included ....</abstract>
-      <!-- <abstract id="biographicalAbstract" encodinganalog="545$a" label="Abstract (Biographical Context)">[Bio/Hist sentence]</abstract> -->
+      
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>
