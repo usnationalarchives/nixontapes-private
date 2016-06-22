@@ -213,7 +213,7 @@
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
           <head>People</head>
-          <!-- Remove xmlns -->
+          
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000019" normal="STA">Agnew, Spiro T. (Vice President)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000828" normal="HF">Ferguson, Homer</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001082" normal="HRH">Haldeman, H. R. ("Bob")</persname>
@@ -225,7 +225,7 @@
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
-          <!-- Remove xmlns -->
+          
           <corpname encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002919" normal="WHO">White House operator</corpname>
         </controlaccess>
         <controlaccess id="topicsDiscussed">

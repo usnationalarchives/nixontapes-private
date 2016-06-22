@@ -227,7 +227,7 @@
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
           <head>People</head>
-          <!-- Remove xmlns -->
+          
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000063" normal="MJA">Ambrose, Myles J.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004164" normal="CDCh">Chambers, Carl D.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004163" normal="WColeman">Coleman, Wade</persname>
@@ -255,7 +255,7 @@
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
-          <!-- Remove xmlns -->
+          
           <corpname encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004162" normal="NACDAP">National Advisory Council for Drug Abuse Prevention</corpname>
         </controlaccess>
         <controlaccess id="topicsDiscussed">

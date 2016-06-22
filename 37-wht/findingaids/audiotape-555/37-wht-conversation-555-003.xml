@@ -225,7 +225,7 @@
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
           <head>People</head>
-          <!-- Remove xmlns -->
+          
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000336" normal="SBB">Bull, Stephen B.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000368" normal="EAB">Buttari, Edgar A.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000447" normal="LCp">Cespedes, Louie</persname>
@@ -249,7 +249,7 @@
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
-          <!-- Remove xmlns -->
+          
           <corpname encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003473" normal="CCommOSS">Cabinet Committee on Opportunities for the Spanish Speaking</corpname>
         </controlaccess>
         <controlaccess id="topicsDiscussed">

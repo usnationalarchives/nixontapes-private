@@ -227,7 +227,7 @@
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
           <head>People</head>
-          <!-- Remove xmlns -->
+          
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004519" normal="BBBIII">Blackburn, Benjamin B., III</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000328" normal="JHBc">Buchanan, John H., Jr.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004182" normal="EACe">Cederberg, Elford A.</persname>
@@ -256,7 +256,7 @@
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
-          <!-- Remove xmlns -->
+          
         </controlaccess>
         <controlaccess id="topicsDiscussed">
           <head>Topics</head>

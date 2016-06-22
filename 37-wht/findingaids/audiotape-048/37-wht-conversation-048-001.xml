@@ -230,7 +230,7 @@
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
           <head>People</head>
-          <!-- Remove xmlns -->
+          
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004443" normal="JDBa">Baldeschwieler, John D. (Dr.)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004444" normal="DZB">Beckler, David Z. (Dr.)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004445" normal="ILBe">Bennett, Ivan L., Jr. (Dr.)</persname>
@@ -261,7 +261,7 @@
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
-          <!-- Remove xmlns -->
+          
           <corpname encodinganalog="610$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004442" normal="PSAComm">President's Science Advisory Committee</corpname>
         </controlaccess>
         <controlaccess id="topicsDiscussed">

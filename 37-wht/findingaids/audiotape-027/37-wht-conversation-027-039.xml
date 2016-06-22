@@ -206,14 +206,14 @@
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
           <head>People</head>
-          <!-- Remove xmlns -->
+          
         </controlaccess>
         <controlaccess id="placesDiscussed">
           <head>Places and Governments</head>
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
-          <!-- Remove xmlns -->
+          
         </controlaccess>
         <controlaccess id="topicsDiscussed">
           <head>Topics</head>
