@@ -596,7 +596,7 @@
    <head>Administrative Information</head>
     <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
 					<p>Portions of this conversation are closed to the public:</p>
-     <list>
+     <list type="marked">
       <item>One (1) withdrawal for Privacy</item>
      </list>
     </accessrestrict>
