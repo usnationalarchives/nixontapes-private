@@ -234,6 +234,7 @@
         <p>The original audio has been converted to digital format and is available to the public as a Broadcast WAVE Format (BWF) file.</p>
       </altformavail>
     </altformavail>
+    
     <dsc type="combined">
       <head>Conversation Subject Log</head>
 
@@ -246,9 +247,9 @@
       </c01>
       
       <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The unknown man left at 12:17 pm.</unittitle></did></c01> 
-      
 
     </dsc>
+    
     <descgrp type="admininfo">
       <head>Administrative Information</head>
       <accessrestrict>
