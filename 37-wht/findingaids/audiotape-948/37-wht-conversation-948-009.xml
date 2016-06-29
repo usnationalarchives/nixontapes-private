@@ -101,6 +101,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">948-009</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 11, 1973, President Richard M. Nixon dictated a memorandum in the Oval Office of the White House at an unknown time between 12:17 pm and 12:24 pm. The Oval Office taping system captured this recording, which is known as Conversation 948-009 of the White House Tapes. Topics of the memorandum included the Department of Justice's priorities, such as a focus on social justice as compared to law and order.</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -127,6 +128,7 @@
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On July 11, 1973, President Richard M. Nixon dictated a memorandum in the Oval Office of the White House at an unknown time between 12:17 pm and 12:24 pm. The Oval Office taping system captured this recording, which is known as Conversation 948-009 of the White House Tapes.</p>
+        <p>Topics of the memorandum included the Department of Justice's priorities, such as a focus on social justice as compared to law and order.</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
         <scopecontent id="audioQuality">
