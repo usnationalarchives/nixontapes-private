@@ -44,16 +44,20 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
-    <!-- <revisiondesc>
+		<revisiondesc>
 			<change>
-				<date normal="" type="addition"></date>
-				<item></item>
+				<date normal="2016-06-30" type="addition">June 30, 2016</date>
+				<item>Added accessrestrict</item>
+				<item>Added subject logging</item>
+				<item>Added tags to logging</item>
+				<item>Added controlaccess terms</item>
 			</change>
 			<change>
-				<date normal="" type="edit"></date>
-				<item></item>
+				<date normal="2016-06-30" type="edit">June 30, 2016</date>
+				<item>Edited abstract</item>
+				<item>Edited scopecontent</item>
 			</change>
-		</revisiondesc> -->
+		</revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
@@ -100,7 +104,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">948-012</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 11, 1973, President Richard M. Nixon, John B. Connally, Rose Mary Woods, and Manolo Sanchez met in the Oval Office of the White House from 3:03 pm to 4:22 pm. The Oval Office taping system captured this recording, which is known as Conversation 948-012 of the White House Tapes. Topics of conversation included ....</abstract>
+    	<abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 11, 1973, President Richard M. Nixon, John B. Connally, Rose Mary Woods, and Manolo Sanchez met in the Oval Office of the White House from 3:03 pm to 4:22 pm. The Oval Office taping system captured this recording, which is known as Conversation 948-012 of the White House Tapes. Topics of conversation included United States and global economies; the Nixon Administration's economic policies and actions, specifically Phase III of the Economic Stabilization Program under the Economic Stabilization Act of 1970; export controls, price controls, world food supplies and food prices; agriculture, dairy products, farm program, and Congressional legislation; Watergate, the investigation by the Senate Select Committe on Presidential Campaign Activitiees (also known as the Ervin Committee), hearing witnesses and testimony, a focus on the Internal Revenue Service (IRS), press coverage regarding President Nixon's San Clemente property, and campaign contributions; Connally's domestic and foreign travel, especially to the Soviet Union; and President Nixon's schedule.</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -127,7 +131,7 @@
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On July 11, 1973, President Richard M. Nixon, John B. Connally, Rose Mary Woods, and Manolo Sanchez met in the Oval Office of the White House from 3:03 pm to 4:22 pm. The Oval Office taping system captured this recording, which is known as Conversation 948-012 of the White House Tapes.</p>
-        <p>Topics of conversation included ...</p>
+      	<p>Topics of conversation included United States and global economies; the Nixon Administration's economic policies and actions, specifically Phase III of the Economic Stabilization Program under the Economic Stabilization Act of 1970; export controls, price controls, world food supplies and food prices; agriculture, dairy products, farm program, and Congressional legislation; Watergate, the investigation by the Senate Select Committe on Presidential Campaign Activitiees (also known as the Ervin Committee), hearing witnesses and testimony, a focus on the Internal Revenue Service (IRS), press coverage regarding President Nixon's San Clemente property, and campaign contributions; Connally's domestic and foreign travel, especially to the Soviet Union; and President Nixon's schedule.</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
         <scopecontent id="audioQuality">
@@ -210,26 +214,39 @@
       <controlaccess id="topicsOfConversation">
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
-          <head>People</head>
-          
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000541" normal="JBC">Connally, John B.</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002381" normal="MS">Sanchez, Manolo</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002987" normal="RMW">Woods, Rose Mary</persname>
+          	<head>People</head>
+          	<persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000541" normal="JBC">Connally, John B.</persname>
+			<persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
+			<persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002381" normal="MS">Sanchez, Manolo</persname>
+			<persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002987" normal="RMW">Woods, Rose Mary</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
-          <head>Places and Governments</head>
+          	<head>Places and Governments</head>
+        	<corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80126312">Soviet Union</corpname>
+        	<geogname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n83220928">San Clemente (Calif.)</geogname>
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
-          <head>Organizations</head>
-          
+          	<head>Organizations</head>
+          	<corpname encodinganalog="650$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n86872026">Economic Stabilization Program (U.S.)</corpname>
+        	<corpname encodinganalog="650$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79006865">United States. Congress</corpname>
+        	<corpname encodinganalog="650$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80060906">United States. Congress. Senate. Select Committee on Presidential Campaign Activities</corpname>
+        	<corpname encodinganalog="650$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79063888">United States. Internal Revenue Service</corpname>
         </controlaccess>
         <controlaccess id="topicsDiscussed">
-          <head>Topics</head>
+			<head>Topics</head>
+        	<subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85002415">Agriculture</subject>
+        	<subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85019187">Campaign funds</subject>
+			<subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85040802">Economic conditions</subject>
+        	<subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85040837">Economic policy</subject>
+        	<subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85040844">Economic stabilization</subject>
+        	<subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85050339">Food supply</subject>
+        	<subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85075801">Legislation</subject>
+        	<subject encodinganalog="690$a" rules="nara-lcdrg" source="us-nara" authfilenumber="https://catalog.archives.gov/id/10641484">Presidential schedules</subject>
+        	<subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85144520">Wage-price policy</subject>
         </controlaccess>
       </controlaccess>
     </controlaccess>
-    <!-- Use separated materials and related materials clips here to enter in information. -->
+
     <!-- Indicate alternative formats / digitized audio below -->
     <altformavail type="audio">
       <head>Digitized Audio</head>
@@ -242,26 +259,1016 @@
     </altformavail>
     <dsc type="combined">
       <head>Conversation Subject Log</head>
-      <!-- Logging here -->
+      
+        <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The <persname>President</persname> met with <persname>John B. Connally</persname>.</unittitle></did>
+  
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle><corpname>Cabinet</corpname> meeting, July 11, 1973</unittitle></did>
+        	</c02>
+        
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>National economy</unittitle></did>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Export controls</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Exceptions</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Meat</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ceiling on prices</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to previous action</unittitle></did>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's program</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Need for taper</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Short-term compared to long-term objectives</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Government's role</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Consumer expectations</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Food prices</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Fruits and vegetables</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Seasonal fluctuations</unittitle></did>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Meat</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ceiling on price</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Earl L. Butz</persname>'s view</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Beef compared with pork</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Hog prices</unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        	</c02>
+        </c01>
+        
+        <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement"><persname>Rose Mary Woods</persname> entered at 3:08 pm.</unittitle></did>
+        
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's schedule</unittitle></did>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Forthcoming meeting with Senators</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Message</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Julie Nixon Eisenhower</persname></unittitle></did>
+        			</c04>
+        		</c03>
+        	</c02>
+        </c01>
+        
+        <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Woods left at 3:10 pm.</unittitle></did>
+        
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>National economy</unittitle></did>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Meat</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Hog prices</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Fluctuations</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cycles, overproduction</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ceiling on price</unittitle></did>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's program</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Previous meeting</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Support</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's strategy</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Arthur F. Burns</persname>'s views</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Controls</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Duration</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Exemptions</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Graduated approach</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Public confidence</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Inflation</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Phase-out timetable</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Food</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>60-day</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Input</unittitle></did>
+        						</c07>
+        					</c06>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Livestock</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Beef-raising cycle</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Butz's view</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Hog production</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Feed prices</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Corn, grain</unittitle></did>
+        						</c07>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Profitability</unittitle></did>
+        							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>Margin</unittitle></did>
+        							</c08>
+        						</c07>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Single supplier</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Flexibility</unittitle></did>
+        						</c07>
+        					</c06>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Agriculture</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Butz's views</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Leslie C. Arends</persname>'s views</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Controls</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Farms, businessmen, labor leaders</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared with consumers</unittitle></did>
+        						</c07>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Consumers' support</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Duration</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Butz</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Poultry production</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Price of eggs</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cyclic production</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Purina</corpname></unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Market dominance</unittitle></did>
+        						</c07>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Poultry compared to hog production</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Broilers</unittitle></did>
+        						</c07>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Purina</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Feed subsidies</unittitle></did>
+        						</c07>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Supply of broilers</unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Pork packing houses</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Closings</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Sanitary laws</unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cattle compared to chickens</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Grain</unittitle></did>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Export controls</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Connally's support</unittitle></did>
+        			</c04>
+        		</c03>
+        	</c02>
+        </c01>
+        
+        <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement"><persname>Manolo Sanchez</persname> entered at an unknown time after 3:10 pm.</unittitle></did>
+        
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Refreshments</unittitle></did>
+        	</c02>
+        </c01>
+        
+        <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Sanchez left at an unknown time before 4:22 pm.</unittitle></did>
+        
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>National economy</unittitle></did>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Export controls</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Duration</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible effects</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Priorities</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Domestic consumption compared to world consumption</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Crop yields</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Agricultural acreage</unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>World food supplies</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Prosperity</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Soviet Union</corpname></unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Leonid I. Brezhnev</persname>'s decisions</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Consumer</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>People's Republic of China</persname> [PRC]</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Transition of economy</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Future strain of PRC demand</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Payment</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Balance of trade</unittitle></did>
+        							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>Textiles</unittitle></did>
+        							</c08>
+        						</c07>
+        					</c06>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>World food shortage</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>US role</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Latin America</geogname>'s role</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Brazil</corpname></unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Latin America</geogname>'s role</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Agricultural acreage</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to <geogname>Midwest</geogname>, <geogname>Texas</geogname></unittitle></did>
+        						</c07>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Development of roads, refrigeration</unittitle></did>
+        						</c07>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>South America</geogname></unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Population</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Poverty</unittitle></did>
+        						</c07>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Birth control</unittitle></did>
+        						</c07>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Studies</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Efficiency of land use</unittitle></did>
+        						</c07>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>US expertise</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Soviet Union</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Price controls</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Industry</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John T. Dunlop</persname>'s views</unittitle></did>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Phase III</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Difficulties</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Controls</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Goal</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Removal of controls</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's possible statements to farmers</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Pittsburgh</geogname>, <geogname>Des Moines</geogname>, <geogname>Illinois</geogname></unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's possible statement to livestock industry</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Food prices</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Popular views</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Balance of payments</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Japan</corpname>, PRC, Soviet Union</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Strength of dollar</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>US position in global economy</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Strength of dollar</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Paris</geogname>, <geogname>Zurich</geogname>, <geogname>Geneva</geogname>, <geogname>Bonn</geogname></unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Soviet Union grain deal</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Terms</unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Agricultural prosperity</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Regions of US</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>South</geogname>, Midwest, <geogname>West</geogname></unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Southeast</geogname></unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Peanuts, soybeans, cotton, corn, cattle</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Southwest, Texas, <geogname>Oklahoma</geogname>, <geogname>Louisiana</geogname></unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Soybeans, wheat</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Wheat</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Midwest</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>West</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>California</geogname></unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Economic and political importance</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cattle prices</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Connally's sale of heifers, July 10, 1973</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Feed</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Beef production</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Agriculture</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Prices</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Corn</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Yield</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Net profit</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Wheat</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Butz's view</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>60-day</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Export controls</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Duration</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Crop cycle</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Corn production</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared with previous years, estimates</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dunlop's view</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Need for controls</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Council of Economic Advisors</corpname> [CEA]</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Export controls</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Predictions</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Impact of weather, insects, storms</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Frederick B. Dent</persname>'s, others' statement</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Export controls</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Crop year</unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Labor</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Forthcoming negotiations</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Jobs</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Real income</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possibility of strikes</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Increase in real disposable income</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to inflation</unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Food prices</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Consumption of meat</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's childhood diet</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Increase in production, consumption</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Per capita</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Farm program</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Farm legislation</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Subsidies</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Anachronism</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Signing of legislation</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Public statements</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Previous surpluses</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Free market</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Fears</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Parity</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>1968 campaign</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Hubert H. Humphrey</persname></unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Grain program</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Connally's farm</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Soil Conservation Service</corpname></unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>[Higara ?]</unittitle></did>
+        							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>Chicken feed</unittitle></did>
+        							</c08>
+        							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>Implications of rules</unittitle></did>
+        							</c08>
+        						</c07>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Deferred grain program</unittitle></did>
+        							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>Implications of rules</unittitle></did>
+        								<c09 level="otherlevel" otherlevel="subtopic"><did><unittitle>Export controls</unittitle></did>
+        								</c09>
+        							</c08>
+        						</c07>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Maize</unittitle></did>
+        							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cattle feed, hay, chicken feed, hog feed</unittitle></did>
+        							</c08>
+        						</c07>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cross-purposes</unittitle></did>
+        						</c07>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Deferred grain program</unittitle></did>
+        							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>Agriculture Department</unittitle></did>
+        							</c08>
+        						</c07>
+        					</c06>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Farm bill</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Parity for milk</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Milk producers</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dairy co-operatives [co-ops]</unittitle></did>
+        						</c07>
+        					</c06>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Milk</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Previous supplies</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Current production</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Competition from overseas</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Europe</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cheese, butter</unittitle></did>
+        						</c07>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dairy co-ops</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared with unions</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Demand</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Price supports</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Pending legislation</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's approval</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Senate</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Carl T. Curtis</persname></unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Milton R. Young</persname></unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Senate bill compared to House of Representatives bill</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Curtis</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>William R. Poage</persname>'s conversation with President</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Leonid I. Brezhnev signing ceremony</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's possible veto</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Connally's view</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Support prices</unittitle></did>
+        						</c07>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Goal</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Approval</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Appeal to East Coasters</unittitle></did>
+        						</c07>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Sellers' market</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible effects of veto</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's credibility</unittitle></did>
+        							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Labor-Management Advisory Committee</corpname></unittitle></did>
+        							</c08>
+        						</c07>
+        					</c06>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Role of government</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Problem solving</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Private initiative</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Businessmen, farmers, consumers</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to <geogname>Europe</geogname></unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Great Britain</corpname>, <corpname>France</corpname></unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Germany</corpname></unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Labor relations</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Japan</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Labor rates</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Europe, Germany, Japan, USSR, PRC</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Private initiative</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>&quot;Pioneer spirit&quot;</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>US deficit</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Midwest, South</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to <geogname>East</geogname></unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Eastern establishment</unittitle></did>
+        						</c07>
+        					</c06>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's leadership</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Watergate</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Distraction</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Forthcoming testimony of <persname>H. R. (&quot;Bob&quot;) Haldeman</persname>, and <persname>John D. Ehrlichman</persname></unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible outcome</unittitle></did>
+        						</c07>
+        					</c06>
+        				</c05>
+        			</c04>
+        		</c03>
+        	</c02>
+        
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Ervin Committee</corpname> hearings</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Forthcoming testimony of Haldeman and Ehrlichman</unittitle></did>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Henry A. Kissinger</persname>'s conversation with President</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Thomas W. Braden</persname></unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Nelson A. Rockefeller</persname></unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Braden, <persname>Frank F. Mankiewicz</persname>, and <persname>George S. McGovern</persname></unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Plan</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John W. Dean, III</persname></unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Duration, scope of investigation</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Public interest</unittitle></did>
+        						</c07>
+        					</c06>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Public opinion</unittitle></did>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee hearings</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Witness list </unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Haldeman, Ehrlichman, <persname>John N. Mitchell</persname>, and <persname>Herbert W. Kalmbach</persname></unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Internal Revenue Service</corpname> [IRS]</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Enemies list</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's and Connally's knowledge</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Dr. Michael DeBakey</persname></unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Investigations</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Audits of President's returns in 1961 and 1962</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Robert F. (&quot;Bobby&quot;) Kennedy</persname></unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Leaks of income tax returns</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Dean's list</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Request for investigations</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Johnnie M. Walters</persname>'s response</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Investigation of Connally while Secretary of Treasury</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Investigations</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Charles G. (&quot;Bebe&quot;) Rebozo</persname></unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>William F. (&quot;Billy&quot;) Graham</persname></unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Dr. W. Kenneth Riland</persname></unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Walters's response</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Robert H. Abplanalp</persname></unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Stories regarding President's <geogname>San Clemente</geogname> property</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Campaign funds</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's response regarding finances</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's finances</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Abplanalp</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Rebozo</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Los Angeles Times story regarding Teamsters</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        		</c03>
+        	</c02>
+          
+          <!-- Begin 2007 Deed of Gift Segment -->
+          <c02 level="otherlevel" otherlevel="audio-subsegment-2007deedOfGift">
+            <did><unittitle type="segment-notation">Deed of Gift Segment</unittitle></did>
+            <accessrestrict>
+              <legalstatus type="deedOfGift2007-restricted">Restricted per 2007 Deed of Gift</legalstatus>
+            </accessrestrict>
+            
+            <!-- Begin Personal-Returnable (PRMPA-G) Withdrawal -->
+            <c03 level="otherlevel" otherlevel="withdrawal" id="withdrawal-948-012-w005">
+              <did>
+                <container type="timecode">##:##:## - ##:##:##</container>
+                <!-- <container type="timestamp">00:00:00 - 00:00:00</container> -->
+                <unitid type="withdrawnItemID">withdrawal-948-012-w005</unitid>
+                <unittitle type="withdrawn">[Withdrawn Item No. 5]</unittitle>
+                <physdesc label="Duration">
+                  <extent type="withdrawalTime" unit="hhmmss">00:00:43</extent>
+                </physdesc>
+              </did>
+              
+              <accessrestrict type="PRMPA-G">
+                <p>Restricted as Personal-Returnable Material</p>
+              </accessrestrict>
+            </c03>
+            <!-- End Personal-Returnable (PRMPA-G) Withdrawal -->
+            
+          </c02>
+          <!-- End 2007 Deed of Gift Segment -->        
+        
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Stories regarding President's San Clemente property</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>General Services Administration</corpname> [GSA] improvements</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>United States Secret Service</corpname> [USSS]</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Freedom of Information Act</corpname> [FOIA] request</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Press coverage, public reaction</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Thomas J. (&quot;Tom&quot;) Steed</persname>'s statement</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Approval</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Justification</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John F. Kennedy</persname>'s assassination</unittitle></did>
+        						</c07>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Robert F. (&quot;Bobby&quot;) Kennedy's assassination [?]</unittitle></did>
+        						</c07>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>USSS</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Fence</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Railroad tracks</unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mexican-Americans</unittitle></did>
+        						</c07>
+        					</c06>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's possible response</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Facilities at <persname>Lyndon B. Johnson</persname>'s ranch</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Airstrip</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Public knowledge</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Facilities at <persname>Dwight D. Eisenhower</persname>'s ranch</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Hyannis Port, Massachusetts</geogname></unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>USSS orders</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Contrasted with President's preferences</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Net worth</unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's possible statement</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Content</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Watergate compared to President's San Clemente property</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Abplanalp</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Precision Valve Co.</corpname></unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Anti-trust suit</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Jewish plaintiffs</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Justice Department</corpname></unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Bertram L. Podell</persname>'s statement</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Abplanalp, Rebozo</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Reluctance to use Presidential plane</unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Robert L. Vesco</persname></unittitle></did>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's possible statements</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Aplanalp, Rebozo</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Connally's viewpoint</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Need to build sympathy</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Abplanalp</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Rebozo</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Rebozo</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Howard Hughes</persname>'s contribution</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Maurice Stans</persname></unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Handling</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Return</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Kalmbach</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Federal Bureau of Investigation</corpname> [FBI] agent <persname>[First name unknown] Calhoun</persname></unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Amount</unittitle></did>
+        						</c07>
+        					</c06>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>1972 campaign contributions</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Stans</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to McGovern's campaign</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Source of funding</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible public statements</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible Congressional action</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible effects</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Return to contributors</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Contributors</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Business people</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible statements</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee investigation in <geogname>Houston, Texas</geogname></unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Handling by Connally</unittitle></did>
+        					</c06>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>George Brown</persname></unittitle></did>
+        						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Statement</unittitle></did>
+        						</c07>
+        					</c06>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Archibald Cox</persname></unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Forthcoming White House response</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Duties</unittitle></did>
+        			</c04>
+        		</c03>
+        	</c02>
+        
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Connally's schedule</unittitle></did>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Foreign travel</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Brezhnev</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing of trip</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>August 3</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Business interests</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible task force</unittitle></did>
+        					</c06>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Connally's conversation with <persname>Walter B. Wriston</persname> and <persname>William E. Simon</persname></unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Union of Soviet Socialist Republics</corpname> [USSR]</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Romania</corpname>, <corpname>Poland</corpname>, <corpname>Czechoslovakia</corpname></unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Middle East</geogname></unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Advisability</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>USSR</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>PRC</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Connally's personal interests</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>USSR compared with PRC</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Order, timing of trips</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's role</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>PRC and Japan</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Connally's availability</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>PRC</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's experience</unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        	</c02>
+        
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>President's schedule</unittitle></did>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Public appearances after Labor Day</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to campaign</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Response to opponents</unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        	</c02>
+        
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Connally's schedule</unittitle></did>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Domestic travel, speaking appearances</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Florida</geogname></unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Edward J. Gurney</persname></unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Kansas</geogname></unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Robert J. Dole</persname></unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Kansas Republican Committee</corpname></unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Oklahoma</geogname>, <geogname>Arizona</geogname>, <geogname>California</geogname>, <geogname>Oregon</geogname>, <geogname>Illinois</geogname></unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Ohio</geogname></unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>New York</geogname></unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ohio, <geogname>Pennsylvania</geogname></unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Frank Dale</persname> in <geogname>Cincinnati</geogname></unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>[Horace] Chapman (&quot;Chappie&quot;) Rose</persname> in <geogname>Cleveland</geogname></unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Preston Wolfe</persname> in <geogname>Columbus</geogname></unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Trip to USSR</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><geogname>Eastern Europe</geogname></unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Poland</corpname></unittitle></did>
+        				</c05>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Announcement</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Ronald L. Ziegler</persname> and <persname>Alexander M. Haig, Jr.</persname></unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Trip preparations, rejoining law firm</unittitle></did>
+        				</c05>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing, focus</unittitle></did>
+        					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's forthcoming speech</unittitle></did>
+        					</c06>
+        				</c05>
+        			</c04>
+        		</c03>
+        	</c02>
+        
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle><corpname>Jamaica</corpname></unittitle></did>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Statehood</unittitle></did>
+        		</c03>
+        	</c02>
+        
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle><corpname>Nassau [Bahamas]</corpname></unittitle></did>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Independence</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Likelihood of success</unittitle></did>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Government</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>US action</unittitle></did>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Population</unittitle></did>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Poverty</unittitle></did>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Military, diplomatic corps</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>United Nations [UN] ambassador, ambassador to US</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Appropriations</unittitle></did>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Tourism</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Taxation</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Hotels</unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Abplanalp</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Residence</unittitle></did>
+        			</c04>
+        		</c03>
+        	</c02>
+        
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+        			</c04>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effect</unittitle></did>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Popular view</unittitle></did>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee hearings</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell, Haldeman, Ehrlichman</unittitle></did>
+        				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Televised testimony</unittitle></did>
+        				</c05>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Popular view</unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Saturation</unittitle></did>
+        			</c04>
+        		</c03>
+        	</c02>
+        
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle><persname>John A. Love</persname></unittitle></did>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Appointment to <corpname>Energy Policy Office</corpname></unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Need for encouragement</unittitle></did>
+        			</c04>
+        		</c03>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Meeting with [Shah of Iran] <persname>Mohammed Reza Pahlavi</persname></unittitle></did>
+        			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Connally's attendance</unittitle></did>
+        			</c04>
+        		</c03>
+        	</c02>
+        
+        	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Connally's schedule</unittitle></did>
+        		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Forthcoming dinner</unittitle></did>
+        		</c03>
+        	</c02>
+        </c01>
+        
+        <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Connally left at 4:22 pm.</unittitle></did></c01> 
+
+      
     </dsc>
     <descgrp type="admininfo">
       <head>Administrative Information</head>
       <accessrestrict>
         <head>Access Restrictions</head>
-        <!-- if/then accessrestrict
-				
-				1) <accessrestrict encodinganalog="506" type="accessUnrestricted">
-					<p>This conversation has no restrictions and is fully open to the public.</p>
-				</accessrestrict>
-				
-				2) <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
-					<p>Portions of this conversation are closed to the public: _ withdrawal(s) for _.</p>
-				</accessrestrict>
-				
-				3) <accessrestrict encodinganalog="506" type="accessFullyRestricted">
-					<p>This conversation is closed to the public in its entirety: 1 withdrawal for _.</p>
-				</accessrestrict>
-				-->
+        <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
+		<p>Portions of this conversation are closed to the public:</p>
+          <list type="marked">
+            <item>One (1) withdrawal as Personal-Returnable</item>
+          </list>
+		</accessrestrict>
         <p>Access is governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
         <p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov" xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
       </accessrestrict>
@@ -312,9 +1319,8 @@
           <p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="United States. National Archives and Records Administration. Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
         </note>
         <note id="encodingHistory">
-          <p>Encoded by Amanda T. Ross, <date normal="2016-01-15">January 15, 2016</date>
-          </p>
-          <!-- Edited by ?, Mm yyyy -->
+          <p>Encoded by Amanda T. Ross, <date normal="2016-01-15">January 15, 2016</date></p>
+          <p>Edited by Amanda T. Ross, <date normal="2016-06">June 2016</date></p>
         </note>
       </processinfo>
     </descgrp>
