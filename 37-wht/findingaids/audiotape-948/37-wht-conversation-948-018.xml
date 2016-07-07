@@ -44,16 +44,20 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
-    <!-- <revisiondesc>
-			<change>
-				<date normal="" type="addition"></date>
-				<item></item>
-			</change>
-			<change>
-				<date normal="" type="edit"></date>
-				<item></item>
-			</change>
-		</revisiondesc> -->
+    <revisiondesc>
+      <change>
+        <date normal="2016-07-07" type="addition">July 7, 2016</date>
+        <item>Added accessrestrict</item>
+        <item>Added subject logging</item>
+        <item>Added tags to logging</item>
+        <item>Added controlaccess terms</item>
+      </change>
+      <change>
+        <date normal="2016-07-07" type="edit">July 7, 2016</date>
+        <item>Edited abstract</item>
+        <item>Edited scopecontent</item>
+      </change>
+    </revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
@@ -98,7 +102,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">948-018</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 11, 1973, President Richard M. Nixon and Ronald L. Ziegler met in the Oval Office of the White House from 5:16 pm to 5:41 pm. The Oval Office taping system captured this recording, which is known as Conversation 948-018 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 11, 1973, President Richard M. Nixon and Ronald L. Ziegler met in the Oval Office of the White House from 5:16 pm to 5:41 pm. The Oval Office taping system captured this recording, which is known as Conversation 948-018 of the White House Tapes. Topics of conversation included Watergate, the investigation by the Senate Select Committe on Presidential Campaign Activitiees (also known as the Ervin Committee), hearing testimonny, and press coverage; the national economy; and public relations.</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -125,7 +129,7 @@
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On July 11, 1973, President Richard M. Nixon and Ronald L. Ziegler met in the Oval Office of the White House from 5:16 pm to 5:41 pm. The Oval Office taping system captured this recording, which is known as Conversation 948-018 of the White House Tapes.</p>
-        <p>Topics of conversation included ...</p>
+        <p>Topics of conversation included Watergate, the investigation by the Senate Select Committe on Presidential Campaign Activitiees (also known as the Ervin Committee), hearing testimonny, and press coverage; the national economy; and public relations.</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
         <scopecontent id="audioQuality">
@@ -208,24 +212,23 @@
       <controlaccess id="topicsOfConversation">
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
-          <head>People</head>
-          
+          <head>People</head>          
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003038" normal="RLZ">Ziegler, Ronald L.</persname>
         </controlaccess>
-        <controlaccess id="placesDiscussed">
-          <head>Places and Governments</head>
-        </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
-          
+          <corpname encodinganalog="650$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80060906">United States. Congress. Senate. Select Committee on Presidential Campaign Activities</corpname>
         </controlaccess>
         <controlaccess id="topicsDiscussed">
           <head>Topics</head>
+          <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85040837">Economic policy</subject>
+          <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85108753">Public relations</subject>
+          <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85145735">Watergate Affair, 1972-1974</subject> 
         </controlaccess>
       </controlaccess>
     </controlaccess>
-    <!-- Use separated materials and related materials clips here to enter in information. -->
+
     <!-- Indicate alternative formats / digitized audio below -->
     <altformavail type="audio">
       <head>Digitized Audio</head>
@@ -236,28 +239,240 @@
         <p>The original audio has been converted to digital format and is available to the public as a Broadcast WAVE Format (BWF) file.</p>
       </altformavail>
     </altformavail>
+    
     <dsc type="combined">
       <head>Conversation Subject Log</head>
-      <!-- Logging here -->
+
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The <persname>President</persname> met with <persname>Ronald L. Ziegler</persname>.</unittitle></did>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Watergate</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Ervin Committee</corpname> hearings</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John N. Mitchell</persname>'s testimony</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Lowell P. Weicker, Jr.</persname>'s questioning</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Samuel J. Ervin, Jr.</persname></unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Members</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ziegler's opinion</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell's testimony</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell's testimony</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>William White</persname>'s characterization</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Witness schedule</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Charles W. Colson</persname></unittitle></did>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>White's article [?]</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's conversation with <persname>John B. Connally</persname></unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Democrats' strategy</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible popular reaction</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's possible response</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>September</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Archibald Cox</persname></unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Special Prosecutor</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Elliot L. Richardson</persname></unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Removal</unittitle></did>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Justice Department</corpname></unittitle></did>
+                </c06>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Legacy</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>News leads</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ervin Committee hearings</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell's testimony</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Weicker's questioning</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Colson's rumor regarding Mitchell and Weicker</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>&quot;Spirit of cooperation&quot;</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Connally's view</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House response</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Power of the Presidency</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Judicious use</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Press coverage</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>William L. Safire</persname></unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><title render="italic">New York Times</title></unittitle></did>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Investigative team</unittitle></did>
+                </c06>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John W. Dean, III</persname></unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Expectations of President's opponents</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Allen Drury</persname>'s book, <title render="italic">Courage and Hesitation</title></unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><title render="italic">New York Times</title></unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Independence</unittitle></did>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Editorial</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><title render="italic">Washington Star</title></unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Press relations</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Press conference</unittitle></did>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Tactics</unittitle></did>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ziegler's hypothetical conversation with <persname>Art Taylor</persname></unittitle></did>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Anti-trust issue</unittitle></did>
+                </c06>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mitchell's testimony</unittitle></did>
+                  <c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Network TV coverage</unittitle></did>
+                  </c07>
+                </c06>
+              </c05>
+            </c04>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Cable TV</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's position</unittitle></did>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>National economy</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's package of Phase IV economic controls</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Announcement</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Alexander M. Haig, Jr.</persname>'s conversation with President</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Melvin R. Laird</persname>, <persname>Bryce N. Harlow</persname>, <persname>George P. Shultz</persname></unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Joint session of <corpname>Congress</corpname></unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared with <persname>Harry S. Truman</persname>'s action as President</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Election year</unittitle></did>
+            </c04>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Public relations [PR] campaign</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing of domestic tour</unittitle></did>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's statements</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Framework</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Content</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>National economy</unittitle></did>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effectiveness of message</unittitle></did>
+                </c06>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Foreign policy</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Public reaction</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Safire's views</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Public reaction</unittitle></did>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's radio speeches in 1967 and 1968</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Press reaction</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Lyndon B. Johnson</persname></unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Presidency</unittitle></did>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Watergate</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Status as issue</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Public perception</unittitle></did>
+              </c05>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Safire's view</unittitle></did>
+            </c04>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House campaign</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's economic package, foreign policy</unittitle></did>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Need for philosophical base</unittitle></did>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's philosophy</unittitle></did>
+                </c06>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Domestic tour</unittitle></did>
+                </c06>
+              </c05>
+            </c04>
+          </c03>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Connally's schedule</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Speaking tour</unittitle></did>
+            </c04>
+          </c03>
+        </c02>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Press relations</unittitle></did>
+          <c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Watergate</unittitle></did>
+            <c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Press expectation</unittitle></did>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's withdrawal</unittitle></did>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Press conference</unittitle></did>
+                </c06>
+              </c05>
+              <c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>White House strategy</unittitle></did>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Receptions, White House correspondents, <corpname>Gridiron Club</corpname> dinners</unittitle></did>
+                </c06>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Press conference</unittitle></did>
+                </c06>
+                <c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Availability</unittitle></did>
+                  <c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>White</unittitle></did>
+                  </c07>
+                </c06>
+              </c05>
+            </c04>
+          </c03>
+        </c02>
+      </c01>
+      
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Ziegler left at 5:41 pm.</unittitle></did>
+        
+      </c01> 
+      
+
     </dsc>
+    
     <descgrp type="admininfo">
       <head>Administrative Information</head>
       <accessrestrict>
         <head>Access Restrictions</head>
-        <!-- if/then accessrestrict
-				
-				1) <accessrestrict encodinganalog="506" type="accessUnrestricted">
-					<p>This conversation has no restrictions and is fully open to the public.</p>
-				</accessrestrict>
-				
-				2) <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
-					<p>Portions of this conversation are closed to the public: _ withdrawal(s) for _.</p>
-				</accessrestrict>
-				
-				3) <accessrestrict encodinganalog="506" type="accessFullyRestricted">
-					<p>This conversation is closed to the public in its entirety: 1 withdrawal for _.</p>
-				</accessrestrict>
-				-->
+        <accessrestrict encodinganalog="506" type="accessUnrestricted">
+          <p>This conversation has no restrictions and is fully open to the public.</p>
+        </accessrestrict>
         <p>Access is governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
         <p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov" xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
       </accessrestrict>
@@ -308,9 +523,8 @@
           <p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="United States. National Archives and Records Administration. Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
         </note>
         <note id="encodingHistory">
-          <p>Encoded by Amanda T. Ross, <date normal="2016-01-15">January 15, 2016</date>
-          </p>
-          <!-- Edited by ?, Mm yyyy -->
+          <p>Encoded by Amanda T. Ross, <date normal="2016-01-15">January 15, 2016</date></p>
+          <p>Edited by Amanda T. Ross, <date normal="2016-07">July 2016</date></p>
         </note>
       </processinfo>
     </descgrp>
