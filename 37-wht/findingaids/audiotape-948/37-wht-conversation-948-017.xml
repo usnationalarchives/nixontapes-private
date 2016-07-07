@@ -44,16 +44,20 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
-    <!-- <revisiondesc>
-			<change>
-				<date normal="" type="addition"></date>
-				<item></item>
-			</change>
-			<change>
-				<date normal="" type="edit"></date>
-				<item></item>
-			</change>
-		</revisiondesc> -->
+    <revisiondesc>
+      <change>
+        <date normal="2016-07-07" type="addition">July 7, 2016</date>
+        <item>Added accessrestrict</item>
+        <item>Added subject logging</item>
+        <item>Added tags to logging</item>
+        <item>Added controlaccess terms</item>
+      </change>
+      <change>
+        <date normal="2016-07-07" type="edit">July 7, 2016</date>
+        <item>Edited abstract</item>
+        <item>Edited scopecontent</item>
+      </change>
+    </revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
@@ -98,7 +102,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">948-017</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 11, 1973, President Richard M. Nixon and unknown person(s) met in the Oval Office of the White House at an unknown time between 5:13 pm and 5:16 pm. The Oval Office taping system captured this recording, which is known as Conversation 948-017 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 11, 1973, President Richard M. Nixon and unknown person(s) met in the Oval Office of the White House at an unknown time between 5:13 pm and 5:16 pm. The Oval Office taping system captured this recording, which is known as Conversation 948-017 of the White House Tapes. Topics of conversation included a request for a White House staffer.</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -125,7 +129,7 @@
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On July 11, 1973, President Richard M. Nixon and unknown person(s) met in the Oval Office of the White House at an unknown time between 5:13 pm and 5:16 pm. The Oval Office taping system captured this recording, which is known as Conversation 948-017 of the White House Tapes.</p>
-        <p>Topics of conversation included ...</p>
+        <p>Topics of conversation included a request for a White House staffer.</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
         <scopecontent id="audioQuality">
@@ -208,20 +212,9 @@
       <controlaccess id="topicsOfConversation">
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
-          <head>People</head>
-          
+          <head>People</head>         
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002795" normal="Unk">[Unknown person(s)]</persname>
-        </controlaccess>
-        <controlaccess id="placesDiscussed">
-          <head>Places and Governments</head>
-        </controlaccess>
-        <controlaccess id="organizationsDiscussed">
-          <head>Organizations</head>
-          
-        </controlaccess>
-        <controlaccess id="topicsDiscussed">
-          <head>Topics</head>
         </controlaccess>
       </controlaccess>
     </controlaccess>
@@ -236,28 +229,28 @@
         <p>The original audio has been converted to digital format and is available to the public as a Broadcast WAVE Format (BWF) file.</p>
       </altformavail>
     </altformavail>
+    
     <dsc type="combined">
       <head>Conversation Subject Log</head>
-      <!-- Logging here -->
+
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The <persname>President</persname> met with an <persname>unknown person</persname>.</unittitle></did>
+        
+        <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Request for <persname>Ronald L. Ziegler</persname></unittitle></did>
+        </c02>
+        
+      </c01>
+      
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The unknown person left at an unknown time before 5:16 pm.</unittitle></did></c01>
+
     </dsc>
+    
     <descgrp type="admininfo">
       <head>Administrative Information</head>
       <accessrestrict>
         <head>Access Restrictions</head>
-        <!-- if/then accessrestrict
-				
-				1) <accessrestrict encodinganalog="506" type="accessUnrestricted">
-					<p>This conversation has no restrictions and is fully open to the public.</p>
-				</accessrestrict>
-				
-				2) <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
-					<p>Portions of this conversation are closed to the public: _ withdrawal(s) for _.</p>
-				</accessrestrict>
-				
-				3) <accessrestrict encodinganalog="506" type="accessFullyRestricted">
-					<p>This conversation is closed to the public in its entirety: 1 withdrawal for _.</p>
-				</accessrestrict>
-				-->
+        <accessrestrict encodinganalog="506" type="accessUnrestricted">
+          <p>This conversation has no restrictions and is fully open to the public.</p>
+        </accessrestrict>
         <p>Access is governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
         <p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov" xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
       </accessrestrict>
@@ -308,9 +301,8 @@
           <p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="United States. National Archives and Records Administration. Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
         </note>
         <note id="encodingHistory">
-          <p>Encoded by Amanda T. Ross, <date normal="2016-01-15">January 15, 2016</date>
-          </p>
-          <!-- Edited by ?, Mm yyyy -->
+          <p>Encoded by Amanda T. Ross, <date normal="2016-01-15">January 15, 2016</date></p>
+          <p>Edited by Amanda T. Ross, <date normal="2016-07">July 2016</date></p>
         </note>
       </processinfo>
     </descgrp>
