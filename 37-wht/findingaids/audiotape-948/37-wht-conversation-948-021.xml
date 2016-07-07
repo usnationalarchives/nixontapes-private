@@ -253,6 +253,7 @@
             <p>Restricted for National Security</p>
           </accessrestrict>
           
+          <c03 level="otherlevel" otherlevel="main-topic"><did><unittitle type="restricted"><persname>President</persname>'s location</unittitle></did></c03>
           
         </c02>
         <!-- End National Security (PRMPA-B) Withdrawal -->
