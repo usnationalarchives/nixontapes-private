@@ -216,6 +216,10 @@
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003038" normal="RLZ">Ziegler, Ronald L.</persname>
         </controlaccess>
+        <controlaccess id="placesDiscussed">
+          <head>Places and Governments</head>
+          <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n78095330">United States</corpname>
+        </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
           <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80060906">United States. Congress. Senate. Select Committee on Presidential Campaign Activities</corpname>
