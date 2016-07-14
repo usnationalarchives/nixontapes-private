@@ -237,7 +237,7 @@
         <controlaccess id="topicsDiscussed">
           <head>Topics</head>
           <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85106477">Presidents -- United States -- Health</subject>
-          <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85140102">United States -- Foreign relations -- 1969-1974</subject>
+          <subject encodinganalog="651$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85140102">United States -- Foreign relations -- 1969-1974</subject>
         </controlaccess>
       </controlaccess>
     </controlaccess>
