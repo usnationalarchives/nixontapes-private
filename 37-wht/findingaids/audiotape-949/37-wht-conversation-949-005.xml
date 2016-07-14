@@ -237,6 +237,7 @@
 			<corpname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80125938">Germany (East)</corpname>
 			<corpname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80125937">Germany (West)</corpname>
 			<corpname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80126312">Soviet Union</corpname>
+        	<corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n78095330">United States</corpname>
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
           	<head>Organizations</head>

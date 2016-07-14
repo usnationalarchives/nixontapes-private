@@ -227,7 +227,8 @@
           <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79023147">Great Britain</corpname>
           <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n79021783">Italy</corpname>
           <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n78085423">Netherlands</corpname>
-          <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80126312">Soviet Union</corpname>          
+          <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80126312">Soviet Union</corpname>
+          <corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n78095330">United States</corpname>          
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
           <head>Organizations</head>
