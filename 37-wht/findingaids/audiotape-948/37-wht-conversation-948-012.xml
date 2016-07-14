@@ -223,6 +223,7 @@
         <controlaccess id="placesDiscussed">
           	<head>Places and Governments</head>
         	<corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n80126312">Soviet Union</corpname>
+        	<corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n78095330">United States</corpname>
         	<geogname encodinganalog="651$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n83220928">San Clemente (Calif.)</geogname>
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
