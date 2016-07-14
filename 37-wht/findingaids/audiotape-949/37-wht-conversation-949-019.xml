@@ -54,6 +54,11 @@
         <date normal="2016-06-21" type="edit">June 21, 2016</date>
         <item>Edited controlaccess</item>
       </change>
+      <change>
+        <date normal="2016-07-14" type="edit">July 14, 2016</date>
+        <item>Edited abstract</item>
+        <item>Edited scopecontent</item>
+      </change>
     </revisiondesc>
   </eadheader>
   <frontmatter>
@@ -99,7 +104,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">949-019</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon and unknown person(s) met in the Oval Office of the White House at an unknown time between 1:47 pm and 2:15 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-019 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon and unknown person(s) met in the Oval Office of the White House at an unknown time between 1:47 pm and 2:15 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-019 of the White House Tapes. Topics of conversation are unclear.</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -126,7 +131,7 @@
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On July 12, 1973, President Richard M. Nixon and unknown person(s) met in the Oval Office of the White House at an unknown time between 1:47 pm and 2:15 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-019 of the White House Tapes.</p>
-        <p>Topics of conversation included ...</p>
+        <p>Topics of conversation unclear.</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
         <scopecontent id="audioQuality">
@@ -298,6 +303,7 @@
         <note id="encodingHistory">
           <p>Encoded by Amanda T. Ross, <date normal="2016-01-15">January 15, 2016</date></p>
           <p>Edited by Amanda T. Ross, <date normal="2016-06">June 2016</date></p>
+          <p>Edited by Amanda T. Ross, <date normal="2016-07">July 2016</date></p>
         </note>
       </processinfo>
     </descgrp>
