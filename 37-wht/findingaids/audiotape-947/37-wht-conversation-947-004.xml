@@ -44,16 +44,20 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
-    <!-- <revisiondesc>
-			<change>
-				<date normal="" type="addition"></date>
-				<item></item>
-			</change>
-			<change>
-				<date normal="" type="edit"></date>
-				<item></item>
-			</change>
-		</revisiondesc> -->
+  	<revisiondesc>
+  		<change>
+  			<date normal="2016-07-14" type="addition">July 14, 2016</date>
+  			<item>Added accessrestrict</item>
+  			<item>Added subject logging</item>
+  			<item>Added tags to logging</item>
+  			<item>Added controlaccess terms</item>
+  		</change>
+  		<change>
+  			<date normal="2016-07-14" type="edit">July 14, 2016</date>
+  			<item>Edited abstract</item>
+  			<item>Edited scopecontent</item>
+  		</change>
+  	</revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
@@ -102,7 +106,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">947-004</unitid>
       <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 10, 1973, President Richard M. Nixon, George P. Shultz, Gerald R. Ford, Hugh Scott, William E. Timmons, and Ronald L. Ziegler met in the Oval Office of the White House from 10:24 am to 11:02 am. The Oval Office taping system captured this recording, which is known as Conversation 947-004 of the White House Tapes. Topics of conversation included ....</abstract>
+    	<abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 10, 1973, President Richard M. Nixon, George P. Shultz, Gerald R. Ford, Hugh Scott, William E. Timmons, and Ronald L. Ziegler met in the Oval Office of the White House from 10:24 am to 11:02 am. The Oval Office taping system captured this recording, which is known as Conversation 947-004 of the White House Tapes. Topics of conversation included the national economy; the Nixon Administration's economic policies and actions, specifically Phase IV of the Economic Stabilization Program under the Economic Stabilization Act of 1970; and balanced budget efforts for the federal budget.</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -129,7 +133,7 @@
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
         <p>On July 10, 1973, President Richard M. Nixon, George P. Shultz, Gerald R. Ford, Hugh Scott, William E. Timmons, and Ronald L. Ziegler met in the Oval Office of the White House from 10:24 am to 11:02 am. The Oval Office taping system captured this recording, which is known as Conversation 947-004 of the White House Tapes.</p>
-        <p>Topics of conversation included ...</p>
+      	<p>Topics of conversation included the national economy; the Nixon Administration's economic policies and actions, specifically Phase IV of the Economic Stabilization Program under the Economic Stabilization Act of 1970; and balanced budget efforts for the federal budget.</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
         <scopecontent id="audioQuality">
@@ -210,30 +214,33 @@
         <subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85106465">Presidents -- United States</subject>
       </controlaccess>
       <controlaccess id="topicsOfConversation">
-        <head>Topics of Conversation</head>
+	        <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
-          <head>People</head>
-          
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000875" normal="GRF">Ford, Gerald R.</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002447" normal="HSt">Scott, Hugh</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002517" normal="GPS">Shultz, George P.</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002732" normal="WET">Timmons, William E.</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003038" normal="RLZ">Ziegler, Ronald L.</persname>
+			<head>People</head>
+			<persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000875" normal="GRF">Ford, Gerald R.</persname>
+			<persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
+			<persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002447" normal="HSt">Scott, Hugh</persname>
+			<persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002517" normal="GPS">Shultz, George P.</persname>
+			<persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002732" normal="WET">Timmons, William E.</persname>
+			<persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003038" normal="RLZ">Ziegler, Ronald L.</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
-          <head>Places and Governments</head>
+        	<head>Places and Governments</head>
+        	<corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n78095330">United States</corpname>
         </controlaccess>
         <controlaccess id="organizationsDiscussed">
-          <head>Organizations</head>
-          
+        	<head>Organizations</head>
+        	<corpname encodinganalog="610$a" role="subject" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n86872026">Economic Stabilization Program (U.S.)</corpname> 
         </controlaccess>
         <controlaccess id="topicsDiscussed">
-          <head>Topics</head>
+			<head>Topics</head>
+			<subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85040802">Economic conditions</subject>
+			<subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85040837">Economic policy</subject>          
+			<subject encodinganalog="650$a" source="lcsh" authfilenumber="http://id.loc.gov/authorities/subjects/sh85040844">Economic stabilization</subject>
         </controlaccess>
       </controlaccess>
     </controlaccess>
-    <!-- Use separated materials and related materials clips here to enter in information. -->
+
     <!-- Indicate alternative formats / digitized audio below -->
     <altformavail type="audio">
       <head>Digitized Audio</head>
@@ -244,28 +251,460 @@
         <p>The original audio has been converted to digital format and is available to the public as a Broadcast WAVE Format (BWF) file.</p>
       </altformavail>
     </altformavail>
+    
     <dsc type="combined">
       <head>Conversation Subject Log</head>
-      <!-- Logging here -->
+      
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The <persname>President</persname> met with <persname>George P. Shultz</persname>, <persname>Gerald R. Ford</persname>, <persname>Hugh Scott</persname>, <persname>William E. Timmons</persname>, and <persname>Ronald L. Ziegler</persname>.  This recording began while the conversation was in progress.</unittitle></did>
+
+       	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>National economy</unittitle></did>
+       		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's statement on Phase IV of the <corpname>Economic Stabilization Program</corpname></unittitle></did>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Rationale</unittitle></did>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Implementation</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing</unittitle></did>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Consultations</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Congress</corpname></unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Labor</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Reports</unittitle></did>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's decision</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>60-day price freeze</unittitle></did>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Character</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to Phase III</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Selectivity</unittitle></did>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Consultation</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Congress</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Recess</unittitle></did>
+       					</c06>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Decision</unittitle></did>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mandatory controls</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's statement</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Composition</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Strength</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Extent, area</unittitle></did>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Consultation with Congress</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Food prices</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Supplies</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Meat</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Future inflation</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Balanced budget</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>1974</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ceiling</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Revenue bills</unittitle></did>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's veto</unittitle></did>
+       						</c07>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Congressional override</unittitle></did>
+       						</c07>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Domestic and defense spending</unittitle></did>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John G. Tower</persname></unittitle></did>
+       						</c07>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Defense spending</unittitle></did>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ceiling</unittitle></did>
+       						</c07>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Fiscal year 1973</unittitle></did>
+       							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>Target</unittitle></did>
+       							</c08>
+       						</c07>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Congress reaction</unittitle></did>
+       						</c07>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Fiscal year 1974</unittitle></did>
+       							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ceiling</unittitle></did>
+       							</c08>
+       							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>Balanced budget</unittitle></did>
+       							</c08>
+       							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>Tax increases</unittitle></did>
+       							</c08>
+       							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Senate</corpname> estimate</unittitle></did>
+       								<c09 level="otherlevel" otherlevel="subtopic"><did><unittitle>Caucus</unittitle></did>
+       								</c09>
+       								<c09 level="otherlevel" otherlevel="subtopic"><did><unittitle>Committee</unittitle></did>
+       								</c09>
+       							</c08>
+       						</c07>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Appropriations</unittitle></did>
+       							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>House of Representatives</corpname></unittitle></did>
+       							</c08>
+       							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>Vetoes</unittitle></did>
+       								<c09 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Health, Education, and Welfare</corpname> [HEW]</unittitle></did>
+       								</c09>
+       								<c09 level="otherlevel" otherlevel="subtopic"><did><unittitle>Farm bill</unittitle></did>
+       									<c10 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Earl L. Butz</persname></unittitle></did>
+       									</c10>
+       									<c10 level="otherlevel" otherlevel="subtopic"><did><unittitle>Escalator</unittitle></did>
+       									</c10>
+       									<c10 level="otherlevel" otherlevel="subtopic"><did><unittitle>Contradiction</unittitle></did>
+       									</c10>
+       									<c10 level="otherlevel" otherlevel="subtopic"><did><unittitle>Food stamps</unittitle></did>
+       										<c11 level="otherlevel" otherlevel="subtopic"><did><unittitle>Increases</unittitle></did>
+       										</c11>
+       										<c11 level="otherlevel" otherlevel="subtopic"><did><unittitle>Uses</unittitle></did>
+       										</c11>
+       										<c11 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's dislike</unittitle></did>
+       										</c11>
+       									</c10>
+       								</c09>
+       							</c08>
+       						</c07>
+       					</c06>
+       				</c05>
+       			</c04>
+       		</c03>
+       		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's program</unittitle></did>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Principles</unittitle></did>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Supplies</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Scott's assessment</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effect in 1974</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Rationing</unittitle></did>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Meat</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Chicken and pork</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Beef</unittitle></did>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Thieves</unittitle></did>
+       						</c07>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Farm labor</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Braceros</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Lettuce, asparagus</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Southern California</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>African Americans</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Japanese Americans</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mexican Americans</unittitle></did>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Victory gardens</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Agriculture Department</unittitle></did>
+       					</c06>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Productivity commission</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Charles H. Percy</persname></unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Schultz's note</unittitle></did>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Legislation</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Legal requirement</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Volunteerism</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Steel, Construction</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Continued authorization</unittitle></did>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Inflation, unemployment</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Rates</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effects</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Priority</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Congress roll</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Budget</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Legislation</unittitle></did>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Business, labor, farmer roles</unittitle></did>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Freeze</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effects</unittitle></did>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible congressional pay raise</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Scott's conversation with Ford</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Everett M. Dickson</persname> [?]</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Minority view</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Capital extension</unittitle></did>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Carl B. Albert</persname>'s comments to <persname>Thomas P. (&quot;Tip&quot;) O'Neill</persname> and <persname>Leslie C. Arends</persname></unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Vice President</persname>, <persname>Speaker of the House</persname>, President, Congressional Party leaders</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>1968 law</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Political considerations</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>1974 elections</unittitle></did>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>O'Neill</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Albert</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>US Senate vote</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Rules committee</unittitle></did>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Hiram L. Fong</persname> and <persname>Gale W. McGee</persname> bill</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Commission</unittitle></did>
+       					</c06>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Flexible investment tax credit</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Forced savings</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Arthur F. Burns</persname></unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Percy, <persname>Wilbur D. Mills</persname></unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Endorsements from <title render="italic">Wall Street Journal</title>, <title render="italic">Christian Science Monitor</title>, <title render="italic">New York Times</title></unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Congressional action</unittitle></did>
+       				</c05>
+       			</c04>
+       		</c03>
+       	</c02>
+       </c01>
+       
+       <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Ford, Scott, Timmons, and Ziegler left at 10:45 am.</unittitle></did>
+       
+       	<c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>National economy</unittitle></did>
+       		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>US dollar</unittitle></did>
+       		</c03>
+       		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effect of export controls</unittitle></did>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Devaluation</unittitle></did>
+       			</c04>
+       		</c03>
+       		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Meeting of European central bankers in <geogname>Bonn, West Germany</geogname></unittitle></did>
+       		</c03>
+       		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>Intervention in exchange markets</unittitle></did>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Support</unittitle></did>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Foreign exchange market reaction</unittitle></did>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>US commitments</unittitle></did>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Views of Burns and <persname>Paul A. Volcker</persname></unittitle></did>
+       			</c04>
+       		</c03>
+       		<c03 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's programs</unittitle></did>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Export controls</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Corn</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Crop reports</unittitle></did>
+       					</c06>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Phase IV</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Decision</unittitle></did>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Credibility</unittitle></did>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Effect on exchange markets</unittitle></did>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Europeans' view</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Experience with price and wage freezes</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Fiscal and monetary policy</unittitle></did>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Fiscal and monetary policy</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Budget statement</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Memorandum</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Meeting</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Bryce N. Harlow</unittitle></did>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Forthcoming meeting with President</unittitle></did>
+       						</c07>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Interpretation of fiscal matters</unittitle></did>
+       						</c07>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Shultz's recommendations</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Forthcoming statements by Ford and Scott</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Timing of decision</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's statement</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Joint session of Congress</unittitle></did>
+       					</c06>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Intervention in exchange markets</unittitle></did>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's programs</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Statement</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Congress</unittitle></did>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Partisanship</unittitle></did>
+       						</c07>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Harlow's view</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Phase IV</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>John Dunlop</persname>'s view</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Federal budget</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Fiscal discipline</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible spending cuts</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible tax increase</unittitle></did>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Joint Committee</unittitle></did>
+       						</c07>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Spending ceiling</unittitle></did>
+       						</c07>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Size of deficit</unittitle></did>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible vetoes</unittitle></did>
+       							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>HEW</unittitle></did>
+       							</c08>
+       						</c07>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>National defense</unittitle></did>
+       							<c08 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cuts</unittitle></did>
+       								<c09 level="otherlevel" otherlevel="subtopic"><did><unittitle>Congressional action</unittitle></did>
+       								</c09>
+       								<c09 level="otherlevel" otherlevel="subtopic"><did><unittitle>Rates</unittitle></did>
+       								</c09>
+       							</c08>
+       						</c07>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Memorandum</unittitle></did>
+       						</c07>
+       					</c06>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Intervention in exchange markets</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Burns</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>Federal Reserve</corpname></unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's decision</unittitle></did>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>Federal budget</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Percy's statement in previous meeting</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Burns's viewpoint</unittitle></did>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Debt ceiling</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><corpname>House Ways and Means Committee</corpname></unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle><persname>Barber B. Conable, Jr.</persname></unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Mills</unittitle></did>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Tax increases</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Burns's viewpoint</unittitle></did>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Gasoline tax</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible cut in income tax</unittitle></did>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Delay</unittitle></did>
+       						</c07>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Spending</unittitle></did>
+       						</c07>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Surcharge on income and corporate taxes</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>1968</unittitle></did>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Variable investment tax credit</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Revenue</unittitle></did>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Possible congressional tax legislation</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Closure of loopholes</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Wall Street reaction</unittitle></did>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Gasoline tax</unittitle></did>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Conservation</unittitle></did>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Tax reform discussions</unittitle></did>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Compared to income tax</unittitle></did>
+       						</c07>
+       					</c06>
+       					<c06 level="otherlevel" otherlevel="subtopic"><did><unittitle>Cost of living increase</unittitle></did>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Regressive tax</unittitle></did>
+       						</c07>
+       						<c07 level="otherlevel" otherlevel="subtopic"><did><unittitle>Income tax credit</unittitle></did>
+       						</c07>
+       					</c06>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Republican enthusiasm</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Ways and Means Committee action</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Budget surplus</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Laird, Harlow</unittitle></did>
+       				</c05>
+       			</c04>
+       			<c04 level="otherlevel" otherlevel="subtopic"><did><unittitle>President's program</unittitle></did>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Statement</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Joint Session of Congress</unittitle></did>
+       				</c05>
+       				<c05 level="otherlevel" otherlevel="subtopic"><did><unittitle>Substance</unittitle></did>
+       				</c05>
+       			</c04>
+       		</c03>
+       	</c02>
+       </c01>
+       
+       <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">Shultz left at 11:02 am.</unittitle></did>
+       
+       </c01>
+
+      
     </dsc>
+    
     <descgrp type="admininfo">
       <head>Administrative Information</head>
       <accessrestrict>
         <head>Access Restrictions</head>
-        <!-- if/then accessrestrict
-				
-				1) <accessrestrict encodinganalog="506" type="accessUnrestricted">
-					<p>This conversation has no restrictions and is fully open to the public.</p>
-				</accessrestrict>
-				
-				2) <accessrestrict encodinganalog="506" type="accessPartiallyRestricted">
-					<p>Portions of this conversation are closed to the public: _ withdrawal(s) for _.</p>
-				</accessrestrict>
-				
-				3) <accessrestrict encodinganalog="506" type="accessFullyRestricted">
-					<p>This conversation is closed to the public in its entirety: 1 withdrawal for _.</p>
-				</accessrestrict>
-				-->
+        <accessrestrict encodinganalog="506" type="accessUnrestricted">
+          <p>This conversation has no restrictions and is fully open to the public.</p>
+        </accessrestrict>
         <p>Access is governed by the <title xlink:href="http://www.archives.gov/presidential-libraries/laws/1974-act.html" xlink:show="new" authfilenumber="PRMPA">Presidential Recordings and Materials Preservation Act of 1974 (PRMPA)</title>; <title xlink:href="http://go.usa.gov/3zNZJ" xlink:show="new">Nixon Public Access Regulations 36 CFR 1275 of the NARA Code of Federal Regulations</title>, including the 1996 Tapes Settlement Agreement (Appendix A); and protocols related to classified national security information, including <title xlink:href="https://www.federalregister.gov/articles/2010/01/05/E9-31418/classified-national-security-information" xlink:show="new">Executive Order 13526</title>.</p>
         <p>For more information, please contact the Tapes Team at the <corpname source="nixonTapesIndex" authfilenumber="37-wht-eac-00003482" normal="RNPLM">Richard Nixon Presidential Library and Museum</corpname>: <extref xlink:actuate="onLoad" xlink:href="mailto:nixon@nara.gov" xlink:type="simple">nixon@nara.gov</extref> or (301) 837-3290.</p>
       </accessrestrict>
@@ -316,9 +755,8 @@
           <p>Digitization of the White House Tapes and related activities by the Richard Nixon Presidential Library and Museum are supported by the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004830" normal="United States. National Archives and Records Administration. Preservation Programs Division">Preservation Programs Division</corpname> and the <corpname role="sponsor" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004829" normal="United States. National Archives and Records Administration. Office of Innovation">Office of Innovation</corpname> at the National Archives and Records Administration.</p>
         </note>
         <note id="encodingHistory">
-          <p>Encoded by Amanda T. Ross, <date normal="2016-01-15">January 15, 2016</date>
-          </p>
-          <!-- Edited by ?, Mm yyyy -->
+          <p>Encoded by Amanda T. Ross, <date normal="2016-01-15">January 15, 2016</date></p>
+          <p>Edited by Amanda T. Ross, <date normal="2016-07">July 2016</date></p>
         </note>
       </processinfo>
     </descgrp>
