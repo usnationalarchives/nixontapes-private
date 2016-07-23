@@ -106,7 +106,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">949-014</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-949_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, Henry A. Kissinger, unknown person(s), Alexander M. Haig, Jr., Ronald L. Ziegler, President Richard M. Nixon, and White House operator met in the Oval Office of the White House at an unknown time between 8:22 pm and 8:44 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-014 of the White House Tapes. Topics of conversation included President Nixon's schedule, especially the planned state visit with Zulfikar Ali Bhutto; the President's health; and Watergate and the investigation by the Senate Select Committe on Presidential Campaign Activitiees (also known as the Ervin Committee).</abstract>
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>

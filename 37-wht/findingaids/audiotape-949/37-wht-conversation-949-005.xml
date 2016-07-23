@@ -116,7 +116,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">949-005</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-949_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon, Walter Scheel, and Henry A. Kissinger met in the Oval Office of the White House from 2:56 pm to 3:25 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-005 of the White House Tapes. Topics of conversation included relations between the United States and European countries, such as West Germany, East Germany, France, and the Union of Soviet Socialist Republics (USSR or Soviet Union); the &quot;Year of Europe&quot;, North Atlantic Treaty Organization (NATO); differing political systems and economic approaches; and nuclear policy.</abstract>
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
