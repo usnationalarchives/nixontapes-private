@@ -119,7 +119,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">798-004</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-798_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On October 14, 1972, President Richard M. Nixon, staff, and physicians from a delegation from the People's Republic of China, including Henry A. Kissinger, Stephen B. Bull, Dr. John Hogness, Dr. John R. Kernodle, Dr. Edward E. David, Jr., Dr. Walter R. Tkach, James H. Cavanaugh, unknown person(s), Dr. Wu Wei-jan, Dr. Fu Yi-chen, Dr. Lin Chiao-chih, Dr. Wu Hsueh-yu, Dr. Li Yen-shan, Dr. Chu Chuan-yan, Dr. Liu Shih-lien, Dr. Han Jui, Dr. Chou Kuan-han, Dr. Chang Shu-shun, Dr. Hsu Chia-yu, Wang Lien-sheng, Lu Tsung-ming, and Tai Tseng-yi, members of the press, and the White House photographer, met in the Oval Office of the White House from 10:03 am to 10:39 am. The Oval Office taping system captured this recording, which is known as Conversation 798-004 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
