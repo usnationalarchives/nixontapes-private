@@ -128,7 +128,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">693-001</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-693_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On March 24, 1972, President Richard M. Nixon, Ralph Harris, John F. Osborne, Peter Lisagor, Charles W. Bailey, Robert B. Semple, Jr., Donald Bacon, Jack Germond, R. H. Shackford, Jim Cary, Sarah McLendon, Lucian C Warren, John Cauley, Frank van der Linden, Jim Deakin, Jesse Lewis, Gaylord Shaw, Bob Toth, David Kraslow, Courtney Sheldon, Jerald F. ("Jerry") terHorst, Dave Barnett, Martin Nolan, Jack Leacocas, Clark R. Mollenhoff, Martin Schram, Edgar Allen Poe, Fred Bonavita, George Embrey, Frank Kane, Ed O'Brien, Phil Potter, and Ross Mark met in the Oval Office of the White House from 3:02 pm to 3:39 pm. The Oval Office taping system captured this recording, which is known as Conversation 693-001 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
