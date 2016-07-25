@@ -111,7 +111,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">527-011</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-527_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On June 23, 1971, President Richard M. Nixon, Stephen B. Bull, James D. Hodgson, Malcolm R. Lovell, Jr., Melvin R. Laird, Maurice H. Stans, Rufus H. Wilson, John D. Harper, William Woodward, James F. Oates, John F. Evans, Jr., Melvin Stephens, Howard Russell, Henry A. Kissinger, Ronald L. Ziegler, and John D. Ehrlichman met in the Oval Office of the White House at an unknown time between 10:12 am and 11:40 am. The Oval Office taping system captured this recording, which is known as Conversation 527-011 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
