@@ -125,7 +125,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">594-007</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-594_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On October 18, 1971, George T. Bell, Thomas G. Walters, Mrs. Thomas G. Walters, Clarence M. Tarr, Mrs. Clarence M. Tarr, Arthur L. Sparks, Mrs. Arthur L. Sparks, Vincent G. Walkendifer, Mrs. Vincent G. Walkendifer, Gertrude G. Davis, Carleton J. Chace, James W. Stone, Mrs. James W. Stone, Ted R. Gardner, Mrs. Ted R. Gardner, Col. Glenn R. Johnson, F. E. O'Connor, Luther L. Miller, Joe G. Attebery, Mrs. Joe G. Attebery, Ed W. Meadows, Mrs. Ed W. Meadows, Ray Hillyard, Charles J. Turrisi, Mrs. Charles J. Turrisi, Ben W. Graybill, David M. Magee, Chris J. O'Neill, Judith E. Park, and Katherine G. Slade met in the Oval Office of the White House from 12:37 pm to 12:44 pm. The Oval Office taping system captured this recording, which is known as Conversation 594-007 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
