@@ -104,7 +104,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">572-011</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-572_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On September 14, 1971, President Richard M. Nixon, Prince Hitachi, Nobuhiko Ushiba, Mrs. Nobuhiko Ushiba, James J. Wickel, Emil ("Bus") Mosbacher, Jr., Alexander M. Haig, Jr., Stephen B. Bull, and White House photographer met in the Oval Office of the White House from 3:03 pm to 3:30 pm. The Oval Office taping system captured this recording, which is known as Conversation 572-011 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
