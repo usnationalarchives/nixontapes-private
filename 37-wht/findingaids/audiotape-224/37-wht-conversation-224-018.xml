@@ -97,7 +97,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">224-018</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-224_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On November 14, 1972, President Richard M. Nixon and Manolo Sanchez met in the Aspen Lodge study at Camp David at an unknown time between 12:44 pm and 1:10 pm. The Camp David Hard Wire taping system captured this recording, which is known as Conversation 224-018 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Camp David Hard Wire recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
