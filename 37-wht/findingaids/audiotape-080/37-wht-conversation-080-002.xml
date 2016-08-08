@@ -122,7 +122,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">080-002</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-080_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On October 19, 1971, President Richard M. Nixon and Republican Congressional leaders, including William P. Rogers, Charls E. Walker, Hugh Scott, Robert P. Griffin, Margaret Chase Smith, Gordon L. Allott, Peter H. Dominick, Norris Cotton, Gerald R. Ford, Leslie C. Arends, John B. Anderson, Robert C. ("Bob") Wilson, John J. Rhodes, Barber B. Conable, Jr., Richard H. Poff, Samuel L. Devine, John D. Ehrlichman, George P. Shultz, Clark MacGregor, Harry S. Dent, William E. Timmons, Richard K. Cook, Eugene S. Cowen, Patrick J. Buchanan, Bryce N. Harlow, and Ronald L. Ziegler, met in the Cabinet Room of the White House from 8:06 am to 9:55 am. The Cabinet Room taping system captured this recording, which is known as Conversation 080-002 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
