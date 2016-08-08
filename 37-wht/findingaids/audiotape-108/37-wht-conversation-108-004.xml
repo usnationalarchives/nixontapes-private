@@ -117,7 +117,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">108-004</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-108_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On October 17, 1972, President Richard M. Nixon and members of the National Advisory Council for Drug Abuse Prevention, including James Q. Wilson, Wade Coleman, Richard S. Wilbur, Donald E. Johnson, Carl D. Chambers, Robert L. DuPont, Phyllis Harrison-Ross, Audrey R. Holliday, John J. Marchi, Beny J. Primm, Michael J. Quinn, Gale E. Sayers, Egil ("Bud") Krogh, Jr., Richard H. Nordahl, Lee W. Gladden, Geoffrey C. Shepard, Dr. Jerome H. Jaffe, Myles J. Ambrose, Dr. Merlin K. ("Morty") DuVal, and Richard L. Harkness, met in the Cabinet Room of the White House at an unknown time between 11:06 am and 11:21 am. The Cabinet Room taping system captured this recording, which is known as Conversation 108-004 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
