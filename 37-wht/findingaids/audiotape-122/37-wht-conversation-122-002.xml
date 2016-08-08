@@ -113,7 +113,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">122-002</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-122_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On April 12, 1973, President Richard M. Nixon and members of the National Security Council, including William P. Rogers, Elliot L. Richardson, Adm. Thomas H. Moorer, Dr. James R. Schlesinger, Philip J. Farley, Donald H. Rumsfeld, [David] Kenneth Rush, Ronald I. Spiers, Bruce Clarke, Henry A. Kissinger, Gen. Brent G. Scowcroft, Helmut ("Hal") Sonnenfeldt, Philip A. Odeen, James Keogh, White House photographer, Jim [Last name unknown], met in the Cabinet Room of the White House from 10:03 am to 11:27 am. The Cabinet Room taping system captured this recording, which is known as Conversation 122-002 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
