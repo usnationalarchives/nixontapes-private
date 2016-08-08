@@ -110,7 +110,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">060-002</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-060_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On June 8, 1971, President Richard M. Nixon and members of the Board of Directors for Amtrak, including John A. Volpe, Roger Lewis, David W. Kendall, Catherine May Bedell, Gen. Frank S. Besson, David E. Bradshaw, John J. Gilhooley, Arthur D. Lewis, Charles Luna, John P. Olsson, William H. Moore, William J. Quinn, John D. Ehrlichman, Egil ("Bud") Krogh, Jr., Charles Clapp, and Donald B. Rice, met in the Cabinet Room of the White House at an unknown time between 10:31 am and 11:59 pm. The Cabinet Room taping system captured this recording, which is known as Conversation 060-002 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
