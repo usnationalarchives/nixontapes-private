@@ -113,7 +113,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">048-004</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-048_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On February 28, 1971, President Richard M. Nixon, Vice President Spiro T. Agnew, William P. Rogers, Melvin R. Laird, Richard M. Helms, Adm. Thomas H. Moorer, John N. Irwin, II, Henry A. Kissinger, George H. W. Bush, U. Alexis Johnson, Frank J. Shakespeare, Joseph J. Sisco, Alfred L. Atherton, Alexander M. Haig, Jr., John H. Holdridge, Harold H. Saunders, Col. Richard T. Kennedy, and Stephen B. Bull met in the Cabinet Room of the White House at an unknown time between 10:00 am and 12:35 pm. The Cabinet Room taping system captured this recording, which is known as Conversation 048-004 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
