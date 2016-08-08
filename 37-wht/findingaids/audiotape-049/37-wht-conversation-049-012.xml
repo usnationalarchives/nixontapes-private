@@ -107,7 +107,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">049-012</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-049_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On March 8, 1971, President Richard M. Nixon and members of the National Security Council, including Vice President Spiro T. Agnew, William P. Rogers, Melvin R. Laird, John N. Mitchell, Adm. Thomas H. Moorer, Richard M. Helms, Henry A. Kissinger, John B. Connally, David Packard, and Paul H. Nitze, met in the Cabinet Room of the White House at an unknown time between 8:32 am and 10:27 am. The Cabinet Room taping system captured this recording, which is known as Conversation 049-012 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
