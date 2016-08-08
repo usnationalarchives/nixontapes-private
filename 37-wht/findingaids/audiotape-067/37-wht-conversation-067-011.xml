@@ -117,7 +117,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">067-011</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-067_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On August 5, 1971, President Richard M. Nixon, Vice President Spiro T. Agnew, and Cabinet officers, including William P. Rogers, John B. Connally, Melvin R. Laird, John N. Mitchell, J. Philip Campbell, Maurice H. Stans, James D. Hodgson, John G. Veneman, George W. Romney, John A. Volpe, George P. Shultz, Robert H. Finch, Donald H. Rumsfeld, George H. W. Bush, Raymond K. Price, Jr., Herbert G. Klein, Ronald L. Ziegler, Alexander P. Butterfield, and Robert J. Dole, met in the Cabinet Room of the White House from 10:10 am to 11:55 am. The Cabinet Room taping system captured this recording, which is known as Conversation 067-011 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
