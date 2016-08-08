@@ -119,7 +119,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">107-002</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-100_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On August 10, 1972, President Richard M. Nixon and members of the Cost of Living Council, including George P. Shultz, Donald H. Rumsfeld, Hebert Stein, Peter G. Peterson, Caspar W. ("Cap") Weinberger, Gen. George A. Lincoln, Virginia H. Knauer, Arthur F. Burns, James T. Lynn, Laurence H. Silberman, J. Philip Campbell, James W. McLane, C. Robert Lane, Marvin H. Kosters, William I. ("Bill") Greener, Jr., Joseph Mullaney, Richard B. Cheney, I. David Wheat, Jr., Marina con Neumann Whitman, William Walker, Ronald L. Ziegler, and the White House photographer, met in the Cabinet Room of the White House at an unknown time between 5:07 pm and 11:59 pm. The Cabinet Room taping system captured this recording, which is known as Conversation 107-002 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
