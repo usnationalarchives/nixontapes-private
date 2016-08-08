@@ -107,7 +107,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">096-002</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-096_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On March 21, 1972, President Richard M. Nixon and the General Advisory Committee on Arms Control and Disarmament, John J. McCloy, William C. Foster, Kermit Gordon, James L. Killiam, Gen. Lauris Norstad, Jack Ruina, William W. Scranton, John A. Wheeler, Helmut ("Hal") Sonnenfeldt, Alexander M. Haig, Jr. met in the Cabinet Room of the White House from 3:03 pm to 4:06 pm. The Cabinet Room taping system captured this recording, which is known as Conversation 096-002 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
