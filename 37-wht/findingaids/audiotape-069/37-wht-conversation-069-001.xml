@@ -112,7 +112,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">069-001</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-069_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On August 13, 1971, President Richard M. Nixon and members of the National Security Council, including Vice President Spiro T. Agnew, John N. Irwin, II, Melvin R. Laird, Gen. George A. Lincoln, John N. Mitchell, Richard M. Helms, Adm. Thomas H. Moorer, George P. Shultz, Ronald I. Spiers, David Packard, Henry A. Kissinger, Col. Richard T. Kennedy, Dr. [First name unknown] Weinsmith, Caspar W. ("Cap") Weinberger, and Kenneth W. Dam, met in the Cabinet Room of the White House at an unknown time between 10:08 am and 11:57 am. The Cabinet Room taping system captured this recording, which is known as Conversation 069-001 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
