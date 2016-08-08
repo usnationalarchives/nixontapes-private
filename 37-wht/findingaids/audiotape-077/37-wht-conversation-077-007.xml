@@ -110,7 +110,7 @@
       </repository>
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">077-007</unitid>
-      <!-- <container id="wht-audiotape-{$tapeID}_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
+      <!-- <container id="wht-audiotape-077_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
       <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On September 28, 1971, President Richard M. Nixon and members of the Organization of African Unity, including Moktar Ould Daddah, Hamdi Ould Mouknass, Dr. Njoroge Mungai, Capt. Charles Sissoko, Elijah Mudenda, Jean Keutcha, Diallo Telli, Mohamed Sahnoun, William P. Rogers, Henry A. Kissinger, Emil ("Bus") Mosbacher, Jr., David D. Newsome, W. Marshall Wright, Robert Bruce, Alec G. Toumayan, and members of the press, met in the Cabinet Room of the White House from 3:15 pm to 3:52 pm. The Cabinet Room taping system captured this recording, which is known as Conversation 077-007 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
