@@ -57,6 +57,13 @@
         <agent>base-to-eac.xq</agent>
         <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime>2016-08-23</eventDateTime>
+        <agentType>human</agentType>
+        <agent>Amanda T. Ross</agent>
+        <eventDescription>Added link to authority NARA's LCDRG</eventDescription>
+      </maintenanceEvent>
       <!--
             <maintenanceEvent>
                 <eventType>revised</eventType>
@@ -117,6 +124,13 @@
     <authorizedForm>VIAF</authorizedForm>
     <authorizedForm>USNARA-LCDRG</authorizedForm>
      -->
+      </nameEntry>
+      <nameEntry localType="das:termName" scriptCode="Latn" xml:lang="en">
+        <part localType="das:termName">Aspinall, Wayne N.</part>
+        <authorizedForm>USNARA-LCDRG</authorizedForm>
+      </nameEntry>
+      <nameEntry scriptCode="Latn" xml:lang="en"> 
+        <part localType="das:termName"></part>
       </nameEntry>
       <!-- Variant Name Entries -->
       <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
