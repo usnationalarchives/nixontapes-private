@@ -7,7 +7,7 @@
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 746-012, <date>July 1, 1972</date>
         </titleproper>
         <titleproper type="filing">Conversation 746-012</titleproper>
-        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, Bruce J. Kehrli, and Alexander P. Butterfield</subtitle>
+        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, Bruce A. Kehrli, and Alexander P. Butterfield</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
         <lb/> 
@@ -49,6 +49,9 @@
         <date normal="2016-08-24" type="edit">August 24, 2016</date>
         <item>Edited origination: Changes Bruce J. Kehrli (37-wht-eac-00001440) to Bruce A. Kehrli (37-wht-eac-00001439)</item>
         <item>Edited controlaccess: Changes Bruce J. Kehrli (37-wht-eac-00001440) to Bruce A. Kehrli (37-wht-eac-00001439)</item>
+        <item>Edited subtitle: Changed to Bruce A. Kehrli</item>
+        <item>Edited abstract: Changed to Bruce A. Kehrli</item>
+        <item>Edited scopecontent: Changed to Bruce A. Kehrli</item>
       </change>
     </revisiondesc>
     <!-- <revisiondesc>
@@ -106,7 +109,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">746-012</unitid>
       <!-- <container id="wht-audiotape-746_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 1, 1972, President Richard M. Nixon, Bruce J. Kehrli, and Alexander P. Butterfield met in the Oval Office of the White House at an unknown time between 11:12 am and 11:19 am. The Oval Office taping system captured this recording, which is known as Conversation 746-012 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 1, 1972, President Richard M. Nixon, Bruce A. Kehrli, and Alexander P. Butterfield met in the Oval Office of the White House at an unknown time between 11:12 am and 11:19 am. The Oval Office taping system captured this recording, which is known as Conversation 746-012 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -132,7 +135,7 @@
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
-        <p>On July 1, 1972, President Richard M. Nixon, Bruce J. Kehrli, and Alexander P. Butterfield met in the Oval Office of the White House at an unknown time between 11:12 am and 11:19 am. The Oval Office taping system captured this recording, which is known as Conversation 746-012 of the White House Tapes.</p>
+        <p>On July 1, 1972, President Richard M. Nixon, Bruce A. Kehrli, and Alexander P. Butterfield met in the Oval Office of the White House at an unknown time between 11:12 am and 11:19 am. The Oval Office taping system captured this recording, which is known as Conversation 746-012 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
