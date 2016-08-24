@@ -44,6 +44,13 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2016-08-24" type="edit">August 24, 2016</date>
+        <item>Edited origination: Changes Bruce J. Kehrli (37-wht-eac-00001440) to Bruce A. Kehrli (37-wht-eac-00001439)</item>
+        <item>Edited controlaccess: Changes Bruce J. Kehrli (37-wht-eac-00001440) to Bruce A. Kehrli (37-wht-eac-00001439)</item>
+      </change>
+    </revisiondesc>
     <!-- <revisiondesc>
 			<change>
 				<date normal="" type="addition"></date>
@@ -73,7 +80,7 @@
       <unitdate label="Date" encodinganalog="245$d" normal="1971-02-16/1971-02-16" type="inclusive" certainty="supplied">July 1, 1972</unitdate>
       <origination id="participants" label="Participants">
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
-        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001440" normal="BJK">Kehrli, Bruce J.</persname>
+        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001439" normal="BAK">Kehrli, Bruce A.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000370" normal="APB">Butterfield, Alexander P.</persname>
       </origination>
       <origination id="isPartOf" label="Parent Materials (Is Part Of)">
@@ -212,7 +219,7 @@
           <head>People</head>
           
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000370" normal="APB">Butterfield, Alexander P.</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001440" normal="BJK">Kehrli, Bruce J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001439" normal="BAK">Kehrli, Bruce A.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
