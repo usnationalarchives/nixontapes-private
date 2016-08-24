@@ -57,14 +57,14 @@
         <agent>base-to-eac.xq</agent>
         <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
+      <maintenanceEvent>
+          <eventType>revised</eventType>
+          <eventDateTime>2016-08-24</eventDateTime>
+          <agentType>human</agentType>
+          <agent>Amanda T. Ross</agent>
+          <eventDescription>Corrected spelling of 'Marrinsen' to 'Marrinson'</eventDescription>
+      </maintenanceEvent>
       <!--
-            <maintenanceEvent>
-                <eventType>revised</eventType>
-                <eventDateTime></eventDateTime>
-                <agentType></agentType>
-                <agent></agent>
-                <eventDescription></eventDescription>
-            </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
                 <eventDateTime></eventDateTime>
@@ -103,7 +103,7 @@
       <!-- Authorized Name Entries -->
       <!-- Nixon Tapes Index -->
       <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
-        <part localType="marcfield:100$a">Marrinsen, Ralph</part>
+        <part localType="marcfield:100$a">Marrinson, Ralph</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
       <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
@@ -120,11 +120,11 @@
       </nameEntry>
       <!-- Variant Name Entries -->
       <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
-        <part localType="directOrder">Ralph Marrinsen</part>
+        <part localType="directOrder">Ralph Marrinson</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
       <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
-        <part localType="familyName">Marrinsen</part>
+        <part localType="familyName">Marrinson</part>
         <part localType="givenName">Ralph</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
@@ -260,7 +260,7 @@
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
         <descriptiveNote>
-          <p>Ralph Marrinsen and President Richard M. Nixon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Ralph Marrinson and President Richard M. Nixon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <!-- Relationships to Families -->
@@ -270,7 +270,7 @@
       <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-031-099">
         <relationEntry>White House Tapes: Conversation 031-099</relationEntry>
         <descriptiveNote>
-          <p>Ralph Marrinsen participated in Conversation 031-099 on the White House Tapes of the Nixon Administration</p>
+          <p>Ralph Marrinson participated in Conversation 031-099 on the White House Tapes of the Nixon Administration</p>
         </descriptiveNote>
       </resourceRelation>
       <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
