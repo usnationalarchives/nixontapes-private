@@ -57,6 +57,13 @@
         <agent>base-to-eac.xq</agent>
         <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>updated</eventType>
+        <eventDateTime>2016-08-24</eventDateTime>
+        <agentType>human</agentType>
+        <agent>Amanda T. Ross</agent>
+        <eventDescription>Added biographical abstract and citations</eventDescription>
+      </maintenanceEvent>
       <!--
             <maintenanceEvent>
                 <eventType>revised</eventType>
@@ -246,11 +253,14 @@
       <places/>
       <biogHist>
         <!-- Abstract -->
-        <abstract/>
+        <abstract>Heinz Weber was a German-English interpreter and translator. Weber interpreted for Walter Scheel and Rainer Barzel during their White House visits.</abstract>
         <!-- Biography or Administrative History Note -->
         <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
         <!-- Insert citations -->
+        <citation><span localType="author">Harry Obst</span>. <span localType="title" style="italics">White House Interpreter: The Art of Interpretation</span>. <span localType="placeOfPublication">Bloomington, Indiana</span>: <span localType="publisher">Author House</span>, <span localType="dateOfPublication">2010</span>, <span localType="locationInPublication">p. 5-6</span>.</citation>
+        <citation><span localType="title">President Richard Nixon's Daily Diary, July 12, 1973</span>. <span localType="publisher">Richard Nixon Presidential Library and Museum</span>. <span localType="url">https://nixonlibrary.gov/virtuallibrary/documents/PDD/1972/068%20January%2016-31%201972.pdf</span></citation>
+        <citation><span localType="title">President Richard Nixon's Daily Diary, July 28, 1972</span>. <span localType="publisher">Richard Nixon Presidential Library and Museum</span>. <span localType="url">https://nixonlibrary.gov/virtuallibrary/documents/PDD/1973/103%20July%201-15%201973.pdf</span></citation>
       </biogHist>
       <!-- Insert structureOrGenealogy, if relevant -->
     </description>
