@@ -7,7 +7,7 @@
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 679-011, <date>March 7, 1972</date>
         </titleproper>
         <titleproper type="filing">Conversation 679-011</titleproper>
-        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, James M. Roche, Richard C. Gerstenbeerg, John D. Ehrlichman, and George P. Shultz</subtitle>
+        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, James M. Roche, Richard Gerstenberg, John D. Ehrlichman, and George P. Shultz</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
         <lb/> 
@@ -44,6 +44,16 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2016-08-24" type="edit">August 24, 2016</date>
+        <item>Edited origination: Changed Richard C. Gerstenbeerg (37-wht-eac-00000958) to Richard Gerstenberg (37-wht-eac-00000959)</item>
+        <item>Edited controlaccess: Changed Richard C. Gerstenbeerg (37-wht-eac-00000958) to Richard Gerstenberg (37-wht-eac-00000959)</item>
+        <item>Edited subtitle: Changed Richard C. Gerstenbeerg to Richard Gerstenberg</item>
+        <item>Edited abstract: Changed Richard C. Gerstenbeerg to Richard Gerstenberg</item>
+        <item>Edited scopecontent: Changed Richard C. Gerstenbeerg to Richard Gerstenberg</item>
+      </change>
+    </revisiondesc>
     <!-- <revisiondesc>
 			<change>
 				<date normal="" type="addition"></date>
@@ -74,7 +84,7 @@
       <origination id="participants" label="Participants">
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002304" normal="JMR">Roche, James M.</persname>
-        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000958" normal="RCGs">Gerstenbeerg, Richard C.</persname>
+        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000959" normal="RiGer">Gerstenberg, Richard</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000752" normal="JDE">Ehrlichman, John D.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002517" normal="GPS">Shultz, George P.</persname>
       </origination>
@@ -101,7 +111,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">679-011</unitid>
       <!-- <container id="wht-audiotape-679_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On March 7, 1972, President Richard M. Nixon, James M. Roche, Richard C. Gerstenbeerg, John D. Ehrlichman, and George P. Shultz met in the Oval Office of the White House from 12:40 pm to 12:43 pm. The Oval Office taping system captured this recording, which is known as Conversation 679-011 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On March 7, 1972, President Richard M. Nixon, James M. Roche, Richard Gerstenberg, John D. Ehrlichman, and George P. Shultz met in the Oval Office of the White House from 12:40 pm to 12:43 pm. The Oval Office taping system captured this recording, which is known as Conversation 679-011 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -127,7 +137,7 @@
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
-        <p>On March 7, 1972, President Richard M. Nixon, James M. Roche, Richard C. Gerstenbeerg, John D. Ehrlichman, and George P. Shultz met in the Oval Office of the White House from 12:40 pm to 12:43 pm. The Oval Office taping system captured this recording, which is known as Conversation 679-011 of the White House Tapes.</p>
+        <p>On March 7, 1972, President Richard M. Nixon, James M. Roche, Richard Gerstenberg, John D. Ehrlichman, and George P. Shultz met in the Oval Office of the White House from 12:40 pm to 12:43 pm. The Oval Office taping system captured this recording, which is known as Conversation 679-011 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
@@ -214,7 +224,7 @@
           <head>People</head>
           
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000752" normal="JDE">Ehrlichman, John D.</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000958" normal="RCGs">Gerstenbeerg, Richard C.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000959" normal="RiGer">Gerstenberg, Richard</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002304" normal="JMR">Roche, James M.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002517" normal="GPS">Shultz, George P.</persname>
