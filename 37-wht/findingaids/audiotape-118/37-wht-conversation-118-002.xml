@@ -7,7 +7,7 @@
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 118-002, <date>March 13, 1973</date>
         </titleproper>
         <titleproper type="filing">Conversation 118-002</titleproper>
-        <subtitle>A Subject Log of the Conversation between Recipients of the 1972 Management Improvement Award, including Brian Usilaner, Harold R. Baker, Reginald E. Cole, Fred R. Boyett, Glenn R. Dickerson, Capt. William D. Harkins, Col. A. L. Schalbrack, John V. Vinciguerra, Mary Olmstead, B. N. McVay, Bernard E. Kelly, Reginald Johnson, Joseph Perry, Charles McMillan, Earl L. Butz, William P. Rogers, Willliam E. Simon, Elliot L. Richardson, Dixy Lee Ray, Carl Kamp, Caspar ("Cap") Weinberger, Arthur F. Sampson, Roy L. Ash, Robert E. Hampton, Norman Peterson, and Gen. B. A. Schriever,</subtitle>
+        <subtitle>A Subject Log of the Conversation between Recipients of the 1972 Management Improvement Award, including Brian Usilaner, Harold R. Baker, Reginald E. Cole, Fred R. Boyett, Glenn R. Dickerson, Capt. William D. Harkins, Col. A. L. Schalbrack, John V. Vinciguerra, Mary Olmsted, B. N. McVay, Bernard E. Kelly, Reginald Johnson, Joseph Perry, Charles McMillan, Earl L. Butz, William P. Rogers, Willliam E. Simon, Elliot L. Richardson, Dixy Lee Ray, Carl Kamp, Caspar ("Cap") Weinberger, Arthur F. Sampson, Roy L. Ash, Robert E. Hampton, Norman Peterson, and Gen. B. A. Schriever,</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
         <lb/> 
@@ -49,6 +49,9 @@
         <date normal="2016-08-24" type="edit">August 24, 2016</date>
         <item>Edited origination: Changed Mary Olmstead (37-wht-eac-00004621) to Mary Olmsted (37-wht-eac-00002058)</item>
         <item>Edited controlaccess: Changed Mary Olmstead (37-wht-eac-00004621) to Mary Olmsted (37-wht-eac-00002058)</item>
+        <item>Edited subtitle: Changed to Mary Olmsted</item>
+        <item>Edited abstract: Changed to Mary Olmsted</item>
+        <item>Edited scopecontent: Changed to Mary Olmsted</item>
       </change>
     </revisiondesc>
     <!-- <revisiondesc>
@@ -129,7 +132,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">118-002</unitid>
       <!-- <container id="wht-audiotape-118_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On March 13, 1973, Recipients of the 1972 Management Improvement Award, including Brian Usilaner, Harold R. Baker, Reginald E. Cole, Fred R. Boyett, Glenn R. Dickerson, Capt. William D. Harkins, Col. A. L. Schalbrack, John V. Vinciguerra, Mary Olmstead, B. N. McVay, Bernard E. Kelly, Reginald Johnson, Joseph Perry, Charles McMillan, Earl L. Butz, William P. Rogers, Willliam E. Simon, Elliot L. Richardson, Dixy Lee Ray, Carl Kamp, Caspar ("Cap") Weinberger, Arthur F. Sampson, Roy L. Ash, Robert E. Hampton, Norman Peterson, and Gen. B. A. Schriever, met in the Cabinet Room of the White House at an unknown time between 11:00 am and 12:03 pm. The Cabinet Room taping system captured this recording, which is known as Conversation 118-002 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On March 13, 1973, Recipients of the 1972 Management Improvement Award, including Brian Usilaner, Harold R. Baker, Reginald E. Cole, Fred R. Boyett, Glenn R. Dickerson, Capt. William D. Harkins, Col. A. L. Schalbrack, John V. Vinciguerra, Mary Olmsted, B. N. McVay, Bernard E. Kelly, Reginald Johnson, Joseph Perry, Charles McMillan, Earl L. Butz, William P. Rogers, Willliam E. Simon, Elliot L. Richardson, Dixy Lee Ray, Carl Kamp, Caspar ("Cap") Weinberger, Arthur F. Sampson, Roy L. Ash, Robert E. Hampton, Norman Peterson, and Gen. B. A. Schriever, met in the Cabinet Room of the White House at an unknown time between 11:00 am and 12:03 pm. The Cabinet Room taping system captured this recording, which is known as Conversation 118-002 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -154,7 +157,7 @@
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
-        <p>On March 13, 1973, Recipients of the 1972 Management Improvement Award, including Brian Usilaner, Harold R. Baker, Reginald E. Cole, Fred R. Boyett, Glenn R. Dickerson, Capt. William D. Harkins, Col. A. L. Schalbrack, John V. Vinciguerra, Mary Olmstead, B. N. McVay, Bernard E. Kelly, Reginald Johnson, Joseph Perry, Charles McMillan, Earl L. Butz, William P. Rogers, Willliam E. Simon, Elliot L. Richardson, Dixy Lee Ray, Carl Kamp, Caspar ("Cap") Weinberger, Arthur F. Sampson, Roy L. Ash, Robert E. Hampton, Norman Peterson, and Gen. B. A. Schriever, met in the Cabinet Room of the White House at an unknown time between 11:00 am and 12:03 pm. The Cabinet Room taping system captured this recording, which is known as Conversation 118-002 of the White House Tapes.</p>
+        <p>On March 13, 1973, Recipients of the 1972 Management Improvement Award, including Brian Usilaner, Harold R. Baker, Reginald E. Cole, Fred R. Boyett, Glenn R. Dickerson, Capt. William D. Harkins, Col. A. L. Schalbrack, John V. Vinciguerra, Mary Olmsted, B. N. McVay, Bernard E. Kelly, Reginald Johnson, Joseph Perry, Charles McMillan, Earl L. Butz, William P. Rogers, Willliam E. Simon, Elliot L. Richardson, Dixy Lee Ray, Carl Kamp, Caspar ("Cap") Weinberger, Arthur F. Sampson, Roy L. Ash, Robert E. Hampton, Norman Peterson, and Gen. B. A. Schriever, met in the Cabinet Room of the White House at an unknown time between 11:00 am and 12:03 pm. The Cabinet Room taping system captured this recording, which is known as Conversation 118-002 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
