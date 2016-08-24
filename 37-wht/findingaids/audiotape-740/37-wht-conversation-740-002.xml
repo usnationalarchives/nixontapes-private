@@ -44,7 +44,15 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
-    <!-- <revisiondesc>
+    <revisiondesc>
+      <change>
+        <date normal="2016-08-24" type="edit">August 24, 2016</date>
+        <item>Edited orgination: Changed Sarah McLendon (37-wht-eac-00001827) to Sarah McClendon (37-wht-eac-00004746)</item>
+        <item>Edited controlaccess: Changed Sarah McLendon (37-wht-eac-00001827) to Sarah McClendon (37-wht-eac-00004746)</item>
+      </change>
+    </revisiondesc>
+<!--
+    <revisiondesc>
 			<change>
 				<date normal="" type="addition"></date>
 				<item></item>
@@ -75,7 +83,7 @@
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000082" normal="BAngelo">Angelo, Bonnie</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000563" normal="FCormier">Cormier, Frank</persname>
-        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001827" normal="SMcL">McLendon, Sarah</persname>
+        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004746" normal="SMcCl">McClendon, Sarah</persname>
       </origination>
       <origination id="isPartOf" label="Parent Materials (Is Part Of)">
         <archref id="parentCollection" xlink:href="37-wht">
@@ -214,7 +222,7 @@
           
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000082" normal="BAngelo">Angelo, Bonnie</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000563" normal="FCormier">Cormier, Frank</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001827" normal="SMcL">McLendon, Sarah</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004746" normal="SMcCl">McClendon, Sarah</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
