@@ -44,6 +44,13 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2016-08-24" type="edit">August 24, 2016</date>
+        <item>Edited origination: Changed Mary Olmstead (37-wht-eac-00004621) to Mary Olmsted (37-wht-eac-00002058)</item>
+        <item>Edited controlaccess: Changed Mary Olmstead (37-wht-eac-00004621) to Mary Olmsted (37-wht-eac-00002058)</item>
+      </change>
+    </revisiondesc>
     <!-- <revisiondesc>
 			<change>
 				<date normal="" type="addition"></date>
@@ -80,7 +87,7 @@
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001125" normal="WDH">Harkins, William D. (Capt.)</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002482" normal="ALSch">Schalbrack, A. L. (Col.)</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002821" normal="JVV">Vinciguerra, John V.</persname>
-        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004621" normal="MaOlm">Olmstead, Mary</persname>
+        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002058" normal="MOl">Olmsted, Mary</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001840" normal="BNM">McVay, B. N.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001447" normal="BEK">Kelly, Bernard E.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001376" normal="RJohn">Johnson, Reginald</persname>
@@ -245,7 +252,7 @@
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001447" normal="BEK">Kelly, Bernard E.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001833" normal="CMcM">McMillan, Charles</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001840" normal="BNM">McVay, B. N.</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004621" normal="MaOlm">Olmstead, Mary</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002058" normal="MOl">Olmsted, Mary</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002133" normal="JPerry">Perry, Joseph</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002145" normal="NPet">Peterson, Norman</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002223" normal="DLR">Ray, Dixy Lee</persname>
