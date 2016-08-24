@@ -57,14 +57,14 @@
         <agent>base-to-eac.xq</agent>
         <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
+      <maintenanceEvent>
+          <eventType>revised</eventType>
+          <eventDateTime>2016-08-24</eventDateTime>
+          <agentType>human</agentType>
+          <agent>Amanda T. Ross</agent>
+          <eventDescription>Changed authorized spelling to Camille Nowfel; added name entry variants. Added biographical abstract and citations. Changed gender identity term; added racial category and ethnic/cultural term; added occupations; edited descriptive notes.</eventDescription>
+      </maintenanceEvent>
       <!--
-            <maintenanceEvent>
-                <eventType>revised</eventType>
-                <eventDateTime></eventDateTime>
-                <agentType></agentType>
-                <agent></agent>
-                <eventDescription></eventDescription>
-            </maintenanceEvent>
             <maintenanceEvent>
                 <eventType>revised</eventType>
                 <eventDateTime></eventDateTime>
@@ -103,7 +103,7 @@
       <!-- Authorized Name Entries -->
       <!-- Nixon Tapes Index -->
       <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
-        <part localType="marcfield:100$a">Nowfel, Camile</part>
+        <part localType="marcfield:100$a">Nowfel, Camille</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
       <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
@@ -123,9 +123,26 @@
         <part localType="directOrder">Camile Nowfel</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
+      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
+        <part localType="directOrder">Camille Nowfel</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
+      </nameEntry>
       <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
         <part localType="familyName">Nowfel</part>
         <part localType="givenName">Camile</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
+      </nameEntry>
+      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Nowfel</part>
+        <part localType="givenName">Camille</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
+      </nameEntry>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Nowfel, Camile</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
+      </nameEntry>
+      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
+        <part localType="marcfield:100$a">Nowfel, Camille</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
       <!-- Insert Variant Names from LCNAF/LCDRG -->
@@ -140,14 +157,15 @@
       <!-- Gender/Gender Identity -->
       <localDescriptions localType="http://viaf.org/viaf/terms#gender">
         <localDescription localType="marcfield:375">
-          <term vocabularySource="NixonTapesIndex">female</term>
+          <term vocabularySource="NixonTapesIndex">male</term>
           <descriptiveNote>
-            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a certainty scale of <span localType="certainty">0.5</span>.</p>
+            <p>This gender term has been predicted based on the combination of given and family names using NamSor gender analytics, which generated a gender term of female with a certainty scale of <span localType="certainty">0.5</span>.</p>
+            <p>Gender identity term changed to male, based on an archival photograph from the John F. Kennedy Presidential Library and Museum: <span localType="title">KN-C20136. President John F. Kennedy Greets King of Saudi Arabia Saud bin Abdul-Aziz Al Saud</span>, <span localType="url">https://www.jfklibrary.org/Asset-Viewer/Archives/JFKWHP-KN-C20136.aspx</span>.</p>
           </descriptiveNote>
         </localDescription>
         <descriptiveNote>
           <p>Please note: Gender identity is internal, personal, and may be fluid. As a result, the terms used to describe gender may be imperfect.</p>
-          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis will attempt to confirm, correct, and/or align gender terms to better reflect how the person self-identified.</p>
+          <p>Initially, analytics were used to predict gender terms based on the combination of given and family names. Human analysis corrected the gender term to better reflect how the person self-identified.</p>
         </descriptiveNote>
       </localDescriptions>
       <!-- Citizenship -->
@@ -175,18 +193,19 @@
       <!-- Racial Category -->
       <localDescriptions localType="nixonTapes/#racialCategory">
         <localDescription localType="marcfield:373">
-          <term vocabularySource="uscensus:race"/>
+          <term vocabularySource="uscensus:race">White</term>
         </localDescription>
         <descriptiveNote>
+          <p>Inferred from source: <span localType="author">Edward M. Gabriel</span>. <span localType="titleArticle" style="quoted">Arab-Americans are part of the fabric of the US</span>. <span localType="titlePeriodical" style="italics">The Hill</span>, <span localType="dateOfPublication">November 20, 2014</span>. <span localType="url">http://thehill.com/blogs/congress-blog/civil-rights/224719-arab-americans-are-part-of-the-fabric-of-the-us</span></p>
           <p>Please note: Race, racial identity, and racial classification are socially constructed and may be fluid. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Racial category has been used here in an attempt to reflect how the person self-identified. The racial categories provided will be imperfect, particularly with respect to those who are not United States citizens.</p>
         </descriptiveNote>
       </localDescriptions>
       <!-- Ethnic/Cultural Heritage -->
       <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
         <localDescription localType="marcfield:373">
-          <term vocabularySource="lcsh"/>
         </localDescription>
         <descriptiveNote>
+          <p>Source: <span localType="author">Edward M. Gabriel</span>. <span localType="titleArticle" style="quoted">Arab-Americans are part of the fabric of the US</span>. <span localType="titlePeriodical" style="italics">The Hill</span>, <span localType="dateOfPublication">November 20, 2014</span>. <span localType="url">http://thehill.com/blogs/congress-blog/civil-rights/224719-arab-americans-are-part-of-the-fabric-of-the-us</span></p>
           <p>Please note: Ethnic and cultural identities are fluid concepts. As the United States Census Bureau stated in its <span localType="nixonTapes/citation/#title">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</span> report, "We recognize that race and ethnicity are not quantifiable values. Rather, identity is a complex mix of one's family and social environment, historical or socio-political constructs, personal experience, context, and many other immeasurable factors." Ethnic and cultural heritage have been described in an attempt to  reflect how the person self-identified or identified their family or cultural background.</p>
         </descriptiveNote>
       </localDescriptions>
@@ -200,16 +219,16 @@
             </localDescriptions>
             -->
       <!-- Occupations -->
-      <!--
-            <occupations localType="nixonTapes/#occupations">
-              <occupation localType="marcfield:374">
-                <term vocabularySource="NixonTapesIndex"></term>
-              </occupation>
-              <occupation localType="marcfield:374">
-                <term vocabularySource="NixonTapesIndex"></term>
-              </occupation>
-            </occupations>
-            -->
+      
+          <occupations localType="nixonTapes/#occupations">
+            <occupation localType="marcfield:374">
+              <term vocabularySource="NixonTapesIndex">interpreter</term>
+            </occupation>
+            <occupation localType="marcfield:374">
+              <term vocabularySource="NixonTapesIndex">foreign service officer</term>
+            </occupation>
+          </occupations>
+
       <!-- Functions -->
       <!--
             <functions localType="nixonTapes/#functions">
@@ -246,11 +265,12 @@
       <places/>
       <biogHist>
         <!-- Abstract -->
-        <abstract/>
+        <abstract>Camille Nowfel, a foreign service officer with the United States Department of State, served as Arabic-English interpretor/translator for five U. S. presidents.</abstract>
         <!-- Biography or Administrative History Note -->
         <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
         <!-- Insert citations -->
+        <citation><span localType="author">Edward M. Gabriel</span>. <span localType="titleArticle" style="quoted">Arab-Americans are part of the fabric of the US</span>. <span localType="titlePeriodical" style="italics">The Hill</span>, <span localType="dateOfPublication">November 20, 2014</span>. <span localType="url">http://thehill.com/blogs/congress-blog/civil-rights/224719-arab-americans-are-part-of-the-fabric-of-the-us</span></citation>
       </biogHist>
       <!-- Insert structureOrGenealogy, if relevant -->
     </description>
@@ -260,31 +280,31 @@
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000027" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Al Saud, Sultan ibn Abd al-Aziz (Prince)</relationEntry>
         <descriptiveNote>
-          <p>Camile Nowfel and Prince Sultan ibn Abd al-Aziz Al Saud conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Camille Nowfel and Prince Sultan ibn Abd al-Aziz Al Saud conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001069" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Haig, Alexander M., Jr.</relationEntry>
         <descriptiveNote>
-          <p>Camile Nowfel and Alexander M. Haig, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Camille Nowfel and Alexander M. Haig, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001545" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Laird, Melvin R.</relationEntry>
         <descriptiveNote>
-          <p>Camile Nowfel and Melvin R. Laird conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Camille Nowfel and Melvin R. Laird conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
         <descriptiveNote>
-          <p>Camile Nowfel and President Richard M. Nixon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Camille Nowfel and President Richard M. Nixon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000054" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Sowayel, Ibrahim al-</relationEntry>
         <descriptiveNote>
-          <p>Camile Nowfel and Ibrahim al-Sowayel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Camille Nowfel and Ibrahim al-Sowayel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <!-- Relationships to Families -->
@@ -292,7 +312,7 @@
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002920" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">White House photographer</relationEntry>
         <descriptiveNote>
-          <p>Camile Nowfel and representatives of the White House photographer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Camille Nowfel and representatives of the White House photographer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <!-- RESOURCE RELATIONS -->
@@ -300,7 +320,7 @@
       <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-735-014">
         <relationEntry>White House Tapes: Conversation 735-014</relationEntry>
         <descriptiveNote>
-          <p>Camile Nowfel participated in Conversation 735-014 on the White House Tapes of the Nixon Administration</p>
+          <p>Camille Nowfel participated in Conversation 735-014 on the White House Tapes of the Nixon Administration</p>
         </descriptiveNote>
       </resourceRelation>
       <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
