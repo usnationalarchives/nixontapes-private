@@ -203,6 +203,7 @@
       <!-- Ethnic/Cultural Heritage -->
       <localDescriptions localType="nixonTapes/#ethnicCulturalHeritage">
         <localDescription localType="marcfield:373">
+          <term vocabularySource="lcdg">Arab American</term>
         </localDescription>
         <descriptiveNote>
           <p>Source: <span localType="author">Edward M. Gabriel</span>. <span localType="titleArticle" style="quoted">Arab-Americans are part of the fabric of the US</span>. <span localType="titlePeriodical" style="italics">The Hill</span>, <span localType="dateOfPublication">November 20, 2014</span>. <span localType="url">http://thehill.com/blogs/congress-blog/civil-rights/224719-arab-americans-are-part-of-the-fabric-of-the-us</span></p>
