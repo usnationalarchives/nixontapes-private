@@ -7,7 +7,7 @@
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 693-001, <date>March 24, 1972</date>
         </titleproper>
         <titleproper type="filing">Conversation 693-001</titleproper>
-        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, Ralph Harris, John F. Osborne, Peter Lisagor, Charles W. Bailey, Robert B. Semple, Jr., Donald Bacon, Jack Germond, R. H. Shackford, Jim Cary, Sarah McLendon, Lucian C Warren, John Cauley, Frank van der Linden, Jim Deakin, Jesse Lewis, Gaylord Shaw, Bob Toth, David Kraslow, Courtney Sheldon, Jerald F. ("Jerry") terHorst, Dave Barnett, Martin Nolan, Jack Leacocas, Clark R. Mollenhoff, Martin Schram, Edgar Allen Poe, Fred Bonavita, George Embrey, Frank Kane, Ed O'Brien, Phil Potter, and Ross Mark</subtitle>
+        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, Ralph Harris, John F. Osborne, Peter Lisagor, Charles W. Bailey, Robert B. Semple, Jr., Donald Bacon, Jack Germond, R. H. Shackford, Jim Cary, Sarah McClendon, Lucian C Warren, John Cauley, Frank van der Linden, Jim Deakin, Jesse Lewis, Gaylord Shaw, Bob Toth, David Kraslow, Courtney Sheldon, Jerald F. ("Jerry") terHorst, Dave Barnett, Martin Nolan, Jack Leacocas, Clark R. Mollenhoff, Martin Schram, Edgar Allen Poe, Fred Bonavita, George Embrey, Frank Kane, Ed O'Brien, Phil Potter, and Ross Mark</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
         <lb/> 
@@ -49,6 +49,9 @@
         <date normal="2016-08-24" type="edit">August 24, 2016</date>
         <item>Edited orgination: Changed Sarah McLendon (37-wht-eac-00001827) to Sarah McClendon (37-wht-eac-00004746)</item>
         <item>Edited controlaccess: Changed Sarah McLendon (37-wht-eac-00001827) to Sarah McClendon (37-wht-eac-00004746)</item>
+        <item>Edited subtitle: Changed to Sarah McClendon</item>
+        <item>Edited abstract: Changed to Sarah McClendon</item>
+        <item>Edited scopecontent: Changed to Sarah McClendon</item>
       </change>
     </revisiondesc>
     <!-- <revisiondesc>
@@ -136,7 +139,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">693-001</unitid>
       <!-- <container id="wht-audiotape-693_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On March 24, 1972, President Richard M. Nixon, Ralph Harris, John F. Osborne, Peter Lisagor, Charles W. Bailey, Robert B. Semple, Jr., Donald Bacon, Jack Germond, R. H. Shackford, Jim Cary, Sarah McLendon, Lucian C Warren, John Cauley, Frank van der Linden, Jim Deakin, Jesse Lewis, Gaylord Shaw, Bob Toth, David Kraslow, Courtney Sheldon, Jerald F. ("Jerry") terHorst, Dave Barnett, Martin Nolan, Jack Leacocas, Clark R. Mollenhoff, Martin Schram, Edgar Allen Poe, Fred Bonavita, George Embrey, Frank Kane, Ed O'Brien, Phil Potter, and Ross Mark met in the Oval Office of the White House from 3:02 pm to 3:39 pm. The Oval Office taping system captured this recording, which is known as Conversation 693-001 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On March 24, 1972, President Richard M. Nixon, Ralph Harris, John F. Osborne, Peter Lisagor, Charles W. Bailey, Robert B. Semple, Jr., Donald Bacon, Jack Germond, R. H. Shackford, Jim Cary, Sarah McClendon, Lucian C Warren, John Cauley, Frank van der Linden, Jim Deakin, Jesse Lewis, Gaylord Shaw, Bob Toth, David Kraslow, Courtney Sheldon, Jerald F. ("Jerry") terHorst, Dave Barnett, Martin Nolan, Jack Leacocas, Clark R. Mollenhoff, Martin Schram, Edgar Allen Poe, Fred Bonavita, George Embrey, Frank Kane, Ed O'Brien, Phil Potter, and Ross Mark met in the Oval Office of the White House from 3:02 pm to 3:39 pm. The Oval Office taping system captured this recording, which is known as Conversation 693-001 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -162,7 +165,7 @@
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
-        <p>On March 24, 1972, President Richard M. Nixon, Ralph Harris, John F. Osborne, Peter Lisagor, Charles W. Bailey, Robert B. Semple, Jr., Donald Bacon, Jack Germond, R. H. Shackford, Jim Cary, Sarah McLendon, Lucian C Warren, John Cauley, Frank van der Linden, Jim Deakin, Jesse Lewis, Gaylord Shaw, Bob Toth, David Kraslow, Courtney Sheldon, Jerald F. ("Jerry") terHorst, Dave Barnett, Martin Nolan, Jack Leacocas, Clark R. Mollenhoff, Martin Schram, Edgar Allen Poe, Fred Bonavita, George Embrey, Frank Kane, Ed O'Brien, Phil Potter, and Ross Mark met in the Oval Office of the White House from 3:02 pm to 3:39 pm. The Oval Office taping system captured this recording, which is known as Conversation 693-001 of the White House Tapes.</p>
+        <p>On March 24, 1972, President Richard M. Nixon, Ralph Harris, John F. Osborne, Peter Lisagor, Charles W. Bailey, Robert B. Semple, Jr., Donald Bacon, Jack Germond, R. H. Shackford, Jim Cary, Sarah McClendon, Lucian C Warren, John Cauley, Frank van der Linden, Jim Deakin, Jesse Lewis, Gaylord Shaw, Bob Toth, David Kraslow, Courtney Sheldon, Jerald F. ("Jerry") terHorst, Dave Barnett, Martin Nolan, Jack Leacocas, Clark R. Mollenhoff, Martin Schram, Edgar Allen Poe, Fred Bonavita, George Embrey, Frank Kane, Ed O'Brien, Phil Potter, and Ross Mark met in the Oval Office of the White House from 3:02 pm to 3:39 pm. The Oval Office taping system captured this recording, which is known as Conversation 693-001 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
