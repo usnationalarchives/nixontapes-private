@@ -7,7 +7,7 @@
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 501-019, <date>May 19, 1971</date>
         </titleproper>
         <titleproper type="filing">Conversation 501-019</titleproper>
-        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, Henry A. Kissinger, Gerard C. Smith, Gen. Royal B. Allison, Paul J. Nitze, Harold Brown, Llewellyn E. ("Tommy") Thompson, Jr., and Philip J. Farley</subtitle>
+        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, Henry A. Kissinger, Gerard C. Smith, Gen. Royal B. Allison, Paul H. Nitze, Harold Brown, Llewellyn E. ("Tommy") Thompson, Jr., and Philip J. Farley</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
         <lb/> 
@@ -44,6 +44,16 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2016-08-25" type="edit">August 25, 2016</date>
+        <item>Edited origination: Changed Paul J. Nitze (37-wht-eac-00001998) to Paul H. Nitze (37-wht-eac-00001997)</item>
+        <item>Edited controlaccess: Changed Paul J. Nitze (37-wht-eac-00001998) to Paul H. Nitze (37-wht-eac-00001997)</item>
+        <item>Edited subtitle: Changed to Paul H. Nitze</item>
+        <item>Edited abstract: Changed to Paul H. Nitze</item>
+        <item>Edited scopecontent: Changed to Paul H. Nitze</item>
+      </change>
+    </revisiondesc>
     <!-- <revisiondesc>
 			<change>
 				<date normal="" type="addition"></date>
@@ -76,7 +86,7 @@
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001494" normal="HAK">Kissinger, Henry A.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003078" normal="GCM">Smith, Gerard C.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000046" normal="RBA">Allison, Royal B. (Gen.)</persname>
-        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001998" normal="PJN">Nitze, Paul J.</persname>
+        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001997" normal="PHN">Nitze, Paul H.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000313" normal="HBn">Brown, Harold</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002718" normal="LET">Thompson, Llewellyn E. ("Tommy"), Jr.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000812" normal="PJF">Farley, Philip J.</persname>
@@ -104,7 +114,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">501-019</unitid>
       <!-- <container id="wht-audiotape-501_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On May 19, 1971, President Richard M. Nixon, Henry A. Kissinger, Gerard C. Smith, Gen. Royal B. Allison, Paul J. Nitze, Harold Brown, Llewellyn E. ("Tommy") Thompson, Jr., and Philip J. Farley met in the Oval Office of the White House from 3:09 pm to 3:45 pm. The Oval Office taping system captured this recording, which is known as Conversation 501-019 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On May 19, 1971, President Richard M. Nixon, Henry A. Kissinger, Gerard C. Smith, Gen. Royal B. Allison, Paul H. Nitze, Harold Brown, Llewellyn E. ("Tommy") Thompson, Jr., and Philip J. Farley met in the Oval Office of the White House from 3:09 pm to 3:45 pm. The Oval Office taping system captured this recording, which is known as Conversation 501-019 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -130,7 +140,7 @@
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
-        <p>On May 19, 1971, President Richard M. Nixon, Henry A. Kissinger, Gerard C. Smith, Gen. Royal B. Allison, Paul J. Nitze, Harold Brown, Llewellyn E. ("Tommy") Thompson, Jr., and Philip J. Farley met in the Oval Office of the White House from 3:09 pm to 3:45 pm. The Oval Office taping system captured this recording, which is known as Conversation 501-019 of the White House Tapes.</p>
+        <p>On May 19, 1971, President Richard M. Nixon, Henry A. Kissinger, Gerard C. Smith, Gen. Royal B. Allison, Paul H. Nitze, Harold Brown, Llewellyn E. ("Tommy") Thompson, Jr., and Philip J. Farley met in the Oval Office of the White House from 3:09 pm to 3:45 pm. The Oval Office taping system captured this recording, which is known as Conversation 501-019 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
@@ -220,7 +230,7 @@
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000313" normal="HBn">Brown, Harold</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000812" normal="PJF">Farley, Philip J.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001494" normal="HAK">Kissinger, Henry A.</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001998" normal="PJN">Nitze, Paul J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001997" normal="PHN">Nitze, Paul H.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003078" normal="GCM">Smith, Gerard C.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002718" normal="LET">Thompson, Llewellyn E. ("Tommy"), Jr.</persname>
