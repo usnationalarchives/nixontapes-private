@@ -7,7 +7,7 @@
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 794-005, <date>October 9, 1972</date>
         </titleproper>
         <titleproper type="filing">Conversation 794-005</titleproper>
-        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, Winston W. Marsh, James Low, Henry C. Cashen, II, and White House photographer</subtitle>
+        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, Winston W. Marsh, James P. Low, Henry C. Cashen, II, and White House photographer</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
         <lb/> 
@@ -44,6 +44,16 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2016-08-25" type="edit">August 25, 2016</date>
+        <item>Edited origination: Changed James Low (37-wht-eac-00001650) to James P. Low (37-wht-eac-00001651)</item>
+        <item>Edited controlaccess: Changed James Low (37-wht-eac-00001650) to James P. Low (37-wht-eac-00001651)</item>
+        <item>Edited subtitle: Changed to James P. Low</item>
+        <item>Edited abstract: Changed to James P. Low</item>
+        <item>Edited scopecontent: Changed to James P. Low</item>
+      </change>
+    </revisiondesc>
     <!-- <revisiondesc>
 			<change>
 				<date normal="" type="addition"></date>
@@ -74,7 +84,7 @@
       <origination id="participants" label="Participants">
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001730" normal="WWM">Marsh, Winston W.</persname>
-        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001650" normal="JLow">Low, James</persname>
+        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001651" normal="JPL">Low, James P.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000433" normal="HCC">Cashen, Henry C., II</persname>
         <corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002920" normal="WHP">White House photographer</corpname>
       </origination>
@@ -101,7 +111,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">794-005</unitid>
       <!-- <container id="wht-audiotape-794_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On October 9, 1972, President Richard M. Nixon, Winston W. Marsh, James Low, Henry C. Cashen, II, and White House photographer met in the Oval Office of the White House from 11:58 am to 12:10 pm. The Oval Office taping system captured this recording, which is known as Conversation 794-005 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On October 9, 1972, President Richard M. Nixon, Winston W. Marsh, James P. Low, Henry C. Cashen, II, and White House photographer met in the Oval Office of the White House from 11:58 am to 12:10 pm. The Oval Office taping system captured this recording, which is known as Conversation 794-005 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -127,7 +137,7 @@
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
-        <p>On October 9, 1972, President Richard M. Nixon, Winston W. Marsh, James Low, Henry C. Cashen, II, and White House photographer met in the Oval Office of the White House from 11:58 am to 12:10 pm. The Oval Office taping system captured this recording, which is known as Conversation 794-005 of the White House Tapes.</p>
+        <p>On October 9, 1972, President Richard M. Nixon, Winston W. Marsh, James P. Low, Henry C. Cashen, II, and White House photographer met in the Oval Office of the White House from 11:58 am to 12:10 pm. The Oval Office taping system captured this recording, which is known as Conversation 794-005 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
@@ -214,7 +224,7 @@
           <head>People</head>
           
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000433" normal="HCC">Cashen, Henry C., II</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001650" normal="JLow">Low, James</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001651" normal="JPL">Low, James P.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001730" normal="WWM">Marsh, Winston W.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
         </controlaccess>
