@@ -57,6 +57,13 @@
         <agent>base-to-eac.xq</agent>
         <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime>2016-08-25</eventDateTime>
+        <agentType>Amanda T. Ross</agentType>
+        <agent>human</agent>
+        <eventDescription>Added biographical abstract and citations.</eventDescription>
+      </maintenanceEvent>
       <!--
             <maintenanceEvent>
                 <eventType>revised</eventType>
@@ -246,11 +253,13 @@
       <places/>
       <biogHist>
         <!-- Abstract -->
-        <abstract/>
+        <abstract>James P. Low held leadership positions in the American Society of Association Executives (ASAE) and served on the board of directors for the American Historic and Cultural Society, Inc.</abstract>
         <!-- Biography or Administrative History Note -->
         <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
         <!-- Insert citations -->
+        <citation><span localType="title" style="quoted">President Richard Nixon's Daily Dairy, April 10, 1972: Appendix B.</span> <span localType="publisher">Richard Nixon Presidential Library and Museum</span>. <span localType="url">https://nixonlibrary.gov/virtuallibrary/documents/PDD/1972/073%20April%201-15%201972.pdf</span></citation>
+        <citation><span localType="title" style="quoted">President Richard Nixon's Daily Dairy, October 9, 1972.</span> <span localType="publisher">Richard Nixon Presidential Library and Museum</span>. <span localType="url">https://nixonlibrary.gov/virtuallibrary/documents/PDD/1972/085%20October%201-15%201972.pdf</span></citation>     
       </biogHist>
       <!-- Insert structureOrGenealogy, if relevant -->
     </description>
