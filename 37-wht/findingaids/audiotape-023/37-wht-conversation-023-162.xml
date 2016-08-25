@@ -7,7 +7,7 @@
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 023-162, <date>May 4, 1972</date>
         </titleproper>
         <titleproper type="filing">Conversation 023-162</titleproper>
-        <subtitle>A Subject Log of the Conversation between Alexander M. Haig, Jr., White House operator, and Muriel Hartley</subtitle>
+        <subtitle>A Subject Log of the Conversation between Alexander M. Haig, Jr., White House operator, and Muriel L. Hartley</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
         <lb/> 
@@ -44,6 +44,16 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2016-08-25" type="edit">August 25, 2016</date>
+        <item>Edited origination: Changed Muriel Hartley (37-wht-eac-00001147) to Muriel L. Hartley (37-wht-eac-00001148)</item>
+        <item>Edited controlaccess: Changed Muriel Hartley (37-wht-eac-00001147) to Muriel L. Hartley (37-wht-eac-00001148)</item>
+        <item>Edited subtitle: Changed to Muriel L. Hartley</item>
+        <item>Edited abstract: Changed to Muriel L. Hartley</item>
+        <item>Edited scopecontent: Changed to Muriel L. Hartley</item>
+      </change>
+    </revisiondesc>
     <!-- <revisiondesc>
 			<change>
 				<date normal="" type="addition"></date>
@@ -74,7 +84,7 @@
       <origination id="participants" label="Participants">
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001069" normal="AMH">Haig, Alexander M., Jr.</persname>
         <corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002919" normal="WHO">White House operator</corpname>
-        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001147" normal="MHartley">Hartley, Muriel</persname>
+        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001148" normal="MLH">Hartley, Muriel L.</persname>
       </origination>
       <origination id="isPartOf" label="Parent Materials (Is Part Of)">
         <archref id="parentCollection" xlink:href="37-wht">
@@ -99,7 +109,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">023-162</unitid>
       <!-- <container id="wht-audiotape-023_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On May 4, 1972, Alexander M. Haig, Jr., White House operator, and Muriel Hartley talked on the telephone at an unknown time between 3:55 pm and 5:25 pm. The White House Telephone taping system captured this recording, which is known as Conversation 023-162 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On May 4, 1972, Alexander M. Haig, Jr., White House operator, and Muriel L. Hartley talked on the telephone at an unknown time between 3:55 pm and 5:25 pm. The White House Telephone taping system captured this recording, which is known as Conversation 023-162 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This White House Telephone recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -125,7 +135,7 @@
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
-        <p>On May 4, 1972, Alexander M. Haig, Jr., White House operator, and Muriel Hartley talked on the telephone at an unknown time between 3:55 pm and 5:25 pm. The White House Telephone taping system captured this recording, which is known as Conversation 023-162 of the White House Tapes.</p>
+        <p>On May 4, 1972, Alexander M. Haig, Jr., White House operator, and Muriel L. Hartley talked on the telephone at an unknown time between 3:55 pm and 5:25 pm. The White House Telephone taping system captured this recording, which is known as Conversation 023-162 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
@@ -210,9 +220,8 @@
         <head>Topics of Conversation</head>
         <controlaccess id="peopleDiscussed">
           <head>People</head>
-          
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001069" normal="AMH">Haig, Alexander M., Jr.</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001147" normal="MHartley">Hartley, Muriel</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001148" normal="MLH">Hartley, Muriel L.</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
           <head>Places and Governments</head>

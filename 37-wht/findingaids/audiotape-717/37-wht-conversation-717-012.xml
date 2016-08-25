@@ -7,7 +7,7 @@
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 717-012, <date>May 2, 1972</date>
         </titleproper>
         <titleproper type="filing">Conversation 717-012</titleproper>
-        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, Stephen B. Bull, Vernon A. Walters, Edward Tamm, Lauren Jones, Frederick J. Walters, James Walters, Vincent C. Walters, Mrs. Vincent C. Walters, Richard Walters, Peter Adams, Richard M. Helms, Rose Mary Woods, Walter R. Tkach, Alexander M. Haig, Jr., Muriel Hartley, Nancy Ovellette, and White House photographer</subtitle>
+        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, Stephen B. Bull, Vernon A. Walters, Edward Tamm, Lauren Jones, Frederick J. Walters, James Walters, Vincent C. Walters, Mrs. Vincent C. Walters, Richard Walters, Peter Adams, Richard M. Helms, Rose Mary Woods, Walter R. Tkach, Alexander M. Haig, Jr., Muriel L. Hartley, Nancy Ovellette, and White House photographer</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
         <lb/> 
@@ -44,6 +44,16 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2016-08-25" type="edit">August 25, 2016</date>
+        <item>Edited origination: Changed Muriel Hartley (37-wht-eac-00001147) to Muriel L. Hartley (37-wht-eac-00001148)</item>
+        <item>Edited controlaccess: Changed Muriel Hartley (37-wht-eac-00001147) to Muriel L. Hartley (37-wht-eac-00001148)</item>
+        <item>Edited subtitle: Changed to Muriel L. Hartley</item>
+        <item>Edited abstract: Changed to Muriel L. Hartley</item>
+        <item>Edited scopecontent: Changed to Muriel L. Hartley</item>
+      </change>
+    </revisiondesc>
     <!-- <revisiondesc>
 			<change>
 				<date normal="" type="addition"></date>
@@ -87,7 +97,7 @@
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002987" normal="RMW">Woods, Rose Mary</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002736" normal="WRT">Tkach, Walter R.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001069" normal="AMH">Haig, Alexander M., Jr.</persname>
-        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001147" normal="MHartley">Hartley, Muriel</persname>
+        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001148" normal="MLH">Hartley, Muriel L.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002079" normal="NOvellette">Ovellette, Nancy</persname>
         <corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002920" normal="WHP">White House photographer</corpname>
       </origination>
@@ -114,7 +124,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">717-012</unitid>
       <!-- <container id="wht-audiotape-717_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On May 2, 1972, President Richard M. Nixon, Stephen B. Bull, Vernon A. Walters, Edward Tamm, Lauren Jones, Frederick J. Walters, James Walters, Vincent C. Walters, Mrs. Vincent C. Walters, Richard Walters, Peter Adams, Richard M. Helms, Rose Mary Woods, Walter R. Tkach, Alexander M. Haig, Jr., Muriel Hartley, Nancy Ovellette, and White House photographer met in the Oval Office of the White House from 11:42 am to 11:50 am. The Oval Office taping system captured this recording, which is known as Conversation 717-012 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On May 2, 1972, President Richard M. Nixon, Stephen B. Bull, Vernon A. Walters, Edward Tamm, Lauren Jones, Frederick J. Walters, James Walters, Vincent C. Walters, Mrs. Vincent C. Walters, Richard Walters, Peter Adams, Richard M. Helms, Rose Mary Woods, Walter R. Tkach, Alexander M. Haig, Jr., Muriel L. Hartley, Nancy Ovellette, and White House photographer met in the Oval Office of the White House from 11:42 am to 11:50 am. The Oval Office taping system captured this recording, which is known as Conversation 717-012 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -140,7 +150,7 @@
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
-        <p>On May 2, 1972, President Richard M. Nixon, Stephen B. Bull, Vernon A. Walters, Edward Tamm, Lauren Jones, Frederick J. Walters, James Walters, Vincent C. Walters, Mrs. Vincent C. Walters, Richard Walters, Peter Adams, Richard M. Helms, Rose Mary Woods, Walter R. Tkach, Alexander M. Haig, Jr., Muriel Hartley, Nancy Ovellette, and White House photographer met in the Oval Office of the White House from 11:42 am to 11:50 am. The Oval Office taping system captured this recording, which is known as Conversation 717-012 of the White House Tapes.</p>
+        <p>On May 2, 1972, President Richard M. Nixon, Stephen B. Bull, Vernon A. Walters, Edward Tamm, Lauren Jones, Frederick J. Walters, James Walters, Vincent C. Walters, Mrs. Vincent C. Walters, Richard Walters, Peter Adams, Richard M. Helms, Rose Mary Woods, Walter R. Tkach, Alexander M. Haig, Jr., Muriel L. Hartley, Nancy Ovellette, and White House photographer met in the Oval Office of the White House from 11:42 am to 11:50 am. The Oval Office taping system captured this recording, which is known as Conversation 717-012 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
@@ -229,7 +239,7 @@
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000017" normal="PAdams">Adams, Peter</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000336" normal="SBB">Bull, Stephen B.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001069" normal="AMH">Haig, Alexander M., Jr.</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001147" normal="MHartley">Hartley, Muriel</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001148" normal="MLH">Hartley, Muriel L.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001179" normal="RMH">Helms, Richard M.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001393" normal="LJones">Jones, Lauren</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
