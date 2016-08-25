@@ -57,6 +57,13 @@
         <agent>base-to-eac.xq</agent>
         <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime>2016-08-25</eventDateTime>
+        <agentType>human</agentType>
+        <agent>Amanda T. Ross</agent>
+        <eventDescription>Added biographical abstract and citations.</eventDescription>
+      </maintenanceEvent>
       <!--
             <maintenanceEvent>
                 <eventType>revised</eventType>
@@ -246,11 +253,12 @@
       <places/>
       <biogHist>
         <!-- Abstract -->
-        <abstract/>
+        <abstract>Cooper T. Holt served as Executive Director of the Veterans of Foreign Wars.</abstract>
         <!-- Biography or Administrative History Note -->
         <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
-        <!-- Insert citations -->
+        <citation><span localType="title" style="quoted">President Richard Nixon's Daily Diary</span>, <span localType="date">October 5, 1971</span>. <span localType="publisher">Richard Nixon Presidential Library and Museum</span>. <span localType="url">https://nixonlibrary.gov/virtuallibrary/documents/PDD/1971/061%20October%201-15%201971.pdf</span></citation>
+        <citation><span localType="title" style="quoted">President Richard Nixon's Daily Diary</span>, <span localType="date">June 26, 1972</span>: <span localType="locationInSource">Appendix B</span>. <span localType="publisher">Richard Nixon Presidential Library and Museum</span>. <span localType="url">https://nixonlibrary.gov/virtuallibrary/documents/PDD/1971/061%20October%201-15%201971.pdf</span></citation>
       </biogHist>
       <!-- Insert structureOrGenealogy, if relevant -->
     </description>
