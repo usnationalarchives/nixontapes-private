@@ -7,7 +7,7 @@
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 452-014, <date>February 19, 1971</date>
         </titleproper>
         <titleproper type="filing">Conversation 452-014</titleproper>
-        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, Cooper Holt, Chief Herbert R. Rainwater, Donald E. Johnson, Charles W. Colson, and Alexander M. Haig, Jr.</subtitle>
+        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, Cooper T. Holt, Chief Herbert R. Rainwater, Donald E. Johnson, Charles W. Colson, and Alexander M. Haig, Jr.</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
         <lb/> 
@@ -44,6 +44,16 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2016-08-31" type="edit">August 31, 2016</date>
+        <item>Edited origination: Changed Cooper Holt (37-wht-eac-00001250) to Cooper T. Holt (37-wht-eac-00001251)</item>
+        <item>Edited controlaccess: Changed Cooper Holt (37-wht-eac-00001250) to Cooper T. Holt (37-wht-eac-00001251)</item>
+        <item>Edited subtitle: Changed to Cooper T. Holt</item>
+        <item>Edited abstract: Changed to Cooper T. Holt</item>
+        <item>Edited scopecontent: Changed to Cooper T. Holt</item>
+      </change>
+    </revisiondesc>
     <!-- <revisiondesc>
 			<change>
 				<date normal="" type="addition"></date>
@@ -73,7 +83,7 @@
       <unitdate label="Date" encodinganalog="245$d" normal="1971-02-16/1971-02-16" type="inclusive" certainty="supplied">February 19, 1971</unitdate>
       <origination id="participants" label="Participants">
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
-        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001250" normal="CH">Holt, Cooper</persname>
+        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001251" normal="CTH">Holt, Cooper T.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002209" normal="HRR">Rainwater, Herbert R. (Chief)</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001362" normal="DEJ">Johnson, Donald E.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000530" normal="CWC">Colson, Charles W.</persname>
@@ -102,7 +112,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">452-014</unitid>
       <!-- <container id="wht-audiotape-452_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On February 19, 1971, President Richard M. Nixon, Cooper Holt, Chief Herbert R. Rainwater, Donald E. Johnson, Charles W. Colson, and Alexander M. Haig, Jr. met in the Oval Office of the White House at an unknown time between 1:09 pm and 1:39 pm. The Oval Office taping system captured this recording, which is known as Conversation 452-014 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On February 19, 1971, President Richard M. Nixon, Cooper T. Holt, Chief Herbert R. Rainwater, Donald E. Johnson, Charles W. Colson, and Alexander M. Haig, Jr. met in the Oval Office of the White House at an unknown time between 1:09 pm and 1:39 pm. The Oval Office taping system captured this recording, which is known as Conversation 452-014 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -128,7 +138,7 @@
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
-        <p>On February 19, 1971, President Richard M. Nixon, Cooper Holt, Chief Herbert R. Rainwater, Donald E. Johnson, Charles W. Colson, and Alexander M. Haig, Jr. met in the Oval Office of the White House at an unknown time between 1:09 pm and 1:39 pm. The Oval Office taping system captured this recording, which is known as Conversation 452-014 of the White House Tapes.</p>
+        <p>On February 19, 1971, President Richard M. Nixon, Cooper T. Holt, Chief Herbert R. Rainwater, Donald E. Johnson, Charles W. Colson, and Alexander M. Haig, Jr. met in the Oval Office of the White House at an unknown time between 1:09 pm and 1:39 pm. The Oval Office taping system captured this recording, which is known as Conversation 452-014 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
@@ -216,7 +226,7 @@
           
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000530" normal="CWC">Colson, Charles W.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001069" normal="AMH">Haig, Alexander M., Jr.</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001250" normal="CH">Holt, Cooper</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001251" normal="CTH">Holt, Cooper T.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001362" normal="DEJ">Johnson, Donald E.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002209" normal="HRR">Rainwater, Herbert R. (Chief)</persname>

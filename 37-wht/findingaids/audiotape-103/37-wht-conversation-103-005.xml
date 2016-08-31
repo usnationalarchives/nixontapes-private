@@ -7,7 +7,7 @@
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 103-005, <date>June 26, 1972</date>
         </titleproper>
         <titleproper type="filing">Conversation 103-005</titleproper>
-        <subtitle>A Subject Log of the Conversation between Richard M. Nixon and national veteran leaders, including James Straubel, James Q. Wilson, Raymond L. Bramucci, Joe F. Ramsey, Jr., Claude L. Callegary, Robert W. Nolan, Jerome A. Cohen, H. Lynn Cavin, Brig. Gen. J. Paul Holland, Lt. Gen. Herman Nickerson, Jr., Maj. Gen. James F. Cantwell, Capt. Leslie W. Willig, Thomas E. Morris, Carlos Rodriguez, J. B. Koch, Floyd Henderson, Cooper Holt, William Hauck, Francis Fini, and Donald Harlow,</subtitle>
+        <subtitle>A Subject Log of the Conversation between Richard M. Nixon and national veteran leaders, including James Straubel, James Q. Wilson, Raymond L. Bramucci, Joe F. Ramsey, Jr., Claude L. Callegary, Robert W. Nolan, Jerome A. Cohen, H. Lynn Cavin, Brig. Gen. J. Paul Holland, Lt. Gen. Herman Nickerson, Jr., Maj. Gen. James F. Cantwell, Capt. Leslie W. Willig, Thomas E. Morris, Carlos Rodriguez, J. B. Koch, Floyd Henderson, Cooper T. Holt, William Hauck, Francis Fini, and Donald Harlow,</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
         <lb/> 
@@ -44,6 +44,16 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2016-08-31" type="edit">August 31, 2016</date>
+        <item>Edited origination: Changed Cooper Holt (37-wht-eac-00001250) to Cooper T. Holt (37-wht-eac-00001251)</item>
+        <item>Edited controlaccess: Changed Cooper Holt (37-wht-eac-00001250) to Cooper T. Holt (37-wht-eac-00001251)</item>
+        <item>Edited subtitle: Changed to Cooper T. Holt</item>
+        <item>Edited abstract: Changed to Cooper T. Holt</item>
+        <item>Edited scopecontent: Changed to Cooper T. Holt</item>
+      </change>
+    </revisiondesc>
     <!-- <revisiondesc>
 			<change>
 				<date normal="" type="addition"></date>
@@ -89,7 +99,7 @@
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004001" normal="CRodriguez">Rodriguez, Carlos</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004002" normal="JBKoch">Koch, J. B.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004003" normal="FHenderson">Henderson, Floyd</persname>
-        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001250" normal="CH">Holt, Cooper</persname>
+        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001251" normal="CTH">Holt, Cooper T.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001155" normal="WFH">Hauck, William F.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004004" normal="FFini">Fini, Francis</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004005" normal="DHarlow">Harlow, Donald</persname>
@@ -117,7 +127,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">103-005</unitid>
       <!-- <container id="wht-audiotape-103_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On June 26, 1972, Richard M. Nixon and national veteran leaders, including James Straubel, James Q. Wilson, Raymond L. Bramucci, Joe F. Ramsey, Jr., Claude L. Callegary, Robert W. Nolan, Jerome A. Cohen, H. Lynn Cavin, Brig. Gen. J. Paul Holland, Lt. Gen. Herman Nickerson, Jr., Maj. Gen. James F. Cantwell, Capt. Leslie W. Willig, Thomas E. Morris, Carlos Rodriguez, J. B. Koch, Floyd Henderson, Cooper Holt, William Hauck, Francis Fini, and Donald Harlow, met in the Cabinet Room of the White House at an unknown time between 3:05 pm and 3:41 pm. The Cabinet Room taping system captured this recording, which is known as Conversation 103-005 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On June 26, 1972, Richard M. Nixon and national veteran leaders, including James Straubel, James Q. Wilson, Raymond L. Bramucci, Joe F. Ramsey, Jr., Claude L. Callegary, Robert W. Nolan, Jerome A. Cohen, H. Lynn Cavin, Brig. Gen. J. Paul Holland, Lt. Gen. Herman Nickerson, Jr., Maj. Gen. James F. Cantwell, Capt. Leslie W. Willig, Thomas E. Morris, Carlos Rodriguez, J. B. Koch, Floyd Henderson, Cooper T. Holt, William Hauck, Francis Fini, and Donald Harlow, met in the Cabinet Room of the White House at an unknown time between 3:05 pm and 3:41 pm. The Cabinet Room taping system captured this recording, which is known as Conversation 103-005 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -142,7 +152,7 @@
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
-        <p>On June 26, 1972, Richard M. Nixon and national veteran leaders, including James Straubel, James Q. Wilson, Raymond L. Bramucci, Joe F. Ramsey, Jr., Claude L. Callegary, Robert W. Nolan, Jerome A. Cohen, H. Lynn Cavin, Brig. Gen. J. Paul Holland, Lt. Gen. Herman Nickerson, Jr., Maj. Gen. James F. Cantwell, Capt. Leslie W. Willig, Thomas E. Morris, Carlos Rodriguez, J. B. Koch, Floyd Henderson, Cooper Holt, William Hauck, Francis Fini, and Donald Harlow, met in the Cabinet Room of the White House at an unknown time between 3:05 pm and 3:41 pm. The Cabinet Room taping system captured this recording, which is known as Conversation 103-005 of the White House Tapes.</p>
+        <p>On June 26, 1972, Richard M. Nixon and national veteran leaders, including James Straubel, James Q. Wilson, Raymond L. Bramucci, Joe F. Ramsey, Jr., Claude L. Callegary, Robert W. Nolan, Jerome A. Cohen, H. Lynn Cavin, Brig. Gen. J. Paul Holland, Lt. Gen. Herman Nickerson, Jr., Maj. Gen. James F. Cantwell, Capt. Leslie W. Willig, Thomas E. Morris, Carlos Rodriguez, J. B. Koch, Floyd Henderson, Cooper T. Holt, William Hauck, Francis Fini, and Donald Harlow, met in the Cabinet Room of the White House at an unknown time between 3:05 pm and 3:41 pm. The Cabinet Room taping system captured this recording, which is known as Conversation 103-005 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
@@ -237,7 +247,7 @@
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001155" normal="WFH">Hauck, William F.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004003" normal="FHenderson">Henderson, Floyd</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003998" normal="JPHolland">Holland, J. Paul (Brig. Gen.)</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001250" normal="CH">Holt, Cooper</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001251" normal="CTH">Holt, Cooper T.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004002" normal="JBKoch">Koch, J. B.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001932" normal="TEM">Morris, Thomas E.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001991" normal="HN">Nickerson, Herman, Jr. (Lt. Gen.)</persname>
