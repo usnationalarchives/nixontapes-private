@@ -57,6 +57,14 @@
         <agent>base-to-eac.xq</agent>
         <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime>2016-08-31</eventDateTime>
+        <agentType>human</agentType>
+        <agent>Amanda T. Ross</agent>
+        <eventDescription>Added nameEntry for misspelling</eventDescription>
+      </maintenanceEvent>
+      
       <!--
             <maintenanceEvent>
                 <eventType>revised</eventType>
@@ -126,6 +134,11 @@
       <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
         <part localType="familyName">Pritchard</part>
         <part localType="givenName">Joel</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
+      </nameEntry>
+      <nameEntry localType="nixonNames/nameEntry/#misspelling" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Pritchard</part>
+        <part localType="givenName">Joe</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
       <!-- Insert Variant Names from LCNAF/LCDRG -->
