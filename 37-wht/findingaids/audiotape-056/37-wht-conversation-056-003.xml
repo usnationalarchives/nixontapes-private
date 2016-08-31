@@ -7,7 +7,7 @@
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 056-003, <date>May 7, 1971</date>
         </titleproper>
         <titleproper type="filing">Conversation 056-003</titleproper>
-        <subtitle>A Subject Log of the Conversation between During the signing of the Telephone Bank Bill [S. 70], President Richard M. Nixon, Robert J. Dole, Jack R. Miller, Herman E. Talmadge, Ancher Nelsen, Alvin E. O'Konski, William R. Poage, Robert D. Price, Garner Shriver, Vernon W. Thomson, Clifford M. Hardin, J. Philip Campbell, Thomas K. Cowden, William E. Galbraith, David A. Hamil, Everett C. Weitzell, James R. Wright, Harold C. Ebaugh, Warren B. French, Jr., Adm. William C. Mott, David C. Fullarton, Ross Heller, Eldon M. Snowden, Harold G. Payne, A. Harold Peterson, Hyde Murray, John C. Whitaker, Richard K. Cook, Max L. Friedersdorf, and press photographers</subtitle>
+        <subtitle>A Subject Log of the Conversation between During the signing of the Telephone Bank Bill [S. 70], President Richard M. Nixon, Robert J. Dole, Jack R. Miller, Herman E. Talmadge, Ancher Nelsen, Alvin E. O'Konski, William R. Poage, Robert D. Price, Garner Shriver, Vernon W. Thomson, Clifford M. Hardin, J. Philip Campbell, Thomas K. Cowden, William E. Galbraith, David A. Hamil, Everett C. Weitzell, James R. Wright, Harold C. Ebaugh, Warren B. French, Jr., Adm. William C. Mott, David C. Fullarton, Ross Heller, Eldon M. Snowden, Harold G. Payne, A. Harold Peterson, Hyde H. Murray, John C. Whitaker, Richard K. Cook, Max L. Friedersdorf, and press photographers</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
         <lb/> 
@@ -44,6 +44,16 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2016-08-31" type="edit">August 31, 2016</date>
+        <item>Edited origination: Changed to Hyde H. Murray</item>
+        <item>Edited controlaccess: Changed to Hyde H. Murray</item>
+        <item>Edited subtitle: Changed to Hyde H. Murray</item>
+        <item>Edited abstract: Changed to Hyde H. Murray</item>
+        <item>Edited scopecontent: Changed to Hyde H. Murray</item>
+      </change>
+    </revisiondesc>
     <!-- <revisiondesc>
 			<change>
 				<date normal="" type="addition"></date>
@@ -94,7 +104,7 @@
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004548" normal="DCF">Fullarton, David C.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004549" normal="RHe">Heller, Ross</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004550" normal="EMSn">Snowden, Eldon M.</persname>
-        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001960" normal="HM">Murray, Hyde</persname>
+        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001960" normal="HM">Murray, Hyde H.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002911" normal="JCW">Whitaker, John C.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004551" normal="HGP">Payne, Harold G.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004552" normal="AHP">Peterson, A. Harold</persname>
@@ -124,7 +134,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">056-003</unitid>
       <!-- <container id="wht-audiotape-056_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On May 7, 1971, during the signing of the Telephone Bank Bill [S. 70], President Richard M. Nixon, Robert J. Dole, Jack R. Miller, Herman E. Talmadge, Ancher Nelsen, Alvin E. O'Konski, William R. Poage, Robert D. Price, Garner Shriver, Vernon W. Thomson, Clifford M. Hardin, J. Philip Campbell, Thomas K. Cowden, William E. Galbraith, David A. Hamil, Everett C. Weitzell, James R. Wright, Harold C. Ebaugh, Warren B. French, Jr., Adm. William C. Mott, David C. Fullarton, Ross Heller, Eldon M. Snowden, Harold G. Payne, A. Harold Peterson, Hyde Murray, John C. Whitaker, Richard K. Cook, Max L. Friedersdorf, and press photographers met in the Cabinet Room of the White House at an unknown time between 11:48 am and 11:56 am. The Cabinet Room taping system captured this recording, which is known as Conversation 056-003 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On May 7, 1971, during the signing of the Telephone Bank Bill [S. 70], President Richard M. Nixon, Robert J. Dole, Jack R. Miller, Herman E. Talmadge, Ancher Nelsen, Alvin E. O'Konski, William R. Poage, Robert D. Price, Garner Shriver, Vernon W. Thomson, Clifford M. Hardin, J. Philip Campbell, Thomas K. Cowden, William E. Galbraith, David A. Hamil, Everett C. Weitzell, James R. Wright, Harold C. Ebaugh, Warren B. French, Jr., Adm. William C. Mott, David C. Fullarton, Ross Heller, Eldon M. Snowden, Harold G. Payne, A. Harold Peterson, Hyde H. Murray, John C. Whitaker, Richard K. Cook, Max L. Friedersdorf, and press photographers met in the Cabinet Room of the White House at an unknown time between 11:48 am and 11:56 am. The Cabinet Room taping system captured this recording, which is known as Conversation 056-003 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -149,7 +159,7 @@
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
-        <p>On May 7, 1971, during the signing of the Telephone Bank Bill [S. 70], President Richard M. Nixon, Robert J. Dole, Jack R. Miller, Herman E. Talmadge, Ancher Nelsen, Alvin E. O'Konski, William R. Poage, Robert D. Price, Garner Shriver, Vernon W. Thomson, Clifford M. Hardin, J. Philip Campbell, Thomas K. Cowden, William E. Galbraith, David A. Hamil, Everett C. Weitzell, James R. Wright, Harold C. Ebaugh, Warren B. French, Jr., Adm. William C. Mott, David C. Fullarton, Ross Heller, Eldon M. Snowden, Harold G. Payne, A. Harold Peterson, Hyde Murray, John C. Whitaker, Richard K. Cook, Max L. Friedersdorf, and press photographers met in the Cabinet Room of the White House at an unknown time between 11:48 am and 11:56 am. The Cabinet Room taping system captured this recording, which is known as Conversation 056-003 of the White House Tapes.</p>
+        <p>On May 7, 1971, during the signing of the Telephone Bank Bill [S. 70], President Richard M. Nixon, Robert J. Dole, Jack R. Miller, Herman E. Talmadge, Ancher Nelsen, Alvin E. O'Konski, William R. Poage, Robert D. Price, Garner Shriver, Vernon W. Thomson, Clifford M. Hardin, J. Philip Campbell, Thomas K. Cowden, William E. Galbraith, David A. Hamil, Everett C. Weitzell, James R. Wright, Harold C. Ebaugh, Warren B. French, Jr., Adm. William C. Mott, David C. Fullarton, Ross Heller, Eldon M. Snowden, Harold G. Payne, A. Harold Peterson, Hyde H. Murray, John C. Whitaker, Richard K. Cook, Max L. Friedersdorf, and press photographers met in the Cabinet Room of the White House at an unknown time between 11:48 am and 11:56 am. The Cabinet Room taping system captured this recording, which is known as Conversation 056-003 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
@@ -248,7 +258,7 @@
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004549" normal="RHe">Heller, Ross</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001881" normal="JRM">Miller, Jack R.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00004547" normal="WCMott">Mott, William C. (Adm.)</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001960" normal="HM">Murray, Hyde</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001960" normal="HM">Murray, Hyde H.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001979" normal="AN">Nelsen, Ancher</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002039" normal="AEOK">O'Konski, Alvin E.</persname>
