@@ -7,7 +7,7 @@
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 071-001, <date>September 7, 1971</date>
         </titleproper>
         <titleproper type="filing">Conversation 071-001</titleproper>
-        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon and the Council on International Economic Policy, including Brandon Sweizer, Peter G. Peterson, Clifford M. Hardin, William P. Rogers, Nathanial Samuels, John B. Connally, Paul A. Volcker, Melvin R. Laird, Maurice H. Stans, James D. Hodgson, David M. Kennedy, George P. Shultz, Paul W. McCracken, Carl J. Gilbert, John D. Ehrlichman, Henry A. Kissinger, Richard V. ("Dick") Allen, Deane R. Hinton, Donald A. Webster, Robert D. Hormats, Raymond J. Waldeman [?], Peter M. Flanigan, and unknown person(s),</subtitle>
+        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon and the Council on International Economic Policy, including Brandon Sweizer, Peter G. Peterson, Clifford M. Hardin, William P. Rogers, Nathanial Samuels, John B. Connally, Paul A. Volcker, Melvin R. Laird, Maurice H. Stans, James D. Hodgson, David M. Kennedy, George P. Shultz, Paul W. McCracken, Carl J. Gilbert, John D. Ehrlichman, Henry A. Kissinger, Richard V. ("Dick") Allen, Deane R. Hinton, Donald A. Webster, Robert D. Hormats, Raymond J. Waldmann [?], Peter M. Flanigan, and unknown person(s),</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
         <lb/> 
@@ -44,6 +44,16 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2016-08-31" type="edit">August 31, 2016</date>
+        <item>Edited origination: Changed Waldeman to Waldmann</item>
+        <item>Edited controlaccess: Changed Waldeman to Waldmann</item>
+        <item>Edited subtitle: Changed Waldeman to Waldmann</item>
+        <item>Edited abstract: Changed Waldeman to Waldmann</item>
+        <item>Edited scopecontent: Changed Waldeman to Waldmann</item>
+      </change>
+    </revisiondesc>
     <!-- <revisiondesc>
 			<change>
 				<date normal="" type="addition"></date>
@@ -95,7 +105,7 @@
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001222" normal="DRH">Hinton, Deane R.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002887" normal="DAW">Webster, Donald A.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003665" normal="RDHo">Hormats, Robert D.</persname>
-        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002836" normal="RJW">Waldeman, Raymond J.</persname>
+        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002836" normal="RJW">Waldmann, Raymond J.</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000857" normal="PMF">Flanigan, Peter M.</persname>
       </origination>
       <origination id="isPartOf" label="Parent Materials (Is Part Of)">
@@ -121,7 +131,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">071-001</unitid>
       <!-- <container id="wht-audiotape-071_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On September 7, 1971, President Richard M. Nixon and the Council on International Economic Policy, including Brandon Sweizer, Peter G. Peterson, Clifford M. Hardin, William P. Rogers, Nathanial Samuels, John B. Connally, Paul A. Volcker, Melvin R. Laird, Maurice H. Stans, James D. Hodgson, David M. Kennedy, George P. Shultz, Paul W. McCracken, Carl J. Gilbert, John D. Ehrlichman, Henry A. Kissinger, Richard V. ("Dick") Allen, Deane R. Hinton, Donald A. Webster, Robert D. Hormats, Raymond J. Waldeman [?], Peter M. Flanigan, and unknown person(s), met in the Cabinet Room of the White House at an unknown time between 8:03 am and 10:36 am. The Cabinet Room taping system captured this recording, which is known as Conversation 071-001 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On September 7, 1971, President Richard M. Nixon and the Council on International Economic Policy, including Brandon Sweizer, Peter G. Peterson, Clifford M. Hardin, William P. Rogers, Nathanial Samuels, John B. Connally, Paul A. Volcker, Melvin R. Laird, Maurice H. Stans, James D. Hodgson, David M. Kennedy, George P. Shultz, Paul W. McCracken, Carl J. Gilbert, John D. Ehrlichman, Henry A. Kissinger, Richard V. ("Dick") Allen, Deane R. Hinton, Donald A. Webster, Robert D. Hormats, Raymond J. Waldmann [?], Peter M. Flanigan, and unknown person(s), met in the Cabinet Room of the White House at an unknown time between 8:03 am and 10:36 am. The Cabinet Room taping system captured this recording, which is known as Conversation 071-001 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Cabinet Room recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -146,7 +156,7 @@
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
-        <p>On September 7, 1971, President Richard M. Nixon and the Council on International Economic Policy, including Brandon Sweizer, Peter G. Peterson, Clifford M. Hardin, William P. Rogers, Nathanial Samuels, John B. Connally, Paul A. Volcker, Melvin R. Laird, Maurice H. Stans, James D. Hodgson, David M. Kennedy, George P. Shultz, Paul W. McCracken, Carl J. Gilbert, John D. Ehrlichman, Henry A. Kissinger, Richard V. ("Dick") Allen, Deane R. Hinton, Donald A. Webster, Robert D. Hormats, Raymond J. Waldeman [?], Peter M. Flanigan, and unknown person(s), met in the Cabinet Room of the White House at an unknown time between 8:03 am and 10:36 am. The Cabinet Room taping system captured this recording, which is known as Conversation 071-001 of the White House Tapes.</p>
+        <p>On September 7, 1971, President Richard M. Nixon and the Council on International Economic Policy, including Brandon Sweizer, Peter G. Peterson, Clifford M. Hardin, William P. Rogers, Nathanial Samuels, John B. Connally, Paul A. Volcker, Melvin R. Laird, Maurice H. Stans, James D. Hodgson, David M. Kennedy, George P. Shultz, Paul W. McCracken, Carl J. Gilbert, John D. Ehrlichman, Henry A. Kissinger, Richard V. ("Dick") Allen, Deane R. Hinton, Donald A. Webster, Robert D. Hormats, Raymond J. Waldmann [?], Peter M. Flanigan, and unknown person(s), met in the Cabinet Room of the White House at an unknown time between 8:03 am and 10:36 am. The Cabinet Room taping system captured this recording, which is known as Conversation 071-001 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
@@ -252,7 +262,7 @@
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002617" normal="MHS">Stans, Maurice H.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003664" normal="BSw">Sweizer, Brandon</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002824" normal="PAV">Volcker, Paul A.</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002836" normal="RJW">Waldeman, Raymond J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002836" normal="RJW">Waldmann, Raymond J.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002887" normal="DAW">Webster, Donald A.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002795" normal="Unk">[Unknown person(s)]</persname>
         </controlaccess>

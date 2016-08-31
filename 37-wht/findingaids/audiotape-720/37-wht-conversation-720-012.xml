@@ -7,7 +7,7 @@
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 720-012, <date>May 5, 1972</date>
         </titleproper>
         <titleproper type="filing">Conversation 720-012</titleproper>
-        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, John D. Rockefeller, III, Grace Olivarez, Dr. Christian N. Ramsey, Jr., Kenneth R. Cole, Jr., Raymond J. Waldeman, and White House photographer</subtitle>
+        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, John D. Rockefeller, III, Grace Olivarez, Dr. Christian N. Ramsey, Jr., Kenneth R. Cole, Jr., Raymond J. Waldmann, and White House photographer</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
         <lb/> 
@@ -44,6 +44,16 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2016-08-31" type="edit">August 31, 2016</date>
+        <item>Edited origination: Changed Waldeman to Waldmann</item>
+        <item>Edited controlaccess: Changed Waldeman to Waldmann</item>
+        <item>Edited subtitle: Changed Waldeman to Waldmann</item>
+        <item>Edited abstract: Changed Waldeman to Waldmann</item>
+        <item>Edited scopecontent: Changed Waldeman to Waldmann</item>
+      </change>
+    </revisiondesc>
     <!-- <revisiondesc>
 			<change>
 				<date normal="" type="addition"></date>
@@ -77,7 +87,7 @@
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002057" normal="GO">Olivarez, Grace</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002213" normal="CNR">Ramsey, Christian N., Jr. (Dr.)</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00000521" normal="KRC">Cole, Kenneth R., Jr.</persname>
-        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002836" normal="RJW">Waldeman, Raymond J.</persname>
+        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002836" normal="RJW">Waldmann, Raymond J.</persname>
         <corpname encodinganalog="710$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002920" normal="WHP">White House photographer</corpname>
       </origination>
       <origination id="isPartOf" label="Parent Materials (Is Part Of)">
@@ -103,7 +113,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">720-012</unitid>
       <!-- <container id="wht-audiotape-720_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On May 5, 1972, President Richard M. Nixon, John D. Rockefeller, III, Grace Olivarez, Dr. Christian N. Ramsey, Jr., Kenneth R. Cole, Jr., Raymond J. Waldeman, and White House photographer met in the Oval Office of the White House from 12:19 pm to 12:32 pm. The Oval Office taping system captured this recording, which is known as Conversation 720-012 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On May 5, 1972, President Richard M. Nixon, John D. Rockefeller, III, Grace Olivarez, Dr. Christian N. Ramsey, Jr., Kenneth R. Cole, Jr., Raymond J. Waldmann, and White House photographer met in the Oval Office of the White House from 12:19 pm to 12:32 pm. The Oval Office taping system captured this recording, which is known as Conversation 720-012 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -129,7 +139,7 @@
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
-        <p>On May 5, 1972, President Richard M. Nixon, John D. Rockefeller, III, Grace Olivarez, Dr. Christian N. Ramsey, Jr., Kenneth R. Cole, Jr., Raymond J. Waldeman, and White House photographer met in the Oval Office of the White House from 12:19 pm to 12:32 pm. The Oval Office taping system captured this recording, which is known as Conversation 720-012 of the White House Tapes.</p>
+        <p>On May 5, 1972, President Richard M. Nixon, John D. Rockefeller, III, Grace Olivarez, Dr. Christian N. Ramsey, Jr., Kenneth R. Cole, Jr., Raymond J. Waldmann, and White House photographer met in the Oval Office of the White House from 12:19 pm to 12:32 pm. The Oval Office taping system captured this recording, which is known as Conversation 720-012 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
@@ -220,7 +230,7 @@
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002057" normal="GO">Olivarez, Grace</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002213" normal="CNR">Ramsey, Christian N., Jr. (Dr.)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002306" normal="JDRock">Rockefeller, John D., III</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002836" normal="RJW">Waldeman, Raymond J.</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002836" normal="RJW">Waldmann, Raymond J.</persname>
         </controlaccess>
         <controlaccess id="placesDiscussed">
           <head>Places and Governments</head>
