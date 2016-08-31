@@ -64,6 +64,13 @@
         <agent>Amanda T. Ross</agent>
         <eventDescription>Added biographical abstract and citations</eventDescription>
       </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime>2016-08-31</eventDateTime>
+        <agentType>human</agentType>
+        <agent>Amanda T. Ross</agent>
+        <eventDescription>Added nameEntry for misspelling</eventDescription>
+      </maintenanceEvent>
       <!--
             <maintenanceEvent>
                 <eventType>revised</eventType>
@@ -132,6 +139,11 @@
       </nameEntry>
       <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
         <part localType="familyName">Weber</part>
+        <part localType="givenName">Heinz</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
+      </nameEntry>
+      <nameEntry localType="nixonNames/nameEntry/#misspelling" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Weiber</part>
         <part localType="givenName">Heinz</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
