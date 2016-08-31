@@ -62,7 +62,7 @@
         <eventDateTime>2016-08-31</eventDateTime>
         <agentType>human</agentType>
         <agent>Amanda T. Ross</agent>
-        <eventDescription>Changed authorizedForm to Hyde H. Murray. Added nameEntry for former heading.</eventDescription>
+        <eventDescription>Changed authorizedForm to Hyde H. Murray. Added nameEntry for former heading. Added biographical abstract and citations.</eventDescription>
       </maintenanceEvent>
       <!--
             <maintenanceEvent>
@@ -258,11 +258,13 @@
       <places/>
       <biogHist>
         <!-- Abstract -->
-        <abstract/>
+        <abstract>Hyde H. Murray served as Assistant Counsel to the House Committee on Agriculture of the United States Congress.</abstract>
         <!-- Biography or Administrative History Note -->
         <!-- Chronology -->
         <!-- Footnotes/Endnotes -->
         <!-- Insert citations -->
+        <citation><span localType="title" style="quoted">President Richard Nixon's Daily Diary, May 7, 1971: Appendix A.</span> <span localType="publisher">Richard Nixon Presidential Library and Museum</span>. <span localType="url">https://nixonlibrary.gov/virtuallibrary/documents/PDD/1971/051%20May%201-15%201971.pdf</span></citation>
+        <citation><span localType="title" style="quoted">President Richard Nixon's Daily Diary, January 26, 1972.</span> <span localType="publisher">Richard Nixon Presidential Library and Museum</span>. <span localType="url">https://nixonlibrary.gov/virtuallibrary/documents/PDD/1972/068%20January%2016-31%201972.pdf</span></citation>
       </biogHist>
       <!-- Insert structureOrGenealogy, if relevant -->
     </description>
