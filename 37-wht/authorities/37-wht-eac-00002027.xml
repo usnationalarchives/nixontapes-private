@@ -64,6 +64,13 @@
           <agent>Amanda T. Ross</agent>
           <eventDescription>Changed authorized spelling to Camille Nowfel; added name entry variants. Added biographical abstract and citations. Changed gender identity term; added racial category and ethnic/cultural term; added occupations; edited descriptive notes.</eventDescription>
       </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime>2016-08-31</eventDateTime>
+        <agentType>human</agentType>
+        <agent>Amanda T. Ross</agent>
+        <eventDescription>Added nameEntry for misspellings</eventDescription>
+      </maintenanceEvent>
       <!--
             <maintenanceEvent>
                 <eventType>revised</eventType>
@@ -123,26 +130,19 @@
         <part localType="directOrder">Camile Nowfel</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
-        <part localType="directOrder">Camille Nowfel</part>
-        <alternativeForm>NixonTapesIndex</alternativeForm>
-      </nameEntry>
-      <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
-        <part localType="familyName">Nowfel</part>
-        <part localType="givenName">Camile</part>
-        <alternativeForm>NixonTapesIndex</alternativeForm>
-      </nameEntry>
       <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
         <part localType="familyName">Nowfel</part>
         <part localType="givenName">Camille</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
-        <part localType="marcfield:100$a">Nowfel, Camile</part>
+      <nameEntry localType="nixonNames/nameEntry/#misspelling" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Nowfel</part>
+        <part localType="givenName">Camile</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
-      <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
-        <part localType="marcfield:100$a">Nowfel, Camille</part>
+      <nameEntry localType="nixonNames/nameEntry/#misspelling" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Nowfels</part>
+        <part localType="givenName">Camile</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
       <!-- Insert Variant Names from LCNAF/LCDRG -->
