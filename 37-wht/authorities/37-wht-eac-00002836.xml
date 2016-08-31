@@ -103,7 +103,7 @@
       <!-- Authorized Name Entries -->
       <!-- Nixon Tapes Index -->
       <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
-        <part localType="marcfield:100$a">Waldeman, Raymond J.</part>
+        <part localType="marcfield:100$a">Waldmann, Raymond J.</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
       <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
@@ -120,10 +120,15 @@
       </nameEntry>
       <!-- Variant Name Entries -->
       <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
-        <part localType="directOrder">Raymond J. Waldeman</part>
+        <part localType="directOrder">Raymond J. Waldmann</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
       <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Waldmann</part>
+        <part localType="givenName">Raymond J.</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
+      </nameEntry>
+      <nameEntry localType="nixonNames/nameEntry/#misspelling" scriptCode="Latn" xml:lang="en">
         <part localType="familyName">Waldeman</part>
         <part localType="givenName">Raymond J.</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
@@ -260,541 +265,541 @@
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000018" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Adkins, Roger</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Roger Adkins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Roger Adkins conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000021" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Ahlgram, Henry</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Henry Ahlgren conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Henry Ahlgren conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003476" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Allen, Richard V. ("Dick")</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Richard V. ("Dick") Allen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Richard V. ("Dick") Allen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000150" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Barzel, Rainer</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Rainer Barzel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Rainer Barzel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000159" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Bays, Karl D.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Karl D. Bays conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Karl D. Bays conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000241" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Blum, James</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and James Blum conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and James Blum conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000243" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Blunt, William W.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and William W. Blunt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and William W. Blunt conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000293" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Brian, Earl W.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Earl W. Brian conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Earl W. Brian conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000336" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Bull, Stephen B.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Stephen B. Bull conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Stephen B. Bull conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000399" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Campbell, Rita R.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Rita R. Campbell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Rita R. Campbell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000458" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Chandler, D. Brooks</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and D. Brooks Chandler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and D. Brooks Chandler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000486" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Claflin, Jane</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Jane Claflin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Jane Claflin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000521" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Cole, Kenneth R., Jr.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Kenneth R. Cole, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Kenneth R. Cole, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000523" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Coleman, Frank C.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Frank C. Coleman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Frank C. Coleman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000541" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Connally, John B.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and John B. Connally conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and John B. Connally conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000554" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Cook, Richard K.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Richard K. Cook conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Richard K. Cook conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000560" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Copf, Jerry</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Jerry Copf conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Jerry Copf conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000570" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Cowan, James R.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and James R. Cowan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and James R. Cowan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000576" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Crabill, Donald E.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Donald E. Crabill conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Donald E. Crabill conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000584" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Cross, Christopher T.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Christopher T. Cross conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Christopher T. Cross conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000589" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Cummings, Theodore E.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Theodore EW. Cummings conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Theodore EW. Cummings conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004114" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Deane, John Russell, III</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and John Russell Deane, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and John Russell Deane, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000719" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Dunn, Barbara</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Barbara Dunn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Barbara Dunn conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000752" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Ehrlichman, John D.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and John D. Ehrlichman conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and John D. Ehrlichman conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000793" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Evans, John F., Jr.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and John F. Evans, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and John F. Evans, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000850" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Fischer, C. William</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and C. William Fischer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and C. William Fischer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000857" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Flanigan, Peter M.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Peter M. Flanigan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Peter M. Flanigan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000917" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Fuller, Bill</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Bill Fuller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Bill Fuller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000923" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Gabrielson, Rosamond C.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Rosamond C. Gabrielson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Rosamond C. Gabrielson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000943" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Gartland, John</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and John Gartland conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and John Gartland conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000970" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Gilbert, Carl J.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Carl J. Gilbert conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Carl J. Gilbert conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001018" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Granlich, Ned</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Ned Granlich conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Ned Granlich conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001098" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Hamm, William</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and William Hamm conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and William Hamm conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001121" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Hardin, Clifford M.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Clifford M. Hardin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Clifford M. Hardin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001122" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Hardy, Doreas</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Doreas Hardy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Doreas Hardy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001130" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Harper, Edwin L.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Edwin L. Harper conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Edwin L. Harper conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001156" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Havens, Harry S.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Harry S. Havens conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Harry S. Havens conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001157" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Haviland, James W.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and James W. Haviland conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and James W. Haviland conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001217" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Hill, John A.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and John A. Hill conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and John A. Hill conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001222" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Hinton, Deane R.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Deane R. Hinton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Deane R. Hinton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001231" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Hodgson, James D.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and James D. Hodgson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and James D. Hodgson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003665" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Hormats, Robert D.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Robert D. Hormats conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Robert D. Hormats conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001378" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Johnson, William H.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and William H. Johnson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and William H. Johnson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001405" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Joss, Robert</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Robert Joss conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Robert Joss conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001457" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Kennedy, David M.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and David M. Kennedy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and David M. Kennedy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001494" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Kissinger, Henry A.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Henry A. Kissinger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Henry A. Kissinger conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001545" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Laird, Melvin R.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Melvin R. Laird conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Melvin R. Laird conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001601" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Leopold, Alice K.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Alice K. Leopold conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Alice K. Leopold conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001647" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Lovell, Malcolm R., Jr.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Malcolm R. Lovell, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Malcolm R. Lovell, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001772" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">McCaffree, Kenneth M.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Kenneth M. McCaffree conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Kenneth M. McCaffree conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001793" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">McCracken, Paul W.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Paul W. McCracken conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Paul W. McCracken conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001819" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">McLane, James</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and James McLane conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and James McLane conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001829" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">McMahon, J. Alexander</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and J. Alexander McMahon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and J. Alexander McMahon conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001843" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Mead, Dana G.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Dana G. Mead conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Dana G. Mead conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001870" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Michel, Peter</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Peter Michel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Peter Michel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001925" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Morgan, Edward L.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Edward L. Morgan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Edward L. Morgan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001973" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Nathan, Richard P.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Richard P. Nathan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Richard P. Nathan conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and President Richard M. Nixon conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and President Richard M. Nixon conversed <span localType="frequency">4</span> times on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002057" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Olivarez, Grace</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Grace Olivarez conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Grace Olivarez conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002063" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Olsson, John P.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and John P. Olsson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and John P. Olsson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002073" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Orlebeck, Charles J.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Charles J. Orlebeck conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Charles J. Orlebeck conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002078" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Ottina, John R.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and John R. Ottina conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and John R. Ottina conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002083" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Page, David</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and David Page conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and David Page conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002120" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Pauls, Rolf</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Rolf Pauls conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Rolf Pauls conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002146" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Peterson, Peter G.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Peter G. Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Peter G. Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002213" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Ramsey, Christian N., Jr. (Dr.)</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Dr. Christian N. Ramsey, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Dr. Christian N. Ramsey, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002258" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Rhatican, William F.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and William F. Rhatican conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and William F. Rhatican conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002265" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Rice, Donald B.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Donald B. Rice conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Donald B. Rice conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002301" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Robinson, William</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and William Robinson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and William Robinson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002306" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Rockefeller, John D., III</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and John D. Rockefeller, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and John D. Rockefeller, III conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002316" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Rogers, William P.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and William P. Rogers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and William P. Rogers conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002322" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Rommel, Wilfred H.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Wilfred H. Rommel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Wilfred H. Rommel conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002357" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Rumsfeld, Donald H.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Donald H. Rumsfeld conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Donald H. Rumsfeld conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003577" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Samuels, Nathanial</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Nathanial Samuels conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Nathanial Samuels conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002517" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Shultz, George P.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and George P. Shultz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and George P. Shultz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002617" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Stans, Maurice H.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Maurice H. Stans conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Maurice H. Stans conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002641" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Stetler, C. Joseph</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and C. Joseph Stetler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and C. Joseph Stetler conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002675" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Sweeney, Naomi</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Naomi Sweeney conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Naomi Sweeney conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003664" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Sweizer, Brandon</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Brandon Sweizer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Brandon Sweizer conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002710" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Thomas, William H.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and William H. Thomas conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and William H. Thomas conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002719" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Thompson, Larry</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Larry Thompson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Larry Thompson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002727" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Tibbitts, Samuel J.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Samuel J. Tibbitts conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Samuel J. Tibbitts conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002745" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Tomayko, John</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and John Tomayko conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and John Tomayko conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002814" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Velde, Richard W.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Richard W. Velde conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Richard W. Velde conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002824" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Volcker, Paul A.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Paul A. Volcker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Paul A. Volcker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002837" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Walden, Donald J.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Donald J. Walden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Donald J. Walden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002887" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Webster, Donald A.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Donald A. Webster conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Donald A. Webster conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002890" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Weidenbaum, Murray L.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and Murray L. Weidenbaum conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and Murray L. Weidenbaum conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002930" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Whitwell, John C.</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and John C. Whitwell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and John C. Whitwell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002795" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">[Unknown person(s)]</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and [Unknown person(s)] conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and [Unknown person(s)] conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <!-- Relationships to Families -->
@@ -802,13 +807,13 @@
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003663" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Council on International Economic Policy</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and representatives of the Council on International Economic Policy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and representatives of the Council on International Economic Policy conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002920" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">White House photographer</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman and representatives of the White House photographer conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
+          <p>Raymond J. Waldmann and representatives of the White House photographer conversed <span localType="frequency">3</span> times on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <!-- RESOURCE RELATIONS -->
@@ -816,25 +821,25 @@
       <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-071-001">
         <relationEntry>White House Tapes: Conversation 071-001</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman participated in Conversation 071-001 on the White House Tapes of the Nixon Administration</p>
+          <p>Raymond J. Waldmann participated in Conversation 071-001 on the White House Tapes of the Nixon Administration</p>
         </descriptiveNote>
       </resourceRelation>
       <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-475-004">
         <relationEntry>White House Tapes: Conversation 475-004</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman participated in Conversation 475-004 on the White House Tapes of the Nixon Administration</p>
+          <p>Raymond J. Waldmann participated in Conversation 475-004 on the White House Tapes of the Nixon Administration</p>
         </descriptiveNote>
       </resourceRelation>
       <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-644-012">
         <relationEntry>White House Tapes: Conversation 644-012</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman participated in Conversation 644-012 on the White House Tapes of the Nixon Administration</p>
+          <p>Raymond J. Waldmann participated in Conversation 644-012 on the White House Tapes of the Nixon Administration</p>
         </descriptiveNote>
       </resourceRelation>
       <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-720-012">
         <relationEntry>White House Tapes: Conversation 720-012</relationEntry>
         <descriptiveNote>
-          <p>Raymond J. Waldeman participated in Conversation 720-012 on the White House Tapes of the Nixon Administration</p>
+          <p>Raymond J. Waldmann participated in Conversation 720-012 on the White House Tapes of the Nixon Administration</p>
         </descriptiveNote>
       </resourceRelation>
       <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
