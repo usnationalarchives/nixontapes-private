@@ -7,7 +7,7 @@
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 504-004, <date>May 27, 1971</date>
         </titleproper>
         <titleproper type="filing">Conversation 504-004</titleproper>
-        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, King Malik Faisal ibn Abd al-Aziz Al Saud, Isa Sabbaugh, Camile Nowfels, and Ronald L. Ziegler</subtitle>
+        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, King Malik Faisal ibn Abd al-Aziz Al Saud, Isa Sabbaugh, Camille Nowfel, and Ronald L. Ziegler</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
         <lb/> 
@@ -44,6 +44,16 @@
           </imprint>
         </bibref> (DACS).</descrules>
     </profiledesc>
+    <revisiondesc>
+      <change>
+        <date normal="2016-08-31" type="edit">August 31, 2016</date>
+        <item>Edited origination: Changed Camile Nowfels (37-wht-eac-00002028) to Camille Nowfel (37-wht-eac-00002027)</item>
+        <item>Edited controlaccess: Changed Camile Nowfels (37-wht-eac-00002028) to Camille Nowfel (37-wht-eac-00002027)</item>
+        <item>Edited subtitle: Changed to Camille Nowfel</item>
+        <item>Edited abstract: Changed to Camille Nowfel</item>
+        <item>Edited scopecontent: Changed to Camille Nowfel</item>
+      </change>
+    </revisiondesc>
     <!-- <revisiondesc>
 			<change>
 				<date normal="" type="addition"></date>
@@ -75,7 +85,7 @@
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003079" normal="Faisal">Al Saud, Malik Faisal ibn Abd al-Aziz (King)</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002373" normal="IS">Sabbaugh, Isa</persname>
-        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002028" normal="CN">Nowfels, Camile</persname>
+        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002027" normal="CNowfel">Nowfel, Camille</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003038" normal="RLZ">Ziegler, Ronald L.</persname>
       </origination>
       <origination id="isPartOf" label="Parent Materials (Is Part Of)">
@@ -101,7 +111,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">504-004</unitid>
       <!-- <container id="wht-audiotape-504_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On May 27, 1971, President Richard M. Nixon, King Malik Faisal ibn Abd al-Aziz Al Saud, Isa Sabbaugh, Camile Nowfels, and Ronald L. Ziegler met in the Oval Office of the White House from 10:36 am to 11:50 am. The Oval Office taping system captured this recording, which is known as Conversation 504-004 of the White House Tapes. Topics of conversation included ....</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On May 27, 1971, President Richard M. Nixon, King Malik Faisal ibn Abd al-Aziz Al Saud, Isa Sabbaugh, Camille Nowfel, and Ronald L. Ziegler met in the Oval Office of the White House from 10:36 am to 11:50 am. The Oval Office taping system captured this recording, which is known as Conversation 504-004 of the White House Tapes. Topics of conversation included ....</abstract>
       
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
@@ -127,7 +137,7 @@
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
-        <p>On May 27, 1971, President Richard M. Nixon, King Malik Faisal ibn Abd al-Aziz Al Saud, Isa Sabbaugh, Camile Nowfels, and Ronald L. Ziegler met in the Oval Office of the White House from 10:36 am to 11:50 am. The Oval Office taping system captured this recording, which is known as Conversation 504-004 of the White House Tapes.</p>
+        <p>On May 27, 1971, President Richard M. Nixon, King Malik Faisal ibn Abd al-Aziz Al Saud, Isa Sabbaugh, Camille Nowfel, and Ronald L. Ziegler met in the Oval Office of the White House from 10:36 am to 11:50 am. The Oval Office taping system captured this recording, which is known as Conversation 504-004 of the White House Tapes.</p>
         <p>Topics of conversation included ...</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
@@ -215,7 +225,7 @@
           
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003079" normal="Faisal">Al Saud, Malik Faisal ibn Abd al-Aziz (King)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002028" normal="CN">Nowfels, Camile</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002027" normal="CNowfel">Nowfel, Camille</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002373" normal="IS">Sabbaugh, Isa</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003038" normal="RLZ">Ziegler, Ronald L.</persname>
         </controlaccess>
