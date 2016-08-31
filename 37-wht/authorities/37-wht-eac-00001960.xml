@@ -57,6 +57,13 @@
         <agent>base-to-eac.xq</agent>
         <eventDescription>Converted base/source XML data about the Nixon-era White House Tapes participants to EAC-CPF records using base-to-eac.xq script written by Amanda T. Ross of the United States National Archives and Records Administration</eventDescription>
       </maintenanceEvent>
+      <maintenanceEvent>
+        <eventType>revised</eventType>
+        <eventDateTime>2016-08-31</eventDateTime>
+        <agentType>human</agentType>
+        <agent>Amanda T. Ross</agent>
+        <eventDescription>Changed authorizedForm to Hyde H. Murray. Added nameEntry for former heading.</eventDescription>
+      </maintenanceEvent>
       <!--
             <maintenanceEvent>
                 <eventType>revised</eventType>
@@ -103,7 +110,7 @@
       <!-- Authorized Name Entries -->
       <!-- Nixon Tapes Index -->
       <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
-        <part localType="marcfield:100$a">Murray, Hyde</part>
+        <part localType="marcfield:100$a">Murray, Hyde H.</part>
         <authorizedForm>NixonTapesIndex</authorizedForm>
       </nameEntry>
       <nameEntry localType="marcfield:100" scriptCode="Latn" xml:lang="en">
@@ -120,10 +127,15 @@
       </nameEntry>
       <!-- Variant Name Entries -->
       <nameEntry localType="nixonNames/nameEntry/#directOrder" scriptCode="Latn" xml:lang="en">
-        <part localType="directOrder">Hyde Murray</part>
+        <part localType="directOrder">Hyde H. Murray</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
       </nameEntry>
       <nameEntry localType="nixonNames/nameEntry/#parsed" scriptCode="Latn" xml:lang="en">
+        <part localType="familyName">Murray</part>
+        <part localType="givenName">Hyde H.</part>
+        <alternativeForm>NixonTapesIndex</alternativeForm>
+      </nameEntry>
+      <nameEntry localType="nixonNames/nameEntry/#formerHeading" scriptCode="Latn" xml:lang="en">
         <part localType="familyName">Murray</part>
         <part localType="givenName">Hyde</part>
         <alternativeForm>NixonTapesIndex</alternativeForm>
@@ -260,187 +272,187 @@
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000397" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Campbell, J. Philip</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and J. Philip Campbell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and J. Philip Campbell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000554" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Cook, Richard K.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Richard K. Cook conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Richard K. Cook conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003108" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Cowden, Thomas K.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Thomas K. Cowden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Thomas K. Cowden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000673" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Dole, Robert J.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Robert J. Dole conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Robert J. Dole conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004545" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Ebaugh, Harold C.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Harold C. Ebaugh conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Harold C. Ebaugh conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000752" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Ehrlichman, John D.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and John D. Ehrlichman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and John D. Ehrlichman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004546" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">French, Warren B., Jr.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Warren B. French, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Warren B. French, Jr. conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00000910" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Friedersdorf, Max L.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Max L. Friedersdorf conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Max L. Friedersdorf conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004548" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Fullarton, David C.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and David C. Fullarton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and David C. Fullarton conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004488" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Galbraith, William E.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and William E. Galbraith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and William E. Galbraith conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001082" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Haldeman, H. R. ("Bob")</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and H. R. ("Bob") Haldeman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and H. R. ("Bob") Haldeman conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001097" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Hamil, David A.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and David A. Hamil conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and David A. Hamil conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001121" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Hardin, Clifford M.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Clifford M. Hardin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Clifford M. Hardin conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001128" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Harlow, Bryce N.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Bryce N. Harlow conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Bryce N. Harlow conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004549" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Heller, Ross</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Ross Heller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Ross Heller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001881" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Miller, Jack R.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Jack R. Miller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Jack R. Miller conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004547" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Mott, William C. (Adm.)</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Adm. William C. Mott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Adm. William C. Mott conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00001979" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Nelsen, Ancher</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Ancher Nelsen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Ancher Nelsen conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002003" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Nixon, Richard M. (President)</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and President Richard M. Nixon conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and President Richard M. Nixon conversed <span localType="frequency">2</span> times on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002039" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">O'Konski, Alvin E.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Alvin E. O'Konski conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Alvin E. O'Konski conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004551" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Payne, Harold G.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Harold G. Payne conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Harold G. Payne conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004552" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Peterson, A. Harold</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and A. Harold Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and A. Harold Peterson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003723" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Poage, William R.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and William R. Poage conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and William R. Poage conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003537" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Shriver, Garner</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Garner Shriver conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Garner Shriver conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002517" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Shultz, George P.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and George P. Shultz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and George P. Shultz conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004550" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Snowden, Eldon M.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Eldon M. Snowden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Eldon M. Snowden conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00003722" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Talmadge, Herman E.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Herman E. Talmadge conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Herman E. Talmadge conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004333" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Thomson, Vernon W.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Vernon W. Thomson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Vernon W. Thomson conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004543" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Weitzell, Everett C.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and Everett C. Weitzell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and Everett C. Weitzell conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002911" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Whitaker, John C.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and John C. Whitaker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and John C. Whitaker conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00004544" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">Wright, James R.</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and James R. Wright conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and James R. Wright conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <!-- Relationships to Families -->
@@ -448,7 +460,7 @@
       <cpfRelation cpfRelationType="associative" xlink:arcrole="nixonTapes/#conversedWith" xlink:href="37-wht-eac-00002919" xlink:type="simple">
         <relationEntry scriptCode="Latn" xml:lang="en">White House operator</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray and representatives of the White House operator conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
+          <p>Hyde H. Murray and representatives of the White House operator conversed <span localType="frequency">1</span> time on the White House Tapes of the Nixon Administration.</p>
         </descriptiveNote>
       </cpfRelation>
       <!-- RESOURCE RELATIONS -->
@@ -456,13 +468,13 @@
       <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-056-003">
         <relationEntry>White House Tapes: Conversation 056-003</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray participated in Conversation 056-003 on the White House Tapes of the Nixon Administration</p>
+          <p>Hyde H. Murray participated in Conversation 056-003 on the White House Tapes of the Nixon Administration</p>
         </descriptiveNote>
       </resourceRelation>
       <resourceRelation resourceRelationType="creatorOf" xlink:arcrole="nixonTapes/#participantIn" xlink:href="37-wht-conversation-464-025">
         <relationEntry>White House Tapes: Conversation 464-025</relationEntry>
         <descriptiveNote>
-          <p>Hyde Murray participated in Conversation 464-025 on the White House Tapes of the Nixon Administration</p>
+          <p>Hyde H. Murray participated in Conversation 464-025 on the White House Tapes of the Nixon Administration</p>
         </descriptiveNote>
       </resourceRelation>
       <!-- Relationship to Bibliographic Works, creatorOf/contributorOf -->
