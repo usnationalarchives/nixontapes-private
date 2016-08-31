@@ -7,7 +7,7 @@
         <titleproper encodinganalog="Title" type="formal">White House Tapes: Conversation 949-004, <date>July 12, 1973</date>
         </titleproper>
         <titleproper type="filing">Conversation 949-004</titleproper>
-        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, Walter Scheel, Henry A. Kissinger, and Heinz Weiber</subtitle>
+        <subtitle>A Subject Log of the Conversation between President Richard M. Nixon, Walter Scheel, Henry A. Kissinger, and Heinz Weber</subtitle>
         <author encodinganalog="Creator">Richard Nixon Presidential Library and Museum</author>
         <sponsor>Description, encoding, and public access to the White House Tapes subject logs are supported by a partnership between the Richard Nixon Presidential Library and Museum and the Office of Innovation at the National Archives and Records Administration.
         <lb/> 
@@ -60,6 +60,17 @@
         <item>Edited controlaccess</item>
       </change>
     </revisiondesc>
+    <revisiondesc>
+      <change>
+        <date normal="2016-08-31" type="edit">August 31, 2016</date>
+        <item>Edited origination: Changed Heinz Weiber (37-wht-eac-00003297) to Heinz Weber (37-wht-eac-00002886)</item>
+        <item>Edited controlaccess: Changed Heinz Weiber (37-wht-eac-00003297) to Heinz Weber (37-wht-eac-00002886)</item>
+        <item>Edited subtitle: Changed to Heinz Weber</item>
+        <item>Edited abstract: Changed to Heinz Weber</item>
+        <item>Edited scopecontent: Changed to Heinz Weber</item>
+        <item>Edited dsc (logging): Changed to Heinz Weber</item>
+      </change>
+    </revisiondesc>
   </eadheader>
   <frontmatter>
     <titlepage>
@@ -81,7 +92,7 @@
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002408" normal="WS">Scheel, Walter</persname>
         <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001494" normal="HAK">Kissinger, Henry A.</persname>
-        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003297" normal="HWeiber">Weiber, Heinz</persname>
+        <persname encodinganalog="700$a" role="participant" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002886" normal="HWeber">Weber, Heinz</persname>
       </origination>
       <origination id="isPartOf" label="Parent Materials (Is Part Of)">
         <archref id="parentCollection" xlink:href="37-wht">
@@ -106,7 +117,7 @@
       <!-- <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" identifier="######" type="naId" label="National Archives Identifier">######</unitid> -->
       <unitid countrycode="US" repositorycode="US-DNA" encodinganalog="099$a" type="nixonTapesID" label="Local Call Number">949-004</unitid>
       <!-- <container id="wht-audiotape-949_track-{$trackNo}" type="track" label="Track">{$trackNo}</container> -->
-      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon, Walter Scheel, Henry A. Kissinger, and Heinz Weiber met in the Oval Office of the White House from 2:50 pm to 2:53 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-004 of the White House Tapes. Topics of conversation included a White House photo opportunity.</abstract>
+      <abstract id="summaryAbstract" encodinganalog="520$a" label="Abstract (Conversation Summary)">On July 12, 1973, President Richard M. Nixon, Walter Scheel, Henry A. Kissinger, and Heinz Weber met in the Oval Office of the White House from 2:50 pm to 2:53 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-004 of the White House Tapes. Topics of conversation included a White House photo opportunity.</abstract>
       <abstract id="historicalAbstract" encodinganalog="545$a">This Oval Office recording is part of the Nixon Administration's White House Tapes, a secret taping program authorized by President Richard Nixon and active from 1971 to 1973.</abstract>
       <langmaterial label="Language of Conversation" encodinganalog="546$a">Material in <language langcode="eng" scriptcode="Latn">English</language>
       </langmaterial>
@@ -130,7 +141,7 @@
       <head>Collection Overview</head>
       <scopecontent id="conversationSummary">
         <head>Conversation Summary</head>
-        <p>On July 12, 1973, President Richard M. Nixon, Walter Scheel, Henry A. Kissinger, and Heinz Weiber met in the Oval Office of the White House from 2:50 pm to 2:53 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-004 of the White House Tapes.</p>
+        <p>On July 12, 1973, President Richard M. Nixon, Walter Scheel, Henry A. Kissinger, and Heinz Weber met in the Oval Office of the White House from 2:50 pm to 2:53 pm. The Oval Office taping system captured this recording, which is known as Conversation 949-004 of the White House Tapes.</p>
         <p>Topics of conversation included a White House photo opportunity.</p>
       </scopecontent>
       <scopecontent id="recordingNotes">
@@ -218,7 +229,7 @@
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00001494" normal="HAK">Kissinger, Henry A.</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002003" normal="P">Nixon, Richard M. (President)</persname>
           <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002408" normal="WS">Scheel, Walter</persname>
-          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00003297" normal="HWeiber">Weiber, Heinz</persname>
+          <persname encodinganalog="600$a" role="subject" source="nixonTapesIndex" authfilenumber="37-wht-eac-00002886" normal="HWeber">Weber, Heinz</persname>
         </controlaccess>
       </controlaccess>
     </controlaccess>
@@ -237,7 +248,7 @@
     <dsc type="combined">
       <head>Conversation Subject Log</head>
 
-      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The President met with Walter Scheel, Henry A. Kissinger, and Heinz Weiber.</unittitle></did>
+      <c01 level="otherlevel" otherlevel="audio-segment"><did><unittitle type="action-statement">The President met with Walter Scheel, Henry A. Kissinger, and Heinz Weber.</unittitle></did>
         
         <c02 level="otherlevel" otherlevel="main-topic"><did><unittitle>Oval Office</unittitle></did>
         </c02>
